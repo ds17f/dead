@@ -58,15 +58,16 @@ fun SearchResultsScreen(
         modifier = Modifier
             .fillMaxSize()
             .background(MaterialTheme.colorScheme.background)
+            .statusBarsPadding()
     ) {
-        // Top bar with back arrow and search input
+        // Fixed top bar with back arrow and search input (like Spotify)
         SearchResultsTopBar(
             searchQuery = uiState.searchQuery,
             onSearchQueryChange = viewModel::onSearchQueryChanged,
             onNavigateBack = onNavigateBack
         )
         
-        // Search content
+        // Search content that scrolls underneath the fixed header
         LazyColumn(
             modifier = Modifier.fillMaxSize(),
             contentPadding = PaddingValues(16.dp),
@@ -141,7 +142,8 @@ private fun SearchResultsTopBar(
     Surface(
         modifier = Modifier.fillMaxWidth(),
         color = MaterialTheme.colorScheme.surface,
-        tonalElevation = 4.dp
+        tonalElevation = 8.dp,
+        shadowElevation = 4.dp
     ) {
         Row(
             modifier = Modifier
@@ -438,20 +440,6 @@ private fun SearchResultCard(
                 )
             }
             
-            // Relevance score indicator
-            if (searchResult.relevanceScore < 1.0f) {
-                Text(
-                    text = "${(searchResult.relevanceScore * 100).toInt()}%",
-                    style = MaterialTheme.typography.bodySmall,
-                    color = MaterialTheme.colorScheme.onSurfaceVariant,
-                    modifier = Modifier
-                        .background(
-                            MaterialTheme.colorScheme.surfaceVariant,
-                            RoundedCornerShape(4.dp)
-                        )
-                        .padding(horizontal = 6.dp, vertical = 2.dp)
-                )
-            }
         }
     }
 }
