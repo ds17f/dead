@@ -10,7 +10,8 @@ import kotlinx.coroutines.flow.Flow
 /**
  * Data Access Object for ShowSearchEntity FTS operations.
  * 
- * Provides full-text search capabilities using Room's FTS4 integration.
+ * Provides full-text search capabilities using Room's FTS4 integration
+ * with unicode61 tokenizer configured to preserve dashes in tokens.
  * Handles both search operations and FTS table management.
  */
 @Dao
@@ -30,13 +31,14 @@ interface ShowSearchDao {
     
     /**
      * Full-text search query with MATCH operator
-     * Returns show IDs ordered by relevance (FTS4 handles ranking)
+     * Returns show IDs with FTS4 relevance ordering
      */
     @Query("SELECT showId FROM show_search WHERE show_search MATCH :query")
     suspend fun searchShows(query: String): List<String>
     
     /**
      * Reactive search results as Flow for live updates
+     * Returns show IDs with FTS4 relevance ordering
      */
     @Query("SELECT showId FROM show_search WHERE show_search MATCH :query")
     fun searchShowsFlow(query: String): Flow<List<String>>

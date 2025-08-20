@@ -566,28 +566,56 @@ class DataImportService @Inject constructor(
     private fun createSearchEntityFromV2(showData: ShowV2ImportData): ShowSearchEntity {
         // Combine all searchable text for FTS
         val searchableText = buildList {
-            add(showData.date)
+            // Enhanced date indexing for comprehensive search support
+            add(showData.date) // Original: "1977-05-08"
+            
+            // Parse date components for alternative formats
+            val dateParts = showData.date.split("-")
+            val year = dateParts[0]      // "1977"
+            val month = dateParts[1]     // "05"
+            val day = dateParts[2]       // "08"
+            
+            // Core date components
+            add(year)                    // "1977"
+            add(year.takeLast(2))        // "77"
+            
+            // Alternative date formats for intuitive searching
+            add("${month.toInt()}-${day.toInt()}-${year.takeLast(2)}")  // "5-8-77"
+            add("${month}-${day}-${year}")                              // "05-08-1977"
+            add("${year}-${month.toInt()}-${day.toInt()}")              // "1977-5-8"
+            add("${month.toInt()}/${day.toInt()}/${year.takeLast(2)}")  // "5/8/77"
+            add("${month}/${day}/${year}")                              // "05/08/1977"
+            
+            // Year/month combinations with complete format parity
+            add("${month.toInt()}-${year.takeLast(2)}")  // "5-77"
+            add("${year}-${month}")                      // "1977-05"
+            add("${year}-${month.toInt()}")              // "1977-5"
+            add("${year.takeLast(2)}-${month.toInt()}")  // "77-5"
+            add("${month.toInt()}/${year.takeLast(2)}")  // "5/77"
+            
+            // Century prefix for decade searches
+            add(year.take(3))            // "197" (enables 1970s searches)
+            
+            // Venue information
             add(showData.venue)
-            showData.city?.let { add(it) }
-            showData.state?.let { add(it) }
-            showData.locationRaw?.let { add(it) }
-            // Add lineup member names for search
+            
+            // Consolidated location (avoid redundancy)
+            showData.locationRaw?.let { add(it) } // Single location field: "Ithaca, NY"
+            
+            // Band member names (no instruments - reduces noise)
             val memberList = extractMemberListFromLineup(showData.lineup)
             if (!memberList.isNullOrBlank()) {
-                add(memberList.replace(",", " ")) // Replace commas with spaces for better FTS
+                add(memberList.replace(",", " ")) // "Jerry Garcia Bob Weir Phil Lesh"
             }
-            // Also add instruments for search
-            showData.lineup?.forEach { member ->
-                add(member.instruments)
-            }
-            // Add song list for search
+            
+            // Song list for setlist searches
             val songList = extractSongListFromSetlist(showData.setlist)
             if (!songList.isNullOrBlank()) {
-                add(songList.replace(",", " ")) // Replace commas with spaces for better FTS
+                add(songList.replace(",", " ")) // "Scarlet Begonias Fire On The Mountain"
             }
         }.joinToString(" ")
         
-        return ShowSearchEntity(showId = showData.showId, searchText = searchableText)
+        return ShowSearchEntity(rowid = 0, showId = showData.showId, searchText = searchableText)
     }
     
     private fun createRecordingEntityFromV2(recordingId: String, recordingData: RecordingV2ImportData, showId: String): RecordingEntity {
@@ -668,7 +696,7 @@ class DataImportService @Inject constructor(
             }?.let { addAll(it) }
         }.joinToString(" ")
         
-        return ShowSearchEntity(showId = showData.showId, searchText = searchableText)
+        return ShowSearchEntity(rowid = 0, showId = showData.showId, searchText = searchableText)
     }
     
     private fun createRecordingEntity(recordingData: RecordingImportData, showId: String): RecordingEntity {

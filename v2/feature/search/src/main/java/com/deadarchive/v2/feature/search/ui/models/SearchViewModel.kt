@@ -16,7 +16,6 @@ import kotlinx.coroutines.launch
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.delay
 import javax.inject.Inject
-import javax.inject.Named
 
 /**
  * SearchViewModel - State coordination for next-generation search interface
@@ -33,7 +32,7 @@ import javax.inject.Named
  */
 @HiltViewModel
 class SearchViewModel @Inject constructor(
-    @Named("stub") private val searchService: SearchService
+    private val searchService: SearchService
 ) : ViewModel() {
     
     companion object {
