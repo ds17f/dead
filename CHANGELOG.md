@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.48.0] - 2025-08-20
+
+### New Features
+* add Clear All Themes functionality (b3ab0d93)
+* add theme system and settings screen with navigation (bdbc5119)
+
+### Bug Fixes
+* resolve ZIP theme loading and add comprehensive debugging (ae545991)
+
+### Code Refactoring
+* rebrand application from "Dead Archive" to "Deadly" (154c7399)
+
+
 ## [0.47.0] - 2025-08-19
 
 ### New Features
@@ -22,8 +35,6 @@
 
 ### Other Changes
 * chore: update Gradle wrapper to version 8.14.2 (4d3b1ede)
-
-
 ## [0.46.0] - 2025-08-17
 
 ### New Features
