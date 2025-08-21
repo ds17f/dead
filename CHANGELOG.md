@@ -1,5 +1,22 @@
 # Changelog
 
+## [0.49.0] - 2025-08-21
+
+### New Features
+* implement AppScaffold-based unified navigation with HomeScreen (cc3a270c)
+* implement Spotify-style bottom navigation (88ac776e)
+
+### Bug Fixes
+* Reduce card padding (175fec56)
+* correct SearchScreen horizontal padding by eliminating double padding (4bb71568)
+* correct SettingsBarConfiguration package declaration and improve imports (fcc655d2)
+
+### Code Refactoring
+* eliminate search screen double scaffolding and fix component padding control (db54f877)
+* eliminate settings screen double scaffolding and organize file structure (68e33f3f)
+* consolidate navigation systems by eliminating UnifiedAppNavigation (c9abaf5c)
+
+
 ## [0.48.0] - 2025-08-20
 
 ### New Features
@@ -11,8 +28,6 @@
 
 ### Code Refactoring
 * rebrand application from "Dead Archive" to "Deadly" (154c7399)
-
-
 ## [0.47.0] - 2025-08-19
 
 ### New Features
