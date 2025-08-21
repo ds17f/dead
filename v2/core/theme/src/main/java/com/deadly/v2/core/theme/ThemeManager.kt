@@ -3,9 +3,11 @@ package com.deadly.v2.core.theme
 import android.content.Context
 import android.util.Log
 import com.deadly.v2.core.theme.api.ThemeAssetProvider
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
+import kotlinx.coroutines.withContext
 import java.io.File
 import javax.inject.Inject
 import javax.inject.Singleton
@@ -139,6 +141,35 @@ class ThemeManager @Inject constructor(
         } else {
             Log.d(TAG, "autoInitialize: No valid theme found, using builtin theme")
             useBuiltinTheme()
+        }
+    }
+    
+    /**
+     * Clear all themes by deleting the themes directory
+     * 
+     * Removes all imported ZIP themes and extracted files, forcing the app
+     * to use the builtin theme on next startup.
+     */
+    suspend fun clearAllThemes() = withContext(Dispatchers.IO) {
+        Log.d(TAG, "clearAllThemes: Starting theme directory cleanup")
+        val themesDir = File(context.filesDir, "themes")
+        
+        if (themesDir.exists()) {
+            try {
+                // Delete all contents recursively
+                themesDir.deleteRecursively()
+                Log.d(TAG, "clearAllThemes: Successfully deleted themes directory")
+                
+                // Recreate empty directory for future use
+                themesDir.mkdirs()
+                Log.d(TAG, "clearAllThemes: Recreated empty themes directory")
+                
+            } catch (e: Exception) {
+                Log.e(TAG, "clearAllThemes: Failed to clear themes directory", e)
+                throw IllegalStateException("Failed to clear themes directory", e)
+            }
+        } else {
+            Log.d(TAG, "clearAllThemes: Themes directory does not exist, nothing to clear")
         }
     }
     

@@ -47,6 +47,13 @@ fun SettingsScreen(
                         onThemeImported = viewModel::onThemeImported,
                         modifier = Modifier.fillMaxWidth()
                     )
+                    
+                    Spacer(modifier = Modifier.height(8.dp))
+                    
+                    ClearThemesButton(
+                        onClearThemes = viewModel::onClearThemes,
+                        modifier = Modifier.fillMaxWidth()
+                    )
                 }
             }
             
@@ -94,5 +101,58 @@ private fun SettingsSection(
             
             content()
         }
+    }
+}
+
+/**
+ * Button to clear all themes with confirmation dialog
+ */
+@Composable
+private fun ClearThemesButton(
+    onClearThemes: () -> Unit,
+    modifier: Modifier = Modifier
+) {
+    var showConfirmDialog by remember { mutableStateOf(false) }
+    
+    OutlinedButton(
+        onClick = { showConfirmDialog = true },
+        modifier = modifier,
+        colors = ButtonDefaults.outlinedButtonColors(
+            contentColor = MaterialTheme.colorScheme.error
+        ),
+        border = androidx.compose.foundation.BorderStroke(
+            1.dp, 
+            MaterialTheme.colorScheme.error
+        )
+    ) {
+        Text("Clear All Themes")
+    }
+    
+    if (showConfirmDialog) {
+        AlertDialog(
+            onDismissRequest = { showConfirmDialog = false },
+            title = { Text("Clear All Themes") },
+            text = { 
+                Text("This will delete all imported themes and restart the app to restore the default theme. Continue?") 
+            },
+            confirmButton = {
+                TextButton(
+                    onClick = {
+                        showConfirmDialog = false
+                        onClearThemes()
+                    },
+                    colors = ButtonDefaults.textButtonColors(
+                        contentColor = MaterialTheme.colorScheme.error
+                    )
+                ) {
+                    Text("Clear")
+                }
+            },
+            dismissButton = {
+                TextButton(onClick = { showConfirmDialog = false }) {
+                    Text("Cancel")
+                }
+            }
+        )
     }
 }
