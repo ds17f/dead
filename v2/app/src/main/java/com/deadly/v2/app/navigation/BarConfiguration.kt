@@ -19,7 +19,7 @@ object NavigationBarConfig {
         "home" -> HomeBarConfiguration.getHomeBarConfig()
         
         // Search routes - delegate to SearchBarConfiguration
-        "search-main" -> SearchBarConfiguration.getSearchBarConfig()
+        "search" -> SearchBarConfiguration.getSearchBarConfig()
         "search-results" -> SearchBarConfiguration.getSearchResultsBarConfig()
         
         // Settings routes

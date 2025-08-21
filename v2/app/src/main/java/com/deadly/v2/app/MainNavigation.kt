@@ -104,7 +104,10 @@ fun MainNavigation(
             NavHost(
                 navController = navController,
                 startDestination = "splash",
-                modifier = Modifier.padding(paddingValues)
+                modifier = Modifier.padding(
+                    top = paddingValues.calculateTopPadding(),
+                    bottom = paddingValues.calculateBottomPadding()
+                )
             ) {
                 // Splash feature - handles V2 database initialization
                 splashGraph(navController)

@@ -34,14 +34,10 @@ object SearchBarConfiguration {
     /**
      * Configuration for Search Results screen
      * 
-     * Includes back navigation and results-specific actions
+     * Full-screen search results experience with no top bar
      */
     fun getSearchResultsBarConfig(): BarConfiguration = BarConfiguration(
-        topBar = TopBarConfig(
-            title = "Search Results",
-            mode = TopBarMode.SOLID,
-            navigationIcon = { SearchResultsNavigationIcon() }
-        ),
+        topBar = null, // No top bar for immersive search results
         bottomBar = BottomBarConfig(visible = true)
     )
 }
@@ -63,19 +59,3 @@ private fun SearchTopBarActions() {
     }
 }
 
-/**
- * Navigation icon for Search Results screen (back button)
- */
-@Composable  
-private fun SearchResultsNavigationIcon() {
-    IconButton(
-        onClick = {
-            // TODO: Handle back navigation
-        }
-    ) {
-        Icon(
-            painter = IconResources.Navigation.HomeOutlined(), // Placeholder - replace with back arrow when available
-            contentDescription = "Back"
-        )
-    }
-}

@@ -56,7 +56,6 @@ fun SearchResultsScreen(
         modifier = Modifier
             .fillMaxSize()
             .background(MaterialTheme.colorScheme.background)
-            .statusBarsPadding()
     ) {
         // Fixed top bar with back arrow and search input (like Spotify)
         SearchResultsTopBar(
