@@ -1,17 +1,14 @@
-package com.deadly.v2.feature.search.ui.components
+package com.deadly.v2.feature.search.screens.main
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
-import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.interaction.MutableInteractionSource
 import androidx.compose.foundation.interaction.collectIsFocusedAsState
 import androidx.compose.foundation.lazy.LazyColumn
-import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.lazy.grid.GridCells
 import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
 import androidx.compose.foundation.lazy.grid.items
-import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.outlined.Search
@@ -26,11 +23,9 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
-import androidx.compose.ui.unit.sp
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.deadly.v2.core.design.component.debug.DebugActivator
 import com.deadly.v2.core.design.component.debug.DebugBottomSheet
@@ -38,7 +33,7 @@ import com.deadly.v2.core.design.component.debug.DebugData
 import com.deadly.v2.core.design.component.debug.DebugSection
 import com.deadly.v2.core.design.component.debug.DebugItem
 import com.deadly.v2.core.design.resources.IconResources
-import com.deadly.v2.feature.search.ui.models.SearchViewModel
+import com.deadly.v2.feature.search.screens.main.models.SearchViewModel
 import com.deadly.v2.core.model.SearchUiState
 
 // Data classes for UI components

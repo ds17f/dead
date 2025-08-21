@@ -1,4 +1,4 @@
-package com.deadly.v2.feature.search.ui.components
+package com.deadly.v2.feature.search.screens.main
 
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton

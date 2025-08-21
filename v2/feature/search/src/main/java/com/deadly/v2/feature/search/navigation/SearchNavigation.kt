@@ -4,8 +4,8 @@ import androidx.navigation.NavController
 import androidx.navigation.NavGraphBuilder
 import androidx.navigation.compose.composable
 import androidx.navigation.navigation
-import com.deadly.v2.feature.search.ui.components.SearchScreen
-import com.deadly.v2.feature.search.ui.components.SearchResultsScreen
+import com.deadly.v2.feature.search.screens.main.SearchScreen
+import com.deadly.v2.feature.search.screens.searchResults.SearchResultsScreen
 
 /**
  * Navigation graph for search feature

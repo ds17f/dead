@@ -9,7 +9,6 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
-import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
@@ -22,6 +21,8 @@ import androidx.navigation.compose.navigation
 import androidx.navigation.compose.rememberNavController
 import com.deadly.v2.app.navigation.BottomNavDestination
 import com.deadly.v2.core.theme.api.ThemeAssets
+import com.deadly.v2.feature.search.screens.searchResults.SearchResultsScreen
+import com.deadly.v2.feature.search.screens.main.SearchScreen
 
 /**
  * MainAppScreen - V2 app with Spotify-style bottom navigation
@@ -75,7 +76,7 @@ fun MainAppScreen(
                 route = BottomNavDestination.Search.route
             ) {
                 composable("search-main") {
-                    com.deadly.v2.feature.search.ui.components.SearchScreen(
+                    SearchScreen(
                         onNavigateToPlayer = { recordingId ->
                             // TODO: Navigate to player when implemented in V2
                         },
@@ -90,7 +91,7 @@ fun MainAppScreen(
                 }
                 
                 composable("search-results") {
-                    com.deadly.v2.feature.search.ui.components.SearchResultsScreen(
+                    SearchResultsScreen(
                         initialQuery = "",
                         onNavigateBack = {
                             navController.popBackStack()

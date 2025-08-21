@@ -1,4 +1,4 @@
-package com.deadly.v2.feature.search.ui.models
+package com.deadly.v2.feature.search.screens.main.models
 
 import android.util.Log
 import androidx.lifecycle.ViewModel
@@ -11,10 +11,8 @@ import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.debounce
 import kotlinx.coroutines.flow.distinctUntilChanged
-import kotlinx.coroutines.flow.filterNot
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.Job
-import kotlinx.coroutines.delay
 import javax.inject.Inject
 
 /**

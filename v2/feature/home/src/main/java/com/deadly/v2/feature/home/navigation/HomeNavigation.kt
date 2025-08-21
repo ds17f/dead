@@ -3,7 +3,7 @@ package com.deadly.v2.feature.home.navigation
 import androidx.navigation.NavController
 import androidx.navigation.NavGraphBuilder
 import androidx.navigation.compose.composable
-import com.deadly.v2.feature.home.ui.HomeScreen
+import com.deadly.v2.feature.home.screens.main.HomeScreen
 
 /**
  * Navigation graph for home feature

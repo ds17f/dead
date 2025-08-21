@@ -1,4 +1,4 @@
-package com.deadly.v2.feature.settings.ui.components
+package com.deadly.v2.feature.settings.screens.main
 
 import com.deadly.v2.core.design.scaffold.BarConfiguration
 import com.deadly.v2.core.design.scaffold.BottomBarConfig

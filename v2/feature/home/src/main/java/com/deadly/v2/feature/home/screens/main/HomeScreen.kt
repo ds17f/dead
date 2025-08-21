@@ -1,4 +1,4 @@
-package com.deadly.v2.feature.home.ui
+package com.deadly.v2.feature.home.screens.main
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.*
