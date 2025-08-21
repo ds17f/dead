@@ -31,7 +31,8 @@ fun HomeScreen(
     onNavigateToSearch: () -> Unit,
     onNavigateToLibrary: () -> Unit,
     onNavigateToPlayer: () -> Unit,
-    onNavigateToSettings: () -> Unit
+    onNavigateToSettings: () -> Unit,
+    onNavigateToBottomNav: (() -> Unit)? = null
 ) {
     Box(
         modifier = Modifier

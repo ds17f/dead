@@ -7,11 +7,12 @@ import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.compose.NavHost
+import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.deadly.v2.feature.splash.navigation.splashGraph
-import com.deadly.v2.feature.home.navigation.homeGraph
 import com.deadly.v2.feature.search.navigation.searchGraph
 import com.deadly.v2.feature.settings.navigation.settingsGraph
+import com.deadly.v2.app.MainAppScreen
 import com.deadly.v2.core.theme.api.DeadlyTheme
 import com.deadly.v2.core.theme.api.ThemeAssetProvider
 import com.deadly.v2.core.theme.ThemeManager
@@ -69,8 +70,10 @@ fun MainNavigation(
             // Splash feature - handles V2 database initialization
             splashGraph(navController)
             
-            // Home feature - main navigation hub
-            homeGraph(navController)
+            // Home feature - bottom navigation system
+            composable("home") {
+                MainAppScreen()
+            }
             
             // Search feature - search and browse functionality
             searchGraph(navController)
