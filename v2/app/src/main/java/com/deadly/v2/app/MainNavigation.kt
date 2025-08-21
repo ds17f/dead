@@ -12,7 +12,7 @@ import androidx.navigation.compose.rememberNavController
 import com.deadly.v2.feature.splash.navigation.splashGraph
 import com.deadly.v2.feature.search.navigation.searchGraph
 import com.deadly.v2.feature.settings.navigation.settingsGraph
-import com.deadly.v2.app.MainAppScreen
+import com.deadly.v2.app.UnifiedAppNavigation
 import com.deadly.v2.core.theme.api.DeadlyTheme
 import com.deadly.v2.core.theme.api.ThemeAssetProvider
 import com.deadly.v2.core.theme.ThemeManager
@@ -70,9 +70,9 @@ fun MainNavigation(
             // Splash feature - handles V2 database initialization
             splashGraph(navController)
             
-            // Home feature - bottom navigation system
+            // Home feature - unified navigation system with AppScaffold
             composable("home") {
-                MainAppScreen()
+                UnifiedAppNavigation()
             }
             
             // Search feature - search and browse functionality

@@ -78,3 +78,49 @@ fun AppScaffold(
         content(paddingValues)
     }
 }
+
+/**
+ * Enhanced AppScaffold with BarConfiguration support
+ * 
+ * This version accepts BarConfiguration objects and handles both top and bottom
+ * navigation based on the current route configuration. This is the new unified
+ * layout controller for the V2 app with bottom navigation support.
+ */
+@Composable
+fun AppScaffold(
+    modifier: Modifier = Modifier,
+    topBarConfig: TopBarConfig? = null,
+    bottomBarConfig: BottomBarConfig? = null,
+    bottomNavigationContent: (@Composable () -> Unit)? = null,
+    onNavigationClick: (() -> Unit)? = null,
+    content: @Composable (PaddingValues) -> Unit
+) {
+    Scaffold(
+        modifier = modifier,
+        topBar = {
+            topBarConfig?.let { config ->
+                TopBar(
+                    title = config.title,
+                    mode = config.mode,
+                    navigationIcon = config.navigationIcon,
+                    actions = config.actions?.let { actions ->
+                        { actions() }
+                    } ?: {},
+                    onNavigationClick = onNavigationClick
+                )
+            }
+        },
+        bottomBar = {
+            if (bottomBarConfig?.visible == true && bottomNavigationContent != null) {
+                bottomNavigationContent()
+            }
+        },
+        contentWindowInsets = when (topBarConfig?.mode) {
+            TopBarMode.SOLID -> WindowInsets.systemBars
+            TopBarMode.IMMERSIVE -> WindowInsets(0, 0, 0, 0)
+            null -> WindowInsets.systemBars
+        }
+    ) { paddingValues ->
+        content(paddingValues)
+    }
+}
