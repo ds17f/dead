@@ -99,7 +99,7 @@ fun SearchScreen(
                     searchQuery = uiState.searchQuery,
                     onSearchQueryChange = viewModel::onSearchQueryChanged,
                     onFocusReceived = onNavigateToSearchResults,
-                    modifier = Modifier.padding(horizontal = 16.dp, vertical = 8.dp)
+                    modifier = Modifier.padding(vertical = 8.dp)
                 )
             }
             
@@ -256,7 +256,7 @@ private fun SearchBrowseSection(
     Column(
         modifier = Modifier
             .fillMaxWidth()
-            .padding(horizontal = 16.dp, vertical = 8.dp)
+            .padding(vertical = 8.dp)
     ) {
         Text(
             text = "Start Browsing",
@@ -349,7 +349,7 @@ private fun SearchDiscoverSection(
     Column(
         modifier = Modifier
             .fillMaxWidth()
-            .padding(horizontal = 16.dp, vertical = 8.dp)
+            .padding(vertical = 8.dp)
     ) {
         Text(
             text = "Discover Something New",
@@ -425,7 +425,7 @@ private fun SearchBrowseAllSection(
     Column(
         modifier = Modifier
             .fillMaxWidth()
-            .padding(horizontal = 16.dp, vertical = 8.dp)
+            .padding(vertical = 8.dp)
     ) {
         Text(
             text = "Browse All",
