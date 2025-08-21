@@ -2,9 +2,8 @@ package com.deadly.v2.app.navigation
 
 // Re-export core design configuration types for convenience
 import com.deadly.v2.core.design.scaffold.BarConfiguration
-import com.deadly.v2.core.design.scaffold.TopBarConfig  
 import com.deadly.v2.core.design.scaffold.BottomBarConfig
-import com.deadly.v2.core.design.scaffold.BottomBarStyle
+import com.deadly.v2.feature.home.ui.HomeBarConfiguration
 
 /**
  * Central route mapping to feature bar configurations
@@ -15,7 +14,7 @@ import com.deadly.v2.core.design.scaffold.BottomBarStyle
 object NavigationBarConfig {
     fun getBarConfig(route: String?): BarConfiguration = when (route) {
         // Home routes
-        "home" -> com.deadly.v2.feature.home.HomeBarConfiguration.getHomeBarConfig()
+        "home" -> HomeBarConfiguration.getHomeBarConfig()
         
         // Search routes - delegate to SearchBarConfiguration
         "search-main" -> com.deadly.v2.feature.search.ui.components.SearchBarConfiguration.getSearchBarConfig()

@@ -21,7 +21,6 @@ import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.navigation
 import androidx.navigation.compose.rememberNavController
 import com.deadly.v2.app.navigation.BottomNavDestination
-import com.deadly.v2.app.screens.BottomNavSettingsScreen
 import com.deadly.v2.core.theme.api.ThemeAssets
 
 /**
@@ -111,9 +110,9 @@ fun MainAppScreen(
                 LibraryPlaceholderScreen()
             }
             
-            // Settings screen - use adapted V2 SettingsScreen for bottom nav
+            // Settings screen - placeholder (MainAppScreen appears to be unused)
             composable(BottomNavDestination.Settings.route) {
-                BottomNavSettingsScreen()
+                // TODO: Replace with actual settings screen if this file is still used
             }
         }
     }

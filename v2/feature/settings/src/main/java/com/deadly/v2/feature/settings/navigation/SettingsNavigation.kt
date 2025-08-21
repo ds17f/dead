@@ -27,9 +27,7 @@ fun NavGraphBuilder.settingsScreen(
     onNavigateBack: () -> Unit
 ) {
     composable(route = SETTINGS_ROUTE) {
-        SettingsScreen(
-            onNavigateBack = onNavigateBack
-        )
+        SettingsScreen()
     }
 }
 

@@ -1,7 +1,6 @@
 package com.deadly.v2.app
 
 import android.util.Log
-import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -14,8 +13,6 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import androidx.hilt.navigation.compose.hiltViewModel
-import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.currentBackStackEntryAsState
@@ -23,14 +20,13 @@ import androidx.navigation.compose.rememberNavController
 import com.deadly.v2.app.navigation.BottomNavDestination
 import com.deadly.v2.app.navigation.NavigationBarConfig
 import com.deadly.v2.core.design.scaffold.AppScaffold
-import com.deadly.v2.feature.home.HomeScreen
+import com.deadly.v2.feature.home.ui.HomeScreen
+import com.deadly.v2.feature.settings.SettingsScreen
 import com.deadly.v2.feature.splash.navigation.splashGraph
 import com.deadly.v2.feature.search.navigation.searchGraph
-import com.deadly.v2.feature.settings.navigation.settingsGraph
 import com.deadly.v2.core.theme.api.DeadlyTheme
 import com.deadly.v2.core.theme.api.ThemeAssetProvider
 import com.deadly.v2.core.theme.ThemeManager
-import javax.inject.Inject
 
 /**
  * MainNavigation - Scalable navigation architecture for V2 app with theme system
@@ -127,7 +123,9 @@ fun MainNavigation(
                 searchGraph(navController)
                 
                 // Settings feature - app configuration
-                settingsGraph(navController)
+                composable("settings") {
+                    SettingsScreen()
+                }
             }
         }
     }

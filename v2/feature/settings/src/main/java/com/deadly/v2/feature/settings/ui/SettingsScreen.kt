@@ -9,37 +9,26 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.deadly.v2.core.design.component.ThemeChooser
-import com.deadly.v2.core.design.component.topbar.TopBarDefaults
-import com.deadly.v2.core.design.component.topbar.TopBarMode
-import com.deadly.v2.core.design.scaffold.AppScaffold
 
 /**
  * SettingsScreen - V2 Settings interface
  * 
+ * Simple settings content for theme management and configuration.
+ * Scaffold-free content designed for use within MainNavigation's AppScaffold.
+ * 
  * Provides access to app configuration options including:
  * - Theme management and import
  * - Future: App preferences, about info, etc.
- * 
- * Following V2 architecture patterns with clean separation
- * between UI and business logic via ViewModel.
  */
 @Composable
 fun SettingsScreen(
-    onNavigateBack: () -> Unit,
     viewModel: SettingsViewModel = hiltViewModel()
 ) {
-    AppScaffold(
-        topBarMode = TopBarMode.SOLID,
-        topBarTitle = "Settings",
-        topBarNavigationIcon = TopBarDefaults.BackNavigationIcon(onNavigateBack)
-    ) { paddingValues ->
-        LazyColumn(
-            modifier = Modifier
-                .fillMaxSize()
-                .padding(paddingValues),
-            contentPadding = PaddingValues(16.dp),
-            verticalArrangement = Arrangement.spacedBy(24.dp)
-        ) {
+    LazyColumn(
+        modifier = Modifier.fillMaxSize(),
+        contentPadding = PaddingValues(16.dp),
+        verticalArrangement = Arrangement.spacedBy(24.dp)
+    ) {
             // Themes Section
             item {
                 SettingsSection(title = "Themes") {
@@ -69,7 +58,6 @@ fun SettingsScreen(
             //         // About app info
             //     }
             // }
-        }
     }
 }
 
