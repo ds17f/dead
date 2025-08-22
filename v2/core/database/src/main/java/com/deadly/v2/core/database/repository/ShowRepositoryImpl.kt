@@ -79,6 +79,19 @@ class ShowRepositoryImpl @Inject constructor(
     
     override suspend fun getShowCount(): Int = showDao.getShowCount()
     
+    // Navigation queries - efficient chronological traversal
+    override suspend fun getNextShowByDate(currentDate: String): Show? {
+        return showDao.getNextShowByDate(currentDate)?.let { 
+            showMappers.entityToDomain(it) 
+        }
+    }
+    
+    override suspend fun getPreviousShowByDate(currentDate: String): Show? {
+        return showDao.getPreviousShowByDate(currentDate)?.let { 
+            showMappers.entityToDomain(it) 
+        }
+    }
+    
     // Recording queries - all return domain models
     override suspend fun getRecordingsForShow(showId: String): List<Recording> {
         return showMappers.recordingEntitiesToDomain(recordingDao.getRecordingsForShow(showId))

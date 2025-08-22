@@ -1,21 +1,24 @@
 package com.deadly.v2.core.playlist.di
 
 import com.deadly.v2.core.api.playlist.PlaylistService
-import com.deadly.v2.core.playlist.service.PlaylistServiceStub
+import com.deadly.v2.core.playlist.service.PlaylistServiceImpl
 import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn
-import dagger.hilt.android.components.ViewModelComponent
+import dagger.hilt.components.SingletonComponent
 
 /**
  * PlaylistModule - Hilt dependency injection for Playlist
+ * 
+ * Updated to use real PlaylistServiceImpl with V2 domain architecture.
+ * Uses SingletonComponent to access ShowRepository from database layer.
  */
 @Module
-@InstallIn(ViewModelComponent::class)
+@InstallIn(SingletonComponent::class)
 abstract class PlaylistModule {
 
     @Binds
     abstract fun bindPlaylistService(
-        playlistServiceStub: PlaylistServiceStub
+        impl: PlaylistServiceImpl
     ): PlaylistService
 }

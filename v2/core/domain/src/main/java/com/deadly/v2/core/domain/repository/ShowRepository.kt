@@ -27,6 +27,10 @@ interface ShowRepository {
     suspend fun getRecentShows(limit: Int = 20): List<Show>
     suspend fun getShowCount(): Int
     
+    // Navigation queries
+    suspend fun getNextShowByDate(currentDate: String): Show?
+    suspend fun getPreviousShowByDate(currentDate: String): Show?
+    
     // Recording queries
     suspend fun getRecordingsForShow(showId: String): List<Recording>
     suspend fun getBestRecordingForShow(showId: String): Recording?
