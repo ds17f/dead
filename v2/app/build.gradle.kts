@@ -56,6 +56,7 @@ dependencies {
     implementation(project(":v2:feature:splash"))
     implementation(project(":v2:feature:home"))
     implementation(project(":v2:feature:search"))
+    implementation(project(":v2:feature:playlist"))
     implementation(project(":v2:feature:settings"))
     
     // Android & Compose

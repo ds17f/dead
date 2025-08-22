@@ -28,9 +28,12 @@ include(":v2:core:theme-api")
 include(":v2:core:theme")
 include(":v2:core:api:search")
 include(":v2:core:search")
+include(":v2:core:api:playlist")
+include(":v2:core:playlist")
 include(":v2:feature:splash")
 include(":v2:feature:home")
 include(":v2:feature:search")
+include(":v2:feature:playlist")
 include(":v2:feature:settings")
 
 // Core modules

@@ -22,8 +22,7 @@ fun NavGraphBuilder.searchGraph(navController: NavController) {
                     // navController.navigate("player/$recordingId")
                 },
                 onNavigateToShow = { showId ->
-                    // TODO: Navigate to show details when implemented
-                    // navController.navigate("show/$showId")
+                    navController.navigate("playlist/$showId")
                 },
                 onNavigateToSearchResults = {
                     navController.navigate("search-results")
@@ -39,8 +38,7 @@ fun NavGraphBuilder.searchGraph(navController: NavController) {
                     navController.popBackStack()
                 },
                 onNavigateToShow = { showId ->
-                    // TODO: Navigate to show details when implemented
-                    // navController.navigate("show/$showId")
+                    navController.navigate("playlist/$showId")
                 },
                 onNavigateToPlayer = { recordingId ->
                     // TODO: Navigate to player when implemented

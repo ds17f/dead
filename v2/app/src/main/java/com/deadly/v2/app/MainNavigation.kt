@@ -24,6 +24,7 @@ import com.deadly.v2.feature.home.screens.main.HomeScreen
 import com.deadly.v2.feature.settings.SettingsScreen
 import com.deadly.v2.feature.splash.navigation.splashGraph
 import com.deadly.v2.feature.search.navigation.searchGraph
+import com.deadly.v2.feature.playlist.navigation.playlistGraph
 import com.deadly.v2.core.theme.api.DeadlyTheme
 import com.deadly.v2.core.theme.api.ThemeAssetProvider
 import com.deadly.v2.core.theme.ThemeManager
@@ -43,6 +44,7 @@ import com.deadly.v2.core.theme.ThemeManager
  * 2. home → search-graph (user taps search)
  * 3. search → search-results (user taps search box)
  * 4. search-results → search (back navigation)
+ * 5. Any screen → playlist/{showId} or playlist/{showId}/{recordingId}
  * 
  * Architecture Benefits:
  * - Scalable: Easy to add new feature subgraphs
@@ -124,6 +126,19 @@ fun MainNavigation(
                 
                 // Search feature - search and browse functionality
                 searchGraph(navController)
+                
+                // Playlist feature - show and recording details
+                playlistGraph(
+                    onNavigateBack = { navController.popBackStack() },
+                    onNavigateToPlayer = { 
+                        // TODO: Navigate to player when implemented
+                        // navController.navigate("player/$recordingId")
+                    },
+                    onNavigateToShow = { showId, recordingId ->
+                        // TODO: Navigate to show details when implemented
+                        // navController.navigate("show/$showId/$recordingId")
+                    }
+                )
                 
                 // Settings feature - app configuration
                 composable("settings") {
