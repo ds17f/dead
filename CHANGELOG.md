@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.50.0] - 2025-08-21
+
+### New Features
+* add file chooser for backup restoration (c0965fb4)
+* complete migration from v1 to v2 architecture with navigation integration (f175112b)
+
+
 ## [0.49.0] - 2025-08-21
 
 ### New Features
@@ -15,8 +22,6 @@
 * eliminate search screen double scaffolding and fix component padding control (db54f877)
 * eliminate settings screen double scaffolding and organize file structure (68e33f3f)
 * consolidate navigation systems by eliminating UnifiedAppNavigation (c9abaf5c)
-
-
 ## [0.48.0] - 2025-08-20
 
 ### New Features
