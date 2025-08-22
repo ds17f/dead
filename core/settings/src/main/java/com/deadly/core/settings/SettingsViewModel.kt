@@ -399,6 +399,18 @@ class SettingsViewModel @Inject constructor(
         )
     }
     
+    /**
+     * Restore library and settings from a specific backup file
+     */
+    fun restoreFromFile(backupFileUri: android.net.Uri) {
+        backupService.restoreFromFile(
+            backupFileUri = backupFileUri,
+            coroutineScope = viewModelScope,
+            onStateChange = { _uiState.value = it },
+            currentState = _uiState.value
+        )
+    }
+    
     // Backup info loading is now handled by SettingsBackupService
     
     /**

@@ -21,6 +21,8 @@ import com.deadly.core.design.component.IconResources
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.activity.compose.rememberLauncherForActivityResult
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
@@ -94,6 +96,15 @@ fun LibraryScreen(
     var showBackupConfirmation by remember { mutableStateOf(false) }
     var showClearConfirmation by remember { mutableStateOf(false) }
     var showRestoreConfirmation by remember { mutableStateOf(false) }
+    
+    // File picker launcher for restore functionality
+    val filePickerLauncher = rememberLauncherForActivityResult(
+        contract = ActivityResultContracts.GetContent()
+    ) { uri ->
+        uri?.let { fileUri ->
+            settingsViewModel.restoreFromFile(fileUri)
+        }
+    }
     
     Column(
         modifier = modifier.fillMaxSize()
@@ -236,7 +247,7 @@ fun LibraryScreen(
                                     onClick = { 
                                         showRestoreConfirmation = true
                                     },
-                                    enabled = hasValidBackup && !isLoading
+                                    enabled = !isLoading  // Always enabled (not loading), regardless of backup availability
                                 ) {
                                     if (isLoading) {
                                         CircularProgressIndicator(
@@ -411,34 +422,68 @@ fun LibraryScreen(
         )
     }
     
-    // Confirmation dialog for restore
+    // Restore options dialog
     if (showRestoreConfirmation) {
         AlertDialog(
             onDismissRequest = { showRestoreConfirmation = false },
             title = { Text("Restore Library") },
             text = { 
-                val backupInfo = latestBackupInfo
-                val message = if (backupInfo != null) {
-                    val formattedDate = remember(backupInfo.createdAt) {
-                        java.text.SimpleDateFormat("MMM d, yyyy 'at' h:mm a", java.util.Locale.getDefault())
-                            .format(java.util.Date(backupInfo.createdAt))
-                    }
-                    "This will restore your library from the backup created on $formattedDate with ${backupInfo.showCount} shows. Continue?"
-                } else {
-                    "This will restore your library from the most recent backup. Continue?"
-                }
-                Text(message)
-            },
-            confirmButton = {
-                TextButton(
-                    onClick = {
-                        showRestoreConfirmation = false
-                        settingsViewModel.restoreLibrary()
-                    }
+                Column(
+                    verticalArrangement = Arrangement.spacedBy(16.dp)
                 ) {
-                    Text("Restore")
+                    val backupInfo = latestBackupInfo
+                    if (backupInfo != null) {
+                        val formattedDate = remember(backupInfo.createdAt) {
+                            java.text.SimpleDateFormat("MMM d, yyyy 'at' h:mm a", java.util.Locale.getDefault())
+                                .format(java.util.Date(backupInfo.createdAt))
+                        }
+                        Text(
+                            text = "Latest backup: $formattedDate with ${backupInfo.showCount} shows",
+                            style = MaterialTheme.typography.bodyMedium
+                        )
+                    }
+                    Text(
+                        text = "Choose how to restore your library:",
+                        style = MaterialTheme.typography.bodyMedium
+                    )
+                    
+                    // Restore from latest backup button
+                    Button(
+                        onClick = {
+                            showRestoreConfirmation = false
+                            settingsViewModel.restoreLibrary()
+                        },
+                        modifier = Modifier.fillMaxWidth(),
+                        enabled = backupInfo != null
+                    ) {
+                        Icon(
+                            painter = IconResources.DataManagement.Restore(),
+                            contentDescription = null,
+                            modifier = Modifier.size(18.dp)
+                        )
+                        Spacer(modifier = Modifier.width(8.dp))
+                        Text("Restore from Latest Backup")
+                    }
+                    
+                    // Choose file button
+                    OutlinedButton(
+                        onClick = {
+                            showRestoreConfirmation = false
+                            filePickerLauncher.launch("application/json")
+                        },
+                        modifier = Modifier.fillMaxWidth()
+                    ) {
+                        Icon(
+                            painter = IconResources.Content.FolderOpen(),
+                            contentDescription = null,
+                            modifier = Modifier.size(18.dp)
+                        )
+                        Spacer(modifier = Modifier.width(8.dp))
+                        Text("Choose Backup File")
+                    }
                 }
             },
+            confirmButton = {},
             dismissButton = {
                 TextButton(onClick = { showRestoreConfirmation = false }) {
                     Text("Cancel")

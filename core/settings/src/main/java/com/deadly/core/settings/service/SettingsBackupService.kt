@@ -211,6 +211,79 @@ class SettingsBackupService @Inject constructor(
     }
     
     /**
+     * Restore library and settings from a specific backup file
+     */
+    fun restoreFromFile(
+        backupFileUri: android.net.Uri,
+        coroutineScope: CoroutineScope,
+        onStateChange: (SettingsUiState) -> Unit,
+        currentState: SettingsUiState
+    ) {
+        coroutineScope.launch {
+            try {
+                Log.d(TAG, "Starting library restore from selected file: $backupFileUri")
+                onStateChange(currentState.copy(isLoading = true, errorMessage = null))
+                
+                // Read the file content using content resolver
+                val backupJson = context.contentResolver.openInputStream(backupFileUri)?.use { inputStream ->
+                    inputStream.bufferedReader().readText()
+                } ?: throw IllegalStateException("Could not read file")
+                
+                Log.d(TAG, "Read backup file content, length: ${backupJson.length}")
+                
+                // Parse the backup data
+                val backupData = backupService.parseBackup(backupJson)
+                if (backupData == null) {
+                    onStateChange(currentState.copy(
+                        isLoading = false,
+                        errorMessage = "Failed to parse backup file. Please select a valid backup file."
+                    ))
+                    return@launch
+                }
+                
+                Log.d(TAG, "Parsed backup with ${backupData.libraryShows.size} shows")
+                
+                // Restore the backup
+                val result = backupService.restoreFromBackup(backupData)
+                
+                when (result) {
+                    is com.deadly.core.backup.RestoreResult.Success -> {
+                        val message = if (result.skippedShows > 0) {
+                            "Restored ${result.restoredShows} shows, skipped ${result.skippedShows} shows not in catalog. Settings: ${if (result.restoredSettings) "restored" else "failed"}"
+                        } else {
+                            "Successfully restored ${result.restoredShows} shows and settings from selected file"
+                        }
+                        
+                        // Refresh backup info after successful restore
+                        loadLatestBackupInfo()
+                        
+                        onStateChange(currentState.copy(
+                            isLoading = false,
+                            successMessage = message
+                        ))
+                        Log.d(TAG, "Restore completed successfully from file - UI message set: $message")
+                    }
+                    
+                    is com.deadly.core.backup.RestoreResult.Error -> {
+                        onStateChange(currentState.copy(
+                            isLoading = false,
+                            errorMessage = "Restore failed: ${result.message}"
+                        ))
+                        Log.e(TAG, "Restore failed: ${result.message}")
+                    }
+                }
+                
+            } catch (e: Exception) {
+                Log.e(TAG, "Failed to restore backup from file", e)
+                onStateChange(currentState.copy(
+                    isLoading = false,
+                    errorMessage = "Failed to restore backup from file: ${e.message}"
+                ))
+            }
+        }
+    }
+    
+    /**
      * Check if a backup is available for restore
      */
     fun hasBackupAvailable(): Boolean {
