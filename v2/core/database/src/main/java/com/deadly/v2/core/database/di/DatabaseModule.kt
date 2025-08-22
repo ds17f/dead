@@ -1,6 +1,7 @@
 package com.deadly.v2.core.database.di
 
 import android.content.Context
+import dagger.Binds
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -12,6 +13,9 @@ import com.deadly.v2.core.database.dao.ShowDao
 import com.deadly.v2.core.database.dao.ShowSearchDao
 import com.deadly.v2.core.database.dao.RecordingDao
 import com.deadly.v2.core.database.dao.DataVersionDao
+import com.deadly.v2.core.database.repository.ShowRepositoryImpl
+import com.deadly.v2.core.domain.repository.ShowRepository
+import kotlinx.serialization.json.Json
 import javax.inject.Singleton
 
 @Module
@@ -50,4 +54,15 @@ object DatabaseModule {
     
     // Services are automatically provided by @Singleton @Inject constructor:
     // - DataImportService
+    // - ShowMappers (uses Json from core:network module)
+}
+
+@Module
+@InstallIn(SingletonComponent::class)
+abstract class DatabaseBindsModule {
+    
+    @Binds
+    abstract fun bindShowRepository(
+        impl: ShowRepositoryImpl
+    ): ShowRepository
 }

@@ -5,10 +5,8 @@ import com.deadly.v2.core.api.search.SearchService
 import com.deadly.v2.core.api.search.SearchFilter
 import com.deadly.v2.core.model.*
 import com.deadly.v2.core.model.V2Database
-import com.deadly.v2.core.database.dao.ShowDao
+import com.deadly.v2.core.domain.repository.ShowRepository
 import com.deadly.v2.core.database.dao.ShowSearchDao
-import com.deadly.v2.core.database.entities.ShowEntity
-import kotlinx.serialization.json.Json
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
@@ -25,7 +23,7 @@ import javax.inject.Singleton
  */
 @Singleton
 class SearchServiceImpl @Inject constructor(
-    @V2Database private val showDao: ShowDao,
+    private val showRepository: ShowRepository,
     @V2Database private val showSearchDao: ShowSearchDao
 ) : SearchService {
     
@@ -69,20 +67,17 @@ class SearchServiceImpl @Inject constructor(
             val showIds = showSearchDao.searchShows(query)
             Log.d(TAG, "FTS5 search returned ${showIds.size} show IDs")
             
-            // Batch lookup for full show entities
-            val shows = if (showIds.isNotEmpty()) {
-                showDao.getShowsByIds(showIds)
-            } else {
-                emptyList<ShowEntity>()
+            // Get domain shows for all IDs (repository handles entity-to-domain conversion)
+            val shows = showIds.mapNotNull { showId -> 
+                showRepository.getShowById(showId)
             }
             
             Log.d(TAG, "Retrieved ${shows.size} full shows")
             
             // Convert to SearchResultShow preserving FTS5 ranking
-            val results = shows.mapIndexed { index: Int, showEntity: ShowEntity ->
+            val results = shows.mapIndexed { index: Int, show ->
                 val ftsRankScore = 1.0f - (index.toFloat() / showIds.size.coerceAtLeast(1))
-                val matchType = determineMatchType(showEntity, query)
-                val show = showEntity.toDomainShow()
+                val matchType = determineMatchType(show, query)
                 
                 SearchResultShow(
                     show = show,
@@ -145,47 +140,14 @@ class SearchServiceImpl @Inject constructor(
         return Result.success(emptyList())
     }
     
-    private fun determineMatchType(showEntity: ShowEntity, query: String): SearchMatchType {
+    private fun determineMatchType(show: Show, query: String): SearchMatchType {
         val queryLower = query.lowercase()
         return when {
-            showEntity.date.contains(queryLower) -> SearchMatchType.YEAR
-            showEntity.venueName.lowercase().contains(queryLower) -> SearchMatchType.VENUE
-            showEntity.city?.lowercase()?.contains(queryLower) == true -> SearchMatchType.LOCATION
+            show.date.contains(queryLower) -> SearchMatchType.YEAR
+            show.venue.name.lowercase().contains(queryLower) -> SearchMatchType.VENUE
+            show.venue.city?.lowercase()?.contains(queryLower) == true -> SearchMatchType.LOCATION
             else -> SearchMatchType.GENERAL
         }
     }
 }
 
-/**
- * Extension function to convert ShowEntity to V2 Show domain model
- */
-private fun ShowEntity.toDomainShow(): Show {
-    return Show(
-        id = showId,
-        date = date,
-        year = year,
-        band = band,
-        venue = Venue(venueName, city, state, country),
-        location = Location.fromRaw(locationRaw, city, state),
-        setlist = Setlist.parse(setlistRaw, setlistStatus),
-        lineup = Lineup.parse(lineupRaw, lineupStatus),
-        recordingIds = recordingsRaw?.parseRecordingIds() ?: emptyList(),
-        bestRecordingId = bestRecordingId,
-        recordingCount = recordingCount,
-        averageRating = averageRating,
-        totalReviews = totalReviews,
-        isInLibrary = isInLibrary,
-        libraryAddedAt = libraryAddedAt
-    )
-}
-
-/**
- * Helper function to parse recording IDs from JSON string
- */
-private fun String.parseRecordingIds(): List<String> {
-    return try {
-        Json.decodeFromString<List<String>>(this)
-    } catch (e: Exception) {
-        emptyList()
-    }
-}
