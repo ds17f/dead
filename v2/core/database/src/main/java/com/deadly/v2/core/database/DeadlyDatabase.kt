@@ -20,7 +20,7 @@ import com.deadly.v2.core.database.dao.DataVersionDao
         RecordingEntity::class,
         DataVersionEntity::class
     ],
-    version = 6,
+    version = 7,
     exportSchema = false
 )
 abstract class DeadlyDatabase : RoomDatabase() {

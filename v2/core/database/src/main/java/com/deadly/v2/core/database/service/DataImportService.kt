@@ -578,21 +578,25 @@ class DataImportService @Inject constructor(
             // Core date components
             add(year)                    // "1977"
             add(year.takeLast(2))        // "77"
-            
-            // Alternative date formats for intuitive searching
-            add("${month.toInt()}-${day.toInt()}-${year.takeLast(2)}")  // "5-8-77"
-            add("${month}-${day}-${year}")                              // "05-08-1977"
-            add("${year}-${month.toInt()}-${day.toInt()}")              // "1977-5-8"
-            add("${month.toInt()}/${day.toInt()}/${year.takeLast(2)}")  // "5/8/77"
-            add("${month}/${day}/${year}")                              // "05/08/1977"
-            
-            // Year/month combinations with complete format parity
-            add("${month.toInt()}-${year.takeLast(2)}")  // "5-77"
-            add("${year}-${month}")                      // "1977-05"
-            add("${year}-${month.toInt()}")              // "1977-5"
-            add("${year.takeLast(2)}-${month.toInt()}")  // "77-5"
-            add("${month.toInt()}/${year.takeLast(2)}")  // "5/77"
-            
+
+            // Original delimiters you were using: -, /, now adding .
+            val delimiters = listOf("-", "/", ".")
+
+            // Day / month / year formats
+            delimiters.forEach { delim ->
+                add("${month.toInt()}$delim${day.toInt()}$delim${year.takeLast(2)}")  // 5-8-77, 5/8/77, 5.8.77
+                add("${month}$delim${day}$delim${year}")                               // 05-08-1977, 05/08/1977, 05.08.1977
+                add("${year}$delim${month.toInt()}$delim${day.toInt()}")               // 1977-5-8, 1977/5/8, 1977.5.8
+            }
+
+            // Month / year formats
+            delimiters.forEach { delim ->
+                add("${month.toInt()}$delim${year.takeLast(2)}")  // 5-77, 5/77, 5.77
+                add("${year}$delim${month}")                      // 1977-05, 1977/05, 1977.05
+                add("${year}$delim${month.toInt()}")             // 1977-5, 1977/5, 1977.5
+                add("${year.takeLast(2)}$delim${month.toInt()}") // 77-5, 77/5, 77.5
+            }
+
             // Century prefix for decade searches
             add(year.take(3))            // "197" (enables 1970s searches)
             

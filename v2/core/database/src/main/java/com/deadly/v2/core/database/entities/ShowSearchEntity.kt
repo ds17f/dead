@@ -16,13 +16,14 @@ import androidx.room.PrimaryKey
  * 
  * FTS4 with unicode61 tokenizer:
  * - Handles dates with dashes (5-8-77) as single tokens
- * - BM25 ranking algorithm for relevance scoring
+ * - Handles dates with dashes (5.8.77) as single tokens
+ * - BM26 ranking algorithm for relevance scoring
  * - tokenchars=- preserves dashes in date tokens
  */
 @Entity(tableName = "show_search")
 @Fts4(
     tokenizer = "unicode61",
-    tokenizerArgs = ["tokenchars=-"]
+    tokenizerArgs = ["tokenchars=-."]
 )
 data class ShowSearchEntity(
     @PrimaryKey(autoGenerate = true) val rowid: Int = 0,
