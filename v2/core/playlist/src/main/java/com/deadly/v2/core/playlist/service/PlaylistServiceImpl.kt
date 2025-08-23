@@ -71,7 +71,10 @@ class PlaylistServiceImpl @Inject constructor(
             val nextShow = showRepository.getNextShowByDate(current.date)
             if (nextShow != null) {
                 currentShow = nextShow
+                // Update recording ID to best recording for new show
+                currentRecordingId = nextShow.bestRecordingId
                 Log.d(TAG, "Navigated to next show: ${nextShow.displayTitle}")
+                Log.d(TAG, "Set recording to best: ${nextShow.bestRecordingId}")
             } else {
                 Log.d(TAG, "No next show available after ${current.date}")
             }
@@ -83,7 +86,10 @@ class PlaylistServiceImpl @Inject constructor(
             val previousShow = showRepository.getPreviousShowByDate(current.date)
             if (previousShow != null) {
                 currentShow = previousShow
+                // Update recording ID to best recording for new show
+                currentRecordingId = previousShow.bestRecordingId
                 Log.d(TAG, "Navigated to previous show: ${previousShow.displayTitle}")
+                Log.d(TAG, "Set recording to best: ${previousShow.bestRecordingId}")
             } else {
                 Log.d(TAG, "No previous show available before ${current.date}")
             }
