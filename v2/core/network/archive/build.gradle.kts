@@ -7,7 +7,7 @@ plugins {
 }
 
 android {
-    namespace = "com.deadly.v2.core.playlist"
+    namespace = "com.deadly.v2.core.network.archive"
     compileSdk = 34
 
     defaultConfig {
@@ -38,18 +38,20 @@ android {
 
 dependencies {
     // V2 dependencies
-    implementation(project(":v2:core:api:playlist"))
     implementation(project(":v2:core:model"))
-    implementation(project(":v2:core:domain"))
-    implementation(project(":v2:core:network:archive"))
-
+    
+    // Networking
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation("com.jakewharton.retrofit:retrofit2-kotlinx-serialization-converter:1.0.0")
+    implementation("com.squareup.okhttp3:okhttp:4.12.0")
+    
+    // Serialization
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.3")
+    
     // Hilt
     implementation("com.google.dagger:hilt-android:2.51.1")
     kapt("com.google.dagger:hilt-compiler:2.51.1")
-
+    
     // Coroutines
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
-
-    // Serialization
-    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.3")
 }

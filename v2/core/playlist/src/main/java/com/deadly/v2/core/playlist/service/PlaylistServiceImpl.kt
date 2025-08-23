@@ -4,24 +4,28 @@ import android.util.Log
 import com.deadly.v2.core.api.playlist.PlaylistService
 import com.deadly.v2.core.domain.repository.ShowRepository
 import com.deadly.v2.core.model.*
+import com.deadly.v2.core.network.archive.service.ArchiveService
 import javax.inject.Inject
 import javax.inject.Singleton
 
 /**
  * PlaylistServiceImpl - Real implementation using V2 domain architecture
  * 
- * Integrates with ShowRepository for real database operations and efficient
- * chronological navigation. Converts domain models to UI ViewModels.
+ * Integrates with ShowRepository for real database operations, efficient
+ * chronological navigation, and ArchiveService for track/review data.
  * 
  * Phase 1 Implementation:
  * ✅ Real show loading from database
  * ✅ Real chronological navigation 
  * ✅ Domain model → ViewModel conversion
- * 🔲 Stubbed: Track lists, media operations, service integrations (marked with TODOs)
+ * ✅ Real track lists from Archive.org API
+ * ✅ Real reviews from Archive.org API
+ * 🔲 Stubbed: Media operations, library/download integrations (marked with TODOs)
  */
 @Singleton
 class PlaylistServiceImpl @Inject constructor(
-    private val showRepository: ShowRepository
+    private val showRepository: ShowRepository,
+    private val archiveService: ArchiveService
 ) : PlaylistService {
     
     companion object {
@@ -32,6 +36,7 @@ class PlaylistServiceImpl @Inject constructor(
     }
     
     private var currentShow: Show? = null
+    private var currentRecordingId: String? = null
     
     // === PHASE 1: REAL IMPLEMENTATIONS ===
     
@@ -47,6 +52,9 @@ class PlaylistServiceImpl @Inject constructor(
         
         if (currentShow != null) {
             Log.d(TAG, "Loaded show: ${currentShow!!.displayTitle}")
+            // Set default recording to best recording for this show
+            currentRecordingId = currentShow!!.bestRecordingId
+            Log.d(TAG, "Set current recording to best: $currentRecordingId")
         } else {
             Log.w(TAG, "Failed to load show with ID: $showId")
         }
@@ -127,13 +135,43 @@ class PlaylistServiceImpl @Inject constructor(
     // === PHASE 1: STUBBED IMPLEMENTATIONS (TODOs) ===
     
     override suspend fun getTrackList(): List<PlaylistTrackViewModel> {
-        Log.d(TAG, "getTrackList() - TODO: Implement when Archive API integration is ready")
-        // TODO: Convert Recording domain models to PlaylistTrackViewModel
-        // TODO: Integration requires Archive API for track-level metadata
-        currentShow?.let { show ->
-            Log.d(TAG, "Current show has ${show.recordingIds.size} recordings available for track list generation")
+        Log.d(TAG, "getTrackList() - Real implementation using ArchiveService")
+        
+        val recordingId = currentRecordingId
+        if (recordingId == null) {
+            Log.w(TAG, "No current recording ID set")
+            return emptyList()
         }
-        return emptyList()
+        
+        return try {
+            Log.d(TAG, "Fetching tracks for recording: $recordingId")
+            val result = archiveService.getRecordingTracks(recordingId)
+            
+            if (result.isSuccess) {
+                val tracks = result.getOrNull() ?: emptyList()
+                Log.d(TAG, "Got ${tracks.size} tracks from ArchiveService")
+                
+                // Convert Track domain models to PlaylistTrackViewModel
+                tracks.map { track ->
+                    PlaylistTrackViewModel(
+                        number = track.trackNumber ?: 0,
+                        title = track.title ?: track.name,
+                        duration = track.duration ?: "0:00",
+                        format = track.format,
+                        isDownloaded = false, // TODO: Check download status
+                        downloadProgress = null,
+                        isCurrentTrack = false,
+                        isPlaying = false
+                    )
+                }
+            } else {
+                Log.e(TAG, "Error fetching tracks: ${result.exceptionOrNull()}")
+                emptyList()
+            }
+        } catch (e: Exception) {
+            Log.e(TAG, "Exception in getTrackList", e)
+            emptyList()
+        }
     }
     
     override suspend fun playTrack(trackIndex: Int) {
@@ -188,13 +226,40 @@ class PlaylistServiceImpl @Inject constructor(
     }
     
     override suspend fun getCurrentReviews(): List<PlaylistReview> {
-        currentShow?.let { show ->
-            Log.d(TAG, "getCurrentReviews() for ${show.displayTitle} - TODO: Implement when Archive API integration is ready")
-            Log.d(TAG, "Show has ${show.totalReviews} total reviews available")
+        Log.d(TAG, "getCurrentReviews() - Real implementation using ArchiveService")
+        
+        val recordingId = currentRecordingId
+        if (recordingId == null) {
+            Log.w(TAG, "No current recording ID set")
+            return emptyList()
         }
-        // TODO: Load reviews from Archive API when integration is ready
-        // TODO: Convert Archive API review data to PlaylistReview ViewModels
-        return emptyList()
+        
+        return try {
+            Log.d(TAG, "Fetching reviews for recording: $recordingId")
+            val result = archiveService.getRecordingReviews(recordingId)
+            
+            if (result.isSuccess) {
+                val reviews = result.getOrNull() ?: emptyList()
+                Log.d(TAG, "Got ${reviews.size} reviews from ArchiveService")
+                
+                // Convert Review domain models to PlaylistReview ViewModels
+                reviews.map { review ->
+                    PlaylistReview(
+                        username = review.reviewer ?: "Anonymous",
+                        rating = review.rating ?: 0,
+                        stars = (review.rating ?: 0).toDouble(),
+                        reviewText = review.body ?: "",
+                        reviewDate = review.reviewDate ?: ""
+                    )
+                }
+            } else {
+                Log.e(TAG, "Error fetching reviews: ${result.exceptionOrNull()}")
+                emptyList()
+            }
+        } catch (e: Exception) {
+            Log.e(TAG, "Exception in getCurrentReviews", e)
+            emptyList()
+        }
     }
     
     override suspend fun getRatingDistribution(): Map<Int, Int> {
@@ -225,11 +290,17 @@ class PlaylistServiceImpl @Inject constructor(
     
     override suspend fun selectRecording(recordingId: String) {
         currentShow?.let { show ->
-            Log.d(TAG, "selectRecording($recordingId) for ${show.displayTitle} - TODO: Implement recording selection")
-        }
-        // TODO: Implement recording selection logic
-        // TODO: Update current recording and notify media service
-        // TODO: Refresh track list for new recording
+            Log.d(TAG, "selectRecording($recordingId) for ${show.displayTitle} - Real implementation")
+            
+            // Update current recording
+            if (show.recordingIds.contains(recordingId)) {
+                currentRecordingId = recordingId
+                Log.d(TAG, "Selected recording: $recordingId")
+                // TODO: Notify media service of recording change
+            } else {
+                Log.w(TAG, "Recording $recordingId not found in show recording list")
+            }
+        } ?: Log.w(TAG, "Cannot select recording: no current show loaded")
     }
     
     override suspend fun setRecordingAsDefault(recordingId: String) {

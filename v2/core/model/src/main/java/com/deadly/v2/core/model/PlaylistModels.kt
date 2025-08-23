@@ -131,3 +131,52 @@ data class PlaylistUiState(
     // Recording selection modal state
     val recordingSelection: RecordingSelectionState = RecordingSelectionState()
 )
+
+// === Archive Domain Models ===
+
+/**
+ * Track domain model for V2 Archive integration
+ */
+@Serializable
+data class Track(
+    val name: String,
+    val title: String? = null,
+    val trackNumber: Int? = null,
+    val duration: String? = null,
+    val format: String,
+    val size: String? = null,
+    val bitrate: String? = null,
+    val sampleRate: String? = null,
+    val isAudio: Boolean = true
+)
+
+/**
+ * Review domain model for V2 Archive integration
+ */
+@Serializable
+data class Review(
+    val reviewer: String?,
+    val title: String? = null,
+    val body: String? = null,
+    val rating: Int? = null,
+    val reviewDate: String? = null
+)
+
+/**
+ * Recording metadata domain model for V2 Archive integration
+ */
+@Serializable
+data class RecordingMetadata(
+    val identifier: String,
+    val title: String,
+    val date: String? = null,
+    val venue: String? = null,
+    val description: String? = null,
+    val setlist: String? = null,
+    val source: String? = null,
+    val taper: String? = null,
+    val transferer: String? = null,
+    val lineage: String? = null,
+    val totalTracks: Int = 0,
+    val totalReviews: Int = 0
+)
