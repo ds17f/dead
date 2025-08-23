@@ -5,8 +5,11 @@ import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
+import java.io.File
+import kotlin.system.exitProcess
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.deadly.v2.core.design.component.ThemeChooser
 
@@ -43,6 +46,13 @@ fun SettingsScreen(
                         onClearThemes = viewModel::onClearThemes,
                         modifier = Modifier.fillMaxWidth()
                     )
+                }
+            }
+            
+            // V1 App Restore Section
+            item {
+                SettingsSection(title = "App Version") {
+                    BackToV1Button(modifier = Modifier.fillMaxWidth())
                 }
             }
             
@@ -142,5 +152,62 @@ private fun ClearThemesButton(
                 }
             }
         )
+    }
+}
+
+/**
+ * Button to restore V1 app with confirmation dialog
+ */
+@Composable
+private fun BackToV1Button(
+    modifier: Modifier = Modifier
+) {
+    val context = LocalContext.current
+    var showConfirmDialog by remember { mutableStateOf(false) }
+    
+    OutlinedButton(
+        onClick = { showConfirmDialog = true },
+        modifier = modifier,
+        colors = ButtonDefaults.outlinedButtonColors(
+            contentColor = MaterialTheme.colorScheme.primary
+        )
+    ) {
+        Text("Back to V1 App")
+    }
+    
+    if (showConfirmDialog) {
+        AlertDialog(
+            onDismissRequest = { showConfirmDialog = false },
+            title = { Text("Return to V1 App") },
+            text = { 
+                Text("This will restart the app and return to the original V1 interface.") 
+            },
+            confirmButton = {
+                TextButton(
+                    onClick = {
+                        showConfirmDialog = false
+                        disableV2App(context)
+                    }
+                ) {
+                    Text("OK")
+                }
+            },
+            dismissButton = {
+                TextButton(onClick = { showConfirmDialog = false }) {
+                    Text("Cancel")
+                }
+            }
+        )
+    }
+}
+
+private fun disableV2App(context: android.content.Context) {
+    try {
+        val toggleFile = File(context.filesDir, "enable-v2-app")
+        toggleFile.delete()
+        // Restart app
+        exitProcess(0)
+    } catch (e: Exception) {
+        // Simple error handling - just ignore for now since this is temporary
     }
 }

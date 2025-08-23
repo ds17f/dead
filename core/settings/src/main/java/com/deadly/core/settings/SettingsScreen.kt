@@ -11,9 +11,12 @@ import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import java.io.File
+import kotlin.system.exitProcess
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.deadly.core.settings.api.model.AppSettings
 import com.deadly.core.settings.api.model.ThemeMode
@@ -302,6 +305,9 @@ private fun DeveloperOptionsCard(
     onResetSettings: () -> Unit,
     onClearV2Database: () -> Unit
 ) {
+    val context = LocalContext.current
+    var showV2Dialog by remember { mutableStateOf(false) }
+    
     Card(
         modifier = Modifier.fillMaxWidth()
     ) {
@@ -552,6 +558,19 @@ private fun DeveloperOptionsCard(
             
             Spacer(modifier = Modifier.height(8.dp))
             
+            // V2 App Toggle
+            OutlinedButton(
+                onClick = { showV2Dialog = true },
+                modifier = Modifier.fillMaxWidth(),
+                colors = ButtonDefaults.outlinedButtonColors(
+                    contentColor = MaterialTheme.colorScheme.primary
+                )
+            ) {
+                Text("Enable V2 App")
+            }
+            
+            Spacer(modifier = Modifier.height(8.dp))
+            
             OutlinedButton(
                 onClick = onResetSettings,
                 modifier = Modifier.fillMaxWidth(),
@@ -562,6 +581,19 @@ private fun DeveloperOptionsCard(
                 Text("Reset All Settings")
             }
         }
+    }
+    
+    // V2 App Confirmation Dialog
+    if (showV2Dialog) {
+        V2AppToggleDialog(
+            title = "Enable V2 App",
+            message = "This will restart the app and enable the new V2 interface.",
+            onConfirm = {
+                showV2Dialog = false
+                enableV2App(context)
+            },
+            onDismiss = { showV2Dialog = false }
+        )
     }
 }
 
@@ -883,5 +915,40 @@ private fun formatTimestamp(timestamp: Long): String {
         diff < 3600_000 -> "${diff / 60_000}m ago"
         diff < 86400_000 -> "${diff / 3600_000}h ago"
         else -> "${diff / 86400_000}d ago"
+    }
+}
+
+@Composable
+private fun V2AppToggleDialog(
+    title: String,
+    message: String,
+    onConfirm: () -> Unit,
+    onDismiss: () -> Unit
+) {
+    AlertDialog(
+        onDismissRequest = onDismiss,
+        title = { Text(title) },
+        text = { Text(message) },
+        confirmButton = {
+            TextButton(onClick = onConfirm) {
+                Text("OK")
+            }
+        },
+        dismissButton = {
+            TextButton(onClick = onDismiss) {
+                Text("Cancel")
+            }
+        }
+    )
+}
+
+private fun enableV2App(context: android.content.Context) {
+    try {
+        val toggleFile = File(context.filesDir, "enable-v2-app")
+        toggleFile.createNewFile()
+        // Restart app
+        exitProcess(0)
+    } catch (e: Exception) {
+        // Simple error handling - just ignore for now since this is temporary
     }
 }
