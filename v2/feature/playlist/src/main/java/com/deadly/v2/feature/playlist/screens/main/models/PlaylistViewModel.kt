@@ -110,6 +110,8 @@ class PlaylistViewModel @Inject constructor(
     fun navigateToPreviousShow() {
         viewModelScope.launch {
             try {
+                // TODO: Cancel distant prefetches in future iteration
+                
                 // Navigate in service (updates show instantly)
                 playlistService.navigateToPreviousShow()
                 
@@ -124,7 +126,7 @@ class PlaylistViewModel @Inject constructor(
                 
                 Log.d(TAG, "Navigated to previous show: ${showData?.displayDate} - showing DB data immediately")
                 
-                // Start track loading in background (cancellable)
+                // Start track loading with smart prefetch promotion
                 loadTrackListAsync()
                 
             } catch (e: Exception) {
@@ -139,6 +141,8 @@ class PlaylistViewModel @Inject constructor(
     fun navigateToNextShow() {
         viewModelScope.launch {
             try {
+                // TODO: Cancel distant prefetches in future iteration
+                
                 // Navigate in service (updates show instantly)
                 playlistService.navigateToNextShow()
                 
@@ -153,7 +157,7 @@ class PlaylistViewModel @Inject constructor(
                 
                 Log.d(TAG, "Navigated to next show: ${showData?.displayDate} - showing DB data immediately")
                 
-                // Start track loading in background (cancellable)
+                // Start track loading with smart prefetch promotion
                 loadTrackListAsync()
                 
             } catch (e: Exception) {
@@ -532,13 +536,21 @@ class PlaylistViewModel @Inject constructor(
     }
     
     /**
-     * Load track list asynchronously with cancellation support
+     * Load track list asynchronously with smart prefetch promotion
      * Shows loading spinner over track section only
      */
     private fun loadTrackListAsync() {
         // Cancel any previous track loading
         trackLoadingJob?.cancel()
         
+        // Load tracks directly - internal prefetch is transparent
+        loadTracksFromService()
+    }
+    
+    /**
+     * Load tracks from service (either fresh or from cache)
+     */
+    private fun loadTracksFromService() {
         // Start track loading with spinner
         _uiState.value = _uiState.value.copy(
             isTrackListLoading = true,
@@ -557,6 +569,9 @@ class PlaylistViewModel @Inject constructor(
                 
                 Log.d(TAG, "Track list loaded: ${trackData.size} tracks")
                 
+                // Start background prefetching after current tracks load
+                startAdjacentPrefetch()
+                
             } catch (e: Exception) {
                 Log.e(TAG, "Error loading track list", e)
                 _uiState.value = _uiState.value.copy(
@@ -565,5 +580,25 @@ class PlaylistViewModel @Inject constructor(
                 )
             }
         }
+    }
+    
+    /**
+     * Cancel prefetches that are no longer adjacent after navigation
+     * (Internal prefetching handles this automatically)
+     */
+    private suspend fun cancelDistantPrefetches(direction: String) {
+        // Prefetching is now handled internally by the service
+        // No explicit cancel calls needed in ViewModel
+        Log.d(TAG, "Prefetch cleanup handled internally after $direction navigation")
+    }
+    
+    /**
+     * Start prefetching adjacent shows in background
+     * (Internal prefetching handles this automatically)
+     */
+    private fun startAdjacentPrefetch() {
+        // Prefetching is now handled internally by the service
+        // No explicit prefetch calls needed in ViewModel
+        Log.d(TAG, "Prefetch started internally for adjacent shows")
     }
 }

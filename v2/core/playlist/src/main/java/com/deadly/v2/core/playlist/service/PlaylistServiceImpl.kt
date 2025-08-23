@@ -5,8 +5,12 @@ import com.deadly.v2.core.api.playlist.PlaylistService
 import com.deadly.v2.core.domain.repository.ShowRepository
 import com.deadly.v2.core.model.*
 import com.deadly.v2.core.network.archive.service.ArchiveService
+import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Job
+import kotlinx.coroutines.launch
+import java.util.concurrent.ConcurrentHashMap
 import javax.inject.Inject
+import javax.inject.Named
 import javax.inject.Singleton
 
 /**
@@ -26,18 +30,28 @@ import javax.inject.Singleton
 @Singleton
 class PlaylistServiceImpl @Inject constructor(
     private val showRepository: ShowRepository,
-    private val archiveService: ArchiveService
+    private val archiveService: ArchiveService,
+    @Named("PlaylistApplicationScope") private val coroutineScope: CoroutineScope
 ) : PlaylistService {
+    
+    
+    private var currentShow: Show? = null
+    private var currentRecordingId: String? = null
+    
+    // Internal prefetch cache for transparent optimization
+    private val trackCache = ConcurrentHashMap<String, List<Track>>()
+    private val prefetchJobs = ConcurrentHashMap<String, Job>()
     
     companion object {
         private const val TAG = "PlaylistServiceImpl"
         
         // Default show ID (Cornell '77) for fallback
         private const val DEFAULT_SHOW_ID = "1977-05-08"
+        
+        // Prefetch priorities
+        const val PREFETCH_NEXT = "next"
+        const val PREFETCH_PREVIOUS = "previous"
     }
-    
-    private var currentShow: Show? = null
-    private var currentRecordingId: String? = null
     
     
     // === PHASE 1: REAL IMPLEMENTATIONS ===
@@ -143,7 +157,7 @@ class PlaylistServiceImpl @Inject constructor(
     // === PHASE 1: STUBBED IMPLEMENTATIONS (TODOs) ===
     
     override suspend fun getTrackList(): List<PlaylistTrackViewModel> {
-        Log.d(TAG, "getTrackList() - Real implementation using ArchiveService")
+        Log.d(TAG, "getTrackList() - Cache-first implementation with prefetch")
         
         val recordingId = currentRecordingId
         if (recordingId == null) {
@@ -151,31 +165,37 @@ class PlaylistServiceImpl @Inject constructor(
             return emptyList()
         }
         
+        // 1. Check internal cache first
+        val cachedTracks = trackCache[recordingId]
+        if (cachedTracks != null) {
+            Log.d(TAG, "Cache HIT for recording: $recordingId (${cachedTracks.size} tracks)")
+            val filteredTracks = filterPreferredAudioTracks(cachedTracks)
+            // Start background prefetch for adjacent shows after cache hit
+            startAdjacentPrefetch()
+            return convertTracksToViewModels(filteredTracks)
+        }
+        
+        // 2. Cache miss - load from Archive.org API
         return try {
-            Log.d(TAG, "Fetching tracks for recording: $recordingId")
+            Log.d(TAG, "Cache MISS - Fetching tracks for recording: $recordingId")
             val result = archiveService.getRecordingTracks(recordingId)
             
             if (result.isSuccess) {
                 val allTracks = result.getOrNull() ?: emptyList()
                 Log.d(TAG, "Got ${allTracks.size} tracks from ArchiveService")
                 
+                // Store in cache for future requests
+                trackCache[recordingId] = allTracks
+                
                 // Apply smart audio format filtering (business logic)
                 val filteredTracks = filterPreferredAudioTracks(allTracks)
                 Log.d(TAG, "Filtered to ${filteredTracks.size} preferred audio tracks")
                 
-                // Convert Track domain models to PlaylistTrackViewModel
-                filteredTracks.map { track ->
-                    PlaylistTrackViewModel(
-                        number = track.trackNumber ?: 0,
-                        title = track.title ?: track.name,
-                        duration = track.duration ?: "0:00",
-                        format = track.format,
-                        isDownloaded = false, // TODO: Check download status
-                        downloadProgress = null,
-                        isCurrentTrack = false,
-                        isPlaying = false
-                    )
-                }
+                // Start background prefetch for adjacent shows
+                startAdjacentPrefetch()
+                
+                // Convert to ViewModels
+                convertTracksToViewModels(filteredTracks)
             } else {
                 Log.e(TAG, "Error fetching tracks: ${result.exceptionOrNull()}")
                 emptyList()
@@ -334,11 +354,74 @@ class PlaylistServiceImpl @Inject constructor(
     }
     
     override fun cancelTrackLoading() {
-        Log.d(TAG, "cancelTrackLoading() - TODO: Implement job cancellation")
-        // TODO: Implement proper job cancellation if needed
+        Log.d(TAG, "cancelTrackLoading() - Clearing prefetch jobs and cache")
+        // Cancel all prefetch jobs and clear cache when explicitly requested
+        prefetchJobs.values.forEach { it.cancel() }
+        prefetchJobs.clear()
+        trackCache.clear()
     }
     
     // === PRIVATE HELPER METHODS ===
+    
+    /**
+     * Convert Track domain models to PlaylistTrackViewModel display models
+     */
+    private fun convertTracksToViewModels(tracks: List<Track>): List<PlaylistTrackViewModel> {
+        return tracks.mapIndexed { index, track ->
+            PlaylistTrackViewModel(
+                number = index + 1,
+                title = track.title ?: track.name,
+                duration = track.duration ?: "",
+                format = track.format,
+                isDownloaded = false,     // TODO: Integrate with download service
+                downloadProgress = null,  // TODO: Integrate with download service
+                isCurrentTrack = false,   // TODO: Integrate with media service to determine current track
+                isPlaying = false         // TODO: Integrate with media service for playback state
+            )
+        }
+    }
+    
+    /**
+     * Start background prefetch for adjacent shows (next/previous)
+     */
+    private fun startAdjacentPrefetch() {
+        currentShow?.let { current ->
+            coroutineScope.launch {
+                try {
+                    Log.d(TAG, "Starting adjacent prefetch for current show: ${current.displayTitle}")
+                    
+                    // Get next and previous shows
+                    val nextShow = showRepository.getNextShowByDate(current.date)
+                    val previousShow = showRepository.getPreviousShowByDate(current.date)
+                    
+                    // Prefetch next show
+                    nextShow?.let { show ->
+                        val recordingId = show.bestRecordingId
+                        if (recordingId != null && !trackCache.containsKey(recordingId)) {
+                            startPrefetchInternal(show, recordingId, "next")
+                        } else {
+                            Log.d(TAG, "Skipping next show prefetch: recordingId=$recordingId, cached=${trackCache.containsKey(recordingId ?: "")}")
+                        }
+                    }
+                    
+                    // Prefetch previous show  
+                    previousShow?.let { show ->
+                        val recordingId = show.bestRecordingId
+                        if (recordingId != null && !trackCache.containsKey(recordingId)) {
+                            startPrefetchInternal(show, recordingId, "previous")
+                        } else {
+                            Log.d(TAG, "Skipping previous show prefetch: recordingId=$recordingId, cached=${trackCache.containsKey(recordingId ?: "")}")
+                        }
+                    }
+                    
+                    Log.d(TAG, "Adjacent prefetch initiated - Next: ${nextShow?.displayTitle ?: "none"}, Previous: ${previousShow?.displayTitle ?: "none"}")
+                    
+                } catch (e: Exception) {
+                    Log.e(TAG, "Error in startAdjacentPrefetch", e)
+                }
+            }
+        } ?: Log.d(TAG, "No current show set, skipping adjacent prefetch")
+    }
     
     /**
      * Smart audio format filtering with priority-based selection
@@ -395,5 +478,127 @@ class PlaylistServiceImpl @Inject constructor(
         val audioTracks = tracks.filter { it.isAudio }
         Log.d(TAG, "Using ${audioTracks.size} generic audio tracks as last resort")
         return audioTracks
+    }
+    
+    // === PREFETCH MANAGEMENT ===
+    
+    /**
+     * Internal prefetch method using service's coroutine scope
+     */
+    private fun startPrefetchInternal(show: Show, recordingId: String, priority: String) {
+        // Don't prefetch if already in progress
+        if (prefetchJobs[recordingId]?.isActive == true) {
+            Log.d(TAG, "Prefetch already active for recording: $recordingId")
+            return
+        }
+        
+        Log.d(TAG, "Starting $priority prefetch for ${show.displayTitle} (recording: $recordingId)")
+        
+        val job = coroutineScope.launch {
+            try {
+                val result = archiveService.getRecordingTracks(recordingId)
+                
+                if (result.isSuccess) {
+                    val allTracks = result.getOrNull() ?: emptyList()
+                    val filteredTracks = filterPreferredAudioTracks(allTracks)
+                    
+                    // Store in cache - THIS WAS MISSING
+                    trackCache[recordingId] = allTracks
+                    
+                    Log.d(TAG, "Prefetch completed for ${show.displayTitle}: ${filteredTracks.size} tracks cached")
+                } else {
+                    Log.w(TAG, "Prefetch failed for ${show.displayTitle}: ${result.exceptionOrNull()}")
+                }
+            } catch (e: Exception) {
+                Log.e(TAG, "Prefetch error for ${show.displayTitle}", e)
+            } finally {
+                // Remove from active prefetches when complete
+                prefetchJobs.remove(recordingId)
+            }
+        }
+        
+        prefetchJobs[recordingId] = job
+    }
+    
+    /**
+     * Check if we have an active prefetch for a specific show
+     */
+    fun hasPrefetchFor(showId: String): Boolean {
+        return prefetchJobs[showId]?.isActive == true
+    }
+    
+    /**
+     * Start prefetching tracks for a show in background
+     */
+    fun startPrefetch(show: Show, priority: String, coroutineScope: CoroutineScope): Job? {
+        val showId = show.date
+        
+        // Don't prefetch if already in progress
+        if (hasPrefetchFor(showId)) {
+            Log.d(TAG, "Prefetch already active for show: $showId")
+            return prefetchJobs[showId]
+        }
+        
+        Log.d(TAG, "Starting $priority prefetch for show: ${show.displayTitle}")
+        
+        val job = coroutineScope.launch {
+            try {
+                val result = archiveService.getRecordingTracks(show.bestRecordingId ?: "")
+                
+                if (result.isSuccess) {
+                    val tracks = result.getOrNull() ?: emptyList()
+                    val filteredTracks = filterPreferredAudioTracks(tracks)
+                    
+                    // Store in cache - FIX: This was missing before
+                    trackCache[show.bestRecordingId ?: ""] = tracks
+                    
+                    Log.d(TAG, "Prefetch completed for ${show.displayTitle}: ${filteredTracks.size} tracks cached")
+                } else {
+                    Log.w(TAG, "Prefetch failed for ${show.displayTitle}: ${result.exceptionOrNull()}")
+                }
+            } catch (e: Exception) {
+                Log.e(TAG, "Prefetch error for ${show.displayTitle}", e)
+            } finally {
+                // Remove from active prefetches when complete
+                prefetchJobs.remove(showId)
+            }
+        }
+        
+        prefetchJobs[showId] = job
+        return job
+    }
+    
+    /**
+     * Promote a prefetch request to current priority (don't cancel it)
+     */
+    fun promotePrefetch(showId: String): Job? {
+        val existingJob = prefetchJobs[showId]
+        if (existingJob?.isActive == true) {
+            Log.d(TAG, "Promoting prefetch for show: $showId to current priority")
+            return existingJob
+        }
+        return null
+    }
+    
+    /**
+     * Cancel prefetch for a specific show
+     */
+    fun cancelPrefetch(showId: String) {
+        prefetchJobs[showId]?.let { job ->
+            Log.d(TAG, "Cancelling prefetch for show: $showId")
+            job.cancel()
+            prefetchJobs.remove(showId)
+        }
+    }
+    
+    /**
+     * Get next and previous shows for prefetching
+     */
+    suspend fun getAdjacentShows(): Pair<Show?, Show?> {
+        return currentShow?.let { current ->
+            val nextShow = showRepository.getNextShowByDate(current.date)
+            val previousShow = showRepository.getPreviousShowByDate(current.date)
+            Pair(nextShow, previousShow)
+        } ?: Pair(null, null)
     }
 }

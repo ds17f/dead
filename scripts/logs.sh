@@ -78,6 +78,14 @@ case "$1" in
   fi
   run_with_timeout adb logcat -s PlaybackStateSync MediaControllerRepository QueueManager PlaybackCommandProcessor
   ;;
+"playlist")
+  if [ "$TIMEOUT" -eq 0 ]; then
+    echo "🔍 Showing V2 playlist prefetch logs (no timeout)..."
+  else
+    echo "🔍 Showing V2 playlist prefetch logs (${TIMEOUT}s)..."
+  fi
+  run_with_timeout adb logcat -s PlaylistServiceImpl PlaylistViewModel
+  ;;
 "settings")
   if [ "$TIMEOUT" -eq 0 ]; then
     echo "🔍 Showing settings logs (no timeout)..."
@@ -160,7 +168,8 @@ case "$1" in
   echo "  health        - Show current database health status"
   echo "  awesome/search- Show Awesome Bar and search logs"
   echo "  app           - Show application startup logs"
-  echo "  player        - Show media player logs"
+  echo "  player        - Show media player logs"  
+  echo "  playlist      - Show V2 playlist prefetch logs"
   echo "  settings      - Show settings related logs"
   echo "  theme         - Show theme system logs (loading, switching, assets)"
   echo "  debug         - Show debug panel logs"
