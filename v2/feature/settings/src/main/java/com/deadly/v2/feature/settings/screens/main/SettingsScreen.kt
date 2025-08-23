@@ -49,6 +49,13 @@ fun SettingsScreen(
                 }
             }
             
+            // Cache Management Section
+            item {
+                SettingsSection(title = "Cache Management") {
+                    ClearArchiveCacheButton(modifier = Modifier.fillMaxWidth())
+                }
+            }
+            
             // V1 App Restore Section
             item {
                 SettingsSection(title = "App Version") {
@@ -209,5 +216,66 @@ private fun disableV2App(context: android.content.Context) {
         exitProcess(0)
     } catch (e: Exception) {
         // Simple error handling - just ignore for now since this is temporary
+    }
+}
+
+/**
+ * Button to clear archive cache with confirmation dialog
+ */
+@Composable
+private fun ClearArchiveCacheButton(
+    modifier: Modifier = Modifier
+) {
+    val context = LocalContext.current
+    var showConfirmDialog by remember { mutableStateOf(false) }
+    
+    OutlinedButton(
+        onClick = { showConfirmDialog = true },
+        modifier = modifier,
+        colors = ButtonDefaults.outlinedButtonColors(
+            contentColor = MaterialTheme.colorScheme.secondary
+        )
+    ) {
+        Text("Clear Archive Cache")
+    }
+    
+    if (showConfirmDialog) {
+        AlertDialog(
+            onDismissRequest = { showConfirmDialog = false },
+            title = { Text("Clear Archive Cache") },
+            text = { 
+                Text("This will delete all cached track lists and reviews. The data will be re-downloaded when needed.")
+            },
+            confirmButton = {
+                TextButton(
+                    onClick = {
+                        showConfirmDialog = false
+                        clearArchiveCache(context)
+                    },
+                    colors = ButtonDefaults.textButtonColors(
+                        contentColor = MaterialTheme.colorScheme.secondary
+                    )
+                ) {
+                    Text("Clear")
+                }
+            },
+            dismissButton = {
+                TextButton(onClick = { showConfirmDialog = false }) {
+                    Text("Cancel")
+                }
+            }
+        )
+    }
+}
+
+private fun clearArchiveCache(context: android.content.Context) {
+    try {
+        // Clear the archive cache directory
+        val cacheDir = File(context.cacheDir, "archive")
+        if (cacheDir.exists()) {
+            cacheDir.deleteRecursively()
+        }
+    } catch (e: Exception) {
+        // Simple error handling - just ignore for now
     }
 }
