@@ -5,6 +5,7 @@ import com.deadly.v2.core.api.playlist.PlaylistService
 import com.deadly.v2.core.domain.repository.ShowRepository
 import com.deadly.v2.core.model.*
 import com.deadly.v2.core.network.archive.service.ArchiveService
+import kotlinx.coroutines.Job
 import javax.inject.Inject
 import javax.inject.Singleton
 
@@ -37,6 +38,7 @@ class PlaylistServiceImpl @Inject constructor(
     
     private var currentShow: Show? = null
     private var currentRecordingId: String? = null
+    
     
     // === PHASE 1: REAL IMPLEMENTATIONS ===
     
@@ -329,6 +331,11 @@ class PlaylistServiceImpl @Inject constructor(
         // TODO: Implement recommendation logic
         // TODO: Clear user preferences and use bestRecordingId from Show
         // TODO: Update UI to reflect recommended recording selection
+    }
+    
+    override fun cancelTrackLoading() {
+        Log.d(TAG, "cancelTrackLoading() - TODO: Implement job cancellation")
+        // TODO: Implement proper job cancellation if needed
     }
     
     // === PRIVATE HELPER METHODS ===

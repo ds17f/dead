@@ -147,7 +147,7 @@ fun PlaylistScreen(
                         item {
                             PlaylistShowInfo(
                                 showData = showData,
-                                isNavigationLoading = uiState.isNavigationLoading,
+                                // Navigation always enabled for responsive UX
                                 onPreviousShow = viewModel::navigateToPreviousShow,
                                 onNextShow = viewModel::navigateToNextShow
                             )
@@ -178,12 +178,35 @@ fun PlaylistScreen(
                         }
                     }
                     
-                    // Track list
-                    PlaylistTrackList(
-                        tracks = uiState.trackData,
-                        onPlayClick = viewModel::playTrack,
-                        onDownloadClick = viewModel::downloadTrack
-                    )
+                    // Track list with progressive loading
+                    if (uiState.isTrackListLoading) {
+                        item {
+                            Box(
+                                modifier = Modifier
+                                    .fillMaxWidth()
+                                    .padding(24.dp),
+                                contentAlignment = Alignment.Center
+                            ) {
+                                Column(
+                                    horizontalAlignment = Alignment.CenterHorizontally,
+                                    verticalArrangement = Arrangement.spacedBy(8.dp)
+                                ) {
+                                    CircularProgressIndicator()
+                                    Text(
+                                        text = "Loading tracks...",
+                                        style = MaterialTheme.typography.bodyMedium,
+                                        color = MaterialTheme.colorScheme.onSurfaceVariant
+                                    )
+                                }
+                            }
+                        }
+                    } else {
+                        PlaylistTrackList(
+                            tracks = uiState.trackData,
+                            onPlayClick = viewModel::playTrack,
+                            onDownloadClick = viewModel::downloadTrack
+                        )
+                    }
                 }
             }
         }

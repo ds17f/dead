@@ -9,6 +9,7 @@ import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
+import kotlinx.coroutines.Job
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
@@ -31,6 +32,9 @@ class PlaylistViewModel @Inject constructor(
     private val _uiState = MutableStateFlow(PlaylistUiState())
     val uiState: StateFlow<PlaylistUiState> = _uiState.asStateFlow()
     
+    // Track current track loading job for cancellation
+    private var trackLoadingJob: Job? = null
+    
     /**
      * Load show data from the service
      */
@@ -40,22 +44,22 @@ class PlaylistViewModel @Inject constructor(
             try {
                 _uiState.value = _uiState.value.copy(isLoading = true, error = null)
                 
-                // Load data from service
+                // Load show in service (DB data)
                 playlistService.loadShow(showId)
                 
-                // Get ViewModel data from service
+                // Show DB data immediately
                 val showData = playlistService.getCurrentShowInfo()
-                val trackData = playlistService.getTrackList()
-                
                 _uiState.value = _uiState.value.copy(
                     isLoading = false,
                     showData = showData,
-                    trackData = trackData,
                     currentTrackIndex = -1,
                     isPlaying = false
                 )
                 
-                Log.d(TAG, "Show loaded successfully: ${showData?.displayDate}")
+                Log.d(TAG, "Show loaded successfully: ${showData?.displayDate} - showing DB data immediately")
+                
+                // Start track loading in background
+                loadTrackListAsync()
                 
             } catch (e: Exception) {
                 Log.e(TAG, "Error loading show", e)
@@ -106,26 +110,25 @@ class PlaylistViewModel @Inject constructor(
     fun navigateToPreviousShow() {
         viewModelScope.launch {
             try {
-                _uiState.value = _uiState.value.copy(isNavigationLoading = true)
+                // Navigate in service (updates show instantly)
                 playlistService.navigateToPreviousShow()
                 
-                // Refresh UI with new show data
+                // Show DB data immediately - no loading state blocks navigation
                 val showData = playlistService.getCurrentShowInfo()
-                val trackData = playlistService.getTrackList()
-                
                 _uiState.value = _uiState.value.copy(
-                    isNavigationLoading = false,
                     showData = showData,
-                    trackData = trackData,
                     currentTrackIndex = -1,
-                    isPlaying = false
+                    isPlaying = false,
+                    isTrackListLoading = false // Reset track loading state
                 )
                 
-                Log.d(TAG, "Navigated to previous show: ${showData?.displayDate}")
+                Log.d(TAG, "Navigated to previous show: ${showData?.displayDate} - showing DB data immediately")
+                
+                // Start track loading in background (cancellable)
+                loadTrackListAsync()
                 
             } catch (e: Exception) {
                 Log.e(TAG, "Error navigating to previous show", e)
-                _uiState.value = _uiState.value.copy(isNavigationLoading = false)
             }
         }
     }
@@ -136,26 +139,25 @@ class PlaylistViewModel @Inject constructor(
     fun navigateToNextShow() {
         viewModelScope.launch {
             try {
-                _uiState.value = _uiState.value.copy(isNavigationLoading = true)
+                // Navigate in service (updates show instantly)
                 playlistService.navigateToNextShow()
                 
-                // Refresh UI with new show data
+                // Show DB data immediately - no loading state blocks navigation
                 val showData = playlistService.getCurrentShowInfo()
-                val trackData = playlistService.getTrackList()
-                
                 _uiState.value = _uiState.value.copy(
-                    isNavigationLoading = false,
                     showData = showData,
-                    trackData = trackData,
                     currentTrackIndex = -1,
-                    isPlaying = false
+                    isPlaying = false,
+                    isTrackListLoading = false // Reset track loading state
                 )
                 
-                Log.d(TAG, "Navigated to next show: ${showData?.displayDate}")
+                Log.d(TAG, "Navigated to next show: ${showData?.displayDate} - showing DB data immediately")
+                
+                // Start track loading in background (cancellable)
+                loadTrackListAsync()
                 
             } catch (e: Exception) {
                 Log.e(TAG, "Error navigating to next show", e)
-                _uiState.value = _uiState.value.copy(isNavigationLoading = false)
             }
         }
     }
@@ -527,5 +529,41 @@ class PlaylistViewModel @Inject constructor(
             }
         }
         _uiState.value = _uiState.value.copy(trackData = updatedTracks)
+    }
+    
+    /**
+     * Load track list asynchronously with cancellation support
+     * Shows loading spinner over track section only
+     */
+    private fun loadTrackListAsync() {
+        // Cancel any previous track loading
+        trackLoadingJob?.cancel()
+        
+        // Start track loading with spinner
+        _uiState.value = _uiState.value.copy(
+            isTrackListLoading = true,
+            trackData = emptyList() // Clear previous tracks while loading
+        )
+        
+        trackLoadingJob = viewModelScope.launch {
+            try {
+                Log.d(TAG, "Loading track list asynchronously...")
+                val trackData = playlistService.getTrackList()
+                
+                _uiState.value = _uiState.value.copy(
+                    isTrackListLoading = false,
+                    trackData = trackData
+                )
+                
+                Log.d(TAG, "Track list loaded: ${trackData.size} tracks")
+                
+            } catch (e: Exception) {
+                Log.e(TAG, "Error loading track list", e)
+                _uiState.value = _uiState.value.copy(
+                    isTrackListLoading = false,
+                    trackData = emptyList()
+                )
+            }
+        }
     }
 }

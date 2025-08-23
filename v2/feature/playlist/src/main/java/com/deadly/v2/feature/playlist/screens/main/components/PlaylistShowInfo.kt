@@ -1,9 +1,7 @@
 package com.deadly.v2.feature.playlist.screens.main.components
 
 import androidx.compose.foundation.layout.*
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.KeyboardArrowLeft
-import androidx.compose.material.icons.filled.KeyboardArrowRight
+import com.deadly.v2.core.design.resources.IconResources
 import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -22,7 +20,6 @@ import com.deadly.v2.core.model.PlaylistShowViewModel
 @Composable
 fun PlaylistShowInfo(
     showData: PlaylistShowViewModel,
-    isNavigationLoading: Boolean = false,
     onPreviousShow: () -> Unit,
     onNextShow: () -> Unit,
     modifier: Modifier = Modifier
@@ -68,41 +65,27 @@ fun PlaylistShowInfo(
             // Previous show button
             IconButton(
                 onClick = onPreviousShow,
-                enabled = !isNavigationLoading && showData.hasPreviousShow,
+                enabled = showData.hasPreviousShow,
                 modifier = Modifier.size(40.dp)
             ) {
-                if (isNavigationLoading) {
-                    CircularProgressIndicator(
-                        modifier = Modifier.size(20.dp),
-                        strokeWidth = 2.dp
-                    )
-                } else {
-                    Icon(
-                        imageVector = Icons.Default.KeyboardArrowLeft,
-                        contentDescription = "Previous Show",
-                        modifier = Modifier.size(24.dp)
-                    )
-                }
+                Icon(
+                    painter = IconResources.Navigation.KeyboardArrowLeft(),
+                    contentDescription = "Previous Show",
+                    modifier = Modifier.size(24.dp)
+                )
             }
             
             // Next show button
             IconButton(
                 onClick = onNextShow,
-                enabled = !isNavigationLoading && showData.hasNextShow,
+                enabled = showData.hasNextShow,
                 modifier = Modifier.size(40.dp)
             ) {
-                if (isNavigationLoading) {
-                    CircularProgressIndicator(
-                        modifier = Modifier.size(20.dp),
-                        strokeWidth = 2.dp
-                    )
-                } else {
-                    Icon(
-                        imageVector = Icons.Default.KeyboardArrowRight,
-                        contentDescription = "Next Show",
-                        modifier = Modifier.size(24.dp)
-                    )
-                }
+                Icon(
+                    painter = IconResources.Navigation.KeyboardArrowRight(),
+                    contentDescription = "Next Show",
+                    modifier = Modifier.size(24.dp)
+                )
             }
         }
     }

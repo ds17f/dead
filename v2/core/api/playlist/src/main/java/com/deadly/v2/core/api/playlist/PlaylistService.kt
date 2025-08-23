@@ -27,6 +27,11 @@ interface PlaylistService {
     suspend fun getTrackList(): List<PlaylistTrackViewModel>
     
     /**
+     * Cancel any current track loading operation
+     */
+    fun cancelTrackLoading()
+    
+    /**
      * Play a specific track by index
      */
     suspend fun playTrack(trackIndex: Int)
