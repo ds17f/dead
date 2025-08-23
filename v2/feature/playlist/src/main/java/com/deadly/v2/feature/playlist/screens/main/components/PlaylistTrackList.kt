@@ -23,25 +23,12 @@ fun LazyListScope.PlaylistTrackList(
     onPlayClick: (PlaylistTrackViewModel) -> Unit,
     onDownloadClick: (PlaylistTrackViewModel) -> Unit
 ) {
-
-    // // Debug log all keys
-    // tracks.forEach { track ->
-    //     Log.d("PlaylistTrackList", "(number=${track.number}, title=${track.title}, format=${track.format}")
-    // }
-
-    // TODO: Don't the format, we need to be smart about this
-    val filteredTracks = tracks.filter { it.format == "VBR MP3" }
-
-    // // Debug log all keys
-    // filteredTracks.forEach { track ->
-    //     val key = "${track.number}_${track.title}"
-    //     Log.d("PlaylistTrackList", "Track key: $key  (number=${track.number}, title=${track.title})")
-    // }
+    // Service layer provides pre-filtered tracks with smart audio format selection
 
     // Section header - matches V1 format exactly
     item {
         Text(
-            text = "Tracks (${filteredTracks.size})",
+            text = "Tracks (${tracks.size})",
             style = MaterialTheme.typography.titleMedium,
             fontWeight = FontWeight.Bold,
             modifier = Modifier.padding(horizontal = 24.dp, vertical = 16.dp)
@@ -50,7 +37,7 @@ fun LazyListScope.PlaylistTrackList(
     
     // Track items - simple list like V1
     items(
-        items = filteredTracks,
+        items = tracks,
         key = { track -> track.number }
     ) { track ->
         PlaylistTrackItem(

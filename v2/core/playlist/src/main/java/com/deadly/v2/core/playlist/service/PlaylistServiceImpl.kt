@@ -148,11 +148,15 @@ class PlaylistServiceImpl @Inject constructor(
             val result = archiveService.getRecordingTracks(recordingId)
             
             if (result.isSuccess) {
-                val tracks = result.getOrNull() ?: emptyList()
-                Log.d(TAG, "Got ${tracks.size} tracks from ArchiveService")
+                val allTracks = result.getOrNull() ?: emptyList()
+                Log.d(TAG, "Got ${allTracks.size} tracks from ArchiveService")
+                
+                // Apply smart audio format filtering (business logic)
+                val filteredTracks = filterPreferredAudioTracks(allTracks)
+                Log.d(TAG, "Filtered to ${filteredTracks.size} preferred audio tracks")
                 
                 // Convert Track domain models to PlaylistTrackViewModel
-                tracks.map { track ->
+                filteredTracks.map { track ->
                     PlaylistTrackViewModel(
                         number = track.trackNumber ?: 0,
                         title = track.title ?: track.name,
@@ -319,5 +323,64 @@ class PlaylistServiceImpl @Inject constructor(
         // TODO: Implement recommendation logic
         // TODO: Clear user preferences and use bestRecordingId from Show
         // TODO: Update UI to reflect recommended recording selection
+    }
+    
+    // === PRIVATE HELPER METHODS ===
+    
+    /**
+     * Smart audio format filtering with priority-based selection
+     * 
+     * Applies business logic to filter tracks to the most suitable audio formats
+     * for streaming and playback. Prefers MP3 formats for compatibility.
+     */
+    private fun filterPreferredAudioTracks(tracks: List<Track>): List<Track> {
+        // Audio format priority (most to least preferred for streaming)
+        val formatPriority = listOf(
+            "VBR MP3",      // Variable bitrate MP3 - most common on Archive.org
+            "MP3",          // Standard MP3 
+            "128Kbps MP3",  // Fixed bitrate MP3
+            "256Kbps MP3",  // Higher quality MP3
+            "64Kbps MP3"    // Lower quality MP3
+        )
+        
+        // Secondary audio formats (fallback if no MP3 available)
+        val fallbackFormats = listOf(
+            "FLAC",         // Lossless audio
+            "OGG Vorbis",   // Open source compressed audio  
+            "M4A",          // Apple audio format
+            "AAC",          // Advanced audio codec
+            "WAV"           // Uncompressed audio
+        )
+        
+        Log.d(TAG, "Filtering ${tracks.size} tracks by audio format priority")
+        
+        // First, try to get preferred MP3 formats
+        val preferredTracks = tracks.filter { track ->
+            track.format in formatPriority
+        }
+        
+        if (preferredTracks.isNotEmpty()) {
+            Log.d(TAG, "Found ${preferredTracks.size} preferred format tracks")
+            return preferredTracks.sortedBy { track ->
+                formatPriority.indexOf(track.format).takeIf { it >= 0 } ?: Int.MAX_VALUE
+            }
+        }
+        
+        // Fallback to other audio formats if no MP3 available
+        val fallbackTracks = tracks.filter { track ->
+            track.format in fallbackFormats
+        }
+        
+        if (fallbackTracks.isNotEmpty()) {
+            Log.d(TAG, "Using ${fallbackTracks.size} fallback format tracks")
+            return fallbackTracks.sortedBy { track ->
+                fallbackFormats.indexOf(track.format).takeIf { it >= 0 } ?: Int.MAX_VALUE
+            }
+        }
+        
+        // Last resort: return all tracks marked as audio
+        val audioTracks = tracks.filter { it.isAudio }
+        Log.d(TAG, "Using ${audioTracks.size} generic audio tracks as last resort")
+        return audioTracks
     }
 }
