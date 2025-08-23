@@ -37,11 +37,11 @@ class PlaylistServiceImpl @Inject constructor(
     
     private var currentShow: Show? = null
     private var currentRecordingId: String? = null
-    
+
     // Internal prefetch cache for transparent optimization
     private val trackCache = ConcurrentHashMap<String, List<Track>>()
     private val prefetchJobs = ConcurrentHashMap<String, Job>()
-    
+
     companion object {
         private const val TAG = "PlaylistServiceImpl"
         
@@ -360,7 +360,7 @@ class PlaylistServiceImpl @Inject constructor(
         prefetchJobs.clear()
         trackCache.clear()
     }
-    
+
     // === PRIVATE HELPER METHODS ===
     
     /**
@@ -382,7 +382,7 @@ class PlaylistServiceImpl @Inject constructor(
     }
     
     /**
-     * Start background prefetch for adjacent shows (next/previous)
+     * Start background prefetch for adjacent shows (next/previous 2 shows each)
      */
     private fun startAdjacentPrefetch() {
         currentShow?.let { current ->
@@ -390,31 +390,43 @@ class PlaylistServiceImpl @Inject constructor(
                 try {
                     Log.d(TAG, "Starting adjacent prefetch for current show: ${current.displayTitle}")
                     
-                    // Get next and previous shows
-                    val nextShow = showRepository.getNextShowByDate(current.date)
-                    val previousShow = showRepository.getPreviousShowByDate(current.date)
-                    
-                    // Prefetch next show
-                    nextShow?.let { show ->
-                        val recordingId = show.bestRecordingId
-                        if (recordingId != null && !trackCache.containsKey(recordingId)) {
-                            startPrefetchInternal(show, recordingId, "next")
-                        } else {
-                            Log.d(TAG, "Skipping next show prefetch: recordingId=$recordingId, cached=${trackCache.containsKey(recordingId ?: "")}")
+                    // Prefetch next 2 shows
+                    val nextShows = mutableListOf<Show>()
+                    var currentNextDate = current.date
+                    repeat(2) { index ->
+                        val nextShow = showRepository.getNextShowByDate(currentNextDate)
+                        if (nextShow != null) {
+                            nextShows.add(nextShow)
+                            currentNextDate = nextShow.date
+                            
+                            val recordingId = nextShow.bestRecordingId
+                            if (recordingId != null && !trackCache.containsKey(recordingId)) {
+                                startPrefetchInternal(nextShow, recordingId, "next+${index + 1}")
+                            } else {
+                                Log.d(TAG, "Skipping next+${index + 1} show prefetch: recordingId=$recordingId, cached=${trackCache.containsKey(recordingId ?: "")}")
+                            }
                         }
                     }
                     
-                    // Prefetch previous show  
-                    previousShow?.let { show ->
-                        val recordingId = show.bestRecordingId
-                        if (recordingId != null && !trackCache.containsKey(recordingId)) {
-                            startPrefetchInternal(show, recordingId, "previous")
-                        } else {
-                            Log.d(TAG, "Skipping previous show prefetch: recordingId=$recordingId, cached=${trackCache.containsKey(recordingId ?: "")}")
+                    // Prefetch previous 2 shows
+                    val previousShows = mutableListOf<Show>()
+                    var currentPrevDate = current.date
+                    repeat(2) { index ->
+                        val previousShow = showRepository.getPreviousShowByDate(currentPrevDate)
+                        if (previousShow != null) {
+                            previousShows.add(previousShow)
+                            currentPrevDate = previousShow.date
+                            
+                            val recordingId = previousShow.bestRecordingId
+                            if (recordingId != null && !trackCache.containsKey(recordingId)) {
+                                startPrefetchInternal(previousShow, recordingId, "previous+${index + 1}")
+                            } else {
+                                Log.d(TAG, "Skipping previous+${index + 1} show prefetch: recordingId=$recordingId, cached=${trackCache.containsKey(recordingId ?: "")}")
+                            }
                         }
                     }
                     
-                    Log.d(TAG, "Adjacent prefetch initiated - Next: ${nextShow?.displayTitle ?: "none"}, Previous: ${previousShow?.displayTitle ?: "none"}")
+                    Log.d(TAG, "Extended prefetch initiated - Next 2: ${nextShows.map { it.displayTitle }}, Previous 2: ${previousShows.map { it.displayTitle }}")
                     
                 } catch (e: Exception) {
                     Log.e(TAG, "Error in startAdjacentPrefetch", e)
