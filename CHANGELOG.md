@@ -1,12 +1,26 @@
 # Changelog
 
+## [0.51.0] - 2025-08-22
+
+### New Features
+* enhance search functionality with dot delimiter support (ffe86417)
+* add V1/V2 app toggle buttons with confirmation dialogs (a7db5fe7)
+* implement V2 Archive service with real track lists and reviews (ca6d5734)
+* implement real PlaylistServiceImpl with V2 domain architecture (f483ff5d)
+* refactor ShowRepository to clean architecture with domain models (f5c3d3d6)
+
+### Bug Fixes
+* synchronize currentRecordingId during show navigation (01ac5d4f)
+
+### Code Refactoring
+* implement smart audio format filtering in service layer (2f1e4326)
+
+
 ## [0.50.0] - 2025-08-21
 
 ### New Features
 * add file chooser for backup restoration (c0965fb4)
 * complete migration from v1 to v2 architecture with navigation integration (f175112b)
-
-
 ## [0.49.0] - 2025-08-21
 
 ### New Features
