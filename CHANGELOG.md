@@ -1,12 +1,17 @@
 # Changelog
 
+## [0.53.0] - 2025-08-23
+
+### New Features
+* Prefetch 2 recordings in each direction (b859535a)
+* implement background prefetch system for adjacent shows (44f44f5f)
+
+
 ## [0.52.0] - 2025-08-22
 
 ### New Features
 * implement progressive loading for responsive navigation (0651ac1e)
 * add archive cache clearing functionality (f0bf470d)
-
-
 ## [0.51.0] - 2025-08-22
 
 ### New Features
