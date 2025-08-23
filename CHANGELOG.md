@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.52.0] - 2025-08-22
+
+### New Features
+* implement progressive loading for responsive navigation (0651ac1e)
+* add archive cache clearing functionality (f0bf470d)
+
+
 ## [0.51.0] - 2025-08-22
 
 ### New Features
@@ -14,8 +21,6 @@
 
 ### Code Refactoring
 * implement smart audio format filtering in service layer (2f1e4326)
-
-
 ## [0.50.0] - 2025-08-21
 
 ### New Features
