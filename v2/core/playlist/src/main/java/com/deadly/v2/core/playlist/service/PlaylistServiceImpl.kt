@@ -37,6 +37,7 @@ class PlaylistServiceImpl @Inject constructor(
     
     private var currentShow: Show? = null
     private var currentRecordingId: String? = null
+    private var currentSelectedFormat: String? = null // Track selected format for playback coordination
 
     // Internal prefetch cache for transparent optimization
     private val trackCache = ConcurrentHashMap<String, List<Track>>()
@@ -51,6 +52,14 @@ class PlaylistServiceImpl @Inject constructor(
         // Prefetch priorities
         const val PREFETCH_NEXT = "next"
         const val PREFETCH_PREVIOUS = "previous"
+        
+        // Default format priority for smart selection with fallback
+        // Note: FLAC excluded due to ExoPlayer compatibility issues
+        val DEFAULT_FORMAT_PRIORITY = listOf(
+            "VBR MP3",      // Best balance for streaming
+            "MP3",          // Universal fallback  
+            "Ogg Vorbis"    // Good quality, efficient
+        )
     }
     
     
@@ -170,7 +179,22 @@ class PlaylistServiceImpl @Inject constructor(
         val cachedTracks = trackCache[recordingId]
         if (cachedTracks != null) {
             Log.d(TAG, "Cache HIT for recording: $recordingId (${cachedTracks.size} tracks)")
-            val filteredTracks = filterPreferredAudioTracks(cachedTracks)
+            
+            // Smart format selection with fallback
+            val selectedFormat = selectBestAvailableFormat(cachedTracks)
+            
+            if (selectedFormat == null) {
+                Log.w(TAG, "No compatible format found in cached tracks")
+                return emptyList()
+            }
+            
+            // Store selected format for playback coordination
+            currentSelectedFormat = selectedFormat
+            
+            // Filter to selected format only
+            val filteredTracks = filterTracksToFormat(cachedTracks, selectedFormat)
+            Log.d(TAG, "Using ${filteredTracks.size} tracks in format: $selectedFormat")
+            
             // Start background prefetch for adjacent shows after cache hit
             startAdjacentPrefetch()
             return convertTracksToViewModels(filteredTracks)
@@ -188,9 +212,20 @@ class PlaylistServiceImpl @Inject constructor(
                 // Store in cache for future requests
                 trackCache[recordingId] = allTracks
                 
-                // Apply smart audio format filtering (business logic)
-                val filteredTracks = filterPreferredAudioTracks(allTracks)
-                Log.d(TAG, "Filtered to ${filteredTracks.size} preferred audio tracks")
+                // Smart format selection with fallback
+                val selectedFormat = selectBestAvailableFormat(allTracks)
+                
+                if (selectedFormat == null) {
+                    Log.w(TAG, "No compatible format found in loaded tracks")
+                    return emptyList()
+                }
+                
+                // Store selected format for playback coordination
+                currentSelectedFormat = selectedFormat
+                
+                // Filter to selected format only
+                val filteredTracks = filterTracksToFormat(allTracks, selectedFormat)
+                Log.d(TAG, "Using ${filteredTracks.size} tracks in format: $selectedFormat")
                 
                 // Start background prefetch for adjacent shows
                 startAdjacentPrefetch()
@@ -437,60 +472,50 @@ class PlaylistServiceImpl @Inject constructor(
     }
     
     /**
-     * Smart audio format filtering with priority-based selection
+     * Smart format selection with fallback logic
      * 
-     * Applies business logic to filter tracks to the most suitable audio formats
-     * for streaming and playback. Prefers MP3 formats for compatibility.
+     * Tries formats in priority order until tracks are found.
+     * Stores selected format for playback coordination.
      */
-    private fun filterPreferredAudioTracks(tracks: List<Track>): List<Track> {
-        // Audio format priority (most to least preferred for streaming)
-        val formatPriority = listOf(
-            "VBR MP3",      // Variable bitrate MP3 - most common on Archive.org
-            "MP3",          // Standard MP3 
-            "128Kbps MP3",  // Fixed bitrate MP3
-            "256Kbps MP3",  // Higher quality MP3
-            "64Kbps MP3"    // Lower quality MP3
-        )
+    private fun selectBestAvailableFormat(
+        allTracks: List<Track>,
+        formatPriorities: List<String> = DEFAULT_FORMAT_PRIORITY
+    ): String? {
+        Log.d(TAG, "Selecting best format from ${allTracks.size} tracks")
+        Log.d(TAG, "Available formats: ${allTracks.map { it.format }.distinct()}")
         
-        // Secondary audio formats (fallback if no MP3 available)
-        val fallbackFormats = listOf(
-            "FLAC",         // Lossless audio
-            "OGG Vorbis",   // Open source compressed audio  
-            "M4A",          // Apple audio format
-            "AAC",          // Advanced audio codec
-            "WAV"           // Uncompressed audio
-        )
-        
-        Log.d(TAG, "Filtering ${tracks.size} tracks by audio format priority")
-        
-        // First, try to get preferred MP3 formats
-        val preferredTracks = tracks.filter { track ->
-            track.format in formatPriority
-        }
-        
-        if (preferredTracks.isNotEmpty()) {
-            Log.d(TAG, "Found ${preferredTracks.size} preferred format tracks")
-            return preferredTracks.sortedBy { track ->
-                formatPriority.indexOf(track.format).takeIf { it >= 0 } ?: Int.MAX_VALUE
+        // Try each format in priority order
+        for (preferredFormat in formatPriorities) {
+            val tracksInFormat = allTracks.filter { 
+                it.format.equals(preferredFormat, ignoreCase = true) 
             }
-        }
-        
-        // Fallback to other audio formats if no MP3 available
-        val fallbackTracks = tracks.filter { track ->
-            track.format in fallbackFormats
-        }
-        
-        if (fallbackTracks.isNotEmpty()) {
-            Log.d(TAG, "Using ${fallbackTracks.size} fallback format tracks")
-            return fallbackTracks.sortedBy { track ->
-                fallbackFormats.indexOf(track.format).takeIf { it >= 0 } ?: Int.MAX_VALUE
+            
+            if (tracksInFormat.isNotEmpty()) {
+                Log.d(TAG, "Selected format '$preferredFormat' (${tracksInFormat.size} tracks)")
+                return preferredFormat
             }
+            
+            Log.d(TAG, "Format '$preferredFormat' not available, trying next...")
         }
         
-        // Last resort: return all tracks marked as audio
-        val audioTracks = tracks.filter { it.isAudio }
-        Log.d(TAG, "Using ${audioTracks.size} generic audio tracks as last resort")
-        return audioTracks
+        // If no format from priority list found, return null
+        Log.w(TAG, "No tracks found in any preferred format")
+        return null
+    }
+    
+    /**
+     * Filter tracks to selected format only
+     * Used after format selection to get tracks for UI display
+     */
+    private fun filterTracksToFormat(tracks: List<Track>, selectedFormat: String): List<Track> {
+        return tracks.filter { it.format.equals(selectedFormat, ignoreCase = true) }
+    }
+    
+    /**
+     * Get the currently selected audio format for playback coordination
+     */
+    override fun getCurrentSelectedFormat(): String? {
+        return currentSelectedFormat
     }
     
     // === PREFETCH MANAGEMENT ===
@@ -513,12 +538,11 @@ class PlaylistServiceImpl @Inject constructor(
                 
                 if (result.isSuccess) {
                     val allTracks = result.getOrNull() ?: emptyList()
-                    val filteredTracks = filterPreferredAudioTracks(allTracks)
                     
-                    // Store in cache - THIS WAS MISSING
+                    // Store in cache - raw tracks cached, format selection happens at display time
                     trackCache[recordingId] = allTracks
                     
-                    Log.d(TAG, "Prefetch completed for ${show.displayTitle}: ${filteredTracks.size} tracks cached")
+                    Log.d(TAG, "Prefetch completed for ${show.displayTitle}: ${allTracks.size} raw tracks cached")
                 } else {
                     Log.w(TAG, "Prefetch failed for ${show.displayTitle}: ${result.exceptionOrNull()}")
                 }
@@ -560,12 +584,11 @@ class PlaylistServiceImpl @Inject constructor(
                 
                 if (result.isSuccess) {
                     val tracks = result.getOrNull() ?: emptyList()
-                    val filteredTracks = filterPreferredAudioTracks(tracks)
                     
-                    // Store in cache - FIX: This was missing before
+                    // Store in cache - raw tracks cached, format selection happens at display time
                     trackCache[show.bestRecordingId ?: ""] = tracks
                     
-                    Log.d(TAG, "Prefetch completed for ${show.displayTitle}: ${filteredTracks.size} tracks cached")
+                    Log.d(TAG, "Prefetch completed for ${show.displayTitle}: ${tracks.size} raw tracks cached")
                 } else {
                     Log.w(TAG, "Prefetch failed for ${show.displayTitle}: ${result.exceptionOrNull()}")
                 }

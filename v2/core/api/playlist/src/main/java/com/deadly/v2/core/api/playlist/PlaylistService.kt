@@ -106,4 +106,10 @@ interface PlaylistService {
      * Reset to the recommended recording for this show
      */
     suspend fun resetToRecommended()
+    
+    /**
+     * Get the currently selected audio format for playback coordination
+     * Returns the format that was selected during track list building
+     */
+    fun getCurrentSelectedFormat(): String?
 }

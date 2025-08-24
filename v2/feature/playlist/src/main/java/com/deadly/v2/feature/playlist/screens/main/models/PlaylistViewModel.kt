@@ -6,6 +6,7 @@ import androidx.lifecycle.viewModelScope
 import com.deadly.v2.core.api.playlist.PlaylistService
 import com.deadly.v2.core.model.*
 import com.deadly.v2.core.media.repository.MediaControllerRepository
+import com.deadly.v2.core.media.exception.FormatNotAvailableException
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
@@ -485,16 +486,31 @@ class PlaylistViewModel @Inject constructor(
                     return@launch
                 }
 
-                // Create test recording ID and format
-                val recordingId = currentRecording
-                val format = "VBR MP3"
+                // Get the format that was selected during playlist building
+                val selectedFormat = playlistService.getCurrentSelectedFormat()
                 
-                Log.d(TAG, "V2 Media: Play All for $recordingId ($format)")
+                if (selectedFormat == null) {
+                    Log.w(TAG, "No format selected - cannot start playback")
+                    return@launch
+                }
+                
+                val recordingId = currentRecording
+                
+                Log.d(TAG, "V2 Media: Play All for $recordingId ($selectedFormat)")
                 
                 // Use MediaControllerRepository for Play All logic
-                mediaControllerRepository.playAll(recordingId, format)
+                mediaControllerRepository.playAll(recordingId, selectedFormat)
                 
                 // UI state will be updated via MediaController state observation
+                
+            } catch (e: FormatNotAvailableException) {
+                Log.e(TAG, "Format playback failed: ${e.message}")
+                Log.e(TAG, "Available formats: ${e.availableFormats}")
+                
+                // Show user error
+                _uiState.value = _uiState.value.copy(
+                    error = "Playback format '${e.requestedFormat}' not available"
+                )
                 
             } catch (e: Exception) {
                 Log.e(TAG, "Error in V2 togglePlayback", e)
@@ -524,17 +540,32 @@ class PlaylistViewModel @Inject constructor(
                     return@launch
                 }
 
-                // Create recording ID and format
+                // Get the format that was selected during playlist building
+                val selectedFormat = playlistService.getCurrentSelectedFormat()
+                
+                if (selectedFormat == null) {
+                    Log.w(TAG, "No format selected - cannot play track")
+                    return@launch
+                }
+                
                 val recordingId = currentRecording
-                val format = "VBR MP3"
                 val trackIndex = track.number - 1 // Convert to 0-based
                 
-                Log.d(TAG, "V2 Media: Play track $trackIndex of $recordingId ($format)")
+                Log.d(TAG, "V2 Media: Play track $trackIndex of $recordingId ($selectedFormat)")
                 
                 // Use MediaControllerRepository for track playback
-                mediaControllerRepository.playTrack(trackIndex, recordingId, format)
+                mediaControllerRepository.playTrack(trackIndex, recordingId, selectedFormat)
                 
                 // UI state will be updated via MediaController state observation
+                
+            } catch (e: FormatNotAvailableException) {
+                Log.e(TAG, "Format playback failed for track: ${e.message}")
+                Log.e(TAG, "Available formats: ${e.availableFormats}")
+                
+                // Show user error
+                _uiState.value = _uiState.value.copy(
+                    error = "Track format '${e.requestedFormat}' not available"
+                )
                 
             } catch (e: Exception) {
                 Log.e(TAG, "Error in V2 playTrack", e)

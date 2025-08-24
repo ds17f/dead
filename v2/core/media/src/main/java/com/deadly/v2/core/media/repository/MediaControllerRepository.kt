@@ -9,6 +9,7 @@ import androidx.media3.common.Player
 import androidx.media3.session.MediaController
 import androidx.media3.session.SessionToken
 import com.deadly.v2.core.media.service.DeadlyMediaSessionService
+import com.deadly.v2.core.media.exception.FormatNotAvailableException
 import com.deadly.v2.core.model.Track as V2Track
 import com.deadly.v2.core.network.archive.service.ArchiveService
 import dagger.hilt.android.qualifiers.ApplicationContext
@@ -87,11 +88,22 @@ class MediaControllerRepository @Inject constructor(
                         val rawTracks = result.getOrNull() ?: emptyList()
                         Log.d(TAG, "Loaded ${rawTracks.size} raw tracks from ArchiveService")
                         
-                        // Filter by format
+                        // Filter by format - explicit failure if not found
                         val filteredTracks = rawTracks.filter { track ->
                             track.format.equals(format, ignoreCase = true)
                         }
-                        Log.d(TAG, "Filtered to ${filteredTracks.size} tracks for format: $format")
+                        
+                        if (filteredTracks.isEmpty()) {
+                            // Explicit failure - throw exception with debugging info
+                            val availableFormats = rawTracks.map { it.format }.distinct()
+                            throw FormatNotAvailableException(
+                                recordingId = recordingId,
+                                requestedFormat = format,
+                                availableFormats = availableFormats
+                            )
+                        }
+                        
+                        Log.d(TAG, "Found ${filteredTracks.size} tracks for format: $format")
                         
                         // Convert to MediaItems
                         val mediaItems = convertToMediaItems(recordingId, filteredTracks)
@@ -137,11 +149,22 @@ class MediaControllerRepository @Inject constructor(
                         val rawTracks = result.getOrNull() ?: emptyList()
                         Log.d(TAG, "Loaded ${rawTracks.size} raw tracks from ArchiveService")
                         
-                        // Filter by format
+                        // Filter by format - explicit failure if not found
                         val filteredTracks = rawTracks.filter { track ->
                             track.format.equals(format, ignoreCase = true)
                         }
-                        Log.d(TAG, "Filtered to ${filteredTracks.size} tracks for format: $format")
+                        
+                        if (filteredTracks.isEmpty()) {
+                            // Explicit failure - throw exception with debugging info
+                            val availableFormats = rawTracks.map { it.format }.distinct()
+                            throw FormatNotAvailableException(
+                                recordingId = recordingId,
+                                requestedFormat = format,
+                                availableFormats = availableFormats
+                            )
+                        }
+                        
+                        Log.d(TAG, "Found ${filteredTracks.size} tracks for format: $format")
                         
                         // Validate track index
                         if (trackIndex >= 0 && trackIndex < filteredTracks.size) {
