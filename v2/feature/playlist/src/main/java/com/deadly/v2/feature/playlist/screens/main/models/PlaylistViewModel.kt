@@ -5,6 +5,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.deadly.v2.core.api.playlist.PlaylistService
 import com.deadly.v2.core.model.*
+import com.deadly.v2.core.media.repository.MediaControllerRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
@@ -21,7 +22,8 @@ import javax.inject.Inject
  */
 @HiltViewModel
 class PlaylistViewModel @Inject constructor(
-    private val playlistService: PlaylistService
+    private val playlistService: PlaylistService,
+    private val mediaControllerRepository: MediaControllerRepository
 ) : ViewModel() {
     
     companion object {
@@ -461,59 +463,67 @@ class PlaylistViewModel @Inject constructor(
     }
     
     /**
-     * Toggle playback (for main play/pause button)
+     * Toggle playback (for main play/pause button) - V2 Media System
      */
     fun togglePlayback() {
         val currentState = _uiState.value
-        Log.d(TAG, "Toggle playback - currently playing: ${currentState.isPlaying}")
+        Log.d(TAG, "V2 Toggle playback - currently playing: ${currentState.isPlaying}")
         
         viewModelScope.launch {
             try {
-                if (currentState.isPlaying) {
-                    playlistService.pause()
-                    _uiState.value = currentState.copy(isPlaying = false)
-                } else {
-                    if (currentState.currentTrackIndex >= 0) {
-                        // Resume current track
-                        playlistService.resume()
-                    } else {
-                        // Start playing first track
-                        playlistService.playTrack(0)
-                        _uiState.value = currentState.copy(currentTrackIndex = 0)
-                    }
-                    _uiState.value = _uiState.value.copy(isPlaying = true)
+                // Get show data to determine recording ID
+                val showData = currentState.showData
+                if (showData == null) {
+                    Log.w(TAG, "No show data - cannot start playback")
+                    return@launch
                 }
+                
+                // Create test recording ID and format
+                val recordingId = "test_recording_${showData.date}"
+                val format = "MP3"
+                
+                Log.d(TAG, "V2 Media: Play All for $recordingId ($format)")
+                
+                // Use MediaControllerRepository for Play All logic
+                mediaControllerRepository.playAll(recordingId, format)
+                
+                // UI state will be updated via MediaController state observation
+                
             } catch (e: Exception) {
-                Log.e(TAG, "Error toggling playback", e)
+                Log.e(TAG, "Error in V2 togglePlayback", e)
             }
         }
     }
     
     /**
-     * Play track
+     * Play track - V2 Media System
      */
     fun playTrack(track: PlaylistTrackViewModel) {
         viewModelScope.launch {
             try {
-                Log.d(TAG, "Playing track: ${track.title}")
-                playlistService.playTrack(track.number - 1) // Convert to 0-based index
+                Log.d(TAG, "V2 Playing track: ${track.title} (index: ${track.number - 1})")
                 
-                // Update UI state to reflect current track
-                val updatedTracks = _uiState.value.trackData.map { existingTrack ->
-                    existingTrack.copy(
-                        isCurrentTrack = existingTrack.number == track.number,
-                        isPlaying = existingTrack.number == track.number
-                    )
+                // Get show data to determine recording ID
+                val showData = _uiState.value.showData
+                if (showData == null) {
+                    Log.w(TAG, "No show data - cannot play track")
+                    return@launch
                 }
                 
-                _uiState.value = _uiState.value.copy(
-                    trackData = updatedTracks,
-                    currentTrackIndex = track.number - 1,
-                    isPlaying = true
-                )
+                // Create recording ID and format
+                val recordingId = "test_recording_${showData.date}"
+                val format = "MP3"
+                val trackIndex = track.number - 1 // Convert to 0-based
+                
+                Log.d(TAG, "V2 Media: Play track $trackIndex of $recordingId ($format)")
+                
+                // Use MediaControllerRepository for track playback
+                mediaControllerRepository.playTrack(trackIndex, recordingId, format)
+                
+                // UI state will be updated via MediaController state observation
                 
             } catch (e: Exception) {
-                Log.e(TAG, "Error playing track", e)
+                Log.e(TAG, "Error in V2 playTrack", e)
             }
         }
     }

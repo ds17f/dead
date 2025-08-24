@@ -50,6 +50,7 @@ dependencies {
     implementation(project(":v2:core:playlist"))
     implementation(project(":v2:core:model"))
     implementation(project(":v2:core:design"))
+    implementation(project(":v2:core:media"))
 
     // Compose BOM
     implementation(platform("androidx.compose:compose-bom:2024.02.00"))
