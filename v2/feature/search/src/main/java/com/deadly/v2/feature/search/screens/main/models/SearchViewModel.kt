@@ -9,6 +9,7 @@ import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
+import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.flow.debounce
 import kotlinx.coroutines.flow.distinctUntilChanged
 import kotlinx.coroutines.launch
@@ -44,6 +45,10 @@ class SearchViewModel @Inject constructor(
     // Debounced search query flow
     private val _searchQueryFlow = MutableStateFlow("")
     private var searchJob: Job? = null
+    
+    // Configurable debounce delay
+    private val _debounceDelayMs = MutableStateFlow(800L)
+    val debounceDelayMs: StateFlow<Long> = _debounceDelayMs.asStateFlow()
     
     init {
         Log.d(TAG, "SearchViewModel initialized with SearchService")
@@ -83,12 +88,23 @@ class SearchViewModel @Inject constructor(
      */
     private fun setupDebouncedSearch() {
         viewModelScope.launch {
-            _searchQueryFlow
-                .debounce(500) // Wait 500ms after typing stops
-                .distinctUntilChanged() // Only trigger if query actually changed
-                .collect { query ->
-                    performDebouncedSearch(query)
+            // Combine search query with debounce delay to recreate flow when delay changes
+            combine(_searchQueryFlow, _debounceDelayMs) { query, delay ->
+                query to delay
+            }.collect { (query, delay) ->
+                // Cancel any existing debounce collection
+                searchJob?.cancel()
+                
+                // Start new debounced collection with updated delay
+                searchJob = viewModelScope.launch {
+                    _searchQueryFlow
+                        .debounce(delay) // Use configurable delay
+                        .distinctUntilChanged() // Only trigger if query actually changed
+                        .collect { debouncedQuery ->
+                            performDebouncedSearch(debouncedQuery)
+                        }
                 }
+            }
         }
     }
     
@@ -180,6 +196,14 @@ class SearchViewModel @Inject constructor(
                 Log.e(TAG, "Failed to clear recent searches", e)
             }
         }
+    }
+    
+    /**
+     * Update the debounce delay for search queries
+     */
+    fun updateDebounceDelay(delayMs: Long) {
+        Log.d(TAG, "Updating debounce delay to ${delayMs}ms")
+        _debounceDelayMs.value = delayMs.coerceIn(0L, 2000L) // Clamp between 0-2000ms
     }
     
     /**
