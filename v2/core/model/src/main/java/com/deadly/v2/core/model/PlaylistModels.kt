@@ -29,6 +29,7 @@ data class PlaylistShowViewModel(
     val location: String,
     val rating: Float,
     val reviewCount: Int,
+    val currentRecordingId: String?,
     val trackCount: Int,
     val hasNextShow: Boolean,
     val hasPreviousShow: Boolean,

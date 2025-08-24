@@ -2,6 +2,7 @@ package com.deadly.v2.core.media.di
 
 import android.content.Context
 import com.deadly.v2.core.media.repository.MediaControllerRepository
+import com.deadly.v2.core.network.archive.service.ArchiveService
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -19,8 +20,9 @@ object MediaModule {
     @Provides
     @Singleton
     fun provideMediaControllerRepository(
-        @ApplicationContext context: Context
+        @ApplicationContext context: Context,
+        archiveService: ArchiveService
     ): MediaControllerRepository {
-        return MediaControllerRepository(context)
+        return MediaControllerRepository(context, archiveService)
     }
 }

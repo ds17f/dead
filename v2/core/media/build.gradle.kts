@@ -36,9 +36,7 @@ android {
 dependencies {
     // V2 Core dependencies
     implementation(project(":v2:core:model"))
-    
-    // V1 Core dependencies for Track model
-    implementation(project(":core:model"))
+    implementation(project(":v2:core:network:archive"))
     
     implementation("androidx.core:core-ktx:1.12.0")
     

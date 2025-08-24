@@ -11,7 +11,6 @@ import androidx.media3.common.util.UnstableApi
 import androidx.media3.exoplayer.ExoPlayer
 import androidx.media3.session.MediaSession
 import androidx.media3.session.MediaSessionService
-import com.deadly.core.model.Track
 
 /**
  * Simple MediaSessionService for V2 playback
@@ -91,101 +90,8 @@ class DeadlyMediaSessionService : MediaSessionService() {
         super.onDestroy()
     }
     
-    /**
-     * Set queue for a recording with format
-     * Returns true if queue was replaced, false if same recording/format
-     */
-    fun setQueueForRecording(recordingId: String, format: String, tracks: List<Track>): Boolean {
-        Log.d(TAG, "setQueueForRecording: $recordingId ($format) with ${tracks.size} tracks")
-        
-        val isCurrentQueue = currentRecordingId == recordingId && currentFormat == format
-        
-        if (!isCurrentQueue) {
-            Log.d(TAG, "Different recording/format - replacing queue")
-            
-            // Convert tracks to MediaItems
-            val mediaItems = tracks.map { track -> createMediaItem(track, recordingId) }
-            
-            // Set queue on ExoPlayer
-            exoPlayer.setMediaItems(mediaItems)
-            exoPlayer.prepare()
-            
-            // Update current queue tracking
-            currentRecordingId = recordingId
-            currentFormat = format
-            
-            return true // Queue was replaced
-        } else {
-            Log.d(TAG, "Same recording/format - keeping existing queue")
-            return false // Same queue
-        }
-    }
     
-    /**
-     * Play specific track index in current queue
-     */
-    fun playTrackIndex(trackIndex: Int) {
-        Log.d(TAG, "playTrackIndex: $trackIndex")
-        
-        if (trackIndex >= 0 && trackIndex < exoPlayer.mediaItemCount) {
-            exoPlayer.seekTo(trackIndex, 0)
-            exoPlayer.playWhenReady = true
-        } else {
-            Log.w(TAG, "Invalid track index: $trackIndex (queue size: ${exoPlayer.mediaItemCount})")
-        }
-    }
     
-    /**
-     * Toggle play/pause
-     */
-    fun togglePlayPause() {
-        Log.d(TAG, "togglePlayPause - currently playing: ${exoPlayer.isPlaying}")
-        exoPlayer.playWhenReady = !exoPlayer.playWhenReady
-    }
-    
-    /**
-     * Get test tracks for a recording - simple hardcoded for now
-     */
-    fun getTestTracks(recordingId: String): List<Track> {
-        return listOf(
-            Track(
-                filename = "gd77-05-08eaton-d3t01.mp3",
-                title = "Jack Straw",
-                trackNumber = "1", 
-                streamingUrl = "https://archive.org/download/gd77-05-08.sbd.hicks.4982.sbeok.shnf/gd77-05-08eaton-d3t01.mp3"
-            ),
-            Track(
-                filename = "gd77-05-08eaton-d3t02.mp3",
-                title = "Scarlet Begonias", 
-                trackNumber = "2",
-                streamingUrl = "https://archive.org/download/gd77-05-08.sbd.hicks.4982.sbeok.shnf/gd77-05-08eaton-d3t02.mp3"
-            ),
-            Track(
-                filename = "gd77-05-08eaton-d3t03.mp3",
-                title = "Fire on the Mountain", 
-                trackNumber = "3",
-                streamingUrl = "https://archive.org/download/gd77-05-08.sbd.hicks.4982.sbeok.shnf/gd77-05-08eaton-d3t03.mp3"
-            )
-        )
-    }
-    
-    /**
-     * Create MediaItem from Track
-     */
-    private fun createMediaItem(track: Track, recordingId: String): MediaItem {
-        val uri = track.streamingUrl ?: "https://archive.org/download/$recordingId/${track.filename}"
-        
-        return MediaItem.Builder()
-            .setUri(uri)
-            .setMediaMetadata(
-                androidx.media3.common.MediaMetadata.Builder()
-                    .setTitle(track.displayTitle)
-                    .setArtist("Grateful Dead")
-                    .setAlbumTitle(recordingId) // TODO: Better show info
-                    .build()
-            )
-            .build()
-    }
     
     /**
      * MediaSession callback for standard commands

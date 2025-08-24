@@ -126,6 +126,7 @@ class PlaylistServiceImpl @Inject constructor(
             location = show.location.displayText,
             rating = show.averageRating ?: 0.0f,
             reviewCount = show.totalReviews,
+            currentRecordingId = show.bestRecordingId, // TODO: Enhance this with user preference // TODO: Does this even really belong here?
             trackCount = show.recordingCount, // Use recording count as proxy for now
             hasNextShow = hasNext,
             hasPreviousShow = hasPrevious,

@@ -468,7 +468,7 @@ class PlaylistViewModel @Inject constructor(
     fun togglePlayback() {
         val currentState = _uiState.value
         Log.d(TAG, "V2 Toggle playback - currently playing: ${currentState.isPlaying}")
-        
+
         viewModelScope.launch {
             try {
                 // Get show data to determine recording ID
@@ -477,10 +477,17 @@ class PlaylistViewModel @Inject constructor(
                     Log.w(TAG, "No show data - cannot start playback")
                     return@launch
                 }
-                
+
+                // also need the current recording
+                val currentRecording = showData.currentRecordingId
+                if (currentRecording == null) {
+                    Log.w(TAG, "No currentRecording - cannot start playback")
+                    return@launch
+                }
+
                 // Create test recording ID and format
-                val recordingId = "test_recording_${showData.date}"
-                val format = "MP3"
+                val recordingId = currentRecording
+                val format = "VBR MP3"
                 
                 Log.d(TAG, "V2 Media: Play All for $recordingId ($format)")
                 
@@ -509,10 +516,17 @@ class PlaylistViewModel @Inject constructor(
                     Log.w(TAG, "No show data - cannot play track")
                     return@launch
                 }
-                
+
+                // also need the current recording
+                val currentRecording = showData.currentRecordingId
+                if (currentRecording == null) {
+                    Log.w(TAG, "No currentRecording - cannot start playback")
+                    return@launch
+                }
+
                 // Create recording ID and format
-                val recordingId = "test_recording_${showData.date}"
-                val format = "MP3"
+                val recordingId = currentRecording
+                val format = "VBR MP3"
                 val trackIndex = track.number - 1 // Convert to 0-based
                 
                 Log.d(TAG, "V2 Media: Play track $trackIndex of $recordingId ($format)")

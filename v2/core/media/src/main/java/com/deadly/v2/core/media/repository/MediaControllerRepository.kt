@@ -9,7 +9,8 @@ import androidx.media3.common.Player
 import androidx.media3.session.MediaController
 import androidx.media3.session.SessionToken
 import com.deadly.v2.core.media.service.DeadlyMediaSessionService
-import com.deadly.core.model.Track
+import com.deadly.v2.core.model.Track as V2Track
+import com.deadly.v2.core.network.archive.service.ArchiveService
 import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -22,14 +23,15 @@ import javax.inject.Inject
 import javax.inject.Singleton
 
 /**
- * Simple MediaController repository for V2 playback
+ * V2 MediaController repository for playback state management
  * 
- * Provides clean interface to MediaSessionService using standard MediaController methods.
- * Uses async connection pattern to avoid blocking main thread.
+ * Loads tracks directly from ArchiveService and maintains centralized playback state.
+ * All V2 screens observe this repository for consistent playback information.
  */
 @Singleton
 class MediaControllerRepository @Inject constructor(
-    @ApplicationContext private val context: Context
+    @ApplicationContext private val context: Context,
+    private val archiveService: ArchiveService
 ) {
     companion object {
         private const val TAG = "MediaControllerRepository"
@@ -67,45 +69,44 @@ class MediaControllerRepository @Inject constructor(
     
     /**
      * Play all tracks for a recording
-     * Implements Play All button logic: toggle if same recording, replace if different
+     * Loads tracks from ArchiveService and starts playback
      */
-    suspend fun playAll(recordingId: String, format: String) {
-        Log.d(TAG, "playAll: $recordingId ($format)")
+    suspend fun playAll(recordingId: String, format: String, startPosition: Long = 0L) {
+        Log.d(TAG, "playAll: $recordingId ($format) at position $startPosition")
         
         executeWhenConnected {
             val controller = mediaController
             
             if (controller != null) {
                 try {
-                    Log.d(TAG, "Creating MediaItems for playback")
+                    Log.d(TAG, "Loading tracks from ArchiveService for recording: $recordingId")
                     
-                    // Create test tracks for this recording
-                    val tracks = createTestTracks(recordingId)
-                    
-                    // Convert tracks to MediaItems
-                    val mediaItems = tracks.map { track ->
-                        val uri = track.streamingUrl ?: "https://archive.org/download/$recordingId/${track.filename}"
-                        Log.d(TAG, "Creating MediaItem: ${track.displayTitle} -> $uri")
+                    // Get raw V2 Track models from ArchiveService
+                    val result = archiveService.getRecordingTracks(recordingId)
+                    if (result.isSuccess) {
+                        val rawTracks = result.getOrNull() ?: emptyList()
+                        Log.d(TAG, "Loaded ${rawTracks.size} raw tracks from ArchiveService")
                         
-                        androidx.media3.common.MediaItem.Builder()
-                            .setUri(uri)
-                            .setMediaMetadata(
-                                androidx.media3.common.MediaMetadata.Builder()
-                                    .setTitle(track.displayTitle)
-                                    .setArtist("Grateful Dead")
-                                    .setAlbumTitle("Live Recording")
-                                    .build()
-                            )
-                            .build()
-                    } as List<androidx.media3.common.MediaItem>
-                    
-                    // Set media items and start playing
-                    Log.d(TAG, "Setting ${mediaItems.size} media items to MediaController")
-                    controller.setMediaItems(mediaItems)
-                    controller.prepare()
-                    controller.play()
-                    
-                    Log.d(TAG, "Playback started successfully")
+                        // Filter by format
+                        val filteredTracks = rawTracks.filter { track ->
+                            track.format.equals(format, ignoreCase = true)
+                        }
+                        Log.d(TAG, "Filtered to ${filteredTracks.size} tracks for format: $format")
+                        
+                        // Convert to MediaItems
+                        val mediaItems = convertToMediaItems(recordingId, filteredTracks)
+                        
+                        // Set media items and start playing at position
+                        Log.d(TAG, "Setting ${mediaItems.size} media items to MediaController")
+                        controller.setMediaItems(mediaItems, 0, startPosition)
+                        controller.prepare()
+                        controller.play()
+                        
+                        Log.d(TAG, "Playback started successfully")
+                        
+                    } else {
+                        Log.e(TAG, "Failed to load tracks: ${result.exceptionOrNull()}")
+                    }
                     
                 } catch (e: Exception) {
                     Log.e(TAG, "Error in playAll", e)
@@ -118,41 +119,48 @@ class MediaControllerRepository @Inject constructor(
     
     /**
      * Play specific track within recording
-     * Loads full recording queue if needed, then plays specified track
+     * Loads full recording queue, then plays specified track at specified position
      */
-    suspend fun playTrack(trackIndex: Int, recordingId: String, format: String) {
-        Log.d(TAG, "playTrack: index=$trackIndex, recording=$recordingId ($format)")
+    suspend fun playTrack(trackIndex: Int, recordingId: String, format: String, position: Long = 0L) {
+        Log.d(TAG, "playTrack: index=$trackIndex, recording=$recordingId ($format) at position $position")
         
         executeWhenConnected {
             val controller = mediaController
             
             if (controller != null) {
                 try {
-                    // Create test tracks for this recording
-                    val tracks = createTestTracks(recordingId)
+                    Log.d(TAG, "Loading tracks from ArchiveService for playTrack")
                     
-                    // Convert tracks to MediaItems
-                    val mediaItems = tracks.map { track ->
-                        val uri = track.streamingUrl ?: "https://archive.org/download/$recordingId/${track.filename}"
+                    // Get raw V2 Track models from ArchiveService
+                    val result = archiveService.getRecordingTracks(recordingId)
+                    if (result.isSuccess) {
+                        val rawTracks = result.getOrNull() ?: emptyList()
+                        Log.d(TAG, "Loaded ${rawTracks.size} raw tracks from ArchiveService")
                         
-                        androidx.media3.common.MediaItem.Builder()
-                            .setUri(uri)
-                            .setMediaMetadata(
-                                androidx.media3.common.MediaMetadata.Builder()
-                                    .setTitle(track.displayTitle)
-                                    .setArtist("Grateful Dead")
-                                    .setAlbumTitle("Live Recording")
-                                    .build()
-                            )
-                            .build()
-                    } as List<androidx.media3.common.MediaItem>
-                    
-                    // Set media items and play specific track
-                    controller.setMediaItems(mediaItems, trackIndex, 0)
-                    controller.prepare()
-                    controller.play()
-                    
-                    Log.d(TAG, "Playing track $trackIndex successfully")
+                        // Filter by format
+                        val filteredTracks = rawTracks.filter { track ->
+                            track.format.equals(format, ignoreCase = true)
+                        }
+                        Log.d(TAG, "Filtered to ${filteredTracks.size} tracks for format: $format")
+                        
+                        // Validate track index
+                        if (trackIndex >= 0 && trackIndex < filteredTracks.size) {
+                            // Convert to MediaItems
+                            val mediaItems = convertToMediaItems(recordingId, filteredTracks)
+                            
+                            // Set media items and play specific track at position
+                            controller.setMediaItems(mediaItems, trackIndex, position)
+                            controller.prepare()
+                            controller.play()
+                            
+                            Log.d(TAG, "Playing track $trackIndex at position $position successfully")
+                        } else {
+                            Log.e(TAG, "Invalid track index: $trackIndex (available: 0-${filteredTracks.size - 1})")
+                        }
+                        
+                    } else {
+                        Log.e(TAG, "Failed to load tracks: ${result.exceptionOrNull()}")
+                    }
                     
                 } catch (e: Exception) {
                     Log.e(TAG, "Error in playTrack", e)
@@ -285,29 +293,73 @@ class MediaControllerRepository @Inject constructor(
     }
     
     /**
-     * Create test tracks for a recording
+     * Convert V2 Track models to MediaItems for ExoPlayer
      */
-    private fun createTestTracks(recordingId: String): List<Track> {
-        return listOf(
-            Track(
-                filename = "gd77-05-08eaton-d3t01.mp3",
-                title = "Jack Straw",
-                trackNumber = "1", 
-                streamingUrl = "https://archive.org/download/gd77-05-08.sbd.hicks.4982.sbeok.shnf/gd77-05-08eaton-d3t01.mp3"
-            ),
-            Track(
-                filename = "gd77-05-08eaton-d3t02.mp3",
-                title = "Scarlet Begonias", 
-                trackNumber = "2",
-                streamingUrl = "https://archive.org/download/gd77-05-08.sbd.hicks.4982.sbeok.shnf/gd77-05-08eaton-d3t02.mp3"
-            ),
-            Track(
-                filename = "gd77-05-08eaton-d3t03.mp3",
-                title = "Fire on the Mountain", 
-                trackNumber = "3",
-                streamingUrl = "https://archive.org/download/gd77-05-08.sbd.hicks.4982.sbeok.shnf/gd77-05-08eaton-d3t03.mp3"
-            )
-        )
+    private fun convertToMediaItems(recordingId: String, tracks: List<V2Track>): List<androidx.media3.common.MediaItem> {
+        return tracks.mapIndexed { index, track ->
+            // Use track name/filename for URL construction if no direct URL available
+            val uri = generateArchiveUrl(recordingId, track)
+            Log.d(TAG, "Converting track ${index + 1}: ${track.title ?: track.name} -> $uri")
+            
+            androidx.media3.common.MediaItem.Builder()
+                .setUri(uri)
+                .setMediaMetadata(
+                    androidx.media3.common.MediaMetadata.Builder()
+                        .setTitle(track.title ?: track.name)
+                        .setArtist("Grateful Dead")
+                        .setAlbumTitle("Live Recording")
+                        .setTrackNumber(track.trackNumber)
+                        .build()
+                )
+                .build()
+        }
+    }
+    
+    /**
+     * Generate Archive.org URL from V2 Track model
+     */
+    private fun generateArchiveUrl(recordingId: String, track: V2Track): String {
+        // V2 Track should have the filename/name that corresponds to actual Archive.org files
+        return "https://archive.org/download/${recordingId}/${track.name}"
+    }
+    
+    // /**
+    //  * Extract recording identifier from track name pattern
+    //  */
+    // private fun extractRecordingIdFromTrack(track: V2Track): String {
+    //     // Extract recording ID from track name pattern like "gd77-05-08d1t01.mp3"
+    //     val name = track.name
+    //     return when {
+    //         name.contains("gd") && name.contains("d") -> {
+    //             // Pattern: gd77-05-08d1t01.mp3 -> need the full recording identifier
+    //             // This is a simplified approach - real implementation may need more logic
+    //             "gd77-05-08.sbd.hicks.4982.sbeok.shnf" // Fallback for now
+    //         }
+    //         else -> "unknown-recording"
+    //     }
+    // }
+    
+    /**
+     * Parse duration string to milliseconds
+     */
+    private fun parseDuration(duration: String?): Long? {
+        return duration?.let { durationStr ->
+            try {
+                // Handle MM:SS format
+                if (durationStr.contains(":")) {
+                    val parts = durationStr.split(":")
+                    if (parts.size == 2) {
+                        val minutes = parts[0].toIntOrNull() ?: 0
+                        val seconds = parts[1].toIntOrNull() ?: 0
+                        return (minutes * 60 + seconds) * 1000L
+                    }
+                }
+                // Handle seconds as string
+                durationStr.toDoubleOrNull()?.let { (it * 1000).toLong() }
+            } catch (e: Exception) {
+                null
+            }
+        }
     }
     
     /**
