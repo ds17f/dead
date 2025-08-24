@@ -1,12 +1,17 @@
 # Changelog
 
+## [0.55.0] - 2025-08-24
+
+### New Features
+* implement configurable debounce delay with debug panel controls (48d7ce35)
+* implement smart format selection with fallback system (29541e29)
+
+
 ## [0.54.0] - 2025-08-23
 
 ### New Features
 * Wire up real recordings and tracks (4a42da8d)
 * implement MediaSessionService playback system (a5c1aeb9)
-
-
 ## [0.53.0] - 2025-08-23
 
 ### New Features
