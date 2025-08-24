@@ -1,12 +1,17 @@
 # Changelog
 
+## [0.54.0] - 2025-08-23
+
+### New Features
+* Wire up real recordings and tracks (4a42da8d)
+* implement MediaSessionService playback system (a5c1aeb9)
+
+
 ## [0.53.0] - 2025-08-23
 
 ### New Features
 * Prefetch 2 recordings in each direction (b859535a)
 * implement background prefetch system for adjacent shows (44f44f5f)
-
-
 ## [0.52.0] - 2025-08-22
 
 ### New Features
