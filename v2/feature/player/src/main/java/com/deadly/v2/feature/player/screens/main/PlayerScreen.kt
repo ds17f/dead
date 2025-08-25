@@ -24,6 +24,7 @@ import com.deadly.v2.feature.player.screens.main.components.PlayerMaterialPanels
 import com.deadly.v2.feature.player.screens.main.components.PlayerTrackActionsSheet
 import com.deadly.v2.feature.player.screens.main.components.PlayerConnectSheet
 import com.deadly.v2.feature.player.screens.main.components.PlayerQueueSheet
+import com.deadly.v2.feature.player.screens.main.components.PlayerMiniPlayer
 import com.deadly.v2.feature.player.screens.main.components.RepeatMode
 import com.deadly.v2.feature.player.screens.main.models.PlayerViewModel
 
@@ -243,9 +244,22 @@ fun PlayerScreen(
             )
         }
         
-        // TODO: Mini Player overlay when scrolled
-        // if (showMiniPlayer) {
-        //     PlayerMiniPlayer(...)
-        // }
+        // Mini Player overlay when scrolled
+        if (showMiniPlayer) {
+            PlayerMiniPlayer(
+                uiState = uiState,
+                recordingId = recordingId,
+                onPlayPause = viewModel::onPlayPauseClicked,
+                onTapToExpand = {
+                    // Use a coroutine scope to handle the scroll
+                    coroutineScope.launch {
+                        scrollState.animateScrollToItem(0)
+                    }
+                },
+                modifier = Modifier
+                    .align(Alignment.TopCenter)
+                    .fillMaxWidth()
+            )
+        }
     }
 }
