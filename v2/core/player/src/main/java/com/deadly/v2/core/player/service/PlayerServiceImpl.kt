@@ -95,9 +95,7 @@ class PlayerServiceImpl @Inject constructor(
     override suspend fun seekToNext() {
         Log.d(TAG, "Seek to next track")
         try {
-            // MediaControllerRepository doesn't have seekToNext yet
-            // TODO: Add seekToNext method to MediaControllerRepository
-            Log.w(TAG, "seekToNext not yet implemented in MediaControllerRepository")
+            mediaControllerRepository.seekToNext()
         } catch (e: Exception) {
             Log.e(TAG, "Error seeking to next", e)
         }
@@ -106,9 +104,7 @@ class PlayerServiceImpl @Inject constructor(
     override suspend fun seekToPrevious() {
         Log.d(TAG, "Seek to previous track")
         try {
-            // MediaControllerRepository doesn't have seekToPrevious yet
-            // TODO: Add seekToPrevious method to MediaControllerRepository  
-            Log.w(TAG, "seekToPrevious not yet implemented in MediaControllerRepository")
+            mediaControllerRepository.seekToPrevious()
         } catch (e: Exception) {
             Log.e(TAG, "Error seeking to previous", e)
         }
@@ -117,9 +113,7 @@ class PlayerServiceImpl @Inject constructor(
     override suspend fun seekToPosition(positionMs: Long) {
         Log.d(TAG, "Seek to position: ${positionMs}ms")
         try {
-            // MediaControllerRepository doesn't have seekToPosition yet
-            // TODO: Add seekToPosition method to MediaControllerRepository
-            Log.w(TAG, "seekToPosition not yet implemented in MediaControllerRepository")
+            mediaControllerRepository.seekToPosition(positionMs)
         } catch (e: Exception) {
             Log.e(TAG, "Error seeking to position", e)
         }

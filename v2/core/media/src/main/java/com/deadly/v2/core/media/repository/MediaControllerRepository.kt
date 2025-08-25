@@ -584,6 +584,27 @@ class MediaControllerRepository @Inject constructor(
         }
     }
     
+    suspend fun seekToNext() {
+        Log.d(TAG, "seekToNext - calling seekToNextMediaItem")
+        executeWhenConnected {
+            mediaController?.seekToNextMediaItem()
+        }
+    }
+    
+    suspend fun seekToPrevious() {
+        Log.d(TAG, "seekToPrevious - calling seekToPreviousMediaItem")
+        executeWhenConnected {
+            mediaController?.seekToPreviousMediaItem()
+        }
+    }
+    
+    suspend fun seekToPosition(positionMs: Long) {
+        Log.d(TAG, "seekToPosition: ${positionMs}ms")
+        executeWhenConnected {
+            mediaController?.seekTo(positionMs)
+        }
+    }
+    
     /**
      * Release resources
      */
