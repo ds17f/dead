@@ -3,7 +3,9 @@ package com.deadly.v2.core.design.scaffold
 import androidx.compose.foundation.layout.*
 import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.unit.dp
 import com.deadly.v2.core.design.component.topbar.TopBar
 import com.deadly.v2.core.design.component.topbar.TopBarMode
 
@@ -85,6 +87,8 @@ fun AppScaffold(
  * This version accepts BarConfiguration objects and handles both top and bottom
  * navigation based on the current route configuration. This is the new unified
  * layout controller for the V2 app with bottom navigation support.
+ * 
+ * Added MiniPlayer support - positioned above bottom navigation like Spotify.
  */
 @Composable
 fun AppScaffold(
@@ -92,35 +96,65 @@ fun AppScaffold(
     topBarConfig: TopBarConfig? = null,
     bottomBarConfig: BottomBarConfig? = null,
     bottomNavigationContent: (@Composable () -> Unit)? = null,
+    miniPlayerContent: (@Composable () -> Unit)? = null,
     onNavigationClick: (() -> Unit)? = null,
     content: @Composable (PaddingValues) -> Unit
 ) {
-    Scaffold(
-        modifier = modifier,
-        topBar = {
-            topBarConfig?.let { config ->
-                TopBar(
-                    title = config.title,
-                    mode = config.mode,
-                    navigationIcon = config.navigationIcon,
-                    actions = config.actions?.let { actions ->
-                        { actions() }
-                    } ?: {},
-                    onNavigationClick = onNavigationClick
-                )
+    // Use Box layout to properly layer MiniPlayer above bottom navigation
+    Box(modifier = modifier.fillMaxSize()) {
+        Scaffold(
+            modifier = Modifier.fillMaxSize(),
+            topBar = {
+                topBarConfig?.let { config ->
+                    TopBar(
+                        title = config.title,
+                        mode = config.mode,
+                        navigationIcon = config.navigationIcon,
+                        actions = config.actions?.let { actions ->
+                            { actions() }
+                        } ?: {},
+                        onNavigationClick = onNavigationClick
+                    )
+                }
+            },
+            bottomBar = {
+                // Empty bottomBar - we'll render navigation and MiniPlayer separately below
+            },
+            contentWindowInsets = when (topBarConfig?.mode) {
+                TopBarMode.SOLID -> WindowInsets.systemBars
+                TopBarMode.IMMERSIVE -> WindowInsets(0, 0, 0, 0)
+                null -> WindowInsets.systemBars
             }
-        },
-        bottomBar = {
+        ) { paddingValues ->
+            // Main content with extra bottom padding if MiniPlayer or bottom nav are present
+            val extraBottomPadding = when {
+                miniPlayerContent != null && bottomBarConfig?.visible == true -> 144.dp // MiniPlayer (88dp) + BottomNav (56dp)
+                miniPlayerContent != null -> 88.dp // Just MiniPlayer
+                bottomBarConfig?.visible == true -> 56.dp // Just BottomNav
+                else -> 0.dp
+            }
+            
+            content(
+                PaddingValues(
+                    top = paddingValues.calculateTopPadding(),
+                    start = paddingValues.calculateStartPadding(androidx.compose.ui.unit.LayoutDirection.Ltr),
+                    end = paddingValues.calculateEndPadding(androidx.compose.ui.unit.LayoutDirection.Ltr),
+                    bottom = paddingValues.calculateBottomPadding() + extraBottomPadding
+                )
+            )
+        }
+        
+        // Layer MiniPlayer and bottom navigation at the bottom
+        Column(
+            modifier = Modifier.align(Alignment.BottomCenter)
+        ) {
+            // MiniPlayer above bottom navigation (Spotify-style)
+            miniPlayerContent?.invoke()
+            
+            // Bottom navigation at the very bottom
             if (bottomBarConfig?.visible == true && bottomNavigationContent != null) {
                 bottomNavigationContent()
             }
-        },
-        contentWindowInsets = when (topBarConfig?.mode) {
-            TopBarMode.SOLID -> WindowInsets.systemBars
-            TopBarMode.IMMERSIVE -> WindowInsets(0, 0, 0, 0)
-            null -> WindowInsets.systemBars
         }
-    ) { paddingValues ->
-        content(paddingValues)
     }
 }

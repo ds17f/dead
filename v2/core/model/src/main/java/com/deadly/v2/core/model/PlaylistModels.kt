@@ -134,6 +134,102 @@ data class PlaylistUiState(
     val recordingSelection: RecordingSelectionState = RecordingSelectionState()
 )
 
+/**
+ * Complete information about the currently playing track for V2 architecture
+ * Includes denormalized show and track data for immediate display use.
+ */
+@Serializable
+data class CurrentTrackInfo(
+    // Track identification
+    val trackUrl: String,
+    val recordingId: String,
+    val showId: String,
+    
+    // Denormalized show data for immediate display
+    val showDate: String,           // e.g., "1977-05-08"
+    val venue: String?,             // e.g., "Barton Hall"
+    val location: String?,          // e.g., "Cornell University, Ithaca, NY"
+    
+    // Track-specific data
+    val songTitle: String,          // e.g., "Scarlet Begonias"
+    val trackNumber: Int?,          // e.g., 5
+    val filename: String,           // Original filename
+    
+    // Playback state
+    val isPlaying: Boolean,
+    val position: Long,             // Current position in milliseconds
+    val duration: Long              // Track duration in milliseconds
+) {
+    /**
+     * Formatted display title - parsed song title
+     */
+    val displayTitle: String
+        get() = if (songTitle.isNotBlank()) {
+            songTitle
+        } else {
+            "Unknown Track"
+        }
+    
+    /**
+     * Formatted show date for display
+     * Format: "Jul 17, 1976"
+     */
+    val displayDate: String
+        get() = formatShowDate(showDate)
+    
+    /**
+     * Formatted subtitle with date and venue
+     * Format: "Date - Venue"
+     */
+    val displaySubtitle: String
+        get() = buildString {
+            append(formatShowDate(showDate))
+            if (!venue.isNullOrBlank()) {
+                append(" - ")
+                append(venue)
+            }
+        }
+    
+    private fun formatShowDate(dateString: String): String {
+        return try {
+            // Convert from YYYY-MM-DD to more readable format
+            val parts = dateString.split("-")
+            if (parts.size == 3) {
+                val year = parts[0]
+                val month = parts[1].toInt()
+                val day = parts[2].toInt()
+                
+                val monthNames = arrayOf(
+                    "Jan", "Feb", "Mar", "Apr", "May", "Jun",
+                    "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"
+                )
+                
+                "${monthNames[month - 1]} $day, $year"
+            } else {
+                dateString
+            }
+        } catch (e: Exception) {
+            dateString
+        }
+    }
+}
+
+/**
+ * UI State for MiniPlayer component
+ * 
+ * Reactive state model for V2 MiniPlayer with complete playback information.
+ */
+data class MiniPlayerUiState(
+    val isPlaying: Boolean = false,
+    val currentTrack: CurrentTrackInfo? = null,
+    val progress: Float = 0f,
+    val showId: String? = null,
+    val recordingId: String? = null,
+    val shouldShow: Boolean = false,
+    val isLoading: Boolean = false,
+    val error: String? = null
+)
+
 // === Archive Domain Models ===
 
 /**

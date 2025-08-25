@@ -1,5 +1,6 @@
 package com.deadly.v2.app
 
+import android.util.Log
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
@@ -23,6 +24,7 @@ import com.deadly.v2.app.navigation.BottomNavDestination
 import com.deadly.v2.core.theme.api.ThemeAssets
 import com.deadly.v2.feature.search.screens.searchResults.SearchResultsScreen
 import com.deadly.v2.feature.search.screens.main.SearchScreen
+import com.deadly.v2.feature.miniplayer.screens.main.MiniPlayerScreen
 
 /**
  * MainAppScreen - V2 app with Spotify-style bottom navigation
@@ -40,31 +42,17 @@ fun MainAppScreen(
     val navBackStackEntry by navController.currentBackStackEntryAsState()
     val currentRoute = navBackStackEntry?.destination?.route
     
-    Scaffold(
-        bottomBar = {
-            BottomNavigationBar(
-                currentRoute = currentRoute,
-                onNavigateToDestination = { route ->
-                    // Navigate to destination with proper stack management
-                    navController.navigate(route) {
-                        // Pop up to start destination to avoid stack buildup
-                        popUpTo(navController.graph.startDestinationId) {
-                            saveState = true
-                        }
-                        // Avoid multiple copies of the same destination
-                        launchSingleTop = true
-                        // Restore state when reselecting previously selected item
-                        restoreState = true
-                    }
-                }
-            )
-        }
-    ) { paddingValues ->
-        NavHost(
-            navController = navController,
-            startDestination = BottomNavDestination.Home.route,
-            modifier = Modifier.padding(paddingValues)
-        ) {
+    Scaffold { paddingValues ->
+        Column {
+            // Main content navigation
+            NavHost(
+                navController = navController,
+                startDestination = BottomNavDestination.Home.route,
+                modifier = Modifier
+                    .fillMaxSize()
+                    .padding(paddingValues)
+                    .weight(1f)
+            ) {
             // Home screen - clean welcome screen without hub navigation
             composable(BottomNavDestination.Home.route) {
                 CleanHomeScreen()
@@ -116,7 +104,37 @@ fun MainAppScreen(
                 // TODO: Replace with actual settings screen if this file is still used
             }
         }
+        
+        // Global MiniPlayer - appears above bottom navigation
+        MiniPlayerScreen(
+            onTapToExpand = { showId ->
+                if (showId != null) {
+                    Log.d("MainAppScreen", "MiniPlayer tapped - navigating to playlist: $showId")
+                    // TODO: Navigate to playlist when V2 playlist route is available
+                    // navController.navigate("playlist/$showId")
+                }
+            }
+        )
+        
+        // Bottom navigation
+        BottomNavigationBar(
+            currentRoute = currentRoute,
+            onNavigateToDestination = { route ->
+                // Navigate to destination with proper stack management
+                navController.navigate(route) {
+                    // Pop up to start destination to avoid stack buildup
+                    popUpTo(navController.graph.startDestinationId) {
+                        saveState = true
+                    }
+                    // Avoid multiple copies of the same destination
+                    launchSingleTop = true
+                    // Restore state when reselecting previously selected item
+                    restoreState = true
+                }
+            }
+        )
     }
+}
 }
 
 /**

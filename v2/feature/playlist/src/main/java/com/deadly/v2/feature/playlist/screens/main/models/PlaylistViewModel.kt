@@ -498,8 +498,22 @@ class PlaylistViewModel @Inject constructor(
                 
                 Log.d(TAG, "V2 Media: Play All for $recordingId ($selectedFormat)")
                 
+                // Get show context from UI state
+                val showContext = _uiState.value.showData
+                val showId = "" // TODO: Get actual showId from service
+                val showDate = showContext?.date ?: "1970-01-01"
+                val venue = showContext?.venue
+                val location = showContext?.location
+                
                 // Use MediaControllerRepository for Play All logic
-                mediaControllerRepository.playAll(recordingId, selectedFormat)
+                mediaControllerRepository.playAll(
+                    recordingId = recordingId, 
+                    format = selectedFormat,
+                    showId = showId,
+                    showDate = showDate,
+                    venue = venue,
+                    location = location
+                )
                 
                 // UI state will be updated via MediaController state observation
                 
@@ -527,14 +541,14 @@ class PlaylistViewModel @Inject constructor(
                 Log.d(TAG, "V2 Playing track: ${track.title} (index: ${track.number - 1})")
                 
                 // Get show data to determine recording ID
-                val showData = _uiState.value.showData
-                if (showData == null) {
+                val currentShowData = _uiState.value.showData
+                if (currentShowData == null) {
                     Log.w(TAG, "No show data - cannot play track")
                     return@launch
                 }
 
                 // also need the current recording
-                val currentRecording = showData.currentRecordingId
+                val currentRecording = currentShowData.currentRecordingId
                 if (currentRecording == null) {
                     Log.w(TAG, "No currentRecording - cannot start playback")
                     return@launch
@@ -553,8 +567,23 @@ class PlaylistViewModel @Inject constructor(
                 
                 Log.d(TAG, "V2 Media: Play track $trackIndex of $recordingId ($selectedFormat)")
                 
+                // Get show context from UI state
+                val showContext = _uiState.value.showData
+                val showId = "" // TODO: Get actual showId from service
+                val showDate = showContext?.date ?: "1970-01-01"
+                val venue = showContext?.venue
+                val location = showContext?.location
+                
                 // Use MediaControllerRepository for track playback
-                mediaControllerRepository.playTrack(trackIndex, recordingId, selectedFormat)
+                mediaControllerRepository.playTrack(
+                    trackIndex = trackIndex, 
+                    recordingId = recordingId, 
+                    format = selectedFormat,
+                    showId = showId,
+                    showDate = showDate,
+                    venue = venue,
+                    location = location
+                )
                 
                 // UI state will be updated via MediaController state observation
                 

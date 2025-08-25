@@ -2,6 +2,7 @@ package com.deadly.v2.core.media.repository
 
 import android.content.ComponentName
 import android.content.Context
+import android.os.Bundle
 import android.util.Log
 import androidx.core.content.ContextCompat
 import androidx.media3.common.MediaMetadata
@@ -19,6 +20,9 @@ import kotlinx.coroutines.SupervisorJob
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
+import kotlinx.coroutines.flow.combine
+import kotlinx.coroutines.flow.stateIn
+import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 import javax.inject.Singleton
@@ -63,6 +67,33 @@ class MediaControllerRepository @Inject constructor(
     private val _currentTrack = MutableStateFlow<MediaMetadata?>(null)
     val currentTrack: StateFlow<MediaMetadata?> = _currentTrack.asStateFlow()
     
+    // MiniPlayer state flows
+    private val _currentPosition = MutableStateFlow(0L)
+    val currentPosition: StateFlow<Long> = _currentPosition.asStateFlow()
+    
+    private val _duration = MutableStateFlow(0L)
+    val duration: StateFlow<Long> = _duration.asStateFlow()
+    
+    private val _currentShowId = MutableStateFlow<String?>(null)
+    val currentShowId: StateFlow<String?> = _currentShowId.asStateFlow()
+    
+    private val _currentRecordingId = MutableStateFlow<String?>(null)
+    val currentRecordingId: StateFlow<String?> = _currentRecordingId.asStateFlow()
+    
+    private val _currentTrackIndex = MutableStateFlow(0)
+    val currentTrackIndex: StateFlow<Int> = _currentTrackIndex.asStateFlow()
+    
+    // Computed progress for MiniPlayer progress bar
+    val progress: StateFlow<Float> = combine(
+        _currentPosition, _duration
+    ) { pos, dur -> 
+        if (dur > 0) pos.toFloat() / dur else 0f 
+    }.stateIn(
+        scope = repositoryScope,
+        started = SharingStarted.WhileSubscribed(),
+        initialValue = 0f
+    )
+    
     init {
         // Start async connection immediately
         connectToService()
@@ -72,7 +103,16 @@ class MediaControllerRepository @Inject constructor(
      * Play all tracks for a recording
      * Loads tracks from ArchiveService and starts playback
      */
-    suspend fun playAll(recordingId: String, format: String, startPosition: Long = 0L) {
+    suspend fun playAll(
+        recordingId: String, 
+        format: String, 
+        showId: String,
+        showDate: String,
+        venue: String?,
+        location: String?,
+        startPosition: Long = 0L,
+        autoPlay: Boolean = true
+    ) {
         Log.d(TAG, "playAll: $recordingId ($format) at position $startPosition")
         
         executeWhenConnected {
@@ -105,16 +145,29 @@ class MediaControllerRepository @Inject constructor(
                         
                         Log.d(TAG, "Found ${filteredTracks.size} tracks for format: $format")
                         
-                        // Convert to MediaItems
-                        val mediaItems = convertToMediaItems(recordingId, filteredTracks)
+                        // Set position immediately from known value (before MediaController is ready)
+                        _currentPosition.value = startPosition
+                        // Set duration from first track (playAll starts at track 0)
+                        if (filteredTracks.isNotEmpty()) {
+                            _duration.value = parseDurationToMs(filteredTracks[0].duration)
+                        }
                         
-                        // Set media items and start playing at position
+                        // Convert to MediaItems
+                        val mediaItems = convertToMediaItems(recordingId, filteredTracks, showId, showDate, venue, location, format)
+                        
+                        // Set media items and optionally start playing at position
                         Log.d(TAG, "Setting ${mediaItems.size} media items to MediaController")
                         controller.setMediaItems(mediaItems, 0, startPosition)
                         controller.prepare()
-                        controller.play()
                         
-                        Log.d(TAG, "Playback started successfully")
+                        // MediaController will provide accurate updates once ready via callbacks
+                        
+                        if (autoPlay) {
+                            controller.play()
+                            Log.d(TAG, "Playback started successfully")
+                        } else {
+                            Log.d(TAG, "Recording loaded at position $startPosition (paused)")
+                        }
                         
                     } else {
                         Log.e(TAG, "Failed to load tracks: ${result.exceptionOrNull()}")
@@ -133,7 +186,17 @@ class MediaControllerRepository @Inject constructor(
      * Play specific track within recording
      * Loads full recording queue, then plays specified track at specified position
      */
-    suspend fun playTrack(trackIndex: Int, recordingId: String, format: String, position: Long = 0L) {
+    suspend fun playTrack(
+        trackIndex: Int, 
+        recordingId: String, 
+        format: String, 
+        showId: String,
+        showDate: String,
+        venue: String?,
+        location: String?,
+        position: Long = 0L,
+        autoPlay: Boolean = true
+    ) {
         Log.d(TAG, "playTrack: index=$trackIndex, recording=$recordingId ($format) at position $position")
         
         executeWhenConnected {
@@ -168,15 +231,28 @@ class MediaControllerRepository @Inject constructor(
                         
                         // Validate track index
                         if (trackIndex >= 0 && trackIndex < filteredTracks.size) {
-                            // Convert to MediaItems
-                            val mediaItems = convertToMediaItems(recordingId, filteredTracks)
+                            // Get selected track for immediate duration calculation
+                            val selectedTrack = filteredTracks[trackIndex]
                             
-                            // Set media items and play specific track at position
+                            // Set position and duration immediately from known values (before MediaController is ready)
+                            _currentPosition.value = position
+                            _duration.value = parseDurationToMs(selectedTrack.duration)
+                            
+                            // Convert to MediaItems
+                            val mediaItems = convertToMediaItems(recordingId, filteredTracks, showId, showDate, venue, location, format)
+                            
+                            // Set media items and seek to specific track at position
                             controller.setMediaItems(mediaItems, trackIndex, position)
                             controller.prepare()
-                            controller.play()
                             
-                            Log.d(TAG, "Playing track $trackIndex at position $position successfully")
+                            // MediaController will provide accurate updates once ready via callbacks
+                            
+                            if (autoPlay) {
+                                controller.play()
+                                Log.d(TAG, "Playing track $trackIndex at position $position successfully")
+                            } else {
+                                Log.d(TAG, "Track $trackIndex loaded at position $position (paused)")
+                            }
                         } else {
                             Log.e(TAG, "Invalid track index: $trackIndex (available: 0-${filteredTracks.size - 1})")
                         }
@@ -247,9 +323,30 @@ class MediaControllerRepository @Inject constructor(
                         override fun onMediaMetadataChanged(mediaMetadata: MediaMetadata) {
                             _currentTrack.value = mediaMetadata
                         }
+                        
+                        override fun onPositionDiscontinuity(reason: Int) {
+                            // Update position when there's a discontinuity (seeking, etc.)
+                            _currentPosition.value = controller.currentPosition
+                        }
+                        
+                        override fun onMediaItemTransition(mediaItem: androidx.media3.common.MediaItem?, reason: Int) {
+                            _currentShowId.value = extractShowIdFromMediaItem(mediaItem)
+                            _currentRecordingId.value = extractRecordingIdFromMediaItem(mediaItem)
+                            _currentTrackIndex.value = controller.currentMediaItemIndex
+                        }
+                        
+                        override fun onPlaybackStateChanged(playbackState: Int) {
+                            if (playbackState == Player.STATE_READY) {
+                                _duration.value = controller.duration.coerceAtLeast(0L)
+                                _currentPosition.value = controller.currentPosition
+                            }
+                        }
                     })
                     
                     Log.d(TAG, "MediaController connected successfully")
+                    
+                    // Start position updater for MiniPlayer
+                    startPositionUpdater()
                     
                     // Execute any pending commands
                     repositoryScope.launch {
@@ -318,7 +415,15 @@ class MediaControllerRepository @Inject constructor(
     /**
      * Convert V2 Track models to MediaItems for ExoPlayer
      */
-    private fun convertToMediaItems(recordingId: String, tracks: List<V2Track>): List<androidx.media3.common.MediaItem> {
+    private fun convertToMediaItems(
+        recordingId: String, 
+        tracks: List<V2Track>,
+        showId: String,
+        showDate: String,
+        venue: String?,
+        location: String?,
+        format: String
+    ): List<androidx.media3.common.MediaItem> {
         return tracks.mapIndexed { index, track ->
             // Use track name/filename for URL construction if no direct URL available
             val uri = generateArchiveUrl(recordingId, track)
@@ -330,8 +435,25 @@ class MediaControllerRepository @Inject constructor(
                     androidx.media3.common.MediaMetadata.Builder()
                         .setTitle(track.title ?: track.name)
                         .setArtist("Grateful Dead")
-                        .setAlbumTitle("Live Recording")
+                        .setAlbumTitle(
+                            // Format: "Apr 3, 1990 - The Omni" or just show date if no venue
+                            if (!venue.isNullOrBlank()) {
+                                "${formatShowDate(showDate)} - $venue"
+                            } else {
+                                formatShowDate(showDate)
+                            }
+                        )
                         .setTrackNumber(track.trackNumber)
+                        .setExtras(Bundle().apply {
+                            putString("showId", showId)
+                            putString("recordingId", recordingId)
+                            putString("venue", venue)
+                            putString("showDate", showDate)
+                            putString("location", location)
+                            putString("filename", track.name)
+                            putString("format", format)
+                            putString("trackUrl", uri.toString())
+                        })
                         .build()
                 )
                 .build()
@@ -381,6 +503,83 @@ class MediaControllerRepository @Inject constructor(
                 durationStr.toDoubleOrNull()?.let { (it * 1000).toLong() }
             } catch (e: Exception) {
                 null
+            }
+        }
+    }
+    
+    private fun extractShowIdFromMediaItem(mediaItem: androidx.media3.common.MediaItem?): String? {
+        return mediaItem?.mediaMetadata?.extras?.getString("showId")
+    }
+    
+    private fun extractRecordingIdFromMediaItem(mediaItem: androidx.media3.common.MediaItem?): String? {
+        return mediaItem?.mediaMetadata?.extras?.getString("recordingId")
+    }
+    
+    /**
+     * Start periodic position updates for MiniPlayer progress
+     */
+    /**
+     * Format show date from YYYY-MM-DD to readable format
+     * Copied from V1 CurrentTrackInfo pattern
+     */
+    private fun formatShowDate(dateString: String): String {
+        return try {
+            // Convert from YYYY-MM-DD to more readable format
+            val parts = dateString.split("-")
+            if (parts.size == 3) {
+                val year = parts[0]
+                val month = parts[1].toInt()
+                val day = parts[2].toInt()
+                
+                val monthNames = arrayOf(
+                    "Jan", "Feb", "Mar", "Apr", "May", "Jun",
+                    "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"
+                )
+                
+                "${monthNames[month - 1]} $day, $year"
+            } else {
+                dateString
+            }
+        } catch (e: Exception) {
+            dateString
+        }
+    }
+    
+    /**
+     * Parse duration string (e.g., "4:32" or "1:23:45") to milliseconds
+     */
+    private fun parseDurationToMs(durationString: String?): Long {
+        if (durationString.isNullOrBlank()) return 0L
+        return try {
+            val parts = durationString.split(":")
+            when (parts.size) {
+                2 -> { // mm:ss format
+                    val minutes = parts[0].toLong()
+                    val seconds = parts[1].toLong()
+                    (minutes * 60 + seconds) * 1000
+                }
+                3 -> { // hh:mm:ss format  
+                    val hours = parts[0].toLong()
+                    val minutes = parts[1].toLong()
+                    val seconds = parts[2].toLong()
+                    (hours * 3600 + minutes * 60 + seconds) * 1000
+                }
+                else -> 0L
+            }
+        } catch (e: Exception) { 
+            Log.w(TAG, "Failed to parse duration: $durationString", e)
+            0L 
+        }
+    }
+    
+    private fun startPositionUpdater() {
+        repositoryScope.launch {
+            while (true) {
+                val controller = mediaController
+                if (controller != null) {
+                    _currentPosition.value = controller.currentPosition
+                }
+                kotlinx.coroutines.delay(1000) // Update every second
             }
         }
     }

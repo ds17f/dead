@@ -13,6 +13,7 @@ import com.deadly.core.settings.api.SettingsRepository
 import com.deadly.core.data.service.UpdateService
 import com.deadly.core.data.service.GlobalUpdateManager
 import com.deadly.v2.core.database.service.DatabaseManager
+import com.deadly.v2.core.miniplayer.LastPlayedTrackService as V2LastPlayedTrackService
 import dagger.hilt.android.HiltAndroidApp
 import kotlinx.coroutines.flow.firstOrNull
 import kotlinx.coroutines.CoroutineScope
@@ -53,6 +54,9 @@ class DeadArchiveApplication : Application(), Configuration.Provider {
     
     @Inject
     lateinit var v2DatabaseManager: DatabaseManager
+    
+    @Inject
+    lateinit var v2LastPlayedTrackService: V2LastPlayedTrackService
     
     private val applicationScope = CoroutineScope(SupervisorJob() + Dispatchers.Main)
     
@@ -116,6 +120,18 @@ class DeadArchiveApplication : Application(), Configuration.Provider {
                 android.util.Log.d("DeadArchiveApplication", "✅ Last played track restoration completed")
             } catch (e: Exception) {
                 android.util.Log.e("DeadArchiveApplication", "❌ Failed to restore last played track", e)
+            }
+        }
+        
+        // CRITICAL: Restore V2 last played track for MiniPlayer functionality
+        applicationScope.launch {
+            try {
+                android.util.Log.d("DeadArchiveApplication", "Attempting to restore V2 last played track...")
+                v2LastPlayedTrackService.restoreLastPlayedTrack()
+                v2LastPlayedTrackService.startMonitoring()
+                android.util.Log.d("DeadArchiveApplication", "✅ V2 last played track restoration completed")
+            } catch (e: Exception) {
+                android.util.Log.e("DeadArchiveApplication", "❌ Failed to restore V2 last played track", e)
             }
         }
         

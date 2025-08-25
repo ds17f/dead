@@ -25,6 +25,7 @@ import com.deadly.v2.feature.settings.SettingsScreen
 import com.deadly.v2.feature.splash.navigation.splashGraph
 import com.deadly.v2.feature.search.navigation.searchGraph
 import com.deadly.v2.feature.playlist.navigation.playlistGraph
+import com.deadly.v2.feature.miniplayer.screens.main.MiniPlayerScreen
 import com.deadly.v2.core.theme.api.DeadlyTheme
 import com.deadly.v2.core.theme.api.ThemeAssetProvider
 import com.deadly.v2.core.theme.ThemeManager
@@ -99,6 +100,17 @@ fun MainNavigation(
                     )
                 }
             } else null,
+            miniPlayerContent = {
+                MiniPlayerScreen(
+                    onTapToExpand = { showId ->
+                        if (showId != null) {
+                            Log.d("MainNavigation", "MiniPlayer tapped - navigating to playlist: $showId")
+                            // Navigate to playlist with the show ID
+                            navController.navigate("playlist/$showId")
+                        }
+                    }
+                )
+            },
             onNavigationClick = {
                 navController.popBackStack()
             }
