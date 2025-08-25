@@ -206,11 +206,6 @@ class PlayerServiceImpl @Inject constructor(
                 "🏷️ MediaItem.playbackProperties.mimeType" to currentMediaItem.localConfiguration?.mimeType,
                 "📋 MediaItem.playbackProperties.tag" to currentMediaItem.localConfiguration?.tag?.toString(),
                 
-                // Parse embedded MediaId for verification
-                "🔍 Parsed showId" to parseMediaId(currentMediaItem.mediaId)?.first,
-                "🔍 Parsed recordingId" to parseMediaId(currentMediaItem.mediaId)?.second,  
-                "🔍 Parsed trackIndex" to parseMediaId(currentMediaItem.mediaId)?.third?.toString(),
-                
                 // === MEDIA METADATA FIELDS ===
                 "title" to currentMetadata.title?.toString(),
                 "artist" to currentMetadata.artist?.toString(),
@@ -252,26 +247,4 @@ class PlayerServiceImpl @Inject constructor(
         }
     }
     
-    /**
-     * Parse MediaId to extract embedded identifiers
-     * Returns Triple(showId, recordingId, trackIndex) or null if parsing fails
-     */
-    private fun parseMediaId(mediaId: String?): Triple<String, String, Int>? {
-        return try {
-            if (mediaId.isNullOrBlank()) return null
-            
-            val parts = mediaId.split("|")
-            if (parts.size != 3) return null
-            
-            val showId = parts[0].trim()
-            val recordingId = parts[1].trim()
-            val trackIndex = parts[2].trim().toInt()
-            
-            if (showId.isEmpty() || recordingId.isEmpty() || trackIndex < 0) return null
-            
-            Triple(showId, recordingId, trackIndex)
-        } catch (e: Exception) {
-            null
-        }
-    }
 }

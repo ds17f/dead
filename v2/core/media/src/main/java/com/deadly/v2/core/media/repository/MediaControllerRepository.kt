@@ -24,6 +24,7 @@ import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 import javax.inject.Inject
 import javax.inject.Singleton
 
@@ -607,6 +608,76 @@ class MediaControllerRepository @Inject constructor(
         Log.d(TAG, "seekToPosition: ${positionMs}ms")
         executeWhenConnected {
             mediaController?.seekTo(positionMs)
+        }
+    }
+    
+    /**
+     * Get current MediaItems from the queue for hydration
+     * Must be called from the main thread (MediaController requirement)
+     */
+    suspend fun getCurrentMediaItems(): List<androidx.media3.common.MediaItem> {
+        return withContext(Dispatchers.Main) {
+            try {
+                val controller = mediaController
+                if (controller == null) {
+                    Log.w(TAG, "MediaController not available for queue access")
+                    return@withContext emptyList()
+                }
+                
+                val timeline = controller.currentTimeline
+                val mediaItems = mutableListOf<androidx.media3.common.MediaItem>()
+                
+                for (i in 0 until timeline.windowCount) {
+                    val window = androidx.media3.common.Timeline.Window()
+                    timeline.getWindow(i, window)
+                    mediaItems.add(window.mediaItem)
+                }
+                
+                Log.d(TAG, "Retrieved ${mediaItems.size} MediaItems from queue")
+                mediaItems
+                
+            } catch (e: Exception) {
+                Log.e(TAG, "Error getting current MediaItems", e)
+                emptyList()
+            }
+        }
+    }
+    
+    /**
+     * Update the queue with hydrated MediaItems
+     * Preserves current position and playback state
+     * Must be called from the main thread (MediaController requirement)
+     */
+    suspend fun updateQueueWithHydratedItems(hydratedItems: List<androidx.media3.common.MediaItem>) {
+        Log.d(TAG, "Updating queue with ${hydratedItems.size} hydrated MediaItems")
+        
+        withContext(Dispatchers.Main) {
+            executeWhenConnected {
+                val controller = mediaController
+                if (controller != null && hydratedItems.isNotEmpty()) {
+                    try {
+                        val currentIndex = controller.currentMediaItemIndex
+                        val currentPosition = controller.currentPosition
+                        val wasPlaying = controller.isPlaying
+                        
+                        // Update the queue with hydrated items
+                        controller.setMediaItems(hydratedItems, currentIndex, currentPosition)
+                        controller.prepare()
+                        
+                        // Restore playback state
+                        if (wasPlaying) {
+                            controller.play()
+                        }
+                        
+                        Log.d(TAG, "Successfully updated queue with hydrated metadata")
+                        
+                    } catch (e: Exception) {
+                        Log.e(TAG, "Error updating queue with hydrated items", e)
+                    }
+                } else {
+                    Log.w(TAG, "Cannot update queue: controller=${controller != null}, items=${hydratedItems.size}")
+                }
+            }
         }
     }
     

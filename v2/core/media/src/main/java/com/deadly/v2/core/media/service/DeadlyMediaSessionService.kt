@@ -13,6 +13,9 @@ import androidx.media3.exoplayer.ExoPlayer
 import androidx.media3.session.MediaSession
 import androidx.media3.session.MediaSessionService
 import dagger.hilt.android.AndroidEntryPoint
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.SupervisorJob
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import javax.inject.Inject
@@ -37,6 +40,7 @@ class DeadlyMediaSessionService : MediaSessionService() {
     
     private lateinit var exoPlayer: ExoPlayer
     private var mediaSession: MediaSession? = null
+    private val serviceScope = CoroutineScope(SupervisorJob() + Dispatchers.IO)
     
     // Simple queue state tracking
     private var currentRecordingId: String? = null
@@ -89,9 +93,17 @@ class DeadlyMediaSessionService : MediaSessionService() {
         Log.d(TAG, "Client requesting session: ${controllerInfo.packageName}")
         
         // MediaSession will automatically restore queue/position
-        // TODO: Schedule metadata hydration after restoration completes
-        // For now, hydration happens on-demand in PlayerService
-        Log.d(TAG, "MediaSession restoration will be handled automatically")
+        // Schedule metadata hydration after restoration completes
+        serviceScope.launch {
+            delay(2000) // Give MediaSession time to restore state
+            Log.d(TAG, "Triggering metadata hydration after MediaSession restoration")
+            try {
+                metadataHydratorService.hydrateCurrentQueue()
+                Log.d(TAG, "Metadata hydration completed successfully")
+            } catch (e: Exception) {
+                Log.e(TAG, "Metadata hydration failed", e)
+            }
+        }
         
         return mediaSession
     }

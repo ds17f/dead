@@ -102,6 +102,14 @@ case "$1" in
   fi
   run_with_timeout adb logcat -s DEAD_DEBUG_PANEL
   ;;
+"hydration" | "metadata")
+  if [ "$TIMEOUT" -eq 0 ]; then
+    echo "🔍 Showing metadata hydration logs (no timeout)..."
+  else
+    echo "🔍 Showing metadata hydration logs (${TIMEOUT}s)..."
+  fi
+  run_with_timeout adb logcat -s DeadlyMediaSessionService MetadataHydratorService MediaControllerRepository
+  ;;
 "clear")
   adb logcat -c
   echo "✅ Logs cleared"
@@ -173,6 +181,7 @@ case "$1" in
   echo "  settings      - Show settings related logs"
   echo "  theme         - Show theme system logs (loading, switching, assets)"
   echo "  debug         - Show debug panel logs"
+  echo "  hydration     - Show metadata hydration logs (MediaSession, MetadataHydrator)"
   echo "  tail/follow   - Follow all Dead Archive logs in real-time"
   echo "  import-summary- Show V2 import summary from last run"
   echo "  clear         - Clear log buffer"

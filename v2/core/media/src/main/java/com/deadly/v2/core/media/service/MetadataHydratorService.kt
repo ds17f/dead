@@ -41,18 +41,34 @@ class MetadataHydratorService @Inject constructor(
     /**
      * Hydrate the current queue with fresh metadata from database
      * Called after MediaSession restoration to enrich restored MediaItems
-     * 
-     * Note: For now, this is a placeholder. MediaSession's automatic restoration
-     * should preserve the MediaItems with their embedded MediaIds, and the 
-     * PlayerService can hydrate metadata on-demand when accessed.
      */
     suspend fun hydrateCurrentQueue() {
         Log.d(TAG, "Starting queue hydration...")
         
         try {
-            // TODO: Implement queue hydration when we have access to MediaController
-            // For now, hydration happens on-demand in PlayerService when metadata is accessed
-            Log.d(TAG, "Queue hydration scheduled - will happen on-demand via PlayerService")
+            // Get current MediaItems from MediaController
+            val mediaItems = mediaControllerRepository.getCurrentMediaItems()
+            if (mediaItems.isEmpty()) {
+                Log.d(TAG, "No MediaItems in queue to hydrate")
+                return
+            }
+            
+            Log.d(TAG, "Found ${mediaItems.size} MediaItems to hydrate")
+            
+            // Hydrate each MediaItem with fresh metadata
+            val hydratedItems = mediaItems.map { mediaItem ->
+                hydrateMediaItem(mediaItem)
+            }
+            
+            // Count how many were actually hydrated
+            val hydratedCount = hydratedItems.count { item ->
+                item.mediaMetadata.extras?.getBoolean("isHydrated", false) == true
+            }
+            
+            Log.d(TAG, "Successfully hydrated $hydratedCount of ${mediaItems.size} MediaItems")
+            
+            // Update MediaController queue with hydrated items
+            mediaControllerRepository.updateQueueWithHydratedItems(hydratedItems)
             
         } catch (e: Exception) {
             Log.e(TAG, "Error during queue hydration", e)
