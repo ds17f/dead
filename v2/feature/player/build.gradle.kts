@@ -47,6 +47,7 @@ dependencies {
     // V2 Core dependencies
     implementation(project(":v2:core:model"))
     implementation(project(":v2:core:design"))
+    implementation(project(":v2:core:api:player"))
     
     // Compose BOM
     implementation(platform("androidx.compose:compose-bom:2024.02.00"))

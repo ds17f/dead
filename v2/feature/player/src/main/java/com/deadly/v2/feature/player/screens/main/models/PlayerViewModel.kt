@@ -2,153 +2,155 @@ package com.deadly.v2.feature.player.screens.main.models
 
 import android.util.Log
 import androidx.lifecycle.ViewModel
-import kotlinx.coroutines.flow.MutableStateFlow
-import kotlinx.coroutines.flow.StateFlow
-import kotlinx.coroutines.flow.asStateFlow
+import androidx.lifecycle.viewModelScope
+import com.deadly.v2.core.api.player.PlayerService
+import dagger.hilt.android.lifecycle.HiltViewModel
+import kotlinx.coroutines.flow.*
+import kotlinx.coroutines.launch
+import javax.inject.Inject
 
 /**
- * V2 Player ViewModel - Phase 2 Mock Implementation
+ * V2 Player ViewModel - Real MediaController Integration
  * 
- * Provides static mock data to test UI layout and interactions.
- * Will be replaced with real service integration in Phase 3.
+ * Uses PlayerService to provide reactive state from MediaControllerRepository.
+ * Handles all player UI interactions and delegates to centralized media control.
  */
-class PlayerViewModel : ViewModel() {
+@HiltViewModel
+class PlayerViewModel @Inject constructor(
+    private val playerService: PlayerService
+) : ViewModel() {
     
     companion object {
         private const val TAG = "PlayerViewModel"
     }
     
-    private val _uiState = MutableStateFlow(
+    // Reactive UI state from PlayerService flows
+    val uiState: StateFlow<PlayerUiState> = combine(
+        playerService.currentTrackTitle,
+        playerService.currentAlbum,
+        playerService.currentPosition,
+        playerService.duration,
+        playerService.progress,
+        playerService.isPlaying,
+        playerService.hasNext,
+        playerService.hasPrevious
+    ) { flows ->
+        val title = flows[0] as String?
+        val album = flows[1] as String?
+        val position = flows[2] as Long
+        val duration = flows[3] as Long
+        val progress = flows[4] as Float
+        val isPlaying = flows[5] as Boolean
+        val hasNext = flows[6] as Boolean
+        val hasPrevious = flows[7] as Boolean
         PlayerUiState(
-            // Mock track data
             trackDisplayInfo = TrackDisplayInfo(
-                title = "Scarlet Begonias",
-                artist = "Grateful Dead",
-                album = "May 8, 1977 - Barton Hall",
-                duration = "11:23",
-                artwork = null // No artwork for Phase 2
+                title = title ?: "Unknown Track",
+                artist = "Grateful Dead", // TODO: Extract from metadata
+                album = album ?: "Unknown Album",
+                duration = playerService.formatDuration(duration),
+                artwork = null // TODO: Add artwork support
             ),
-            // Mock progress data
             progressDisplayInfo = ProgressDisplayInfo(
-                currentPosition = "4:32",
-                totalDuration = "11:23",
-                progressPercentage = 0.4f
+                currentPosition = playerService.formatPosition(position),
+                totalDuration = playerService.formatDuration(duration),
+                progressPercentage = progress
             ),
-            // Mock playback state
+            isPlaying = isPlaying,
+            isLoading = false, // TODO: Add loading state from service
+            hasNext = hasNext,
+            hasPrevious = hasPrevious,
+            error = null // TODO: Add error state from service
+        )
+    }.stateIn(
+        scope = viewModelScope,
+        started = SharingStarted.WhileSubscribed(5000),
+        initialValue = PlayerUiState(
+            trackDisplayInfo = TrackDisplayInfo(
+                title = "Loading...",
+                artist = "Grateful Dead",
+                album = "Loading...",
+                duration = "0:00",
+                artwork = null
+            ),
+            progressDisplayInfo = ProgressDisplayInfo(
+                currentPosition = "0:00",
+                totalDuration = "0:00",
+                progressPercentage = 0.0f
+            ),
             isPlaying = false,
-            isLoading = false,
-            hasNext = true,
-            hasPrevious = true,
+            isLoading = true,
+            hasNext = false,
+            hasPrevious = false,
             error = null
         )
     )
-    val uiState: StateFlow<PlayerUiState> = _uiState.asStateFlow()
     
     /**
-     * Load recording - Phase 2 just updates mock data
+     * Load recording - No-op since state comes from MediaController
      */
     fun loadRecording(recordingId: String) {
-        Log.d(TAG, "Loading recording: $recordingId (mock)")
-        
-        // Update mock data based on recordingId
-        _uiState.value = _uiState.value.copy(
-            trackDisplayInfo = _uiState.value.trackDisplayInfo.copy(
-                title = "Mock Track for $recordingId",
-                album = "Mock Album - Test Date"
-            )
-        )
+        Log.d(TAG, "Load recording: $recordingId - state comes from MediaController")
+        // MediaController handles track loading, we just observe state
     }
     
     /**
      * Toggle play/pause
      */
     fun onPlayPauseClicked() {
-        Log.d(TAG, "Play/pause clicked - mock")
-        _uiState.value = _uiState.value.copy(
-            isPlaying = !_uiState.value.isPlaying
-        )
+        Log.d(TAG, "Play/pause clicked")
+        viewModelScope.launch {
+            try {
+                playerService.togglePlayPause()
+            } catch (e: Exception) {
+                Log.e(TAG, "Error toggling play/pause", e)
+            }
+        }
     }
     
     /**
      * Seek to next track
      */
     fun onNextClicked() {
-        Log.d(TAG, "Next clicked - mock")
-        // Mock: Change track info
-        _uiState.value = _uiState.value.copy(
-            trackDisplayInfo = _uiState.value.trackDisplayInfo.copy(
-                title = "Next Mock Track",
-                duration = "8:45"
-            ),
-            progressDisplayInfo = _uiState.value.progressDisplayInfo.copy(
-                currentPosition = "0:00",
-                totalDuration = "8:45",
-                progressPercentage = 0.0f
-            )
-        )
+        Log.d(TAG, "Next clicked")
+        viewModelScope.launch {
+            try {
+                playerService.seekToNext()
+            } catch (e: Exception) {
+                Log.e(TAG, "Error seeking to next", e)
+            }
+        }
     }
     
     /**
      * Seek to previous track  
      */
     fun onPreviousClicked() {
-        Log.d(TAG, "Previous clicked - mock")
-        // Mock: Change track info
-        _uiState.value = _uiState.value.copy(
-            trackDisplayInfo = _uiState.value.trackDisplayInfo.copy(
-                title = "Previous Mock Track",
-                duration = "12:15"
-            ),
-            progressDisplayInfo = _uiState.value.progressDisplayInfo.copy(
-                currentPosition = "0:00", 
-                totalDuration = "12:15",
-                progressPercentage = 0.0f
-            )
-        )
+        Log.d(TAG, "Previous clicked")
+        viewModelScope.launch {
+            try {
+                playerService.seekToPrevious()
+            } catch (e: Exception) {
+                Log.e(TAG, "Error seeking to previous", e)
+            }
+        }
     }
     
     /**
      * Seek to position
      */
     fun onSeek(position: Float) {
-        Log.d(TAG, "Seek to $position - mock")
-        val totalSeconds = parseDurationToSeconds(_uiState.value.progressDisplayInfo.totalDuration)
-        val newPositionSeconds = (totalSeconds * position).toInt()
-        val newPositionString = formatSecondsToString(newPositionSeconds)
-        
-        _uiState.value = _uiState.value.copy(
-            progressDisplayInfo = _uiState.value.progressDisplayInfo.copy(
-                currentPosition = newPositionString,
-                progressPercentage = position
-            )
-        )
-    }
-    
-    /**
-     * Helper: Parse MM:SS to seconds
-     */
-    private fun parseDurationToSeconds(duration: String): Int {
-        return try {
-            val parts = duration.split(":")
-            if (parts.size == 2) {
-                val minutes = parts[0].toInt()
-                val seconds = parts[1].toInt()
-                minutes * 60 + seconds
-            } else {
-                0
+        Log.d(TAG, "Seek to $position")
+        viewModelScope.launch {
+            try {
+                // Get current duration and convert percentage to milliseconds
+                val durationMs = playerService.duration.value
+                val positionMs = (durationMs * position).toLong()
+                playerService.seekToPosition(positionMs)
+            } catch (e: Exception) {
+                Log.e(TAG, "Error seeking to position", e)
             }
-        } catch (e: Exception) {
-            0
         }
-    }
-    
-    /**
-     * Helper: Format seconds to MM:SS string
-     */
-    private fun formatSecondsToString(totalSeconds: Int): String {
-        val minutes = totalSeconds / 60
-        val seconds = totalSeconds % 60
-        return "%d:%02d".format(minutes, seconds)
     }
 }
 

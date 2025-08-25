@@ -52,6 +52,7 @@ dependencies {
     implementation(project(":v2:core:theme"))
     implementation(project(":v2:core:theme-api"))
     implementation(project(":v2:core:media"))
+    implementation(project(":v2:core:player"))
 
     // V2 Feature Dependencies
     implementation(project(":v2:feature:splash"))
