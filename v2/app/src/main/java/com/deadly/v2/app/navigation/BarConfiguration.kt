@@ -3,6 +3,7 @@ package com.deadly.v2.app.navigation
 // Re-export core design configuration types for convenience
 import com.deadly.v2.core.design.scaffold.BarConfiguration
 import com.deadly.v2.core.design.scaffold.BottomBarConfig
+import com.deadly.v2.core.design.scaffold.MiniPlayerConfig
 import com.deadly.v2.feature.home.screens.main.HomeBarConfiguration
 import com.deadly.v2.feature.search.screens.main.SearchBarConfiguration
 import com.deadly.v2.feature.settings.screens.main.SettingsBarConfiguration
@@ -28,19 +29,22 @@ object NavigationBarConfig {
         // Library routes
         "library" -> BarConfiguration(
             topBar = null, // Library doesn't need top bar yet
-            bottomBar = BottomBarConfig(visible = true)
+            bottomBar = BottomBarConfig(visible = true),
+            miniPlayer = MiniPlayerConfig(visible = true) // Show MiniPlayer in library for music context
         )
         
         // Splash and other routes
         "splash" -> BarConfiguration(
             topBar = null,
-            bottomBar = BottomBarConfig(visible = false) // Hide bottom nav on splash
+            bottomBar = BottomBarConfig(visible = false), // Hide bottom nav on splash
+            miniPlayer = MiniPlayerConfig(visible = false) // Hide MiniPlayer during splash
         )
         
         // Default configuration
         else -> BarConfiguration(
             topBar = null,
-            bottomBar = BottomBarConfig(visible = true)
+            bottomBar = BottomBarConfig(visible = true),
+            miniPlayer = MiniPlayerConfig(visible = true) // Show MiniPlayer by default
         )
     }
 }

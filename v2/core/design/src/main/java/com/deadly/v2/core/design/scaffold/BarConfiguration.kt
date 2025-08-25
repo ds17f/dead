@@ -11,7 +11,8 @@ import com.deadly.v2.core.design.component.topbar.TopBarMode
  */
 data class BarConfiguration(
     val topBar: TopBarConfig? = null,
-    val bottomBar: BottomBarConfig? = null
+    val bottomBar: BottomBarConfig? = null,
+    val miniPlayer: MiniPlayerConfig? = null
 )
 
 /**
@@ -39,4 +40,21 @@ enum class BottomBarStyle {
     DEFAULT,
     TRANSPARENT,
     ELEVATED
+}
+
+/**
+ * Configuration for MiniPlayer appearance and behavior
+ */
+data class MiniPlayerConfig(
+    val visible: Boolean = true,
+    val style: MiniPlayerStyle = MiniPlayerStyle.DEFAULT
+)
+
+/**
+ * MiniPlayer styling options
+ */
+enum class MiniPlayerStyle {
+    DEFAULT,    // Normal MiniPlayer
+    COMPACT,    // Smaller version for dense screens
+    HIDDEN      // Hidden but position reserved
 }

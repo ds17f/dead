@@ -100,6 +100,7 @@ fun MainNavigation(
                     )
                 }
             } else null,
+            miniPlayerConfig = barConfig.miniPlayer,
             miniPlayerContent = {
                 MiniPlayerScreen(
                     onTapToExpand = { showId ->

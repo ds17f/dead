@@ -2,6 +2,7 @@ package com.deadly.v2.feature.settings.screens.main
 
 import com.deadly.v2.core.design.scaffold.BarConfiguration
 import com.deadly.v2.core.design.scaffold.BottomBarConfig
+import com.deadly.v2.core.design.scaffold.MiniPlayerConfig
 import com.deadly.v2.core.design.scaffold.TopBarConfig
 import com.deadly.v2.core.design.component.topbar.TopBarMode
 
@@ -24,6 +25,7 @@ object SettingsBarConfiguration {
             mode = TopBarMode.SOLID,
             navigationIcon = null // No back button in bottom nav context
         ),
-        bottomBar = BottomBarConfig(visible = true)
+        bottomBar = BottomBarConfig(visible = true),
+        miniPlayer = MiniPlayerConfig(visible = false) // Hide MiniPlayer for clean settings experience
     )
 }

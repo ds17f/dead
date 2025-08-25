@@ -5,6 +5,7 @@ import androidx.compose.material3.IconButton
 import androidx.compose.runtime.Composable
 import com.deadly.v2.core.design.scaffold.BarConfiguration
 import com.deadly.v2.core.design.scaffold.BottomBarConfig
+import com.deadly.v2.core.design.scaffold.MiniPlayerConfig
 import com.deadly.v2.core.design.scaffold.TopBarConfig
 import com.deadly.v2.core.design.component.topbar.TopBarMode
 import com.deadly.v2.core.design.resources.IconResources
@@ -28,7 +29,8 @@ object SearchBarConfiguration {
             mode = TopBarMode.SOLID,
             actions = { SearchTopBarActions() }
         ),
-        bottomBar = BottomBarConfig(visible = true)
+        bottomBar = BottomBarConfig(visible = true),
+        miniPlayer = MiniPlayerConfig(visible = true) // Show MiniPlayer for music context during search
     )
     
     /**
@@ -38,7 +40,8 @@ object SearchBarConfiguration {
      */
     fun getSearchResultsBarConfig(): BarConfiguration = BarConfiguration(
         topBar = null, // No top bar for immersive search results
-        bottomBar = BottomBarConfig(visible = true)
+        bottomBar = BottomBarConfig(visible = true),
+        miniPlayer = MiniPlayerConfig(visible = true) // Show MiniPlayer for music context in results
     )
 }
 

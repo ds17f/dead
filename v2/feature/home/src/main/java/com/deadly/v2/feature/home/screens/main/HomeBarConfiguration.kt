@@ -2,6 +2,7 @@ package com.deadly.v2.feature.home.screens.main
 
 import com.deadly.v2.core.design.scaffold.BarConfiguration
 import com.deadly.v2.core.design.scaffold.BottomBarConfig
+import com.deadly.v2.core.design.scaffold.MiniPlayerConfig
 import com.deadly.v2.core.design.scaffold.TopBarConfig
 import com.deadly.v2.core.design.scaffold.BottomBarStyle
 
@@ -25,6 +26,7 @@ object HomeBarConfiguration {
         bottomBar = BottomBarConfig(
             visible = true,
             style = BottomBarStyle.DEFAULT
-        )
+        ),
+        miniPlayer = MiniPlayerConfig(visible = true) // Show MiniPlayer on home for music context
     )
 }

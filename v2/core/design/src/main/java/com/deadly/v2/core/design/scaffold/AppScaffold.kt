@@ -96,11 +96,14 @@ fun AppScaffold(
     topBarConfig: TopBarConfig? = null,
     bottomBarConfig: BottomBarConfig? = null,
     bottomNavigationContent: (@Composable () -> Unit)? = null,
+    miniPlayerConfig: MiniPlayerConfig? = null,
     miniPlayerContent: (@Composable () -> Unit)? = null,
     onNavigationClick: (() -> Unit)? = null,
     content: @Composable (PaddingValues) -> Unit
 ) {
     // Use Box layout to properly layer MiniPlayer above bottom navigation
+    val shouldShowMiniPlayer = miniPlayerConfig?.visible == true && miniPlayerContent != null
+    
     Box(modifier = modifier.fillMaxSize()) {
         Scaffold(
             modifier = Modifier.fillMaxSize(),
@@ -128,8 +131,8 @@ fun AppScaffold(
         ) { paddingValues ->
             // Main content with extra bottom padding if MiniPlayer or bottom nav are present
             val extraBottomPadding = when {
-                miniPlayerContent != null && bottomBarConfig?.visible == true -> 144.dp // MiniPlayer (88dp) + BottomNav (56dp)
-                miniPlayerContent != null -> 88.dp // Just MiniPlayer
+                shouldShowMiniPlayer && bottomBarConfig?.visible == true -> 144.dp // MiniPlayer (88dp) + BottomNav (56dp)
+                shouldShowMiniPlayer -> 88.dp // Just MiniPlayer
                 bottomBarConfig?.visible == true -> 56.dp // Just BottomNav
                 else -> 0.dp
             }
@@ -148,8 +151,10 @@ fun AppScaffold(
         Column(
             modifier = Modifier.align(Alignment.BottomCenter)
         ) {
-            // MiniPlayer above bottom navigation (Spotify-style)
-            miniPlayerContent?.invoke()
+            // MiniPlayer above bottom navigation (Spotify-style) - only if config allows
+            if (shouldShowMiniPlayer) {
+                miniPlayerContent?.invoke()
+            }
             
             // Bottom navigation at the very bottom
             if (bottomBarConfig?.visible == true && bottomNavigationContent != null) {
