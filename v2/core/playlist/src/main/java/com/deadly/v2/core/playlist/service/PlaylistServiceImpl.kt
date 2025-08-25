@@ -129,6 +129,7 @@ class PlaylistServiceImpl @Inject constructor(
         val hasPrevious = showRepository.getPreviousShowByDate(show.date) != null
         
         return PlaylistShowViewModel(
+            showId = show.id,
             date = show.date,
             displayDate = formatDisplayDate(show.date),
             venue = show.venue.name,

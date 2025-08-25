@@ -23,6 +23,7 @@ enum class LibraryAction {
  */
 @Serializable
 data class PlaylistShowViewModel(
+    val showId: String,
     val date: String,
     val displayDate: String,
     val venue: String,

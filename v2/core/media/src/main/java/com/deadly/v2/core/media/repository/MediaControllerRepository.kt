@@ -67,6 +67,9 @@ class MediaControllerRepository @Inject constructor(
     private val _currentTrack = MutableStateFlow<MediaMetadata?>(null)
     val currentTrack: StateFlow<MediaMetadata?> = _currentTrack.asStateFlow()
     
+    private val _currentMediaItem = MutableStateFlow<androidx.media3.common.MediaItem?>(null)
+    val currentMediaItem: StateFlow<androidx.media3.common.MediaItem?> = _currentMediaItem.asStateFlow()
+    
     // MiniPlayer state flows
     private val _currentPosition = MutableStateFlow(0L)
     val currentPosition: StateFlow<Long> = _currentPosition.asStateFlow()
@@ -330,6 +333,7 @@ class MediaControllerRepository @Inject constructor(
                         }
                         
                         override fun onMediaItemTransition(mediaItem: androidx.media3.common.MediaItem?, reason: Int) {
+                            _currentMediaItem.value = mediaItem
                             _currentShowId.value = extractShowIdFromMediaItem(mediaItem)
                             _currentRecordingId.value = extractRecordingIdFromMediaItem(mediaItem)
                             _currentTrackIndex.value = controller.currentMediaItemIndex

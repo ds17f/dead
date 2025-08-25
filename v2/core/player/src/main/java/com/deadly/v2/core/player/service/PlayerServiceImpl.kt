@@ -196,9 +196,22 @@ class PlayerServiceImpl @Inject constructor(
     
     override suspend fun getDebugMetadata(): Map<String, String?> {
         val currentMetadata = mediaControllerRepository.currentTrack.value
-        return if (currentMetadata != null) {
+        val currentMediaItem = mediaControllerRepository.currentMediaItem.value
+        
+        return if (currentMediaItem != null && currentMetadata != null) {
             mapOf(
-                // Core MediaMetadata fields
+                // === MEDIA ITEM FIELDS ===
+                "🆔 MediaItem.mediaId" to (currentMediaItem.mediaId ?: "null"),
+                "🔗 MediaItem.playbackProperties.uri" to currentMediaItem.localConfiguration?.uri?.toString(),
+                "🏷️ MediaItem.playbackProperties.mimeType" to currentMediaItem.localConfiguration?.mimeType,
+                "📋 MediaItem.playbackProperties.tag" to currentMediaItem.localConfiguration?.tag?.toString(),
+                
+                // Parse embedded MediaId for verification
+                "🔍 Parsed showId" to parseMediaId(currentMediaItem.mediaId)?.first,
+                "🔍 Parsed recordingId" to parseMediaId(currentMediaItem.mediaId)?.second,  
+                "🔍 Parsed trackIndex" to parseMediaId(currentMediaItem.mediaId)?.third?.toString(),
+                
+                // === MEDIA METADATA FIELDS ===
                 "title" to currentMetadata.title?.toString(),
                 "artist" to currentMetadata.artist?.toString(),
                 "albumTitle" to currentMetadata.albumTitle?.toString(),
@@ -206,7 +219,6 @@ class PlayerServiceImpl @Inject constructor(
                 "genre" to currentMetadata.genre?.toString(),
                 "trackNumber" to currentMetadata.trackNumber?.toString(),
                 "totalTrackCount" to currentMetadata.totalTrackCount?.toString(),
-                // Note: recordingDate/releaseDate may not be available in this Media3 version
                 "recordingYear" to currentMetadata.recordingYear?.toString(),
                 "releaseYear" to currentMetadata.releaseYear?.toString(),
                 "writer" to currentMetadata.writer?.toString(),
@@ -214,8 +226,9 @@ class PlayerServiceImpl @Inject constructor(
                 "conductor" to currentMetadata.conductor?.toString(),
                 "discNumber" to currentMetadata.discNumber?.toString(),
                 "totalDiscCount" to currentMetadata.totalDiscCount?.toString(),
+                "artworkUri" to currentMetadata.artworkUri?.toString(),
                 
-                // Custom extras that might contain Grateful Dead specific data
+                // === CUSTOM EXTRAS ===
                 "trackUrl" to currentMetadata.extras?.getString("trackUrl"),
                 "recordingId" to currentMetadata.extras?.getString("recordingId"),
                 "showId" to currentMetadata.extras?.getString("showId"),
@@ -223,14 +236,42 @@ class PlayerServiceImpl @Inject constructor(
                 "venue" to currentMetadata.extras?.getString("venue"),
                 "location" to currentMetadata.extras?.getString("location"),
                 "filename" to currentMetadata.extras?.getString("filename"),
+                "format" to currentMetadata.extras?.getString("format"),
+                "isHydrated" to currentMetadata.extras?.getBoolean("isHydrated", false)?.toString(),
+                "hydratedAt" to currentMetadata.extras?.getString("hydratedAt"),
                 
-                // Additional extras inspection
-                "extrasKeys" to currentMetadata.extras?.keySet()?.joinToString(", ") { "[$it]" },
-                // Note: mediaId/mediaUri might have different property names in this Media3 version
-                "artworkUri" to currentMetadata.artworkUri?.toString()
+                // === EXTRAS INSPECTION ===
+                "extrasKeys" to currentMetadata.extras?.keySet()?.joinToString(", ") { "[$it]" }
             )
         } else {
-            mapOf("status" to "No current track metadata available")
+            mapOf(
+                "status" to "No current MediaItem/MediaMetadata available",
+                "hasMediaItem" to (currentMediaItem != null).toString(),
+                "hasMediaMetadata" to (currentMetadata != null).toString()
+            )
+        }
+    }
+    
+    /**
+     * Parse MediaId to extract embedded identifiers
+     * Returns Triple(showId, recordingId, trackIndex) or null if parsing fails
+     */
+    private fun parseMediaId(mediaId: String?): Triple<String, String, Int>? {
+        return try {
+            if (mediaId.isNullOrBlank()) return null
+            
+            val parts = mediaId.split("|")
+            if (parts.size != 3) return null
+            
+            val showId = parts[0].trim()
+            val recordingId = parts[1].trim()
+            val trackIndex = parts[2].trim().toInt()
+            
+            if (showId.isEmpty() || recordingId.isEmpty() || trackIndex < 0) return null
+            
+            Triple(showId, recordingId, trackIndex)
+        } catch (e: Exception) {
+            null
         }
     }
 }

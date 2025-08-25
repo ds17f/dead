@@ -500,8 +500,20 @@ class PlaylistViewModel @Inject constructor(
                 
                 // Get show context from UI state
                 val showContext = _uiState.value.showData
-                val showId = "" // TODO: Get actual showId from service
-                val showDate = showContext?.date ?: "1970-01-01"
+                if (showContext == null) {
+                    Log.e(TAG, "Cannot start playback: No show data available in UI state")
+                    // TODO: Show user-friendly error message instead of silent failure
+                    return@launch
+                }
+                
+                val showId = showContext.showId
+                if (showId.isBlank()) {
+                    Log.e(TAG, "Cannot start playback: showId is blank from service")
+                    // TODO: Show user-friendly error message instead of silent failure  
+                    return@launch
+                }
+                
+                val showDate = showContext.date
                 val venue = showContext?.venue
                 val location = showContext?.location
                 
@@ -569,8 +581,20 @@ class PlaylistViewModel @Inject constructor(
                 
                 // Get show context from UI state
                 val showContext = _uiState.value.showData
-                val showId = "" // TODO: Get actual showId from service
-                val showDate = showContext?.date ?: "1970-01-01"
+                if (showContext == null) {
+                    Log.e(TAG, "Cannot start playback: No show data available in UI state")
+                    // TODO: Show user-friendly error message instead of silent failure
+                    return@launch
+                }
+                
+                val showId = showContext.showId
+                if (showId.isBlank()) {
+                    Log.e(TAG, "Cannot start playback: showId is blank from service")
+                    // TODO: Show user-friendly error message instead of silent failure  
+                    return@launch
+                }
+                
+                val showDate = showContext.date
                 val venue = showContext?.venue
                 val location = showContext?.location
                 
