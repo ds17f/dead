@@ -98,6 +98,59 @@ class PlayerServiceImpl @Inject constructor(
         initialValue = "Unknown Album"
     )
     
+    // Extract show date from hydrated metadata
+    override val currentShowDate: StateFlow<String?> = mediaControllerRepository.currentTrack.map { metadata ->
+        if (metadata != null) {
+            val showDate = metadata.extras?.getString("showDate")
+            if (!showDate.isNullOrBlank()) {
+                formatShowDate(showDate)
+            } else {
+                // Fallback: try to extract from albumTitle if not hydrated
+                val albumTitle = metadata.albumTitle?.toString()
+                if (!albumTitle.isNullOrBlank() && albumTitle.contains(" - ")) {
+                    albumTitle.substringBefore(" - ")
+                } else {
+                    "Unknown Date"
+                }
+            }
+        } else {
+            "Unknown Date"
+        }
+    }.stateIn(
+        scope = serviceScope,
+        started = SharingStarted.WhileSubscribed(),
+        initialValue = "Unknown Date"
+    )
+    
+    // Extract venue name from hydrated metadata
+    override val currentVenue: StateFlow<String?> = mediaControllerRepository.currentTrack.map { metadata ->
+        if (metadata != null) {
+            val venue = metadata.extras?.getString("venue")
+            val location = metadata.extras?.getString("location")
+            
+            when {
+                !venue.isNullOrBlank() && !location.isNullOrBlank() -> "$venue, $location"
+                !venue.isNullOrBlank() -> venue
+                !location.isNullOrBlank() -> location
+                else -> {
+                    // Fallback: try to extract from albumTitle if not hydrated
+                    val albumTitle = metadata.albumTitle?.toString()
+                    if (!albumTitle.isNullOrBlank() && albumTitle.contains(" - ")) {
+                        albumTitle.substringAfter(" - ")
+                    } else {
+                        "Unknown Venue"
+                    }
+                }
+            }
+        } else {
+            "Unknown Venue"
+        }
+    }.stateIn(
+        scope = serviceScope,
+        started = SharingStarted.WhileSubscribed(),
+        initialValue = "Unknown Venue"
+    )
+    
     /**
      * Format show date from YYYY-MM-DD to readable format
      */

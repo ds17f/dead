@@ -43,6 +43,16 @@ interface PlayerService {
     val currentAlbum: StateFlow<String?>
     
     /**
+     * Current show date for display
+     */
+    val currentShowDate: StateFlow<String?>
+    
+    /**
+     * Current venue name for display
+     */
+    val currentVenue: StateFlow<String?>
+    
+    /**
      * Whether next track is available
      */
     val hasNext: StateFlow<Boolean>

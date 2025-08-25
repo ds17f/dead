@@ -248,8 +248,8 @@ fun PlayerScreen(
                         // Track information with add to playlist button
                         PlayerTrackInfoRow(
                             trackTitle = uiState.trackDisplayInfo.title,
-                            showDate = uiState.trackDisplayInfo.album,
-                            venue = "Barton Hall, Cornell University, Ithaca, NY", // Mock for now
+                            showDate = uiState.trackDisplayInfo.showDate,
+                            venue = uiState.trackDisplayInfo.venue,
                             onAddToPlaylist = {
                                 // TODO: Show snackbar "Playlists are coming soon"
                             },
@@ -308,8 +308,8 @@ fun PlayerScreen(
         if (showTrackActionsBottomSheet) {
             PlayerTrackActionsSheet(
                 trackTitle = uiState.trackDisplayInfo.title,
-                showDate = uiState.trackDisplayInfo.album,
-                venue = "Barton Hall, Cornell University, Ithaca, NY", // Mock for now
+                showDate = uiState.trackDisplayInfo.showDate,
+                venue = uiState.trackDisplayInfo.venue,
                 onDismiss = { showTrackActionsBottomSheet = false },
                 onShare = { /* TODO: Share track */ },
                 onAddToPlaylist = { /* TODO: Add to playlist */ },

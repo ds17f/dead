@@ -28,6 +28,8 @@ class PlayerViewModel @Inject constructor(
     val uiState: StateFlow<PlayerUiState> = combine(
         playerService.currentTrackTitle,
         playerService.currentAlbum,
+        playerService.currentShowDate,
+        playerService.currentVenue,
         playerService.currentPosition,
         playerService.duration,
         playerService.progress,
@@ -37,17 +39,21 @@ class PlayerViewModel @Inject constructor(
     ) { flows ->
         val title = flows[0] as String?
         val album = flows[1] as String?
-        val position = flows[2] as Long
-        val duration = flows[3] as Long
-        val progress = flows[4] as Float
-        val isPlaying = flows[5] as Boolean
-        val hasNext = flows[6] as Boolean
-        val hasPrevious = flows[7] as Boolean
+        val showDate = flows[2] as String?
+        val venue = flows[3] as String?
+        val position = flows[4] as Long
+        val duration = flows[5] as Long
+        val progress = flows[6] as Float
+        val isPlaying = flows[7] as Boolean
+        val hasNext = flows[8] as Boolean
+        val hasPrevious = flows[9] as Boolean
         PlayerUiState(
             trackDisplayInfo = TrackDisplayInfo(
                 title = title ?: "Unknown Track",
                 artist = "Grateful Dead", // TODO: Extract from metadata
                 album = album ?: "Unknown Album",
+                showDate = showDate ?: "Unknown Date",
+                venue = venue ?: "Unknown Venue",
                 duration = playerService.formatDuration(duration),
                 artwork = null // TODO: Add artwork support
             ),
@@ -70,6 +76,8 @@ class PlayerViewModel @Inject constructor(
                 title = "Loading...",
                 artist = "Grateful Dead",
                 album = "Loading...",
+                showDate = "Loading...",
+                venue = "Loading...",
                 duration = "0:00",
                 artwork = null
             ),
@@ -186,6 +194,8 @@ data class TrackDisplayInfo(
     val title: String,
     val artist: String,
     val album: String,
+    val showDate: String,
+    val venue: String,
     val duration: String,
     val artwork: String? = null
 )
