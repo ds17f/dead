@@ -14,6 +14,11 @@ import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
+import com.deadly.v2.core.design.component.debug.DebugActivator
+import com.deadly.v2.core.design.component.debug.DebugBottomSheet
+import com.deadly.v2.core.design.component.debug.DebugData
+import com.deadly.v2.core.design.component.debug.DebugSection
+import com.deadly.v2.core.design.component.debug.DebugItem
 import com.deadly.v2.feature.player.screens.main.components.PlayerTopBar
 import com.deadly.v2.feature.player.screens.main.components.PlayerCoverArt
 import com.deadly.v2.feature.player.screens.main.components.PlayerTrackInfoRow
@@ -120,6 +125,12 @@ fun PlayerScreen(
     var showConnectBottomSheet by remember { mutableStateOf(false) }
     var showQueueBottomSheet by remember { mutableStateOf(false) }
     
+    // Debug mode hardcoded to true for v2 development
+    val showDebugInfo = true
+    
+    // Debug panel state - only when debug mode is enabled
+    var showDebugPanel by remember { mutableStateOf(false) }
+    
     // Mini player visibility based on scroll position
     // Show mini player only when player controls are completely off screen
     val showMiniPlayer by remember {
@@ -128,6 +139,80 @@ fun PlayerScreen(
             (scrollState.firstVisibleItemIndex == 0 && scrollState.firstVisibleItemScrollOffset > 1200)
         }
     }
+    
+    // Debug data collection - collect MediaMetadata info for inspection
+    var debugMetadata by remember { mutableStateOf<Map<String, String?>>(emptyMap()) }
+    val debugData = if (showDebugInfo) {
+        LaunchedEffect(uiState) {
+            debugMetadata = viewModel.getDebugMetadata()
+        }
+        
+        DebugData(
+            screenName = "V2PlayerScreen",
+            sections = listOf(
+                DebugSection(
+                    title = "Player State",
+                    items = listOf(
+                        DebugItem.BooleanValue("isPlaying", uiState.isPlaying),
+                        DebugItem.BooleanValue("isLoading", uiState.isLoading),
+                        DebugItem.BooleanValue("hasNext", uiState.hasNext),
+                        DebugItem.BooleanValue("hasPrevious", uiState.hasPrevious),
+                        DebugItem.KeyValue("currentPosition", uiState.progressDisplayInfo.currentPosition),
+                        DebugItem.KeyValue("totalDuration", uiState.progressDisplayInfo.totalDuration),
+                        DebugItem.NumericValue("progress", (uiState.progressDisplayInfo.progressPercentage * 100).toInt(), "%")
+                    )
+                ),
+                DebugSection(
+                    title = "Track Info (from UI State)",
+                    items = listOf(
+                        DebugItem.KeyValue("title", uiState.trackDisplayInfo.title),
+                        DebugItem.KeyValue("artist", uiState.trackDisplayInfo.artist),
+                        DebugItem.KeyValue("album", uiState.trackDisplayInfo.album),
+                        DebugItem.KeyValue("duration", uiState.trackDisplayInfo.duration),
+                        DebugItem.KeyValue("error", uiState.error ?: "none")
+                    )
+                ),
+                DebugSection(
+                    title = "MediaMetadata Core Fields",
+                    items = debugMetadata.filter { (key, _) ->
+                        listOf("title", "artist", "albumTitle", "albumArtist", "genre", "trackNumber",
+                               "totalTrackCount", "recordingYear", "releaseYear", "writer", "composer", 
+                               "conductor", "discNumber", "totalDiscCount").contains(key)
+                    }.map { (key, value) ->
+                        DebugItem.KeyValue(key, value ?: "null")
+                    }
+                ),
+                DebugSection(
+                    title = "Custom Extras (Grateful Dead Data)",
+                    items = debugMetadata.filter { (key, _) ->
+                        listOf("trackUrl", "recordingId", "showId", "showDate", "venue", "location", "filename").contains(key)
+                    }.map { (key, value) ->
+                        DebugItem.KeyValue(key, value ?: "null")
+                    }
+                ),
+                DebugSection(
+                    title = "Media URIs & IDs",
+                    items = debugMetadata.filter { (key, _) ->
+                        listOf("artworkUri", "extrasKeys").contains(key)
+                    }.map { (key, value) ->
+                        DebugItem.KeyValue(key, value ?: "null")
+                    }
+                ),
+                DebugSection(
+                    title = "All Other Fields",
+                    items = debugMetadata.filter { (key, _) ->
+                        !listOf("title", "artist", "albumTitle", "albumArtist", "genre", "trackNumber",
+                               "totalTrackCount", "recordingYear", "releaseYear", "writer", "composer",
+                               "conductor", "discNumber", "totalDiscCount", "trackUrl", "recordingId", 
+                               "showId", "showDate", "venue", "location", "filename", 
+                               "artworkUri", "extrasKeys").contains(key)
+                    }.map { (key, value) ->
+                        DebugItem.KeyValue(key, value ?: "null")
+                    }
+                )
+            ).filter { it.items.isNotEmpty() } // Only show sections that have data
+        )
+    } else { null }
     
     Box(modifier = Modifier.fillMaxSize()) {
         // Scrollable content with gradient as part of the scrolling items
@@ -261,5 +346,25 @@ fun PlayerScreen(
                     .fillMaxWidth()
             )
         }
+        
+        // Debug activator button (bottom-right when debug enabled)
+        if (showDebugInfo && debugData != null) {
+            DebugActivator(
+                isVisible = true,
+                onClick = { showDebugPanel = true },
+                modifier = Modifier
+                    .align(Alignment.BottomEnd)
+                    .padding(16.dp)
+            )
+        }
+    }
+    
+    // Debug bottom sheet
+    if (showDebugPanel && debugData != null) {
+        DebugBottomSheet(
+            debugData = debugData,
+            isVisible = showDebugPanel,
+            onDismiss = { showDebugPanel = false }
+        )
     }
 }

@@ -137,4 +137,44 @@ class PlayerServiceImpl @Inject constructor(
     override fun formatPosition(positionMs: Long): String {
         return formatDuration(positionMs)
     }
+    
+    override suspend fun getDebugMetadata(): Map<String, String?> {
+        val currentMetadata = mediaControllerRepository.currentTrack.value
+        return if (currentMetadata != null) {
+            mapOf(
+                // Core MediaMetadata fields
+                "title" to currentMetadata.title?.toString(),
+                "artist" to currentMetadata.artist?.toString(),
+                "albumTitle" to currentMetadata.albumTitle?.toString(),
+                "albumArtist" to currentMetadata.albumArtist?.toString(),
+                "genre" to currentMetadata.genre?.toString(),
+                "trackNumber" to currentMetadata.trackNumber?.toString(),
+                "totalTrackCount" to currentMetadata.totalTrackCount?.toString(),
+                // Note: recordingDate/releaseDate may not be available in this Media3 version
+                "recordingYear" to currentMetadata.recordingYear?.toString(),
+                "releaseYear" to currentMetadata.releaseYear?.toString(),
+                "writer" to currentMetadata.writer?.toString(),
+                "composer" to currentMetadata.composer?.toString(),
+                "conductor" to currentMetadata.conductor?.toString(),
+                "discNumber" to currentMetadata.discNumber?.toString(),
+                "totalDiscCount" to currentMetadata.totalDiscCount?.toString(),
+                
+                // Custom extras that might contain Grateful Dead specific data
+                "trackUrl" to currentMetadata.extras?.getString("trackUrl"),
+                "recordingId" to currentMetadata.extras?.getString("recordingId"),
+                "showId" to currentMetadata.extras?.getString("showId"),
+                "showDate" to currentMetadata.extras?.getString("showDate"),
+                "venue" to currentMetadata.extras?.getString("venue"),
+                "location" to currentMetadata.extras?.getString("location"),
+                "filename" to currentMetadata.extras?.getString("filename"),
+                
+                // Additional extras inspection
+                "extrasKeys" to currentMetadata.extras?.keySet()?.joinToString(", ") { "[$it]" },
+                // Note: mediaId/mediaUri might have different property names in this Media3 version
+                "artworkUri" to currentMetadata.artworkUri?.toString()
+            )
+        } else {
+            mapOf("status" to "No current track metadata available")
+        }
+    }
 }

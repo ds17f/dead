@@ -81,4 +81,9 @@ interface PlayerService {
      * Format position milliseconds to MM:SS string
      */
     fun formatPosition(positionMs: Long): String
+    
+    /**
+     * Get debug information about current MediaMetadata for inspection
+     */
+    suspend fun getDebugMetadata(): Map<String, String?>
 }
