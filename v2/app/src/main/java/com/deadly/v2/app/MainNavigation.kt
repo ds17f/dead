@@ -25,6 +25,7 @@ import com.deadly.v2.feature.settings.SettingsScreen
 import com.deadly.v2.feature.splash.navigation.splashGraph
 import com.deadly.v2.feature.search.navigation.searchGraph
 import com.deadly.v2.feature.playlist.navigation.playlistGraph
+import com.deadly.v2.feature.player.navigation.playerScreen
 import com.deadly.v2.feature.miniplayer.screens.main.MiniPlayerScreen
 import com.deadly.v2.core.theme.api.DeadlyTheme
 import com.deadly.v2.core.theme.api.ThemeAssetProvider
@@ -103,12 +104,9 @@ fun MainNavigation(
             miniPlayerConfig = barConfig.miniPlayer,
             miniPlayerContent = {
                 MiniPlayerScreen(
-                    onTapToExpand = { showId ->
-                        if (showId != null) {
-                            Log.d("MainNavigation", "MiniPlayer tapped - navigating to playlist: $showId")
-                            // Navigate to playlist with the show ID
-                            navController.navigate("playlist/$showId")
-                        }
+                    onTapToExpand = { _ ->
+                        Log.d("MainNavigation", "MiniPlayer tapped - navigating to player")
+                        navController.navigate("player")
                     }
                 )
             },
@@ -143,14 +141,18 @@ fun MainNavigation(
                 // Playlist feature - show and recording details
                 playlistGraph(
                     onNavigateBack = { navController.popBackStack() },
-                    onNavigateToPlayer = { 
-                        // TODO: Navigate to player when implemented
-                        // navController.navigate("player/$recordingId")
+                    onNavigateToPlayer = {
+                        navController.navigate("player")
                     },
                     onNavigateToShow = { showId, recordingId ->
                         // TODO: Navigate to show details when implemented
                         // navController.navigate("show/$showId/$recordingId")
                     }
+                )
+                
+                // Player feature - playback interface
+                playerScreen(
+                    onNavigateBack = { navController.popBackStack() }
                 )
                 
                 // Settings feature - app configuration

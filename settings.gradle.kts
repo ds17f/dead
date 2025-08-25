@@ -39,6 +39,7 @@ include(":v2:feature:splash")
 include(":v2:feature:home")
 include(":v2:feature:search")
 include(":v2:feature:playlist")
+include(":v2:feature:player")
 include(":v2:feature:miniplayer")
 include(":v2:feature:settings")
 
