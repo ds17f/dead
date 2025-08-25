@@ -106,6 +106,7 @@ private fun createRecordingGradient(recordingId: String?): Brush {
 @Composable
 fun PlayerScreen(
     onNavigateBack: () -> Unit,
+    onNavigateToPlaylist: (String, String?) -> Unit,
     viewModel: PlayerViewModel = hiltViewModel()
 ) {
     Log.d("PlayerScreen", "=== V2 PLAYER SCREEN LOADED ===")
@@ -234,6 +235,14 @@ fun PlayerScreen(
                             contextText = "Playing from Show", // TODO: Make dynamic
                             onNavigateBack = onNavigateBack,
                             onMoreOptionsClick = { showTrackActionsBottomSheet = true },
+                            onContextClick = {
+                                // Navigate to playlist with current show and recording
+                                val showId = uiState.navigationInfo.showId
+                                val recordingId = uiState.navigationInfo.recordingId
+                                if (showId != null) {
+                                    onNavigateToPlaylist(showId, recordingId)
+                                }
+                            },
                             recordingId = recordingId,
                         )
                         

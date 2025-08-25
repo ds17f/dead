@@ -1,5 +1,6 @@
 package com.deadly.v2.feature.player.screens.main.components
 
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
@@ -17,6 +18,7 @@ fun PlayerTopBar(
     contextText: String,
     onNavigateBack: () -> Unit,
     onMoreOptionsClick: () -> Unit,
+    onContextClick: () -> Unit,
     recordingId: String?,
     modifier: Modifier = Modifier
 ) {
@@ -37,12 +39,13 @@ fun PlayerTopBar(
                 )
             }
             
-            // Context text
+            // Context text (clickable to navigate to playlist)
             Text(
                 text = contextText,
                 style = MaterialTheme.typography.bodyMedium,
                 color = MaterialTheme.colorScheme.onSurface,
-                textAlign = TextAlign.Center
+                textAlign = TextAlign.Center,
+                modifier = Modifier.clickable { onContextClick() }
             )
             
             // 3-dot menu

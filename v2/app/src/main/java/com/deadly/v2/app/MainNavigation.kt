@@ -25,6 +25,7 @@ import com.deadly.v2.feature.settings.SettingsScreen
 import com.deadly.v2.feature.splash.navigation.splashGraph
 import com.deadly.v2.feature.search.navigation.searchGraph
 import com.deadly.v2.feature.playlist.navigation.playlistGraph
+import com.deadly.v2.feature.playlist.navigation.navigateToPlaylist
 import com.deadly.v2.feature.player.navigation.playerScreen
 import com.deadly.v2.feature.miniplayer.screens.main.MiniPlayerScreen
 import com.deadly.v2.core.theme.api.DeadlyTheme
@@ -152,7 +153,10 @@ fun MainNavigation(
                 
                 // Player feature - playback interface
                 playerScreen(
-                    onNavigateBack = { navController.popBackStack() }
+                    onNavigateBack = { navController.popBackStack() },
+                    onNavigateToPlaylist = { showId, recordingId ->
+                        navController.navigateToPlaylist(showId, recordingId)
+                    }
                 )
                 
                 // Settings feature - app configuration

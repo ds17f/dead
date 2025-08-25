@@ -53,6 +53,16 @@ interface PlayerService {
     val currentVenue: StateFlow<String?>
     
     /**
+     * Current show ID for navigation
+     */
+    val currentShowId: StateFlow<String?>
+    
+    /**
+     * Current recording ID for navigation
+     */
+    val currentRecordingId: StateFlow<String?>
+    
+    /**
      * Whether next track is available
      */
     val hasNext: StateFlow<Boolean>

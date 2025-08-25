@@ -36,6 +36,7 @@ class PlayerServiceImpl @Inject constructor(
     
     companion object {
         private const val TAG = "PlayerServiceImpl"
+        private const val PREVIOUS_TRACK_THRESHOLD_MS = 3000L // 3 seconds
     }
     
     private val serviceScope = CoroutineScope(SupervisorJob() + Dispatchers.Main.immediate)
@@ -151,6 +152,24 @@ class PlayerServiceImpl @Inject constructor(
         initialValue = "Unknown Venue"
     )
     
+    // Extract show ID from hydrated metadata for navigation
+    override val currentShowId: StateFlow<String?> = mediaControllerRepository.currentTrack.map { metadata ->
+        metadata?.extras?.getString("showId")
+    }.stateIn(
+        scope = serviceScope,
+        started = SharingStarted.WhileSubscribed(),
+        initialValue = null
+    )
+    
+    // Extract recording ID from hydrated metadata for navigation
+    override val currentRecordingId: StateFlow<String?> = mediaControllerRepository.currentTrack.map { metadata ->
+        metadata?.extras?.getString("recordingId")
+    }.stateIn(
+        scope = serviceScope,
+        started = SharingStarted.WhileSubscribed(),
+        initialValue = null
+    )
+    
     /**
      * Format show date from YYYY-MM-DD to readable format
      */
@@ -217,11 +236,21 @@ class PlayerServiceImpl @Inject constructor(
     }
     
     override suspend fun seekToPrevious() {
-        Log.d(TAG, "Seek to previous track")
+        Log.d(TAG, "Smart previous: checking current position")
         try {
-            mediaControllerRepository.seekToPrevious()
+            val currentPositionMs = mediaControllerRepository.currentPosition.value
+            
+            if (currentPositionMs > PREVIOUS_TRACK_THRESHOLD_MS) {
+                // Restart current track (seek to beginning)
+                Log.d(TAG, "Position ${currentPositionMs}ms > ${PREVIOUS_TRACK_THRESHOLD_MS}ms, restarting track")
+                mediaControllerRepository.seekToPosition(0L)
+            } else {
+                // Go to previous track
+                Log.d(TAG, "Position ${currentPositionMs}ms <= ${PREVIOUS_TRACK_THRESHOLD_MS}ms, seeking to previous")
+                mediaControllerRepository.seekToPrevious()
+            }
         } catch (e: Exception) {
-            Log.e(TAG, "Error seeking to previous", e)
+            Log.e(TAG, "Error in smart previous", e)
         }
     }
     

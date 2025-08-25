@@ -30,6 +30,8 @@ class PlayerViewModel @Inject constructor(
         playerService.currentAlbum,
         playerService.currentShowDate,
         playerService.currentVenue,
+        playerService.currentShowId,
+        playerService.currentRecordingId,
         playerService.currentPosition,
         playerService.duration,
         playerService.progress,
@@ -41,12 +43,14 @@ class PlayerViewModel @Inject constructor(
         val album = flows[1] as String?
         val showDate = flows[2] as String?
         val venue = flows[3] as String?
-        val position = flows[4] as Long
-        val duration = flows[5] as Long
-        val progress = flows[6] as Float
-        val isPlaying = flows[7] as Boolean
-        val hasNext = flows[8] as Boolean
-        val hasPrevious = flows[9] as Boolean
+        val showId = flows[4] as String?
+        val recordingId = flows[5] as String?
+        val position = flows[6] as Long
+        val duration = flows[7] as Long
+        val progress = flows[8] as Float
+        val isPlaying = flows[9] as Boolean
+        val hasNext = flows[10] as Boolean
+        val hasPrevious = flows[11] as Boolean
         PlayerUiState(
             trackDisplayInfo = TrackDisplayInfo(
                 title = title ?: "Unknown Track",
@@ -56,6 +60,10 @@ class PlayerViewModel @Inject constructor(
                 venue = venue ?: "Unknown Venue",
                 duration = playerService.formatDuration(duration),
                 artwork = null // TODO: Add artwork support
+            ),
+            navigationInfo = NavigationInfo(
+                showId = showId,
+                recordingId = recordingId
             ),
             progressDisplayInfo = ProgressDisplayInfo(
                 currentPosition = playerService.formatPosition(position),
@@ -80,6 +88,10 @@ class PlayerViewModel @Inject constructor(
                 venue = "Loading...",
                 duration = "0:00",
                 artwork = null
+            ),
+            navigationInfo = NavigationInfo(
+                showId = null,
+                recordingId = null
             ),
             progressDisplayInfo = ProgressDisplayInfo(
                 currentPosition = "0:00",
@@ -179,6 +191,7 @@ class PlayerViewModel @Inject constructor(
  */
 data class PlayerUiState(
     val trackDisplayInfo: TrackDisplayInfo,
+    val navigationInfo: NavigationInfo,
     val progressDisplayInfo: ProgressDisplayInfo,
     val isPlaying: Boolean = false,
     val isLoading: Boolean = false,
@@ -198,6 +211,14 @@ data class TrackDisplayInfo(
     val venue: String,
     val duration: String,
     val artwork: String? = null
+)
+
+/**
+ * Navigation information for playlist routing
+ */
+data class NavigationInfo(
+    val showId: String?,
+    val recordingId: String?
 )
 
 /**
