@@ -1,12 +1,17 @@
 # Changelog
 
+## [0.56.0] - 2025-08-24
+
+### New Features
+* implement per-route MiniPlayer visibility control (60d82080)
+* implement complete V2 MiniPlayer with immediate progress display (f6416986)
+
+
 ## [0.55.0] - 2025-08-24
 
 ### New Features
 * implement configurable debounce delay with debug panel controls (48d7ce35)
 * implement smart format selection with fallback system (29541e29)
-
-
 ## [0.54.0] - 2025-08-23
 
 ### New Features
