@@ -5,9 +5,16 @@ import com.deadly.v2.core.api.playlist.PlaylistService
 import com.deadly.v2.core.domain.repository.ShowRepository
 import com.deadly.v2.core.model.*
 import com.deadly.v2.core.network.archive.service.ArchiveService
+import com.deadly.v2.core.media.repository.MediaControllerRepository
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Job
+import kotlinx.coroutines.flow.StateFlow
+import kotlinx.coroutines.flow.map
+import kotlinx.coroutines.flow.stateIn
+import kotlinx.coroutines.flow.combine
+import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.launch
+import androidx.media3.common.MediaMetadata
 import java.util.concurrent.ConcurrentHashMap
 import javax.inject.Inject
 import javax.inject.Named
@@ -31,6 +38,7 @@ import javax.inject.Singleton
 class PlaylistServiceImpl @Inject constructor(
     private val showRepository: ShowRepository,
     private val archiveService: ArchiveService,
+    private val mediaControllerRepository: MediaControllerRepository,
     @Named("PlaylistApplicationScope") private val coroutineScope: CoroutineScope
 ) : PlaylistService {
     
@@ -517,6 +525,86 @@ class PlaylistServiceImpl @Inject constructor(
      */
     override fun getCurrentSelectedFormat(): String? {
         return currentSelectedFormat
+    }
+    
+    // === MEDIACONTROLLER STATE OBSERVATION ===
+    
+    /**
+     * Whether audio is currently playing - reactive stream from MediaController
+     */
+    override val isPlaying: StateFlow<Boolean> = mediaControllerRepository.isPlaying
+    
+    /**
+     * Current track information from MediaController for playlist highlighting
+     */
+    override val currentPlayingTrackInfo: StateFlow<CurrentTrackInfo?> = 
+        combine(
+            mediaControllerRepository.currentTrack,
+            mediaControllerRepository.currentRecordingId,
+            mediaControllerRepository.currentShowId,
+            mediaControllerRepository.isPlaying,
+            mediaControllerRepository.currentPosition,
+            mediaControllerRepository.duration
+        ) { values ->
+            val mediaMetadata = values[0] as MediaMetadata?
+            val recordingId = values[1] as String?
+            val showId = values[2] as String?
+            val isCurrentlyPlaying = values[3] as Boolean
+            val currentPosition = values[4] as Long
+            val duration = values[5] as Long
+            
+            if (mediaMetadata == null || recordingId == null) {
+                null
+            } else {
+                val title = mediaMetadata.title?.toString() ?: "Unknown Track"
+                val album = mediaMetadata.albumTitle?.toString() ?: ""
+                
+                // Extract show information from album or use showId
+                val (showDate, venue, location) = parseShowInfo(album)
+                
+                CurrentTrackInfo(
+                    trackUrl = "${recordingId}_${title}", // Construct trackUrl  
+                    recordingId = recordingId,
+                    showId = showId ?: showDate,
+                    showDate = showDate.takeIf { it.isNotEmpty() } ?: showId ?: "",
+                    venue = venue,
+                    location = location,
+                    songTitle = title,
+                    trackNumber = null, // TODO: Extract from metadata if available
+                    filename = title, // Use title as filename for now
+                    isPlaying = isCurrentlyPlaying,
+                    position = currentPosition,
+                    duration = duration
+                )
+            }
+        }.stateIn(
+            scope = coroutineScope,
+            started = SharingStarted.WhileSubscribed(5000),
+            initialValue = null
+        )
+    
+    /**
+     * Parse MediaId to extract recording ID and filename
+     * MediaId format: "recordingId_filename" 
+     */
+    private fun parseMediaId(mediaId: String): Pair<String, String> {
+        val parts = mediaId.split("_", limit = 2)
+        return if (parts.size >= 2) {
+            Pair(parts[0], parts[1])
+        } else {
+            Pair(mediaId, "")
+        }
+    }
+    
+    /**
+     * Parse show information from album metadata
+     * Album format typically contains show date, venue info
+     */
+    private fun parseShowInfo(album: String): Triple<String, String?, String?> {
+        // TODO: Implement proper parsing based on album format
+        // For now, return empty values - this will be populated properly
+        // when MediaController provides richer metadata
+        return Triple("", null, null)
     }
     
     // === PREFETCH MANAGEMENT ===

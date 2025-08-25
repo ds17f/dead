@@ -11,8 +11,11 @@ import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
+import kotlinx.coroutines.flow.combine
+import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.launch
+import kotlinx.coroutines.flow.SharingStarted
 import javax.inject.Inject
 
 /**
@@ -32,11 +35,54 @@ class PlaylistViewModel @Inject constructor(
     }
     
     
-    private val _uiState = MutableStateFlow(PlaylistUiState())
-    val uiState: StateFlow<PlaylistUiState> = _uiState.asStateFlow()
+    // Internal state for show and tracks data
+    private val _baseUiState = MutableStateFlow(PlaylistUiState())
+    private val _rawTrackData = MutableStateFlow<List<PlaylistTrackViewModel>>(emptyList())
+    
+    // Reactive UI state that combines base state with MediaController state
+    val uiState: StateFlow<PlaylistUiState> = combine(
+        _baseUiState,
+        _rawTrackData,
+        playlistService.isPlaying,
+        playlistService.currentPlayingTrackInfo
+    ) { baseState, rawTracks, isPlaying, currentTrackInfo ->
+        
+        // Update track data with current playing state
+        val updatedTracks = rawTracks.map { track ->
+            val isCurrentTrack = isTrackCurrentlyPlaying(track, currentTrackInfo)
+            track.copy(
+                isCurrentTrack = isCurrentTrack,
+                isPlaying = isCurrentTrack && isPlaying
+            )
+        }
+        
+        baseState.copy(
+            trackData = updatedTracks,
+            isPlaying = isPlaying
+        )
+    }.stateIn(
+        scope = viewModelScope,
+        started = SharingStarted.WhileSubscribed(5000),
+        initialValue = PlaylistUiState()
+    )
     
     // Track current track loading job for cancellation
     private var trackLoadingJob: Job? = null
+    
+    /**
+     * Determine if a playlist track matches the currently playing track from MediaController
+     */
+    private fun isTrackCurrentlyPlaying(track: PlaylistTrackViewModel, currentTrackInfo: CurrentTrackInfo?): Boolean {
+        if (currentTrackInfo == null) return false
+        
+        // Match based on track title and current recording ID
+        val currentRecordingId = _baseUiState.value.showData?.currentRecordingId
+        if (currentRecordingId != currentTrackInfo.recordingId) return false
+        
+        // Match track title (exact match or contains match)
+        return track.title.equals(currentTrackInfo.songTitle, ignoreCase = true) ||
+               currentTrackInfo.songTitle.contains(track.title, ignoreCase = true)
+    }
     
     /**
      * Load show data from the service
@@ -45,18 +91,17 @@ class PlaylistViewModel @Inject constructor(
         Log.d(TAG, "Loading show: $showId")
         viewModelScope.launch {
             try {
-                _uiState.value = _uiState.value.copy(isLoading = true, error = null)
+                _baseUiState.value = _baseUiState.value.copy(isLoading = true, error = null)
                 
                 // Load show in service (DB data)
                 playlistService.loadShow(showId)
                 
                 // Show DB data immediately
                 val showData = playlistService.getCurrentShowInfo()
-                _uiState.value = _uiState.value.copy(
+                _baseUiState.value = _baseUiState.value.copy(
                     isLoading = false,
                     showData = showData,
-                    currentTrackIndex = -1,
-                    isPlaying = false
+                    currentTrackIndex = -1
                 )
                 
                 Log.d(TAG, "Show loaded successfully: ${showData?.displayDate} - showing DB data immediately")
@@ -66,7 +111,7 @@ class PlaylistViewModel @Inject constructor(
                 
             } catch (e: Exception) {
                 Log.e(TAG, "Error loading show", e)
-                _uiState.value = _uiState.value.copy(
+                _baseUiState.value = _baseUiState.value.copy(
                     isLoading = false,
                     error = "Failed to load show: ${e.message}"
                 )
@@ -83,9 +128,8 @@ class PlaylistViewModel @Inject constructor(
                 Log.d(TAG, "Playing track $trackIndex")
                 playlistService.playTrack(trackIndex)
                 
-                _uiState.value = _uiState.value.copy(
-                    currentTrackIndex = trackIndex,
-                    isPlaying = true
+                _baseUiState.value = _baseUiState.value.copy(
+                    currentTrackIndex = trackIndex
                 )
                 
             } catch (e: Exception) {
@@ -98,9 +142,10 @@ class PlaylistViewModel @Inject constructor(
      * Toggle play/pause
      */
     fun togglePlayPause() {
-        val currentState = _uiState.value
+        val currentState = _baseUiState.value
         if (currentState.currentTrackIndex >= 0) {
-            _uiState.value = currentState.copy(isPlaying = !currentState.isPlaying)
+            // Playback state is now managed by MediaController - no need to update locally
+            Log.d(TAG, "Toggle play/pause - MediaController will handle state")
         } else {
             // Start playing first track
             playTrack(0)
@@ -120,12 +165,12 @@ class PlaylistViewModel @Inject constructor(
                 
                 // Show DB data immediately - no loading state blocks navigation
                 val showData = playlistService.getCurrentShowInfo()
-                _uiState.value = _uiState.value.copy(
+                _baseUiState.value = _baseUiState.value.copy(
                     showData = showData,
                     currentTrackIndex = -1,
-                    isPlaying = false,
                     isTrackListLoading = false // Reset track loading state
                 )
+                _rawTrackData.value = emptyList()
                 
                 Log.d(TAG, "Navigated to previous show: ${showData?.displayDate} - showing DB data immediately")
                 
@@ -151,12 +196,12 @@ class PlaylistViewModel @Inject constructor(
                 
                 // Show DB data immediately - no loading state blocks navigation
                 val showData = playlistService.getCurrentShowInfo()
-                _uiState.value = _uiState.value.copy(
+                _baseUiState.value = _baseUiState.value.copy(
                     showData = showData,
                     currentTrackIndex = -1,
-                    isPlaying = false,
                     isTrackListLoading = false // Reset track loading state
                 )
+                _rawTrackData.value = emptyList()
                 
                 Log.d(TAG, "Navigated to next show: ${showData?.displayDate} - showing DB data immediately")
                 
@@ -176,7 +221,7 @@ class PlaylistViewModel @Inject constructor(
         viewModelScope.launch {
             try {
                 playlistService.addToLibrary()
-                _uiState.value = _uiState.value.copy(isInLibrary = true)
+                _baseUiState.value = _baseUiState.value.copy(isInLibrary = true)
             } catch (e: Exception) {
                 Log.e(TAG, "Error adding to library", e)
             }
@@ -215,7 +260,7 @@ class PlaylistViewModel @Inject constructor(
         viewModelScope.launch {
             try {
                 // In real implementation, would call service method
-                _uiState.value = _uiState.value.copy(isInLibrary = false)
+                _baseUiState.value = _baseUiState.value.copy(isInLibrary = false)
                 Log.d(TAG, "Removed from library")
             } catch (e: Exception) {
                 Log.e(TAG, "Error removing from library", e)
@@ -230,7 +275,7 @@ class PlaylistViewModel @Inject constructor(
         viewModelScope.launch {
             try {
                 // In real implementation, would call service method to remove downloads too
-                _uiState.value = _uiState.value.copy(isInLibrary = false)
+                _baseUiState.value = _baseUiState.value.copy(isInLibrary = false)
                 Log.d(TAG, "Removed from library with downloads")
             } catch (e: Exception) {
                 Log.e(TAG, "Error removing from library with downloads", e)
@@ -257,7 +302,7 @@ class PlaylistViewModel @Inject constructor(
      */
     fun showReviews() {
         Log.d(TAG, "Show reviews requested")
-        _uiState.value = _uiState.value.copy(showReviewDetails = true)
+        _baseUiState.value = _baseUiState.value.copy(showReviewDetails = true)
         loadReviews()
     }
     
@@ -266,7 +311,7 @@ class PlaylistViewModel @Inject constructor(
      */
     fun hideReviewDetails() {
         Log.d(TAG, "Hide reviews requested")
-        _uiState.value = _uiState.value.copy(
+        _baseUiState.value = _baseUiState.value.copy(
             showReviewDetails = false,
             reviews = emptyList(),
             ratingDistribution = emptyMap(),
@@ -280,7 +325,7 @@ class PlaylistViewModel @Inject constructor(
     private fun loadReviews() {
         viewModelScope.launch {
             try {
-                _uiState.value = _uiState.value.copy(
+                _baseUiState.value = _baseUiState.value.copy(
                     reviewsLoading = true,
                     reviewsError = null
                 )
@@ -289,7 +334,7 @@ class PlaylistViewModel @Inject constructor(
                 val reviews = playlistService.getCurrentReviews()
                 val ratingDistribution = playlistService.getRatingDistribution()
                 
-                _uiState.value = _uiState.value.copy(
+                _baseUiState.value = _baseUiState.value.copy(
                     reviewsLoading = false,
                     reviews = reviews,
                     ratingDistribution = ratingDistribution
@@ -299,7 +344,7 @@ class PlaylistViewModel @Inject constructor(
                 
             } catch (e: Exception) {
                 Log.e(TAG, "Error loading reviews", e)
-                _uiState.value = _uiState.value.copy(
+                _baseUiState.value = _baseUiState.value.copy(
                     reviewsLoading = false,
                     reviewsError = "Failed to load reviews: ${e.message}"
                 )
@@ -328,7 +373,7 @@ class PlaylistViewModel @Inject constructor(
      */
     fun showMenu() {
         Log.d(TAG, "Show menu requested")
-        _uiState.value = _uiState.value.copy(showMenu = true)
+        _baseUiState.value = _baseUiState.value.copy(showMenu = true)
     }
     
     /**
@@ -336,7 +381,7 @@ class PlaylistViewModel @Inject constructor(
      */
     fun hideMenu() {
         Log.d(TAG, "Hide menu requested")
-        _uiState.value = _uiState.value.copy(showMenu = false)
+        _baseUiState.value = _baseUiState.value.copy(showMenu = false)
     }
     
     /**
@@ -356,8 +401,8 @@ class PlaylistViewModel @Inject constructor(
         viewModelScope.launch {
             try {
                 // Set loading state
-                _uiState.value = _uiState.value.copy(
-                    recordingSelection = _uiState.value.recordingSelection.copy(
+                _baseUiState.value = _baseUiState.value.copy(
+                    recordingSelection = _baseUiState.value.recordingSelection.copy(
                         isVisible = true,
                         isLoading = true,
                         errorMessage = null
@@ -365,11 +410,11 @@ class PlaylistViewModel @Inject constructor(
                 )
                 
                 // Load recording options from service
-                val showTitle = _uiState.value.showData?.displayDate ?: "Unknown Show"
+                val showTitle = _baseUiState.value.showData?.displayDate ?: "Unknown Show"
                 val recordingOptions = playlistService.getRecordingOptions()
                 
-                _uiState.value = _uiState.value.copy(
-                    recordingSelection = _uiState.value.recordingSelection.copy(
+                _baseUiState.value = _baseUiState.value.copy(
+                    recordingSelection = _baseUiState.value.recordingSelection.copy(
                         showTitle = showTitle,
                         currentRecording = recordingOptions.currentRecording,
                         alternativeRecordings = recordingOptions.alternativeRecordings,
@@ -382,8 +427,8 @@ class PlaylistViewModel @Inject constructor(
                 
             } catch (e: Exception) {
                 Log.e(TAG, "Error loading recording options", e)
-                _uiState.value = _uiState.value.copy(
-                    recordingSelection = _uiState.value.recordingSelection.copy(
+                _baseUiState.value = _baseUiState.value.copy(
+                    recordingSelection = _baseUiState.value.recordingSelection.copy(
                         isLoading = false,
                         errorMessage = "Failed to load recordings: ${e.message}"
                     )
@@ -397,7 +442,7 @@ class PlaylistViewModel @Inject constructor(
      */
     fun hideRecordingSelection() {
         Log.d(TAG, "Hide recording selection requested")
-        _uiState.value = _uiState.value.copy(
+        _baseUiState.value = _baseUiState.value.copy(
             recordingSelection = RecordingSelectionState()
         )
     }
@@ -412,13 +457,13 @@ class PlaylistViewModel @Inject constructor(
                 playlistService.selectRecording(recordingId)
                 
                 // Update selection state
-                val currentSelection = _uiState.value.recordingSelection
+                val currentSelection = _baseUiState.value.recordingSelection
                 val updatedCurrent = currentSelection.currentRecording?.copy(isSelected = false)
                 val updatedAlternatives = currentSelection.alternativeRecordings.map { option ->
                     option.copy(isSelected = option.identifier == recordingId)
                 }
                 
-                _uiState.value = _uiState.value.copy(
+                _baseUiState.value = _baseUiState.value.copy(
                     recordingSelection = currentSelection.copy(
                         currentRecording = updatedCurrent,
                         alternativeRecordings = updatedAlternatives
@@ -467,7 +512,7 @@ class PlaylistViewModel @Inject constructor(
      * Toggle playback (for main play/pause button) - V2 Media System
      */
     fun togglePlayback() {
-        val currentState = _uiState.value
+        val currentState = _baseUiState.value
         Log.d(TAG, "V2 Toggle playback - currently playing: ${currentState.isPlaying}")
 
         viewModelScope.launch {
@@ -499,7 +544,7 @@ class PlaylistViewModel @Inject constructor(
                 Log.d(TAG, "V2 Media: Play All for $recordingId ($selectedFormat)")
                 
                 // Get show context from UI state
-                val showContext = _uiState.value.showData
+                val showContext = _baseUiState.value.showData
                 if (showContext == null) {
                     Log.e(TAG, "Cannot start playback: No show data available in UI state")
                     // TODO: Show user-friendly error message instead of silent failure
@@ -534,7 +579,7 @@ class PlaylistViewModel @Inject constructor(
                 Log.e(TAG, "Available formats: ${e.availableFormats}")
                 
                 // Show user error
-                _uiState.value = _uiState.value.copy(
+                _baseUiState.value = _baseUiState.value.copy(
                     error = "Playback format '${e.requestedFormat}' not available"
                 )
                 
@@ -553,7 +598,7 @@ class PlaylistViewModel @Inject constructor(
                 Log.d(TAG, "V2 Playing track: ${track.title} (index: ${track.number - 1})")
                 
                 // Get show data to determine recording ID
-                val currentShowData = _uiState.value.showData
+                val currentShowData = _baseUiState.value.showData
                 if (currentShowData == null) {
                     Log.w(TAG, "No show data - cannot play track")
                     return@launch
@@ -580,7 +625,7 @@ class PlaylistViewModel @Inject constructor(
                 Log.d(TAG, "V2 Media: Play track $trackIndex of $recordingId ($selectedFormat)")
                 
                 // Get show context from UI state
-                val showContext = _uiState.value.showData
+                val showContext = _baseUiState.value.showData
                 if (showContext == null) {
                     Log.e(TAG, "Cannot start playback: No show data available in UI state")
                     // TODO: Show user-friendly error message instead of silent failure
@@ -616,7 +661,7 @@ class PlaylistViewModel @Inject constructor(
                 Log.e(TAG, "Available formats: ${e.availableFormats}")
                 
                 // Show user error
-                _uiState.value = _uiState.value.copy(
+                _baseUiState.value = _baseUiState.value.copy(
                     error = "Track format '${e.requestedFormat}' not available"
                 )
                 
@@ -633,14 +678,14 @@ class PlaylistViewModel @Inject constructor(
         Log.d(TAG, "Download track requested: ${track.title}")
         // In real implementation, would start track download
         // For now, just update the track to show downloading state
-        val updatedTracks = _uiState.value.trackData.map { existingTrack ->
+        val updatedTracks = _rawTrackData.value.map { existingTrack ->
             if (existingTrack.number == track.number) {
                 existingTrack.copy(downloadProgress = 0.1f) // Start downloading
             } else {
                 existingTrack
             }
         }
-        _uiState.value = _uiState.value.copy(trackData = updatedTracks)
+        _rawTrackData.value = updatedTracks
     }
     
     /**
@@ -660,20 +705,20 @@ class PlaylistViewModel @Inject constructor(
      */
     private fun loadTracksFromService() {
         // Start track loading with spinner
-        _uiState.value = _uiState.value.copy(
-            isTrackListLoading = true,
-            trackData = emptyList() // Clear previous tracks while loading
+        _baseUiState.value = _baseUiState.value.copy(
+            isTrackListLoading = true
         )
+        _rawTrackData.value = emptyList() // Clear previous tracks while loading
         
         trackLoadingJob = viewModelScope.launch {
             try {
                 Log.d(TAG, "Loading track list asynchronously...")
                 val trackData = playlistService.getTrackList()
                 
-                _uiState.value = _uiState.value.copy(
-                    isTrackListLoading = false,
-                    trackData = trackData
+                _baseUiState.value = _baseUiState.value.copy(
+                    isTrackListLoading = false
                 )
+                _rawTrackData.value = trackData
                 
                 Log.d(TAG, "Track list loaded: ${trackData.size} tracks")
                 
@@ -682,10 +727,10 @@ class PlaylistViewModel @Inject constructor(
                 
             } catch (e: Exception) {
                 Log.e(TAG, "Error loading track list", e)
-                _uiState.value = _uiState.value.copy(
-                    isTrackListLoading = false,
-                    trackData = emptyList()
+                _baseUiState.value = _baseUiState.value.copy(
+                    isTrackListLoading = false
                 )
+                _rawTrackData.value = emptyList()
             }
         }
     }

@@ -1,6 +1,7 @@
 package com.deadly.v2.core.api.playlist
 
 import com.deadly.v2.core.model.*
+import kotlinx.coroutines.flow.StateFlow
 
 /**
  * PlaylistService - Clean service interface for playlist functionality
@@ -112,4 +113,17 @@ interface PlaylistService {
      * Returns the format that was selected during track list building
      */
     fun getCurrentSelectedFormat(): String?
+    
+    // === MediaController State Observation ===
+    
+    /**
+     * Whether audio is currently playing - reactive stream from MediaController
+     */
+    val isPlaying: StateFlow<Boolean>
+    
+    /**
+     * Current track information from MediaController for playlist highlighting
+     * Returns null if no track is currently loaded
+     */
+    val currentPlayingTrackInfo: StateFlow<CurrentTrackInfo?>
 }

@@ -42,6 +42,7 @@ dependencies {
     implementation(project(":v2:core:model"))
     implementation(project(":v2:core:domain"))
     implementation(project(":v2:core:network:archive"))
+    implementation(project(":v2:core:media"))
 
     // Hilt
     implementation("com.google.dagger:hilt-android:2.51.1")
@@ -52,4 +53,7 @@ dependencies {
 
     // Serialization
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.3")
+    
+    // Media3 (for MediaMetadata type)
+    implementation("androidx.media3:media3-common:1.3.1")
 }
