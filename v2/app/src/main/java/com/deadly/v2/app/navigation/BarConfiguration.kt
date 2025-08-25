@@ -33,6 +33,13 @@ object NavigationBarConfig {
             miniPlayer = MiniPlayerConfig(visible = true) // Show MiniPlayer in library for music context
         )
         
+        // Player routes - full screen immersive experience
+        "player" -> BarConfiguration(
+            topBar = null, // Player has its own top bar
+            bottomBar = BottomBarConfig(visible = false), // Hide bottom nav in player
+            miniPlayer = MiniPlayerConfig(visible = false) // Hide MiniPlayer in player (it has its own)
+        )
+        
         // Splash and other routes
         "splash" -> BarConfiguration(
             topBar = null,
