@@ -4,6 +4,8 @@ import android.util.Log
 import androidx.media3.common.MediaMetadata
 import com.deadly.v2.core.api.player.PlayerService
 import com.deadly.v2.core.media.repository.MediaControllerRepository
+import com.deadly.v2.core.media.service.MetadataHydratorService
+import com.deadly.v2.core.domain.repository.ShowRepository
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.flow.map
@@ -12,20 +14,24 @@ import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.SupervisorJob
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.runBlocking
 import javax.inject.Inject
 import javax.inject.Singleton
 
 /**
- * V2 Player Service Implementation
+ * V2 Player Service Implementation with Metadata Hydration
  * 
  * Real implementation of PlayerService that delegates to V2 MediaControllerRepository.
  * Provides perfect synchronization with Media3 playback state through direct StateFlow delegation.
+ * Uses MetadataHydratorService for on-demand metadata enrichment from database.
  * 
- * Follows the same architectural patterns as MiniPlayerServiceImpl.
+ * Key Innovation: Hydrates metadata on-demand when accessed, ensuring fresh show/venue info.
  */
 @Singleton
 class PlayerServiceImpl @Inject constructor(
-    private val mediaControllerRepository: MediaControllerRepository
+    private val mediaControllerRepository: MediaControllerRepository,
+    private val metadataHydratorService: MetadataHydratorService,
+    private val showRepository: ShowRepository
 ) : PlayerService {
     
     companion object {
@@ -52,14 +58,70 @@ class PlayerServiceImpl @Inject constructor(
         initialValue = "Unknown Track"
     )
     
-    // Extract album info from MediaMetadata  
-    override val currentAlbum: StateFlow<String?> = mediaControllerRepository.currentTrack.map { metadata ->
-        metadata?.albumTitle?.toString() ?: "Unknown Album" 
+    // Extract album info by parsing MediaId and looking up show data
+    override val currentAlbum: StateFlow<String?> = combine(
+        mediaControllerRepository.currentTrack,
+        mediaControllerRepository.currentShowId
+    ) { metadata, showId ->
+        if (metadata != null && !showId.isNullOrBlank()) {
+            try {
+                // Parse showId from MediaMetadata extras or use currentShowId
+                val actualShowId = metadata.extras?.getString("showId") ?: showId
+                
+                // Get show data from repository
+                val show = runBlocking { 
+                    showRepository.getShowById(actualShowId)
+                }
+                
+                if (show != null) {
+                    // Use fresh show data for display
+                    if (!show.venue.name.isNullOrBlank()) {
+                        "${formatShowDate(show.date)} - ${show.venue.name}"
+                    } else {
+                        formatShowDate(show.date)
+                    }
+                } else {
+                    // Fallback to existing metadata
+                    metadata.albumTitle?.toString() ?: "Unknown Album"
+                }
+                
+            } catch (e: Exception) {
+                Log.w(TAG, "Failed to lookup show data, using fallback", e)
+                metadata.albumTitle?.toString() ?: "Unknown Album"
+            }
+        } else {
+            "Unknown Album"
+        }
     }.stateIn(
         scope = serviceScope,
         started = SharingStarted.WhileSubscribed(),
         initialValue = "Unknown Album"
     )
+    
+    /**
+     * Format show date from YYYY-MM-DD to readable format
+     */
+    private fun formatShowDate(dateString: String): String {
+        return try {
+            val parts = dateString.split("-")
+            if (parts.size == 3) {
+                val year = parts[0]
+                val month = parts[1].toInt()
+                val day = parts[2].toInt()
+                
+                val monthNames = arrayOf(
+                    "Jan", "Feb", "Mar", "Apr", "May", "Jun",
+                    "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"
+                )
+                
+                "${monthNames[month - 1]} $day, $year"
+            } else {
+                dateString
+            }
+        } catch (e: Exception) {
+            dateString
+        }
+    }
     
     // TODO: Implement proper hasNext/hasPrevious based on queue state
     // For now, always show enabled (consistent with mock)

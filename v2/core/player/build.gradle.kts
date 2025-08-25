@@ -39,6 +39,8 @@ dependencies {
     // V2 Core dependencies
     implementation(project(":v2:core:api:player"))
     implementation(project(":v2:core:media"))
+    implementation(project(":v2:core:domain"))
+    implementation(project(":v2:core:model"))
     
     // Media3 for MediaMetadata access
     implementation("androidx.media3:media3-common:1.4.1")

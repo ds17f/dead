@@ -431,6 +431,7 @@ class MediaControllerRepository @Inject constructor(
             
             androidx.media3.common.MediaItem.Builder()
                 .setUri(uri)
+                .setMediaId("${showId}|${recordingId}|${index}")
                 .setMediaMetadata(
                     androidx.media3.common.MediaMetadata.Builder()
                         .setTitle(track.title ?: track.name)

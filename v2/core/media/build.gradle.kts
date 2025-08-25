@@ -37,6 +37,7 @@ dependencies {
     // V2 Core dependencies
     implementation(project(":v2:core:model"))
     implementation(project(":v2:core:network:archive"))
+    implementation(project(":v2:core:domain"))
     
     implementation("androidx.core:core-ktx:1.12.0")
     
