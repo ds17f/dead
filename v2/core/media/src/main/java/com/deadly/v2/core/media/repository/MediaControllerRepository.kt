@@ -291,6 +291,20 @@ class MediaControllerRepository @Inject constructor(
     }
     
     /**
+     * Start playback (for auto-play when navigating tracks)
+     */
+    suspend fun play() {
+        Log.d(TAG, "play")
+        
+        executeWhenConnected {
+            val controller = mediaController
+            if (controller != null) {
+                controller.play()
+            }
+        }
+    }
+    
+    /**
      * Async connection to MediaSessionService
      */
     private fun connectToService() {

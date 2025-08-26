@@ -229,7 +229,14 @@ class PlayerServiceImpl @Inject constructor(
     override suspend fun seekToNext() {
         Log.d(TAG, "Seek to next track")
         try {
+            val wasPlaying = mediaControllerRepository.isPlaying.value
             mediaControllerRepository.seekToNext()
+            
+            // Auto-play new track if we were paused
+            if (!wasPlaying) {
+                Log.d(TAG, "Was paused - starting playback of new track")
+                mediaControllerRepository.play()
+            }
         } catch (e: Exception) {
             Log.e(TAG, "Error seeking to next", e)
         }
@@ -239,15 +246,30 @@ class PlayerServiceImpl @Inject constructor(
         Log.d(TAG, "Smart previous: checking current position")
         try {
             val currentPositionMs = mediaControllerRepository.currentPosition.value
+            val wasPlaying = mediaControllerRepository.isPlaying.value
             
             if (currentPositionMs > PREVIOUS_TRACK_THRESHOLD_MS) {
                 // Restart current track (seek to beginning)
                 Log.d(TAG, "Position ${currentPositionMs}ms > ${PREVIOUS_TRACK_THRESHOLD_MS}ms, restarting track")
                 mediaControllerRepository.seekToPosition(0L)
+                
+                // If paused, stay paused after restart (just reset position)
+                // If playing, continue playing after restart
+                if (wasPlaying) {
+                    Log.d(TAG, "Was playing - continuing playback after restart")
+                } else {
+                    Log.d(TAG, "Was paused - staying paused after restart")
+                }
             } else {
                 // Go to previous track
                 Log.d(TAG, "Position ${currentPositionMs}ms <= ${PREVIOUS_TRACK_THRESHOLD_MS}ms, seeking to previous")
                 mediaControllerRepository.seekToPrevious()
+                
+                // Auto-play new track if we were paused
+                if (!wasPlaying) {
+                    Log.d(TAG, "Was paused - starting playback of previous track")
+                    mediaControllerRepository.play()
+                }
             }
         } catch (e: Exception) {
             Log.e(TAG, "Error in smart previous", e)
