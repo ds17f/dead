@@ -21,6 +21,7 @@ import com.deadly.v2.core.model.PlaylistShowViewModel
 fun PlaylistActionRow(
     showData: PlaylistShowViewModel,
     isPlaying: Boolean,
+    isCurrentShowAndRecording: Boolean,
     onLibraryAction: (LibraryAction) -> Unit,
     onDownload: () -> Unit,
     onShowSetlist: () -> Unit,
@@ -147,13 +148,16 @@ fun PlaylistActionRow(
             onClick = onTogglePlayback,
             modifier = Modifier.size(56.dp)
         ) {
+            // Show pause icon only if currently playing this exact show/recording
+            val showPauseIcon = isCurrentShowAndRecording && isPlaying
+            
             Icon(
-                painter = if (isPlaying) {
+                painter = if (showPauseIcon) {
                     IconResources.PlayerControls.PauseCircleFilled()
                 } else {
                     IconResources.PlayerControls.PlayCircleFilled()
                 },
-                contentDescription = if (isPlaying) "Pause" else "Play",
+                contentDescription = if (showPauseIcon) "Pause" else "Play",
                 tint = MaterialTheme.colorScheme.primary,
                 modifier = Modifier.size(56.dp)
             )

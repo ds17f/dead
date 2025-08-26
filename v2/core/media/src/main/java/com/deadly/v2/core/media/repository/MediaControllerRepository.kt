@@ -305,6 +305,20 @@ class MediaControllerRepository @Inject constructor(
     }
     
     /**
+     * Pause playback (for explicit pause commands)
+     */
+    suspend fun pause() {
+        Log.d(TAG, "pause")
+        
+        executeWhenConnected {
+            val controller = mediaController
+            if (controller != null) {
+                controller.pause()
+            }
+        }
+    }
+    
+    /**
      * Async connection to MediaSessionService
      */
     private fun connectToService() {

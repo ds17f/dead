@@ -322,13 +322,13 @@ class PlaylistServiceImpl @Inject constructor(
     }
     
     override suspend fun pause() {
-        Log.d(TAG, "pause() - TODO: Integrate with V2 media service")
-        // TODO: Integrate with V2 media service
+        Log.d(TAG, "pause() - Using MediaControllerRepository")
+        mediaControllerRepository.pause()
     }
     
     override suspend fun resume() {
-        Log.d(TAG, "resume() - TODO: Integrate with V2 media service")
-        // TODO: Integrate with V2 media service
+        Log.d(TAG, "resume() - Using MediaControllerRepository")
+        mediaControllerRepository.play()
     }
     
     override suspend fun getCurrentReviews(): List<PlaylistReview> {

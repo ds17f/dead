@@ -56,9 +56,25 @@ class PlaylistViewModel @Inject constructor(
             )
         }
         
+        // Determine if we're viewing the currently playing show/recording
+        val playlistShowId = baseState.showData?.showId
+        val playlistRecordingId = baseState.showData?.currentRecordingId
+        val mediaShowId = currentTrackInfo?.showId
+        val mediaRecordingId = currentTrackInfo?.recordingId
+        
+        val isCurrentShowAndRecording = playlistShowId != null && 
+                                       playlistRecordingId != null &&
+                                       (playlistShowId == mediaShowId || playlistShowId == mediaShowId?.replace("-", "")) &&
+                                       playlistRecordingId == mediaRecordingId
+        
+        Log.v(TAG, "Play button logic: playlistShow='$playlistShowId' vs mediaShow='$mediaShowId'")
+        Log.v(TAG, "Play button logic: playlistRecording='$playlistRecordingId' vs mediaRecording='$mediaRecordingId'")  
+        Log.v(TAG, "Play button logic: isCurrentShowAndRecording=$isCurrentShowAndRecording, isPlaying=$isPlaying")
+        
         baseState.copy(
             trackData = updatedTracks,
-            isPlaying = isPlaying
+            isPlaying = isPlaying,
+            isCurrentShowAndRecording = isCurrentShowAndRecording
         )
     }.stateIn(
         scope = viewModelScope,
@@ -595,67 +611,83 @@ class PlaylistViewModel @Inject constructor(
     
     /**
      * Toggle playback (for main play/pause button) - V2 Media System
+     * 
+     * Behavior depends on context:
+     * - If viewing currently playing show/recording: toggle play/pause
+     * - If viewing different show/recording: start playing the new content
      */
     fun togglePlayback() {
-        val currentState = _baseUiState.value
-        Log.d(TAG, "V2 Toggle playback - currently playing: ${currentState.isPlaying}")
+        val currentState = uiState.value // Use reactive state with isCurrentShowAndRecording
+        Log.d(TAG, "V2 Toggle playback - playing: ${currentState.isPlaying}, isCurrentShowAndRecording: ${currentState.isCurrentShowAndRecording}")
 
         viewModelScope.launch {
             try {
-                // Get show data to determine recording ID
-                val showData = currentState.showData
-                if (showData == null) {
-                    Log.w(TAG, "No show data - cannot start playback")
-                    return@launch
-                }
+                if (currentState.isCurrentShowAndRecording && currentState.isPlaying) {
+                    // Currently playing this show/recording → pause
+                    Log.d(TAG, "V2 Media: Pausing current playback")
+                    playlistService.pause()
+                } else {
+                    // Either not playing, or different show/recording → start playback
+                    Log.d(TAG, "V2 Media: Starting playback (new or resume)")
+                    
+                    // Get show data to determine recording ID
+                    val showData = currentState.showData
+                    if (showData == null) {
+                        Log.w(TAG, "No show data - cannot start playback")
+                        return@launch
+                    }
 
-                // also need the current recording
-                val currentRecording = showData.currentRecordingId
-                if (currentRecording == null) {
-                    Log.w(TAG, "No currentRecording - cannot start playback")
-                    return@launch
-                }
+                    // also need the current recording
+                    val currentRecording = showData.currentRecordingId
+                    if (currentRecording == null) {
+                        Log.w(TAG, "No currentRecording - cannot start playback")
+                        return@launch
+                    }
 
-                // Get the format that was selected during playlist building
-                val selectedFormat = playlistService.getCurrentSelectedFormat()
-                
-                if (selectedFormat == null) {
-                    Log.w(TAG, "No format selected - cannot start playback")
-                    return@launch
+                    // Get the format that was selected during playlist building
+                    val selectedFormat = playlistService.getCurrentSelectedFormat()
+                    
+                    if (selectedFormat == null) {
+                        Log.w(TAG, "No format selected - cannot start playback")
+                        return@launch
+                    }
+                    
+                    val recordingId = currentRecording
+                    
+                    if (currentState.isCurrentShowAndRecording) {
+                        Log.d(TAG, "V2 Media: Resuming current recording $recordingId")
+                        playlistService.resume()
+                    } else {
+                        Log.d(TAG, "V2 Media: Play All for new recording $recordingId ($selectedFormat)")
+                        
+                        // Get show context from UI state
+                        val showContext = currentState.showData
+                        if (showContext == null) {
+                            Log.e(TAG, "Cannot start playback: No show data available in UI state")
+                            return@launch
+                        }
+                        
+                        val showId = showContext.showId
+                        if (showId.isBlank()) {
+                            Log.e(TAG, "Cannot start playback: showId is blank from service")
+                            return@launch
+                        }
+                        
+                        val showDate = showContext.date
+                        val venue = showContext?.venue
+                        val location = showContext?.location
+                        
+                        // Use MediaControllerRepository for Play All logic (new show/recording)
+                        mediaControllerRepository.playAll(
+                            recordingId = recordingId, 
+                            format = selectedFormat,
+                            showId = showId,
+                            showDate = showDate,
+                            venue = venue,
+                            location = location
+                        )
+                    }
                 }
-                
-                val recordingId = currentRecording
-                
-                Log.d(TAG, "V2 Media: Play All for $recordingId ($selectedFormat)")
-                
-                // Get show context from UI state
-                val showContext = _baseUiState.value.showData
-                if (showContext == null) {
-                    Log.e(TAG, "Cannot start playback: No show data available in UI state")
-                    // TODO: Show user-friendly error message instead of silent failure
-                    return@launch
-                }
-                
-                val showId = showContext.showId
-                if (showId.isBlank()) {
-                    Log.e(TAG, "Cannot start playback: showId is blank from service")
-                    // TODO: Show user-friendly error message instead of silent failure  
-                    return@launch
-                }
-                
-                val showDate = showContext.date
-                val venue = showContext?.venue
-                val location = showContext?.location
-                
-                // Use MediaControllerRepository for Play All logic
-                mediaControllerRepository.playAll(
-                    recordingId = recordingId, 
-                    format = selectedFormat,
-                    showId = showId,
-                    showDate = showDate,
-                    venue = venue,
-                    location = location
-                )
                 
                 // UI state will be updated via MediaController state observation
                 

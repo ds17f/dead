@@ -169,6 +169,7 @@ fun PlaylistScreen(
                             PlaylistActionRow(
                                 showData = showData,
                                 isPlaying = uiState.isPlaying,
+                                isCurrentShowAndRecording = uiState.isCurrentShowAndRecording,
                                 onLibraryAction = viewModel::handleLibraryAction,
                                 onDownload = viewModel::downloadShow,
                                 onShowSetlist = viewModel::showSetlist,
