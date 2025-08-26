@@ -43,6 +43,7 @@ dependencies {
     implementation(project(":v2:core:domain"))
     implementation(project(":v2:core:network:archive"))
     implementation(project(":v2:core:media"))
+    implementation(project(":v2:core:player"))
 
     // Hilt
     implementation("com.google.dagger:hilt-android:2.51.1")

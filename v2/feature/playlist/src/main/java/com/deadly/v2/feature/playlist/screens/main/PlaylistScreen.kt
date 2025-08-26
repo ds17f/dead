@@ -252,7 +252,7 @@ fun PlaylistScreen(
                 venue = showData.venue,
                 location = showData.location,
                 onShareClick = { 
-                    // Share will be implemented in future iteration with proper model conversion
+                    viewModel.shareShow()
                 },
                 onChooseRecordingClick = viewModel::chooseRecording,
                 onDismiss = viewModel::hideMenu

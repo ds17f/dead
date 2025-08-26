@@ -372,21 +372,18 @@ class PlayerServiceImpl @Inject constructor(
                 return
             }
             
-            // Get show and recording data
+            // Get show and recording data from repository
             val show = showRepository.getShowById(showId)
             if (show == null) {
                 Log.w(TAG, "Show not found for sharing: $showId")
                 return
             }
             
-            // Create mock recording and track from metadata
-            val recording = Recording(
-                identifier = recordingId,
-                showId = showId,
-                sourceType = com.deadly.v2.core.model.RecordingSourceType.UNKNOWN,
-                rating = show.averageRating?.toDouble() ?: 0.0,
-                reviewCount = show.totalReviews
-            )
+            val recording = showRepository.getRecordingById(recordingId)
+            if (recording == null) {
+                Log.w(TAG, "Recording not found for sharing: $recordingId")
+                return
+            }
             
             val trackTitle = currentMetadata.title?.toString() ?: "Unknown Track"
             val trackNumber = currentMetadata.trackNumber?.let { if (it > 0) it else null }
@@ -426,21 +423,18 @@ class PlayerServiceImpl @Inject constructor(
                 return
             }
             
-            // Get show data
+            // Get show and recording data from repository
             val show = showRepository.getShowById(showId)
             if (show == null) {
                 Log.w(TAG, "Show not found for sharing: $showId")
                 return
             }
             
-            // Create mock recording from metadata
-            val recording = Recording(
-                identifier = recordingId,
-                showId = showId,
-                sourceType = com.deadly.v2.core.model.RecordingSourceType.UNKNOWN,
-                rating = show.averageRating?.toDouble() ?: 0.0,
-                reviewCount = show.totalReviews
-            )
+            val recording = showRepository.getRecordingById(recordingId)
+            if (recording == null) {
+                Log.w(TAG, "Recording not found for sharing: $recordingId")
+                return
+            }
             
             shareService.shareShow(show, recording)
             

@@ -6,6 +6,7 @@ import com.deadly.v2.core.domain.repository.ShowRepository
 import com.deadly.v2.core.model.*
 import com.deadly.v2.core.network.archive.service.ArchiveService
 import com.deadly.v2.core.media.repository.MediaControllerRepository
+import com.deadly.v2.core.player.service.ShareService
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.flow.StateFlow
@@ -39,6 +40,7 @@ class PlaylistServiceImpl @Inject constructor(
     private val showRepository: ShowRepository,
     private val archiveService: ArchiveService,
     private val mediaControllerRepository: MediaControllerRepository,
+    private val shareService: ShareService,
     @Named("PlaylistApplicationScope") private val coroutineScope: CoroutineScope
 ) : PlaylistService {
     
@@ -273,10 +275,30 @@ class PlaylistServiceImpl @Inject constructor(
     }
     
     override suspend fun shareShow() {
-        currentShow?.let { show ->
-            Log.d(TAG, "shareShow() for ${show.displayTitle} - TODO: Implement sharing functionality")
+        val show = currentShow
+        val recordingId = currentRecordingId
+        
+        if (show == null || recordingId == null) {
+            Log.w(TAG, "Cannot share show - missing show or recording data")
+            return
         }
-        // TODO: Implement sharing functionality (generate share URL, etc.)
+        
+        try {
+            Log.d(TAG, "Sharing show: ${show.displayTitle}")
+            
+            // Get real recording from repository
+            val recording = showRepository.getRecordingById(recordingId)
+            if (recording == null) {
+                Log.w(TAG, "Recording not found for sharing: $recordingId")
+                return
+            }
+            
+            shareService.shareShow(show, recording)
+            Log.d(TAG, "Successfully shared show: ${show.displayTitle}")
+            
+        } catch (e: Exception) {
+            Log.e(TAG, "Error sharing show", e)
+        }
     }
     
     override suspend fun loadSetlist() {
