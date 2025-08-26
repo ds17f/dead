@@ -184,6 +184,20 @@ class PlayerViewModel @Inject constructor(
             mapOf("error" to "Failed to get debug metadata: ${e.message}")
         }
     }
+    
+    /**
+     * Share current track
+     */
+    fun onShareClicked() {
+        Log.d(TAG, "Share clicked")
+        viewModelScope.launch {
+            try {
+                playerService.shareCurrentTrack()
+            } catch (e: Exception) {
+                Log.e(TAG, "Error sharing track", e)
+            }
+        }
+    }
 }
 
 /**

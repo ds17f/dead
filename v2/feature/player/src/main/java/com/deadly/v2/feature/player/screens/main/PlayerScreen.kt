@@ -294,7 +294,7 @@ fun PlayerScreen(
             item {
                 PlayerSecondaryControls(
                     onConnectClick = { showConnectBottomSheet = true },
-                    onShareClick = { /* TODO: Share track */ },
+                    onShareClick = { viewModel.onShareClicked() },
                     onQueueClick = { showQueueBottomSheet = true },
                     modifier = Modifier.padding(horizontal = 24.dp, vertical = 12.dp)
                 )

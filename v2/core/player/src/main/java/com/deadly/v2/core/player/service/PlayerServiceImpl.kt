@@ -6,6 +6,9 @@ import com.deadly.v2.core.api.player.PlayerService
 import com.deadly.v2.core.media.repository.MediaControllerRepository
 import com.deadly.v2.core.media.service.MetadataHydratorService
 import com.deadly.v2.core.domain.repository.ShowRepository
+import com.deadly.v2.core.model.Show
+import com.deadly.v2.core.model.Recording
+import com.deadly.v2.core.model.Track
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.flow.map
@@ -31,7 +34,8 @@ import javax.inject.Singleton
 class PlayerServiceImpl @Inject constructor(
     private val mediaControllerRepository: MediaControllerRepository,
     private val metadataHydratorService: MetadataHydratorService,
-    private val showRepository: ShowRepository
+    private val showRepository: ShowRepository,
+    private val shareService: ShareService
 ) : PlayerService {
     
     companion object {
@@ -348,6 +352,100 @@ class PlayerServiceImpl @Inject constructor(
                 "hasMediaItem" to (currentMediaItem != null).toString(),
                 "hasMediaMetadata" to (currentMetadata != null).toString()
             )
+        }
+    }
+    
+    override suspend fun shareCurrentTrack() {
+        Log.d(TAG, "Sharing current track")
+        try {
+            val currentMetadata = mediaControllerRepository.currentTrack.value
+            if (currentMetadata == null) {
+                Log.w(TAG, "No current track metadata available for sharing")
+                return
+            }
+            
+            val showId = currentMetadata.extras?.getString("showId")
+            val recordingId = currentMetadata.extras?.getString("recordingId")
+            
+            if (showId.isNullOrBlank() || recordingId.isNullOrBlank()) {
+                Log.w(TAG, "Missing showId or recordingId in metadata for sharing")
+                return
+            }
+            
+            // Get show and recording data
+            val show = showRepository.getShowById(showId)
+            if (show == null) {
+                Log.w(TAG, "Show not found for sharing: $showId")
+                return
+            }
+            
+            // Create mock recording and track from metadata
+            val recording = Recording(
+                identifier = recordingId,
+                showId = showId,
+                sourceType = com.deadly.v2.core.model.RecordingSourceType.UNKNOWN,
+                rating = show.averageRating?.toDouble() ?: 0.0,
+                reviewCount = show.totalReviews
+            )
+            
+            val trackTitle = currentMetadata.title?.toString() ?: "Unknown Track"
+            val trackNumber = currentMetadata.trackNumber?.let { if (it > 0) it else null }
+            val duration = formatDuration(duration.value)
+            val track = Track(
+                name = currentMetadata.extras?.getString("filename") ?: trackTitle,
+                title = trackTitle,
+                trackNumber = trackNumber,
+                duration = duration,
+                format = currentMetadata.extras?.getString("format") ?: "mp3"
+            )
+            
+            // Get current position in seconds for time-based sharing
+            val currentPositionSeconds = currentPosition.value / 1000
+            
+            shareService.shareTrack(show, recording, track, currentPositionSeconds)
+            
+        } catch (e: Exception) {
+            Log.e(TAG, "Error sharing current track", e)
+        }
+    }
+    
+    override suspend fun shareCurrentShow() {
+        Log.d(TAG, "Sharing current show")
+        try {
+            val currentMetadata = mediaControllerRepository.currentTrack.value
+            if (currentMetadata == null) {
+                Log.w(TAG, "No current track metadata available for sharing")
+                return
+            }
+            
+            val showId = currentMetadata.extras?.getString("showId")
+            val recordingId = currentMetadata.extras?.getString("recordingId")
+            
+            if (showId.isNullOrBlank() || recordingId.isNullOrBlank()) {
+                Log.w(TAG, "Missing showId or recordingId in metadata for sharing")
+                return
+            }
+            
+            // Get show data
+            val show = showRepository.getShowById(showId)
+            if (show == null) {
+                Log.w(TAG, "Show not found for sharing: $showId")
+                return
+            }
+            
+            // Create mock recording from metadata
+            val recording = Recording(
+                identifier = recordingId,
+                showId = showId,
+                sourceType = com.deadly.v2.core.model.RecordingSourceType.UNKNOWN,
+                rating = show.averageRating?.toDouble() ?: 0.0,
+                reviewCount = show.totalReviews
+            )
+            
+            shareService.shareShow(show, recording)
+            
+        } catch (e: Exception) {
+            Log.e(TAG, "Error sharing current show", e)
         }
     }
     

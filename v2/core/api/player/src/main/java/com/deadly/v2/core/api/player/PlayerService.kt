@@ -106,4 +106,14 @@ interface PlayerService {
      * Get debug information about current MediaMetadata for inspection
      */
     suspend fun getDebugMetadata(): Map<String, String?>
+    
+    /**
+     * Share currently playing track with current playback position
+     */
+    suspend fun shareCurrentTrack()
+    
+    /**
+     * Share current show and recording
+     */
+    suspend fun shareCurrentShow()
 }

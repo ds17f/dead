@@ -2,6 +2,7 @@ package com.deadly.v2.core.player.di
 
 import com.deadly.v2.core.api.player.PlayerService
 import com.deadly.v2.core.player.service.PlayerServiceImpl
+import com.deadly.v2.core.player.service.ShareService
 import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn
