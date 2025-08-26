@@ -73,28 +73,57 @@ class PlaylistViewModel @Inject constructor(
      * Determine if a playlist track matches the currently playing track from MediaController
      */
     private fun isTrackCurrentlyPlaying(track: PlaylistTrackViewModel, currentTrackInfo: CurrentTrackInfo?): Boolean {
-        if (currentTrackInfo == null) return false
+        if (currentTrackInfo == null) {
+            Log.v(TAG, "Track matching: No currentTrackInfo available")
+            return false
+        }
         
-        // Match based on track title and current recording ID
+        // Match based on recording ID first
         val currentRecordingId = _baseUiState.value.showData?.currentRecordingId
-        if (currentRecordingId != currentTrackInfo.recordingId) return false
         
-        // Match track title (exact match or contains match)
-        return track.title.equals(currentTrackInfo.songTitle, ignoreCase = true) ||
-               currentTrackInfo.songTitle.contains(track.title, ignoreCase = true)
+        Log.v(TAG, "Track matching: playlistRecordingId='$currentRecordingId' vs mediaRecordingId='${currentTrackInfo.recordingId}'")
+        
+        if (currentRecordingId != currentTrackInfo.recordingId) {
+            Log.v(TAG, "Track matching: Recording IDs don't match - no highlight")
+            return false
+        }
+        
+        // Primary: Match by track title (most reliable for MediaController)
+        val titleMatches = track.title.equals(currentTrackInfo.songTitle, ignoreCase = true) ||
+                          currentTrackInfo.songTitle.contains(track.title, ignoreCase = true) ||
+                          track.title.contains(currentTrackInfo.songTitle, ignoreCase = true)
+        
+        // Secondary: Match by trackUrl construction (recordingId_title pattern)
+        val expectedTrackUrl = "${currentRecordingId}_${track.title}"
+        val trackUrlMatches = currentTrackInfo.trackUrl == expectedTrackUrl
+        
+        // Tertiary: Match by filename if MediaController has it
+        val filenameMatches = track.filename == currentTrackInfo.filename ||
+                             currentTrackInfo.trackUrl.contains(track.filename)
+        
+        val matches = titleMatches || trackUrlMatches || filenameMatches
+        
+        Log.v(TAG, "Track matching: track.title='${track.title}' vs currentSong='${currentTrackInfo.songTitle}'")
+        Log.v(TAG, "Track matching: expectedTrackUrl='$expectedTrackUrl' vs actualTrackUrl='${currentTrackInfo.trackUrl}'") 
+        Log.v(TAG, "Track matching: titleMatches=$titleMatches, trackUrlMatches=$trackUrlMatches, filenameMatches=$filenameMatches, overall=$matches")
+        
+        return matches
     }
     
     /**
      * Load show data from the service
+     * 
+     * @param showId The show ID to load
+     * @param recordingId Optional specific recording ID from navigation (e.g., Player→Playlist)
      */
-    fun loadShow(showId: String?) {
-        Log.d(TAG, "Loading show: $showId")
+    fun loadShow(showId: String?, recordingId: String? = null) {
+        Log.d(TAG, "Loading show: $showId, recordingId: $recordingId")
         viewModelScope.launch {
             try {
                 _baseUiState.value = _baseUiState.value.copy(isLoading = true, error = null)
                 
-                // Load show in service (DB data)
-                playlistService.loadShow(showId)
+                // Load show in service (DB data) with optional recordingId
+                playlistService.loadShow(showId, recordingId)
                 
                 // Show DB data immediately
                 val showData = playlistService.getCurrentShowInfo()
@@ -456,7 +485,7 @@ class PlaylistViewModel @Inject constructor(
             try {
                 playlistService.selectRecording(recordingId)
                 
-                // Update selection state
+                // Update selection state in modal
                 val currentSelection = _baseUiState.value.recordingSelection
                 val updatedCurrent = currentSelection.currentRecording?.copy(isSelected = false)
                 val updatedAlternatives = currentSelection.alternativeRecordings.map { option ->
@@ -470,7 +499,21 @@ class PlaylistViewModel @Inject constructor(
                     )
                 )
                 
-                Log.d(TAG, "Recording selection updated")
+                // IMPORTANT: Update main show data with new currentRecordingId
+                val updatedShowData = _baseUiState.value.showData?.copy(
+                    currentRecordingId = recordingId
+                )
+                
+                _baseUiState.value = _baseUiState.value.copy(
+                    showData = updatedShowData,
+                    isTrackListLoading = false // Reset track loading state 
+                )
+                _rawTrackData.value = emptyList() // Clear tracks to trigger reload
+                
+                Log.d(TAG, "Recording selection updated - refreshing tracks for: $recordingId")
+                
+                // Trigger track list reload with new recording
+                loadTrackListAsync()
                 
             } catch (e: Exception) {
                 Log.e(TAG, "Error selecting recording", e)
@@ -486,6 +529,23 @@ class PlaylistViewModel @Inject constructor(
         viewModelScope.launch {
             try {
                 playlistService.setRecordingAsDefault(recordingId)
+                
+                // IMPORTANT: Update main show data with new currentRecordingId
+                val updatedShowData = _baseUiState.value.showData?.copy(
+                    currentRecordingId = recordingId
+                )
+                
+                _baseUiState.value = _baseUiState.value.copy(
+                    showData = updatedShowData,
+                    isTrackListLoading = false // Reset track loading state 
+                )
+                _rawTrackData.value = emptyList() // Clear tracks to trigger reload
+                
+                Log.d(TAG, "Recording set as default - refreshing tracks for: $recordingId")
+                
+                // Trigger track list reload with new recording
+                loadTrackListAsync()
+                
                 Log.d(TAG, "Recording set as default successfully")
             } catch (e: Exception) {
                 Log.e(TAG, "Error setting recording as default", e)
@@ -501,6 +561,31 @@ class PlaylistViewModel @Inject constructor(
         viewModelScope.launch {
             try {
                 playlistService.resetToRecommended()
+                
+                // Get the recommended recording ID from the show data
+                val recommendedRecordingId = _baseUiState.value.showData?.let { showData ->
+                    // We need to get the current show info from service to get the bestRecordingId
+                    playlistService.getCurrentShowInfo()?.currentRecordingId
+                }
+                
+                if (recommendedRecordingId != null) {
+                    // IMPORTANT: Update main show data with recommended currentRecordingId
+                    val updatedShowData = _baseUiState.value.showData?.copy(
+                        currentRecordingId = recommendedRecordingId
+                    )
+                    
+                    _baseUiState.value = _baseUiState.value.copy(
+                        showData = updatedShowData,
+                        isTrackListLoading = false // Reset track loading state 
+                    )
+                    _rawTrackData.value = emptyList() // Clear tracks to trigger reload
+                    
+                    Log.d(TAG, "Reset to recommended - refreshing tracks for: $recommendedRecordingId")
+                    
+                    // Trigger track list reload with recommended recording
+                    loadTrackListAsync()
+                }
+                
                 Log.d(TAG, "Reset to recommended successfully")
             } catch (e: Exception) {
                 Log.e(TAG, "Error resetting to recommended", e)

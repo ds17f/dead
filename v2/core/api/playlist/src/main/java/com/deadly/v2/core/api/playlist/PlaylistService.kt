@@ -14,8 +14,11 @@ interface PlaylistService {
     
     /**
      * Load show data for the playlist
+     * 
+     * @param showId The show ID to load
+     * @param recordingId Optional specific recording ID from navigation (e.g., Player→Playlist)
      */
-    suspend fun loadShow(showId: String?)
+    suspend fun loadShow(showId: String?, recordingId: String? = null)
     
     /**
      * Get current show information as ViewModel

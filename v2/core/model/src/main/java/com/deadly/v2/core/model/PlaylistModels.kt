@@ -50,6 +50,7 @@ data class PlaylistTrackViewModel(
     val title: String,
     val duration: String,
     val format: String,
+    val filename: String, // Original filename for reliable track matching
     val isDownloaded: Boolean = false,
     val downloadProgress: Float? = null, // null = not downloaded, 0.0-1.0 = downloading
     val isCurrentTrack: Boolean = false,

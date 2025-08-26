@@ -47,9 +47,9 @@ fun PlaylistScreen(
     // Debug mode hardcoded to true for v2 development
     val showDebugInfo = true
     
-    // Load show data when screen opens
-    LaunchedEffect(showId) {
-        viewModel.loadShow(showId)
+    // Load show data when screen opens - include recordingId for Player→Playlist navigation
+    LaunchedEffect(showId, recordingId) {
+        viewModel.loadShow(showId, recordingId)
     }
     
     // Debug panel state - only when debug mode is enabled
@@ -128,7 +128,7 @@ fun PlaylistScreen(
                                     style = MaterialTheme.typography.bodyLarge,
                                     color = MaterialTheme.colorScheme.error
                                 )
-                                Button(onClick = { viewModel.loadShow(showId) }) {
+                                Button(onClick = { viewModel.loadShow(showId, recordingId) }) {
                                     Text("Retry")
                                 }
                             }

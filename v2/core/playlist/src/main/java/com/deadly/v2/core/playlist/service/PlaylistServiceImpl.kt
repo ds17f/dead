@@ -75,8 +75,8 @@ class PlaylistServiceImpl @Inject constructor(
     
     // === PHASE 1: REAL IMPLEMENTATIONS ===
     
-    override suspend fun loadShow(showId: String?) {
-        Log.d(TAG, "Loading show: $showId")
+    override suspend fun loadShow(showId: String?, recordingId: String?) {
+        Log.d(TAG, "Loading show: $showId, recordingId: $recordingId")
         
         currentShow = if (showId != null) {
             showRepository.getShowById(showId)
@@ -87,9 +87,16 @@ class PlaylistServiceImpl @Inject constructor(
         
         if (currentShow != null) {
             Log.d(TAG, "Loaded show: ${currentShow!!.displayTitle}")
-            // Set default recording to best recording for this show
-            currentRecordingId = currentShow!!.bestRecordingId
-            Log.d(TAG, "Set current recording to best: $currentRecordingId")
+            
+            // Use provided recordingId (from Player navigation) or fall back to best recording
+            currentRecordingId = if (recordingId != null) {
+                Log.d(TAG, "Using provided recording from navigation: $recordingId")
+                recordingId
+            } else {
+                Log.d(TAG, "No recordingId provided - using best recording: ${currentShow!!.bestRecordingId}")
+                currentShow!!.bestRecordingId
+            }
+            
         } else {
             Log.w(TAG, "Failed to load show with ID: $showId")
         }
@@ -146,7 +153,7 @@ class PlaylistServiceImpl @Inject constructor(
             location = show.location.displayText,
             rating = show.averageRating ?: 0.0f,
             reviewCount = show.totalReviews,
-            currentRecordingId = show.bestRecordingId, // TODO: Enhance this with user preference // TODO: Does this even really belong here?
+            currentRecordingId = currentRecordingId ?: show.bestRecordingId, // Use service's currentRecordingId (from navigation/selection) or fallback to best
             trackCount = show.recordingCount, // Use recording count as proxy for now
             hasNextShow = hasNext,
             hasPreviousShow = hasPrevious,
@@ -372,52 +379,141 @@ class PlaylistServiceImpl @Inject constructor(
     }
     
     override suspend fun getRecordingOptions(): RecordingOptionsResult {
-        currentShow?.let { show ->
-            Log.d(TAG, "getRecordingOptions() for ${show.displayTitle} - TODO: Load from Recording domain models")
-            Log.d(TAG, "Show has ${show.recordingIds.size} recordings: ${show.recordingIds}")
-            Log.d(TAG, "Best recording ID: ${show.bestRecordingId}")
+        val show = currentShow
+        if (show == null) {
+            Log.w(TAG, "getRecordingOptions() called but no current show loaded")
+            return RecordingOptionsResult(
+                currentRecording = null,
+                alternativeRecordings = emptyList(),
+                hasRecommended = false
+            )
         }
-        // TODO: Convert Recording domain models to RecordingOptionViewModel
-        // TODO: Load recordings using showRepository.getRecordingsForShow()
-        // TODO: Determine current, recommended, and alternative recordings
-        return RecordingOptionsResult(
-            currentRecording = null,
-            alternativeRecordings = emptyList(),
-            hasRecommended = false
-        )
+        
+        Log.d(TAG, "getRecordingOptions() for ${show.displayTitle} - Loading real recording data")
+        Log.d(TAG, "Show has ${show.recordingIds.size} recordings: ${show.recordingIds}")
+        Log.d(TAG, "Best recording ID: ${show.bestRecordingId}")
+        Log.d(TAG, "Current recording ID: $currentRecordingId")
+        
+        return try {
+            // Load all recordings for this show
+            val recordings = showRepository.getRecordingsForShow(show.id)
+            Log.d(TAG, "Loaded ${recordings.size} recordings from database")
+            
+            if (recordings.isEmpty()) {
+                Log.w(TAG, "No recordings found for show ${show.id}")
+                return RecordingOptionsResult(
+                    currentRecording = null,
+                    alternativeRecordings = emptyList(),
+                    hasRecommended = false
+                )
+            }
+            
+            // Convert to ViewModels
+            val recordingViewModels = recordings.map { recording ->
+                convertRecordingToViewModel(recording, show)
+            }
+            
+            // Find current recording (or use best as default)
+            val activeRecordingId = currentRecordingId ?: show.bestRecordingId
+            val currentRecording = recordingViewModels.find { it.identifier == activeRecordingId }
+            val alternativeRecordings = recordingViewModels.filter { it.identifier != activeRecordingId }
+            
+            // Determine if we have a recommended recording
+            val hasRecommended = show.bestRecordingId != null && 
+                                recordingViewModels.any { it.isRecommended }
+            
+            Log.d(TAG, "Recording options loaded: current=${currentRecording?.identifier}, alternatives=${alternativeRecordings.size}, hasRecommended=$hasRecommended")
+            
+            RecordingOptionsResult(
+                currentRecording = currentRecording,
+                alternativeRecordings = alternativeRecordings,
+                hasRecommended = hasRecommended
+            )
+            
+        } catch (e: Exception) {
+            Log.e(TAG, "Error loading recording options", e)
+            RecordingOptionsResult(
+                currentRecording = null,
+                alternativeRecordings = emptyList(),
+                hasRecommended = false
+            )
+        }
     }
     
     override suspend fun selectRecording(recordingId: String) {
-        currentShow?.let { show ->
-            Log.d(TAG, "selectRecording($recordingId) for ${show.displayTitle} - Real implementation")
-            
-            // Update current recording
-            if (show.recordingIds.contains(recordingId)) {
-                currentRecordingId = recordingId
-                Log.d(TAG, "Selected recording: $recordingId")
-                // TODO: Notify media service of recording change
-            } else {
-                Log.w(TAG, "Recording $recordingId not found in show recording list")
-            }
-        } ?: Log.w(TAG, "Cannot select recording: no current show loaded")
+        val show = currentShow
+        if (show == null) {
+            Log.w(TAG, "Cannot select recording: no current show loaded")
+            return
+        }
+        
+        Log.d(TAG, "selectRecording($recordingId) for ${show.displayTitle} - Session-only implementation")
+        
+        // Validate that the recording exists for this show
+        if (!show.recordingIds.contains(recordingId)) {
+            Log.w(TAG, "Recording $recordingId not found in show recording list: ${show.recordingIds}")
+            return
+        }
+        
+        // Update current recording ID in memory (session-only)
+        currentRecordingId = recordingId
+        Log.d(TAG, "Recording selected successfully: $recordingId (session-only)")
+        
+        // Clear track cache to force reload with new recording
+        trackCache.remove(recordingId)
+        
+        // Cancel any ongoing track loading for other recordings
+        cancelTrackLoading()
+        
+        Log.d(TAG, "Track cache cleared for recording switch")
     }
     
     override suspend fun setRecordingAsDefault(recordingId: String) {
-        currentShow?.let { show ->
-            Log.d(TAG, "setRecordingAsDefault($recordingId) for ${show.displayTitle} - TODO: Implement user preferences")
+        val show = currentShow
+        if (show == null) {
+            Log.w(TAG, "Cannot set recording as default: no current show loaded")
+            return
         }
-        // TODO: Implement user preference storage
-        // TODO: Save recording preference for this show to database/preferences
+        
+        Log.w(TAG, "setRecordingAsDefault($recordingId) for ${show.displayTitle} - NOT IMPLEMENTED")
+        Log.w(TAG, "User preferences system not available - recording defaults cannot be persisted")
+        Log.w(TAG, "Recording selection will work for current session only")
+        
+        // For now, just select the recording for the current session
+        // This provides immediate feedback to the user even though it won't persist
+        if (show.recordingIds.contains(recordingId)) {
+            currentRecordingId = recordingId
+            Log.d(TAG, "Recording selected for current session: $recordingId")
+        } else {
+            Log.w(TAG, "Recording $recordingId not found in show recording list")
+        }
     }
     
     override suspend fun resetToRecommended() {
-        currentShow?.let { show ->
-            Log.d(TAG, "resetToRecommended() for ${show.displayTitle} - TODO: Implement recommendation logic")
-            Log.d(TAG, "Would reset to best recording: ${show.bestRecordingId}")
+        val show = currentShow
+        if (show == null) {
+            Log.w(TAG, "Cannot reset to recommended: no current show loaded")
+            return
         }
-        // TODO: Implement recommendation logic
-        // TODO: Clear user preferences and use bestRecordingId from Show
-        // TODO: Update UI to reflect recommended recording selection
+        
+        val recommendedRecordingId = show.bestRecordingId
+        if (recommendedRecordingId == null) {
+            Log.w(TAG, "Cannot reset to recommended: no bestRecordingId available for ${show.displayTitle}")
+            return
+        }
+        
+        Log.d(TAG, "resetToRecommended() for ${show.displayTitle} - Resetting to bestRecordingId: $recommendedRecordingId")
+        
+        // Reset to the recommended recording (bestRecordingId from Show)
+        currentRecordingId = recommendedRecordingId
+        
+        // Clear track cache to force reload with recommended recording
+        trackCache.remove(recommendedRecordingId)
+        
+        // Cancel any ongoing track loading
+        cancelTrackLoading()
+        
+        Log.d(TAG, "Reset to recommended recording successfully: $recommendedRecordingId")
     }
     
     override fun cancelTrackLoading() {
@@ -431,6 +527,43 @@ class PlaylistServiceImpl @Inject constructor(
     // === PRIVATE HELPER METHODS ===
     
     /**
+     * Convert Recording domain model to RecordingOptionViewModel for UI display
+     */
+    private fun convertRecordingToViewModel(recording: Recording, show: Show): RecordingOptionViewModel {
+        val isCurrentlySelected = recording.identifier == currentRecordingId
+        val isRecommended = recording.identifier == show.bestRecordingId
+        
+        // Create a better title than the generic displayTitle
+        val betterTitle = when {
+            recording.hasRating -> "${recording.sourceType.displayName} Recording"
+            recording.sourceType != RecordingSourceType.UNKNOWN -> "${recording.sourceType.displayName} Recording"
+            else -> recording.identifier.take(8) + "..." // Fallback to partial identifier
+        }
+        
+        // Determine match reason
+        val matchReason = when {
+            isRecommended -> "Recommended"
+            recording.sourceType == RecordingSourceType.SOUNDBOARD -> "Soundboard Quality"
+            recording.rating > 4.0 -> "Highly Rated"
+            recording.reviewCount > 10 -> "Popular Choice"
+            else -> null
+        }
+        
+        Log.d(TAG, "Converting recording: ${recording.identifier}, source: ${recording.sourceType}, rating: ${recording.rating}, selected: $isCurrentlySelected, recommended: $isRecommended")
+        
+        return RecordingOptionViewModel(
+            identifier = recording.identifier,
+            source = recording.sourceType.displayName,
+            title = betterTitle,
+            rating = if (recording.hasRating) recording.rating.toFloat() else null,
+            reviewCount = if (recording.reviewCount > 0) recording.reviewCount else null,
+            isSelected = isCurrentlySelected,
+            isRecommended = isRecommended,
+            matchReason = matchReason
+        )
+    }
+    
+    /**
      * Convert Track domain models to PlaylistTrackViewModel display models
      */
     private fun convertTracksToViewModels(tracks: List<Track>): List<PlaylistTrackViewModel> {
@@ -440,6 +573,7 @@ class PlaylistServiceImpl @Inject constructor(
                 title = track.title ?: track.name,
                 duration = track.duration ?: "",
                 format = track.format,
+                filename = track.name, // Store original filename for reliable matching
                 isDownloaded = false,     // TODO: Integrate with download service
                 downloadProgress = null,  // TODO: Integrate with download service
                 isCurrentTrack = false,   // TODO: Integrate with media service to determine current track
