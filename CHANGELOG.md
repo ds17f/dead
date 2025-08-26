@@ -1,12 +1,30 @@
 # Changelog
 
+## [0.57.0] - 2025-08-25
+
+### New Features
+* implement red note for currently playing track (77935c89)
+* add playlist navigation and smart previous button (86c1056e)
+* implement MediaId-based metadata persistence architecture (d6585e0f)
+* add comprehensive debug panel for MediaMetadata inspection (42dfbab3)
+* implement proper service architecture with MediaController integration (4a4a4e0b)
+* complete V2 player with mini player component (8faa774d)
+* create all bottom sheet components with proper V2 patterns (dce2a47b)
+* implement skeleton navigation to V2 player (bf1a1e76)
+
+### Bug Fixes
+* Reset the position to 0 on track change (d44d5451)
+* replace hardcoded venue stub data with hydrated metadata (df7b58f0)
+* implement working MetadataHydratorService with proper threading (90cf6c8c)
+* implement proper showId flow through service architecture (11cc2210)
+* implement working next/previous track functionality (5b938c86)
+
+
 ## [0.56.0] - 2025-08-24
 
 ### New Features
 * implement per-route MiniPlayer visibility control (60d82080)
 * implement complete V2 MiniPlayer with immediate progress display (f6416986)
-
-
 ## [0.55.0] - 2025-08-24
 
 ### New Features
