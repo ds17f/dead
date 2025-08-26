@@ -338,6 +338,12 @@ class MediaControllerRepository @Inject constructor(
                             _currentShowId.value = extractShowIdFromMediaItem(mediaItem)
                             _currentRecordingId.value = extractRecordingIdFromMediaItem(mediaItem)
                             _currentTrackIndex.value = controller.currentMediaItemIndex
+                            
+                            // Update both position and duration immediately to prevent visual hiccup
+                            if (mediaItem != null) {
+                                _currentPosition.value = 0L  // New tracks always start at beginning
+                                _duration.value = controller.duration.coerceAtLeast(0L)
+                            }
                         }
                         
                         override fun onPlaybackStateChanged(playbackState: Int) {
