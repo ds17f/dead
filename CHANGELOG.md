@@ -1,5 +1,15 @@
 # Changelog
 
+## [0.58.0] - 2025-08-25
+
+### New Features
+* implement share functionality with emoji-bordered messages (c2c66843)
+* implement auto-play navigation and refined smart previous (412c2658)
+
+### Bug Fixes
+* use real Recording domain objects instead of hardcoded UNKNOWN (856dd496)
+
+
 ## [0.57.0] - 2025-08-25
 
 ### New Features
@@ -18,8 +28,6 @@
 * implement working MetadataHydratorService with proper threading (90cf6c8c)
 * implement proper showId flow through service architecture (11cc2210)
 * implement working next/previous track functionality (5b938c86)
-
-
 ## [0.56.0] - 2025-08-24
 
 ### New Features
