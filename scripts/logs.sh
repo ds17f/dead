@@ -86,6 +86,14 @@ case "$1" in
   fi
   run_with_timeout adb logcat -s MediaControllerRepository DeadlyMediaSessionService
   ;;
+"miniplayer" | "v2mini")
+  if [ "$TIMEOUT" -eq 0 ]; then
+    echo "🔍 Showing V2 MiniPlayer and shared utility logs (no timeout)..."
+  else
+    echo "🔍 Showing V2 MiniPlayer and shared utility logs (${TIMEOUT}s)..."
+  fi
+  run_with_timeout adb logcat -s MiniPlayerServiceImpl MediaControllerStateUtil
+  ;;
 "threading" | "thread-violations")
   echo "🧵 Checking for MediaController threading violations:"
   adb logcat -d | grep -E "(MediaController.*wrong thread|IllegalStateException.*MediaController|MediaController method is called from a wrong thread)" | tail -10
@@ -193,6 +201,7 @@ case "$1" in
   echo "  app           - Show application startup logs"
   echo "  player        - Show media player logs"  
   echo "  v2media       - Show V2 MediaController debug logs (threading, state)"
+  echo "  miniplayer    - Show V2 MiniPlayer and shared utility logs"
   echo "  threading     - Check for MediaController threading violations"
   echo "  playlist      - Show V2 playlist prefetch logs"
   echo "  settings      - Show settings related logs"

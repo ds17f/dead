@@ -1225,12 +1225,40 @@ object DebugConfig {
 - ✅ **Zero user-facing changes**: Purely internal improvement, no UI disruption
 - ✅ **Foundation established**: Ready for future service abstraction work
 
-## 🔄 NEXT STEPS - Future Incremental Improvements
+## ✅ PHASE 0.6 COMPLETE - Additional Service Migration Success
 
-### Optional Phase 0.6: Additional Service Migration (When Needed)
-**Potential next increment**: Migrate other services to use MediaControllerStateUtil
-- **MiniPlayerServiceImpl**: Simple migration - replace `map()` transformation with `createCurrentTrackInfo()`
-- **PlayerServiceImpl**: May have similar MediaController state duplication patterns
+### Phase 0.6: MiniPlayer Service Migration (COMPLETE)
+**✅ Completed**: Successfully migrated MiniPlayerServiceImpl to use shared MediaControllerStateUtil
+
+**Migration Results**:
+- ✅ **MiniPlayerServiceImpl migrated**: Replaced custom `createCurrentTrackInfo()` method with shared utility call
+- ✅ **Eliminated ~15 lines of duplicate code**: Removed duplicate metadata extraction logic
+- ✅ **Build successful**: No compilation errors after migration
+- ✅ **Zero UI regressions**: MiniPlayer works identically to pre-migration
+- ✅ **Perfect logging validation**: Both PlaylistServiceImpl AND MiniPlayerServiceImpl now using shared utility
+
+**Enhanced Tooling**:
+- ✅ **Added `./scripts/logs.sh miniplayer` command**: Monitor MiniPlayer and shared utility logs
+- ✅ **Comprehensive validation**: Can see both services using MediaControllerStateUtil in real-time
+
+**Log Evidence**:
+```
+MiniPlayerServiceImpl: MiniPlayer togglePlayPause requested
+MediaControllerStateUtil: Creating CurrentTrackInfo from MediaMetadata for recording: gd90...
+MediaControllerStateUtil: CurrentTrackInfo created successfully - Title: Bertha, Recording: gd90...
+```
+
+**Cumulative Duplication Elimination**:
+- ✅ **PlaylistServiceImpl**: ~50 lines eliminated (Phase 0.5)
+- ✅ **MiniPlayerServiceImpl**: ~15 lines eliminated (Phase 0.6)  
+- ✅ **Total**: ~65 lines of duplicate MediaController state code eliminated across two services
+
+## 🔄 NEXT STEPS - Continued Incremental Improvements
+
+### Optional Phase 0.7: Player Service Integration (When Needed)
+**Potential next increment**: Investigate and migrate PlayerServiceImpl if similar duplication exists
+- **PlayerServiceImpl**: Analyze for MediaController state duplication patterns
+- **Target**: Complete the trio of core media services using shared utility
 
 ### Phase 1: Infrastructure Services (Future)
 Ready to proceed when further abstraction is needed:
@@ -1238,15 +1266,16 @@ Ready to proceed when further abstraction is needed:
 - **PlaybackCommandService**: Unified command processing with optimistic UI
 - **PlaybackContext models**: Type-safe playback context system
 
-**Decision Point**: Additional service migration can be done incrementally when:
-1. Other services show similar duplication patterns
-2. User requests specific functionality improvements
+**Decision Point**: Additional improvements can be made incrementally when:
+1. PlayerServiceImpl analysis shows similar duplication patterns
+2. User requests specific functionality improvements  
 3. Performance optimization becomes priority
+4. Larger service abstraction provides clear user value
 
-**Current Status**: Phase 0.5 provides sufficient duplication elimination for immediate needs. Future improvements can build on this solid foundation.
+**Current Status**: Phase 0.6 provides excellent duplication elimination across primary services. The shared MediaControllerStateUtil is now proven to work with multiple service patterns and is ready for additional services as needed.
 
 ---
 
-**Document Status**: Phase 0 Complete, Phase 0.5 Complete  
+**Document Status**: Phase 0 Complete, Phase 0.5 Complete, Phase 0.6 Complete  
 **Last Updated**: December 2024  
-**Next Review**: When additional service improvements are needed
+**Next Review**: When PlayerServiceImpl analysis or Phase 1 abstraction is needed

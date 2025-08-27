@@ -1,9 +1,9 @@
 package com.deadly.v2.core.miniplayer.service
 
 import android.util.Log
-import androidx.media3.common.MediaMetadata
 import com.deadly.v2.core.api.miniplayer.MiniPlayerService
 import com.deadly.v2.core.media.repository.MediaControllerRepository
+import com.deadly.v2.core.media.state.MediaControllerStateUtil
 import com.deadly.v2.core.model.CurrentTrackInfo
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
@@ -20,7 +20,8 @@ import javax.inject.Singleton
  */
 @Singleton
 class MiniPlayerServiceImpl @Inject constructor(
-    private val mediaControllerRepository: MediaControllerRepository
+    private val mediaControllerRepository: MediaControllerRepository,
+    private val mediaControllerStateUtil: MediaControllerStateUtil
 ) : MiniPlayerService {
     
     companion object {
@@ -37,11 +38,26 @@ class MiniPlayerServiceImpl @Inject constructor(
     
     /**
      * Convert MediaMetadata to rich CurrentTrackInfo for MiniPlayer display
-     * Transforms raw Media3 metadata into structured V2 model
+     * 
+     * DUPLICATION ELIMINATION: Now using shared MediaControllerStateUtil
+     * instead of duplicating metadata transformation logic.
+     * 
+     * Note: MiniPlayer needs incomplete CurrentTrackInfo (ViewModel combines with other flows)
+     * so we use the utility's createCurrentTrackInfo() method with minimal state.
      */
     override val currentTrackInfo: Flow<CurrentTrackInfo?> =
         mediaControllerRepository.currentTrack.map { metadata ->
-            metadata?.let { createCurrentTrackInfo(it) }
+            metadata?.let { 
+                // Use shared utility but with minimal state for MiniPlayer pattern
+                mediaControllerStateUtil.createCurrentTrackInfo(
+                    metadata = it,
+                    recordingId = null,  // MiniPlayer extracts from metadata.extras
+                    showId = null,       // MiniPlayer extracts from metadata.extras  
+                    isPlaying = false,   // ViewModel combines with isPlaying flow
+                    position = 0L,       // ViewModel combines with currentPosition flow
+                    duration = 0L        // ViewModel combines with duration flow
+                )
+            }
         }
     
     /**
@@ -71,24 +87,4 @@ class MiniPlayerServiceImpl @Inject constructor(
         // MediaControllerRepository manages its own resources
     }
     
-    /**
-     * Transform Media3 MediaMetadata into structured V2 CurrentTrackInfo model
-     * Extracts rich metadata for MiniPlayer display
-     */
-    private fun createCurrentTrackInfo(metadata: MediaMetadata): CurrentTrackInfo {
-        return CurrentTrackInfo(
-            trackUrl = metadata.extras?.getString("trackUrl") ?: "",
-            recordingId = metadata.extras?.getString("recordingId") ?: "",
-            showId = metadata.extras?.getString("showId") ?: "",
-            showDate = metadata.extras?.getString("showDate") ?: "",
-            venue = metadata.extras?.getString("venue") ?: "",
-            location = metadata.extras?.getString("location") ?: "",
-            songTitle = metadata.title?.toString() ?: "Unknown Track",
-            trackNumber = metadata.trackNumber ?: 0,
-            filename = metadata.extras?.getString("filename") ?: "",
-            isPlaying = false, // Will be combined with isPlaying flow in ViewModel
-            position = 0L,     // Will be combined with currentPosition flow in ViewModel
-            duration = 0L      // Will be combined with duration flow in ViewModel
-        )
-    }
 }
