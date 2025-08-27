@@ -5,6 +5,7 @@ import com.deadly.v2.core.api.miniplayer.MiniPlayerService
 import com.deadly.v2.core.media.repository.MediaControllerRepository
 import com.deadly.v2.core.media.state.MediaControllerStateUtil
 import com.deadly.v2.core.model.CurrentTrackInfo
+import com.deadly.v2.core.model.PlaybackStatus
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.flow.Flow
@@ -38,9 +39,7 @@ class MiniPlayerServiceImpl @Inject constructor(
     
     // Direct StateFlow delegation - perfect synchronization with MediaController
     override val isPlaying: StateFlow<Boolean> = mediaControllerRepository.isPlaying
-    override val currentPosition: StateFlow<Long> = mediaControllerRepository.currentPosition
-    override val duration: StateFlow<Long> = mediaControllerRepository.duration
-    override val progress: StateFlow<Float> = mediaControllerRepository.progress
+    override val playbackStatus: StateFlow<PlaybackStatus> = mediaControllerRepository.playbackStatus
     
     /**
      * Convert MediaMetadata to rich CurrentTrackInfo for MiniPlayer display

@@ -11,6 +11,7 @@ import androidx.media3.session.MediaController
 import androidx.media3.session.SessionToken
 import com.deadly.v2.core.media.service.DeadlyMediaSessionService
 import com.deadly.v2.core.media.exception.FormatNotAvailableException
+import com.deadly.v2.core.model.PlaybackStatus
 import com.deadly.v2.core.model.Track as V2Track
 import com.deadly.v2.core.network.archive.service.ArchiveService
 import dagger.hilt.android.qualifiers.ApplicationContext
@@ -87,15 +88,18 @@ class MediaControllerRepository @Inject constructor(
     private val _currentTrackIndex = MutableStateFlow(0)
     val currentTrackIndex: StateFlow<Int> = _currentTrackIndex.asStateFlow()
     
-    // Computed progress for MiniPlayer progress bar
-    val progress: StateFlow<Float> = combine(
+    // Unified playback status with computed progress
+    val playbackStatus: StateFlow<PlaybackStatus> = combine(
         _currentPosition, _duration
     ) { pos, dur -> 
-        if (dur > 0) pos.toFloat() / dur else 0f 
+        PlaybackStatus(
+            currentPosition = pos,
+            duration = dur
+        )
     }.stateIn(
         scope = repositoryScope,
         started = SharingStarted.WhileSubscribed(),
-        initialValue = 0f
+        initialValue = PlaybackStatus.EMPTY
     )
     
     init {

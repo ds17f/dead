@@ -1,6 +1,7 @@
 package com.deadly.v2.core.api.miniplayer
 
 import com.deadly.v2.core.model.CurrentTrackInfo
+import com.deadly.v2.core.model.PlaybackStatus
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.StateFlow
 
@@ -20,19 +21,10 @@ interface MiniPlayerService {
     val isPlaying: StateFlow<Boolean>
     
     /**
-     * Current playback position in milliseconds
+     * Unified playback position state with computed progress
+     * Contains currentPosition, duration, and computed progress as cohesive unit
      */
-    val currentPosition: StateFlow<Long>
-    
-    /**
-     * Total track duration in milliseconds
-     */
-    val duration: StateFlow<Long>
-    
-    /**
-     * Computed progress (0.0 to 1.0) for progress bars
-     */
-    val progress: StateFlow<Float>
+    val playbackStatus: StateFlow<PlaybackStatus>
     
     /**
      * Rich track metadata for MiniPlayer display

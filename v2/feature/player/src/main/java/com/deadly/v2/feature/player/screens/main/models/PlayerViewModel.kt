@@ -5,6 +5,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.deadly.v2.core.api.player.PlayerService
 import com.deadly.v2.core.model.CurrentTrackInfo
+import com.deadly.v2.core.model.PlaybackStatus
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.*
 import kotlinx.coroutines.launch
@@ -25,23 +26,19 @@ class PlayerViewModel @Inject constructor(
         private const val TAG = "PlayerViewModel"
     }
     
-    // Reactive UI state from PlayerService flows - using unified CurrentTrackInfo
+    // Reactive UI state from PlayerService flows - using unified CurrentTrackInfo and PlaybackStatus
     val uiState: StateFlow<PlayerUiState> = combine(
         playerService.currentTrackInfo,
-        playerService.currentPosition,
-        playerService.duration,
-        playerService.progress,
+        playerService.playbackStatus,
         playerService.isPlaying,
         playerService.hasNext,
         playerService.hasPrevious
     ) { flows ->
         val trackInfo = flows[0] as CurrentTrackInfo?
-        val position = flows[1] as Long
-        val duration = flows[2] as Long
-        val progress = flows[3] as Float
-        val isPlaying = flows[4] as Boolean
-        val hasNext = flows[5] as Boolean
-        val hasPrevious = flows[6] as Boolean
+        val playbackStatus = flows[1] as PlaybackStatus
+        val isPlaying = flows[2] as Boolean
+        val hasNext = flows[3] as Boolean
+        val hasPrevious = flows[4] as Boolean
         // Early return for null case - no track playing
         if (trackInfo == null) return@combine PlayerUiState(
             trackDisplayInfo = TrackDisplayInfo(
@@ -77,7 +74,7 @@ class PlayerViewModel @Inject constructor(
                 album = trackInfo.album,
                 showDate = trackInfo.showDate,
                 venue = trackInfo.venue ?: "",
-                duration = playerService.formatDuration(duration),
+                duration = playerService.formatDuration(playbackStatus.duration),
                 artwork = null // TODO: Add artwork support
             ),
             navigationInfo = NavigationInfo(
@@ -85,9 +82,9 @@ class PlayerViewModel @Inject constructor(
                 recordingId = trackInfo.recordingId
             ),
             progressDisplayInfo = ProgressDisplayInfo(
-                currentPosition = playerService.formatPosition(position),
-                totalDuration = playerService.formatDuration(duration),
-                progressPercentage = progress
+                currentPosition = playerService.formatPosition(playbackStatus.currentPosition),
+                totalDuration = playerService.formatDuration(playbackStatus.duration),
+                progressPercentage = playbackStatus.progress
             ),
             isPlaying = isPlaying,
             isLoading = false, // TODO: Add loading state from service
@@ -183,7 +180,7 @@ class PlayerViewModel @Inject constructor(
         viewModelScope.launch {
             try {
                 // Get current duration and convert percentage to milliseconds
-                val durationMs = playerService.duration.value
+                val durationMs = playerService.playbackStatus.value.duration
                 val positionMs = (durationMs * position).toLong()
                 playerService.seekToPosition(positionMs)
             } catch (e: Exception) {

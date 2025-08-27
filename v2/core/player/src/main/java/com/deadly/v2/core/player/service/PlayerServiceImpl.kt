@@ -11,6 +11,7 @@ import com.deadly.v2.core.model.Show
 import com.deadly.v2.core.model.Recording
 import com.deadly.v2.core.model.Track
 import com.deadly.v2.core.model.CurrentTrackInfo
+import com.deadly.v2.core.model.PlaybackStatus
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.flow.map
@@ -51,11 +52,7 @@ class PlayerServiceImpl @Inject constructor(
     // Direct delegation to MediaControllerRepository state flows
     override val isPlaying: StateFlow<Boolean> = mediaControllerRepository.isPlaying
     
-    override val currentPosition: StateFlow<Long> = mediaControllerRepository.currentPosition
-    
-    override val duration: StateFlow<Long> = mediaControllerRepository.duration
-    
-    override val progress: StateFlow<Float> = mediaControllerRepository.progress
+    override val playbackStatus: StateFlow<PlaybackStatus> = mediaControllerRepository.playbackStatus
     
     // DUPLICATION ELIMINATION: Central CurrentTrackInfo using shared utility
     // Instead of 6+ individual StateFlows extracting metadata pieces,
@@ -275,7 +272,7 @@ class PlayerServiceImpl @Inject constructor(
             
             val trackTitle = currentMetadata.title?.toString() ?: "Unknown Track"
             val trackNumber = currentMetadata.trackNumber?.let { if (it > 0) it else null }
-            val duration = formatDuration(duration.value)
+            val duration = formatDuration(playbackStatus.value.duration)
             val track = Track(
                 name = currentMetadata.extras?.getString("filename") ?: trackTitle,
                 title = trackTitle,
@@ -285,7 +282,7 @@ class PlayerServiceImpl @Inject constructor(
             )
             
             // Get current position in seconds for time-based sharing
-            val currentPositionSeconds = currentPosition.value / 1000
+            val currentPositionSeconds = playbackStatus.value.currentPosition / 1000
             
             shareService.shareTrack(show, recording, track, currentPositionSeconds)
             

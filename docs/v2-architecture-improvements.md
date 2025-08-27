@@ -1274,8 +1274,49 @@ Ready to proceed when further abstraction is needed:
 
 **Current Status**: Phase 0.6 provides excellent duplication elimination across primary services. The shared MediaControllerStateUtil is now proven to work with multiple service patterns and is ready for additional services as needed.
 
+## 🚧 PHASE 0.7: Continued Architecture Foundation (IN PROGRESS)
+
+### Code Quality Issues Discovered During PlaybackStatus Implementation
+
+**Critical Issue**: PlayerViewModel using terrible array-based combine() pattern instead of proper named parameters.
+
+**Current Bad Pattern**:
+```kotlin
+combine(
+    playerService.currentTrackInfo,
+    playerService.playbackStatus,
+    playerService.isPlaying,
+    playerService.hasNext,
+    playerService.hasPrevious
+) { flows ->
+    val trackInfo = flows[0] as CurrentTrackInfo?
+    val playbackStatus = flows[1] as PlaybackStatus
+    val isPlaying = flows[2] as Boolean
+    val hasNext = flows[3] as Boolean
+    val hasPrevious = flows[4] as Boolean
+    // Terrible code - error-prone, unreadable
+}
+```
+
+**Required Fix**:
+```kotlin
+combine(
+    playerService.currentTrackInfo,
+    playerService.playbackStatus,
+    playerService.isPlaying,
+    playerService.hasNext,
+    playerService.hasPrevious
+) { trackInfo, playbackStatus, isPlaying, hasNext, hasPrevious ->
+    // Proper named parameters - much better!
+}
+```
+
+**Impact**: This pattern makes code unreadable and error-prone. Need to fix all instances of this anti-pattern across V2 ViewModels.
+
+**Action Required**: Fix PlayerViewModel and audit other ViewModels for similar issues before continuing with PlaybackStatus implementation.
+
 ---
 
-**Document Status**: Phase 0 Complete, Phase 0.5 Complete, Phase 0.6 Complete  
+**Document Status**: Phase 0 Complete, Phase 0.5 Complete, Phase 0.6 Complete, Phase 0.7 In Progress  
 **Last Updated**: December 2024  
-**Next Review**: When PlayerServiceImpl analysis or Phase 1 abstraction is needed
+**Next Review**: After fixing combine() pattern and completing PlaybackStatus implementation
