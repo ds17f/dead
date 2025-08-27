@@ -72,8 +72,9 @@ fun MiniPlayerScreen(
                 Column(
                     modifier = Modifier.weight(1f)
                 ) {
+                    val track = uiState.currentTrack!!
                     Text(
-                        text = uiState.currentTrack?.songTitle ?: "Unknown Track",
+                        text = track.songTitle,
                         style = MaterialTheme.typography.bodyMedium,
                         fontWeight = FontWeight.Medium,
                         maxLines = 1,
@@ -81,22 +82,7 @@ fun MiniPlayerScreen(
                         color = MaterialTheme.colorScheme.onSurface
                     )
                     Text(
-                        text = buildString {
-                            val track = uiState.currentTrack
-                            if (track != null) {
-                                if (track.showDate.isNotBlank()) {
-                                    append(track.showDate)
-                                }
-                                if (!track.venue.isNullOrBlank()) {
-                                    if (track.showDate.isNotBlank()) append(" - ")
-                                    append(track.venue)
-                                }
-                                if (!track.location.isNullOrBlank() && track.venue.isNullOrBlank()) {
-                                    if (track.showDate.isNotBlank()) append(" - ")
-                                    append(track.location)
-                                }
-                            }
-                        }.takeIf { it.isNotBlank() } ?: "Unknown Show",
+                        text = track.displaySubtitle,
                         style = MaterialTheme.typography.bodySmall,
                         maxLines = 1,
                         overflow = TextOverflow.Ellipsis,

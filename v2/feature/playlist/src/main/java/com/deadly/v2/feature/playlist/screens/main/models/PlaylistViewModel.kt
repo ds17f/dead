@@ -117,7 +117,7 @@ class PlaylistViewModel @Inject constructor(
         val filenameMatches = track.filename == currentTrackInfo.filename ||
                              currentTrackInfo.trackUrl.contains(track.filename)
         
-        val matches = titleMatches || trackUrlMatches || filenameMatches
+        val matches = filenameMatches || trackUrlMatches
         
         Log.v(TAG, "Track matching: track.title='${track.title}' vs currentSong='${currentTrackInfo.songTitle}'")
         Log.v(TAG, "Track matching: expectedTrackUrl='$expectedTrackUrl' vs actualTrackUrl='${currentTrackInfo.trackUrl}'") 

@@ -183,14 +183,19 @@ data class CurrentTrackInfo(
     
     /**
      * Formatted subtitle with date and venue
-     * Format: "Date - Venue"
+     * Uses location fallback when venue is unknown
      */
     val displaySubtitle: String
         get() = buildString {
-            append(formatShowDate(showDate))
-            if (!venue.isNullOrBlank()) {
-                append(" - ")
+            if (showDate.isNotBlank()) {
+                append(showDate)
+            }
+            if (!venue.isNullOrBlank() && venue != "Unknown Venue") {
+                if (showDate.isNotBlank()) append(" - ")
                 append(venue)
+            } else if (!location.isNullOrBlank()) {
+                if (showDate.isNotBlank()) append(" - ")
+                append(location)
             }
         }
     

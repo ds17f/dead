@@ -110,33 +110,54 @@ class MediaControllerStateUtil @Inject constructor(
     ): CurrentTrackInfo {
         Log.d(TAG, "Creating CurrentTrackInfo from MediaMetadata for recording: $recordingId")
         
-        // Extract basic track info
-        val title = metadata.title?.toString() ?: "Unknown Track"
+        // Extract basic track info with user-friendly fallbacks
+        val title = metadata.title?.toString()?.takeIf { it.isNotBlank() } ?: run {
+            Log.w(TAG, "MISSING DATA: track title missing from MediaMetadata")
+            "Unknown Track"
+        }
         val album = metadata.albumTitle?.toString() ?: ""
         val trackNumber = metadata.trackNumber
         
-        // Extract rich metadata from extras (MiniPlayerServiceImpl pattern)
+        // Extract rich metadata from extras - log missing data, don't fabricate
         val extras = metadata.extras
-        val trackUrl = extras?.getString("trackUrl") ?: "${recordingId}_${title}"
-        val filename = extras?.getString("filename") ?: title
-        val venue = extras?.getString("venue")
-        val location = extras?.getString("location") 
-        val showDate = extras?.getString("showDate")
-        
-        // Parse show info from album if not in extras (PlaylistServiceImpl pattern)
-        val (parsedShowDate, parsedVenue, parsedLocation) = if (showDate.isNullOrEmpty()) {
-            parseShowInfo(album)
-        } else {
-            Triple(showDate, venue, location)
+        val trackUrl = extras?.getString("trackUrl") ?: run {
+            Log.e(TAG, "MISSING DATA: trackUrl not found in MediaMetadata extras for recording $recordingId - MediaControllerRepository bug!")
+            ""
+        }
+        val filename = extras?.getString("filename") ?: run {
+            Log.w(TAG, "MISSING DATA: filename not found in MediaMetadata extras - track highlighting will fail")
+            ""
+        }
+        val venue = extras?.getString("venue")?.takeIf { it.isNotBlank() } ?: run {
+            Log.w(TAG, "MISSING DATA: venue missing from MediaMetadata extras")
+            "Unknown Venue"
+        }
+        val location = extras?.getString("location")?.takeIf { it.isNotBlank() } // Can be null - location is optional
+        val showDate = extras?.getString("showDate")?.takeIf { it.isNotBlank() } ?: run {
+            Log.w(TAG, "MISSING DATA: showDate missing from MediaMetadata extras")
+            "Unknown Date"
         }
         
+        // No album parsing - use direct metadata only
+        
+        // Build CurrentTrackInfo with clear logging for missing critical data
+        val recordingId = recordingId ?: run {
+            Log.e(TAG, "MISSING DATA: recordingId is null - this will break playlist functionality!")
+            ""
+        }
+        
+        val showId = showId ?: run {
+            Log.w(TAG, "MISSING DATA: showId is null")
+            ""
+        }
+
         val trackInfo = CurrentTrackInfo(
             trackUrl = trackUrl,
-            recordingId = recordingId ?: "",
-            showId = showId ?: parsedShowDate,
-            showDate = parsedShowDate.takeIf { it.isNotEmpty() } ?: showId ?: "",
-            venue = parsedVenue,
-            location = parsedLocation,
+            recordingId = recordingId,
+            showId = showId,
+            showDate = showDate,
+            venue = venue,
+            location = location,
             songTitle = title,
             trackNumber = trackNumber,
             filename = filename,
@@ -149,25 +170,6 @@ class MediaControllerStateUtil @Inject constructor(
         return trackInfo
     }
     
-    /**
-     * Parse show information from album metadata
-     * 
-     * Extracts show date, venue, location from album title format.
-     * This is the same logic used in PlaylistServiceImpl.
-     * 
-     * @param album Album title containing show information
-     * @return Triple of (showDate, venue, location) - may contain nulls/empty strings
-     */
-    private fun parseShowInfo(album: String): Triple<String, String?, String?> {
-        Log.v(TAG, "Parsing show info from album: $album")
-        
-        // TODO: Implement proper parsing based on album format
-        // For now, return empty values - this will be populated properly
-        // when MediaController provides richer metadata
-        
-        // This maintains the exact same behavior as PlaylistServiceImpl
-        return Triple("", null, null)
-    }
     
     /**
      * Get debug information about current MediaController state

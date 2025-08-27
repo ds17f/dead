@@ -4,6 +4,7 @@ import android.util.Log
 import androidx.media3.common.MediaMetadata
 import com.deadly.v2.core.api.player.PlayerService
 import com.deadly.v2.core.media.repository.MediaControllerRepository
+import com.deadly.v2.core.media.state.MediaControllerStateUtil
 import com.deadly.v2.core.media.service.MetadataHydratorService
 import com.deadly.v2.core.domain.repository.ShowRepository
 import com.deadly.v2.core.model.Show
@@ -33,6 +34,7 @@ import javax.inject.Singleton
 @Singleton
 class PlayerServiceImpl @Inject constructor(
     private val mediaControllerRepository: MediaControllerRepository,
+    private val mediaControllerStateUtil: MediaControllerStateUtil,
     private val metadataHydratorService: MetadataHydratorService,
     private val showRepository: ShowRepository,
     private val shareService: ShareService
@@ -54,13 +56,18 @@ class PlayerServiceImpl @Inject constructor(
     
     override val progress: StateFlow<Float> = mediaControllerRepository.progress
     
-    // Extract track title from MediaMetadata
-    override val currentTrackTitle: StateFlow<String?> = mediaControllerRepository.currentTrack.map { metadata ->
-        metadata?.title?.toString() ?: "Unknown Track"
+    // DUPLICATION ELIMINATION: Central CurrentTrackInfo using shared utility
+    // Instead of 6+ individual StateFlows extracting metadata pieces,
+    // create one comprehensive CurrentTrackInfo and derive individual values from it
+    private val currentTrackInfo = mediaControllerStateUtil.createCurrentTrackInfoStateFlow(serviceScope)
+    
+    // Derive individual StateFlows from central CurrentTrackInfo
+    override val currentTrackTitle: StateFlow<String?> = currentTrackInfo.map { trackInfo ->
+        trackInfo?.songTitle
     }.stateIn(
         scope = serviceScope,
         started = SharingStarted.WhileSubscribed(),
-        initialValue = "Unknown Track"
+        initialValue = null
     )
     
     // Extract album info by parsing MediaId and looking up show data
@@ -100,7 +107,7 @@ class PlayerServiceImpl @Inject constructor(
     }.stateIn(
         scope = serviceScope,
         started = SharingStarted.WhileSubscribed(),
-        initialValue = "Unknown Album"
+        initialValue = null
     )
     
     // Extract show date from hydrated metadata
@@ -124,7 +131,7 @@ class PlayerServiceImpl @Inject constructor(
     }.stateIn(
         scope = serviceScope,
         started = SharingStarted.WhileSubscribed(),
-        initialValue = "Unknown Date"
+        initialValue = null
     )
     
     // Extract venue name from hydrated metadata
@@ -153,7 +160,7 @@ class PlayerServiceImpl @Inject constructor(
     }.stateIn(
         scope = serviceScope,
         started = SharingStarted.WhileSubscribed(),
-        initialValue = "Unknown Venue"
+        initialValue = null
     )
     
     // Extract show ID from hydrated metadata for navigation
