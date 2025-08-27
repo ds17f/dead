@@ -115,7 +115,14 @@ class MediaControllerStateUtil @Inject constructor(
             Log.w(TAG, "MISSING DATA: track title missing from MediaMetadata")
             "Unknown Track"
         }
-        val album = metadata.albumTitle?.toString() ?: ""
+        val artist = metadata.artist?.toString()?.takeIf { it.isNotBlank() } ?: run {
+            Log.w(TAG, "MISSING DATA: artist missing from MediaMetadata")
+            "Unknown Artist"
+        }
+        val album = metadata.albumTitle?.toString()?.takeIf { it.isNotBlank() } ?: run {
+            Log.w(TAG, "MISSING DATA: album missing from MediaMetadata")
+            "Unknown Album"
+        }
         val trackNumber = metadata.trackNumber
         
         // Extract rich metadata from extras - log missing data, don't fabricate
@@ -136,6 +143,10 @@ class MediaControllerStateUtil @Inject constructor(
         val showDate = extras?.getString("showDate")?.takeIf { it.isNotBlank() } ?: run {
             Log.w(TAG, "MISSING DATA: showDate missing from MediaMetadata extras")
             "Unknown Date"
+        }
+        val format = extras?.getString("format")?.takeIf { it.isNotBlank() } ?: run {
+            Log.v(TAG, "Format not specified in MediaMetadata extras")
+            "Unknown Format"
         }
         
         // No album parsing - use direct metadata only
@@ -159,8 +170,11 @@ class MediaControllerStateUtil @Inject constructor(
             venue = venue,
             location = location,
             songTitle = title,
+            artist = artist,
+            album = album,
             trackNumber = trackNumber,
             filename = filename,
+            format = format,
             isPlaying = isPlaying,
             position = position,
             duration = duration

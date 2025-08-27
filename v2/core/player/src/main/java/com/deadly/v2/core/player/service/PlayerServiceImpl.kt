@@ -70,111 +70,45 @@ class PlayerServiceImpl @Inject constructor(
         initialValue = null
     )
     
-    // Extract album info by parsing MediaId and looking up show data
-    override val currentAlbum: StateFlow<String?> = combine(
-        mediaControllerRepository.currentTrack,
-        mediaControllerRepository.currentShowId
-    ) { metadata, showId ->
-        if (metadata != null && !showId.isNullOrBlank()) {
-            try {
-                // Parse showId from MediaMetadata extras or use currentShowId
-                val actualShowId = metadata.extras?.getString("showId") ?: showId
-                
-                // Get show data from repository
-                val show = runBlocking { 
-                    showRepository.getShowById(actualShowId)
-                }
-                
-                if (show != null) {
-                    // Use fresh show data for display
-                    if (!show.venue.name.isNullOrBlank()) {
-                        "${formatShowDate(show.date)} - ${show.venue.name}"
-                    } else {
-                        formatShowDate(show.date)
-                    }
-                } else {
-                    // Fallback to existing metadata
-                    metadata.albumTitle?.toString() ?: "Unknown Album"
-                }
-                
-            } catch (e: Exception) {
-                Log.w(TAG, "Failed to lookup show data, using fallback", e)
-                metadata.albumTitle?.toString() ?: "Unknown Album"
-            }
-        } else {
-            "Unknown Album"
-        }
+    // Use centralized CurrentTrackInfo for album
+    override val currentAlbum: StateFlow<String?> = currentTrackInfo.map { trackInfo ->
+        trackInfo?.album
     }.stateIn(
         scope = serviceScope,
         started = SharingStarted.WhileSubscribed(),
         initialValue = null
     )
     
-    // Extract show date from hydrated metadata
-    override val currentShowDate: StateFlow<String?> = mediaControllerRepository.currentTrack.map { metadata ->
-        if (metadata != null) {
-            val showDate = metadata.extras?.getString("showDate")
-            if (!showDate.isNullOrBlank()) {
-                formatShowDate(showDate)
-            } else {
-                // Fallback: try to extract from albumTitle if not hydrated
-                val albumTitle = metadata.albumTitle?.toString()
-                if (!albumTitle.isNullOrBlank() && albumTitle.contains(" - ")) {
-                    albumTitle.substringBefore(" - ")
-                } else {
-                    "Unknown Date"
-                }
-            }
-        } else {
-            "Unknown Date"
-        }
+    // Use centralized CurrentTrackInfo for show date
+    override val currentShowDate: StateFlow<String?> = currentTrackInfo.map { trackInfo ->
+        trackInfo?.showDate
     }.stateIn(
         scope = serviceScope,
         started = SharingStarted.WhileSubscribed(),
         initialValue = null
     )
     
-    // Extract venue name from hydrated metadata
-    override val currentVenue: StateFlow<String?> = mediaControllerRepository.currentTrack.map { metadata ->
-        if (metadata != null) {
-            val venue = metadata.extras?.getString("venue")
-            val location = metadata.extras?.getString("location")
-            
-            when {
-                !venue.isNullOrBlank() && !location.isNullOrBlank() -> "$venue, $location"
-                !venue.isNullOrBlank() -> venue
-                !location.isNullOrBlank() -> location
-                else -> {
-                    // Fallback: try to extract from albumTitle if not hydrated
-                    val albumTitle = metadata.albumTitle?.toString()
-                    if (!albumTitle.isNullOrBlank() && albumTitle.contains(" - ")) {
-                        albumTitle.substringAfter(" - ")
-                    } else {
-                        "Unknown Venue"
-                    }
-                }
-            }
-        } else {
-            "Unknown Venue"
-        }
+    // Use centralized CurrentTrackInfo for venue
+    override val currentVenue: StateFlow<String?> = currentTrackInfo.map { trackInfo ->
+        trackInfo?.venue
     }.stateIn(
         scope = serviceScope,
         started = SharingStarted.WhileSubscribed(),
         initialValue = null
     )
     
-    // Extract show ID from hydrated metadata for navigation
-    override val currentShowId: StateFlow<String?> = mediaControllerRepository.currentTrack.map { metadata ->
-        metadata?.extras?.getString("showId")
+    // Use centralized CurrentTrackInfo for show ID
+    override val currentShowId: StateFlow<String?> = currentTrackInfo.map { trackInfo ->
+        trackInfo?.showId
     }.stateIn(
         scope = serviceScope,
         started = SharingStarted.WhileSubscribed(),
         initialValue = null
     )
     
-    // Extract recording ID from hydrated metadata for navigation
-    override val currentRecordingId: StateFlow<String?> = mediaControllerRepository.currentTrack.map { metadata ->
-        metadata?.extras?.getString("recordingId")
+    // Use centralized CurrentTrackInfo for recording ID
+    override val currentRecordingId: StateFlow<String?> = currentTrackInfo.map { trackInfo ->
+        trackInfo?.recordingId
     }.stateIn(
         scope = serviceScope,
         started = SharingStarted.WhileSubscribed(),
