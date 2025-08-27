@@ -276,16 +276,25 @@ class MediaControllerRepository @Inject constructor(
      * Simple play/pause toggle
      */
     suspend fun togglePlayPause() {
-        Log.d(TAG, "togglePlayPause")
+        Log.d(TAG, "togglePlayPause() - ENTRY - ConnectionState: ${_connectionState.value}")
         
         executeWhenConnected {
             val controller = mediaController
             if (controller != null) {
-                if (controller.isPlaying) {
+                val wasPlaying = controller.isPlaying
+                Log.d(TAG, "togglePlayPause: Current state: playing=$wasPlaying")
+                
+                if (wasPlaying) {
+                    Log.d(TAG, "togglePlayPause: Calling controller.pause()")
                     controller.pause()
                 } else {
+                    Log.d(TAG, "togglePlayPause: Calling controller.play()")
                     controller.play()
                 }
+                
+                Log.d(TAG, "togglePlayPause: MediaController command sent successfully")
+            } else {
+                Log.w(TAG, "togglePlayPause: MediaController is null!")
             }
         }
     }
@@ -294,12 +303,18 @@ class MediaControllerRepository @Inject constructor(
      * Start playback (for auto-play when navigating tracks)
      */
     suspend fun play() {
-        Log.d(TAG, "play")
+        Log.d(TAG, "play() - ENTRY - ConnectionState: ${_connectionState.value}")
         
         executeWhenConnected {
             val controller = mediaController
             if (controller != null) {
+                val wasPlaying = controller.isPlaying
+                Log.d(TAG, "play: Current state: playing=$wasPlaying")
+                Log.d(TAG, "play: Calling controller.play()")
                 controller.play()
+                Log.d(TAG, "play: MediaController.play() command sent successfully")
+            } else {
+                Log.w(TAG, "play: MediaController is null!")
             }
         }
     }
@@ -308,12 +323,18 @@ class MediaControllerRepository @Inject constructor(
      * Pause playback (for explicit pause commands)
      */
     suspend fun pause() {
-        Log.d(TAG, "pause")
+        Log.d(TAG, "pause() - ENTRY - ConnectionState: ${_connectionState.value}")
         
         executeWhenConnected {
             val controller = mediaController
             if (controller != null) {
+                val wasPlaying = controller.isPlaying
+                Log.d(TAG, "pause: Current state: playing=$wasPlaying")
+                Log.d(TAG, "pause: Calling controller.pause()")
                 controller.pause()
+                Log.d(TAG, "pause: MediaController.pause() command sent successfully")
+            } else {
+                Log.w(TAG, "pause: MediaController is null!")
             }
         }
     }
@@ -407,11 +428,22 @@ class MediaControllerRepository @Inject constructor(
     
     /**
      * Execute command when connected, or queue if still connecting
+     * CRITICAL: All MediaController operations MUST run on Main thread
      */
     private suspend fun executeWhenConnected(command: suspend () -> Unit) {
         when (_connectionState.value) {
             ConnectionState.Connected -> {
-                command()
+                // CRITICAL FIX: MediaController operations must run on Main thread
+                withContext(Dispatchers.Main) {
+                    try {
+                        Log.d(TAG, "Executing MediaController command on Main thread")
+                        command()
+                        Log.d(TAG, "MediaController command completed successfully")
+                    } catch (e: Exception) {
+                        Log.e(TAG, "MediaController command failed", e)
+                        throw e
+                    }
+                }
             }
             ConnectionState.Connecting -> {
                 // Queue command for later execution
@@ -433,6 +465,7 @@ class MediaControllerRepository @Inject constructor(
     
     /**
      * Execute all pending commands after connection is established
+     * CRITICAL: All MediaController operations MUST run on Main thread
      */
     private suspend fun executePendingCommands() {
         val commandsToExecute = synchronized(pendingCommands) {
@@ -441,12 +474,18 @@ class MediaControllerRepository @Inject constructor(
             commands
         }
         
-        Log.d(TAG, "Executing ${commandsToExecute.size} pending commands")
-        commandsToExecute.forEach { command ->
-            try {
-                command()
-            } catch (e: Exception) {
-                Log.e(TAG, "Error executing pending command", e)
+        Log.d(TAG, "Executing ${commandsToExecute.size} pending commands on Main thread")
+        
+        // CRITICAL FIX: Execute pending commands on Main thread
+        withContext(Dispatchers.Main) {
+            commandsToExecute.forEach { command ->
+                try {
+                    Log.d(TAG, "Executing pending MediaController command on Main thread")
+                    command()
+                    Log.d(TAG, "Pending MediaController command completed successfully")
+                } catch (e: Exception) {
+                    Log.e(TAG, "Error executing pending MediaController command", e)
+                }
             }
         }
     }
@@ -716,13 +755,50 @@ class MediaControllerRepository @Inject constructor(
     }
     
     /**
+     * Get debug information for troubleshooting
+     */
+    fun getDebugInfo(): String {
+        val controller = mediaController
+        return buildString {
+            appendLine("=== MediaControllerRepository Debug Info ===")
+            appendLine("ConnectionState: ${_connectionState.value}")
+            appendLine("MediaController: ${if (controller != null) "Connected" else "Null"}")
+            appendLine("PendingCommands: ${pendingCommands.size}")
+            
+            if (controller != null) {
+                try {
+                    appendLine("IsPlaying: ${controller.isPlaying}")
+                    appendLine("PlaybackState: ${controller.playbackState}")
+                    appendLine("CurrentPosition: ${controller.currentPosition}ms")
+                    appendLine("Duration: ${controller.duration}ms")
+                    appendLine("CurrentMediaItemIndex: ${controller.currentMediaItemIndex}")
+                    appendLine("MediaItemCount: ${controller.mediaItemCount}")
+                } catch (e: Exception) {
+                    appendLine("Error accessing controller state: ${e.message}")
+                }
+            }
+            
+            appendLine("StateFlow Values:")
+            appendLine("  isPlaying: ${_isPlaying.value}")
+            appendLine("  currentPosition: ${_currentPosition.value}ms")
+            appendLine("  duration: ${_duration.value}ms")
+            appendLine("  currentShowId: ${_currentShowId.value}")
+            appendLine("  currentRecordingId: ${_currentRecordingId.value}")
+            appendLine("  currentTrackIndex: ${_currentTrackIndex.value}")
+            appendLine("=== End Debug Info ===")
+        }
+    }
+    
+    /**
      * Release resources
      */
     fun release() {
+        Log.d(TAG, "release() - Releasing MediaController resources")
         mediaController?.release()
         mediaController = null
         controllerFuture?.cancel(true)
         repositoryScope.launch { /* scope will be cancelled by job */ }
         _connectionState.value = ConnectionState.Disconnected
+        Log.d(TAG, "release() - Resources released successfully")
     }
 }

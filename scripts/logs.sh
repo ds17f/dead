@@ -78,6 +78,21 @@ case "$1" in
   fi
   run_with_timeout adb logcat -s PlaybackStateSync MediaControllerRepository QueueManager PlaybackCommandProcessor
   ;;
+"v2media" | "mediacontroller")
+  if [ "$TIMEOUT" -eq 0 ]; then
+    echo "🔍 Showing V2 MediaController debug logs (no timeout)..."
+  else
+    echo "🔍 Showing V2 MediaController debug logs (${TIMEOUT}s)..."
+  fi
+  run_with_timeout adb logcat -s MediaControllerRepository DeadlyMediaSessionService
+  ;;
+"threading" | "thread-violations")
+  echo "🧵 Checking for MediaController threading violations:"
+  adb logcat -d | grep -E "(MediaController.*wrong thread|IllegalStateException.*MediaController|MediaController method is called from a wrong thread)" | tail -10
+  if [ $? -ne 0 ]; then
+    echo "✅ No MediaController threading violations found!"
+  fi
+  ;;
 "playlist")
   if [ "$TIMEOUT" -eq 0 ]; then
     echo "🔍 Showing V2 playlist prefetch logs (no timeout)..."
@@ -177,6 +192,8 @@ case "$1" in
   echo "  awesome/search- Show Awesome Bar and search logs"
   echo "  app           - Show application startup logs"
   echo "  player        - Show media player logs"  
+  echo "  v2media       - Show V2 MediaController debug logs (threading, state)"
+  echo "  threading     - Check for MediaController threading violations"
   echo "  playlist      - Show V2 playlist prefetch logs"
   echo "  settings      - Show settings related logs"
   echo "  theme         - Show theme system logs (loading, switching, assets)"
