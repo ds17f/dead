@@ -2,6 +2,7 @@ package com.deadly.v2.core.api.miniplayer
 
 import com.deadly.v2.core.model.CurrentTrackInfo
 import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.StateFlow
 
 /**
  * V2 MiniPlayer Service Interface
@@ -16,37 +17,37 @@ interface MiniPlayerService {
     /**
      * Whether audio is currently playing
      */
-    val isPlaying: Flow<Boolean>
+    val isPlaying: StateFlow<Boolean>
     
     /**
      * Current playback position in milliseconds
      */
-    val currentPosition: Flow<Long>
+    val currentPosition: StateFlow<Long>
     
     /**
      * Total track duration in milliseconds
      */
-    val duration: Flow<Long>
+    val duration: StateFlow<Long>
     
     /**
      * Computed progress (0.0 to 1.0) for progress bars
      */
-    val progress: Flow<Float>
+    val progress: StateFlow<Float>
     
     /**
      * Rich track metadata for MiniPlayer display
      */
-    val currentTrackInfo: Flow<CurrentTrackInfo?>
+    val currentTrackInfo: StateFlow<CurrentTrackInfo?>
     
     /**
      * Show ID for playlist navigation
      */
-    val currentShowId: Flow<String?>
+    val currentShowId: StateFlow<String?>
     
     /**
      * Recording ID for playback restoration
      */
-    val currentRecordingId: Flow<String?>
+    val currentRecordingId: StateFlow<String?>
     
     /**
      * Toggle between play and pause states

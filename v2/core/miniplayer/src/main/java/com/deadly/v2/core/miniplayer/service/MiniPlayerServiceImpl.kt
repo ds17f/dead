@@ -5,8 +5,13 @@ import com.deadly.v2.core.api.miniplayer.MiniPlayerService
 import com.deadly.v2.core.media.repository.MediaControllerRepository
 import com.deadly.v2.core.media.state.MediaControllerStateUtil
 import com.deadly.v2.core.model.CurrentTrackInfo
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.SharingStarted
+import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.map
+import kotlinx.coroutines.flow.stateIn
 import javax.inject.Inject
 import javax.inject.Singleton
 
@@ -28,13 +33,16 @@ class MiniPlayerServiceImpl @Inject constructor(
         private const val TAG = "MiniPlayerServiceImpl"
     }
     
+    // Service scope for StateFlow conversion
+    private val serviceScope: CoroutineScope = kotlinx.coroutines.GlobalScope
+    
     // Direct StateFlow delegation - perfect synchronization with MediaController
-    override val isPlaying: Flow<Boolean> = mediaControllerRepository.isPlaying
-    override val currentPosition: Flow<Long> = mediaControllerRepository.currentPosition
-    override val duration: Flow<Long> = mediaControllerRepository.duration
-    override val progress: Flow<Float> = mediaControllerRepository.progress
-    override val currentShowId: Flow<String?> = mediaControllerRepository.currentShowId
-    override val currentRecordingId: Flow<String?> = mediaControllerRepository.currentRecordingId
+    override val isPlaying: StateFlow<Boolean> = mediaControllerRepository.isPlaying
+    override val currentPosition: StateFlow<Long> = mediaControllerRepository.currentPosition
+    override val duration: StateFlow<Long> = mediaControllerRepository.duration
+    override val progress: StateFlow<Float> = mediaControllerRepository.progress
+    override val currentShowId: StateFlow<String?> = mediaControllerRepository.currentShowId
+    override val currentRecordingId: StateFlow<String?> = mediaControllerRepository.currentRecordingId
     
     /**
      * Convert MediaMetadata to rich CurrentTrackInfo for MiniPlayer display
@@ -45,7 +53,7 @@ class MiniPlayerServiceImpl @Inject constructor(
      * Note: MiniPlayer needs incomplete CurrentTrackInfo (ViewModel combines with other flows)
      * so we use the utility's createCurrentTrackInfo() method with minimal state.
      */
-    override val currentTrackInfo: Flow<CurrentTrackInfo?> =
+    override val currentTrackInfo: StateFlow<CurrentTrackInfo?> =
         mediaControllerRepository.currentTrack.map { metadata ->
             metadata?.let { 
                 // Use shared utility but with minimal state for MiniPlayer pattern
@@ -58,7 +66,11 @@ class MiniPlayerServiceImpl @Inject constructor(
                     duration = 0L        // ViewModel combines with duration flow
                 )
             }
-        }
+        }.stateIn(
+            scope = serviceScope,
+            started = SharingStarted.WhileSubscribed(),
+            initialValue = null
+        )
     
     /**
      * Delegate playback commands to MediaControllerRepository
