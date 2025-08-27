@@ -695,7 +695,7 @@ class PlaylistServiceImpl @Inject constructor(
      * DUPLICATION ELIMINATION: Now using shared MediaControllerStateUtil
      * instead of duplicating complex 6-way combine() logic across services.
      */
-    override val currentPlayingTrackInfo: StateFlow<CurrentTrackInfo?> = 
+    override val currentTrackInfo: StateFlow<CurrentTrackInfo?> = 
         mediaControllerStateUtil.createCurrentTrackInfoStateFlow(coroutineScope)
     
     

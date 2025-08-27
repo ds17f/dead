@@ -44,7 +44,7 @@ class PlaylistViewModel @Inject constructor(
         _baseUiState,
         _rawTrackData,
         playlistService.isPlaying,
-        playlistService.currentPlayingTrackInfo
+        playlistService.currentTrackInfo
     ) { baseState, rawTracks, isPlaying, currentTrackInfo ->
         
         // Update track data with current playing state

@@ -128,5 +128,5 @@ interface PlaylistService {
      * Current track information from MediaController for playlist highlighting
      * Returns null if no track is currently loaded
      */
-    val currentPlayingTrackInfo: StateFlow<CurrentTrackInfo?>
+    val currentTrackInfo: StateFlow<CurrentTrackInfo?>
 }
