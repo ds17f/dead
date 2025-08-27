@@ -10,6 +10,7 @@ import com.deadly.v2.core.domain.repository.ShowRepository
 import com.deadly.v2.core.model.Show
 import com.deadly.v2.core.model.Recording
 import com.deadly.v2.core.model.Track
+import com.deadly.v2.core.model.CurrentTrackInfo
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.flow.map
@@ -58,62 +59,8 @@ class PlayerServiceImpl @Inject constructor(
     
     // DUPLICATION ELIMINATION: Central CurrentTrackInfo using shared utility
     // Instead of 6+ individual StateFlows extracting metadata pieces,
-    // create one comprehensive CurrentTrackInfo and derive individual values from it
-    private val currentTrackInfo = mediaControllerStateUtil.createCurrentTrackInfoStateFlow(serviceScope)
-    
-    // Derive individual StateFlows from central CurrentTrackInfo
-    override val currentTrackTitle: StateFlow<String?> = currentTrackInfo.map { trackInfo ->
-        trackInfo?.songTitle
-    }.stateIn(
-        scope = serviceScope,
-        started = SharingStarted.WhileSubscribed(),
-        initialValue = null
-    )
-    
-    // Use centralized CurrentTrackInfo for album
-    override val currentAlbum: StateFlow<String?> = currentTrackInfo.map { trackInfo ->
-        trackInfo?.album
-    }.stateIn(
-        scope = serviceScope,
-        started = SharingStarted.WhileSubscribed(),
-        initialValue = null
-    )
-    
-    // Use centralized CurrentTrackInfo for show date
-    override val currentShowDate: StateFlow<String?> = currentTrackInfo.map { trackInfo ->
-        trackInfo?.showDate
-    }.stateIn(
-        scope = serviceScope,
-        started = SharingStarted.WhileSubscribed(),
-        initialValue = null
-    )
-    
-    // Use centralized CurrentTrackInfo for venue
-    override val currentVenue: StateFlow<String?> = currentTrackInfo.map { trackInfo ->
-        trackInfo?.venue
-    }.stateIn(
-        scope = serviceScope,
-        started = SharingStarted.WhileSubscribed(),
-        initialValue = null
-    )
-    
-    // Use centralized CurrentTrackInfo for show ID
-    override val currentShowId: StateFlow<String?> = currentTrackInfo.map { trackInfo ->
-        trackInfo?.showId
-    }.stateIn(
-        scope = serviceScope,
-        started = SharingStarted.WhileSubscribed(),
-        initialValue = null
-    )
-    
-    // Use centralized CurrentTrackInfo for recording ID
-    override val currentRecordingId: StateFlow<String?> = currentTrackInfo.map { trackInfo ->
-        trackInfo?.recordingId
-    }.stateIn(
-        scope = serviceScope,
-        started = SharingStarted.WhileSubscribed(),
-        initialValue = null
-    )
+    // create one comprehensive CurrentTrackInfo and expose it directly
+    override val currentTrackInfo: StateFlow<CurrentTrackInfo?> = mediaControllerStateUtil.createCurrentTrackInfoStateFlow(serviceScope)
     
     /**
      * Format show date from YYYY-MM-DD to readable format

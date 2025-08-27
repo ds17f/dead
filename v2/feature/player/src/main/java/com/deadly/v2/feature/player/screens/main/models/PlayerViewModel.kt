@@ -4,6 +4,7 @@ import android.util.Log
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.deadly.v2.core.api.player.PlayerService
+import com.deadly.v2.core.model.CurrentTrackInfo
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.*
 import kotlinx.coroutines.launch
@@ -24,14 +25,9 @@ class PlayerViewModel @Inject constructor(
         private const val TAG = "PlayerViewModel"
     }
     
-    // Reactive UI state from PlayerService flows
+    // Reactive UI state from PlayerService flows - using unified CurrentTrackInfo
     val uiState: StateFlow<PlayerUiState> = combine(
-        playerService.currentTrackTitle,
-        playerService.currentAlbum,
-        playerService.currentShowDate,
-        playerService.currentVenue,
-        playerService.currentShowId,
-        playerService.currentRecordingId,
+        playerService.currentTrackInfo,
         playerService.currentPosition,
         playerService.duration,
         playerService.progress,
@@ -39,31 +35,54 @@ class PlayerViewModel @Inject constructor(
         playerService.hasNext,
         playerService.hasPrevious
     ) { flows ->
-        val title = flows[0] as String?
-        val album = flows[1] as String?
-        val showDate = flows[2] as String?
-        val venue = flows[3] as String?
-        val showId = flows[4] as String?
-        val recordingId = flows[5] as String?
-        val position = flows[6] as Long
-        val duration = flows[7] as Long
-        val progress = flows[8] as Float
-        val isPlaying = flows[9] as Boolean
-        val hasNext = flows[10] as Boolean
-        val hasPrevious = flows[11] as Boolean
+        val trackInfo = flows[0] as CurrentTrackInfo?
+        val position = flows[1] as Long
+        val duration = flows[2] as Long
+        val progress = flows[3] as Float
+        val isPlaying = flows[4] as Boolean
+        val hasNext = flows[5] as Boolean
+        val hasPrevious = flows[6] as Boolean
+        // Early return for null case - no track playing
+        if (trackInfo == null) return@combine PlayerUiState(
+            trackDisplayInfo = TrackDisplayInfo(
+                title = "No Track Playing",
+                artist = "",
+                album = "",
+                showDate = "",
+                venue = "",
+                duration = "0:00",
+                artwork = null
+            ),
+            navigationInfo = NavigationInfo(
+                showId = null,
+                recordingId = null
+            ),
+            progressDisplayInfo = ProgressDisplayInfo(
+                currentPosition = "0:00",
+                totalDuration = "0:00",
+                progressPercentage = 0.0f
+            ),
+            isPlaying = false,
+            isLoading = false,
+            hasNext = false,
+            hasPrevious = false,
+            error = null
+        )
+        
+        // trackInfo is guaranteed non-null from here on
         PlayerUiState(
             trackDisplayInfo = TrackDisplayInfo(
-                title = title ?: "Unknown Track",
-                artist = "Grateful Dead", // TODO: Extract from metadata
-                album = album ?: "Unknown Album",
-                showDate = showDate ?: "Unknown Date",
-                venue = venue ?: "Unknown Venue",
+                title = trackInfo.songTitle,
+                artist = trackInfo.artist,
+                album = trackInfo.album,
+                showDate = trackInfo.showDate,
+                venue = trackInfo.venue ?: "",
                 duration = playerService.formatDuration(duration),
                 artwork = null // TODO: Add artwork support
             ),
             navigationInfo = NavigationInfo(
-                showId = showId,
-                recordingId = recordingId
+                showId = trackInfo.showId,
+                recordingId = trackInfo.recordingId
             ),
             progressDisplayInfo = ProgressDisplayInfo(
                 currentPosition = playerService.formatPosition(position),

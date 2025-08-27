@@ -36,4 +36,7 @@ android {
 dependencies {
     // Minimal dependencies - just coroutines for Flow types
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.3")
+    
+    // Model dependency for CurrentTrackInfo
+    implementation(project(":v2:core:model"))
 }

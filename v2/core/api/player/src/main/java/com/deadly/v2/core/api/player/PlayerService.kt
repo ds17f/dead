@@ -1,5 +1,6 @@
 package com.deadly.v2.core.api.player
 
+import com.deadly.v2.core.model.CurrentTrackInfo
 import kotlinx.coroutines.flow.StateFlow
 
 /**
@@ -33,34 +34,10 @@ interface PlayerService {
     val progress: StateFlow<Float>
     
     /**
-     * Current track title for display
+     * Comprehensive current track information
+     * Contains all metadata, playback state, and navigation data
      */
-    val currentTrackTitle: StateFlow<String?>
-    
-    /**
-     * Current album/show info for display
-     */
-    val currentAlbum: StateFlow<String?>
-    
-    /**
-     * Current show date for display
-     */
-    val currentShowDate: StateFlow<String?>
-    
-    /**
-     * Current venue name for display
-     */
-    val currentVenue: StateFlow<String?>
-    
-    /**
-     * Current show ID for navigation
-     */
-    val currentShowId: StateFlow<String?>
-    
-    /**
-     * Current recording ID for navigation
-     */
-    val currentRecordingId: StateFlow<String?>
+    val currentTrackInfo: StateFlow<CurrentTrackInfo?>
     
     /**
      * Whether next track is available
