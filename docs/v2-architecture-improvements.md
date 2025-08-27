@@ -1159,6 +1159,56 @@ object DebugConfig {
 
 ---
 
-**Document Status**: Draft for Implementation Planning  
+---
+
+## 🚧 CURRENT WORK IN PROGRESS - December 2024
+
+### Phase 0.5: MediaController State Duplication Elimination (IN PROGRESS)
+
+**Current Task**: Create shared MediaController state utility to eliminate code duplication across V2 services
+
+**Problem Identified**: Multiple V2 services contain nearly identical MediaController state observation and combination logic:
+- PlaylistServiceImpl: Lines 696-740 - Custom `combine()` with MediaController flows
+- PlayerServiceImpl: Similar MediaController state delegation patterns  
+- MiniPlayerServiceImpl: Manual metadata transformation with duplicate logic
+- Each service reinvents the same MediaController → UI state mapping
+
+**Implementation Plan**:
+- ✅ **Step 1**: Analyze current duplication patterns in PlaylistServiceImpl and one other service
+- ✅ **Step 2**: Create shared MediaController state utility in `/v2/core/media/src/main/java/com/deadly/v2/core/media/state/`
+- 🔲 **Step 3**: Migrate PlaylistServiceImpl to use shared utility (validate functionality)
+- 🔲 **Step 4**: Test and validate - ensure zero UI regressions and perfect MediaController state sync
+
+**✅ Progress Update - Step 1 & 2 Complete**:
+
+**Step 1 Findings**:
+- **PlaylistServiceImpl** (lines 696-740): Complex 6-way `combine()` with MediaController StateFlows, manual metadata transformation into `CurrentTrackInfo`, StateIn configuration
+- **MiniPlayerServiceImpl** (lines 42-93): Simple `map()` transformation of MediaMetadata, different metadata extraction using extras, no StateIn configuration
+- **Key Duplication**: Both create `CurrentTrackInfo` objects from `MediaMetadata` but with different complexity levels
+
+**Step 2 Implementation**:
+- ✅ Created `MediaControllerStateUtil.kt` with comprehensive state combination utilities
+- ✅ `createCurrentTrackInfoStateFlow()` - Handles complex 6-way combine pattern (PlaylistServiceImpl)
+- ✅ `createCurrentTrackInfo()` - Handles simple metadata transformation (MiniPlayerServiceImpl)  
+- ✅ Combines both approaches into single reusable utility
+- ✅ Foundation First principles: Built on Phase 0 MediaController threading foundation
+- ✅ Comprehensive logging for debugging state combination issues
+- ✅ Build successful - app compiles and installs without errors
+
+**Foundation First Principles Applied**:
+- Small, focused increment building on Phase 0 success
+- Eliminate real duplication without breaking existing functionality  
+- Comprehensive logging and validation at each step
+- Can be easily reverted if issues arise
+
+**Expected Outcomes**:
+- Reduced code duplication across services
+- Same MediaController functionality with cleaner architecture
+- Foundation for future service abstraction work
+- Zero user-facing changes - purely internal improvement
+
+---
+
+**Document Status**: Phase 0 Complete, Phase 0.5 In Progress  
 **Last Updated**: December 2024  
-**Next Review**: After Phase 1 Implementation
+**Next Review**: After Phase 0.5 Duplication Elimination Complete
