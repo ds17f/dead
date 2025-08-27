@@ -41,8 +41,6 @@ class MiniPlayerServiceImpl @Inject constructor(
     override val currentPosition: StateFlow<Long> = mediaControllerRepository.currentPosition
     override val duration: StateFlow<Long> = mediaControllerRepository.duration
     override val progress: StateFlow<Float> = mediaControllerRepository.progress
-    override val currentShowId: StateFlow<String?> = mediaControllerRepository.currentShowId
-    override val currentRecordingId: StateFlow<String?> = mediaControllerRepository.currentRecordingId
     
     /**
      * Convert MediaMetadata to rich CurrentTrackInfo for MiniPlayer display

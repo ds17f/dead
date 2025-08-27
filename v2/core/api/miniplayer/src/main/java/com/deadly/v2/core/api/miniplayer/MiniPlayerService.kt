@@ -36,18 +36,9 @@ interface MiniPlayerService {
     
     /**
      * Rich track metadata for MiniPlayer display
+     * Contains showId and recordingId for navigation needs
      */
     val currentTrackInfo: StateFlow<CurrentTrackInfo?>
-    
-    /**
-     * Show ID for playlist navigation
-     */
-    val currentShowId: StateFlow<String?>
-    
-    /**
-     * Recording ID for playback restoration
-     */
-    val currentRecordingId: StateFlow<String?>
     
     /**
      * Toggle between play and pause states
