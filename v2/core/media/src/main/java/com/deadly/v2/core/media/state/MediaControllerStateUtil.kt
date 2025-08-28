@@ -4,6 +4,7 @@ import android.util.Log
 import androidx.media3.common.MediaMetadata
 import com.deadly.v2.core.media.repository.MediaControllerRepository
 import com.deadly.v2.core.model.CurrentTrackInfo
+import com.deadly.v2.core.model.QueueInfo
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.combine
@@ -81,6 +82,38 @@ class MediaControllerStateUtil @Inject constructor(
             scope = coroutineScope,
             started = SharingStarted.WhileSubscribed(5000),
             initialValue = null
+        )
+    }
+    
+    /**
+     * Create QueueInfo StateFlow for queue navigation and UI decisions
+     * 
+     * Combines MediaController queue state into rich QueueInfo object with computed properties.
+     * Services can observe queue information and make business logic decisions.
+     * 
+     * @param coroutineScope The coroutine scope for StateFlow lifecycle
+     * @return StateFlow of QueueInfo that updates when queue state changes
+     */
+    fun createQueueInfoStateFlow(
+        coroutineScope: CoroutineScope
+    ): StateFlow<QueueInfo> {
+        Log.d(TAG, "Creating QueueInfo StateFlow with MediaController queue state")
+        
+        return combine(
+            mediaControllerRepository.currentTrackIndex,
+            mediaControllerRepository.mediaItemCount
+        ) { currentIndex, totalTracks ->
+            val queueInfo = QueueInfo(
+                currentIndex = currentIndex,
+                totalTracks = totalTracks
+            )
+            
+            Log.v(TAG, "Queue state: ${currentIndex + 1}/${totalTracks} (hasNext=${queueInfo.hasNext}, hasPrevious=${queueInfo.hasPrevious})")
+            queueInfo
+        }.stateIn(
+            scope = coroutineScope,
+            started = SharingStarted.WhileSubscribed(5000),
+            initialValue = QueueInfo.EMPTY
         )
     }
     

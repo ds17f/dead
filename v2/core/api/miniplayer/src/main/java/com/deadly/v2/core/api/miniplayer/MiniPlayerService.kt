@@ -2,6 +2,7 @@ package com.deadly.v2.core.api.miniplayer
 
 import com.deadly.v2.core.model.CurrentTrackInfo
 import com.deadly.v2.core.model.PlaybackStatus
+import com.deadly.v2.core.model.QueueInfo
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.StateFlow
 
@@ -33,17 +34,13 @@ interface MiniPlayerService {
     val currentTrackInfo: StateFlow<CurrentTrackInfo?>
     
     /**
+     * Queue information for navigation decisions
+     * Contains currentIndex, totalTracks, and computed navigation properties
+     */
+    val queueInfo: StateFlow<QueueInfo>
+    
+    /**
      * Toggle between play and pause states
      */
     suspend fun togglePlayPause()
-    
-    /**
-     * Initialize service resources
-     */
-    suspend fun initialize()
-    
-    /**
-     * Clean up service resources
-     */
-    suspend fun cleanup()
 }

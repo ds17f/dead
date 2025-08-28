@@ -43,14 +43,8 @@ class MiniPlayerViewModel @Inject constructor(
      * Initialize service resources
      */
     private fun initializeService() {
-        viewModelScope.launch {
-            try {
-                miniPlayerService.initialize()
-            } catch (e: Exception) {
-                Log.e(TAG, "Failed to initialize MiniPlayer service", e)
-                _uiState.value = _uiState.value.copy(error = "Failed to initialize")
-            }
-        }
+        // No initialization needed - PlaybackStateService handles its own lifecycle
+        Log.d(TAG, "MiniPlayer service ready - no initialization required")
     }
     
     /**
@@ -117,8 +111,7 @@ class MiniPlayerViewModel @Inject constructor(
      */
     override fun onCleared() {
         super.onCleared()
-        viewModelScope.launch {
-            miniPlayerService.cleanup()
-        }
+        // No cleanup needed - PlaybackStateService handles its own lifecycle
+        Log.d(TAG, "MiniPlayer ViewModel cleared - no cleanup required")
     }
 }

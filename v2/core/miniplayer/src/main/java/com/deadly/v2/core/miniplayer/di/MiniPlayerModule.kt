@@ -13,7 +13,8 @@ import dagger.hilt.components.SingletonComponent
  * Provides dependency injection configuration for MiniPlayer services.
  * Binds MiniPlayerService interface to real implementation.
  * 
- * LastPlayedTrackService is injected directly (no interface binding needed).
+ * MiniPlayerServiceImpl now uses direct MediaControllerRepository delegation
+ * instead of the removed PlaybackStateService abstraction layer.
  */
 @Module
 @InstallIn(SingletonComponent::class)

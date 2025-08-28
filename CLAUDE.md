@@ -552,3 +552,63 @@ override suspend fun seekToPosition(position: Float) { /* mock */ }
 - Risk-free deployment via feature flags
 - Clean service boundaries for future real implementations
 
+## V2 Service Architecture Evolution (Phase 1.0+)
+
+**Foundation First Approach:** Systematic elimination of code duplication and threading issues across V2 services through direct MediaControllerRepository delegation pattern.
+
+### Direct Delegation Architecture
+
+**Core Pattern:** Services depend directly on MediaControllerRepository and MediaControllerStateUtil instead of thin abstraction layers.
+
+```kotlin
+@Singleton
+class ServiceImpl @Inject constructor(
+    private val mediaControllerRepository: MediaControllerRepository,  // Raw state & commands
+    private val mediaControllerStateUtil: MediaControllerStateUtil     // Rich state objects
+) : Service {
+    
+    // Direct delegation - no wrapper layers
+    override val isPlaying: StateFlow<Boolean> = mediaControllerRepository.isPlaying
+    override val playbackStatus: StateFlow<PlaybackStatus> = mediaControllerRepository.playbackStatus
+    override val currentTrackInfo: StateFlow<CurrentTrackInfo?> = 
+        mediaControllerStateUtil.createCurrentTrackInfoStateFlow(serviceScope)
+    override val queueInfo: StateFlow<QueueInfo> = 
+        mediaControllerStateUtil.createQueueInfoStateFlow(serviceScope)
+        
+    override suspend fun togglePlayPause() = mediaControllerRepository.togglePlayPause()
+}
+```
+
+### Unified State Models
+
+**PlaybackStatus:** Replaces fragmented position/duration/progress StateFlows with single unified model
+**QueueInfo:** Rich queue state with computed properties (hasNext, hasPrevious, queueProgress) for navigation decisions  
+**CurrentTrackInfo:** Comprehensive track metadata from MediaControllerStateUtil
+
+### Service Implementation Status
+
+**✅ MiniPlayerService (Phase 1.0):** Complete direct delegation implementation
+- Eliminated PlaybackStateService thin wrapper layer
+- Clean Hilt DI with no circular dependencies
+- QueueInfo integration for navigation logic
+
+**🔄 PlayerService (Phase 1.1):** Pending - apply same direct delegation pattern
+**🔄 PlaylistService (Phase 1.2):** Pending - apply same direct delegation pattern
+
+### Architecture Benefits
+
+**Eliminated Complexity:**
+- No more PlaybackStateService thin wrappers (was just ceremonial delegation)
+- No circular dependency issues or Hilt binding conflicts
+- Simplified dependency graph with clear ownership
+
+**Maintained Benefits:**
+- Unified reactive state models (PlaybackStatus, QueueInfo, CurrentTrackInfo)
+- MediaControllerRepository as single source of truth
+- MediaControllerStateUtil for rich state object creation
+
+**Pattern Consistency:**
+- Information architecture: services observe rich state and make business decisions
+- Same pattern for CurrentTrackInfo and QueueInfo creation
+- Direct command delegation with zero abstraction overhead
+
