@@ -1,5 +1,31 @@
 # Changelog
 
+## [0.59.0] - 2025-08-28
+
+### New Features
+* complete Foundation First direct delegation pattern across all V2 services (bf711c8b)
+* implement direct MediaControllerRepository delegation for MiniPlayerService (c5cabe4a)
+* implement centralized PlaybackStateService with proper queue logic (73104144)
+* implement PlaybackStatus to unify position/duration/progress state (79c293af)
+* eliminate redundant currentShowId/currentRecordingId StateFlows (f293c7f5)
+* standardize currentTrackInfo naming across all services (bfccf9a7)
+* standardize MiniPlayerService to StateFlow for consistency (638c1f12)
+* unify PlayerService interface with CurrentTrackInfo (3e6056e2)
+* complete metadata centralization and architecture cleanup (fe35a990)
+* centralize fallback patterns and improve track precision (36739b83)
+* migrate MiniPlayerServiceImpl to shared MediaControllerStateUtil (f2467ac9)
+* migrate PlaylistServiceImpl to shared MediaControllerStateUtil (3b2682f6)
+* add shared MediaControllerStateUtil to eliminate service duplication (c071fd03)
+
+### Bug Fixes
+* fix MediaController threading violations to prevent crashes (10547bbb)
+* implement context-aware play/pause button with working pause functionality (0f60c617)
+* implement recording selection and Player→Playlist navigation (c653041b)
+
+### Documentation Updates
+* Refactor the playing state to be a service (a1a8735c)
+
+
 ## [0.58.0] - 2025-08-25
 
 ### New Features
@@ -8,8 +34,6 @@
 
 ### Bug Fixes
 * use real Recording domain objects instead of hardcoded UNKNOWN (856dd496)
-
-
 ## [0.57.0] - 2025-08-25
 
 ### New Features

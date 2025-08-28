@@ -28,8 +28,8 @@ android {
         applicationId = "com.deadly.app"
         minSdk = 24
         targetSdk = 34
-        versionCode = 73
-        versionName = "0.58.0"
+        versionCode = 74
+        versionName = "0.59.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
