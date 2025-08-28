@@ -1315,8 +1315,75 @@ combine(
 
 **Action Required**: Fix PlayerViewModel and audit other ViewModels for similar issues before continuing with PlaybackStatus implementation.
 
+### Phase 0.8: PlaybackStatus Implementation (COMPLETE)
+
+**✅ Completed**: Successfully implemented unified PlaybackStatus model to replace fragmented StateFlows
+
+**Major Architectural Improvement**:
+- **BEFORE**: 3 separate StateFlows (`currentPosition`, `duration`, `progress`) 
+- **AFTER**: 1 unified StateFlow (`playbackStatus: StateFlow<PlaybackStatus>`)
+
+**Benefits Achieved**:
+- **Single calculation point**: Progress computed once in PlaybackStatus.progress getter
+- **Atomic updates**: Position and duration always in sync  
+- **Semantic clarity**: Playback state vs track metadata clearly separated
+- **Reduced interface complexity**: 3 StateFlows → 1 unified StateFlow
+- **Better performance**: Fewer separate emissions
+
+**Files Updated**:
+- ✅ Created `PlaybackStatus.kt` model with computed progress property
+- ✅ Updated PlayerService and MiniPlayerService interfaces  
+- ✅ Updated MediaControllerRepository to provide playbackStatus StateFlow
+- ✅ Updated service implementations and ViewModels to use playbackStatus
+- ✅ Build successful with zero UI regressions
+
+### Phase 0.9: Centralized PlaybackStateService Implementation (COMPLETE)
+
+**✅ Completed**: Built centralized PlaybackStateService with proper queue-aware logic
+
+**Service Interface**:
+```kotlin
+interface PlaybackStateService {
+    // State (5 StateFlows)
+    val isPlaying: StateFlow<Boolean>
+    val playbackStatus: StateFlow<PlaybackStatus> 
+    val currentTrackInfo: StateFlow<CurrentTrackInfo?>
+    val hasNext: StateFlow<Boolean>     // Proper queue logic
+    val hasPrevious: StateFlow<Boolean> // Proper queue logic
+    
+    // Commands (6 methods)
+    suspend fun play(), pause(), togglePlayPause()
+    suspend fun seekToNext(), seekToPrevious(), seekToPosition()
+    
+    // Utilities (2 methods) 
+    fun formatDuration(), formatPosition()
+    
+    // Sharing (2 methods)
+    suspend fun shareCurrentTrack(), shareCurrentShow()
+    
+    // Debug (1 method)
+    suspend fun getDebugMetadata()
+}
+```
+
+**Queue Logic Implementation**:
+- ✅ Added `mediaItemCount: StateFlow<Int>` to MediaControllerRepository
+- ✅ **Proper hasNext logic**: `currentIndex < (queueSize - 1)` (not at last track)
+- ✅ **Proper hasPrevious logic**: `currentIndex > 0` (not at first track)
+- ✅ Updated MediaController listener to track queue size changes
+
+**Duplication Elimination Target**:
+- **Total centralization candidates**: 12 members (5 StateFlows + 7 methods)
+- **Services to refactor**: MiniPlayerService → PlayerService → PlaylistService
+- **Expected code reduction**: ~50% across service implementations
+
+**Next Steps**: Service integration from simplest to most complex:
+1. **MiniPlayerService** (simplest - pure delegation)
+2. **PlayerService** (medium - extract sharing/debug logic) 
+3. **PlaylistService** (complex - preserve domain-specific logic)
+
 ---
 
-**Document Status**: Phase 0 Complete, Phase 0.5 Complete, Phase 0.6 Complete, Phase 0.7 In Progress  
+**Document Status**: Phase 0 Complete, Phase 0.5-0.9 Complete, Phase 1 Ready  
 **Last Updated**: December 2024  
-**Next Review**: After fixing combine() pattern and completing PlaybackStatus implementation
+**Next Review**: After service integration completion

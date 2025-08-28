@@ -88,6 +88,9 @@ class MediaControllerRepository @Inject constructor(
     private val _currentTrackIndex = MutableStateFlow(0)
     val currentTrackIndex: StateFlow<Int> = _currentTrackIndex.asStateFlow()
     
+    private val _mediaItemCount = MutableStateFlow(0)
+    val mediaItemCount: StateFlow<Int> = _mediaItemCount.asStateFlow()
+    
     // Unified playback status with computed progress
     val playbackStatus: StateFlow<PlaybackStatus> = combine(
         _currentPosition, _duration
@@ -391,6 +394,7 @@ class MediaControllerRepository @Inject constructor(
                             _currentShowId.value = extractShowIdFromMediaItem(mediaItem)
                             _currentRecordingId.value = extractRecordingIdFromMediaItem(mediaItem)
                             _currentTrackIndex.value = controller.currentMediaItemIndex
+                            _mediaItemCount.value = controller.mediaItemCount
                             
                             // Update both position and duration immediately to prevent visual hiccup
                             if (mediaItem != null) {
