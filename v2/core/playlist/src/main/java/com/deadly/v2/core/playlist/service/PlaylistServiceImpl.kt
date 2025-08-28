@@ -25,13 +25,15 @@ import javax.inject.Singleton
  * Integrates with ShowRepository for real database operations, efficient
  * chronological navigation, and ArchiveService for track/review data.
  * 
- * Phase 1 Implementation:
+ * Phase 1.2 Implementation:
  * ✅ Real show loading from database
  * ✅ Real chronological navigation 
  * ✅ Domain model → ViewModel conversion
  * ✅ Real track lists from Archive.org API
  * ✅ Real reviews from Archive.org API
- * 🔲 Stubbed: Media operations, library/download integrations (marked with TODOs)
+ * ✅ Direct delegation to MediaControllerRepository for playback commands
+ * ✅ Direct delegation to MediaControllerStateUtil for rich state objects
+ * 🔲 Stubbed: Library/download integrations (marked with TODOs)
  */
 @Singleton
 class PlaylistServiceImpl @Inject constructor(
@@ -321,12 +323,12 @@ class PlaylistServiceImpl @Inject constructor(
     }
     
     override suspend fun pause() {
-        Log.d(TAG, "pause() - Using MediaControllerRepository")
+        Log.d(TAG, "pause() - Direct delegation to MediaControllerRepository")
         mediaControllerRepository.pause()
     }
     
     override suspend fun resume() {
-        Log.d(TAG, "resume() - Using MediaControllerRepository")
+        Log.d(TAG, "resume() - Direct delegation to MediaControllerRepository")
         mediaControllerRepository.play()
     }
     
@@ -683,20 +685,30 @@ class PlaylistServiceImpl @Inject constructor(
     }
     
     // === MEDIACONTROLLER STATE OBSERVATION ===
+    // Direct delegation pattern - use MediaControllerRepository and MediaControllerStateUtil
     
     /**
-     * Whether audio is currently playing - reactive stream from MediaController
+     * Whether audio is currently playing - direct delegation to MediaControllerRepository
      */
     override val isPlaying: StateFlow<Boolean> = mediaControllerRepository.isPlaying
     
     /**
+     * Unified playback position state - direct delegation to MediaControllerRepository
+     */
+    override val playbackStatus: StateFlow<PlaybackStatus> = mediaControllerRepository.playbackStatus
+    
+    /**
      * Current track information from MediaController for playlist highlighting
-     * 
-     * DUPLICATION ELIMINATION: Now using shared MediaControllerStateUtil
-     * instead of duplicating complex 6-way combine() logic across services.
+     * Direct delegation to MediaControllerStateUtil for rich state objects
      */
     override val currentTrackInfo: StateFlow<CurrentTrackInfo?> = 
         mediaControllerStateUtil.createCurrentTrackInfoStateFlow(coroutineScope)
+    
+    /**
+     * Queue information for navigation decisions - direct delegation to MediaControllerStateUtil
+     */
+    override val queueInfo: StateFlow<QueueInfo> = 
+        mediaControllerStateUtil.createQueueInfoStateFlow(coroutineScope)
     
     
     // === PREFETCH MANAGEMENT ===

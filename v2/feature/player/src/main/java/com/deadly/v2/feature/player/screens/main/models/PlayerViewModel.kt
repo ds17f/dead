@@ -6,6 +6,7 @@ import androidx.lifecycle.viewModelScope
 import com.deadly.v2.core.api.player.PlayerService
 import com.deadly.v2.core.model.CurrentTrackInfo
 import com.deadly.v2.core.model.PlaybackStatus
+import com.deadly.v2.core.model.QueueInfo
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.*
 import kotlinx.coroutines.launch
@@ -26,19 +27,13 @@ class PlayerViewModel @Inject constructor(
         private const val TAG = "PlayerViewModel"
     }
     
-    // Reactive UI state from PlayerService flows - using unified CurrentTrackInfo and PlaybackStatus
+    // Reactive UI state from PlayerService flows - using unified CurrentTrackInfo, PlaybackStatus, and QueueInfo
     val uiState: StateFlow<PlayerUiState> = combine(
         playerService.currentTrackInfo,
         playerService.playbackStatus,
         playerService.isPlaying,
-        playerService.hasNext,
-        playerService.hasPrevious
-    ) { flows ->
-        val trackInfo = flows[0] as CurrentTrackInfo?
-        val playbackStatus = flows[1] as PlaybackStatus
-        val isPlaying = flows[2] as Boolean
-        val hasNext = flows[3] as Boolean
-        val hasPrevious = flows[4] as Boolean
+        playerService.queueInfo
+    ) { trackInfo, playbackStatus, isPlaying, queueInfo ->
         // Early return for null case - no track playing
         if (trackInfo == null) return@combine PlayerUiState(
             trackDisplayInfo = TrackDisplayInfo(
@@ -61,8 +56,8 @@ class PlayerViewModel @Inject constructor(
             ),
             isPlaying = false,
             isLoading = false,
-            hasNext = false,
-            hasPrevious = false,
+            hasNext = queueInfo.hasNext,
+            hasPrevious = queueInfo.hasPrevious,
             error = null
         )
         
@@ -88,8 +83,8 @@ class PlayerViewModel @Inject constructor(
             ),
             isPlaying = isPlaying,
             isLoading = false, // TODO: Add loading state from service
-            hasNext = hasNext,
-            hasPrevious = hasPrevious,
+            hasNext = queueInfo.hasNext,
+            hasPrevious = queueInfo.hasPrevious,
             error = null // TODO: Add error state from service
         )
     }.stateIn(

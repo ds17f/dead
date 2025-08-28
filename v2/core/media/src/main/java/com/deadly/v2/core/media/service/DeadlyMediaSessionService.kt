@@ -46,6 +46,10 @@ class DeadlyMediaSessionService : MediaSessionService() {
     private var currentRecordingId: String? = null
     private var currentFormat: String? = null
     
+    // Retry logic state
+    private var retryCount = 0
+    private val maxRetries = 3 // immediate, 1s, 2s
+    
     override fun onCreate() {
         super.onCreate()
         Log.d(TAG, "Service onCreate()")
@@ -68,7 +72,10 @@ class DeadlyMediaSessionService : MediaSessionService() {
                 val stateString = when (playbackState) {
                     Player.STATE_IDLE -> "IDLE"
                     Player.STATE_BUFFERING -> "BUFFERING"
-                    Player.STATE_READY -> "READY"
+                    Player.STATE_READY -> {
+                        resetRetryCount() // Reset retry count on successful recovery
+                        "READY"
+                    }
                     Player.STATE_ENDED -> "ENDED"
                     else -> "UNKNOWN"
                 }
@@ -77,6 +84,7 @@ class DeadlyMediaSessionService : MediaSessionService() {
             
             override fun onPlayerError(error: androidx.media3.common.PlaybackException) {
                 Log.e(TAG, "Player error: ${error.message}", error)
+                handlePlayerError(error)
             }
         })
         
@@ -118,8 +126,72 @@ class DeadlyMediaSessionService : MediaSessionService() {
         super.onDestroy()
     }
     
+    /**
+     * Handle player errors with exponential backoff retry logic
+     * Retry pattern: immediate → 1s → 2s → fail
+     */
+    private fun handlePlayerError(error: androidx.media3.common.PlaybackException) {
+        // Check if this is a retryable error (network/source issues)
+        val isRetryable = error.errorCode == androidx.media3.common.PlaybackException.ERROR_CODE_IO_NETWORK_CONNECTION_FAILED ||
+                error.errorCode == androidx.media3.common.PlaybackException.ERROR_CODE_IO_NETWORK_CONNECTION_TIMEOUT ||
+                error.errorCode == androidx.media3.common.PlaybackException.ERROR_CODE_IO_BAD_HTTP_STATUS ||
+                error.message?.contains("Source error") == true
+        
+        if (!isRetryable) {
+            Log.e(TAG, "Non-retryable error: ${error.errorCode} - ${error.message}")
+            retryCount = 0 // Reset for next error
+            return
+        }
+        
+        if (retryCount >= maxRetries) {
+            Log.e(TAG, "Max retries ($maxRetries) exceeded - giving up")
+            retryCount = 0 // Reset for next error
+            return
+        }
+        
+        // Calculate delay: 0s, 1s, 2s
+        val delayMs = when (retryCount) {
+            0 -> 0L      // Immediate retry
+            1 -> 1000L   // 1 second
+            2 -> 2000L   // 2 seconds
+            else -> 0L
+        }
+        
+        retryCount++
+        Log.w(TAG, "Retryable error detected (attempt $retryCount/$maxRetries) - retrying in ${delayMs}ms")
+        
+        serviceScope.launch {
+            delay(delayMs)
+            
+            try {
+                val currentIndex = exoPlayer.currentMediaItemIndex
+                val wasPlaying = exoPlayer.playWhenReady
+                val currentPosition = exoPlayer.currentPosition
+                
+                Log.d(TAG, "Retry attempt $retryCount: index=$currentIndex, position=${currentPosition}ms, wasPlaying=$wasPlaying")
+                
+                // Retry by seeking to current item and resuming playback state
+                exoPlayer.seekTo(currentIndex, maxOf(0L, currentPosition))
+                if (wasPlaying) {
+                    exoPlayer.play()
+                }
+                exoPlayer.prepare()
+                
+            } catch (retryError: Exception) {
+                Log.e(TAG, "Retry attempt $retryCount failed", retryError)
+            }
+        }
+    }
     
-    
+    /**
+     * Reset retry count on successful playback state changes
+     */
+    private fun resetRetryCount() {
+        if (retryCount > 0) {
+            Log.d(TAG, "Playback recovered - resetting retry count")
+            retryCount = 0
+        }
+    }
     
     /**
      * MediaSession callback for standard commands

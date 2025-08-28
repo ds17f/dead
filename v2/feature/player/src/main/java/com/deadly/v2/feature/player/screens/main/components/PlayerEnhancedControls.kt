@@ -21,6 +21,7 @@ fun PlayerEnhancedControls(
     isPlaying: Boolean,
     shuffleEnabled: Boolean,
     repeatMode: RepeatMode,
+    hasNext: Boolean,
     onPlayPause: () -> Unit,
     onPrevious: () -> Unit,
     onNext: () -> Unit,
@@ -51,7 +52,7 @@ fun PlayerEnhancedControls(
         // Spacer to push center controls
         Spacer(modifier = Modifier.weight(1f))
         
-        // Previous - Larger
+        // Previous - Larger (always enabled)
         IconButton(
             onClick = onPrevious,
             modifier = Modifier.size(56.dp)
@@ -89,13 +90,18 @@ fun PlayerEnhancedControls(
         // Next - Larger
         IconButton(
             onClick = onNext,
+            enabled = hasNext,
             modifier = Modifier.size(56.dp)
         ) {
             Icon(
                 painter = IconResources.PlayerControls.SkipNext(),
                 contentDescription = "Next",
                 modifier = Modifier.size(36.dp),
-                tint = MaterialTheme.colorScheme.onSurface
+                tint = if (hasNext) {
+                    MaterialTheme.colorScheme.onSurface
+                } else {
+                    MaterialTheme.colorScheme.onSurface.copy(alpha = 0.38f)
+                }
             )
         }
         

@@ -588,12 +588,19 @@ class ServiceImpl @Inject constructor(
 ### Service Implementation Status
 
 **✅ MiniPlayerService (Phase 1.0):** Complete direct delegation implementation
-- Eliminated PlaybackStateService thin wrapper layer
+- Direct delegation to MediaControllerRepository and MediaControllerStateUtil
 - Clean Hilt DI with no circular dependencies
 - QueueInfo integration for navigation logic
 
-**🔄 PlayerService (Phase 1.1):** Pending - apply same direct delegation pattern
-**🔄 PlaylistService (Phase 1.2):** Pending - apply same direct delegation pattern
+**✅ PlayerService (Phase 1.1):** Complete direct delegation implementation  
+- Direct delegation pattern with QueueInfo unified state model
+- Enhanced seekToPrevious() logic with queue-aware decisions
+- Button enable/disable logic fixes for proper UX
+
+**✅ PlaylistService (Phase 1.2):** Complete direct delegation implementation
+- Direct delegation for playback commands and rich state objects
+- Consistent interface with playbackStatus and queueInfo StateFlows
+- Real show/track loading with Archive.org API integration
 
 ### Architecture Benefits
 
@@ -608,7 +615,10 @@ class ServiceImpl @Inject constructor(
 - MediaControllerStateUtil for rich state object creation
 
 **Pattern Consistency:**
+- All V2 services expose identical StateFlow interface: `isPlaying`, `playbackStatus`, `currentTrackInfo`, `queueInfo`
 - Information architecture: services observe rich state and make business decisions
-- Same pattern for CurrentTrackInfo and QueueInfo creation
+- Same pattern for CurrentTrackInfo and QueueInfo creation using MediaControllerStateUtil
 - Direct command delegation with zero abstraction overhead
+
+**Foundation First Complete:** All V2 services (MiniPlayerService, PlayerService, PlaylistService) now use unified direct delegation architecture with consistent reactive state models and clean Hilt dependency injection.
 

@@ -108,7 +108,7 @@ class MediaControllerStateUtil @Inject constructor(
                 totalTracks = totalTracks
             )
             
-            Log.v(TAG, "Queue state: ${currentIndex + 1}/${totalTracks} (hasNext=${queueInfo.hasNext}, hasPrevious=${queueInfo.hasPrevious})")
+            Log.d(TAG, "📊 QUEUE STATE: ${currentIndex + 1}/${totalTracks} (hasNext=${queueInfo.hasNext}, hasPrevious=${queueInfo.hasPrevious})")
             queueInfo
         }.stateIn(
             scope = coroutineScope,

@@ -2,6 +2,7 @@ package com.deadly.v2.core.api.player
 
 import com.deadly.v2.core.model.CurrentTrackInfo
 import com.deadly.v2.core.model.PlaybackStatus
+import com.deadly.v2.core.model.QueueInfo
 import kotlinx.coroutines.flow.StateFlow
 
 /**
@@ -32,14 +33,10 @@ interface PlayerService {
     val currentTrackInfo: StateFlow<CurrentTrackInfo?>
     
     /**
-     * Whether next track is available
+     * Queue information for navigation decisions
+     * Contains currentIndex, totalTracks, and computed navigation properties
      */
-    val hasNext: StateFlow<Boolean>
-    
-    /**
-     * Whether previous track is available
-     */
-    val hasPrevious: StateFlow<Boolean>
+    val queueInfo: StateFlow<QueueInfo>
     
     /**
      * Toggle between play and pause states

@@ -12,6 +12,7 @@ import com.deadly.v2.core.model.Recording
 import com.deadly.v2.core.model.Track
 import com.deadly.v2.core.model.CurrentTrackInfo
 import com.deadly.v2.core.model.PlaybackStatus
+import com.deadly.v2.core.model.QueueInfo
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.flow.map
@@ -59,6 +60,9 @@ class PlayerServiceImpl @Inject constructor(
     // create one comprehensive CurrentTrackInfo and expose it directly
     override val currentTrackInfo: StateFlow<CurrentTrackInfo?> = mediaControllerStateUtil.createCurrentTrackInfoStateFlow(serviceScope)
     
+    // Queue information for navigation decisions - direct delegation to MediaControllerStateUtil
+    override val queueInfo: StateFlow<QueueInfo> = mediaControllerStateUtil.createQueueInfoStateFlow(serviceScope)
+    
     /**
      * Format show date from YYYY-MM-DD to readable format
      */
@@ -83,28 +87,6 @@ class PlayerServiceImpl @Inject constructor(
             dateString
         }
     }
-    
-    // TODO: Implement proper hasNext/hasPrevious based on queue state
-    // For now, always show enabled (consistent with mock)
-    override val hasNext: StateFlow<Boolean> = combine(
-        mediaControllerRepository.currentTrack
-    ) { track ->
-        track != null // Has next if we have a current track
-    }.stateIn(
-        scope = serviceScope,
-        started = SharingStarted.WhileSubscribed(),
-        initialValue = false
-    )
-    
-    override val hasPrevious: StateFlow<Boolean> = combine(
-        mediaControllerRepository.currentTrack  
-    ) { track ->
-        track != null // Has previous if we have a current track
-    }.stateIn(
-        scope = serviceScope,
-        started = SharingStarted.WhileSubscribed(),
-        initialValue = false
-    )
     
     override suspend fun togglePlayPause() {
         Log.d(TAG, "Toggle play/pause")
@@ -150,14 +132,29 @@ class PlayerServiceImpl @Inject constructor(
                     Log.d(TAG, "Was paused - staying paused after restart")
                 }
             } else {
-                // Go to previous track
-                Log.d(TAG, "Position ${currentPositionMs}ms <= ${PREVIOUS_TRACK_THRESHOLD_MS}ms, seeking to previous")
-                mediaControllerRepository.seekToPrevious()
-                
-                // Auto-play new track if we were paused
-                if (!wasPlaying) {
-                    Log.d(TAG, "Was paused - starting playback of previous track")
-                    mediaControllerRepository.play()
+                // Check if there's actually a previous track available
+                val queueInfo = queueInfo.value
+                if (queueInfo.hasPrevious) {
+                    // Go to previous track
+                    Log.d(TAG, "Position ${currentPositionMs}ms <= ${PREVIOUS_TRACK_THRESHOLD_MS}ms, seeking to previous track")
+                    mediaControllerRepository.seekToPrevious()
+                    
+                    // Auto-play new track if we were paused
+                    if (!wasPlaying) {
+                        Log.d(TAG, "Was paused - starting playback of previous track")
+                        mediaControllerRepository.play()
+                    }
+                } else {
+                    // First track in queue - restart current track even if < 3 seconds
+                    Log.d(TAG, "Position ${currentPositionMs}ms <= ${PREVIOUS_TRACK_THRESHOLD_MS}ms, but no previous track - restarting current track")
+                    mediaControllerRepository.seekToPosition(0L)
+                    
+                    // If paused, stay paused after restart
+                    if (wasPlaying) {
+                        Log.d(TAG, "Was playing - continuing playback after restart")
+                    } else {
+                        Log.d(TAG, "Was paused - staying paused after restart")
+                    }
                 }
             }
         } catch (e: Exception) {

@@ -279,6 +279,7 @@ fun PlayerScreen(
                             isPlaying = uiState.isPlaying,
                             shuffleEnabled = false, // TODO: Make dynamic
                             repeatMode = RepeatMode.NONE, // TODO: Make dynamic
+                            hasNext = uiState.hasNext,
                             onPlayPause = viewModel::onPlayPauseClicked,
                             onPrevious = viewModel::onPreviousClicked,
                             onNext = viewModel::onNextClicked,

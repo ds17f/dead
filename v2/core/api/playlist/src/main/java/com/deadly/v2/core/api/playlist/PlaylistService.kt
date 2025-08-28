@@ -125,8 +125,20 @@ interface PlaylistService {
     val isPlaying: StateFlow<Boolean>
     
     /**
+     * Unified playback position state with computed progress
+     * Contains currentPosition, duration, and computed progress as cohesive unit
+     */
+    val playbackStatus: StateFlow<PlaybackStatus>
+    
+    /**
      * Current track information from MediaController for playlist highlighting
      * Returns null if no track is currently loaded
      */
     val currentTrackInfo: StateFlow<CurrentTrackInfo?>
+    
+    /**
+     * Queue information for navigation decisions
+     * Contains currentIndex, totalTracks, and computed navigation properties
+     */
+    val queueInfo: StateFlow<QueueInfo>
 }
