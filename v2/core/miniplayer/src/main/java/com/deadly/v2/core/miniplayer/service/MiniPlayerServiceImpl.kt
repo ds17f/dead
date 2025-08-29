@@ -46,7 +46,7 @@ class MiniPlayerServiceImpl @Inject constructor(
      * Direct command delegation to MediaControllerRepository
      */
     override suspend fun togglePlayPause() {
-        Log.d(TAG, "MiniPlayer togglePlayPause requested")
+        Log.d(TAG, "🕒🎵 [V2-MINI] MiniPlayer togglePlayPause requested at ${System.currentTimeMillis()}")
         mediaControllerRepository.togglePlayPause()
     }
 }

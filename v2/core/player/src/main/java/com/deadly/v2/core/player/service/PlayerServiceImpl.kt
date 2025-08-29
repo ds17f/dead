@@ -89,32 +89,32 @@ class PlayerServiceImpl @Inject constructor(
     }
     
     override suspend fun togglePlayPause() {
-        Log.d(TAG, "Toggle play/pause")
+        Log.d(TAG, "🕒🎵 [V2-SERVICE] PlayerService togglePlayPause called at ${System.currentTimeMillis()}")
         try {
             mediaControllerRepository.togglePlayPause()
         } catch (e: Exception) {
-            Log.e(TAG, "Error toggling play/pause", e)
+            Log.e(TAG, "🕒🎵 [V2-ERROR] PlayerService togglePlayPause failed at ${System.currentTimeMillis()}", e)
         }
     }
     
     override suspend fun seekToNext() {
-        Log.d(TAG, "Seek to next track")
+        Log.d(TAG, "🕒🎵 [V2-SERVICE] PlayerService seekToNext called at ${System.currentTimeMillis()}")
         try {
             val wasPlaying = mediaControllerRepository.isPlaying.value
             mediaControllerRepository.seekToNext()
             
             // Auto-play new track if we were paused
             if (!wasPlaying) {
-                Log.d(TAG, "Was paused - starting playback of new track")
+                Log.d(TAG, "🕒🎵 [V2-SERVICE] Was paused - starting playback of new track at ${System.currentTimeMillis()}")
                 mediaControllerRepository.play()
             }
         } catch (e: Exception) {
-            Log.e(TAG, "Error seeking to next", e)
+            Log.e(TAG, "🕒🎵 [V2-ERROR] PlayerService seekToNext failed at ${System.currentTimeMillis()}", e)
         }
     }
     
     override suspend fun seekToPrevious() {
-        Log.d(TAG, "Smart previous: checking current position")
+        Log.d(TAG, "🕒🎵 [V2-SERVICE] PlayerService seekToPrevious called at ${System.currentTimeMillis()}")
         try {
             val currentPositionMs = mediaControllerRepository.currentPosition.value
             val wasPlaying = mediaControllerRepository.isPlaying.value
@@ -158,16 +158,16 @@ class PlayerServiceImpl @Inject constructor(
                 }
             }
         } catch (e: Exception) {
-            Log.e(TAG, "Error in smart previous", e)
+            Log.e(TAG, "🕒🎵 [V2-ERROR] PlayerService seekToPrevious failed at ${System.currentTimeMillis()}", e)
         }
     }
     
     override suspend fun seekToPosition(positionMs: Long) {
-        Log.d(TAG, "Seek to position: ${positionMs}ms")
+        Log.d(TAG, "🕒🎵 [V2-SERVICE] PlayerService seekToPosition(${positionMs}ms) called at ${System.currentTimeMillis()}")
         try {
             mediaControllerRepository.seekToPosition(positionMs)
         } catch (e: Exception) {
-            Log.e(TAG, "Error seeking to position", e)
+            Log.e(TAG, "🕒🎵 [V2-ERROR] PlayerService seekToPosition failed at ${System.currentTimeMillis()}", e)
         }
     }
     

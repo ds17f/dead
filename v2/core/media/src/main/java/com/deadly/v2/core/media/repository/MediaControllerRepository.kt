@@ -167,17 +167,23 @@ class MediaControllerRepository @Inject constructor(
                         val mediaItems = convertToMediaItems(recordingId, filteredTracks, showId, showDate, venue, location, format)
                         
                         // Set media items and optionally start playing at position
-                        Log.d(TAG, "Setting ${mediaItems.size} media items to MediaController")
+                        Log.d(TAG, "🕒🎵 [V2-URL] Setting ${mediaItems.size} media items to MediaController at ${System.currentTimeMillis()}")
+                        mediaItems.forEach { item ->
+                            Log.d(TAG, "🕒🎵 [V2-URL] Loading URL: ${item.localConfiguration?.uri} at ${System.currentTimeMillis()}")
+                        }
                         controller.setMediaItems(mediaItems, 0, startPosition)
+                        Log.d(TAG, "🕒🎵 [V2-URL] MediaController.setMediaItems() completed, calling prepare() at ${System.currentTimeMillis()}")
                         controller.prepare()
+                        Log.d(TAG, "🕒🎵 [V2-URL] MediaController.prepare() completed at ${System.currentTimeMillis()}")
                         
                         // MediaController will provide accurate updates once ready via callbacks
                         
                         if (autoPlay) {
+                            Log.d(TAG, "🕒🎵 [V2-URL] Calling controller.play() to start playback at ${System.currentTimeMillis()}")
                             controller.play()
-                            Log.d(TAG, "Playback started successfully")
+                            Log.d(TAG, "🕒🎵 [V2-URL] controller.play() call completed at ${System.currentTimeMillis()}")
                         } else {
-                            Log.d(TAG, "Recording loaded at position $startPosition (paused)")
+                            Log.d(TAG, "🕒🎵 [V2-URL] Recording loaded at position $startPosition (paused) at ${System.currentTimeMillis()}")
                         }
                         
                     } else {
@@ -253,16 +259,25 @@ class MediaControllerRepository @Inject constructor(
                             val mediaItems = convertToMediaItems(recordingId, filteredTracks, showId, showDate, venue, location, format)
                             
                             // Set media items and seek to specific track at position
+                            Log.d(TAG, "🕒🎵 [V2-URL] Setting ${mediaItems.size} media items for track $trackIndex at ${System.currentTimeMillis()}")
+                            mediaItems.forEachIndexed { index, item ->
+                                if (index == trackIndex) {
+                                    Log.d(TAG, "🕒🎵 [V2-URL] Loading target track URL: ${item.localConfiguration?.uri} at ${System.currentTimeMillis()}")
+                                }
+                            }
                             controller.setMediaItems(mediaItems, trackIndex, position)
+                            Log.d(TAG, "🕒🎵 [V2-URL] MediaController.setMediaItems(track=$trackIndex, pos=$position) completed at ${System.currentTimeMillis()}")
                             controller.prepare()
+                            Log.d(TAG, "🕒🎵 [V2-URL] MediaController.prepare() for track $trackIndex completed at ${System.currentTimeMillis()}")
                             
                             // MediaController will provide accurate updates once ready via callbacks
                             
                             if (autoPlay) {
+                                Log.d(TAG, "🕒🎵 [V2-URL] Calling controller.play() for track $trackIndex at ${System.currentTimeMillis()}")
                                 controller.play()
-                                Log.d(TAG, "Playing track $trackIndex at position $position successfully")
+                                Log.d(TAG, "🕒🎵 [V2-URL] controller.play() for track $trackIndex completed at ${System.currentTimeMillis()}")
                             } else {
-                                Log.d(TAG, "Track $trackIndex loaded at position $position (paused)")
+                                Log.d(TAG, "🕒🎵 [V2-URL] Track $trackIndex loaded at position $position (paused) at ${System.currentTimeMillis()}")
                             }
                         } else {
                             Log.e(TAG, "Invalid track index: $trackIndex (available: 0-${filteredTracks.size - 1})")
@@ -283,19 +298,19 @@ class MediaControllerRepository @Inject constructor(
      * Simple play/pause toggle
      */
     suspend fun togglePlayPause() {
-        Log.d(TAG, "togglePlayPause() - ENTRY - ConnectionState: ${_connectionState.value}")
+        Log.d(TAG, "🕒🎵 [V2-MEDIA] MediaControllerRepository togglePlayPause called at ${System.currentTimeMillis()}")
         
         executeWhenConnected {
             val controller = mediaController
             if (controller != null) {
                 val wasPlaying = controller.isPlaying
-                Log.d(TAG, "togglePlayPause: Current state: playing=$wasPlaying")
+                Log.d(TAG, "🕒🎵 [V2-MEDIA] Current state: playing=$wasPlaying")
                 
                 if (wasPlaying) {
-                    Log.d(TAG, "togglePlayPause: Calling controller.pause()")
+                    Log.d(TAG, "🕒🎵 [V2-MEDIA] Calling controller.pause() at ${System.currentTimeMillis()}")
                     controller.pause()
                 } else {
-                    Log.d(TAG, "togglePlayPause: Calling controller.play()")
+                    Log.d(TAG, "🕒🎵 [V2-MEDIA] Calling controller.play() at ${System.currentTimeMillis()}")
                     controller.play()
                 }
                 
@@ -351,12 +366,12 @@ class MediaControllerRepository @Inject constructor(
      */
     private fun connectToService() {
         if (_connectionState.value == ConnectionState.Connecting) {
-            Log.d(TAG, "Connection already in progress")
+            Log.d(TAG, "🕒🎵 [V2-MEDIA] Connection already in progress")
             return
         }
         
         _connectionState.value = ConnectionState.Connecting
-        Log.d(TAG, "Connecting to MediaSessionService...")
+        Log.d(TAG, "🕒🎵 [V2-MEDIA] Connecting to MediaSessionService at ${System.currentTimeMillis()}")
         
         try {
             val sessionToken = SessionToken(
@@ -373,10 +388,16 @@ class MediaControllerRepository @Inject constructor(
                     val controller = future.get()
                     mediaController = controller
                     _connectionState.value = ConnectionState.Connected
+                    Log.d(TAG, "🕒🎵 [V2-MEDIA] Connected to MediaSessionService successfully at ${System.currentTimeMillis()}")
                     
                     // Set up player state listeners
                     controller.addListener(object : Player.Listener {
                         override fun onIsPlayingChanged(isPlaying: Boolean) {
+                            if (isPlaying) {
+                                Log.d(TAG, "🕒🎵 [V2-AUDIO] MediaController detected AUDIO STARTED at ${System.currentTimeMillis()}")
+                            } else {
+                                Log.d(TAG, "🕒🎵 [V2-AUDIO] MediaController detected audio stopped at ${System.currentTimeMillis()}")
+                            }
                             _isPlaying.value = isPlaying
                         }
                         
@@ -422,7 +443,7 @@ class MediaControllerRepository @Inject constructor(
                     }
                     
                 } catch (e: Exception) {
-                    Log.e(TAG, "Failed to connect MediaController", e)
+                    Log.e(TAG, "🕒🎵 [V2-ERROR] Failed to connect MediaController at ${System.currentTimeMillis()}", e)
                     _connectionState.value = ConnectionState.Failed
                     mediaController = null
                 }

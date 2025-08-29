@@ -129,12 +129,12 @@ class PlayerViewModel @Inject constructor(
      * Toggle play/pause
      */
     fun onPlayPauseClicked() {
-        Log.d(TAG, "Play/pause clicked")
+        Log.d(TAG, "🕒🎵 [V2-UI] PlayerViewModel play/pause clicked at ${System.currentTimeMillis()}")
         viewModelScope.launch {
             try {
                 playerService.togglePlayPause()
             } catch (e: Exception) {
-                Log.e(TAG, "Error toggling play/pause", e)
+                Log.e(TAG, "🕒🎵 [V2-ERROR] PlayerViewModel play/pause failed at ${System.currentTimeMillis()}", e)
             }
         }
     }
@@ -143,12 +143,12 @@ class PlayerViewModel @Inject constructor(
      * Seek to next track
      */
     fun onNextClicked() {
-        Log.d(TAG, "Next clicked")
+        Log.d(TAG, "🕒🎵 [V2-UI] PlayerViewModel next clicked at ${System.currentTimeMillis()}")
         viewModelScope.launch {
             try {
                 playerService.seekToNext()
             } catch (e: Exception) {
-                Log.e(TAG, "Error seeking to next", e)
+                Log.e(TAG, "🕒🎵 [V2-ERROR] PlayerViewModel next failed at ${System.currentTimeMillis()}", e)
             }
         }
     }
@@ -157,12 +157,12 @@ class PlayerViewModel @Inject constructor(
      * Seek to previous track  
      */
     fun onPreviousClicked() {
-        Log.d(TAG, "Previous clicked")
+        Log.d(TAG, "🕒🎵 [V2-UI] PlayerViewModel previous clicked at ${System.currentTimeMillis()}")
         viewModelScope.launch {
             try {
                 playerService.seekToPrevious()
             } catch (e: Exception) {
-                Log.e(TAG, "Error seeking to previous", e)
+                Log.e(TAG, "🕒🎵 [V2-ERROR] PlayerViewModel previous failed at ${System.currentTimeMillis()}", e)
             }
         }
     }
@@ -171,7 +171,7 @@ class PlayerViewModel @Inject constructor(
      * Seek to position
      */
     fun onSeek(position: Float) {
-        Log.d(TAG, "Seek to $position")
+        Log.d(TAG, "🕒🎵 [V2-UI] PlayerViewModel seek to $position at ${System.currentTimeMillis()}")
         viewModelScope.launch {
             try {
                 // Get current duration and convert percentage to milliseconds
@@ -179,7 +179,7 @@ class PlayerViewModel @Inject constructor(
                 val positionMs = (durationMs * position).toLong()
                 playerService.seekToPosition(positionMs)
             } catch (e: Exception) {
-                Log.e(TAG, "Error seeking to position", e)
+                Log.e(TAG, "🕒🎵 [V2-ERROR] PlayerViewModel seek failed at ${System.currentTimeMillis()}", e)
             }
         }
     }

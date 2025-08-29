@@ -170,7 +170,7 @@ class PlaylistViewModel @Inject constructor(
     fun playTrack(trackIndex: Int) {
         viewModelScope.launch {
             try {
-                Log.d(TAG, "Playing track $trackIndex")
+                Log.d(TAG, "🕒🎵 [V2-UI] PlaylistViewModel track selection: User clicked track at index $trackIndex at ${System.currentTimeMillis()}")
                 playlistService.playTrack(trackIndex)
                 
                 _baseUiState.value = _baseUiState.value.copy(
@@ -712,7 +712,7 @@ class PlaylistViewModel @Inject constructor(
     fun playTrack(track: PlaylistTrackViewModel) {
         viewModelScope.launch {
             try {
-                Log.d(TAG, "V2 Playing track: ${track.title} (index: ${track.number - 1})")
+                Log.d(TAG, "🕒🎵 [V2-UI] PlaylistViewModel track selection: User clicked track ${track.title} at ${System.currentTimeMillis()}")
                 
                 // Get show data to determine recording ID
                 val currentShowData = _baseUiState.value.showData
