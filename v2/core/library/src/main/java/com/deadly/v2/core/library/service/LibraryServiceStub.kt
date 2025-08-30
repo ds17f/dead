@@ -4,6 +4,7 @@ import android.util.Log
 import com.deadly.v2.core.api.library.LibraryService
 import com.deadly.v2.core.model.*
 import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.launch
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
@@ -38,11 +39,32 @@ class LibraryServiceStub @Inject constructor(
     private val _currentShows = MutableStateFlow<List<LibraryShow>>(emptyList())
     private val _libraryStats = MutableStateFlow(LibraryStats(0, 0, 0, 0))
     
-    override suspend fun loadLibraryShows(): Result<Unit> {
-        Log.d(TAG, "V2 STUB: loadLibraryShows() called")
+    init {
+        Log.d(TAG, "V2 STUB: Initializing library service with test data")
         
-        return try {
-            val libraryShows = combine(
+        // Auto-populate with test data and set up reactive flow
+        coroutineScope.launch {
+            // Populate initial test data
+            val testShows = createTestLibraryShows()
+            _libraryShows.value = testShows
+            
+            // Set up a few pinned shows
+            val pinnedIds = setOfNotNull(
+                testShows.firstOrNull()?.id, // Cornell '77
+                testShows.getOrNull(3)?.id   // Another show
+            )
+            _pinnedShowIds.value = pinnedIds
+            
+            // Set up some download statuses
+            val downloadStatuses = testShows.take(2).associate { show ->
+                show.id to LibraryDownloadStatus.COMPLETED
+            }
+            _downloadStatuses.value = downloadStatuses
+            
+            Log.d(TAG, "V2 STUB: Initial test data populated - ${testShows.size} shows")
+            
+            // Set up reactive flow composition (non-blocking)
+            combine(
                 _libraryShows,
                 _pinnedShowIds,
                 _downloadStatuses
@@ -55,23 +77,22 @@ class LibraryServiceStub @Inject constructor(
                         downloadStatus = downloadStatuses[show.id] ?: LibraryDownloadStatus.NOT_DOWNLOADED
                     )
                 }
-            }
-            
-            libraryShows.collect { shows ->
-                _currentShows.value = shows
+            }.collect { libraryShows ->
+                _currentShows.value = libraryShows
                 _libraryStats.value = LibraryStats(
-                    totalShows = shows.size,
-                    totalDownloaded = shows.count { it.isDownloaded },
-                    totalStorageUsed = shows.size * 250L * 1024 * 1024,
-                    totalPinned = shows.count { it.isPinned }
+                    totalShows = libraryShows.size,
+                    totalDownloaded = libraryShows.count { it.isDownloaded },
+                    totalStorageUsed = libraryShows.size * 250L * 1024 * 1024,
+                    totalPinned = libraryShows.count { it.isPinned }
                 )
+                Log.v(TAG, "V2 STUB: Updated reactive state - ${libraryShows.size} shows")
             }
-            
-            Result.success(Unit)
-        } catch (e: Exception) {
-            Log.e(TAG, "Error loading library shows", e)
-            Result.failure(e)
         }
+    }
+    
+    override suspend fun loadLibraryShows(): Result<Unit> {
+        Log.d(TAG, "V2 STUB: loadLibraryShows() called - data already loaded in init")
+        return Result.success(Unit)
     }
     
     override fun getCurrentShows(): StateFlow<List<LibraryShow>> {
