@@ -28,6 +28,7 @@ import com.deadly.v2.feature.playlist.navigation.playlistGraph
 import com.deadly.v2.feature.playlist.navigation.navigateToPlaylist
 import com.deadly.v2.feature.player.navigation.playerScreen
 import com.deadly.v2.feature.miniplayer.screens.main.MiniPlayerScreen
+import com.deadly.v2.feature.library.screens.main.LibraryScreen
 import com.deadly.v2.core.theme.api.DeadlyTheme
 import com.deadly.v2.core.theme.api.ThemeAssetProvider
 import com.deadly.v2.core.theme.ThemeManager
@@ -133,7 +134,16 @@ fun MainNavigation(
                 
                 // Library screen - user's saved content
                 composable("library") {
-                    LibraryContentPlaceholder()
+                    LibraryScreen(
+                        onNavigateToShow = { showId ->
+                            // TODO: Navigate to show details when implemented
+                            // navController.navigate("show/$showId")
+                        },
+                        onNavigateToPlayer = {
+                            navController.navigate("player")
+                        },
+                        onNavigateBack = { navController.popBackStack() }
+                    )
                 }
                 
                 // Search feature - search and browse functionality
@@ -242,18 +252,3 @@ private fun BottomNavItem(
     }
 }
 
-/**
- * Library placeholder content
- */
-@Composable
-private fun LibraryContentPlaceholder() {
-    Box(
-        modifier = Modifier.fillMaxSize(),
-        contentAlignment = Alignment.Center
-    ) {
-        Text(
-            text = "Library Coming Soon",
-            style = MaterialTheme.typography.headlineMedium
-        )
-    }
-}

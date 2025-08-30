@@ -9,6 +9,8 @@ import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.flow.map
+import kotlinx.coroutines.flow.stateIn
+import kotlinx.coroutines.flow.SharingStarted
 import java.util.concurrent.TimeUnit
 import javax.inject.Inject
 import javax.inject.Named
@@ -48,7 +50,7 @@ class LibraryServiceStub @Inject constructor(
                 shows.map { show ->
                     LibraryShow(
                         show = show,
-                        addedToLibraryAt = show.addedToLibraryTimestamp ?: System.currentTimeMillis(),
+                        addedToLibraryAt = show.libraryAddedAt ?: System.currentTimeMillis(),
                         isPinned = pinnedIds.contains(show.id),
                         downloadStatus = downloadStatuses[show.id] ?: LibraryDownloadStatus.NOT_DOWNLOADED
                     )
@@ -88,7 +90,8 @@ class LibraryServiceStub @Inject constructor(
         val availableShow = createAvailableShows().find { it.id == showId }
         if (availableShow != null) {
             val libraryShow = availableShow.copy(
-                addedToLibraryTimestamp = System.currentTimeMillis()
+                libraryAddedAt = System.currentTimeMillis(),
+                isInLibrary = true
             )
             
             val currentShows = _libraryShows.value.toMutableList()
@@ -139,7 +142,11 @@ class LibraryServiceStub @Inject constructor(
         Log.d(TAG, "V2 STUB: isShowInLibrary('$showId')")
         return _libraryShows.map { shows ->
             shows.any { it.id == showId }
-        }
+        }.stateIn(
+            scope = coroutineScope,
+            started = SharingStarted.WhileSubscribed(5000),
+            initialValue = false
+        )
     }
     
     override suspend fun pinShow(showId: String): Result<Unit> {
@@ -170,7 +177,11 @@ class LibraryServiceStub @Inject constructor(
         Log.d(TAG, "V2 STUB: isShowPinned('$showId')")
         return _pinnedShowIds.map { pinnedIds ->
             pinnedIds.contains(showId)
-        }
+        }.stateIn(
+            scope = coroutineScope,
+            started = SharingStarted.WhileSubscribed(5000),
+            initialValue = false
+        )
     }
     
     override suspend fun downloadShow(showId: String): Result<Unit> {
@@ -197,7 +208,11 @@ class LibraryServiceStub @Inject constructor(
         Log.d(TAG, "V2 STUB: getDownloadStatus('$showId')")
         return _downloadStatuses.map { statuses ->
             statuses[showId] ?: LibraryDownloadStatus.NOT_DOWNLOADED
-        }
+        }.stateIn(
+            scope = coroutineScope,
+            started = SharingStarted.WhileSubscribed(5000),
+            initialValue = LibraryDownloadStatus.NOT_DOWNLOADED
+        )
     }
     
     override suspend fun shareShow(showId: String): Result<Unit> {
@@ -348,7 +363,7 @@ class LibraryServiceStub @Inject constructor(
     }
     
     private fun createAvailableShows(): List<Show> {
-        return createTestLibraryShows().map { it.copy(addedToLibraryTimestamp = null) } +
+        return createTestLibraryShows().map { it.copy(libraryAddedAt = null, isInLibrary = false) } +
             listOf(
                 createShow(
                     date = "1978-05-08",
@@ -378,19 +393,35 @@ class LibraryServiceStub @Inject constructor(
             System.currentTimeMillis() - TimeUnit.DAYS.toMillis(it.toLong())
         }
         
+        val locationParts = location.split(", ")
+        val city = locationParts.firstOrNull()
+        val state = locationParts.getOrNull(1)
+        
         return Show(
             id = date,
             date = date,
-            venue = Venue(name = venue, city = location.split(", ").firstOrNull(), state = location.split(", ").lastOrNull()),
-            location = Location(city = location.split(", ").firstOrNull(), state = location.split(", ").lastOrNull()),
-            year = year.toIntOrNull(),
+            year = year.toIntOrNull() ?: 1970,
+            band = "Grateful Dead",
+            venue = Venue(
+                name = venue, 
+                city = city, 
+                state = state,
+                country = "USA"
+            ),
+            location = Location(
+                displayText = location,
+                city = city,
+                state = state
+            ),
+            setlist = null,
+            lineup = null,
             recordingIds = listOf("${date.replace("-", "")}.sbd.${venue.take(3).lowercase()}"),
             bestRecordingId = "${date.replace("-", "")}.sbd.${venue.take(3).lowercase()}",
             recordingCount = 1,
             averageRating = (3.5f + Math.random().toFloat() * 1.5f).toFloat(),
             totalReviews = (10..50).random(),
-            addedToLibraryTimestamp = addedTimestamp,
-            isInLibrary = addedTimestamp != null
+            isInLibrary = addedTimestamp != null,
+            libraryAddedAt = addedTimestamp
         )
     }
 }
