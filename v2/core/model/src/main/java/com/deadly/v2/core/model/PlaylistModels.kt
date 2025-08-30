@@ -135,7 +135,9 @@ data class PlaylistUiState(
     // Recording selection modal state
     val recordingSelection: RecordingSelectionState = RecordingSelectionState(),
     // Play button behavior: true = play/pause toggle, false = play (start new show/recording)
-    val isCurrentShowAndRecording: Boolean = false
+    val isCurrentShowAndRecording: Boolean = false,
+    // Media loading state from current track PlaybackState
+    val mediaLoading: Boolean = false
 )
 
 

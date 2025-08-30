@@ -21,6 +21,7 @@ import com.deadly.v2.core.model.PlaylistShowViewModel
 fun PlaylistActionRow(
     showData: PlaylistShowViewModel,
     isPlaying: Boolean,
+    isLoading: Boolean,
     isCurrentShowAndRecording: Boolean,
     onLibraryAction: (LibraryAction) -> Unit,
     onDownload: () -> Unit,
@@ -143,24 +144,38 @@ fun PlaylistActionRow(
             }
         }
         
-        // Right side: Play/Pause button (large)
+        // Right side: Play/Pause button (large) with loading state
         IconButton(
             onClick = onTogglePlayback,
             modifier = Modifier.size(56.dp)
         ) {
-            // Show pause icon only if currently playing this exact show/recording
-            val showPauseIcon = isCurrentShowAndRecording && isPlaying
-            
-            Icon(
-                painter = if (showPauseIcon) {
-                    IconResources.PlayerControls.PauseCircleFilled()
-                } else {
-                    IconResources.PlayerControls.PlayCircleFilled()
-                },
-                contentDescription = if (showPauseIcon) "Pause" else "Play",
-                tint = MaterialTheme.colorScheme.primary,
-                modifier = Modifier.size(56.dp)
-            )
+            if (isLoading) {
+                // Show loading spinner when any track is loading
+                Box(
+                    contentAlignment = Alignment.Center,
+                    modifier = Modifier.size(56.dp)
+                ) {
+                    CircularProgressIndicator(
+                        modifier = Modifier.size(24.dp),
+                        color = MaterialTheme.colorScheme.primary,
+                        strokeWidth = 2.dp
+                    )
+                }
+            } else {
+                // Show pause icon only if currently playing this exact show/recording
+                val showPauseIcon = isCurrentShowAndRecording && isPlaying
+                
+                Icon(
+                    painter = if (showPauseIcon) {
+                        IconResources.PlayerControls.PauseCircleFilled()
+                    } else {
+                        IconResources.PlayerControls.PlayCircleFilled()
+                    },
+                    contentDescription = if (showPauseIcon) "Pause" else "Play",
+                    tint = MaterialTheme.colorScheme.primary,
+                    modifier = Modifier.size(56.dp)
+                )
+            }
         }
     }
 }

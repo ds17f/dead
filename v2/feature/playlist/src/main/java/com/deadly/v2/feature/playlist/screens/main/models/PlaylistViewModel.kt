@@ -74,7 +74,8 @@ class PlaylistViewModel @Inject constructor(
         baseState.copy(
             trackData = updatedTracks,
             isPlaying = isPlaying,
-            isCurrentShowAndRecording = isCurrentShowAndRecording
+            isCurrentShowAndRecording = isCurrentShowAndRecording,
+            mediaLoading = currentTrackInfo?.playbackState?.isLoading ?: false
         )
     }.stateIn(
         scope = viewModelScope,
