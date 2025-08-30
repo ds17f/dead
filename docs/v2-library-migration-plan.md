@@ -169,29 +169,91 @@ This migration will create a fully-featured, architecturally sound V2 Library im
 
 ## Progress Tracking
 
-### Current Status: Phase 2 Complete ✅
+### Current Status: Phase 2 Complete ✅ + Architecture Fixes Complete ✅
+
+**Major Accomplishments:**
 - [x] V1 LibraryV2 source material analysis complete
-- [x] V2 architecture patterns documented
+- [x] V2 architecture patterns documented and implemented
 - [x] Migration plan created with 4-phase approach
 - [x] Module structure defined following V2 conventions
 - [x] **Phase 1 Complete**: V2 core architecture foundation implemented
-- [x] **Phase 2 Complete**: V2 UI layer with AppScaffold integration
+- [x] **Phase 2 Complete**: V2 UI layer with proper V2 architecture patterns
+- [x] **Critical Fixes**: Service plumbing, double scaffolding, V2 compliance
 
 ### Phase 1 Deliverables ✅
 - [x] `v2/core/model/LibraryModels.kt` - V2 domain models with `LibraryShow`, `LibraryStats`, UI state models
 - [x] `v2/core/api/library/LibraryService.kt` - Clean V2 service interface with StateFlow-based reactive operations
 - [x] `v2/core/library/service/LibraryServiceStub.kt` - Comprehensive stub with realistic multi-decade test data
-- [x] `v2/core/library/di/LibraryModule.kt` - Hilt dependency injection following V2 patterns
+- [x] Hilt dependency injection with `@Named("stub")` qualifier following V2 patterns
 
 ### Phase 2 Deliverables ✅
-- [x] `v2/feature/library/screens/main/LibraryScreen.kt` - V2 main screen with AppScaffold integration
+- [x] `v2/feature/library/screens/main/LibraryScreen.kt` - Content-only screen following V2 patterns
+- [x] `v2/feature/library/screens/main/LibraryBarConfiguration.kt` - Proper V2 bar configuration
+- [x] `v2/app/navigation/BarConfiguration.kt` - Integrated library into main navigation config
 - [x] `v2/feature/library/screens/main/models/LibraryViewModel.kt` - V2 ViewModel with service delegation
 - [x] `v2/feature/library/screens/main/components/` - Focused UI components (SortControls, ShowItems, BottomSheets)
-- [x] `v2/feature/library/navigation/LibraryNavigation.kt` - Type-safe V2 navigation routing
-- [x] **Build Verification ✅**: Complete V2 Library UI compiles and installs successfully
+- [x] **Build Verification ✅**: Complete V2 Library UI working with proper architecture
 
-### Next Steps
-1. Begin Phase 3: Advanced Features
-2. Implement hierarchical filtering with V2 filter system
-3. Complete pin management with sorting priority
-4. Add download integration and bottom sheet functionality
+### Critical Fixes & Architecture Discoveries ✅
+- [x] **Service Plumbing Fix**: Resolved blocking `.collect()` operation that prevented data loading
+- [x] **Double Scaffolding Fix**: Eliminated duplicate AppScaffold causing double padding
+- [x] **V2 Pattern Compliance**: MainNavigation handles scaffolding, screens are content-only  
+- [x] **Bar Configuration**: Proper V2 bar config system with centralized navigation management
+- [x] **Reactive Flow Setup**: Non-blocking service initialization with auto-populated test data
+
+### Real Service Implementation Plan (Phase 2.5)
+
+Following V2 patterns established by PlaylistServiceImpl and MiniPlayerServiceImpl, implement:
+
+#### **LibraryServiceImpl Architecture**
+```kotlin
+@Singleton  
+class LibraryServiceImpl @Inject constructor(
+    private val showRepository: ShowRepository,              // Real show data
+    private val libraryRepository: LibraryRepository,        // Library-specific data  
+    private val downloadService: DownloadService,            // Shared download state
+    private val mediaControllerRepository: MediaControllerRepository, // Media integration
+    @Named("LibraryApplicationScope") private val coroutineScope: CoroutineScope
+) : LibraryService
+```
+
+#### **Dependencies to Add**
+1. **v2:core:domain** - Access to ShowRepository like PlaylistServiceImpl
+2. **v2:core:media** - MediaController integration for shared state  
+3. **LibraryRepository** - New repository for library-specific operations
+4. **Real Database Integration** - Library entities and DAOs
+
+#### **Service Implementation Pattern**
+- **Direct Delegation**: No wrapper layers, direct repository access
+- **StateFlow Exposure**: Service exposes StateFlow, ViewModel composes
+- **Reactive Composition**: Use `combine()` for real-time updates
+- **Repository Integration**: Follow ShowRepository patterns from existing V2 services
+
+#### **Data Layer Architecture**
+```kotlin
+// New V2 entities
+@Entity(tableName = "v2_library_shows")  
+data class V2LibraryShowEntity(
+    @PrimaryKey val showId: String,
+    val addedToLibraryAt: Long,
+    val isPinned: Boolean,
+    val libraryNotes: String?
+)
+
+// Repository following V2 patterns
+@Singleton
+class LibraryRepository @Inject constructor(
+    private val libraryDao: LibraryDao,
+    private val showRepository: ShowRepository
+) {
+    fun getLibraryShowsFlow(): Flow<List<LibraryShow>> = 
+        libraryDao.getAllLibraryShows().combine(showRepository.getAllShows()) { ... }
+}
+```
+
+### Next Phase: Real Service Implementation
+1. **Add missing V2 dependencies** (domain, media repositories)
+2. **Create LibraryRepository** following V2 database patterns  
+3. **Implement LibraryServiceImpl** with direct delegation architecture
+4. **Replace stub binding** with real service in Hilt module
+5. **Test end-to-end** library operations with real data
