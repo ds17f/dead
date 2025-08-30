@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.60.0] - 2025-08-29
+
+### New Features
+* add loading state feedback to play button in PlaylistActionRow (1aa3b16d)
+* implement comprehensive PlaybackState for loading/buffering feedback (1639019b)
+* add comprehensive timing logs for V2 media pipeline debugging (46fad57d)
+
+
 ## [0.59.0] - 2025-08-28
 
 ### New Features
@@ -24,8 +32,6 @@
 
 ### Documentation Updates
 * Refactor the playing state to be a service (a1a8735c)
-
-
 ## [0.58.0] - 2025-08-25
 
 ### New Features
