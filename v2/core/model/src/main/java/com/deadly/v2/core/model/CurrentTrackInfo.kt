@@ -31,7 +31,7 @@ data class CurrentTrackInfo(
     val format: String,             // e.g., "mp3", "flac"
     
     // Playback state
-    val isPlaying: Boolean,
+    val playbackState: PlaybackState,
     val position: Long,             // Current position in milliseconds
     val duration: Long              // Track duration in milliseconds
 ) {

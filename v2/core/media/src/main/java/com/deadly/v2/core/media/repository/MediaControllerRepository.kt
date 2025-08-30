@@ -12,6 +12,7 @@ import androidx.media3.session.SessionToken
 import com.deadly.v2.core.media.service.DeadlyMediaSessionService
 import com.deadly.v2.core.media.exception.FormatNotAvailableException
 import com.deadly.v2.core.model.PlaybackStatus
+import com.deadly.v2.core.model.PlaybackState
 import com.deadly.v2.core.model.Track as V2Track
 import com.deadly.v2.core.network.archive.service.ArchiveService
 import dagger.hilt.android.qualifiers.ApplicationContext
@@ -65,6 +66,13 @@ class MediaControllerRepository @Inject constructor(
     // Playback state flows
     private val _isPlaying = MutableStateFlow(false)
     val isPlaying: StateFlow<Boolean> = _isPlaying.asStateFlow()
+    
+    private val _playbackState = MutableStateFlow(PlaybackState.DEFAULT)
+    val playbackState: StateFlow<PlaybackState> = _playbackState.asStateFlow()
+    
+    // Raw ExoPlayer state tracking for combined PlaybackState calculation
+    private var currentExoPlayerState: Int = Player.STATE_IDLE
+    private var currentIsPlaying: Boolean = false
     
     private val _currentTrack = MutableStateFlow<MediaMetadata?>(null)
     val currentTrack: StateFlow<MediaMetadata?> = _currentTrack.asStateFlow()
@@ -171,6 +179,11 @@ class MediaControllerRepository @Inject constructor(
                         mediaItems.forEach { item ->
                             Log.d(TAG, "🕒🎵 [V2-URL] Loading URL: ${item.localConfiguration?.uri} at ${System.currentTimeMillis()}")
                         }
+                        
+                        // Set LOADING state before ExoPlayer operations
+                        _playbackState.value = PlaybackState.LOADING
+                        Log.d(TAG, "🕒🎵 [V2-STATE] Manual LOADING state set before setMediaItems")
+                        
                         controller.setMediaItems(mediaItems, 0, startPosition)
                         Log.d(TAG, "🕒🎵 [V2-URL] MediaController.setMediaItems() completed, calling prepare() at ${System.currentTimeMillis()}")
                         controller.prepare()
@@ -265,6 +278,11 @@ class MediaControllerRepository @Inject constructor(
                                     Log.d(TAG, "🕒🎵 [V2-URL] Loading target track URL: ${item.localConfiguration?.uri} at ${System.currentTimeMillis()}")
                                 }
                             }
+                            
+                            // Set LOADING state before ExoPlayer operations
+                            _playbackState.value = PlaybackState.LOADING
+                            Log.d(TAG, "🕒🎵 [V2-STATE] Manual LOADING state set before setMediaItems for track $trackIndex")
+                            
                             controller.setMediaItems(mediaItems, trackIndex, position)
                             Log.d(TAG, "🕒🎵 [V2-URL] MediaController.setMediaItems(track=$trackIndex, pos=$position) completed at ${System.currentTimeMillis()}")
                             controller.prepare()
@@ -362,6 +380,36 @@ class MediaControllerRepository @Inject constructor(
     }
     
     /**
+     * Update combined PlaybackState based on ExoPlayer state and isPlaying
+     * Called whenever either currentExoPlayerState or currentIsPlaying changes
+     */
+    private fun updatePlaybackState() {
+        val newState = when (currentExoPlayerState) {
+            Player.STATE_IDLE -> PlaybackState.IDLE
+            Player.STATE_BUFFERING -> PlaybackState.BUFFERING
+            Player.STATE_READY -> {
+                if (currentIsPlaying) PlaybackState.PLAYING else PlaybackState.READY
+            }
+            Player.STATE_ENDED -> PlaybackState.ENDED
+            else -> PlaybackState.IDLE
+        }
+        
+        Log.d(TAG, "🕒🎵 [V2-STATE] PlaybackState updated: ExoPlayer=${getExoPlayerStateString(currentExoPlayerState)}, isPlaying=$currentIsPlaying → $newState")
+        _playbackState.value = newState
+    }
+    
+    /**
+     * Helper to convert ExoPlayer state to readable string for logging
+     */
+    private fun getExoPlayerStateString(state: Int): String = when (state) {
+        Player.STATE_IDLE -> "IDLE"
+        Player.STATE_BUFFERING -> "BUFFERING"
+        Player.STATE_READY -> "READY"
+        Player.STATE_ENDED -> "ENDED"
+        else -> "UNKNOWN($state)"
+    }
+    
+    /**
      * Async connection to MediaSessionService
      */
     private fun connectToService() {
@@ -399,6 +447,8 @@ class MediaControllerRepository @Inject constructor(
                                 Log.d(TAG, "🕒🎵 [V2-AUDIO] MediaController detected audio stopped at ${System.currentTimeMillis()}")
                             }
                             _isPlaying.value = isPlaying
+                            currentIsPlaying = isPlaying
+                            updatePlaybackState()
                         }
                         
                         override fun onMediaMetadataChanged(mediaMetadata: MediaMetadata) {
@@ -425,6 +475,11 @@ class MediaControllerRepository @Inject constructor(
                         }
                         
                         override fun onPlaybackStateChanged(playbackState: Int) {
+                            Log.d(TAG, "🕒🎵 [V2-EXOPLAYER] ExoPlayer state changed: ${getExoPlayerStateString(currentExoPlayerState)} → ${getExoPlayerStateString(playbackState)}")
+                            
+                            currentExoPlayerState = playbackState
+                            updatePlaybackState()
+                            
                             if (playbackState == Player.STATE_READY) {
                                 _duration.value = controller.duration.coerceAtLeast(0L)
                                 _currentPosition.value = controller.currentPosition

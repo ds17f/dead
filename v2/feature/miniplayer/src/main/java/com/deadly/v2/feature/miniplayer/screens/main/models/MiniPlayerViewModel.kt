@@ -54,19 +54,18 @@ class MiniPlayerViewModel @Inject constructor(
     private fun observeServiceState() {
         viewModelScope.launch {
             combine(
-                miniPlayerService.isPlaying,
                 miniPlayerService.currentTrackInfo,
                 miniPlayerService.playbackStatus
-            ) { isPlaying, trackInfo, playbackStatus ->
+            ) { trackInfo, playbackStatus ->
                 
                 _uiState.value = MiniPlayerUiState(
-                    isPlaying = isPlaying,
+                    isPlaying = trackInfo?.playbackState?.isPlaying ?: false,
                     currentTrack = trackInfo,
                     progress = playbackStatus.progress,
                     showId = trackInfo?.showId, // Extract from trackInfo
                     recordingId = trackInfo?.recordingId, // Extract from trackInfo
                     shouldShow = trackInfo != null, // Show MiniPlayer when track is loaded
-                    isLoading = false,
+                    isLoading = trackInfo?.playbackState?.isLoading ?: false,
                     error = null
                 )
                 

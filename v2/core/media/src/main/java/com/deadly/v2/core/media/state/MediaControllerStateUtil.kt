@@ -49,18 +49,18 @@ class MediaControllerStateUtil @Inject constructor(
             mediaControllerRepository.currentTrack,
             mediaControllerRepository.currentRecordingId,
             mediaControllerRepository.currentShowId,
-            mediaControllerRepository.isPlaying,
+            mediaControllerRepository.playbackState,
             mediaControllerRepository.currentPosition,
             mediaControllerRepository.duration
         ) { values ->
             val mediaMetadata = values[0] as MediaMetadata?
             val recordingId = values[1] as String?
             val showId = values[2] as String?
-            val isCurrentlyPlaying = values[3] as Boolean
+            val playbackState = values[3] as com.deadly.v2.core.model.PlaybackState
             val currentPosition = values[4] as Long
             val duration = values[5] as Long
             
-            Log.v(TAG, "MediaController state change: metadata=${mediaMetadata != null}, recordingId=$recordingId, showId=$showId, playing=$isCurrentlyPlaying")
+            Log.v(TAG, "MediaController state change: metadata=${mediaMetadata != null}, recordingId=$recordingId, showId=$showId, playbackState=$playbackState")
             
             if (mediaMetadata == null || recordingId == null) {
                 Log.v(TAG, "CurrentTrackInfo is null - missing metadata or recordingId")
@@ -70,7 +70,7 @@ class MediaControllerStateUtil @Inject constructor(
                     metadata = mediaMetadata,
                     recordingId = recordingId,
                     showId = showId,
-                    isPlaying = isCurrentlyPlaying,
+                    playbackState = playbackState,
                     position = currentPosition,
                     duration = duration
                 )
@@ -128,7 +128,7 @@ class MediaControllerStateUtil @Inject constructor(
      * @param metadata MediaMetadata from MediaController
      * @param recordingId Current recording ID from MediaController
      * @param showId Current show ID from MediaController  
-     * @param isPlaying Current playback state from MediaController
+     * @param playbackState Current comprehensive playback state from MediaController
      * @param position Current playback position from MediaController
      * @param duration Current track duration from MediaController
      * @return CurrentTrackInfo with all available data populated
@@ -137,7 +137,7 @@ class MediaControllerStateUtil @Inject constructor(
         metadata: MediaMetadata,
         recordingId: String?,
         showId: String?,
-        isPlaying: Boolean,
+        playbackState: com.deadly.v2.core.model.PlaybackState,
         position: Long,
         duration: Long
     ): CurrentTrackInfo {
@@ -208,12 +208,12 @@ class MediaControllerStateUtil @Inject constructor(
             trackNumber = trackNumber,
             filename = filename,
             format = format,
-            isPlaying = isPlaying,
+            playbackState = playbackState,
             position = position,
             duration = duration
         )
         
-        Log.d(TAG, "CurrentTrackInfo created successfully - Title: ${trackInfo.songTitle}, Recording: ${trackInfo.recordingId}, Playing: ${trackInfo.isPlaying}")
+        Log.d(TAG, "CurrentTrackInfo created successfully - Title: ${trackInfo.songTitle}, Recording: ${trackInfo.recordingId}, PlaybackState: ${trackInfo.playbackState}")
         return trackInfo
     }
     

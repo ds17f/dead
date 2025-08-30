@@ -19,6 +19,7 @@ enum class RepeatMode {
 @Composable
 fun PlayerEnhancedControls(
     isPlaying: Boolean,
+    isLoading: Boolean,
     shuffleEnabled: Boolean,
     repeatMode: RepeatMode,
     hasNext: Boolean,
@@ -67,22 +68,30 @@ fun PlayerEnhancedControls(
         
         Spacer(modifier = Modifier.width(16.dp))
         
-        // Play/Pause - Large circular FAB-style button
+        // Play/Pause - Large circular FAB-style button with loading state
         FloatingActionButton(
             onClick = onPlayPause,
             modifier = Modifier.size(72.dp),
             containerColor = MaterialTheme.colorScheme.primary,
             contentColor = MaterialTheme.colorScheme.onPrimary
         ) {
-            Icon(
-                painter = if (isPlaying) {
-                    IconResources.PlayerControls.Pause()
-                } else {
-                    IconResources.PlayerControls.Play()
-                },
-                contentDescription = if (isPlaying) "Pause" else "Play",
-                modifier = Modifier.size(36.dp)
-            )
+            if (isLoading) {
+                CircularProgressIndicator(
+                    modifier = Modifier.size(24.dp),
+                    color = MaterialTheme.colorScheme.onPrimary,
+                    strokeWidth = 2.dp
+                )
+            } else {
+                Icon(
+                    painter = if (isPlaying) {
+                        IconResources.PlayerControls.Pause()
+                    } else {
+                        IconResources.PlayerControls.Play()
+                    },
+                    contentDescription = if (isPlaying) "Pause" else "Play",
+                    modifier = Modifier.size(36.dp)
+                )
+            }
         }
         
         Spacer(modifier = Modifier.width(16.dp))

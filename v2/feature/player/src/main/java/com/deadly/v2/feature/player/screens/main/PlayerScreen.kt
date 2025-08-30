@@ -277,6 +277,7 @@ fun PlayerScreen(
                         // Enhanced primary controls row
                         PlayerEnhancedControls(
                             isPlaying = uiState.isPlaying,
+                            isLoading = uiState.isLoading,
                             shuffleEnabled = false, // TODO: Make dynamic
                             repeatMode = RepeatMode.NONE, // TODO: Make dynamic
                             hasNext = uiState.hasNext,

@@ -91,20 +91,28 @@ fun MiniPlayerScreen(
                     }
                 }
                 
-                // Play/pause button
+                // Play/pause button with loading state
                 IconButton(
                     onClick = { viewModel.togglePlayPause() },
                     modifier = Modifier.size(48.dp)
                 ) {
-                    Icon(
-                        imageVector = if (uiState.isPlaying) {
-                            Icons.Filled.Pause
-                        } else {
-                            Icons.Filled.PlayArrow
-                        },
-                        contentDescription = if (uiState.isPlaying) "Pause" else "Play",
-                        tint = MaterialTheme.colorScheme.onSurface
-                    )
+                    if (uiState.isLoading) {
+                        CircularProgressIndicator(
+                            modifier = Modifier.size(20.dp),
+                            color = MaterialTheme.colorScheme.onSurface,
+                            strokeWidth = 2.dp
+                        )
+                    } else {
+                        Icon(
+                            imageVector = if (uiState.isPlaying) {
+                                Icons.Filled.Pause
+                            } else {
+                                Icons.Filled.PlayArrow
+                            },
+                            contentDescription = if (uiState.isPlaying) "Pause" else "Play",
+                            tint = MaterialTheme.colorScheme.onSurface
+                        )
+                    }
                 }
             }
             
