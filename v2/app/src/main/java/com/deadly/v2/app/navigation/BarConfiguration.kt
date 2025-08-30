@@ -7,6 +7,7 @@ import com.deadly.v2.core.design.scaffold.MiniPlayerConfig
 import com.deadly.v2.feature.home.screens.main.HomeBarConfiguration
 import com.deadly.v2.feature.search.screens.main.SearchBarConfiguration
 import com.deadly.v2.feature.settings.screens.main.SettingsBarConfiguration
+import com.deadly.v2.feature.library.screens.main.LibraryBarConfiguration
 
 /**
  * Central route mapping to feature bar configurations
@@ -27,11 +28,7 @@ object NavigationBarConfig {
         "settings" -> SettingsBarConfiguration.getSettingsBarConfig()
         
         // Library routes
-        "library" -> BarConfiguration(
-            topBar = null, // Library doesn't need top bar yet
-            bottomBar = BottomBarConfig(visible = true),
-            miniPlayer = MiniPlayerConfig(visible = true) // Show MiniPlayer in library for music context
-        )
+        "library" -> LibraryBarConfiguration.getLibraryBarConfig()
         
         // Player routes - full screen immersive experience
         "player" -> BarConfiguration(

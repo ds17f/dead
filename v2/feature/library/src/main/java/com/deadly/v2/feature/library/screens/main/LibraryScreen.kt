@@ -17,11 +17,6 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
-import com.deadly.v2.core.design.scaffold.AppScaffold
-import com.deadly.v2.core.design.scaffold.TopBarConfig
-import com.deadly.v2.core.design.scaffold.BottomBarConfig
-import com.deadly.v2.core.design.scaffold.MiniPlayerConfig
-import com.deadly.v2.core.design.component.topbar.TopBarMode
 // TODO: Add hierarchical filter when V2 design components are available
 // import com.deadly.v2.core.design.component.HierarchicalFilter
 // import com.deadly.v2.core.design.component.FilterPath
@@ -34,12 +29,14 @@ import com.deadly.v2.feature.library.screens.main.models.LibraryViewModel
  * V2 Library Screen - Main library interface following V2 architecture
  * 
  * Features:
- * - AppScaffold integration with V2 design system
  * - Hierarchical decade/season filtering 
  * - Advanced sorting with pin priority
  * - List/grid display modes
  * - Library management actions
  * - Real-time download status integration
+ * 
+ * Note: Scaffold-free content designed for use within MainNavigation's AppScaffold.
+ * TopBar configuration handled by LibraryBarConfiguration.
  */
 @Composable
 fun LibraryScreen(
@@ -60,36 +57,9 @@ fun LibraryScreen(
     var showSortBottomSheet by remember { mutableStateOf(false) }
     var selectedShowForActions by remember { mutableStateOf<LibraryShowViewModel?>(null) }
     
-    AppScaffold(
-        topBarConfig = TopBarConfig(
-            title = "Your Library",
-            mode = TopBarMode.SOLID,
-            actions = {
-                // Search action
-                IconButton(onClick = { /* TODO: Implement search */ }) {
-                    Icon(
-                        painter = IconResources.Content.Search(),
-                        contentDescription = "Search Library"
-                    )
-                }
-                // Add action  
-                IconButton(onClick = { showAddBottomSheet = true }) {
-                    Icon(
-                        painter = IconResources.Navigation.Add(),
-                        contentDescription = "Add to Library"
-                    )
-                }
-            }
-        ),
-        bottomBarConfig = BottomBarConfig(visible = true),
-        miniPlayerConfig = MiniPlayerConfig(visible = true)
-    ) { paddingValues ->
-        
-        Column(
-            modifier = Modifier
-                .fillMaxSize()
-                .padding(paddingValues)
-        ) {
+    Column(
+        modifier = Modifier.fillMaxSize()
+    ) {
             // TODO: Add hierarchical filters when V2 design components are available
             // HierarchicalFilter(
             //     filterTree = FilterTrees.buildDeadToursTree(),
@@ -150,7 +120,6 @@ fun LibraryScreen(
                 }
             }
         }
-    }
     
     // Bottom Sheets
     if (showAddBottomSheet) {
