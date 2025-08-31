@@ -28,28 +28,29 @@ fun NavController.navigateToPlaylist(showId: String, recordingId: String? = null
 
 /**
  * Add Playlist destinations to NavGraphBuilder
- * 
- * Following V2 navigation patterns where screens accept
- * navigation callbacks rather than NavController directly.
+ * Feature owns all routing decisions for true encapsulation
  * 
  * Supports two routing patterns:
  * - playlist/{showId} - Let show logic decide which recording to display
  * - playlist/{showId}/{recordingId} - Display specific recording
  */
-fun NavGraphBuilder.playlistGraph(
-    onNavigateBack: () -> Unit,
-    onNavigateToPlayer: () -> Unit,
-    onNavigateToShow: (String, String) -> Unit
-) {
+fun NavGraphBuilder.playlistGraph(navController: NavController) {
     // Specific recording route - playlist/{showId}/{recordingId}
     composable(PLAYLIST_RECORDING_ROUTE) { backStackEntry ->
         val showId = backStackEntry.arguments?.getString("showId") ?: ""
         val recordingId = backStackEntry.arguments?.getString("recordingId") ?: ""
         
         PlaylistScreen(
-            onNavigateBack = onNavigateBack,
-            onNavigateToPlayer = onNavigateToPlayer,
-            onNavigateToShow = onNavigateToShow,
+            onNavigateBack = {
+                navController.popBackStack()
+            },
+            onNavigateToPlayer = {
+                navController.navigate("player")
+            },
+            onNavigateToShow = { showId, recordingId ->
+                // Navigate to player with specific recording
+                navController.navigate("player/$recordingId")
+            },
             showId = showId,
             recordingId = recordingId
         )
@@ -60,9 +61,16 @@ fun NavGraphBuilder.playlistGraph(
         val showId = backStackEntry.arguments?.getString("showId") ?: ""
         
         PlaylistScreen(
-            onNavigateBack = onNavigateBack,
-            onNavigateToPlayer = onNavigateToPlayer,
-            onNavigateToShow = onNavigateToShow,
+            onNavigateBack = {
+                navController.popBackStack()
+            },
+            onNavigateToPlayer = {
+                navController.navigate("player")
+            },
+            onNavigateToShow = { showId, recordingId ->
+                // Navigate to player with specific recording
+                navController.navigate("player/$recordingId")
+            },
             showId = showId,
             recordingId = null // Let show logic decide
         )

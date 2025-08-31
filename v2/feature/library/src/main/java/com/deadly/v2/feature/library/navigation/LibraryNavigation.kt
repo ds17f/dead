@@ -15,22 +15,25 @@ import com.deadly.v2.feature.library.screens.main.LibraryScreen
 
 // V2 Library route constants
 object LibraryRoutes {
-    const val LIBRARY_MAIN = "v2_library_main"
+    const val LIBRARY_MAIN = "library"
 }
 
 /**
  * Add V2 Library navigation graph to the overall navigation
+ * Feature owns all routing decisions for true encapsulation
  */
-fun NavGraphBuilder.libraryNavigation(
-    onNavigateToShow: (String) -> Unit,
-    onNavigateToPlayer: (String) -> Unit,
-    onNavigateBack: () -> Unit
-) {
+fun NavGraphBuilder.libraryNavigation(navController: NavController) {
     composable(route = LibraryRoutes.LIBRARY_MAIN) {
         LibraryScreen(
-            onNavigateToShow = onNavigateToShow,
-            onNavigateToPlayer = onNavigateToPlayer,
-            onNavigateBack = onNavigateBack
+            onNavigateToShow = { showId ->
+                navController.navigate("playlist/$showId")
+            },
+            onNavigateToPlayer = { recordingId ->
+                navController.navigate("player/$recordingId")
+            },
+            onNavigateBack = {
+                navController.popBackStack()
+            }
         )
     }
 }

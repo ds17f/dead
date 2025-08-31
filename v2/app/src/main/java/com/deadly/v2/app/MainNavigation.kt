@@ -28,7 +28,7 @@ import com.deadly.v2.feature.playlist.navigation.playlistGraph
 import com.deadly.v2.feature.playlist.navigation.navigateToPlaylist
 import com.deadly.v2.feature.player.navigation.playerScreen
 import com.deadly.v2.feature.miniplayer.screens.main.MiniPlayerScreen
-import com.deadly.v2.feature.library.screens.main.LibraryScreen
+import com.deadly.v2.feature.library.navigation.libraryNavigation
 import com.deadly.v2.core.theme.api.DeadlyTheme
 import com.deadly.v2.core.theme.api.ThemeAssetProvider
 import com.deadly.v2.core.theme.ThemeManager
@@ -132,34 +132,14 @@ fun MainNavigation(
                     HomeScreen()
                 }
                 
-                // Library screen - user's saved content
-                composable("library") {
-                    LibraryScreen(
-                        onNavigateToShow = { showId ->
-                            // TODO: Navigate to show details when implemented
-                            // navController.navigate("show/$showId")
-                        },
-                        onNavigateToPlayer = {
-                            navController.navigate("player")
-                        },
-                        onNavigateBack = { navController.popBackStack() }
-                    )
-                }
+                // Library feature - user's saved content  
+                libraryNavigation(navController)
                 
                 // Search feature - search and browse functionality
                 searchGraph(navController)
                 
                 // Playlist feature - show and recording details
-                playlistGraph(
-                    onNavigateBack = { navController.popBackStack() },
-                    onNavigateToPlayer = {
-                        navController.navigate("player")
-                    },
-                    onNavigateToShow = { showId, recordingId ->
-                        // TODO: Navigate to show details when implemented
-                        // navController.navigate("show/$showId/$recordingId")
-                    }
-                )
+                playlistGraph(navController)
                 
                 // Player feature - playback interface
                 playerScreen(
