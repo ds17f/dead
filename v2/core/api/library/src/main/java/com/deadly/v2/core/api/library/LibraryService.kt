@@ -83,21 +83,6 @@ interface LibraryService {
     suspend fun shareShow(showId: String): Result<Unit>
     
     /**
-     * Navigate to previous show chronologically
-     */
-    suspend fun navigateToPreviousShow(currentShowId: String): Result<String?>
-    
-    /**
-     * Navigate to next show chronologically
-     */
-    suspend fun navigateToNextShow(currentShowId: String): Result<String?>
-    
-    /**
-     * Get current show context for playlist navigation
-     */
-    suspend fun getCurrentShowInfo(showId: String): LibraryShow?
-    
-    /**
      * Populate library with test data for development
      * Only implemented in stub - no-op in real implementations
      */

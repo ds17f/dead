@@ -241,37 +241,6 @@ class LibraryServiceStub @Inject constructor(
         return Result.success(Unit)
     }
     
-    override suspend fun navigateToPreviousShow(currentShowId: String): Result<String?> {
-        Log.d(TAG, "V2 STUB: navigateToPreviousShow('$currentShowId')")
-        
-        val shows = _libraryShows.value.sortedBy { it.date }
-        val currentIndex = shows.indexOfFirst { it.id == currentShowId }
-        
-        return if (currentIndex > 0) {
-            Result.success(shows[currentIndex - 1].id)
-        } else {
-            Result.success(null)
-        }
-    }
-    
-    override suspend fun navigateToNextShow(currentShowId: String): Result<String?> {
-        Log.d(TAG, "V2 STUB: navigateToNextShow('$currentShowId')")
-        
-        val shows = _libraryShows.value.sortedBy { it.date }
-        val currentIndex = shows.indexOfFirst { it.id == currentShowId }
-        
-        return if (currentIndex >= 0 && currentIndex < shows.size - 1) {
-            Result.success(shows[currentIndex + 1].id)
-        } else {
-            Result.success(null)
-        }
-    }
-    
-    override suspend fun getCurrentShowInfo(showId: String): LibraryShow? {
-        Log.d(TAG, "V2 STUB: getCurrentShowInfo('$showId')")
-        return _currentShows.value.find { it.showId == showId }
-    }
-    
     override suspend fun populateTestData(): Result<Unit> {
         Log.d(TAG, "V2 STUB: populateTestData() - creating comprehensive test data")
         

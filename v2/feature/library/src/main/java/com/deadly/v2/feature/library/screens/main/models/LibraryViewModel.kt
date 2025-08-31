@@ -234,44 +234,6 @@ class LibraryViewModel @Inject constructor(
     }
     
     /**
-     * Navigate to previous show chronologically
-     */
-    fun navigateToPreviousShow(currentShowId: String): String? {
-        var previousShowId: String? = null
-        viewModelScope.launch {
-            Log.d(TAG, "Navigating to previous show from '$currentShowId'")
-            libraryService.navigateToPreviousShow(currentShowId)
-                .onSuccess { showId ->
-                    previousShowId = showId
-                    Log.d(TAG, "Previous show: $showId")
-                }
-                .onFailure { error ->
-                    Log.e(TAG, "Failed to navigate to previous show", error)
-                }
-        }
-        return previousShowId
-    }
-    
-    /**
-     * Navigate to next show chronologically
-     */
-    fun navigateToNextShow(currentShowId: String): String? {
-        var nextShowId: String? = null
-        viewModelScope.launch {
-            Log.d(TAG, "Navigating to next show from '$currentShowId'")
-            libraryService.navigateToNextShow(currentShowId)
-                .onSuccess { showId ->
-                    nextShowId = showId
-                    Log.d(TAG, "Next show: $showId")
-                }
-                .onFailure { error ->
-                    Log.e(TAG, "Failed to navigate to next show", error)
-                }
-        }
-        return nextShowId
-    }
-    
-    /**
      * Populate test data for development
      */
     fun populateTestData() {

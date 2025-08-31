@@ -151,25 +151,4 @@ class LibraryServiceImpl @Inject constructor(
         Log.d(TAG, "shareShow('$showId') - TODO: V2 share service integration")
         return Result.success(Unit)
     }
-    
-    // TODO: Navigation service integration - will implement when V2 navigation service is available
-    override suspend fun navigateToPreviousShow(currentShowId: String): Result<String?> {
-        Log.d(TAG, "navigateToPreviousShow('$currentShowId') - TODO: V2 navigation service integration")
-        return Result.success(null)
-    }
-    
-    override suspend fun navigateToNextShow(currentShowId: String): Result<String?> {
-        Log.d(TAG, "navigateToNextShow('$currentShowId') - TODO: V2 navigation service integration")
-        return Result.success(null)
-    }
-    
-    override suspend fun getCurrentShowInfo(showId: String): LibraryShow? {
-        Log.d(TAG, "getCurrentShowInfo('$showId') - PURE V2 implementation using V2 LibraryRepository")
-        return try {
-            _currentShows.value.find { it.showId == showId }
-        } catch (e: Exception) {
-            Log.w(TAG, "Error getting current show info for '$showId'", e)
-            null
-        }
-    }
 }
