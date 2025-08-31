@@ -59,7 +59,7 @@ fun LibraryShowListItem(
                 contentAlignment = Alignment.Center
             ) {
                 Icon(
-                    painter = IconResources.PlayerControls.Play(),
+                    painter = IconResources.PlayerControls.AlbumArt(),
                     contentDescription = null,
                     modifier = Modifier.size(30.dp),
                     tint = MaterialTheme.colorScheme.primary
@@ -90,10 +90,10 @@ fun LibraryShowListItem(
                     // Download indicator
                     if (show.downloadStatus == LibraryDownloadStatus.COMPLETED) {
                         Icon(
-                            painter = IconResources.Content.DownloadDone(),
+                            painter = IconResources.Status.CheckCircle(),
                             contentDescription = "Downloaded",
                             modifier = Modifier.size(12.dp),
-                            tint = MaterialTheme.colorScheme.tertiary
+                            tint = MaterialTheme.colorScheme.error
                         )
                         Spacer(modifier = Modifier.width(4.dp))
                     }
@@ -187,7 +187,7 @@ fun LibraryShowGridItem(
                 contentAlignment = Alignment.Center
             ) {
                 Icon(
-                    painter = IconResources.PlayerControls.Play(),
+                    painter = IconResources.PlayerControls.AlbumArt(),
                     contentDescription = null,
                     modifier = Modifier.size(32.dp),
                     tint = MaterialTheme.colorScheme.primary
@@ -219,10 +219,10 @@ fun LibraryShowGridItem(
                     // Download indicator
                     if (show.downloadStatus == LibraryDownloadStatus.COMPLETED) {
                         Icon(
-                            painter = IconResources.Content.DownloadDone(),
+                            painter = IconResources.Status.CheckCircle(),
                             contentDescription = "Downloaded",
                             modifier = Modifier.size(8.dp),
-                            tint = MaterialTheme.colorScheme.tertiary
+                            tint = MaterialTheme.colorScheme.error
                         )
                         Spacer(modifier = Modifier.width(2.dp))
                     }

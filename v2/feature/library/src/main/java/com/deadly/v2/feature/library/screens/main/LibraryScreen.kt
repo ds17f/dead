@@ -17,10 +17,9 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
-// TODO: Add hierarchical filter when V2 design components are available
-// import com.deadly.v2.core.design.component.HierarchicalFilter
-// import com.deadly.v2.core.design.component.FilterPath
-// import com.deadly.v2.core.design.component.FilterTrees
+import com.deadly.v2.core.design.component.HierarchicalFilter
+import com.deadly.v2.core.design.component.FilterPath
+import com.deadly.v2.core.design.component.FilterTrees
 import com.deadly.v2.core.model.*
 import com.deadly.v2.feature.library.screens.main.components.*
 import com.deadly.v2.feature.library.screens.main.models.LibraryViewModel
@@ -48,8 +47,7 @@ fun LibraryScreen(
     val uiState by viewModel.uiState.collectAsState()
     
     // UI State
-    // TODO: Add hierarchical filtering when V2 design components are available
-    // var filterPath by remember { mutableStateOf(FilterPath()) }
+    var filterPath by remember { mutableStateOf(FilterPath()) }
     var sortBy by remember { mutableStateOf(LibrarySortOption.DATE_ADDED) }
     var sortDirection by remember { mutableStateOf(LibrarySortDirection.DESCENDING) }
     var displayMode by remember { mutableStateOf(LibraryDisplayMode.LIST) }
@@ -60,13 +58,15 @@ fun LibraryScreen(
     Column(
         modifier = Modifier.fillMaxSize()
     ) {
-            // TODO: Add hierarchical filters when V2 design components are available
-            // HierarchicalFilter(
-            //     filterTree = FilterTrees.buildDeadToursTree(),
-            //     selectedPath = filterPath,
-            //     onSelectionChanged = { filterPath = it },
-            //     modifier = Modifier.fillMaxWidth()
-            // )
+            // Hierarchical Filters
+            HierarchicalFilter(
+                filterTree = FilterTrees.buildDeadToursTree(),
+                selectedPath = filterPath,
+                onSelectionChanged = { filterPath = it },
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(horizontal = 16.dp, vertical = 8.dp)
+            )
             
             // Sort Controls and Display Toggle
             SortAndDisplayControls(
@@ -100,10 +100,11 @@ fun LibraryScreen(
                 }
                 
                 else -> {
-                    // Apply sorting (filtering temporarily disabled until V2 design components are available)
-                    val filteredAndSortedShows = remember(uiState.shows, sortBy, sortDirection) {
-                        applySorting(
+                    // Apply filtering and sorting
+                    val filteredAndSortedShows = remember(uiState.shows, filterPath, sortBy, sortDirection) {
+                        applyFiltersAndSorting(
                             shows = uiState.shows,
+                            filterPath = filterPath,
                             sortBy = sortBy,
                             sortDirection = sortDirection
                         )
@@ -321,42 +322,98 @@ private fun EmptyLibraryContent(
 }
 
 /**
- * Apply sorting to the shows list (with pin priority)
+ * Apply filtering and sorting to the shows list (with pin priority)
  */
-private fun applySorting(
+private fun applyFiltersAndSorting(
     shows: List<LibraryShowViewModel>,
+    filterPath: FilterPath,
     sortBy: LibrarySortOption,
     sortDirection: LibrarySortDirection
 ): List<LibraryShowViewModel> {
+    // Apply filtering first
+    val filteredShows = if (filterPath.isEmpty) {
+        shows
+    } else {
+        applyHierarchicalFiltering(shows, filterPath)
+    }
+    
+    // Then apply sorting (with pin priority)
     return when (sortBy) {
         LibrarySortOption.DATE_OF_SHOW -> {
             if (sortDirection == LibrarySortDirection.ASCENDING) {
-                shows.sortedWith(compareBy<LibraryShowViewModel> { !it.isPinned }.thenBy { it.date })
+                filteredShows.sortedWith(compareBy<LibraryShowViewModel> { !it.isPinned }.thenBy { it.date })
             } else {
-                shows.sortedWith(compareBy<LibraryShowViewModel> { !it.isPinned }.thenByDescending { it.date })
+                filteredShows.sortedWith(compareBy<LibraryShowViewModel> { !it.isPinned }.thenByDescending { it.date })
             }
         }
         LibrarySortOption.DATE_ADDED -> {
             if (sortDirection == LibrarySortDirection.ASCENDING) {
-                shows.sortedWith(compareBy<LibraryShowViewModel> { !it.isPinned }.thenBy { it.addedToLibraryAt })
+                filteredShows.sortedWith(compareBy<LibraryShowViewModel> { !it.isPinned }.thenBy { it.addedToLibraryAt })
             } else {
-                shows.sortedWith(compareBy<LibraryShowViewModel> { !it.isPinned }.thenByDescending { it.addedToLibraryAt })
+                filteredShows.sortedWith(compareBy<LibraryShowViewModel> { !it.isPinned }.thenByDescending { it.addedToLibraryAt })
             }
         }
         LibrarySortOption.VENUE -> {
             if (sortDirection == LibrarySortDirection.ASCENDING) {
-                shows.sortedWith(compareBy<LibraryShowViewModel> { !it.isPinned }.thenBy { it.venue })
+                filteredShows.sortedWith(compareBy<LibraryShowViewModel> { !it.isPinned }.thenBy { it.venue })
             } else {
-                shows.sortedWith(compareBy<LibraryShowViewModel> { !it.isPinned }.thenByDescending { it.venue })
+                filteredShows.sortedWith(compareBy<LibraryShowViewModel> { !it.isPinned }.thenByDescending { it.venue })
             }
         }
         LibrarySortOption.RATING -> {
             if (sortDirection == LibrarySortDirection.ASCENDING) {
-                shows.sortedWith(compareBy<LibraryShowViewModel> { !it.isPinned }.thenBy { it.rating ?: 0f })
+                filteredShows.sortedWith(compareBy<LibraryShowViewModel> { !it.isPinned }.thenBy { it.rating ?: 0f })
             } else {
-                shows.sortedWith(compareBy<LibraryShowViewModel> { !it.isPinned }.thenByDescending { it.rating ?: 0f })
+                filteredShows.sortedWith(compareBy<LibraryShowViewModel> { !it.isPinned }.thenByDescending { it.rating ?: 0f })
             }
         }
+    }
+}
+
+/**
+ * Apply hierarchical filtering based on decade and season
+ */
+private fun applyHierarchicalFiltering(
+    shows: List<LibraryShowViewModel>,
+    filterPath: FilterPath
+): List<LibraryShowViewModel> {
+    val selectedDecadeNode = filterPath.nodes.firstOrNull()
+    val selectedSeasonNode = filterPath.nodes.getOrNull(1) // Second level is season
+    
+    return if (selectedDecadeNode != null) {
+        shows.filter { show ->
+            // Parse year from show data
+            val year = show.date.substring(0, 4).toIntOrNull() ?: 0
+            
+            // First filter by decade
+            val decadeMatches = when (selectedDecadeNode.id) {
+                "60s" -> year in 1960..1969
+                "70s" -> year in 1970..1979
+                "80s" -> year in 1980..1989
+                "90s" -> year in 1990..1999
+                else -> true // Show all if unknown decade
+            }
+            
+            // If decade matches and we have a season filter, also check season
+            if (decadeMatches && selectedSeasonNode != null) {
+                val month = extractMonthFromDate(show.date)
+                if (month != null) {
+                    when (selectedSeasonNode.id.substringAfter("_")) { // Extract season from ID like "70s_spring"
+                        "spring" -> month in 3..5   // March, April, May
+                        "summer" -> month in 6..8   // June, July, August  
+                        "fall" -> month in 9..11    // September, October, November
+                        "winter" -> month == 12 || month in 1..2  // December, January, February
+                        else -> true
+                    }
+                } else {
+                    true // If we can't parse month, include the show
+                }
+            } else {
+                decadeMatches
+            }
+        }
+    } else {
+        shows
     }
 }
 
