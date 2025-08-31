@@ -23,7 +23,7 @@ import javax.inject.Named
  */
 @HiltViewModel
 class LibraryViewModel @Inject constructor(
-    @Named("real") private val libraryService: LibraryService
+    private val libraryService: LibraryService
 ) : ViewModel() {
     
     companion object {

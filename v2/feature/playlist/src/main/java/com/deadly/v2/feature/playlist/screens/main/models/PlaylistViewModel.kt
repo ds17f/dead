@@ -34,7 +34,7 @@ import javax.inject.Named
 class PlaylistViewModel @Inject constructor(
     private val playlistService: PlaylistService,
     private val mediaControllerRepository: MediaControllerRepository,
-    @Named("real") private val libraryService: LibraryService
+    private val libraryService: LibraryService
 ) : ViewModel() {
     
     companion object {
