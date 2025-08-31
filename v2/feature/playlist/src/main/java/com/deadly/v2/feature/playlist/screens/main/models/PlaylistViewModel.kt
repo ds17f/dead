@@ -4,6 +4,7 @@ import android.util.Log
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.deadly.v2.core.api.playlist.PlaylistService
+import com.deadly.v2.core.api.library.LibraryService
 import com.deadly.v2.core.model.*
 import com.deadly.v2.core.media.repository.MediaControllerRepository
 import com.deadly.v2.core.media.exception.FormatNotAvailableException
@@ -17,6 +18,7 @@ import kotlinx.coroutines.Job
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.flow.SharingStarted
 import javax.inject.Inject
+import javax.inject.Named
 
 /**
  * PlaylistViewModel - Clean ViewModel for Playlist UI
@@ -27,7 +29,8 @@ import javax.inject.Inject
 @HiltViewModel
 class PlaylistViewModel @Inject constructor(
     private val playlistService: PlaylistService,
-    private val mediaControllerRepository: MediaControllerRepository
+    private val mediaControllerRepository: MediaControllerRepository,
+    @Named("real") private val libraryService: LibraryService
 ) : ViewModel() {
     
     companion object {
@@ -266,8 +269,19 @@ class PlaylistViewModel @Inject constructor(
     fun addToLibrary() {
         viewModelScope.launch {
             try {
-                playlistService.addToLibrary()
-                _baseUiState.value = _baseUiState.value.copy(isInLibrary = true)
+                val currentShow = _baseUiState.value.showData
+                if (currentShow?.showId != null) {
+                    libraryService.addToLibrary(currentShow.showId)
+                        .onSuccess {
+                            _baseUiState.value = _baseUiState.value.copy(isInLibrary = true)
+                            Log.d(TAG, "Successfully added show ${currentShow.showId} to library")
+                        }
+                        .onFailure { error ->
+                            Log.e(TAG, "Failed to add show ${currentShow.showId} to library", error)
+                        }
+                } else {
+                    Log.w(TAG, "Cannot add to library - no show ID available")
+                }
             } catch (e: Exception) {
                 Log.e(TAG, "Error adding to library", e)
             }
@@ -305,9 +319,19 @@ class PlaylistViewModel @Inject constructor(
     private fun removeFromLibrary() {
         viewModelScope.launch {
             try {
-                // In real implementation, would call service method
-                _baseUiState.value = _baseUiState.value.copy(isInLibrary = false)
-                Log.d(TAG, "Removed from library")
+                val currentShow = _baseUiState.value.showData
+                if (currentShow?.showId != null) {
+                    libraryService.removeFromLibrary(currentShow.showId)
+                        .onSuccess {
+                            _baseUiState.value = _baseUiState.value.copy(isInLibrary = false)
+                            Log.d(TAG, "Successfully removed show ${currentShow.showId} from library")
+                        }
+                        .onFailure { error ->
+                            Log.e(TAG, "Failed to remove show ${currentShow.showId} from library", error)
+                        }
+                } else {
+                    Log.w(TAG, "Cannot remove from library - no show ID available")
+                }
             } catch (e: Exception) {
                 Log.e(TAG, "Error removing from library", e)
             }
@@ -320,9 +344,27 @@ class PlaylistViewModel @Inject constructor(
     private fun removeFromLibraryWithDownloads() {
         viewModelScope.launch {
             try {
-                // In real implementation, would call service method to remove downloads too
-                _baseUiState.value = _baseUiState.value.copy(isInLibrary = false)
-                Log.d(TAG, "Removed from library with downloads")
+                val currentShow = _baseUiState.value.showData
+                if (currentShow?.showId != null) {
+                    // First cancel any downloads for this show
+                    libraryService.cancelShowDownloads(currentShow.showId)
+                        .onSuccess {
+                            // Then remove from library
+                            libraryService.removeFromLibrary(currentShow.showId)
+                                .onSuccess {
+                                    _baseUiState.value = _baseUiState.value.copy(isInLibrary = false)
+                                    Log.d(TAG, "Successfully removed show ${currentShow.showId} from library with downloads")
+                                }
+                                .onFailure { error ->
+                                    Log.e(TAG, "Failed to remove show ${currentShow.showId} from library after canceling downloads", error)
+                                }
+                        }
+                        .onFailure { error ->
+                            Log.e(TAG, "Failed to cancel downloads for show ${currentShow.showId}", error)
+                        }
+                } else {
+                    Log.w(TAG, "Cannot remove from library with downloads - no show ID available")
+                }
             } catch (e: Exception) {
                 Log.e(TAG, "Error removing from library with downloads", e)
             }

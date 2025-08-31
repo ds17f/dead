@@ -10,6 +10,7 @@ import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.flow.map
 import javax.inject.Inject
 import javax.inject.Singleton
+import com.deadly.v2.core.model.V2Database
 
 /**
  * V2 LibraryRepository - Pure V2 implementation integrating database and domain layers
@@ -21,7 +22,7 @@ import javax.inject.Singleton
  */
 @Singleton
 class LibraryRepository @Inject constructor(
-    private val libraryDao: LibraryDao,
+    @V2Database private val libraryDao: LibraryDao,
     private val showRepository: ShowRepository
 ) {
     
