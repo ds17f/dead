@@ -251,9 +251,87 @@ class LibraryRepository @Inject constructor(
 }
 ```
 
-### Next Phase: Real Service Implementation
-1. **Add missing V2 dependencies** (domain, media repositories)
-2. **Create LibraryRepository** following V2 database patterns  
-3. **Implement LibraryServiceImpl** with direct delegation architecture
-4. **Replace stub binding** with real service in Hilt module
-5. **Test end-to-end** library operations with real data
+### Phase 2.5: Incremental Real Service Implementation Strategy ✅
+
+**Previous Working State:**
+- LibraryServiceStub: 0 dependencies, comprehensive test data, working UI
+- LibraryViewModel: `@Named("stub")` injection working  
+- Build: Clean compile and install successful
+
+#### **Step 1: Dependencies Validation** ✅
+- [x] Add `v2:core:domain` to build.gradle.kts → **build test**
+- [x] Add `v2:core:media` to build.gradle.kts → **build test**  
+- [x] Verify ShowRepository, MediaControllerRepository available → **compilation test**
+
+#### **Step 2: Shell Implementation** ✅
+- [x] Create `LibraryServiceImpl` with real dependencies (ShowRepository, MediaControllerRepository)
+- [x] Add `@Named("real")` Hilt binding → **build test**
+- [x] Keep ViewModel using `@Named("stub")` → **runtime test**
+
+#### **Step 3: Method Implementation Attempted** 🔄
+- [x] Basic method signatures implemented
+- [~] Real database integration blocked by v1 dependency issues
+- **Lesson Learned**: V1 integration violates "No V1 Dependencies" principle
+
+**Next Phase: Pure V2 Database Implementation** (Current Goal)
+
+### Phase 3: Pure V2 Database Implementation ✅
+
+**Objective:** Build clean V2 database layer with zero v1 dependencies
+
+#### **Step 1: V2 Database Entities** ✅
+- [x] Created `LibraryShowEntity` following V2 database patterns (`library_shows` table)
+- [x] Defined complete schema: showId, addedToLibraryAt, isPinned, libraryNotes, customRating, lastAccessedAt, tags
+- [x] Added foreign key relationship to ShowEntity following V2 entity patterns
+
+#### **Step 2: V2 Data Access Layer** ✅
+- [x] Created `LibraryDao` with comprehensive Room annotations
+- [x] Implemented full CRUD operations with reactive Flow returns
+- [x] Added statistics queries (show count, pinned count) 
+- [x] Added to DeadlyDatabase component (entities + DAO method)
+- [x] Incremented database version to 8
+
+#### **Step 3: V2 Repository Layer** ✅
+- [x] Created `LibraryRepository` integrating ShowRepository + LibraryDao
+- [x] Converts between database entities and domain models (LibraryShow)
+- [x] Implemented reactive `getLibraryShowsFlow()` with Show metadata enrichment
+- [x] Added statistics flow for LibraryStats generation
+
+#### **Step 4: Real LibraryServiceImpl** ✅
+- [x] Completely replaced stub implementation with pure V2 architecture
+- [x] Zero v1 dependencies - uses LibraryRepository + ShowRepository only
+- [x] Direct delegation architecture following PlaylistServiceImpl patterns
+- [x] All methods implemented using V2 database operations
+- [x] StateFlow conversion for reactive UI integration
+
+#### **Step 5: Integration** (Next Step)
+- [ ] Switch ViewModel from `@Named("stub")` to `@Named("real")`  
+- [ ] End-to-end testing with real V2 database operations
+- [ ] Remove stub implementation from bindings
+
+### Phase 3 Deliverables ✅
+
+**Complete V2 Database Stack:**
+- [x] `v2/core/database/entities/LibraryShowEntity.kt` - V2 database entity with foreign keys
+- [x] `v2/core/database/dao/LibraryDao.kt` - Complete CRUD operations with reactive queries  
+- [x] `v2/core/database/DeadlyDatabase.kt` - Updated with LibraryShowEntity and libraryDao()
+- [x] `v2/core/library/repository/LibraryRepository.kt` - Domain model conversion and Show integration
+- [x] `v2/core/library/service/LibraryServiceImpl.kt` - Pure V2 real implementation
+- [x] **Build Status**: ✅ Compiles successfully with zero v1 dependencies
+
+**Architecture Compliance:**
+- ✅ **Zero V1 Dependencies**: Pure V2 implementation using only ShowRepository and LibraryRepository
+- ✅ **Direct Delegation Pattern**: Following PlaylistServiceImpl architecture with real database operations
+- ✅ **Reactive StateFlows**: All service methods return proper StateFlow for UI integration
+- ✅ **Foreign Key Relationships**: LibraryShowEntity properly references ShowEntity
+- ✅ **Database Migration**: Version 8 with clean schema design
+
+**Ready for Integration:**
+The complete V2 library database stack is built and functional. The final step is switching the ViewModel from `@Named("stub")` to `@Named("real")` to activate the real implementation with full V2 database operations.
+
+### Legacy Implementation Plan (Reference)
+1. **Add missing V2 dependencies** (domain, media repositories) ✅  
+2. **Create LibraryRepository** following V2 database patterns ✅
+3. **Implement LibraryServiceImpl** with direct delegation architecture ✅
+4. **Replace stub binding** with real service in Hilt module (Next Step)
+5. **Test end-to-end** library operations with real data (Next Step)

@@ -40,6 +40,9 @@ dependencies {
     // V2 Core dependencies
     implementation(project(":v2:core:api:library"))
     implementation(project(":v2:core:model"))
+    implementation(project(":v2:core:domain"))
+    implementation(project(":v2:core:media"))
+    implementation(project(":v2:core:database"))
 
     // Hilt
     implementation("com.google.dagger:hilt-android:2.51.1")

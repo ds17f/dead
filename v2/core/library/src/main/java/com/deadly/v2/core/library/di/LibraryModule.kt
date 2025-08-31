@@ -2,6 +2,8 @@ package com.deadly.v2.core.library.di
 
 import com.deadly.v2.core.api.library.LibraryService
 import com.deadly.v2.core.library.service.LibraryServiceStub
+import com.deadly.v2.core.library.service.LibraryServiceImpl
+import com.deadly.v2.core.library.repository.LibraryRepository
 import dagger.Binds
 import dagger.Module
 import dagger.Provides
@@ -31,13 +33,12 @@ abstract class LibraryModule {
         impl: LibraryServiceStub
     ): LibraryService
     
-    // Future: Real implementation binding
-    // @Binds
-    // @Singleton  
-    // @Named("real")
-    // abstract fun bindLibraryServiceReal(
-    //     impl: LibraryServiceImpl
-    // ): LibraryService
+    @Binds
+    @Singleton  
+    @Named("real")
+    abstract fun bindLibraryServiceReal(
+        impl: LibraryServiceImpl
+    ): LibraryService
     
     companion object {
         
