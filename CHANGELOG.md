@@ -1,11 +1,34 @@
 # Changelog
 
+## [0.62.0] - 2025-08-31
+
+### New Features
+* complete hierarchical filtering and visual polish (d0f8058c)
+* add reactive library status UI feedback and eliminate duplication (87a2ce2e)
+* integrate real library operations in PlaylistViewModel (69944a62)
+* complete Phase 3 - Pure V2 database implementation (fb02bd0a)
+* complete V2 Library architecture implementation (856beabc)
+* migrate all V2 modules to Java 17 (f5742499)
+* complete Phase 1 - V2 Library core architecture foundation (be95f83a)
+
+### Bug Fixes
+* resolve double scaffolding and follow V2 architecture patterns (b877f5a5)
+* resolve service plumbing and loading issues (0138c040)
+
+### Code Refactoring
+* remove stub implementation and simplify service architecture (bc4d2329)
+* standardize navigation architecture with navController pattern (9c94b558)
+* remove navigation functions from LibraryService (bccd5cfb)
+
+### Documentation Updates
+* update migration plan with completed work and real service roadmap (5f7d5c89)
+* Add a migration plan doc (386051fa)
+
+
 ## [0.61.0] - 2025-08-29
 
 ### New Features
 * MVP Basic Android Auto Support (805cf0b6)
-
-
 ## [0.60.0] - 2025-08-29
 
 ### New Features
