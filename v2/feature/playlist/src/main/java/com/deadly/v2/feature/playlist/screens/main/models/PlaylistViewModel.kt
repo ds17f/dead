@@ -14,6 +14,10 @@ import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.flow.stateIn
+import kotlinx.coroutines.flow.map
+import kotlinx.coroutines.flow.distinctUntilChanged
+import kotlinx.coroutines.flow.flatMapLatest
+import kotlinx.coroutines.flow.flowOf
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.flow.SharingStarted
@@ -42,13 +46,23 @@ class PlaylistViewModel @Inject constructor(
     private val _baseUiState = MutableStateFlow(PlaylistUiState())
     private val _rawTrackData = MutableStateFlow<List<PlaylistTrackViewModel>>(emptyList())
     
-    // Reactive UI state that combines base state with MediaController state
+    // Reactive UI state that combines base state with MediaController state and library status
     val uiState: StateFlow<PlaylistUiState> = combine(
         _baseUiState,
         _rawTrackData,
         playlistService.isPlaying,
-        playlistService.currentTrackInfo
-    ) { baseState, rawTracks, isPlaying, currentTrackInfo ->
+        playlistService.currentTrackInfo,
+        _baseUiState
+            .map { baseState -> baseState.showData?.showId }
+            .distinctUntilChanged()
+            .flatMapLatest { showId ->
+                if (showId != null) {
+                    libraryService.isShowInLibrary(showId)
+                } else {
+                    flowOf(false)
+                }
+            }
+    ) { baseState, rawTracks, isPlaying, currentTrackInfo, isInLibrary ->
         
         // Update track data with current playing state
         val updatedTracks = rawTracks.map { track ->
@@ -73,12 +87,17 @@ class PlaylistViewModel @Inject constructor(
         Log.v(TAG, "Play button logic: playlistShow='$playlistShowId' vs mediaShow='$mediaShowId'")
         Log.v(TAG, "Play button logic: playlistRecording='$playlistRecordingId' vs mediaRecording='$mediaRecordingId'")  
         Log.v(TAG, "Play button logic: isCurrentShowAndRecording=$isCurrentShowAndRecording, isPlaying=$isPlaying")
+        Log.v(TAG, "Library status: showId='$playlistShowId', isInLibrary=$isInLibrary")
+        
+        // Update showData with current library status
+        val updatedShowData = baseState.showData?.copy(isInLibrary = isInLibrary)
         
         baseState.copy(
             trackData = updatedTracks,
             isPlaying = isPlaying,
             isCurrentShowAndRecording = isCurrentShowAndRecording,
-            mediaLoading = currentTrackInfo?.playbackState?.isLoading ?: false
+            mediaLoading = currentTrackInfo?.playbackState?.isLoading ?: false,
+            showData = updatedShowData
         )
     }.stateIn(
         scope = viewModelScope,
@@ -273,8 +292,8 @@ class PlaylistViewModel @Inject constructor(
                 if (currentShow?.showId != null) {
                     libraryService.addToLibrary(currentShow.showId)
                         .onSuccess {
-                            _baseUiState.value = _baseUiState.value.copy(isInLibrary = true)
                             Log.d(TAG, "Successfully added show ${currentShow.showId} to library")
+                            // UI will update automatically via reactive StateFlow
                         }
                         .onFailure { error ->
                             Log.e(TAG, "Failed to add show ${currentShow.showId} to library", error)
@@ -323,8 +342,8 @@ class PlaylistViewModel @Inject constructor(
                 if (currentShow?.showId != null) {
                     libraryService.removeFromLibrary(currentShow.showId)
                         .onSuccess {
-                            _baseUiState.value = _baseUiState.value.copy(isInLibrary = false)
                             Log.d(TAG, "Successfully removed show ${currentShow.showId} from library")
+                            // UI will update automatically via reactive StateFlow
                         }
                         .onFailure { error ->
                             Log.e(TAG, "Failed to remove show ${currentShow.showId} from library", error)
@@ -352,8 +371,8 @@ class PlaylistViewModel @Inject constructor(
                             // Then remove from library
                             libraryService.removeFromLibrary(currentShow.showId)
                                 .onSuccess {
-                                    _baseUiState.value = _baseUiState.value.copy(isInLibrary = false)
                                     Log.d(TAG, "Successfully removed show ${currentShow.showId} from library with downloads")
+                                    // UI will update automatically via reactive StateFlow
                                 }
                                 .onFailure { error ->
                                     Log.e(TAG, "Failed to remove show ${currentShow.showId} from library after canceling downloads", error)

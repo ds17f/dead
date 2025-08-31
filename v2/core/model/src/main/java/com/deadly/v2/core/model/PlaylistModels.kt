@@ -121,7 +121,6 @@ data class PlaylistUiState(
     val trackData: List<PlaylistTrackViewModel> = emptyList(),
     val currentTrackIndex: Int = -1,
     val isPlaying: Boolean = false,
-    val isInLibrary: Boolean = false,
     // Progressive loading: spinner over track section only
     val isTrackListLoading: Boolean = false,
     // Review details modal state
