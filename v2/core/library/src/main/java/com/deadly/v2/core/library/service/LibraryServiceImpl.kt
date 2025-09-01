@@ -30,6 +30,7 @@ class LibraryServiceImpl @Inject constructor(
     private val showRepository: ShowRepository,
     private val mediaControllerRepository: MediaControllerRepository,
     private val libraryRepository: LibraryRepository,
+    private val shareService: ShareService,
     @Named("LibraryApplicationScope") private val coroutineScope: CoroutineScope
 ) : LibraryService {
     
@@ -146,9 +147,34 @@ class LibraryServiceImpl @Inject constructor(
         return kotlinx.coroutines.flow.MutableStateFlow(LibraryDownloadStatus.NOT_DOWNLOADED)
     }
     
-    // TODO: Share service integration - will implement when V2 share service is available
+    // ✅ PURE V2 IMPLEMENTATION: Share show using V2 ShareService
     override suspend fun shareShow(showId: String): Result<Unit> {
-        Log.d(TAG, "shareShow('$showId') - TODO: V2 share service integration")
-        return Result.success(Unit)
+        Log.d(TAG, "shareShow('$showId') - PURE V2 implementation using V2 ShareService")
+        
+        return try {
+            // Get show data from repository
+            val show = showRepository.getShowById(showId)
+            if (show == null) {
+                Log.w(TAG, "Show not found for sharing: $showId")
+                return Result.failure(Exception("Show not found: $showId"))
+            }
+            
+            // Get best recording for the show
+            val recording = showRepository.getBestRecordingForShow(showId)
+            if (recording == null) {
+                Log.w(TAG, "No recording found for sharing show: $showId")
+                return Result.failure(Exception("No recording found for show: $showId"))
+            }
+            
+            Log.d(TAG, "Sharing show: ${show.displayTitle} with recording: ${recording.identifier}")
+            shareService.shareShow(show, recording)
+            
+            Log.d(TAG, "Successfully shared show: ${show.displayTitle}")
+            Result.success(Unit)
+            
+        } catch (e: Exception) {
+            Log.e(TAG, "Error sharing show '$showId'", e)
+            Result.failure(e)
+        }
     }
 }
