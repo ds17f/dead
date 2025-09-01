@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.63.0] - 2025-08-31
+
+### New Features
+* implement real sharing functionality using local ShareService (314b50cd)
+
+
 ## [0.62.0] - 2025-08-31
 
 ### New Features
@@ -23,8 +29,6 @@
 ### Documentation Updates
 * update migration plan with completed work and real service roadmap (5f7d5c89)
 * Add a migration plan doc (386051fa)
-
-
 ## [0.61.0] - 2025-08-29
 
 ### New Features
