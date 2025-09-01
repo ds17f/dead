@@ -68,6 +68,9 @@ interface ShowDao {
     @Query("SELECT * FROM shows ORDER BY date DESC LIMIT :limit")
     suspend fun getRecentShows(limit: Int = 20): List<ShowEntity>
     
+    @Query("SELECT * FROM shows WHERE month = :month AND SUBSTR(date, 9, 2) = PRINTF('%02d', :day) ORDER BY year")
+    suspend fun getShowsForDate(month: Int, day: Int): List<ShowEntity>
+    
     // Navigation queries for efficient chronological traversal
     @Query("SELECT * FROM shows WHERE date > :currentDate ORDER BY date ASC LIMIT 1")
     suspend fun getNextShowByDate(currentDate: String): ShowEntity?

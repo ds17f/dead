@@ -77,6 +77,10 @@ class ShowRepositoryImpl @Inject constructor(
         return showMappers.entitiesToDomain(showDao.getRecentShows(limit))
     }
     
+    override suspend fun getShowsForDate(month: Int, day: Int): List<Show> {
+        return showMappers.entitiesToDomain(showDao.getShowsForDate(month, day))
+    }
+    
     override suspend fun getShowCount(): Int = showDao.getShowCount()
     
     // Navigation queries - efficient chronological traversal

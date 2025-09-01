@@ -4,10 +4,11 @@ plugins {
     id("com.google.dagger.hilt.android")
     id("kotlin-kapt")
     id("com.google.devtools.ksp")
+    id("kotlinx-serialization")
 }
 
 android {
-    namespace = "com.deadly.v2.feature.home"
+    namespace = "com.deadly.v2.core.home"
     compileSdk = 34
 
     defaultConfig {
@@ -35,43 +36,19 @@ android {
     kotlinOptions {
         jvmTarget = "17"
     }
-    
-    buildFeatures {
-        compose = true
-    }
-    
-    composeOptions {
-        kotlinCompilerExtensionVersion = rootProject.extra["compose_compiler_version"] as String
-    }
 }
 
 dependencies {
-    // V2 Core Dependencies
-    implementation(project(":v2:core:design"))
-    implementation(project(":v2:core:theme-api"))
+    // V2 API dependencies
     implementation(project(":v2:core:api:home"))
-    implementation(project(":v2:core:home"))
     implementation(project(":v2:core:model"))
-    
-    // V2 Feature Dependencies
-    implementation(project(":v2:feature:settings"))
-    
-    // Android & Compose
-    implementation("androidx.core:core-ktx:1.12.0")
-    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.7.0")
-    
-    // Compose BOM
-    implementation(platform("androidx.compose:compose-bom:2024.05.00"))
-    implementation("androidx.compose.ui:ui")
-    implementation("androidx.compose.ui:ui-graphics")
-    implementation("androidx.compose.ui:ui-tooling-preview")
-    implementation("androidx.compose.material3:material3")
-    implementation("androidx.navigation:navigation-compose:2.7.7")
     
     // Hilt
     implementation("com.google.dagger:hilt-android:2.51.1")
-    implementation("androidx.hilt:hilt-navigation-compose:1.2.0")
     ksp("com.google.dagger:hilt-compiler:2.51.1")
+    
+    // Coroutines
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
     
     // Testing
     testImplementation("junit:junit:4.13.2")

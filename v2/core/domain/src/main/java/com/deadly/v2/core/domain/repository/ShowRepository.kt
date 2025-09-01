@@ -25,6 +25,7 @@ interface ShowRepository {
     suspend fun getShowsBySong(songName: String): List<Show>
     suspend fun getTopRatedShows(limit: Int = 20): List<Show>
     suspend fun getRecentShows(limit: Int = 20): List<Show>
+    suspend fun getShowsForDate(month: Int, day: Int): List<Show>
     suspend fun getShowCount(): Int
     
     // Navigation queries

@@ -20,7 +20,7 @@ import androidx.navigation.compose.rememberNavController
 import com.deadly.v2.app.navigation.BottomNavDestination
 import com.deadly.v2.app.navigation.NavigationBarConfig
 import com.deadly.v2.core.design.scaffold.AppScaffold
-import com.deadly.v2.feature.home.screens.main.HomeScreen
+import com.deadly.v2.feature.home.navigation.homeGraph
 import com.deadly.v2.feature.settings.SettingsScreen
 import com.deadly.v2.feature.splash.navigation.splashGraph
 import com.deadly.v2.feature.search.navigation.searchGraph
@@ -128,9 +128,7 @@ fun MainNavigation(
                 splashGraph(navController)
                 
                 // Home feature - main hub screen
-                composable("home") {
-                    HomeScreen()
-                }
+                homeGraph(navController)
                 
                 // Library feature - user's saved content  
                 libraryNavigation(navController)

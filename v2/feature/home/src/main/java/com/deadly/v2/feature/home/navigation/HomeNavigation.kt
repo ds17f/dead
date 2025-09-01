@@ -10,6 +10,16 @@ import com.deadly.v2.feature.home.screens.main.HomeScreen
  */
 fun NavGraphBuilder.homeGraph(navController: NavController) {
     composable("home") {
-        HomeScreen()
+        HomeScreen(
+            onNavigateToPlayer = { recordingId ->
+                navController.navigate("player")
+            },
+            onNavigateToShow = { showId ->
+                navController.navigate("playlist/$showId")  
+            },
+            onNavigateToSearch = {
+                navController.navigate("search")
+            }
+        )
     }
 }
