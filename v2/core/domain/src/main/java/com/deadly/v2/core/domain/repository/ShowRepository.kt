@@ -15,6 +15,7 @@ interface ShowRepository {
     
     // Show queries
     suspend fun getShowById(showId: String): Show?
+    suspend fun getShowsByIds(showIds: List<String>): List<Show>
     suspend fun getAllShows(): List<Show>
     fun getAllShowsFlow(): Flow<List<Show>>
     suspend fun getShowsByYear(year: Int): List<Show>

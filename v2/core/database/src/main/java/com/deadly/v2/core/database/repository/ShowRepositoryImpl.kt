@@ -35,6 +35,11 @@ class ShowRepositoryImpl @Inject constructor(
         }
     }
     
+    override suspend fun getShowsByIds(showIds: List<String>): List<Show> {
+        if (showIds.isEmpty()) return emptyList()
+        return showMappers.entitiesToDomain(showDao.getShowsByIds(showIds))
+    }
+    
     override suspend fun getAllShows(): List<Show> {
         return showMappers.entitiesToDomain(showDao.getAllShows())
     }

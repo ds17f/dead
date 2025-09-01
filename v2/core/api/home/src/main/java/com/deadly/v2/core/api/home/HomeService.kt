@@ -1,6 +1,7 @@
 package com.deadly.v2.core.api.home
 
 import com.deadly.v2.core.model.Show
+import com.deadly.v2.core.model.DeadCollection
 import kotlinx.coroutines.flow.StateFlow
 
 /**
@@ -36,7 +37,7 @@ interface HomeService {
 data class HomeContent(
     val recentShows: List<Show>,
     val todayInHistory: List<Show>,
-    val featuredCollections: List<Collection>,
+    val featuredCollections: List<DeadCollection>,
     val lastRefresh: Long
 ) {
     companion object {
@@ -48,16 +49,3 @@ data class HomeContent(
         )
     }
 }
-
-/**
- * Collection data model for curated show groupings
- * 
- * Represents curated collections like Dick's Picks, Europe '72, etc.
- */
-data class Collection(
-    val id: String,
-    val name: String,
-    val description: String,
-    val showCount: Int,
-    val imageUrl: String? = null
-)

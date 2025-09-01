@@ -22,7 +22,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
-import com.deadly.v2.core.api.home.Collection
+import com.deadly.v2.core.model.DeadCollection
 import com.deadly.v2.core.design.component.debug.DebugActivator
 import com.deadly.v2.core.design.component.debug.DebugBottomSheet
 import com.deadly.v2.core.design.component.debug.DebugData
@@ -104,7 +104,7 @@ fun HomeScreen(
                 val collectionItems = uiState.homeContent.featuredCollections.map { collection ->
                     HorizontalCollectionItem(
                         id = collection.id,
-                        displayText = "${collection.name}\n${collection.showCount} shows",
+                        displayText = "${collection.name}\n${collection.showCountText}",
                         type = CollectionItemType.COLLECTION
                     )
                 }

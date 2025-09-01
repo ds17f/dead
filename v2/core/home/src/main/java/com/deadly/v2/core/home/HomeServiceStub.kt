@@ -3,7 +3,6 @@ package com.deadly.v2.core.home
 import android.util.Log
 import com.deadly.v2.core.api.home.HomeService
 import com.deadly.v2.core.api.home.HomeContent
-import com.deadly.v2.core.api.home.Collection
 import com.deadly.v2.core.domain.repository.ShowRepository
 import com.deadly.v2.core.model.*
 import kotlinx.coroutines.CoroutineScope
@@ -325,43 +324,49 @@ class HomeServiceStub @Inject constructor(
      * Generate mock collection categories
      * Representing major Dead releases and tours
      */
-    private fun generateMockCollections(): List<Collection> {
+    private fun generateMockCollections(): List<DeadCollection> {
         return listOf(
-            Collection(
+            DeadCollection(
                 id = "dicks-picks",
                 name = "Dick's Picks",
                 description = "Dick Latvala's archival series featuring the best soundboard recordings",
-                showCount = 36
+                tags = listOf("official", "soundboard", "archival"),
+                shows = emptyList()
             ),
-            Collection(
+            DeadCollection(
                 id = "europe-72",
                 name = "Europe '72",
                 description = "The legendary European tour that produced countless classics",
-                showCount = 22
+                tags = listOf("tour", "1972", "europe"),
+                shows = emptyList()
             ),
-            Collection(
+            DeadCollection(
                 id = "greatest-shows",
                 name = "Greatest Shows",
                 description = "The most celebrated concerts in Grateful Dead history",
-                showCount = 50
+                tags = listOf("quality", "greatest", "top-rated"),
+                shows = emptyList()
             ),
-            Collection(
+            DeadCollection(
                 id = "wall-of-sound",
                 name = "Wall of Sound",
                 description = "Shows featuring the massive Wall of Sound PA system (1974)",
-                showCount = 40
+                tags = listOf("era", "1974", "wall-of-sound"),
+                shows = emptyList()
             ),
-            Collection(
+            DeadCollection(
                 id = "rare-recordings",
                 name = "Rare Recordings",
                 description = "Hard-to-find and limited circulation recordings",
-                showCount = 125
+                tags = listOf("rarity", "limited", "rare"),
+                shows = emptyList()
             ),
-            Collection(
+            DeadCollection(
                 id = "acoustic-sets",
                 name = "Acoustic Sets",
                 description = "Intimate acoustic performances and rare unplugged moments",
-                showCount = 18
+                tags = listOf("theme", "acoustic", "intimate"),
+                shows = emptyList()
             )
         )
     }
