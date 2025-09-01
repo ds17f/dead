@@ -1,11 +1,23 @@
 # Changelog
 
+## [0.64.0] - 2025-09-01
+
+### New Features
+* implement CollectionsService with production data (e0a83748)
+* implement rich HomeScreen with service architecture (10762597)
+
+### Code Refactoring
+* extract HomeScreen components following V2 architecture patterns (6a460d20)
+* rename Collection to DeadCollection throughout codebase (6d9c4b18)
+
+### Documentation Updates
+* * docs:(v2-home): Write design docs for v2 home (4ba3bcca)
+
+
 ## [0.63.0] - 2025-08-31
 
 ### New Features
 * implement real sharing functionality using local ShareService (314b50cd)
-
-
 ## [0.62.0] - 2025-08-31
 
 ### New Features
