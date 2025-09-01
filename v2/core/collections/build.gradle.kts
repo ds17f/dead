@@ -8,7 +8,7 @@ plugins {
 }
 
 android {
-    namespace = "com.deadly.v2.core.home"
+    namespace = "com.deadly.v2.core.collections"
     compileSdk = 34
 
     defaultConfig {
@@ -40,7 +40,6 @@ android {
 
 dependencies {
     // V2 API dependencies
-    implementation(project(":v2:core:api:home"))
     implementation(project(":v2:core:api:collections"))
     implementation(project(":v2:core:model"))
     implementation(project(":v2:core:domain"))

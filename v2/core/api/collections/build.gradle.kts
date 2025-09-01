@@ -1,14 +1,11 @@
 plugins {
     id("com.android.library")
     id("org.jetbrains.kotlin.android")
-    id("com.google.dagger.hilt.android")
-    id("kotlin-kapt")
-    id("com.google.devtools.ksp")
     id("kotlinx-serialization")
 }
 
 android {
-    namespace = "com.deadly.v2.core.home"
+    namespace = "com.deadly.v2.core.api.collections"
     compileSdk = 34
 
     defaultConfig {
@@ -39,15 +36,8 @@ android {
 }
 
 dependencies {
-    // V2 API dependencies
-    implementation(project(":v2:core:api:home"))
-    implementation(project(":v2:core:api:collections"))
+    // V2 Core dependencies
     implementation(project(":v2:core:model"))
-    implementation(project(":v2:core:domain"))
-    
-    // Hilt
-    implementation("com.google.dagger:hilt-android:2.51.1")
-    ksp("com.google.dagger:hilt-compiler:2.51.1")
     
     // Coroutines
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
@@ -56,8 +46,4 @@ dependencies {
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
-}
-
-kapt {
-    correctErrorTypes = true
 }

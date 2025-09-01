@@ -4,10 +4,16 @@ import android.util.Log
 import com.deadly.v2.core.api.home.HomeService
 import com.deadly.v2.core.api.home.HomeContent
 import com.deadly.v2.core.api.home.Collection
+import com.deadly.v2.core.domain.repository.ShowRepository
 import com.deadly.v2.core.model.*
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.SupervisorJob
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
+import kotlinx.coroutines.launch
+import java.time.LocalDate
 import javax.inject.Inject
 import javax.inject.Singleton
 
@@ -22,36 +28,77 @@ import javax.inject.Singleton
  * Enables UI-first development while validating V2 architecture patterns.
  */
 @Singleton
-class HomeServiceStub @Inject constructor() : HomeService {
+class HomeServiceStub @Inject constructor(
+    private val showRepository: ShowRepository
+) : HomeService {
     
     companion object {
         private const val TAG = "HomeServiceStub"
     }
     
-    private val _homeContent = MutableStateFlow(
-        HomeContent(
-            recentShows = generateMockRecentShows(),
-            todayInHistory = generateMockHistoryShows(),
-            featuredCollections = generateMockCollections(),
-            lastRefresh = System.currentTimeMillis()
-        )
-    )
+    private val serviceScope = CoroutineScope(Dispatchers.IO + SupervisorJob())
     
+    private val _homeContent = MutableStateFlow(HomeContent.initial())
     override val homeContent: StateFlow<HomeContent> = _homeContent.asStateFlow()
     
     init {
-        Log.d(TAG, "HomeServiceStub initialized with mock data")
+        Log.d(TAG, "HomeServiceStub initialized - loading dynamic today in history data")
+        loadInitialContent()
+    }
+    
+    private fun loadInitialContent() {
+        serviceScope.launch {
+            try {
+                val todayInHistory = loadTodayInHistoryShows()
+                
+                _homeContent.value = HomeContent(
+                    recentShows = generateMockRecentShows(),
+                    todayInHistory = todayInHistory,
+                    featuredCollections = generateMockCollections(),
+                    lastRefresh = System.currentTimeMillis()
+                )
+                
+                Log.d(TAG, "Loaded ${todayInHistory.size} shows for today in history")
+            } catch (e: Exception) {
+                Log.e(TAG, "Failed to load today in history shows", e)
+                // Fall back to mock data
+                _homeContent.value = HomeContent(
+                    recentShows = generateMockRecentShows(),
+                    todayInHistory = generateMockHistoryShows(),
+                    featuredCollections = generateMockCollections(),
+                    lastRefresh = System.currentTimeMillis()
+                )
+            }
+        }
+    }
+    
+    /**
+     * Load actual shows for today's date from the database
+     */
+    private suspend fun loadTodayInHistoryShows(): List<Show> {
+        val today = LocalDate.now()
+        Log.d(TAG, "Loading shows for ${today.monthValue}/${today.dayOfMonth}")
+        
+        return showRepository.getShowsForDate(today.monthValue, today.dayOfMonth)
     }
     
     override suspend fun refreshAll(): Result<Unit> {
-        Log.d(TAG, "STUB: refreshAll() called")
+        Log.d(TAG, "refreshAll() called - reloading today in history")
         
-        // Simulate refresh by updating timestamp
-        _homeContent.value = _homeContent.value.copy(
-            lastRefresh = System.currentTimeMillis()
-        )
-        
-        return Result.success(Unit)
+        return try {
+            val todayInHistory = loadTodayInHistoryShows()
+            
+            _homeContent.value = _homeContent.value.copy(
+                todayInHistory = todayInHistory,
+                lastRefresh = System.currentTimeMillis()
+            )
+            
+            Log.d(TAG, "Refreshed with ${todayInHistory.size} shows for today")
+            Result.success(Unit)
+        } catch (e: Exception) {
+            Log.e(TAG, "Failed to refresh today in history", e)
+            Result.failure(e)
+        }
     }
     
     /**

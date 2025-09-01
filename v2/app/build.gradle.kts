@@ -55,6 +55,8 @@ dependencies {
     implementation(project(":v2:core:player"))
     implementation(project(":v2:core:api:home"))
     implementation(project(":v2:core:home"))
+    implementation(project(":v2:core:api:collections"))
+    implementation(project(":v2:core:collections"))
 
     // V2 Feature Dependencies
     implementation(project(":v2:feature:splash"))
