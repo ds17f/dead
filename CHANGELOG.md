@@ -1,5 +1,15 @@
 # Changelog
 
+## [0.65.0] - 2025-09-01
+
+### New Features
+* add instant recent shows tracking for Play All functionality (a67d1c06)
+* implement RecentShowsService with real user listening behavior tracking (70a6059c)
+
+### Code Refactoring
+* rename HomeServiceStub to HomeServiceImpl and integrate real CollectionsService (6775a6d4)
+
+
 ## [0.64.0] - 2025-09-01
 
 ### New Features
@@ -12,8 +22,6 @@
 
 ### Documentation Updates
 * * docs:(v2-home): Write design docs for v2 home (4ba3bcca)
-
-
 ## [0.63.0] - 2025-08-31
 
 ### New Features
