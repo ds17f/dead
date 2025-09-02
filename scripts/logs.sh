@@ -195,11 +195,11 @@ case "$1" in
   ;;
 "collections" | "collection")
   if [ "$TIMEOUT" -eq 0 ]; then
-    echo "🔍 Showing collections import and service logs (no timeout)..."
+    echo "🔍 Showing collections screens, services, and UI component logs (no timeout)..."
   else
-    echo "🔍 Showing collections import and service logs (${TIMEOUT}s)..."
+    echo "🔍 Showing collections screens, services, and UI component logs (${TIMEOUT}s)..."
   fi
-  run_with_timeout adb logcat -s CollectionsImportService DeadCollectionsServiceImpl CollectionsViewModel
+  run_with_timeout adb logcat -s CollectionsImportService DeadCollectionsServiceImpl CollectionsViewModel CollectionsScreen FeaturedCollectionsCarousel CollectionDetailsViewModel CollectionDetailsScreen AndroidRuntime
   ;;
 *)
   echo "📱 Dead Archive Logging Utility"
@@ -222,7 +222,7 @@ case "$1" in
   echo "  playlist      - Show V2 playlist prefetch logs"
   echo "  settings      - Show settings related logs"
   echo "  theme         - Show theme system logs (loading, switching, assets)"
-  echo "  collections   - Show collections import and service logs"
+  echo "  collections   - Show collections screens, services, and UI component logs"
   echo "  debug         - Show debug panel logs"
   echo "  hydration     - Show metadata hydration logs (MediaSession, MetadataHydrator)"
   echo "  timing        - Show media playback timing logs (🕒🎵 signature)"
