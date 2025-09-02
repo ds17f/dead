@@ -2,6 +2,7 @@ package com.deadly.v2.core.playlist.service
 
 import android.util.Log
 import com.deadly.v2.core.api.playlist.PlaylistService
+import com.deadly.v2.core.api.collections.DeadCollectionsService
 import com.deadly.v2.core.domain.repository.ShowRepository
 import com.deadly.v2.core.model.*
 import com.deadly.v2.core.network.archive.service.ArchiveService
@@ -42,6 +43,7 @@ class PlaylistServiceImpl @Inject constructor(
     private val mediaControllerRepository: MediaControllerRepository,
     private val mediaControllerStateUtil: MediaControllerStateUtil,
     private val shareService: ShareService,
+    private val collectionsService: DeadCollectionsService,
     @Named("PlaylistApplicationScope") private val coroutineScope: CoroutineScope
 ) : PlaylistService {
     
@@ -833,11 +835,24 @@ class PlaylistServiceImpl @Inject constructor(
     
     /**
      * Get collections containing the specified show
-     * TODO: Integrate with collections service when dependency injection issue is resolved
      */
     override suspend fun getShowCollections(showId: String): List<DeadCollection> {
-        Log.d(TAG, "getShowCollections($showId) - STUBBED: Collections service dependency removed")
-        Log.d(TAG, "TODO: Reintegrate collections service when Hilt annotation processor issue is fixed")
-        return emptyList()
+        return try {
+            Log.d(TAG, "Getting collections for show: $showId")
+            val result = collectionsService.getCollectionsContainingShow(showId)
+            result.fold(
+                onSuccess = { collections ->
+                    Log.d(TAG, "Found ${collections.size} collections containing show $showId")
+                    collections
+                },
+                onFailure = { error ->
+                    Log.e(TAG, "Failed to get collections for show $showId", error)
+                    emptyList()
+                }
+            )
+        } catch (e: Exception) {
+            Log.e(TAG, "Error getting collections for show $showId", e)
+            emptyList()
+        }
     }
 }

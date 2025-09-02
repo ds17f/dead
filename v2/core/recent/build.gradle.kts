@@ -2,7 +2,6 @@ plugins {
     id("com.android.library")
     id("org.jetbrains.kotlin.android")
     id("com.google.dagger.hilt.android")
-    id("kotlin-kapt")
     id("com.google.devtools.ksp")
     id("kotlinx-serialization")
 }
@@ -60,6 +59,3 @@ dependencies {
     implementation("androidx.room:room-ktx:2.6.1")
 }
 
-kapt {
-    correctErrorTypes = true
-}

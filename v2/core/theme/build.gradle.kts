@@ -2,7 +2,7 @@ plugins {
     id("com.android.library")
     id("org.jetbrains.kotlin.android")
     id("dagger.hilt.android.plugin")
-    id("kotlin-kapt")
+    id("com.google.devtools.ksp")
     id("kotlinx-serialization")
 }
 
@@ -55,12 +55,9 @@ dependencies {
     implementation("androidx.compose.runtime:runtime")
     
     implementation("com.google.dagger:hilt-android:2.48.1")
-    kapt("com.google.dagger:hilt-compiler:2.48.1")
+    ksp("com.google.dagger:hilt-compiler:2.48.1")
     
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.2")
 }
 
-kapt {
-    correctErrorTypes = true
-}
