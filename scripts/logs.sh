@@ -52,7 +52,7 @@ case "$1" in
   else
     echo "🔍 Showing V2 database import logs (${TIMEOUT}s)..."
   fi
-  run_with_timeout adb logcat -s AssetManager DataImportService DatabaseManager
+  run_with_timeout adb logcat -s AssetManager DataImportService DatabaseManager CollectionsImportService
   ;;
 "v2" | "v2db" | "database" | "db")
   if [ "$TIMEOUT" -eq 0 ]; then
@@ -60,7 +60,7 @@ case "$1" in
   else
     echo "🔍 Showing all V2 database logs (${TIMEOUT}s)..."
   fi
-  run_with_timeout adb logcat | grep -E "Database|DataImport|DatabaseManager|AssetManager|DeadArchiveDatabase|ShowEntity|RecordingEntity|DataVersion|AwesomeBar"
+  run_with_timeout adb logcat | grep -E "Database|DataImport|DatabaseManager|AssetManager|DeadArchiveDatabase|ShowEntity|RecordingEntity|DataVersion|CollectionsImport|AwesomeBar"
   ;;
 "app" | "application")
   if [ "$TIMEOUT" -eq 0 ]; then
@@ -193,6 +193,14 @@ case "$1" in
   fi
   run_with_timeout adb logcat -s ThemeManager ZipThemeProvider MainNavigation
   ;;
+"collections" | "collection")
+  if [ "$TIMEOUT" -eq 0 ]; then
+    echo "🔍 Showing collections import and service logs (no timeout)..."
+  else
+    echo "🔍 Showing collections import and service logs (${TIMEOUT}s)..."
+  fi
+  run_with_timeout adb logcat -s CollectionsImportService DeadCollectionsServiceImpl CollectionsViewModel
+  ;;
 *)
   echo "📱 Dead Archive Logging Utility"
   echo ""
@@ -214,6 +222,7 @@ case "$1" in
   echo "  playlist      - Show V2 playlist prefetch logs"
   echo "  settings      - Show settings related logs"
   echo "  theme         - Show theme system logs (loading, switching, assets)"
+  echo "  collections   - Show collections import and service logs"
   echo "  debug         - Show debug panel logs"
   echo "  hydration     - Show metadata hydration logs (MediaSession, MetadataHydrator)"
   echo "  timing        - Show media playback timing logs (🕒🎵 signature)"
