@@ -11,6 +11,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
+import com.deadly.v2.core.design.component.CollectionCard
 import com.deadly.v2.core.design.component.debug.DebugActivator
 import com.deadly.v2.core.design.component.debug.DebugBottomSheet
 import com.deadly.v2.feature.collections.screens.main.models.CollectionsViewModel
@@ -127,48 +128,6 @@ fun CollectionsScreen(
     )
 }
 
-/**
- * Collection card component
- */
-@Composable
-private fun CollectionCard(
-    collection: com.deadly.v2.core.model.DeadCollection,
-    onClick: () -> Unit
-) {
-    Card(
-        modifier = Modifier
-            .fillMaxWidth(),
-        onClick = onClick
-    ) {
-        Column(
-            modifier = Modifier.padding(16.dp)
-        ) {
-            Text(
-                text = collection.name,
-                style = MaterialTheme.typography.headlineSmall
-            )
-            Spacer(modifier = Modifier.height(4.dp))
-            Text(
-                text = collection.description,
-                style = MaterialTheme.typography.bodyMedium,
-                color = MaterialTheme.colorScheme.onSurfaceVariant
-            )
-            if (collection.tags.isNotEmpty()) {
-                Spacer(modifier = Modifier.height(8.dp))
-                Row(
-                    horizontalArrangement = Arrangement.spacedBy(4.dp)
-                ) {
-                    collection.tags.take(3).forEach { tag ->
-                        SuggestionChip(
-                            onClick = { },
-                            label = { Text(tag, style = MaterialTheme.typography.labelSmall) }
-                        )
-                    }
-                }
-            }
-        }
-    }
-}
 
 /**
  * Collect debug data for Collections screen
