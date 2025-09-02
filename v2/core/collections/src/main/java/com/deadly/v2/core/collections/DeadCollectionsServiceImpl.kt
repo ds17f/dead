@@ -6,6 +6,9 @@ import com.deadly.v2.core.api.collections.DeadCollectionsService
 import com.deadly.v2.core.domain.repository.ShowRepository
 import com.deadly.v2.core.model.DeadCollection
 import com.deadly.v2.core.model.Show
+import com.deadly.v2.core.model.V2Database
+import com.deadly.v2.core.database.dao.CollectionsDao
+import kotlinx.serialization.json.Json
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.SupervisorJob
@@ -24,7 +27,8 @@ import javax.inject.Singleton
  */
 @Singleton
 class DeadCollectionsServiceImpl @Inject constructor(
-    private val showRepository: ShowRepository
+    private val showRepository: ShowRepository,
+    @V2Database private val collectionsDao: CollectionsDao
 ) : DeadCollectionsService {
     
     companion object {
@@ -33,35 +37,41 @@ class DeadCollectionsServiceImpl @Inject constructor(
     
     private val serviceScope = CoroutineScope(Dispatchers.IO + SupervisorJob())
     
+    private val json = Json {
+        ignoreUnknownKeys = true
+        coerceInputValues = true
+    }
+    
     private val _featuredCollections = MutableStateFlow<List<DeadCollection>>(emptyList())
     override val featuredCollections: StateFlow<List<DeadCollection>> = _featuredCollections.asStateFlow()
     
-    // Static collection definitions
-    private val allCollections = createAllCollections()
-    
     init {
-        Log.d(TAG, "DeadCollectionsServiceImpl initialized with ${allCollections.size} collections")
+        Log.d(TAG, "DeadCollectionsServiceImpl initialized")
         loadFeaturedCollections()
     }
     
     private fun loadFeaturedCollections() {
         serviceScope.launch {
             try {
-                // Get featured collections (by order, limit to 6 for home screen)
-                val featured = allCollections
-                    .take(6)
+                // Get featured collections from database
+                val entities = collectionsDao.getFeaturedCollections()
+                val collections = entities.map { convertToModel(it) }
                 
-                _featuredCollections.value = featured
-                Log.d(TAG, "Loaded ${featured.size} featured collections")
+                _featuredCollections.value = collections
+                Log.d(TAG, "Loaded ${collections.size} featured collections from database")
             } catch (e: Exception) {
                 Log.e(TAG, "Failed to load featured collections", e)
+                // Fallback to static collections if database is empty
+                _featuredCollections.value = createFallbackCollections()
             }
         }
     }
     
     override suspend fun getAllCollections(): Result<List<DeadCollection>> {
         return try {
-            Result.success(allCollections.sortedBy { it.name })
+            val entities = collectionsDao.getAllCollections()
+            val collections = entities.map { convertToModel(it) }
+            Result.success(collections)
         } catch (e: Exception) {
             Log.e(TAG, "Failed to get all collections", e)
             Result.failure(e)
@@ -70,20 +80,12 @@ class DeadCollectionsServiceImpl @Inject constructor(
     
     override suspend fun getCollectionShows(collectionId: String): Result<List<Show>> {
         return try {
-            val collection = allCollections.find { it.id == collectionId }
+            val entity = collectionsDao.getCollectionById(collectionId)
                 ?: return Result.failure(IllegalArgumentException("Collection not found: $collectionId"))
             
-            // For now, return sample shows - in real implementation would query database
-            // based on collection criteria (dates, venues, etc.)
-            val shows = when (collectionId) {
-                "dicks-picks" -> getDicksPicksShows()
-                "europe-72" -> getEurope72Shows()
-                "greatest-shows" -> getGreatestShows()
-                "wall-of-sound" -> getWallOfSoundShows()
-                "rare-recordings" -> getRareRecordingsShows()
-                "acoustic-sets" -> getAcousticSetsShows()
-                else -> emptyList()
-            }
+            // Parse show IDs from JSON and get shows
+            val showIds = json.decodeFromString<List<String>>(entity.showIdsJson)
+            val shows = showRepository.getShowsByIds(showIds)
             
             Result.success(shows)
         } catch (e: Exception) {
@@ -94,9 +96,10 @@ class DeadCollectionsServiceImpl @Inject constructor(
     
     override suspend fun getCollectionDetails(collectionId: String): Result<DeadCollectionDetails> {
         return try {
-            val collection = allCollections.find { it.id == collectionId }
+            val entity = collectionsDao.getCollectionById(collectionId)
                 ?: return Result.failure(IllegalArgumentException("Collection not found: $collectionId"))
             
+            val collection = convertToModel(entity)
             val shows = getCollectionShows(collectionId).getOrElse { emptyList() }
             
             val details = when (collectionId) {
@@ -128,11 +131,9 @@ class DeadCollectionsServiceImpl @Inject constructor(
     
     override suspend fun searchCollections(query: String): Result<List<DeadCollection>> {
         return try {
-            val results = allCollections.filter { collection ->
-                collection.name.contains(query, ignoreCase = true) ||
-                collection.description.contains(query, ignoreCase = true)
-            }
-            Result.success(results)
+            val entities = collectionsDao.searchCollections(query)
+            val collections = entities.map { convertToModel(it) }
+            Result.success(collections)
         } catch (e: Exception) {
             Log.e(TAG, "Failed to search collections for '$query'", e)
             Result.failure(e)
@@ -140,12 +141,33 @@ class DeadCollectionsServiceImpl @Inject constructor(
     }
     
     /**
-     * Create all available collections with comprehensive metadata
-     * 
-     * For now, returns collections with empty shows lists.
-     * In a real implementation, would load from database via CollectionMappers.
+     * Convert database entity to domain model
      */
-    private fun createAllCollections(): List<DeadCollection> {
+    private suspend fun convertToModel(entity: com.deadly.v2.core.database.entities.DeadCollectionEntity): DeadCollection {
+        val tags = json.decodeFromString<List<String>>(entity.tagsJson)
+        val showIds = json.decodeFromString<List<String>>(entity.showIdsJson)
+        
+        // Get actual shows for this collection
+        val shows = try {
+            showRepository.getShowsByIds(showIds)
+        } catch (e: Exception) {
+            Log.w(TAG, "Failed to load shows for collection ${entity.id}", e)
+            emptyList()
+        }
+        
+        return DeadCollection(
+            id = entity.id,
+            name = entity.name,
+            description = entity.description,
+            tags = tags,
+            shows = shows
+        )
+    }
+    
+    /**
+     * Create fallback collections when database is empty
+     */
+    private fun createFallbackCollections(): List<DeadCollection> {
         return listOf(
             DeadCollection(
                 id = "dicks-picks",
@@ -218,81 +240,5 @@ class DeadCollectionsServiceImpl @Inject constructor(
                 shows = emptyList() // TODO: Load from database
             )
         )
-    }
-    
-    // Sample show data for collections - in real implementation would query database
-    
-    private suspend fun getDicksPicksShows(): List<Show> {
-        // Would query database for Dick's Picks shows
-        // For now, get some shows from common Dick's Picks dates
-        return listOf("1973-06-10", "1977-05-08", "1972-05-11")
-            .mapNotNull { date -> 
-                try {
-                    showRepository.getShowsByYearMonth(date.substring(0, 7))
-                        .find { it.date == date }
-                } catch (e: Exception) {
-                    Log.w(TAG, "Could not find Dick's Picks show for $date", e)
-                    null
-                }
-            }
-    }
-    
-    private suspend fun getEurope72Shows(): List<Show> {
-        // Shows from April-May 1972 Europe tour
-        return try {
-            val april72 = showRepository.getShowsByYearMonth("1972-04")
-            val may72 = showRepository.getShowsByYearMonth("1972-05")
-            (april72 + may72).sortedBy { it.date }
-        } catch (e: Exception) {
-            Log.w(TAG, "Could not load Europe '72 shows", e)
-            emptyList()
-        }
-    }
-    
-    private suspend fun getGreatestShows(): List<Show> {
-        // Top-rated shows 
-        return try {
-            showRepository.getTopRatedShows(25)
-        } catch (e: Exception) {
-            Log.w(TAG, "Could not load greatest shows", e)
-            emptyList()
-        }
-    }
-    
-    private suspend fun getWallOfSoundShows(): List<Show> {
-        // 1974 shows when Wall of Sound was active
-        return try {
-            showRepository.getShowsByYear(1974)
-        } catch (e: Exception) {
-            Log.w(TAG, "Could not load Wall of Sound shows", e)
-            emptyList()
-        }
-    }
-    
-    private suspend fun getRareRecordingsShows(): List<Show> {
-        // Shows with fewer recordings (rare/limited circulation)
-        return try {
-            showRepository.getAllShows()
-                .filter { it.recordingCount <= 2 }
-                .sortedByDescending { it.averageRating ?: 0f }
-                .take(25)
-        } catch (e: Exception) {
-            Log.w(TAG, "Could not load rare recordings", e)
-            emptyList()
-        }
-    }
-    
-    private suspend fun getAcousticSetsShows(): List<Show> {
-        // Shows with acoustic sets - would need setlist data to identify properly
-        // For now return a small curated list
-        return listOf("1970-09-20", "1980-10-31", "1985-03-28")
-            .mapNotNull { date -> 
-                try {
-                    showRepository.getShowsByYearMonth(date.substring(0, 7))
-                        .find { it.date == date }
-                } catch (e: Exception) {
-                    null
-                }
-            }
     }
 }

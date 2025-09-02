@@ -15,6 +15,7 @@ import com.deadly.v2.core.database.dao.RecordingDao
 import com.deadly.v2.core.database.dao.DataVersionDao
 import com.deadly.v2.core.database.dao.LibraryDao
 import com.deadly.v2.core.database.dao.RecentShowDao
+import com.deadly.v2.core.database.dao.CollectionsDao
 import com.deadly.v2.core.database.repository.ShowRepositoryImpl
 import com.deadly.v2.core.domain.repository.ShowRepository
 import kotlinx.serialization.json.Json
@@ -64,6 +65,12 @@ object DatabaseModule {
     @V2Database
     fun provideRecentShowDao(database: DeadlyDatabase): RecentShowDao {
         return database.recentShowDao()
+    }
+    
+    @Provides
+    @V2Database
+    fun provideCollectionsDao(database: DeadlyDatabase): CollectionsDao {
+        return database.collectionsDao()
     }
     
     // Services are automatically provided by @Singleton @Inject constructor:

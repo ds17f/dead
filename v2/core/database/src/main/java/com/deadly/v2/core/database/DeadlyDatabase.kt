@@ -10,12 +10,14 @@ import com.deadly.v2.core.database.entities.RecordingEntity
 import com.deadly.v2.core.database.entities.DataVersionEntity
 import com.deadly.v2.core.database.entities.LibraryShowEntity
 import com.deadly.v2.core.database.entities.RecentShowEntity
+import com.deadly.v2.core.database.entities.DeadCollectionEntity
 import com.deadly.v2.core.database.dao.ShowDao
 import com.deadly.v2.core.database.dao.ShowSearchDao
 import com.deadly.v2.core.database.dao.RecordingDao
 import com.deadly.v2.core.database.dao.DataVersionDao
 import com.deadly.v2.core.database.dao.LibraryDao
 import com.deadly.v2.core.database.dao.RecentShowDao
+import com.deadly.v2.core.database.dao.CollectionsDao
 
 @Database(
     entities = [
@@ -24,9 +26,10 @@ import com.deadly.v2.core.database.dao.RecentShowDao
         RecordingEntity::class,
         DataVersionEntity::class,
         LibraryShowEntity::class,
-        RecentShowEntity::class
+        RecentShowEntity::class,
+        DeadCollectionEntity::class
     ],
-    version = 9,
+    version = 10,
     exportSchema = false
 )
 abstract class DeadlyDatabase : RoomDatabase() {
@@ -37,6 +40,7 @@ abstract class DeadlyDatabase : RoomDatabase() {
     abstract fun dataVersionDao(): DataVersionDao
     abstract fun libraryDao(): LibraryDao
     abstract fun recentShowDao(): RecentShowDao
+    abstract fun collectionsDao(): CollectionsDao
     
     companion object {
         const val DATABASE_NAME = "deadly_db"

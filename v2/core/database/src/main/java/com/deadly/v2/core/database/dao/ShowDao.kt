@@ -42,6 +42,9 @@ interface ShowDao {
     @Query("SELECT * FROM shows WHERE date = :date ORDER BY showSequence")
     suspend fun getShowsByDate(date: String): List<ShowEntity>
     
+    @Query("SELECT * FROM shows WHERE date >= :startDate AND date <= :endDate ORDER BY date")
+    suspend fun getShowsInDateRange(startDate: String, endDate: String): List<ShowEntity>
+    
     
     // Location queries
     @Query("SELECT * FROM shows WHERE venueName LIKE '%' || :venueName || '%' ORDER BY date")

@@ -137,7 +137,8 @@ class DataImportService @Inject constructor(
     @V2Database private val showDao: ShowDao,
     @V2Database private val showSearchDao: ShowSearchDao,
     @V2Database private val recordingDao: RecordingDao,
-    @V2Database private val dataVersionDao: DataVersionDao
+    @V2Database private val dataVersionDao: DataVersionDao,
+    private val collectionsImportService: CollectionsImportService
 ) {
     
     companion object {
@@ -328,6 +329,26 @@ class DataImportService @Inject constructor(
                 Log.w(TAG, "⚠️ Found $recordingsNotInShows recordings not referenced by any show - this may indicate data inconsistency")
             }
             
+            // Import collections if available
+            var collectionsImported = 0
+            try {
+                progressCallback?.invoke(ImportProgress("IMPORTING_COLLECTIONS", 0, 1, "Importing collections..."))
+                
+                val collectionsResult = collectionsImportService.importCollectionsFromFile(File(showsDirectory.parent))
+                when (collectionsResult) {
+                    is CollectionsImportResult.Success -> {
+                        collectionsImported = collectionsResult.importedCount
+                        Log.i(TAG, "Collections import successful: ${collectionsResult.message}")
+                    }
+                    is CollectionsImportResult.Error -> {
+                        Log.w(TAG, "Collections import failed: ${collectionsResult.error}")
+                        // Don't fail the entire import for collections failure
+                    }
+                }
+            } catch (e: Exception) {
+                Log.w(TAG, "Collections import exception (continuing anyway)", e)
+            }
+            
             progressCallback?.invoke(ImportProgress("FINALIZING", importedShows + importedRecordings, importedShows + importedRecordings, "Finalizing database..."))
             
             // Update data version
@@ -338,7 +359,7 @@ class DataImportService @Inject constructor(
                     dataVersion = "2.0.0",
                     packageName = "Deadly Metadata",
                     versionType = "release", 
-                    description = "V2 database import from extracted files",
+                    description = "V2 database import from extracted files with collections",
                     importedAt = currentTime,
                     gitCommit = null,
                     gitTag = null,
@@ -352,13 +373,13 @@ class DataImportService @Inject constructor(
             
             progressCallback?.invoke(ImportProgress("COMPLETED", importedShows + importedRecordings, importedShows + importedRecordings, "Import completed successfully"))
             
-            Log.d(TAG, "Data import completed successfully: $importedShows shows, $importedRecordings recordings")
+            Log.d(TAG, "Data import completed successfully: $importedShows shows, $importedRecordings recordings, $collectionsImported collections")
             
             ImportResult(
                 success = true,
                 importedShows = importedShows,
                 importedRecordings = importedRecordings,
-                message = "Successfully imported $importedShows shows and $importedRecordings recordings"
+                message = "Successfully imported $importedShows shows, $importedRecordings recordings, and $collectionsImported collections"
             )
             
         } catch (e: Exception) {

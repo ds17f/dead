@@ -43,6 +43,7 @@ dependencies {
     implementation(project(":v2:core:api:collections"))
     implementation(project(":v2:core:model"))
     implementation(project(":v2:core:domain"))
+    implementation(project(":v2:core:database"))
     
     // Hilt
     implementation("com.google.dagger:hilt-android:2.51.1")
@@ -50,6 +51,9 @@ dependencies {
     
     // Coroutines
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
+    
+    // JSON serialization
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.2")
     
     // Testing
     testImplementation("junit:junit:4.13.2")
