@@ -7,10 +7,11 @@ import com.deadly.v2.core.design.resources.IconResources
 /**
  * Bottom navigation destinations for V2 app
  * 
- * Defines the 4 main tabs in the bottom navigation:
+ * Defines the 5 main tabs in the bottom navigation:
  * - Home: Main hub for browsing and discovery
  * - Search: Search and browse functionality  
  * - Library: User's saved shows and favorites
+ * - Collections: Curated collections and series
  * - Settings: App configuration and preferences
  */
 sealed class BottomNavDestination(
@@ -40,6 +41,13 @@ sealed class BottomNavDestination(
         unselectedIcon = { IconResources.Navigation.LibraryOutlined() }
     )
     
+    data object Collections : BottomNavDestination(
+        route = "collections",
+        title = "Collections",
+        selectedIcon = { IconResources.Content.Folder() },
+        unselectedIcon = { IconResources.Content.Folder() }
+    )
+    
     data object Settings : BottomNavDestination(
         route = "settings", 
         title = "Settings",
@@ -48,6 +56,6 @@ sealed class BottomNavDestination(
     )
     
     companion object {
-        val destinations = listOf(Home, Search, Library, Settings)
+        val destinations = listOf(Home, Search, Library, Collections, Settings)
     }
 }

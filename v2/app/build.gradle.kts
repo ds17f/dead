@@ -68,6 +68,7 @@ dependencies {
     implementation(project(":v2:feature:player"))
     implementation(project(":v2:feature:miniplayer"))
     implementation(project(":v2:feature:library"))
+    implementation(project(":v2:feature:collections"))
     implementation(project(":v2:feature:settings"))
     
     // Android & Compose

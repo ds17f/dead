@@ -52,6 +52,7 @@ include(":v2:feature:playlist")
 include(":v2:feature:player")
 include(":v2:feature:miniplayer")
 include(":v2:feature:library")
+include(":v2:feature:collections")
 include(":v2:feature:settings")
 
 // Core modules

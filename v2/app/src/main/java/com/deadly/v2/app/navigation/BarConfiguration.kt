@@ -8,6 +8,7 @@ import com.deadly.v2.feature.home.screens.main.HomeBarConfiguration
 import com.deadly.v2.feature.search.screens.main.SearchBarConfiguration
 import com.deadly.v2.feature.settings.screens.main.SettingsBarConfiguration
 import com.deadly.v2.feature.library.screens.main.LibraryBarConfiguration
+import com.deadly.v2.feature.collections.screens.main.CollectionsBarConfiguration
 
 /**
  * Central route mapping to feature bar configurations
@@ -29,6 +30,9 @@ object NavigationBarConfig {
         
         // Library routes
         "library" -> LibraryBarConfiguration.getLibraryBarConfig()
+        
+        // Collections routes
+        "collections" -> CollectionsBarConfiguration.getCollectionsBarConfig()
         
         // Player routes - full screen immersive experience
         "player" -> BarConfiguration(

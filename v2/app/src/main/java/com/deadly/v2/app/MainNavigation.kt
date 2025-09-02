@@ -29,6 +29,7 @@ import com.deadly.v2.feature.playlist.navigation.navigateToPlaylist
 import com.deadly.v2.feature.player.navigation.playerScreen
 import com.deadly.v2.feature.miniplayer.screens.main.MiniPlayerScreen
 import com.deadly.v2.feature.library.navigation.libraryNavigation
+import com.deadly.v2.feature.collections.navigation.collectionsGraph
 import com.deadly.v2.core.theme.api.DeadlyTheme
 import com.deadly.v2.core.theme.api.ThemeAssetProvider
 import com.deadly.v2.core.theme.ThemeManager
@@ -132,6 +133,9 @@ fun MainNavigation(
                 
                 // Library feature - user's saved content  
                 libraryNavigation(navController)
+                
+                // Collections feature - curated collections and series
+                collectionsGraph(navController)
                 
                 // Search feature - search and browse functionality
                 searchGraph(navController)
