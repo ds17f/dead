@@ -465,8 +465,8 @@ download-icons:
 		pip install -r requirements.txt && \
 		python download_material_icons.py \
 		--from-json "$(PWD)/scripts/material_icons_config.json" \
-		--output "$(PWD)/core/design/src/main/res/drawable" \
-		--icon-registry-path "$(PWD)/core/design/src/main/java/com/deadly/core/design/component/IconResources.kt" \
+		--output "$(PWD)/v2/core/design/src/main/res/drawable" \
+		--icon-registry-path "$(PWD)/v2/core/design/src/main/java/com/deadly/v2/core/design/resources/IconResources.kt" \
 		--update-registry
 	@echo "✅ Icons downloaded and processed!"
 

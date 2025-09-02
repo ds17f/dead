@@ -102,6 +102,9 @@ object IconResources {
         
         @Composable
         fun SwapVert() = customIcon(R.drawable.ic_swap_vert)
+        
+        @Composable
+        fun Collections() = customIcon(R.drawable.ic_collections)
     }
     
     // Player control icons are accessed via the PlayerControls object

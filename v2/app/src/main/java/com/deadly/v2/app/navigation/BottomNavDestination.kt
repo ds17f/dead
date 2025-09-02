@@ -44,8 +44,8 @@ sealed class BottomNavDestination(
     data object Collections : BottomNavDestination(
         route = "collections",
         title = "Collections",
-        selectedIcon = { IconResources.Content.Folder() },
-        unselectedIcon = { IconResources.Content.Folder() }
+        selectedIcon = { IconResources.Navigation.Collections() },
+        unselectedIcon = { IconResources.Navigation.Collections() }
     )
     
     data object Settings : BottomNavDestination(
