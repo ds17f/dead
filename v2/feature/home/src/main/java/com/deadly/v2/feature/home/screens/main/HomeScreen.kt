@@ -33,6 +33,7 @@ fun HomeScreen(
     onNavigateToPlayer: (String) -> Unit,
     onNavigateToShow: (String) -> Unit,
     onNavigateToSearch: () -> Unit,
+    onNavigateToCollection: (String) -> Unit,
     viewModel: HomeViewModel = hiltViewModel()
 ) {
     val uiState by viewModel.uiState.collectAsState()
@@ -100,7 +101,7 @@ fun HomeScreen(
                     title = "Featured Collections",
                     items = collectionItems,
                     onItemClick = { item ->
-                        // TODO: Navigate to collection view
+                        onNavigateToCollection(item.id)
                     }
                 )
             }

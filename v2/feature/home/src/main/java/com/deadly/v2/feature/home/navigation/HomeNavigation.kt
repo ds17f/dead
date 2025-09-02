@@ -19,6 +19,9 @@ fun NavGraphBuilder.homeGraph(navController: NavController) {
             },
             onNavigateToSearch = {
                 navController.navigate("search")
+            },
+            onNavigateToCollection = { collectionId ->
+                navController.navigate("collection/$collectionId")
             }
         )
     }
