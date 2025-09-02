@@ -43,6 +43,11 @@ class CollectionsImportService @Inject constructor(
     }
     
     @Serializable
+    data class CollectionsWrapper(
+        val collections: List<CollectionImportData>
+    )
+    
+    @Serializable
     data class CollectionImportData(
         val id: String,
         val name: String,
@@ -73,22 +78,36 @@ class CollectionsImportService @Inject constructor(
      */
     suspend fun importCollectionsFromFile(extractedDataDirectory: File): CollectionsImportResult {
         return try {
-            val collectionsFile = File(extractedDataDirectory, COLLECTIONS_FILE)
+            // Try multiple possible locations for collections.json
+            val possiblePaths = listOf(
+                File(extractedDataDirectory, COLLECTIONS_FILE),           // Same level as data directory
+                File(extractedDataDirectory.parentFile, COLLECTIONS_FILE), // Parent of data directory
+                File(extractedDataDirectory, "data/$COLLECTIONS_FILE")     // Inside data subdirectory
+            )
             
-            if (!collectionsFile.exists()) {
-                Log.w(TAG, "Collections file not found: ${collectionsFile.absolutePath}")
+            val collectionsFile = possiblePaths.firstOrNull { it.exists() }
+            
+            if (collectionsFile == null) {
+                val searchedPaths = possiblePaths.map { it.absolutePath }
+                Log.w(TAG, "Collections file not found in any of: ${searchedPaths.joinToString(", ")}")
                 return CollectionsImportResult.Success(0, "No collections.json found")
             }
+            
+            Log.d(TAG, "Found collections.json at: ${collectionsFile.absolutePath}")
             
             Log.i(TAG, "Reading collections from: ${collectionsFile.absolutePath}")
             val jsonContent = collectionsFile.readText()
             
-            val collections = json.decodeFromString<List<CollectionImportData>>(jsonContent)
+            val wrapper = json.decodeFromString<CollectionsWrapper>(jsonContent)
+            val collections = wrapper.collections
             Log.i(TAG, "Parsed ${collections.size} collections from JSON")
             
             // Convert to entities with resolved show IDs
-            val entities = collections.map { collection ->
-                convertToEntity(collection)
+            val entities = collections.mapIndexed { index, collection ->
+                Log.d(TAG, "Processing collection ${index + 1}/${collections.size}: '${collection.name}' (${collection.id})")
+                val entity = convertToEntity(collection)
+                Log.d(TAG, "Collection '${collection.name}' resolved to ${entity.totalShows} shows")
+                entity
             }
             
             // Clear existing collections and insert new ones
@@ -135,43 +154,75 @@ class CollectionsImportService @Inject constructor(
      */
     private suspend fun resolveShowIds(showSelector: ShowSelectorData?): List<String> {
         if (showSelector == null) {
+            Log.d(TAG, "No show_selector provided, returning empty list")
             return emptyList()
         }
         
         val resolvedIds = mutableSetOf<String>()
+        var totalPatternsProcessed = 0
+        var patternsWithResults = 0
         
         try {
             // Add explicit show IDs
-            resolvedIds.addAll(showSelector.showIds)
+            if (showSelector.showIds.isNotEmpty()) {
+                resolvedIds.addAll(showSelector.showIds)
+                totalPatternsProcessed++
+                patternsWithResults++
+                Log.d(TAG, "Added ${showSelector.showIds.size} explicit show IDs")
+            }
             
             // Add shows by specific dates
             showSelector.dates.forEach { date ->
                 val shows = showDao.getShowsByDate(date)
-                resolvedIds.addAll(shows.map { it.showId })
+                if (shows.isNotEmpty()) {
+                    resolvedIds.addAll(shows.map { it.showId })
+                    patternsWithResults++
+                }
+                totalPatternsProcessed++
+                Log.d(TAG, "Date '$date' resolved to ${shows.size} shows")
             }
             
             // Add shows by date ranges
             showSelector.ranges.forEach { range ->
                 val shows = showDao.getShowsInDateRange(range.start, range.end)
-                resolvedIds.addAll(shows.map { it.showId })
+                if (shows.isNotEmpty()) {
+                    resolvedIds.addAll(shows.map { it.showId })
+                    patternsWithResults++
+                }
+                totalPatternsProcessed++
+                Log.d(TAG, "Date range '${range.start}' to '${range.end}' resolved to ${shows.size} shows")
             }
             
             // Add shows by venue names
             showSelector.venues.forEach { venue ->
                 val shows = showDao.getShowsByVenue(venue)
-                resolvedIds.addAll(shows.map { it.showId })
+                if (shows.isNotEmpty()) {
+                    resolvedIds.addAll(shows.map { it.showId })
+                    patternsWithResults++
+                }
+                totalPatternsProcessed++
+                Log.d(TAG, "Venue '$venue' resolved to ${shows.size} shows")
             }
             
             // Add shows by years
             showSelector.years.forEach { year ->
                 val shows = showDao.getShowsByYear(year)
-                resolvedIds.addAll(shows.map { it.showId })
+                if (shows.isNotEmpty()) {
+                    resolvedIds.addAll(shows.map { it.showId })
+                    patternsWithResults++
+                }
+                totalPatternsProcessed++
+                Log.d(TAG, "Year $year resolved to ${shows.size} shows")
             }
             
-            Log.d(TAG, "Resolved ${resolvedIds.size} show IDs from show_selector patterns")
+            Log.i(TAG, "Show resolution summary: ${resolvedIds.size} unique shows from $patternsWithResults/$totalPatternsProcessed patterns")
+            
+            if (resolvedIds.isEmpty() && totalPatternsProcessed > 0) {
+                Log.w(TAG, "⚠️ All show_selector patterns resolved to 0 shows - database may be empty or patterns don't match existing data")
+            }
             
         } catch (e: Exception) {
-            Log.w(TAG, "Failed to resolve some show IDs from show_selector", e)
+            Log.e(TAG, "Exception during show resolution", e)
         }
         
         return resolvedIds.toList().sorted()
