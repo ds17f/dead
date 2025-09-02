@@ -19,6 +19,7 @@ import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.distinctUntilChanged
 import kotlinx.coroutines.flow.flatMapLatest
 import kotlinx.coroutines.flow.flowOf
+import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.flow.SharingStarted
@@ -47,6 +48,37 @@ class PlaylistViewModel @Inject constructor(
     // Internal state for show and tracks data
     private val _baseUiState = MutableStateFlow(PlaylistUiState())
     private val _rawTrackData = MutableStateFlow<List<PlaylistTrackViewModel>>(emptyList())
+    
+    init {
+        // Reactive collections loading - watch for showId changes and update collections
+        viewModelScope.launch {
+            _baseUiState
+                .map { it.showData?.showId }
+                .distinctUntilChanged()
+                .collect { showId ->
+                    if (showId != null) {
+                        try {
+                            val collections = playlistService.getShowCollections(showId)
+                            _baseUiState.value = _baseUiState.value.copy(
+                                showCollections = collections,
+                                collectionsLoading = false
+                            )
+                        } catch (e: Exception) {
+                            Log.e(TAG, "Error loading collections for show $showId", e)
+                            _baseUiState.value = _baseUiState.value.copy(
+                                showCollections = emptyList(),
+                                collectionsLoading = false
+                            )
+                        }
+                    } else {
+                        _baseUiState.value = _baseUiState.value.copy(
+                            showCollections = emptyList(),
+                            collectionsLoading = false
+                        )
+                    }
+                }
+        }
+    }
     
     // Reactive UI state that combines base state with MediaController state and library status
     val uiState: StateFlow<PlaylistUiState> = combine(
@@ -179,8 +211,7 @@ class PlaylistViewModel @Inject constructor(
                 // Start track loading in background
                 loadTrackListAsync()
                 
-                // Load collections for this show
-                loadShowCollections(showId)
+                // Collections are loaded reactively via combine() flow
                 
             } catch (e: Exception) {
                 Log.e(TAG, "Error loading show", e)
@@ -672,36 +703,6 @@ class PlaylistViewModel @Inject constructor(
                 Log.d(TAG, "Reset to recommended successfully")
             } catch (e: Exception) {
                 Log.e(TAG, "Error resetting to recommended", e)
-            }
-        }
-    }
-    
-    /**
-     * Load collections that contain the current show
-     */
-    private fun loadShowCollections(showId: String?) {
-        if (showId.isNullOrBlank()) {
-            Log.d(TAG, "No showId provided - skipping collections load")
-            return
-        }
-        
-        viewModelScope.launch {
-            try {
-                _baseUiState.value = _baseUiState.value.copy(collectionsLoading = true)
-                
-                val collections = playlistService.getShowCollections(showId)
-                _baseUiState.value = _baseUiState.value.copy(
-                    showCollections = collections,
-                    collectionsLoading = false
-                )
-                Log.d(TAG, "Loaded ${collections.size} collections containing show $showId")
-                
-            } catch (e: Exception) {
-                Log.e(TAG, "Error loading collections for show $showId", e)
-                _baseUiState.value = _baseUiState.value.copy(
-                    showCollections = emptyList(),
-                    collectionsLoading = false
-                )
             }
         }
     }
