@@ -20,7 +20,8 @@ import com.deadly.v2.core.design.resources.IconResources
 import com.deadly.v2.core.model.Show
 
 /**
- * Recent Shows Grid - 2x4 layout showing recently played shows
+ * Recent Shows Grid - Dynamic 2-column layout showing recently played shows
+ * Automatically adjusts height based on number of shows (1-8 shows, 1-4 rows)
  */
 @OptIn(ExperimentalFoundationApi::class)
 @Composable
@@ -30,6 +31,10 @@ fun RecentShowsGrid(
     onShowLongPress: (Show) -> Unit,
     modifier: Modifier = Modifier
 ) {
+    val displayShows = shows.take(8) // Maximum 8 shows for 2x4 grid
+    val rowCount = (displayShows.size + 1) / 2 // Calculate rows needed (ceiling division)
+    val gridHeight = (rowCount * 64 + (rowCount - 1) * 4).dp // rows × card height + spacing
+    
     Column(modifier = modifier.fillMaxWidth()) {
         Text(
             text = "Recently Played",
@@ -41,13 +46,13 @@ fun RecentShowsGrid(
         LazyVerticalGrid(
             columns = GridCells.Fixed(2),
             modifier = Modifier
-                .height(268.dp) // 4 rows × 64dp card height + spacing
+                .height(gridHeight) // Dynamic height based on content
                 .fillMaxWidth(),
             horizontalArrangement = Arrangement.spacedBy(8.dp),
             verticalArrangement = Arrangement.spacedBy(4.dp),
             userScrollEnabled = false // Disable scrolling to hold its size
         ) {
-            items(shows.take(8)) { show -> // 2x4 = 8 cards
+            items(displayShows) { show ->
                 RecentShowCard(
                     show = show,
                     onShowClick = { onShowClick(show.id) },

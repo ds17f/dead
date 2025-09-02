@@ -8,12 +8,11 @@ plugins {
 }
 
 android {
-    namespace = "com.deadly.v2.core.home"
+    namespace = "com.deadly.v2.core.recent"
     compileSdk = 34
 
     defaultConfig {
         minSdk = 24
-        
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles("consumer-rules.pro")
     }
@@ -39,24 +38,26 @@ android {
 }
 
 dependencies {
-    // V2 API dependencies
-    implementation(project(":v2:core:api:home"))
-    implementation(project(":v2:core:api:collections"))
-    implementation(project(":v2:core:api:recent"))
+    // V2 API contract
+    api(project(":v2:core:api:recent"))
+    
+    // V2 Core dependencies
     implementation(project(":v2:core:model"))
+    implementation(project(":v2:core:database"))
     implementation(project(":v2:core:domain"))
+    implementation(project(":v2:core:media"))
+    
+    // Kotlin Coroutines
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.3")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
     
     // Hilt
     implementation("com.google.dagger:hilt-android:2.51.1")
     ksp("com.google.dagger:hilt-compiler:2.51.1")
     
-    // Coroutines
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
-    
-    // Testing
-    testImplementation("junit:junit:4.13.2")
-    androidTestImplementation("androidx.test.ext:junit:1.1.5")
-    androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
+    // Room (for database access)
+    implementation("androidx.room:room-runtime:2.6.1")
+    implementation("androidx.room:room-ktx:2.6.1")
 }
 
 kapt {

@@ -3,6 +3,7 @@ package com.deadly.v2.core.home
 import android.util.Log
 import com.deadly.v2.core.api.home.HomeService
 import com.deadly.v2.core.api.home.HomeContent
+import com.deadly.v2.core.api.recent.RecentShowsService
 import com.deadly.v2.core.domain.repository.ShowRepository
 import com.deadly.v2.core.model.*
 import kotlinx.coroutines.CoroutineScope
@@ -11,24 +12,28 @@ import kotlinx.coroutines.SupervisorJob
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
+import kotlinx.coroutines.flow.combine
+import kotlinx.coroutines.flow.stateIn
+import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.launch
 import java.time.LocalDate
 import javax.inject.Inject
 import javax.inject.Singleton
 
 /**
- * Comprehensive stub implementation of HomeService with realistic Dead show data.
+ * V2 HomeService implementation with real recent shows tracking.
  * 
- * This stub provides rich mock data for immediate UI development:
- * - Recent shows spanning decades of Grateful Dead concerts
- * - Today in History with historical context
- * - Featured collections representing major releases and tours
+ * Integrates with RecentShowsService for real user listening behavior tracking:
+ * - Recent shows from actual user plays (via MediaController observation)
+ * - Today in History from database queries  
+ * - Featured collections from mock/curated data
  * 
- * Enables UI-first development while validating V2 architecture patterns.
+ * Uses reactive StateFlow combination for real-time UI updates.
  */
 @Singleton
 class HomeServiceStub @Inject constructor(
-    private val showRepository: ShowRepository
+    private val showRepository: ShowRepository,
+    private val recentShowsService: RecentShowsService
 ) : HomeService {
     
     companion object {
@@ -37,38 +42,48 @@ class HomeServiceStub @Inject constructor(
     
     private val serviceScope = CoroutineScope(Dispatchers.IO + SupervisorJob())
     
-    private val _homeContent = MutableStateFlow(HomeContent.initial())
-    override val homeContent: StateFlow<HomeContent> = _homeContent.asStateFlow()
+    // Reactive combination of all home content sources
+    override val homeContent: StateFlow<HomeContent> = combine(
+        recentShowsService.recentShows,
+        loadTodayInHistoryFlow(),
+        loadFeaturedCollectionsFlow()
+    ) { recentShows, todayInHistory, featuredCollections ->
+        HomeContent(
+            recentShows = recentShows,
+            todayInHistory = todayInHistory,
+            featuredCollections = featuredCollections,
+            lastRefresh = System.currentTimeMillis()
+        )
+    }.stateIn(
+        scope = serviceScope,
+        started = SharingStarted.WhileSubscribed(5000),
+        initialValue = HomeContent.initial()
+    )
     
     init {
-        Log.d(TAG, "HomeServiceStub initialized - loading dynamic today in history data")
-        loadInitialContent()
+        Log.d(TAG, "HomeServiceStub initialized with reactive RecentShowsService integration")
     }
     
-    private fun loadInitialContent() {
-        serviceScope.launch {
-            try {
-                val todayInHistory = loadTodayInHistoryShows()
-                
-                _homeContent.value = HomeContent(
-                    recentShows = generateMockRecentShows(),
-                    todayInHistory = todayInHistory,
-                    featuredCollections = generateMockCollections(),
-                    lastRefresh = System.currentTimeMillis()
-                )
-                
-                Log.d(TAG, "Loaded ${todayInHistory.size} shows for today in history")
-            } catch (e: Exception) {
-                Log.e(TAG, "Failed to load today in history shows", e)
-                // Fall back to mock data
-                _homeContent.value = HomeContent(
-                    recentShows = generateMockRecentShows(),
-                    todayInHistory = generateMockHistoryShows(),
-                    featuredCollections = generateMockCollections(),
-                    lastRefresh = System.currentTimeMillis()
-                )
-            }
+    /**
+     * Reactive flow for today in history shows
+     */
+    private fun loadTodayInHistoryFlow() = kotlinx.coroutines.flow.flow {
+        try {
+            val todayInHistory = loadTodayInHistoryShows()
+            emit(todayInHistory)
+            Log.d(TAG, "Loaded ${todayInHistory.size} shows for today in history")
+        } catch (e: Exception) {
+            Log.e(TAG, "Failed to load today in history shows", e)
+            // Fall back to mock data
+            emit(generateMockHistoryShows())
         }
+    }
+    
+    /**
+     * Reactive flow for featured collections (currently mock data)
+     */
+    private fun loadFeaturedCollectionsFlow() = kotlinx.coroutines.flow.flow {
+        emit(generateMockCollections())
     }
     
     /**
@@ -82,20 +97,17 @@ class HomeServiceStub @Inject constructor(
     }
     
     override suspend fun refreshAll(): Result<Unit> {
-        Log.d(TAG, "refreshAll() called - reloading today in history")
+        Log.d(TAG, "refreshAll() called - reactive flows will auto-refresh")
         
         return try {
-            val todayInHistory = loadTodayInHistoryShows()
+            // With reactive architecture, the StateFlow will automatically update
+            // when underlying data sources change. No manual refresh needed.
+            // The combine operator will re-emit when any source flow emits.
             
-            _homeContent.value = _homeContent.value.copy(
-                todayInHistory = todayInHistory,
-                lastRefresh = System.currentTimeMillis()
-            )
-            
-            Log.d(TAG, "Refreshed with ${todayInHistory.size} shows for today")
+            Log.d(TAG, "Refresh complete - reactive flows handle updates automatically")
             Result.success(Unit)
         } catch (e: Exception) {
-            Log.e(TAG, "Failed to refresh today in history", e)
+            Log.e(TAG, "Failed to refresh", e)
             Result.failure(e)
         }
     }

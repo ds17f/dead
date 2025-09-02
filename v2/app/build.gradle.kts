@@ -57,6 +57,8 @@ dependencies {
     implementation(project(":v2:core:home"))
     implementation(project(":v2:core:api:collections"))
     implementation(project(":v2:core:collections"))
+    implementation(project(":v2:core:api:recent"))
+    implementation(project(":v2:core:recent"))
 
     // V2 Feature Dependencies
     implementation(project(":v2:feature:splash"))

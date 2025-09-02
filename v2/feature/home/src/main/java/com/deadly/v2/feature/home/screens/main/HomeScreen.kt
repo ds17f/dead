@@ -52,15 +52,17 @@ fun HomeScreen(
             contentPadding = PaddingValues(16.dp),
             verticalArrangement = Arrangement.spacedBy(24.dp)
         ) {
-            // Recent Shows Grid Section
-            item {
-                RecentShowsGrid(
-                    shows = uiState.homeContent.recentShows,
-                    onShowClick = onNavigateToShow,
-                    onShowLongPress = { show -> 
-                        // TODO: Implement context menu
-                    }
-                )
+            // Recent Shows Grid Section - only show if there are recent shows
+            if (uiState.homeContent.recentShows.isNotEmpty()) {
+                item {
+                    RecentShowsGrid(
+                        shows = uiState.homeContent.recentShows,
+                        onShowClick = onNavigateToShow,
+                        onShowLongPress = { show -> 
+                            // TODO: Implement context menu
+                        }
+                    )
+                }
             }
             
             // Today In Grateful Dead History Section
