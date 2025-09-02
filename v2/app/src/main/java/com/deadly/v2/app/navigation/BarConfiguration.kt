@@ -9,6 +9,7 @@ import com.deadly.v2.feature.search.screens.main.SearchBarConfiguration
 import com.deadly.v2.feature.settings.screens.main.SettingsBarConfiguration
 import com.deadly.v2.feature.library.screens.main.LibraryBarConfiguration
 import com.deadly.v2.feature.collections.screens.main.CollectionsBarConfiguration
+import com.deadly.v2.feature.collections.screens.details.CollectionDetailsBarConfiguration
 
 /**
  * Central route mapping to feature bar configurations
@@ -17,32 +18,41 @@ import com.deadly.v2.feature.collections.screens.main.CollectionsBarConfiguratio
  * keeping the actual configurations colocated with their features.
  */
 object NavigationBarConfig {
-    fun getBarConfig(route: String?): BarConfiguration = when (route) {
+    fun getBarConfig(route: String?): BarConfiguration = when {
         // Home routes
-        "home" -> HomeBarConfiguration.getHomeBarConfig()
+        route == "home" -> HomeBarConfiguration.getHomeBarConfig()
         
         // Search routes - delegate to SearchBarConfiguration
-        "search" -> SearchBarConfiguration.getSearchBarConfig()
-        "search-results" -> SearchBarConfiguration.getSearchResultsBarConfig()
+        route == "search" -> SearchBarConfiguration.getSearchBarConfig()
+        route == "search-results" -> SearchBarConfiguration.getSearchResultsBarConfig()
         
         // Settings routes
-        "settings" -> SettingsBarConfiguration.getSettingsBarConfig()
+        route == "settings" -> SettingsBarConfiguration.getSettingsBarConfig()
         
         // Library routes
-        "library" -> LibraryBarConfiguration.getLibraryBarConfig()
+        route == "library" -> LibraryBarConfiguration.getLibraryBarConfig()
         
         // Collections routes
-        "collections" -> CollectionsBarConfiguration.getCollectionsBarConfig()
+        route == "collections" -> CollectionsBarConfiguration.getCollectionsBarConfig()
+        
+        // Collection details routes - dynamic route handling
+        route?.startsWith("collection/") == true -> {
+            val collectionId = route.removePrefix("collection/")
+            CollectionDetailsBarConfiguration.getCollectionDetailsBarConfig(
+                collectionName = "Collection", // Will be updated by ViewModel
+                onNavigateBack = { /* Handled by screen */ }
+            )
+        }
         
         // Player routes - full screen immersive experience
-        "player" -> BarConfiguration(
+        route == "player" -> BarConfiguration(
             topBar = null, // Player has its own top bar
             bottomBar = BottomBarConfig(visible = false), // Hide bottom nav in player
             miniPlayer = MiniPlayerConfig(visible = false) // Hide MiniPlayer in player (it has its own)
         )
         
         // Splash and other routes
-        "splash" -> BarConfiguration(
+        route == "splash" -> BarConfiguration(
             topBar = null,
             bottomBar = BottomBarConfig(visible = false), // Hide bottom nav on splash
             miniPlayer = MiniPlayerConfig(visible = false) // Hide MiniPlayer during splash
