@@ -1,7 +1,7 @@
 package com.deadly.v2.core.home.di
 
 import com.deadly.v2.core.api.home.HomeService
-import com.deadly.v2.core.home.HomeServiceStub
+import com.deadly.v2.core.home.HomeServiceImpl
 import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn
@@ -11,20 +11,19 @@ import javax.inject.Singleton
 /**
  * Hilt module for Home service implementations.
  * 
- * Currently provides stub implementation for UI-first development.
- * Will be updated to provide real implementation once underlying services are complete.
+ * Provides production HomeService implementation with real data integration.
  */
 @Module
 @InstallIn(SingletonComponent::class)
 abstract class HomeModule {
     
     /**
-     * Binds the stub HomeServiceStub to the HomeService interface.
-     * Provides comprehensive mock data for immediate UI development.
+     * Binds the production HomeServiceImpl to the HomeService interface.
+     * Provides real recent shows tracking, database-driven history, and curated collections.
      */
     @Binds
     @Singleton
     abstract fun bindHomeService(
-        impl: HomeServiceStub
+        impl: HomeServiceImpl
     ): HomeService
 }
