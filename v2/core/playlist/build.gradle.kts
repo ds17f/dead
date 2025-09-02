@@ -39,6 +39,8 @@ android {
 dependencies {
     // V2 dependencies
     implementation(project(":v2:core:api:playlist"))
+    implementation(project(":v2:core:api:collections"))
+    implementation(project(":v2:core:collections"))
     implementation(project(":v2:core:model"))
     implementation(project(":v2:core:domain"))
     implementation(project(":v2:core:network:archive"))

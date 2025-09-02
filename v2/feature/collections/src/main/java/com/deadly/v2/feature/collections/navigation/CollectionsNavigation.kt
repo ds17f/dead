@@ -34,5 +34,16 @@ fun NavGraphBuilder.collectionsGraph(navController: NavController) {
                 onNavigateToShow = { showId -> navController.navigate("playlist/$showId") }
             )
         }
+        
+        composable("collectionDetail/{collectionId}/{showId}") { backStackEntry ->
+            val collectionId = backStackEntry.arguments?.getString("collectionId") ?: ""
+            val showId = backStackEntry.arguments?.getString("showId") ?: ""
+            CollectionDetailsScreen(
+                collectionId = collectionId,
+                highlightedShowId = showId,
+                onNavigateBack = { navController.popBackStack() },
+                onNavigateToShow = { selectedShowId -> navController.navigate("playlist/$selectedShowId") }
+            )
+        }
     }
 }

@@ -117,6 +117,13 @@ interface PlaylistService {
      */
     fun getCurrentSelectedFormat(): String?
     
+    /**
+     * Get collections containing the current show
+     * @param showId The show ID to find collections for
+     * @return List of collections containing this show
+     */
+    suspend fun getShowCollections(showId: String): List<DeadCollection>
+    
     // === MediaController State Observation ===
     
     /**

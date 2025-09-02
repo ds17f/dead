@@ -140,6 +140,18 @@ class DeadCollectionsServiceImpl @Inject constructor(
         }
     }
     
+    override suspend fun getCollectionsContainingShow(showId: String): Result<List<DeadCollection>> {
+        return try {
+            val entities = collectionsDao.getCollectionsContainingShow(showId)
+            val collections = entities.map { convertToModel(it) }
+            Log.d(TAG, "Found ${collections.size} collections containing show $showId")
+            Result.success(collections)
+        } catch (e: Exception) {
+            Log.e(TAG, "Failed to get collections containing show $showId", e)
+            Result.failure(e)
+        }
+    }
+    
     /**
      * Convert database entity to domain model
      */

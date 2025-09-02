@@ -106,4 +106,14 @@ interface CollectionsDao {
      */
     @Query("SELECT * FROM dead_collections WHERE totalShows >= :minShows ORDER BY totalShows DESC")
     suspend fun getCollectionsWithMinimumShows(minShows: Int): List<DeadCollectionEntity>
+    
+    /**
+     * Get collections containing a specific show (efficient JSON query)
+     */
+    @Query("""
+        SELECT * FROM dead_collections 
+        WHERE showIdsJson LIKE '%' || :showId || '%'
+        ORDER BY name ASC
+    """)
+    suspend fun getCollectionsContainingShow(showId: String): List<DeadCollectionEntity>
 }

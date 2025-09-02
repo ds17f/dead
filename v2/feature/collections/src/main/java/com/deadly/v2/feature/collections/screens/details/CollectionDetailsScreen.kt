@@ -34,6 +34,7 @@ import com.deadly.v2.feature.collections.screens.details.models.CollectionDetail
 @Composable
 fun CollectionDetailsScreen(
     collectionId: String,
+    highlightedShowId: String? = null,
     onNavigateBack: () -> Unit,
     onNavigateToShow: (String) -> Unit,
     viewModel: CollectionDetailsViewModel = hiltViewModel()

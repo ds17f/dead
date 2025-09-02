@@ -830,4 +830,14 @@ class PlaylistServiceImpl @Inject constructor(
             Pair(nextShow, previousShow)
         } ?: Pair(null, null)
     }
+    
+    /**
+     * Get collections containing the specified show
+     * TODO: Integrate with collections service when dependency injection issue is resolved
+     */
+    override suspend fun getShowCollections(showId: String): List<DeadCollection> {
+        Log.d(TAG, "getShowCollections($showId) - STUBBED: Collections service dependency removed")
+        Log.d(TAG, "TODO: Reintegrate collections service when Hilt annotation processor issue is fixed")
+        return emptyList()
+    }
 }

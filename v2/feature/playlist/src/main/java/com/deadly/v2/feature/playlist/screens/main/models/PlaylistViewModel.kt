@@ -179,6 +179,9 @@ class PlaylistViewModel @Inject constructor(
                 // Start track loading in background
                 loadTrackListAsync()
                 
+                // Load collections for this show
+                loadShowCollections(showId)
+                
             } catch (e: Exception) {
                 Log.e(TAG, "Error loading show", e)
                 _baseUiState.value = _baseUiState.value.copy(
@@ -671,6 +674,52 @@ class PlaylistViewModel @Inject constructor(
                 Log.e(TAG, "Error resetting to recommended", e)
             }
         }
+    }
+    
+    /**
+     * Load collections that contain the current show
+     */
+    private fun loadShowCollections(showId: String?) {
+        if (showId.isNullOrBlank()) {
+            Log.d(TAG, "No showId provided - skipping collections load")
+            return
+        }
+        
+        viewModelScope.launch {
+            try {
+                _baseUiState.value = _baseUiState.value.copy(collectionsLoading = true)
+                
+                val collections = playlistService.getShowCollections(showId)
+                _baseUiState.value = _baseUiState.value.copy(
+                    showCollections = collections,
+                    collectionsLoading = false
+                )
+                Log.d(TAG, "Loaded ${collections.size} collections containing show $showId")
+                
+            } catch (e: Exception) {
+                Log.e(TAG, "Error loading collections for show $showId", e)
+                _baseUiState.value = _baseUiState.value.copy(
+                    showCollections = emptyList(),
+                    collectionsLoading = false
+                )
+            }
+        }
+    }
+    
+    /**
+     * Show collections sheet
+     */
+    fun showCollectionsSheet() {
+        Log.d(TAG, "Show collections sheet requested")
+        _baseUiState.value = _baseUiState.value.copy(showCollectionsSheet = true)
+    }
+    
+    /**
+     * Hide collections sheet
+     */
+    fun hideCollectionsSheet() {
+        Log.d(TAG, "Hide collections sheet requested")
+        _baseUiState.value = _baseUiState.value.copy(showCollectionsSheet = false)
     }
     
     /**

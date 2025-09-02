@@ -20,6 +20,7 @@ import com.deadly.v2.feature.playlist.screens.main.components.PlaylistTrackList
 import com.deadly.v2.feature.playlist.screens.main.components.PlaylistReviewDetailsSheet
 import com.deadly.v2.feature.playlist.screens.main.components.PlaylistMenuSheet
 import com.deadly.v2.feature.playlist.screens.main.components.PlaylistRecordingSelectionSheet
+import com.deadly.v2.feature.playlist.screens.main.components.PlaylistCollectionsSheet
 import com.deadly.v2.feature.playlist.screens.main.models.PlaylistViewModel
 import com.deadly.v2.core.design.component.debug.DebugData
 import com.deadly.v2.core.design.component.debug.DebugSection
@@ -37,6 +38,7 @@ fun PlaylistScreen(
     onNavigateBack: () -> Unit,
     onNavigateToPlayer: () -> Unit = {},
     onNavigateToShow: (String, String) -> Unit = { _, _ -> },
+    onNavigateToCollection: (String, String) -> Unit = { _, _ -> }, // collectionId, showId
     recordingId: String? = null,
     showId: String? = null,
     viewModel: PlaylistViewModel = hiltViewModel(),
@@ -171,9 +173,11 @@ fun PlaylistScreen(
                                 isPlaying = uiState.isPlaying,
                                 isLoading = uiState.mediaLoading,
                                 isCurrentShowAndRecording = uiState.isCurrentShowAndRecording,
+                                showCollections = uiState.showCollections,
                                 onLibraryAction = viewModel::handleLibraryAction,
                                 onDownload = viewModel::downloadShow,
                                 onShowSetlist = viewModel::showSetlist,
+                                onShowCollections = viewModel::showCollectionsSheet,
                                 onShowMenu = viewModel::showMenu,
                                 onTogglePlayback = viewModel::togglePlayback
                             )
@@ -272,6 +276,20 @@ fun PlaylistScreen(
                 { viewModel.resetToRecommended() }
             } else null,
             onDismiss = viewModel::hideRecordingSelection
+        )
+    }
+    
+    // Collections Sheet
+    if (uiState.showCollectionsSheet) {
+        PlaylistCollectionsSheet(
+            collections = uiState.showCollections,
+            showTitle = uiState.showData?.displayDate ?: "Unknown Show",
+            isVisible = uiState.showCollectionsSheet,
+            onNavigateToCollection = { collectionId, showId ->
+                onNavigateToCollection(collectionId, showId)
+                viewModel.hideCollectionsSheet()
+            },
+            onDismiss = viewModel::hideCollectionsSheet
         )
     }
 }

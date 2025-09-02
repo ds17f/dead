@@ -136,7 +136,11 @@ data class PlaylistUiState(
     // Play button behavior: true = play/pause toggle, false = play (start new show/recording)
     val isCurrentShowAndRecording: Boolean = false,
     // Media loading state from current track PlaybackState
-    val mediaLoading: Boolean = false
+    val mediaLoading: Boolean = false,
+    // Collections state
+    val showCollections: List<DeadCollection> = emptyList(),
+    val showCollectionsSheet: Boolean = false,
+    val collectionsLoading: Boolean = false
 )
 
 

@@ -52,6 +52,13 @@ interface DeadCollectionsService {
      * @return Result with matching collections or error
      */
     suspend fun searchCollections(query: String): Result<List<DeadCollection>>
+    
+    /**
+     * Get collections containing a specific show
+     * @param showId The show ID to search for
+     * @return Result with collections containing this show or error
+     */
+    suspend fun getCollectionsContainingShow(showId: String): Result<List<DeadCollection>>
 }
 
 /**

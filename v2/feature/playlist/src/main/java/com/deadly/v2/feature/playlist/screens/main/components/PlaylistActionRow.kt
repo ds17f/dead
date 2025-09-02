@@ -23,9 +23,11 @@ fun PlaylistActionRow(
     isPlaying: Boolean,
     isLoading: Boolean,
     isCurrentShowAndRecording: Boolean,
+    showCollections: List<com.deadly.v2.core.model.DeadCollection>,
     onLibraryAction: (LibraryAction) -> Unit,
     onDownload: () -> Unit,
     onShowSetlist: () -> Unit,
+    onShowCollections: () -> Unit,
     onShowMenu: () -> Unit,
     onTogglePlayback: () -> Unit,
     modifier: Modifier = Modifier
@@ -126,6 +128,23 @@ fun PlaylistActionRow(
                     painter = IconResources.Content.FormatListBulleted(),
                     contentDescription = "Show Setlist",
                     tint = MaterialTheme.colorScheme.onSurfaceVariant,
+                    modifier = Modifier.size(24.dp)
+                )
+            }
+            
+            // Collections button
+            IconButton(
+                onClick = onShowCollections,
+                modifier = Modifier.size(40.dp)
+            ) {
+                Icon(
+                    painter = IconResources.Navigation.Collections(),
+                    contentDescription = if (showCollections.isNotEmpty()) "Show Collections (${showCollections.size})" else "Show Collections",
+                    tint = if (showCollections.isNotEmpty()) {
+                        MaterialTheme.colorScheme.primary
+                    } else {
+                        MaterialTheme.colorScheme.onSurfaceVariant
+                    },
                     modifier = Modifier.size(24.dp)
                 )
             }
