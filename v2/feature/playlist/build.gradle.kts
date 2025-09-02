@@ -48,6 +48,7 @@ dependencies {
     // V2 dependencies
     implementation(project(":v2:core:api:playlist"))
     implementation(project(":v2:core:api:library"))
+    implementation(project(":v2:core:api:recent"))
     implementation(project(":v2:core:playlist"))
     implementation(project(":v2:core:model"))
     implementation(project(":v2:core:design"))

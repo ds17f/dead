@@ -5,6 +5,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.deadly.v2.core.api.playlist.PlaylistService
 import com.deadly.v2.core.api.library.LibraryService
+import com.deadly.v2.core.api.recent.RecentShowsService
 import com.deadly.v2.core.model.*
 import com.deadly.v2.core.media.repository.MediaControllerRepository
 import com.deadly.v2.core.media.exception.FormatNotAvailableException
@@ -34,7 +35,8 @@ import javax.inject.Named
 class PlaylistViewModel @Inject constructor(
     private val playlistService: PlaylistService,
     private val mediaControllerRepository: MediaControllerRepository,
-    private val libraryService: LibraryService
+    private val libraryService: LibraryService,
+    private val recentShowsService: RecentShowsService
 ) : ViewModel() {
     
     companion object {
@@ -739,6 +741,15 @@ class PlaylistViewModel @Inject constructor(
                         val venue = showContext?.venue
                         val location = showContext?.location
                         
+                        // Record show play immediately when user intentionally starts playback
+                        try {
+                            recentShowsService.recordShowPlay(showId)
+                            Log.d(TAG, "Recorded show play in RecentShowsService: $showId (Play All)")
+                        } catch (e: Exception) {
+                            Log.w(TAG, "Failed to record show play in RecentShowsService: $showId", e)
+                            // Don't fail playback if recent shows tracking fails
+                        }
+                        
                         // Use MediaControllerRepository for Play All logic (new show/recording)
                         mediaControllerRepository.playAll(
                             recordingId = recordingId, 
@@ -821,6 +832,15 @@ class PlaylistViewModel @Inject constructor(
                 val showDate = showContext.date
                 val venue = showContext?.venue
                 val location = showContext?.location
+                
+                // Record show play immediately when user intentionally starts playback
+                try {
+                    recentShowsService.recordShowPlay(showId)
+                    Log.d(TAG, "Recorded show play in RecentShowsService: $showId (Play Track)")
+                } catch (e: Exception) {
+                    Log.w(TAG, "Failed to record show play in RecentShowsService: $showId", e)
+                    // Don't fail playback if recent shows tracking fails
+                }
                 
                 // Use MediaControllerRepository for track playback
                 mediaControllerRepository.playTrack(
