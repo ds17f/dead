@@ -51,6 +51,9 @@ fun NavGraphBuilder.playlistGraph(navController: NavController) {
                 // Navigate to player with specific recording
                 navController.navigate("player/$recordingId")
             },
+            onNavigateToCollection = { collectionId, showId ->
+                navController.navigate("collectionDetail/$collectionId/$showId")
+            },
             showId = showId,
             recordingId = recordingId
         )
@@ -70,6 +73,9 @@ fun NavGraphBuilder.playlistGraph(navController: NavController) {
             onNavigateToShow = { showId, recordingId ->
                 // Navigate to player with specific recording
                 navController.navigate("player/$recordingId")
+            },
+            onNavigateToCollection = { collectionId, showId ->
+                navController.navigate("collectionDetail/$collectionId/$showId")
             },
             showId = showId,
             recordingId = null // Let show logic decide
