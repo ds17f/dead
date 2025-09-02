@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.66.0] - 2025-09-02
+
+### New Features
+* add collection details screen with V2 service architecture (87c3a8d9)
+* add collections icon and fix V2 icon download path (6c860302)
+* add collections command to monitor collections import and service logs (922823c9)
+* implement collections import during database initialization (97fc98c7)
+* add Collections feature with bottom navigation and complete module architecture (abcf1251)
+
+### Bug Fixes
+* resolve collections import JSON parsing and show resolution issues (a71c04b4)
+
+
 ## [0.65.0] - 2025-09-01
 
 ### New Features
@@ -8,8 +21,6 @@
 
 ### Code Refactoring
 * rename HomeServiceStub to HomeServiceImpl and integrate real CollectionsService (6775a6d4)
-
-
 ## [0.64.0] - 2025-09-01
 
 ### New Features
