@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.67.1] - 2025-09-03
+
+### Build System
+* upgrade to Kotlin 2.1.0 and fix memory issues after API 35 upgrade (949d397c)
+
+
 ## [0.67.0] - 2025-09-03
 
 ### New Features
@@ -20,8 +26,6 @@
 
 ### Other Changes
 * logs(collections): Capture more collection output (47215550)
-
-
 ## [0.66.0] - 2025-09-02
 
 ### New Features
