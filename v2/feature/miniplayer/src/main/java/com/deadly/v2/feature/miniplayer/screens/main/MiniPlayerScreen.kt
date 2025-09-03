@@ -16,6 +16,7 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.deadly.v2.feature.miniplayer.screens.main.models.MiniPlayerViewModel
+import androidx.compose.ui.graphics.Color
 import kotlinx.coroutines.delay
 
 /**
@@ -57,7 +58,7 @@ fun MiniPlayerScreen(
         elevation = CardDefaults.cardElevation(defaultElevation = 8.dp),
         shape = RoundedCornerShape(topStart = 12.dp, topEnd = 12.dp),
         colors = CardDefaults.cardColors(
-            containerColor = MaterialTheme.colorScheme.surface
+            containerColor = Color(0xFF2D1B1B) // Custom dark red-brown for MiniPlayer
         )
     ) {
         Column {

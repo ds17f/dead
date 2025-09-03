@@ -15,6 +15,9 @@ private val DeadGreen = Color(0xFF228B22)    // Forest green
 private val DeadBlue = Color(0xFF4169E1)     // Royal blue
 private val DeadPurple = Color(0xFF8A2BE2)   // Blue violet
 
+// Custom MiniPlayer background - dark red/maroon blend
+private val MiniPlayerBackground = Color(0xFF2D1B1B)  // Dark red-brown
+
 private val DarkColorScheme = darkColorScheme(
     primary = DeadRed,
     onPrimary = Color.White,
@@ -63,3 +66,7 @@ fun DeadArchiveTheme(
         content = content
     )
 }
+
+// Extension to access custom colors
+val androidx.compose.material3.ColorScheme.miniPlayerBackground: Color
+    get() = MiniPlayerBackground
