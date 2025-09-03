@@ -46,8 +46,8 @@ dependencies {
     implementation("androidx.media3:media3-ui:1.3.1")
     
     // Hilt
-    implementation("com.google.dagger:hilt-android:2.51.1")
-    kapt("com.google.dagger:hilt-compiler:2.51.1")
+    implementation("com.google.dagger:hilt-android:2.56.1")
+    kapt("com.google.dagger:hilt-compiler:2.56.1")
     
     testImplementation("junit:junit:4.13.2")
 }

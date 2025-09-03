@@ -46,8 +46,8 @@ dependencies {
     implementation("androidx.media3:media3-common:1.4.1")
     
     // Hilt for dependency injection
-    implementation("com.google.dagger:hilt-android:2.51.1")
-    ksp("com.google.dagger:hilt-compiler:2.51.1")
+    implementation("com.google.dagger:hilt-android:2.56.1")
+    ksp("com.google.dagger:hilt-compiler:2.56.1")
     
     // Coroutines for StateFlow operations
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
