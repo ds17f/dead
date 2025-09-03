@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.deadly.v2.core.design"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         minSdk = 24
@@ -53,11 +53,14 @@ dependencies {
     implementation("androidx.activity:activity-compose:1.8.2")
     
     // Compose BOM
-    api(platform("androidx.compose:compose-bom:2024.05.00"))
+    api(platform("androidx.compose:compose-bom:2025.08.00"))
     api("androidx.compose.ui:ui")
     api("androidx.compose.ui:ui-graphics")
     api("androidx.compose.ui:ui-tooling-preview")
     api("androidx.compose.material3:material3")
+    
+    // Compose Foundation (version managed by BOM)
+    api("androidx.compose.foundation:foundation")
     
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")

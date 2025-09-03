@@ -22,7 +22,7 @@ plugins {
 
 android {
     namespace = "com.deadly.app"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.deadly.app"

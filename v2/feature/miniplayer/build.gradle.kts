@@ -7,7 +7,7 @@ plugins {
 
 android {
     namespace = "com.deadly.v2.feature.miniplayer"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         minSdk = 24
@@ -54,7 +54,7 @@ dependencies {
     ksp("com.google.dagger:hilt-compiler:2.51.1")
     
     // Compose BOM
-    implementation(platform("androidx.compose:compose-bom:2024.05.00"))
+    implementation(platform("androidx.compose:compose-bom:2025.08.00"))
     implementation("androidx.compose.ui:ui")
     implementation("androidx.compose.material3:material3")
     implementation("androidx.compose.ui:ui-tooling-preview")

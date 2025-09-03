@@ -12,6 +12,7 @@ import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.deadly.v2.core.design.component.CollectionCard
+import com.deadly.v2.core.design.component.FeaturedCollectionsCarousel
 import com.deadly.v2.core.design.component.debug.DebugActivator
 import com.deadly.v2.core.design.component.debug.DebugBottomSheet
 import com.deadly.v2.feature.collections.screens.main.models.CollectionsViewModel
@@ -80,10 +81,10 @@ fun CollectionsScreen(
                     )
                 }
                 
-                items(featuredCollections) { collection ->
-                    CollectionCard(
-                        collection = collection,
-                        onClick = { onNavigateToCollection(collection.id) }
+                item {
+                    FeaturedCollectionsCarousel(
+                        collections = featuredCollections,
+                        onCollectionClick = onNavigateToCollection
                     )
                 }
             } else {

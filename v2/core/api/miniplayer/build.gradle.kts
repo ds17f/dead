@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.deadly.v2.core.api.miniplayer"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         minSdk = 24

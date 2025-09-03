@@ -6,7 +6,7 @@ plugins {
 
 android {
     namespace = "com.deadly.v2.core.api.recent"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         minSdk = 24

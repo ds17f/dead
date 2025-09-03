@@ -8,7 +8,7 @@ plugins {
 
 android {
     namespace = "com.deadly.v2.core.theme"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         minSdk = 24
@@ -48,7 +48,7 @@ dependencies {
     implementation(project(":v2:core:theme-api"))
     implementation(project(":v2:core:design"))
     
-    implementation(platform("androidx.compose:compose-bom:2023.10.01"))
+    implementation(platform("androidx.compose:compose-bom:2025.08.00"))
     implementation("androidx.compose.ui:ui")
     implementation("androidx.compose.ui:ui-graphics")
     implementation("androidx.compose.material3:material3")
