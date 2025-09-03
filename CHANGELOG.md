@@ -1,11 +1,18 @@
 # Changelog
 
+## [0.67.2] - 2025-09-03
+
+### Bug Fixes
+* restore dark red/maroon background in V1 MiniPlayer (44212994)
+
+### Other Changes
+* chore(kotlin): Remove salive files (2df6679e)
+
+
 ## [0.67.1] - 2025-09-03
 
 ### Build System
 * upgrade to Kotlin 2.1.0 and fix memory issues after API 35 upgrade (949d397c)
-
-
 ## [0.67.0] - 2025-09-03
 
 ### New Features
