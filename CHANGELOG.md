@@ -1,5 +1,27 @@
 # Changelog
 
+## [0.67.0] - 2025-09-03
+
+### New Features
+* improve text display in carousel cards (800a0e5f)
+* implement parallax carousel with unified BOM versions (05f43475)
+* redesign CollectionCard with polaroid-style layout (7f5791e9)
+* implement reactive collections flow for show navigation (ff223c90)
+* migrate all V2 modules from mixed kapt/ksp to pure KSP architecture (19c9296c)
+* add playlist collections integration with build fix (bf2c8a95)
+* connect featured collections to collection details navigation (1f62d007)
+
+### Bug Fixes
+* restore dark red/maroon background after API 35 upgrade (83850e01)
+* wire collections navigation from playlist to collection details (ccaeff63)
+
+### Code Refactoring
+* extract CollectionCard to reusable design component (0bd00156)
+
+### Other Changes
+* logs(collections): Capture more collection output (47215550)
+
+
 ## [0.66.0] - 2025-09-02
 
 ### New Features
@@ -11,8 +33,6 @@
 
 ### Bug Fixes
 * resolve collections import JSON parsing and show resolution issues (a71c04b4)
-
-
 ## [0.65.0] - 2025-09-01
 
 ### New Features
