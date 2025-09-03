@@ -42,7 +42,7 @@ fun FeaturedCollectionsCarousel(
 
     HorizontalPager(
         state = pagerState,
-        modifier = modifier.height(250.dp),
+        modifier = modifier.height(280.dp),
         contentPadding = PaddingValues(horizontal = 64.dp),
         pageSpacing = 16.dp,
         flingBehavior = PagerDefaults.flingBehavior(state = pagerState)
@@ -63,6 +63,7 @@ fun FeaturedCollectionsCarousel(
         CollectionCard(
             collection = collections[page],
             onClick = { onCollectionClick(collections[page].id) },
+            showDescription = false, // Hide descriptions in carousel for better fit
             modifier = Modifier
                 .fillMaxSize()
                 .scale(scale)   // shrink side cards

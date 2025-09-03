@@ -13,6 +13,19 @@ import androidx.compose.ui.unit.dp
 import com.deadly.v2.core.model.DeadCollection
 
 /**
+ * Format collection name with natural line breaks for better display
+ */
+private fun formatCollectionName(name: String): String {
+    // Break at natural points: ":", "(", or after "Picks"
+    return when {
+        name.contains(": ") -> name.replace(": ", ":\n")
+        name.contains(" (") -> name.replace(" (", "\n(")
+        name.contains("Picks ") -> name.replace("Picks ", "Picks\n")
+        else -> name
+    }
+}
+
+/**
  * CollectionCard - Polaroid-style card for displaying collection information
  * 
  * Features a polaroid-like design with:
@@ -24,7 +37,8 @@ import com.deadly.v2.core.model.DeadCollection
 fun CollectionCard(
     collection: DeadCollection,
     onClick: () -> Unit,
-    modifier: Modifier = Modifier
+    modifier: Modifier = Modifier,
+    showDescription: Boolean = true
 ) {
     Card(
         modifier = modifier.fillMaxWidth(),
@@ -65,22 +79,28 @@ fun CollectionCard(
                     .padding(horizontal = 8.dp)
             ) {
                 Text(
-                    text = collection.name,
+                    text = formatCollectionName(collection.name),
                     style = MaterialTheme.typography.titleLarge,
                     color = MaterialTheme.colorScheme.onSurface,
                     textAlign = TextAlign.Start,
-                    modifier = Modifier.fillMaxWidth()
+                    modifier = Modifier.fillMaxWidth(),
+                    maxLines = 2,
+                    overflow = androidx.compose.ui.text.style.TextOverflow.Ellipsis
                 )
                 
-                Spacer(modifier = Modifier.height(4.dp))
-                
-                Text(
-                    text = collection.description,
-                    style = MaterialTheme.typography.bodyMedium,
-                    color = MaterialTheme.colorScheme.onSurfaceVariant,
-                    textAlign = TextAlign.Start,
-                    modifier = Modifier.fillMaxWidth()
-                )
+                if (showDescription) {
+                    Spacer(modifier = Modifier.height(4.dp))
+                    
+                    Text(
+                        text = collection.description,
+                        style = MaterialTheme.typography.bodyMedium,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant,
+                        textAlign = TextAlign.Start,
+                        modifier = Modifier.fillMaxWidth(),
+                        maxLines = 3,
+                        overflow = androidx.compose.ui.text.style.TextOverflow.Ellipsis
+                    )
+                }
             }
         }
     }
