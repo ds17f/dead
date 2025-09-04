@@ -42,6 +42,10 @@ class CollectionsViewModel @Inject constructor(
     private val _allCollections = MutableStateFlow<List<DeadCollection>>(emptyList())
     val allCollections: StateFlow<List<DeadCollection>> = _allCollections.asStateFlow()
     
+    // Currently selected collection for showing shows
+    private val _selectedCollection = MutableStateFlow<DeadCollection?>(null)
+    val selectedCollection: StateFlow<DeadCollection?> = _selectedCollection.asStateFlow()
+    
     // Observe featured collections from service
     val featuredCollections: StateFlow<List<DeadCollection>> = 
         collectionsService.featuredCollections.stateIn(
@@ -150,11 +154,24 @@ class CollectionsViewModel @Inject constructor(
     }
     
     /**
-     * Handle collection selection
+     * Handle collection selection from carousel
      */
-    fun onCollectionSelected(collectionId: String) {
-        Log.d(TAG, "Collection selected: $collectionId")
-        // TODO: Navigate to collection detail or update UI state
+    fun onCollectionSelected(collection: DeadCollection) {
+        Log.d(TAG, "Collection selected: ${collection.name} with ${collection.shows.size} shows")
+        _selectedCollection.value = collection
+    }
+    
+    /**
+     * Handle collection selection by ID (for navigation)
+     */
+    fun onCollectionSelectedById(collectionId: String) {
+        Log.d(TAG, "Collection selected by ID: $collectionId")
+        val collection = _allCollections.value.find { it.id == collectionId }
+        if (collection != null) {
+            onCollectionSelected(collection)
+        } else {
+            Log.w(TAG, "Collection not found: $collectionId")
+        }
     }
     
     /**

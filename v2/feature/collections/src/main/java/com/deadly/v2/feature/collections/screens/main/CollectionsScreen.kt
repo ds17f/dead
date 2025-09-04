@@ -13,11 +13,13 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.deadly.v2.core.design.component.CollectionCard
 import com.deadly.v2.core.design.component.FeaturedCollectionsCarousel
+import com.deadly.v2.core.design.component.LargeCollectionsCarousel
 import com.deadly.v2.core.design.component.HierarchicalFilter
 import com.deadly.v2.core.design.component.FilterTrees
 import com.deadly.v2.core.design.component.debug.DebugActivator
 import com.deadly.v2.core.design.component.debug.DebugBottomSheet
 import com.deadly.v2.feature.collections.screens.main.models.CollectionsViewModel
+import com.deadly.v2.feature.collections.screens.main.components.CollectionShowCard
 
 /**
  * CollectionsScreen - Main screen for browsing curated collections
@@ -40,6 +42,7 @@ fun CollectionsScreen(
     val featuredCollections by viewModel.featuredCollections.collectAsStateWithLifecycle()
     val filterPath by viewModel.filterPath.collectAsStateWithLifecycle()
     val filteredCollections by viewModel.filteredCollections.collectAsStateWithLifecycle()
+    val selectedCollection by viewModel.selectedCollection.collectAsStateWithLifecycle()
     
     // Debug panel state
     var showDebugPanel by remember { mutableStateOf(false) }
@@ -102,7 +105,7 @@ fun CollectionsScreen(
             }
             */
             
-            // Collections List with dynamic header
+            // Large Collections Carousel
             if (filteredCollections.isNotEmpty()) {
                 item {
                     val headerText = when {
@@ -125,16 +128,59 @@ fun CollectionsScreen(
                     Text(
                         text = headerText,
                         style = MaterialTheme.typography.headlineSmall,
-                        modifier = Modifier.padding(vertical = 8.dp)
+                        modifier = Modifier.padding(bottom = 8.dp)
                     )
                 }
                 
-                items(filteredCollections) { collection ->
-                    CollectionCard(
-                        collection = collection,
-                        onClick = { onNavigateToCollection(collection.id) },
+                item {
+                    LargeCollectionsCarousel(
+                        collections = filteredCollections,
+                        onCollectionSelected = viewModel::onCollectionSelected,
+                        onCollectionClick = onNavigateToCollection,
                         modifier = Modifier.fillMaxWidth()
                     )
+                }
+            }
+            
+            // Shows section for selected collection
+            selectedCollection?.let { collection ->
+                if (collection.shows.isNotEmpty()) {
+                    item {
+                        Text(
+                            text = "Shows (${collection.shows.size})",
+                            style = MaterialTheme.typography.headlineSmall,
+                            modifier = Modifier.padding(top = 16.dp, bottom = 8.dp)
+                        )
+                    }
+                    
+                    items(collection.shows) { show ->
+                        CollectionShowCard(
+                            show = show,
+                            onClick = { onNavigateToShow(show.id) }
+                        )
+                    }
+                } else {
+                    item {
+                        Card(
+                            modifier = Modifier
+                                .fillMaxWidth()
+                                .padding(top = 16.dp)
+                        ) {
+                            Column(
+                                modifier = Modifier
+                                    .fillMaxWidth()
+                                    .padding(16.dp),
+                                horizontalAlignment = Alignment.CenterHorizontally
+                            ) {
+                                Text(
+                                    text = "No shows available for this collection",
+                                    style = MaterialTheme.typography.bodyMedium,
+                                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                                    textAlign = TextAlign.Center
+                                )
+                            }
+                        }
+                    }
                 }
             }
         }
