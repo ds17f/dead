@@ -51,19 +51,19 @@ fun LargeCollectionsCarousel(
     HorizontalPager(
         state = pagerState,
         modifier = modifier.height(400.dp), // Larger height for ~1/2 screen
-        contentPadding = PaddingValues(horizontal = 32.dp), // Less padding for bigger cards
-        pageSpacing = 16.dp,
+        contentPadding = PaddingValues(horizontal = 48.dp), // More padding to show peek of adjacent cards
+        pageSpacing = 12.dp, // Slightly less spacing for better peek visibility
         flingBehavior = PagerDefaults.flingBehavior(state = pagerState)
     ) { page ->
         // Offset: how far this page is from the current page (0 = centered)
         val pageOffset = (pagerState.currentPage - page) +
             pagerState.currentPageOffsetFraction
 
-        // Scale: center = 1f, side pages shrink toward 0.90f (less aggressive scaling)
-        val scale = 1f - 0.10f * pageOffset.absoluteValue
+        // Scale: center = 1f, side pages shrink toward 0.85f (more visible side cards)
+        val scale = 1f - 0.15f * pageOffset.absoluteValue
 
-        // Alpha: center = 1f, side pages fade toward 0.6f (less aggressive fading)
-        val alpha = 1f - 0.4f * pageOffset.absoluteValue
+        // Alpha: center = 1f, side pages fade toward 0.7f (less aggressive fading for better peek)
+        val alpha = 1f - 0.3f * pageOffset.absoluteValue
 
         // Parallax: side pages slide horizontally
         val translationX = parallaxOffset.value * pageOffset
