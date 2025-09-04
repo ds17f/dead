@@ -2,6 +2,8 @@ package com.deadly.v2.feature.collections.screens.main
 
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.LazyListState
+import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.foundation.lazy.items
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
@@ -11,6 +13,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
+import kotlinx.coroutines.launch
 import com.deadly.v2.core.design.component.CollectionCard
 import com.deadly.v2.core.design.component.FeaturedCollectionsCarousel
 import com.deadly.v2.core.design.component.LargeCollectionsCarousel
@@ -34,6 +37,7 @@ import com.deadly.v2.feature.collections.screens.main.components.CollectionShowC
  */
 @Composable
 fun CollectionsScreen(
+    collectionId: String? = null,
     onNavigateToCollection: (String) -> Unit = {},
     onNavigateToShow: (String) -> Unit = {},
     viewModel: CollectionsViewModel = hiltViewModel()
@@ -47,8 +51,18 @@ fun CollectionsScreen(
     // Debug panel state
     var showDebugPanel by remember { mutableStateOf(false) }
     
+    // Scroll state for anchor linking
+    val listState = rememberLazyListState()
+    val coroutineScope = rememberCoroutineScope()
+    
+    // Initialize with collection ID if provided
+    LaunchedEffect(collectionId) {
+        viewModel.initializeWithCollectionId(collectionId)
+    }
+    
     Box(modifier = Modifier.fillMaxSize()) {
         LazyColumn(
+            state = listState,
             modifier = Modifier.fillMaxSize(),
             contentPadding = PaddingValues(16.dp),
             verticalArrangement = Arrangement.spacedBy(16.dp)
@@ -136,7 +150,15 @@ fun CollectionsScreen(
                     LargeCollectionsCarousel(
                         collections = filteredCollections,
                         onCollectionSelected = viewModel::onCollectionSelected,
-                        onCollectionClick = onNavigateToCollection,
+                        onCollectionClick = { 
+                            // Scroll to shows section on carousel tap
+                            coroutineScope.launch {
+                                // Find the shows section item index (after header and carousel)
+                                val showsSectionIndex = 2 // Filter (0), Header (1), Carousel (2), Shows start at (3)
+                                listState.animateScrollToItem(showsSectionIndex + 1) // +1 to scroll to first show
+                            }
+                        },
+                        initialCollectionId = collectionId,
                         modifier = Modifier.fillMaxWidth()
                     )
                 }

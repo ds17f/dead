@@ -116,6 +116,17 @@ class CollectionsViewModel @Inject constructor(
     }
     
     /**
+     * Initialize with a specific collection ID (for routing from collection details)
+     */
+    fun initializeWithCollectionId(collectionId: String?) {
+        collectionId?.let { id ->
+            Log.d(TAG, "Initializing with collection ID: $id")
+            // The collection will be selected automatically by the carousel's LaunchedEffect
+            // when it finds the matching collection in the filteredCollections list
+        }
+    }
+    
+    /**
      * Load all collections from service
      */
     private fun loadAllCollections() {

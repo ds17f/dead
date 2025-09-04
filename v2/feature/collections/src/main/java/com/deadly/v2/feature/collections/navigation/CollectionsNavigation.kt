@@ -5,7 +5,6 @@ import androidx.navigation.NavGraphBuilder
 import androidx.navigation.compose.composable
 import androidx.navigation.navigation
 import com.deadly.v2.feature.collections.screens.main.CollectionsScreen
-import com.deadly.v2.feature.collections.screens.details.CollectionDetailsScreen
 
 /**
  * Navigation graph for collections feature
@@ -17,32 +16,50 @@ fun NavGraphBuilder.collectionsGraph(navController: NavController) {
     ) {
         composable("collections") {
             CollectionsScreen(
-                onNavigateToCollection = { collectionId ->
-                    navController.navigate("collection/$collectionId")
-                },
+                onNavigateToCollection = { /* Carousel changes don't navigate - just change state */ },
                 onNavigateToShow = { showId ->
                     navController.navigate("playlist/$showId")
                 }
             )
         }
         
+        composable("collections/{collectionId}") { backStackEntry ->
+            val collectionId = backStackEntry.arguments?.getString("collectionId") ?: ""
+            CollectionsScreen(
+                collectionId = collectionId,
+                onNavigateToCollection = { /* Carousel changes don't navigate - just change state */ },
+                onNavigateToShow = { showId ->
+                    navController.navigate("playlist/$showId")
+                }
+            )
+        }
+        
+        // Legacy routes for backward compatibility - redirect to main collections screen
         composable("collection/{collectionId}") { backStackEntry ->
             val collectionId = backStackEntry.arguments?.getString("collectionId") ?: ""
-            CollectionDetailsScreen(
+            
+            // Instead of redirecting with navigation, just show the collections screen directly
+            // This prevents creating extra navigation entries
+            CollectionsScreen(
                 collectionId = collectionId,
-                onNavigateBack = { navController.popBackStack() },
-                onNavigateToShow = { showId -> navController.navigate("playlist/$showId") }
+                onNavigateToCollection = { /* Carousel changes don't navigate - just change state */ },
+                onNavigateToShow = { showId ->
+                    navController.navigate("playlist/$showId")
+                }
             )
         }
         
         composable("collectionDetail/{collectionId}/{showId}") { backStackEntry ->
             val collectionId = backStackEntry.arguments?.getString("collectionId") ?: ""
-            val showId = backStackEntry.arguments?.getString("showId") ?: ""
-            CollectionDetailsScreen(
+            
+            // Instead of redirecting with navigation, just show the collections screen directly
+            // This prevents creating extra navigation entries  
+            CollectionsScreen(
                 collectionId = collectionId,
-                highlightedShowId = showId,
-                onNavigateBack = { navController.popBackStack() },
-                onNavigateToShow = { selectedShowId -> navController.navigate("playlist/$selectedShowId") }
+                onNavigateToCollection = { /* Carousel changes don't navigate - just change state */ },
+                onNavigateToShow = { showId ->
+                    navController.navigate("playlist/$showId")
+                }
             )
         }
     }

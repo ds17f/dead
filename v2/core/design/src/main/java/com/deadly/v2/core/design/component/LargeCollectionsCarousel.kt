@@ -38,7 +38,13 @@ fun LargeCollectionsCarousel(
     onCollectionSelected: (DeadCollection) -> Unit,
     onCollectionClick: (String) -> Unit = {},
     modifier: Modifier = Modifier,
-    pagerState: PagerState = rememberPagerState(pageCount = { collections.size }),
+    initialCollectionId: String? = null,
+    pagerState: PagerState = rememberPagerState(
+        initialPage = initialCollectionId?.let { id -> 
+            collections.indexOfFirst { it.id == id }.takeIf { it >= 0 } 
+        } ?: 0,
+        pageCount = { collections.size }
+    ),
     parallaxOffset: Dp = 40.dp
 ) {
     // Handle collection selection when page changes
