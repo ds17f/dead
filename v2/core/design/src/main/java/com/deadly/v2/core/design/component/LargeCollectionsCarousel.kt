@@ -56,7 +56,7 @@ fun LargeCollectionsCarousel(
 
     HorizontalPager(
         state = pagerState,
-        modifier = modifier.height(400.dp), // Larger height for ~1/2 screen
+        modifier = modifier.height(360.dp), // Height to allow 2 title lines + 3 description lines
         contentPadding = PaddingValues(horizontal = 48.dp), // More padding to show peek of adjacent cards
         pageSpacing = 12.dp, // Slightly less spacing for better peek visibility
         flingBehavior = PagerDefaults.flingBehavior(state = pagerState)
