@@ -1,10 +1,12 @@
 package com.deadly.v2.feature.collections.screens.main
 
+import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.LazyListState
 import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.foundation.lazy.items
+import androidx.compose.foundation.pager.rememberPagerState
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
@@ -17,6 +19,7 @@ import kotlinx.coroutines.launch
 import com.deadly.v2.core.design.component.CollectionCard
 import com.deadly.v2.core.design.component.FeaturedCollectionsCarousel
 import com.deadly.v2.core.design.component.LargeCollectionsCarousel
+import com.deadly.v2.core.design.component.CarouselNavigationSlider
 import com.deadly.v2.core.design.component.HierarchicalFilter
 import com.deadly.v2.core.design.component.FilterTrees
 import com.deadly.v2.core.design.component.debug.DebugActivator
@@ -35,6 +38,7 @@ import com.deadly.v2.feature.collections.screens.main.components.CollectionShowC
  * Scaffold-free content designed for use within AppScaffold.
  * Follows V2 architecture with CollectionsService integration.
  */
+@OptIn(ExperimentalFoundationApi::class)
 @Composable
 fun CollectionsScreen(
     collectionId: String? = null,
@@ -54,6 +58,14 @@ fun CollectionsScreen(
     // Scroll state for anchor linking
     val listState = rememberLazyListState()
     val coroutineScope = rememberCoroutineScope()
+    
+    // Carousel pager state - shared between carousel and slider
+    val carouselPagerState = rememberPagerState(
+        initialPage = collectionId?.let { id ->
+            filteredCollections.indexOfFirst { it.id == id }.takeIf { it >= 0 }
+        } ?: 0,
+        pageCount = { filteredCollections.size }
+    )
     
     // Initialize with collection ID if provided
     LaunchedEffect(collectionId) {
@@ -153,13 +165,22 @@ fun CollectionsScreen(
                         onCollectionClick = { 
                             // Scroll to shows section on carousel tap
                             coroutineScope.launch {
-                                // Find the shows section item index (after header and carousel)
-                                val showsSectionIndex = 2 // Filter (0), Header (1), Carousel (2), Shows start at (3)
+                                // Find the shows section item index (after header, carousel, and slider)
+                                val showsSectionIndex = 3 // Filter (0), Header (1), Carousel (2), Slider (3), Shows start at (4)
                                 listState.animateScrollToItem(showsSectionIndex + 1) // +1 to scroll to first show
                             }
                         },
-                        initialCollectionId = collectionId,
+                        pagerState = carouselPagerState,
                         modifier = Modifier.fillMaxWidth()
+                    )
+                }
+                
+                // iPod-style navigation slider (shows for large collection sets)
+                item {
+                    CarouselNavigationSlider(
+                        pagerState = carouselPagerState,
+                        itemCount = filteredCollections.size,
+                        modifier = Modifier.padding(top = 16.dp)
                     )
                 }
             }
