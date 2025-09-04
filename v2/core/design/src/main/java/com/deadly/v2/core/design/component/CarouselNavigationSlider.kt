@@ -51,6 +51,6 @@ fun CarouselNavigationSlider(
         },
         modifier = modifier
             .fillMaxWidth()
-            .padding(horizontal = 24.dp, vertical = 8.dp)
+            .padding(horizontal = 24.dp, vertical = 0.dp)
     )
 }

@@ -109,7 +109,7 @@ fun ShuttleScrubber(
             text = "${currentIndex + 1} of $total",
             style = MaterialTheme.typography.labelMedium,
             color = MaterialTheme.colorScheme.onSurface,
-            modifier = Modifier.padding(bottom = 8.dp)
+            modifier = Modifier.padding(bottom = 4.dp)
         )
 
         BoxWithConstraints(

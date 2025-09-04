@@ -180,7 +180,7 @@ fun CollectionsScreen(
                     CarouselNavigationSlider(
                         pagerState = carouselPagerState,
                         itemCount = filteredCollections.size,
-                        modifier = Modifier.padding(top = 16.dp)
+                        modifier = Modifier
                     )
                 }
             }
