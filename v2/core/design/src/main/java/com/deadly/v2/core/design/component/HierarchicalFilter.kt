@@ -431,4 +431,69 @@ object FilterTrees {
             )
         )
     }
+    
+    /**
+     * Build collections filter tree based on collection tags
+     * Categories: Official Releases, Tours, Eras, Venues, Themes, Quality
+     */
+    fun buildCollectionsTagsTree(): List<FilterNode> {
+        return listOf(
+            FilterNode(
+                id = "official",
+                label = "Official",
+                children = listOf(
+                    FilterNode("dicks-picks", "Dick's Picks"),
+                    FilterNode("soundboard", "Soundboard"),
+                    FilterNode("archival", "Archival")
+                )
+            ),
+            FilterNode(
+                id = "tours",
+                label = "Tours", 
+                children = listOf(
+                    FilterNode("europe-72", "Europe '72"),
+                    FilterNode("egypt-78", "Egypt '78"),
+                    FilterNode("tour", "Historic Tours")
+                )
+            ),
+            FilterNode(
+                id = "eras",
+                label = "Eras",
+                children = listOf(
+                    FilterNode("1960s", "1960s"),
+                    FilterNode("1970s", "1970s"),
+                    FilterNode("1980s", "1980s"),
+                    FilterNode("1990s", "1990s")
+                )
+            ),
+            FilterNode(
+                id = "venues",
+                label = "Venues",
+                children = listOf(
+                    FilterNode("fillmore", "Fillmore"),
+                    FilterNode("bill-graham", "Bill Graham Venues"),
+                    FilterNode("legendary", "Legendary Venues")
+                )
+            ),
+            FilterNode(
+                id = "themes",
+                label = "Themes",
+                children = listOf(
+                    FilterNode("acoustic", "Acoustic"),
+                    FilterNode("jams", "Epic Jams"),
+                    FilterNode("new-year", "New Year's"),
+                    FilterNode("celebration", "Celebrations")
+                )
+            ),
+            FilterNode(
+                id = "quality",
+                label = "Quality",
+                children = listOf(
+                    FilterNode("greatest", "Greatest Shows"),
+                    FilterNode("top-rated", "Top Rated"),
+                    FilterNode("rare", "Rare Recordings")
+                )
+            )
+        )
+    }
 }

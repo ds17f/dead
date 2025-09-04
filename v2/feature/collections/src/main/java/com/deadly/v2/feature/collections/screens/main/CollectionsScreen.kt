@@ -13,6 +13,8 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.deadly.v2.core.design.component.CollectionCard
 import com.deadly.v2.core.design.component.FeaturedCollectionsCarousel
+import com.deadly.v2.core.design.component.HierarchicalFilter
+import com.deadly.v2.core.design.component.FilterTrees
 import com.deadly.v2.core.design.component.debug.DebugActivator
 import com.deadly.v2.core.design.component.debug.DebugBottomSheet
 import com.deadly.v2.feature.collections.screens.main.models.CollectionsViewModel
@@ -36,6 +38,8 @@ fun CollectionsScreen(
 ) {
     val uiState by viewModel.uiState.collectAsStateWithLifecycle()
     val featuredCollections by viewModel.featuredCollections.collectAsStateWithLifecycle()
+    val filterPath by viewModel.filterPath.collectAsStateWithLifecycle()
+    val filteredCollections by viewModel.filteredCollections.collectAsStateWithLifecycle()
     
     // Debug panel state
     var showDebugPanel by remember { mutableStateOf(false) }
@@ -46,29 +50,14 @@ fun CollectionsScreen(
             contentPadding = PaddingValues(16.dp),
             verticalArrangement = Arrangement.spacedBy(16.dp)
         ) {
-            // Welcome section
+            // Hierarchical Filter for collections - at the very top
             item {
-                Card(
+                HierarchicalFilter(
+                    filterTree = FilterTrees.buildCollectionsTagsTree(),
+                    selectedPath = filterPath,
+                    onSelectionChanged = viewModel::onFilterPathChanged,
                     modifier = Modifier.fillMaxWidth()
-                ) {
-                    Column(
-                        modifier = Modifier.padding(16.dp),
-                        horizontalAlignment = Alignment.CenterHorizontally
-                    ) {
-                        Text(
-                            text = "Collections",
-                            style = MaterialTheme.typography.headlineMedium,
-                            textAlign = TextAlign.Center
-                        )
-                        Spacer(modifier = Modifier.height(8.dp))
-                        Text(
-                            text = "Curated collections of Grateful Dead shows including Dick's Picks, Europe '72, and more",
-                            style = MaterialTheme.typography.bodyMedium,
-                            textAlign = TextAlign.Center,
-                            color = MaterialTheme.colorScheme.onSurfaceVariant
-                        )
-                    }
-                }
+                )
             }
             
             // Featured Collections section
@@ -107,6 +96,25 @@ fun CollectionsScreen(
                             CircularProgressIndicator()
                         }
                     }
+                }
+            }
+            
+            // All Collections List
+            if (filteredCollections.isNotEmpty()) {
+                item {
+                    Text(
+                        text = "All Collections",
+                        style = MaterialTheme.typography.headlineSmall,
+                        modifier = Modifier.padding(vertical = 8.dp)
+                    )
+                }
+                
+                items(filteredCollections) { collection ->
+                    CollectionCard(
+                        collection = collection,
+                        onClick = { onNavigateToCollection(collection.id) },
+                        modifier = Modifier.fillMaxWidth()
+                    )
                 }
             }
         }
