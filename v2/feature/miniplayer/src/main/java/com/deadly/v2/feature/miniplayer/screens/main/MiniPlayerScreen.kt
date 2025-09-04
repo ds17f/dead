@@ -50,7 +50,7 @@ fun MiniPlayerScreen(
     Card(
         modifier = modifier
             .fillMaxWidth()
-            .height(88.dp) // Match V1 MiniPlayer height
+            .height(68.dp) // Reduced from 88dp
             .clickable {
                 viewModel.onTapToExpand()
                 onTapToExpand(uiState.showId) // Use showId for navigation
@@ -66,7 +66,7 @@ fun MiniPlayerScreen(
                 modifier = Modifier
                     .fillMaxWidth()
                     .weight(1f)
-                    .padding(12.dp),
+                    .padding(10.dp),
                 verticalAlignment = Alignment.CenterVertically
             ) {
                 // Track information
@@ -95,11 +95,11 @@ fun MiniPlayerScreen(
                 // Play/pause button with loading state
                 IconButton(
                     onClick = { viewModel.togglePlayPause() },
-                    modifier = Modifier.size(48.dp)
+                    modifier = Modifier.size(40.dp)
                 ) {
                     if (uiState.isLoading) {
                         CircularProgressIndicator(
-                            modifier = Modifier.size(20.dp),
+                            modifier = Modifier.size(18.dp),
                             color = MaterialTheme.colorScheme.onSurface,
                             strokeWidth = 2.dp
                         )

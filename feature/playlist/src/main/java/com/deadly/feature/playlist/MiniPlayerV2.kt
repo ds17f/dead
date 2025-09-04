@@ -39,7 +39,7 @@ fun MiniPlayerV2(
     Card(
         modifier = modifier
             .fillMaxWidth()
-            .height(88.dp) // Matches V1 EnrichedMiniPlayer height
+            .height(68.dp) // Reduced from 88dp
             .clickable { onTapToExpand(uiState.recordingId) },
         elevation = CardDefaults.cardElevation(defaultElevation = 8.dp), // Matches V1
         shape = RoundedCornerShape(topStart = 12.dp, topEnd = 12.dp), // Matches V1
@@ -60,26 +60,26 @@ fun MiniPlayerV2(
             Row(
                 modifier = Modifier
                     .fillMaxSize()
-                    .padding(horizontal = 16.dp, vertical = 8.dp), // Matches V1 padding
+                    .padding(horizontal = 12.dp, vertical = 6.dp), // Reduced padding
                 verticalAlignment = Alignment.CenterVertically
             ) {
                 // Album art placeholder - matches V1 exactly
                 Box(
                     modifier = Modifier
-                        .size(56.dp) // Matches V1 size
-                        .clip(RoundedCornerShape(8.dp)) // Matches V1 shape
+                        .size(44.dp) // Reduced from 56dp
+                        .clip(RoundedCornerShape(6.dp)) // Reduced from 8dp
                         .background(MaterialTheme.colorScheme.surfaceVariant), // Matches V1 color
                     contentAlignment = Alignment.Center
                 ) {
                     Icon(
                         painter = IconResources.PlayerControls.AlbumArt(),
                         contentDescription = "Album Art",
-                        modifier = Modifier.size(24.dp), // Matches V1 size
+                        modifier = Modifier.size(20.dp), // Reduced from 24dp
                         tint = MaterialTheme.colorScheme.onSurfaceVariant // Matches V1 color
                     )
                 }
                 
-                Spacer(modifier = Modifier.width(12.dp)) // Matches V1 spacing
+                Spacer(modifier = Modifier.width(10.dp)) // Reduced from 12dp
                 
                 // Track info - 3 lines like V1 EnrichedMiniPlayer
                 Column(
@@ -130,13 +130,13 @@ fun MiniPlayerV2(
                 IconButton(
                     onClick = onPlayPause,
                     modifier = Modifier
-                        .size(40.dp) // Matches V1 size
+                        .size(36.dp) // Reduced from 40dp
                         .clip(CircleShape) // Matches V1 shape
                         .background(MaterialTheme.colorScheme.primary) // Matches V1 color
                 ) {
                     if (uiState.isBuffering) {
                         CircularProgressIndicator(
-                            modifier = Modifier.size(20.dp), // Matches V1 size
+                            modifier = Modifier.size(18.dp), // Reduced from 20dp
                             color = MaterialTheme.colorScheme.onPrimary, // Matches V1 color
                             strokeWidth = 2.dp // Matches V1
                         )
@@ -148,7 +148,7 @@ fun MiniPlayerV2(
                                 IconResources.PlayerControls.Play()
                             },
                             contentDescription = if (uiState.isPlaying) "Pause" else "Play",
-                            modifier = Modifier.size(20.dp), // Matches V1 size
+                            modifier = Modifier.size(18.dp), // Reduced from 20dp
                             tint = MaterialTheme.colorScheme.onPrimary // Matches V1 color
                         )
                     }
