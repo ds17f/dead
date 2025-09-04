@@ -61,6 +61,11 @@ class CollectionsImportService @Inject constructor(
     data class ShowSelectorData(
         val dates: List<String> = emptyList(),
         val ranges: List<DateRangeData> = emptyList(),
+        val range: DateRangeData? = null, // External schema: singular range object
+        @SerialName("exclusion_ranges") 
+        val exclusionRanges: List<ExternalDateRangeData> = emptyList(), // External schema: exclusion ranges
+        @SerialName("exclusion_dates") 
+        val exclusionDates: List<String> = emptyList(), // External schema: exclusion dates
         @SerialName("show_ids") 
         val showIds: List<String> = emptyList(),
         val venues: List<String> = emptyList(),
@@ -71,6 +76,12 @@ class CollectionsImportService @Inject constructor(
     data class DateRangeData(
         val start: String,
         val end: String
+    )
+    
+    @Serializable 
+    data class ExternalDateRangeData(
+        val from: String,
+        val to: String
     )
     
     /**
@@ -182,7 +193,7 @@ class CollectionsImportService @Inject constructor(
                 Log.d(TAG, "Date '$date' resolved to ${shows.size} shows")
             }
             
-            // Add shows by date ranges
+            // Add shows by date ranges (plural format)
             showSelector.ranges.forEach { range ->
                 val shows = showDao.getShowsInDateRange(range.start, range.end)
                 if (shows.isNotEmpty()) {
@@ -191,6 +202,35 @@ class CollectionsImportService @Inject constructor(
                 }
                 totalPatternsProcessed++
                 Log.d(TAG, "Date range '${range.start}' to '${range.end}' resolved to ${shows.size} shows")
+            }
+            
+            // Add shows by single date range (external schema format)
+            showSelector.range?.let { range ->
+                val shows = showDao.getShowsInDateRange(range.start, range.end)
+                val showIds = shows.map { it.showId }.toMutableSet()
+                
+                // Apply exclusion ranges
+                showSelector.exclusionRanges.forEach { exclusionRange ->
+                    val exclusionShows = showDao.getShowsInDateRange(exclusionRange.from, exclusionRange.to)
+                    val exclusionIds = exclusionShows.map { it.showId }.toSet()
+                    showIds.removeAll(exclusionIds)
+                    Log.d(TAG, "Exclusion range '${exclusionRange.from}' to '${exclusionRange.to}' removed ${exclusionIds.size} shows")
+                }
+                
+                // Apply exclusion dates
+                showSelector.exclusionDates.forEach { exclusionDate ->
+                    val exclusionShows = showDao.getShowsByDate(exclusionDate)
+                    val exclusionIds = exclusionShows.map { it.showId }.toSet()
+                    showIds.removeAll(exclusionIds)
+                    Log.d(TAG, "Exclusion date '$exclusionDate' removed ${exclusionIds.size} shows")
+                }
+                
+                if (showIds.isNotEmpty()) {
+                    resolvedIds.addAll(showIds)
+                    patternsWithResults++
+                }
+                totalPatternsProcessed++
+                Log.d(TAG, "Single range '${range.start}' to '${range.end}' (after exclusions) resolved to ${showIds.size} shows")
             }
             
             // Add shows by venue names
