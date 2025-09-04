@@ -42,9 +42,32 @@ class CollectionsViewModel @Inject constructor(
     private val _allCollections = MutableStateFlow<List<DeadCollection>>(emptyList())
     val allCollections: StateFlow<List<DeadCollection>> = _allCollections.asStateFlow()
     
-    // Currently selected collection for showing shows
-    private val _selectedCollection = MutableStateFlow<DeadCollection?>(null)
-    val selectedCollection: StateFlow<DeadCollection?> = _selectedCollection.asStateFlow()
+    // Currently selected collection ID (primary source of truth)
+    private val _selectedCollectionId = MutableStateFlow<String?>(null)
+    val selectedCollectionId: StateFlow<String?> = _selectedCollectionId.asStateFlow()
+    
+    // Currently selected collection for showing shows (derived from ID + allCollections)
+    val selectedCollection: StateFlow<DeadCollection?> = combine(
+        selectedCollectionId,
+        allCollections
+    ) { collectionId, collections ->
+        if (collectionId != null && collections.isNotEmpty()) {
+            val collection = collections.find { it.id == collectionId }
+            if (collection != null) {
+                Log.d(TAG, "Selected collection found: ${collection.name}")
+                collection
+            } else {
+                Log.d(TAG, "Selected collection ID '$collectionId' not found in all collections")
+                null
+            }
+        } else {
+            null
+        }
+    }.stateIn(
+        scope = viewModelScope,
+        started = SharingStarted.WhileSubscribed(5000),
+        initialValue = null
+    )
     
     // Observe featured collections from service
     val featuredCollections: StateFlow<List<DeadCollection>> = 
@@ -110,9 +133,65 @@ class CollectionsViewModel @Inject constructor(
         initialValue = emptyList()
     )
     
+    // Selected collection index in current filtered list (derived from ID + filtered collections)
+    val selectedCollectionIndex: StateFlow<Int> = combine(
+        selectedCollectionId,
+        filteredCollections
+    ) { collectionId, filtered ->
+        if (collectionId != null && filtered.isNotEmpty()) {
+            val index = filtered.indexOfFirst { it.id == collectionId }
+            if (index >= 0) {
+                Log.d(TAG, "Collection '$collectionId' found at index $index in filtered list")
+                index
+            } else {
+                Log.d(TAG, "Collection '$collectionId' not found in filtered list, defaulting to 0")
+                0
+            }
+        } else {
+            Log.d(TAG, "No collection selected or filtered list empty, index = 0")
+            0
+        }
+    }.stateIn(
+        scope = viewModelScope,
+        started = SharingStarted.WhileSubscribed(5000),
+        initialValue = 0
+    )
+    
     init {
         Log.d(TAG, "CollectionsViewModel initialized")
         loadAllCollections()
+        setupFilterHandling()
+    }
+    
+    /**
+     * Setup robust filter handling to preserve selected collection when possible
+     */
+    private fun setupFilterHandling() {
+        viewModelScope.launch {
+            // Monitor when filteredCollections changes
+            combine(
+                selectedCollectionId,
+                filteredCollections
+            ) { currentSelectedId, filtered ->
+                if (currentSelectedId != null && filtered.isNotEmpty()) {
+                    // Check if currently selected collection exists in filtered list
+                    val exists = filtered.any { it.id == currentSelectedId }
+                    if (!exists) {
+                        // Selected collection doesn't exist in filtered list, select first available
+                        val firstCollection = filtered.firstOrNull()
+                        if (firstCollection != null) {
+                            Log.d(TAG, "Selected collection '$currentSelectedId' not in filtered list, selecting first: ${firstCollection.name}")
+                            _selectedCollectionId.value = firstCollection.id
+                        }
+                    }
+                } else if (currentSelectedId == null && filtered.isNotEmpty()) {
+                    // No selection but we have filtered items, select the first one
+                    val firstCollection = filtered.first()
+                    Log.d(TAG, "No collection selected, auto-selecting first: ${firstCollection.name}")
+                    _selectedCollectionId.value = firstCollection.id
+                }
+            }.collect { /* State is managed above */ }
+        }
     }
     
     /**
@@ -121,8 +200,7 @@ class CollectionsViewModel @Inject constructor(
     fun initializeWithCollectionId(collectionId: String?) {
         collectionId?.let { id ->
             Log.d(TAG, "Initializing with collection ID: $id")
-            // The collection will be selected automatically by the carousel's LaunchedEffect
-            // when it finds the matching collection in the filteredCollections list
+            _selectedCollectionId.value = id
         }
     }
     
@@ -165,24 +243,19 @@ class CollectionsViewModel @Inject constructor(
     }
     
     /**
-     * Handle collection selection from carousel
+     * Handle collection selection from carousel (by collection object)
      */
     fun onCollectionSelected(collection: DeadCollection) {
         Log.d(TAG, "Collection selected: ${collection.name} with ${collection.shows.size} shows")
-        _selectedCollection.value = collection
+        _selectedCollectionId.value = collection.id
     }
     
     /**
-     * Handle collection selection by ID (for navigation)
+     * Handle collection selection by ID (primary method for navigation and carousel)
      */
     fun onCollectionSelectedById(collectionId: String) {
         Log.d(TAG, "Collection selected by ID: $collectionId")
-        val collection = _allCollections.value.find { it.id == collectionId }
-        if (collection != null) {
-            onCollectionSelected(collection)
-        } else {
-            Log.w(TAG, "Collection not found: $collectionId")
-        }
+        _selectedCollectionId.value = collectionId
     }
     
     /**

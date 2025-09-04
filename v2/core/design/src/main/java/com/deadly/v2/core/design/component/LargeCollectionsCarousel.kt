@@ -38,19 +38,23 @@ fun LargeCollectionsCarousel(
     onCollectionSelected: (DeadCollection) -> Unit,
     onCollectionClick: (String) -> Unit = {},
     modifier: Modifier = Modifier,
-    initialCollectionId: String? = null,
+    selectedCollectionId: String? = null,
     pagerState: PagerState = rememberPagerState(
-        initialPage = initialCollectionId?.let { id -> 
-            collections.indexOfFirst { it.id == id }.takeIf { it >= 0 } 
-        } ?: 0,
         pageCount = { collections.size }
     ),
     parallaxOffset: Dp = 40.dp
 ) {
-    // Handle collection selection when page changes
+    // Only notify parent of selection when user manually changes page (not programmatic)
+    // This prevents conflicts with external ID-based state management
     LaunchedEffect(pagerState.currentPage, collections) {
-        if (collections.isNotEmpty() && pagerState.currentPage < collections.size) {
-            onCollectionSelected(collections[pagerState.currentPage])
+        if (collections.isNotEmpty() && 
+            pagerState.currentPage < collections.size &&
+            !pagerState.isScrollInProgress) { // Only when not programmatically scrolling
+            val currentCollection = collections[pagerState.currentPage]
+            // Only notify if this is different from what parent expects
+            if (currentCollection.id != selectedCollectionId) {
+                onCollectionSelected(currentCollection)
+            }
         }
     }
 

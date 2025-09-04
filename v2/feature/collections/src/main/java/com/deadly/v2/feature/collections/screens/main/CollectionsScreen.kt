@@ -51,6 +51,8 @@ fun CollectionsScreen(
     val filterPath by viewModel.filterPath.collectAsStateWithLifecycle()
     val filteredCollections by viewModel.filteredCollections.collectAsStateWithLifecycle()
     val selectedCollection by viewModel.selectedCollection.collectAsStateWithLifecycle()
+    val selectedCollectionId by viewModel.selectedCollectionId.collectAsStateWithLifecycle()
+    val selectedCollectionIndex by viewModel.selectedCollectionIndex.collectAsStateWithLifecycle()
     
     // Debug panel state
     var showDebugPanel by remember { mutableStateOf(false) }
@@ -59,17 +61,21 @@ fun CollectionsScreen(
     val listState = rememberLazyListState()
     val coroutineScope = rememberCoroutineScope()
     
-    // Carousel pager state - shared between carousel and slider
+    // Carousel pager state - simple creation, synced with ViewModel selection state
     val carouselPagerState = rememberPagerState(
-        initialPage = collectionId?.let { id ->
-            filteredCollections.indexOfFirst { it.id == id }.takeIf { it >= 0 }
-        } ?: 0,
         pageCount = { filteredCollections.size }
     )
     
     // Initialize with collection ID if provided
     LaunchedEffect(collectionId) {
         viewModel.initializeWithCollectionId(collectionId)
+    }
+    
+    // Sync carousel position with ViewModel's selected collection index
+    LaunchedEffect(selectedCollectionIndex, filteredCollections.size) {
+        if (filteredCollections.isNotEmpty() && selectedCollectionIndex < filteredCollections.size) {
+            carouselPagerState.animateScrollToPage(selectedCollectionIndex)
+        }
     }
     
     Box(modifier = Modifier.fillMaxSize()) {
@@ -165,11 +171,14 @@ fun CollectionsScreen(
                         onCollectionClick = { 
                             // Scroll to shows section on carousel tap
                             coroutineScope.launch {
-                                // Find the shows section item index (after header, carousel, and slider)
-                                val showsSectionIndex = 3 // Filter (0), Header (1), Carousel (2), Slider (3), Shows start at (4)
-                                listState.animateScrollToItem(showsSectionIndex + 1) // +1 to scroll to first show
+                                // Calculate the shows section index dynamically
+                                // LazyColumn items: Filter (0), Header (1), Carousel (2), Slider (3)
+                                // Shows section header is at index 4, first show at index 5
+                                val showsSectionIndex = 4 // Shows section header
+                                listState.animateScrollToItem(showsSectionIndex)
                             }
                         },
+                        selectedCollectionId = selectedCollectionId,
                         pagerState = carouselPagerState,
                         modifier = Modifier.fillMaxWidth()
                     )
