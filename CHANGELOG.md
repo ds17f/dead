@@ -1,5 +1,15 @@
 # Changelog
 
+## [0.68.0] - 2025-09-03
+
+### New Features
+* add carousel anchor link and navigation consolidation (7461f269)
+* enhance carousel peek visibility for better navigation (c5f4c910)
+* implement visual-first carousel layout with shows display (ffb1cd8a)
+* implement optimized 3-root filter system with dynamic headers (3f186ff2)
+* enhance collections screen with tag-based filtering (5ec6e8e4)
+
+
 ## [0.67.2] - 2025-09-03
 
 ### Bug Fixes
@@ -7,8 +17,6 @@
 
 ### Other Changes
 * chore(kotlin): Remove salive files (2df6679e)
-
-
 ## [0.67.1] - 2025-09-03
 
 ### Build System
