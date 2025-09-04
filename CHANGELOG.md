@@ -1,5 +1,20 @@
 # Changelog
 
+## [0.69.0] - 2025-09-04
+
+### New Features
+* implement iPod-style ShuttleScrubber with direct finger tracking (fc4eaebe)
+* add iPod-style carousel navigation slider (e2820a1b)
+
+### Bug Fixes
+* optimize carousel navigation slider spacing (8fd58125)
+* optimize carousel card text display (2534b058)
+
+### Code Refactoring
+* implement ID-based navigation with robust filter handling (fb0d992b)
+* reduce V2 MiniPlayer size for better space usage (dc287f84)
+
+
 ## [0.68.0] - 2025-09-03
 
 ### New Features
@@ -8,8 +23,6 @@
 * implement visual-first carousel layout with shows display (ffb1cd8a)
 * implement optimized 3-root filter system with dynamic headers (3f186ff2)
 * enhance collections screen with tag-based filtering (5ec6e8e4)
-
-
 ## [0.67.2] - 2025-09-03
 
 ### Bug Fixes
