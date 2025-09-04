@@ -60,7 +60,9 @@ fun CollectionsScreen(
                 )
             }
             
-            // Featured Collections section
+            // Featured Collections section - temporarily hidden
+            // TODO: Re-enable featured collections later
+            /* 
             if (featuredCollections.isNotEmpty()) {
                 item {
                     Text(
@@ -98,12 +100,30 @@ fun CollectionsScreen(
                     }
                 }
             }
+            */
             
-            // All Collections List
+            // Collections List with dynamic header
             if (filteredCollections.isNotEmpty()) {
                 item {
+                    val headerText = when {
+                        filterPath.isEmpty -> "All Collections (${filteredCollections.size})"
+                        filterPath.nodes.size == 1 -> {
+                            when (filterPath.nodes.first().id) {
+                                "official" -> "Official Collections (${filteredCollections.size})"
+                                "guest" -> "Guest Collections (${filteredCollections.size})"
+                                "era" -> "Era Collections (${filteredCollections.size})"
+                                else -> "${filterPath.nodes.first().label} Collections (${filteredCollections.size})"
+                            }
+                        }
+                        filterPath.nodes.size == 2 -> {
+                            // Official subcategory selected
+                            "${filterPath.nodes.last().label} (${filteredCollections.size})"
+                        }
+                        else -> "Collections (${filteredCollections.size})"
+                    }
+                    
                     Text(
-                        text = "All Collections",
+                        text = headerText,
                         style = MaterialTheme.typography.headlineSmall,
                         modifier = Modifier.padding(vertical = 8.dp)
                     )

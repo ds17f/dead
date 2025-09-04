@@ -55,14 +55,50 @@ class CollectionsViewModel @Inject constructor(
         allCollections,
         filterPath
     ) { collections, path ->
+        Log.d(TAG, "Filtering collections - Total: ${collections.size}, Filter path: ${path.getCombinedId()}")
         if (path.isEmpty) {
+            Log.d(TAG, "No filter selected, showing all ${collections.size} collections")
             collections
         } else {
-            // Filter collections based on selected tags
             val selectedTags = path.nodes.map { it.id }
-            collections.filter { collection ->
-                selectedTags.any { tag -> collection.tags.contains(tag) }
+            Log.d(TAG, "Selected filter tags: $selectedTags")
+            
+            val filtered = collections.filter { collection ->
+                // Handle filtering logic based on filter structure:
+                // - If "official" is selected (root), show all official collections
+                // - If "official" + subcategory (e.g., "dicks-picks"), filter further
+                // - If "guest" or "era" is selected (single-level), show all matching collections
+                
+                val hasMatch = when {
+                    // Official root filter logic
+                    selectedTags.contains("official") && selectedTags.size == 1 -> {
+                        // Just "Official" selected - show all official collections
+                        collection.tags.contains("official")
+                    }
+                    selectedTags.contains("official") && selectedTags.size == 2 -> {
+                        // "Official" + subcategory selected - filter further
+                        val subcategory = selectedTags.find { it != "official" }
+                        collection.tags.contains("official") && collection.tags.contains(subcategory)
+                    }
+                    // Single-level filters (guest, era)
+                    selectedTags.contains("guest") -> {
+                        collection.tags.contains("guest")
+                    }
+                    selectedTags.contains("era") -> {
+                        collection.tags.contains("era")
+                    }
+                    else -> {
+                        // Fallback to any tag matching
+                        selectedTags.any { tag -> collection.tags.contains(tag) }
+                    }
+                }
+                
+                Log.d(TAG, "Collection '${collection.name}' tags: ${collection.tags}, matches: $hasMatch")
+                hasMatch
             }
+            
+            Log.d(TAG, "Filtered result: ${filtered.size} collections")
+            filtered
         }
     }.stateIn(
         scope = viewModelScope,
@@ -82,21 +118,25 @@ class CollectionsViewModel @Inject constructor(
         viewModelScope.launch {
             _uiState.value = _uiState.value.copy(isLoading = true)
             try {
+                Log.d(TAG, "Calling collectionsService.getAllCollections()")
                 val result = collectionsService.getAllCollections()
                 result.fold(
                     onSuccess = { collections ->
+                        Log.d(TAG, "Successfully loaded ${collections.size} collections from service")
+                        collections.forEach { collection ->
+                            Log.d(TAG, "Collection: '${collection.name}' with tags: ${collection.tags}")
+                        }
                         _allCollections.value = collections
                         _uiState.value = _uiState.value.copy(isLoading = false, error = null)
-                        Log.d(TAG, "Loaded ${collections.size} collections")
                     },
                     onFailure = { exception ->
+                        Log.e(TAG, "Failed to load collections from service", exception)
                         _uiState.value = _uiState.value.copy(isLoading = false, error = exception.message)
-                        Log.e(TAG, "Failed to load collections", exception)
                     }
                 )
             } catch (e: Exception) {
+                Log.e(TAG, "Exception loading collections", e)
                 _uiState.value = _uiState.value.copy(isLoading = false, error = e.message)
-                Log.e(TAG, "Error loading collections", e)
             }
         }
     }
