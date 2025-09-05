@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.69.1] - 2025-09-04
+
+### Bug Fixes
+* resolve collection selection updates during navigation (2357219f)
+* resolve external schema compatibility for collections import (0aaf9908)
+
+
 ## [0.69.0] - 2025-09-04
 
 ### New Features
@@ -13,8 +20,6 @@
 ### Code Refactoring
 * implement ID-based navigation with robust filter handling (fb0d992b)
 * reduce V2 MiniPlayer size for better space usage (dc287f84)
-
-
 ## [0.68.0] - 2025-09-03
 
 ### New Features
