@@ -16,6 +16,7 @@ import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import kotlinx.coroutines.launch
+import kotlinx.coroutines.delay
 import com.deadly.v2.core.design.component.CollectionCard
 import com.deadly.v2.core.design.component.FeaturedCollectionsCarousel
 import com.deadly.v2.core.design.component.LargeCollectionsCarousel
@@ -75,6 +76,22 @@ fun CollectionsScreen(
     LaunchedEffect(selectedCollectionIndex, filteredCollections.size) {
         if (filteredCollections.isNotEmpty() && selectedCollectionIndex < filteredCollections.size) {
             carouselPagerState.animateScrollToPage(selectedCollectionIndex)
+        }
+    }
+    
+    // Handle collection selection from carousel page changes (swipes, slider navigation)
+    LaunchedEffect(carouselPagerState.currentPage, filteredCollections.size) {
+        // Small delay to let navigation/programmatic scrolling settle
+        delay(100)
+        
+        if (filteredCollections.isNotEmpty() && 
+            carouselPagerState.currentPage < filteredCollections.size) {
+            val currentCollection = filteredCollections[carouselPagerState.currentPage]
+            
+            // Only update if this differs from current selection (preserves navigation)
+            if (currentCollection.id != selectedCollectionId) {
+                viewModel.onCollectionSelected(currentCollection)
+            }
         }
     }
     

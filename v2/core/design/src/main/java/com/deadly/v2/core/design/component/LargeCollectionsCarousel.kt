@@ -44,19 +44,8 @@ fun LargeCollectionsCarousel(
     ),
     parallaxOffset: Dp = 40.dp
 ) {
-    // Only notify parent of selection when user manually changes page (not programmatic)
-    // This prevents conflicts with external ID-based state management
-    LaunchedEffect(pagerState.currentPage, collections) {
-        if (collections.isNotEmpty() && 
-            pagerState.currentPage < collections.size &&
-            !pagerState.isScrollInProgress) { // Only when not programmatically scrolling
-            val currentCollection = collections[pagerState.currentPage]
-            // Only notify if this is different from what parent expects
-            if (currentCollection.id != selectedCollectionId) {
-                onCollectionSelected(currentCollection)
-            }
-        }
-    }
+    // Selection logic moved to CollectionsScreen level for better control
+    // This component now focuses purely on display and click handling
 
     HorizontalPager(
         state = pagerState,
