@@ -1,0 +1,212 @@
+{
+  "url": "https://jerrygarcia.com/show/1990-07-08-three-rivers-stadium-pittsburgh-pa-usa/",
+  "show_id": "1990-07-08-three-rivers-stadium-pittsburgh-pa-usa",
+  "band": "Grateful Dead",
+  "venue": "Three Rivers Stadium",
+  "location_raw": "Pittsburgh, PA",
+  "city": "Pittsburgh",
+  "state": "PA",
+  "country": "USA",
+  "date": "1990-07-08",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Touch of Grey",
+          "url": "https://jerrygarcia.com/song/touch-of-grey/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Greatest Story Ever Told",
+          "url": "https://jerrygarcia.com/song/greatest-story-ever-told/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Jack-A-Roe",
+          "url": "https://jerrygarcia.com/song/jack-a-roe/",
+          "segue_into_next": false
+        },
+        {
+          "name": "New Minglewood Blues",
+          "url": "https://jerrygarcia.com/song/new-minglewood-blues/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Row Jimmy",
+          "url": "https://jerrygarcia.com/song/row-jimmy/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Mama Tried",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Mexicali Blues",
+          "url": "https://jerrygarcia.com/song/mexicali-blues/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Just Like Tom Thumb's Blues",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Let It Grow",
+          "url": "https://jerrygarcia.com/song/let-it-grow/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Samson & Delilah",
+          "url": "https://jerrygarcia.com/song/samson-delilah/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Eyes Of The World",
+          "url": "https://jerrygarcia.com/song/eyes-of-the-world/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Estimated Prophet",
+          "url": "https://jerrygarcia.com/song/estimated-prophet/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Terrapin Station",
+          "url": "https://jerrygarcia.com/song/terrapin-station/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Jam",
+          "url": "https://jerrygarcia.com/song/jam/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "I Need A Miracle",
+          "url": "https://jerrygarcia.com/song/i-need-a-miracle/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Wang Dang Doodle",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Black Peter",
+          "url": "https://jerrygarcia.com/song/black-peter/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Throwing Stones",
+          "url": "https://jerrygarcia.com/song/throwing-stones/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Turn On Your Lovelight",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "Knockin' On Heaven's Door",
+          "url": "https://jerrygarcia.com/song/knockin-on-heavens-door/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Brent Mydland",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152446/BretMydland_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "found",
+  "supporting_acts": [
+    "Crosby, Stills & Nash"
+  ],
+  "collection_timestamp": "2025-08-10T09:06:25.313480",
+  "show_time": null,
+  "recordings": [
+    "gd90-07-08.sbd.brame.16157.sbeok.shnf",
+    "gd1990-07-08.141773.sbd.miller.flac2496",
+    "gd1990-07-08.141863.UltraMatrix.sbd.cm.miller.flac1644",
+    "gd1990-07-08.138701.upg-sbd.tobin.flac16",
+    "gd1990-07-08.135741.set2.sbd.jc.flac16",
+    "gd1990-07-08.135742.set2.sbd.jc.flac24",
+    "gd1990-07-08.138702.mtx.tobin.flac16",
+    "gd1990-07-08.nak300.holtz.lmpp.97714.sbeok.flac16",
+    "gd1990-07-08.149331.DAK-OTS.boedicker.flac1644",
+    "gd1990-07-08.nak300.bleich-sirmick.109665.sbeok.flac16",
+    "gd1990-07-08.138703.dts.tobin.flac16",
+    "gd1990-07-08.Nak100sSenn421.Hill.Keo.130549.Flac1644",
+    "gd1990-07-08.168022.cm300-cp4.holbrook.flac2448",
+    "gd1990-07-08.Nak100sSenn421.Hill.Keo.130548.Flac2496",
+    "gd1990-07-08.138704.5-1.tobin.flac1648",
+    "gd1990-07-08.142686.Schoeps.Brotman.Fanari.Katzeff.Mattes.Miller.Noel.t-flac1648",
+    "gd1990-07-08.168021.cm300-cp4.holbrook.flac1644",
+    "gd1990-07-08.138452.OTS-FOB.Schoeps.Katzeff.Ammons.Noel.t-flac16"
+  ],
+  "best_recording": "gd90-07-08.sbd.brame.16157.sbeok.shnf",
+  "avg_rating": 3.167777971722814,
+  "raw_rating": 4.324129651860744,
+  "recording_count": 18,
+  "confidence": 1.0,
+  "total_high_ratings": 39,
+  "total_low_ratings": 3,
+  "source_types": {
+    "SBD": 6,
+    "MATRIX": 1,
+    "UNKNOWN": 11
+  },
+  "matching_method": "date_only",
+  "filtering_applied": []
+}

@@ -1,0 +1,214 @@
+{
+  "url": "https://jerrygarcia.com/show/1976-10-01-market-square-arena-indianapolis-in-usa/",
+  "show_id": "1976-10-01-market-square-arena-indianapolis-in-usa",
+  "band": "Grateful Dead",
+  "venue": "Market Square Arena",
+  "location_raw": "Indianapolis, IN",
+  "city": "Indianapolis",
+  "state": "IN",
+  "country": "USA",
+  "date": "1976-10-01",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Bertha",
+          "url": "https://jerrygarcia.com/song/bertha/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Mama Tried",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Deal",
+          "url": "https://jerrygarcia.com/song/deal/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Cassidy",
+          "url": "https://jerrygarcia.com/song/cassidy/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Friend Of The Devil",
+          "url": "https://jerrygarcia.com/song/friend-of-the-devil/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Big River",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Brown Eyed Women",
+          "url": "https://jerrygarcia.com/song/brown-eyed-women/",
+          "segue_into_next": false
+        },
+        {
+          "name": "It's All Over Now",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Scarlet Begonias",
+          "url": "https://jerrygarcia.com/song/scarlet-begonias/",
+          "segue_into_next": false
+        },
+        {
+          "name": "The Promised Land",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Might As Well",
+          "url": "https://jerrygarcia.com/song/might-as-well/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Samson & Delilah",
+          "url": "https://jerrygarcia.com/song/samson-delilah/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Help On The Way",
+          "url": "https://jerrygarcia.com/song/help-on-the-way/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Slipknot",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Franklin's Tower",
+          "url": "https://jerrygarcia.com/song/franklins-tower/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Dancin' In The Street",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "The Wheel",
+          "url": "https://jerrygarcia.com/song/the-wheel/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Ship Of Fools",
+          "url": "https://jerrygarcia.com/song/ship-of-fools/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Dancin' In The Street",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Goin' Down The Road Feeling Bad",
+          "url": "https://jerrygarcia.com/song/goin-down-the-road-feelin-bad/",
+          "segue_into_next": true
+        },
+        {
+          "name": "One More Saturday Night",
+          "url": "https://jerrygarcia.com/song/one-more-saturday-night/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "U.S. Blues",
+          "url": "https://jerrygarcia.com/song/u-s-blues/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Keith Godchaux",
+      "instruments": "keyboards",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152439/KeithGodchaux_200-100x100.jpg"
+    },
+    {
+      "name": "Donna Jean Godchaux",
+      "instruments": "vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2013/07/12152444/DonnaGodchaux_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T08:32:24.264692",
+  "show_time": null,
+  "recordings": [
+    "gd1976-10-01.sbd.miller.112800.flac16",
+    "gd1976-10-01.sbd.miller.111819.flac16",
+    "gd1976-10-01.170205.sbd.anon.gems.flac1644",
+    "gd1976-10-01.137657.mtx.dusborne.flac16",
+    "gd1976-10-01.170521.mtx.hunter.flac1644",
+    "gd76-10-01.moore.weiner.14558.sbeok.shnf",
+    "gd1976-10-01.aud.unknown.118467.flac2496",
+    "gd1976-10-01.sonyECM33p.moore.berger-tallmadge.84358.flac16",
+    "gd1976-10-01.akgd200e.vernon-pujol.10151.sbeok.shnf",
+    "gd1976-10-01.113042.Bertha.dvda",
+    "gd1976-10-01.aud.unknown.118468.flac16"
+  ],
+  "best_recording": "gd1976-10-01.sbd.miller.112800.flac16",
+  "avg_rating": 3.654418604651163,
+  "raw_rating": 4.565217391304348,
+  "recording_count": 11,
+  "confidence": 1.0,
+  "total_high_ratings": 44,
+  "total_low_ratings": 0,
+  "source_types": {
+    "SBD": 3,
+    "MATRIX": 2,
+    "UNKNOWN": 4,
+    "AUD": 2
+  },
+  "matching_method": "date_only",
+  "filtering_applied": []
+}

@@ -1,0 +1,184 @@
+{
+  "url": "https://jerrygarcia.com/show/1988-10-02-shoreline-amphitheatre-mountain-view-ca-usa/",
+  "show_id": "1988-10-02-shoreline-amphitheatre-mountain-view-ca-usa",
+  "band": "Grateful Dead",
+  "venue": "Shoreline Amphitheatre",
+  "location_raw": "Mountain View, CA",
+  "city": "Mountain View",
+  "state": "CA",
+  "country": "USA",
+  "date": "1988-10-02",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Cold Rain And Snow",
+          "url": "https://jerrygarcia.com/song/cold-rain-and-snow/",
+          "segue_into_next": false
+        },
+        {
+          "name": "New Minglewood Blues",
+          "url": "https://jerrygarcia.com/song/new-minglewood-blues/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Peggy-O",
+          "url": "https://jerrygarcia.com/song/peggy-o/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Stuck Inside of Mobile with the Memphis Blues Again",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "To Lay Me Down",
+          "url": "https://jerrygarcia.com/song/to-lay-me-down/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Box of Rain",
+          "url": "https://jerrygarcia.com/song/box-of-rain/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Deal",
+          "url": "https://jerrygarcia.com/song/deal/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Crazy Fingers",
+          "url": "https://jerrygarcia.com/song/crazy-fingers/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Samson & Delilah",
+          "url": "https://jerrygarcia.com/song/samson-delilah/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Jam",
+          "url": "https://jerrygarcia.com/song/jam/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Estimated Prophet",
+          "url": "https://jerrygarcia.com/song/estimated-prophet/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Eyes Of The World",
+          "url": "https://jerrygarcia.com/song/eyes-of-the-world/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Gimme Some Lovin'",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Stella Blue",
+          "url": "https://jerrygarcia.com/song/stella-blue/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Throwing Stones",
+          "url": "https://jerrygarcia.com/song/throwing-stones/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Not Fade Away",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "Black Muddy River",
+          "url": "https://jerrygarcia.com/song/black-muddy-river/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Brent Mydland",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152446/BretMydland_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T09:02:21.506705",
+  "show_time": null,
+  "recordings": [
+    "gd88-10-02.sbd.sacks.7637.sbeok.shnf",
+    "gd1988-10-02.sbd.sacks.tetzeli.fix-7637.34467.reflac.flac16",
+    "gd1988-10-02.142490.s2.sbd.bm.miller.flac1644",
+    "gd1988-10-02.142403.s2.sbd.miller.flac2496",
+    "gd1988-10-02.169164.MountainView.CA.UltramatrixSBD.dolby.c.cm.marcus.miller.t-flac1648",
+    "gd1988-10-02.168964.UltramatrixSBD.dolby.c.cm.marcus.miller.flac2496",
+    "gd1988-10-02.168661.superscopeEC7.ont.flac1644",
+    "gd1988-10-02.beyerM88.russjcan.94479.flac16"
+  ],
+  "best_recording": "gd88-10-02.sbd.sacks.7637.sbeok.shnf",
+  "avg_rating": 3.15,
+  "raw_rating": 3.0625,
+  "recording_count": 8,
+  "confidence": 1.0,
+  "total_high_ratings": 5,
+  "total_low_ratings": 1,
+  "source_types": {
+    "SBD": 6,
+    "UNKNOWN": 2
+  },
+  "matching_method": "date_only",
+  "filtering_applied": []
+}

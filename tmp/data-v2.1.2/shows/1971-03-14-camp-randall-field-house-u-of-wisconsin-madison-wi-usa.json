@@ -1,0 +1,160 @@
+{
+  "url": "https://jerrygarcia.com/show/1971-03-14-camp-randall-field-house-u-of-wisconsin-madison-wi-usa/",
+  "show_id": "1971-03-14-camp-randall-field-house-u-of-wisconsin-madison-wi-usa",
+  "band": "Grateful Dead",
+  "venue": "Camp Randall Field House, U. of Wisconsin",
+  "location_raw": "Madison, WI",
+  "city": "Madison",
+  "state": "WI",
+  "country": "USA",
+  "date": "1971-03-14",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Truckin'",
+          "url": "https://jerrygarcia.com/song/truckin/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Me And My Uncle",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "It Hurts Me Too",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Bertha",
+          "url": "https://jerrygarcia.com/song/bertha/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Me And Bobby McGee",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Hard To Handle",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Loser",
+          "url": "https://jerrygarcia.com/song/loser/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Good Lovin'",
+          "url": "https://jerrygarcia.com/song/good-lovin/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Good Lovin'",
+          "url": "https://jerrygarcia.com/song/good-lovin/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Casey Jones",
+          "url": "https://jerrygarcia.com/song/casey-jones/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Sugar Magnolia",
+          "url": "https://jerrygarcia.com/song/sugar-magnolia/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Wharf Rat",
+          "url": "https://jerrygarcia.com/song/wharf-rat/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Greatest Story Ever Told",
+          "url": "https://jerrygarcia.com/song/greatest-story-ever-told/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Johnny B. Goode",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "Uncle John's Band",
+          "url": "https://jerrygarcia.com/song/uncle-johns-band/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Ron \"Pigpen\" McKernan",
+      "instruments": "keyboards, harmonica, percussion, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152433/RonPigpenMcKernan_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "found",
+  "supporting_acts": [
+    "New Riders of the Purple Sage"
+  ],
+  "collection_timestamp": "2025-08-10T08:21:46.235867",
+  "show_time": null,
+  "recordings": [
+    "gd71-03-14.sbd.cole.6115.sbeok.shnf",
+    "gd1971-03-14.sbd.lai.6249.shnf",
+    "gd1971-03-14.sbd.130581.MrBill.flac16"
+  ],
+  "best_recording": "gd71-03-14.sbd.cole.6115.sbeok.shnf",
+  "avg_rating": 4.181249999999999,
+  "raw_rating": 4.5,
+  "recording_count": 3,
+  "confidence": 1.0,
+  "total_high_ratings": 14,
+  "total_low_ratings": 0,
+  "source_types": {
+    "SBD": 3
+  },
+  "matching_method": "date_only",
+  "filtering_applied": []
+}

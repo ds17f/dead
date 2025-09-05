@@ -1,0 +1,18 @@
+{
+  "identifier": "gd1973-06-30.aud.weiner.100346.flac16",
+  "title": "Grateful Dead Live at Universal Amphitheatre on 1973-06-30",
+  "date": "1973-06-30",
+  "venue": "Universal Amphitheatre",
+  "location": "Universal City, CA",
+  "source_type": "AUD",
+  "lineage": "AudMR > Reel(3 3/4ips) > DVD(WAV 24/96) > FLAC. Akai GX636 > Apogee Mini Me(24/96)/Apogee Mini DAC(monitoring/mastering) >  Lynx One soundcard > Wavelab 5.0 > DVD > Soundforge 8.0 (track IDs and cross fades) > downsampled to 16/44 in r8brain (with dithering) > FLAC(level 8)",
+  "taper": "",
+  "source": "Aud -> Master Reel",
+  "runtime": "176:27.58",
+  "rating": 2.6133333333333333,
+  "review_count": 3,
+  "confidence": 0.6,
+  "raw_rating": 4.666666666666667,
+  "high_ratings": 3,
+  "low_ratings": 0
+}

@@ -1,0 +1,207 @@
+{
+  "url": "https://jerrygarcia.com/show/1985-04-14-irvine-meadows-irvine-ca-usa/",
+  "show_id": "1985-04-14-irvine-meadows-irvine-ca-usa",
+  "band": "Grateful Dead",
+  "venue": "Irvine Meadows",
+  "location_raw": "Irvine, CA",
+  "city": "Irvine",
+  "state": "CA",
+  "country": "USA",
+  "date": "1985-04-14",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Touch of Grey",
+          "url": "https://jerrygarcia.com/song/touch-of-grey/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Hell In A Bucket",
+          "url": "https://jerrygarcia.com/song/hell-in-a-bucket/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Sugaree",
+          "url": "https://jerrygarcia.com/song/sugaree/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Down In The Bottom",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "I Ain't Superstitous",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Brown Eyed Women",
+          "url": "https://jerrygarcia.com/song/brown-eyed-women/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Tons Of Steel",
+          "url": "https://jerrygarcia.com/song/tons-of-steel/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Big Railroad Blues",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Looks Like Rain",
+          "url": "https://jerrygarcia.com/song/looks-like-rain/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Don't Ease Me In",
+          "url": "https://jerrygarcia.com/song/dont-ease-me-in/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "I Need A Miracle",
+          "url": "https://jerrygarcia.com/song/i-need-a-miracle/",
+          "segue_into_next": true
+        },
+        {
+          "name": "China Cat Sunflower",
+          "url": "https://jerrygarcia.com/song/china-cat-sunflower/",
+          "segue_into_next": true
+        },
+        {
+          "name": "I Know You Rider",
+          "url": "https://jerrygarcia.com/song/i-know-you-rider/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Man Smart, Woman Smarter",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "He's Gone",
+          "url": "https://jerrygarcia.com/song/hes-gone/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Dear Mr. Fantasy",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "The Other One",
+          "url": "https://jerrygarcia.com/song/the-other-one/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Wharf Rat",
+          "url": "https://jerrygarcia.com/song/wharf-rat/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Sugar Magnolia",
+          "url": "https://jerrygarcia.com/song/sugar-magnolia/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "Gloria",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Brent Mydland",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152446/BretMydland_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T08:53:40.585550",
+  "show_time": null,
+  "recordings": [
+    "gd85-04-14.sbd.jeffm.3667.sbeok.shnf",
+    "gd1985-04-14.152159.sbd.marcus.miller.flac2496",
+    "gd1985-04-14.152518.sbd.cm.miller.t.flac16",
+    "gd1985-04-14.152519.sbd.fixed.1st.Gen.miller.t.flac16",
+    "gd1985-04-14.144159.sbd.miller.clugston.flac1644",
+    "gd1985-04-14.166958.sbd.cm.miller.flac2496",
+    "gd1985-04-14.152160.sbd.walker.scotton.miller.flac2496",
+    "gd1985-04-14.166535.sbd.smarcus.menke.miller.fix.flac24",
+    "gd1985-04-14.151830.SBD.UNK.Reel.Anon.Noel.t-flac1648",
+    "gd1985-04-14.152161.sbd.walker.scotton.miller.fixed.flac2496",
+    "gd1985-04-14.166959.sbd.cm.miller.t-flac1648",
+    "gd1985-04-14.senn421.mccue.ford.32621.sbeok.shnf",
+    "gd1985-04-14.143490.s2.FOB.ECM150.Keeler.Miller.Noel.t-flac2496",
+    "gd1985-04-14.nak100.holtz.jaz.97220.flac16",
+    "gd1985-04-14.124931.chasingwilma.flac24",
+    "gd1985-04-14.145334.s2.fob.sony.ecm150.keeler.miller.noel.t-flac16"
+  ],
+  "best_recording": "gd85-04-14.sbd.jeffm.3667.sbeok.shnf",
+  "avg_rating": 3.968173836698859,
+  "raw_rating": 4.388235294117647,
+  "recording_count": 16,
+  "confidence": 1.0,
+  "total_high_ratings": 20,
+  "total_low_ratings": 1,
+  "source_types": {
+    "SBD": 11,
+    "UNKNOWN": 5
+  },
+  "matching_method": "date_only",
+  "filtering_applied": []
+}

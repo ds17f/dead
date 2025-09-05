@@ -1,0 +1,206 @@
+{
+  "url": "https://jerrygarcia.com/show/1990-10-20-internationales-congress-centrum-berlin-germany/",
+  "show_id": "1990-10-20-internationales-congress-centrum-berlin-germany",
+  "band": "Grateful Dead",
+  "venue": "Internationales Congress Centrum",
+  "location_raw": "Berlin, Germany",
+  "city": "Berlin",
+  "state": null,
+  "country": "Germany",
+  "date": "1990-10-20",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Jack Straw",
+          "url": "https://jerrygarcia.com/song/jack-straw/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Mississippi Half-Step Uptown Toodeloo",
+          "url": "https://jerrygarcia.com/song/mississippi-half-step-uptown-toodeloo/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Walkin' Blues",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Friend Of The Devil",
+          "url": "https://jerrygarcia.com/song/friend-of-the-devil/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Black Throated Wind",
+          "url": "https://jerrygarcia.com/song/black-throated-wind/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Jack-A-Roe",
+          "url": "https://jerrygarcia.com/song/jack-a-roe/",
+          "segue_into_next": false
+        },
+        {
+          "name": "When I Paint My Masterpiece",
+          "url": "https://jerrygarcia.com/song/when-i-paint-my-masterpiece/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Let It Grow",
+          "url": "https://jerrygarcia.com/song/let-it-grow/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Jam",
+          "url": "https://jerrygarcia.com/song/jam/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Box of Rain",
+          "url": "https://jerrygarcia.com/song/box-of-rain/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Eyes Of The World",
+          "url": "https://jerrygarcia.com/song/eyes-of-the-world/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Samson & Delilah",
+          "url": "https://jerrygarcia.com/song/samson-delilah/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Ship Of Fools",
+          "url": "https://jerrygarcia.com/song/ship-of-fools/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Dark Star",
+          "url": "https://jerrygarcia.com/song/dark-star/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Dark Star",
+          "url": "https://jerrygarcia.com/song/dark-star/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Throwing Stones",
+          "url": "https://jerrygarcia.com/song/throwing-stones/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Not Fade Away",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "One More Saturday Night",
+          "url": "https://jerrygarcia.com/song/one-more-saturday-night/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Bruce Hornsby",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152446/BruceHornsby_200-100x100.jpg"
+    },
+    {
+      "name": "Vince Welnick",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152431/VinceWelnick_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T09:07:15.340420",
+  "show_time": null,
+  "recordings": [
+    "gd90-10-20.dsbd-matrix.dieter.12931.sbefail.shnf",
+    "gd1990-10-20.sbd.rogers-vernon.8245.shnf",
+    "gd1990-10-20.165833.UltraMatrix.sbd.cm.miller.t-flac1644",
+    "gd1990-10-20.150273.sbd.ANON.blackwood.flac1644",
+    "gd1990-10-20.mtx.hansokolow.98728.flac16",
+    "gd1990-10-20.165742.ultramatrix.miller.flac2496",
+    "gd1990-10-20.153737.sonyECM.G.willer.flac1644",
+    "gd1990-10-20.144552.cmc4.flac1648",
+    "gd1990-10-20.131473.cmc521.deal.flac16",
+    "gd1990-10-20.167631.nak700.blend.vita.miller.clugston.flac1648",
+    "gd1990-10-20.138476.BK4011.fob.Teitelbaum.Ammons.Noel.t-flac16",
+    "gd1990-10-20.144900.aud.lamarre.berger.flac24",
+    "gd1990-10-20.Nak300CP4.Floater.Keo.115551.Flac1644",
+    "gd1990-10-20.167632.nak700.blend.vita.miller.clugston.flac2496",
+    "gd1990-10-20.144901.aud.lamarre.berger.flac16",
+    "gd1990-10-20.139112.aud.liff.lamarre.berger.flac1648",
+    "gd1990-10-20.Nak300CP4.Floater.Keo.115552.Flac2496",
+    "gd1990-10-20.nak300.houck-wright.gmb.90641.sbeok.flac16"
+  ],
+  "best_recording": "gd90-10-20.dsbd-matrix.dieter.12931.sbefail.shnf",
+  "avg_rating": 2.312098976109215,
+  "raw_rating": 4.242647058823529,
+  "recording_count": 18,
+  "confidence": 1.0,
+  "total_high_ratings": 27,
+  "total_low_ratings": 0,
+  "source_types": {
+    "SBD": 4,
+    "MATRIX": 2,
+    "UNKNOWN": 9,
+    "AUD": 3
+  },
+  "matching_method": "date_only",
+  "filtering_applied": []
+}

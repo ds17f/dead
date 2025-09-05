@@ -1,0 +1,202 @@
+{
+  "url": "https://jerrygarcia.com/show/1991-12-30-oakland-alameda-county-coliseum-oakland-ca-usa/",
+  "show_id": "1991-12-30-oakland-alameda-county-coliseum-oakland-ca-usa",
+  "band": "Grateful Dead",
+  "venue": "Oakland-Alameda County Coliseum",
+  "location_raw": "Oakland, CA",
+  "city": "Oakland",
+  "state": "CA",
+  "country": "USA",
+  "date": "1991-12-30",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Touch of Grey",
+          "url": "https://jerrygarcia.com/song/touch-of-grey/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Wang Dang Doodle",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Row Jimmy",
+          "url": "https://jerrygarcia.com/song/row-jimmy/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Big River",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Maggie's Farm",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Ramble On Rose",
+          "url": "https://jerrygarcia.com/song/ramble-on-rose/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Just Like Tom Thumb's Blues",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Bird Song",
+          "url": "https://jerrygarcia.com/song/bird-song/",
+          "segue_into_next": true
+        },
+        {
+          "name": "The Promised Land",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "China Cat Sunflower",
+          "url": "https://jerrygarcia.com/song/china-cat-sunflower/",
+          "segue_into_next": true
+        },
+        {
+          "name": "I Know You Rider",
+          "url": "https://jerrygarcia.com/song/i-know-you-rider/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Samson & Delilah",
+          "url": "https://jerrygarcia.com/song/samson-delilah/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Ship Of Fools",
+          "url": "https://jerrygarcia.com/song/ship-of-fools/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Saint Of Circumstance",
+          "url": "https://jerrygarcia.com/song/saint-of-circumstance/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Jam",
+          "url": "https://jerrygarcia.com/song/jam/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums*",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space*",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "The Last Time",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Stella Blue",
+          "url": "https://jerrygarcia.com/song/stella-blue/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Turn On Your Lovelight",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "The Weight",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Bruce Hornsby",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152446/BruceHornsby_200-100x100.jpg"
+    },
+    {
+      "name": "Vince Welnick",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152431/VinceWelnick_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T09:10:33.325646",
+  "show_time": null,
+  "recordings": [
+    "gd1991-12-30.sbd.miller.32574.sbeok.flac16",
+    "gd1991-12-30.150859.sbd.miller.flac2496",
+    "gd1991-12-30.151629.sbd.cm.miller.t.flac16",
+    "gd1991-12-30.135051.mtx.tobin.flac16",
+    "gd91-12-30.b_ks.georges.6812.sbeok.shnf",
+    "gd1991-12-30.fob.bk4011.buick-young.gems.105000.flac16",
+    "gd1991-12-30.150304.FOB.DFC.BK4011.Buick.Noel.t-flac1648",
+    "gd1991-12-30.135054.sur5-1.tobin.flac1648",
+    "gd1991-12-30.135052.dts.tobin.flac16",
+    "gd1991-12-30.148758.FOB.Schoeps.Dalton-Miller-Noel.t-flac1648"
+  ],
+  "best_recording": "gd1991-12-30.sbd.miller.32574.sbeok.flac16",
+  "avg_rating": 2.581382978723404,
+  "raw_rating": 3.2857142857142856,
+  "recording_count": 10,
+  "confidence": 1.0,
+  "total_high_ratings": 6,
+  "total_low_ratings": 4,
+  "source_types": {
+    "SBD": 3,
+    "MATRIX": 1,
+    "UNKNOWN": 6
+  },
+  "matching_method": "date_only",
+  "filtering_applied": []
+}

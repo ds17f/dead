@@ -1,0 +1,207 @@
+{
+  "url": "https://jerrygarcia.com/show/1976-06-21-tower-theatre-upper-darby-pa-usa/",
+  "show_id": "1976-06-21-tower-theatre-upper-darby-pa-usa",
+  "band": "Grateful Dead",
+  "venue": "Tower Theatre",
+  "location_raw": "Upper Darby, PA",
+  "city": "Upper Darby",
+  "state": "PA",
+  "country": "USA",
+  "date": "1976-06-21",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "The Music Never Stopped",
+          "url": "https://jerrygarcia.com/song/the-music-never-stopped/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Sugaree",
+          "url": "https://jerrygarcia.com/song/sugaree/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Mama Tried",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Brown Eyed Women",
+          "url": "https://jerrygarcia.com/song/brown-eyed-women/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Cassidy",
+          "url": "https://jerrygarcia.com/song/cassidy/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Row Jimmy",
+          "url": "https://jerrygarcia.com/song/row-jimmy/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Looks Like Rain",
+          "url": "https://jerrygarcia.com/song/looks-like-rain/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Scarlet Begonias",
+          "url": "https://jerrygarcia.com/song/scarlet-begonias/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Lazy Lightning",
+          "url": "https://jerrygarcia.com/song/lazy-lightning/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Supplication",
+          "url": "https://jerrygarcia.com/song/supplication/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Candyman",
+          "url": "https://jerrygarcia.com/song/candyman/",
+          "segue_into_next": false
+        },
+        {
+          "name": "The Promised Land",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "The Wheel",
+          "url": "https://jerrygarcia.com/song/the-wheel/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Samson & Delilah",
+          "url": "https://jerrygarcia.com/song/samson-delilah/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Help On The Way",
+          "url": "https://jerrygarcia.com/song/help-on-the-way/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Slipknot",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Franklin's Tower",
+          "url": "https://jerrygarcia.com/song/franklins-tower/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Dancin' In The Street",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Wharf Rat",
+          "url": "https://jerrygarcia.com/song/wharf-rat/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Around & Around",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "It Must Have Been The Roses",
+          "url": "https://jerrygarcia.com/song/it-must-have-been-the-roses/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Johnny B. Goode",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Keith Godchaux",
+      "instruments": "keyboards",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152439/KeithGodchaux_200-100x100.jpg"
+    },
+    {
+      "name": "Donna Jean Godchaux",
+      "instruments": "vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2013/07/12152444/DonnaGodchaux_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T08:31:38.274815",
+  "show_time": null,
+  "recordings": [
+    "gd1976-06-21.sbd.digitalrbb.miller.112171.flac16",
+    "gd1976-06-21.sbd.digitalrbb.miller.112191.flac16",
+    "gd1976-06-21.sbd.miller.124828.flac16",
+    "gd1976-06-21.mtx.seamons.121045.flac16",
+    "gd1976-06-21.mtx.seamons.ht98.124864.flac16",
+    "gd76-06-21.aud.vernon.6679.sbeok.shnf",
+    "gd1976-06-21.aud.digitalrbb.miller.112162.flac16"
+  ],
+  "best_recording": "gd1976-06-21.sbd.digitalrbb.miller.112171.flac16",
+  "avg_rating": 3.5213857677902625,
+  "raw_rating": 4.203030303030303,
+  "recording_count": 7,
+  "confidence": 1.0,
+  "total_high_ratings": 23,
+  "total_low_ratings": 2,
+  "source_types": {
+    "SBD": 3,
+    "MATRIX": 2,
+    "AUD": 2
+  },
+  "matching_method": "date_only",
+  "filtering_applied": [],
+  "collections": [
+    "download-series-vol-4"
+  ]
+}

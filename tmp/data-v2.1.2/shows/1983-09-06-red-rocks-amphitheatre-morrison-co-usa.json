@@ -1,0 +1,203 @@
+{
+  "url": "https://jerrygarcia.com/show/1983-09-06-red-rocks-amphitheatre-morrison-co-usa/",
+  "show_id": "1983-09-06-red-rocks-amphitheatre-morrison-co-usa",
+  "band": "Grateful Dead",
+  "venue": "Red Rocks Amphitheatre",
+  "location_raw": "Morrison, CO",
+  "city": "Morrison",
+  "state": "CO",
+  "country": "USA",
+  "date": "1983-09-06",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Alabama Getaway",
+          "url": "https://jerrygarcia.com/song/alabama-getaway/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Greatest Story Ever Told",
+          "url": "https://jerrygarcia.com/song/greatest-story-ever-told/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Peggy-O",
+          "url": "https://jerrygarcia.com/song/peggy-o/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Hell In A Bucket",
+          "url": "https://jerrygarcia.com/song/hell-in-a-bucket/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Dupree's Diamond Blues",
+          "url": "https://jerrygarcia.com/song/duprees-diamond-blues/",
+          "segue_into_next": false
+        },
+        {
+          "name": "New Minglewood Blues",
+          "url": "https://jerrygarcia.com/song/new-minglewood-blues/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Bird Song",
+          "url": "https://jerrygarcia.com/song/bird-song/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Lazy Lightning",
+          "url": "https://jerrygarcia.com/song/lazy-lightning/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Supplication",
+          "url": "https://jerrygarcia.com/song/supplication/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Might As Well",
+          "url": "https://jerrygarcia.com/song/might-as-well/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Help On The Way",
+          "url": "https://jerrygarcia.com/song/help-on-the-way/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Slipknot",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Franklin's Tower",
+          "url": "https://jerrygarcia.com/song/franklins-tower/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Playing In The Band",
+          "url": "https://jerrygarcia.com/song/playin-in-the-band/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Uncle John's Band",
+          "url": "https://jerrygarcia.com/song/uncle-johns-band/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Playing In The Band",
+          "url": "https://jerrygarcia.com/song/playin-in-the-band/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Throwing Stones",
+          "url": "https://jerrygarcia.com/song/throwing-stones/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Not Fade Away",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "Brokedown Palace",
+          "url": "https://jerrygarcia.com/song/brokedown-palace/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Brent Mydland",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152446/BretMydland_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T08:49:48.390568",
+  "show_time": null,
+  "recordings": [
+    "gd83-09-06.sbd.clugston.5489.sbeok.shnf",
+    "gd1983-09-06.mtx.seamons.95820.sbeok.flac16",
+    "gd1983-09-06.147910.mtx.photoleon.t-flac16",
+    "gd1983-09-06.111866.senn-421.grabski.shnf",
+    "gd1983-09-06.beyerm201.holbrook.35084.sbeok.flac16",
+    "gd83-09-06.senn.walstib.11589.sbeok.shnf",
+    "gd1983-09-06.111711.Sennheiser421.daweez.d5scott.flac16",
+    "gd1983-09-06.148335.2nd.set.akg.d330bt.senn421.hecht.miller.clugston.flac1648",
+    "gd1983-09-06.170742.akg.se5.wiseman.miller.clugston.flac2496",
+    "gd1983-09-06.aud.morris.111033.sbeok.flac24",
+    "gd1983-09-06.143039.beyerm201.holbrook.flac1644",
+    "gd1983-09-06.148336.2nd.set.akg.d330bt.senn421.hecht.miller.clugston.flac2496",
+    "gd1983-09-06.170741.akg.se5.wiseman.miller.clugston.flac1648",
+    "gd1983-09-06.143040.beyerm201.holbrook.flac2448",
+    "gd1983-09-06.nak300.morris.102051.sbeok.flac16"
+  ],
+  "best_recording": "gd83-09-06.sbd.clugston.5489.sbeok.shnf",
+  "avg_rating": 3.982890749377236,
+  "raw_rating": 4.447590447590447,
+  "recording_count": 15,
+  "confidence": 1.0,
+  "total_high_ratings": 53,
+  "total_low_ratings": 1,
+  "source_types": {
+    "SBD": 1,
+    "MATRIX": 2,
+    "UNKNOWN": 11,
+    "AUD": 1
+  },
+  "matching_method": "date_only",
+  "filtering_applied": []
+}

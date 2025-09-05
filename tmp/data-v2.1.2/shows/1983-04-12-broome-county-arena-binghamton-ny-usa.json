@@ -1,0 +1,218 @@
+{
+  "url": "https://jerrygarcia.com/show/1983-04-12-broome-county-arena-binghamton-ny-usa/",
+  "show_id": "1983-04-12-broome-county-arena-binghamton-ny-usa",
+  "band": "Grateful Dead",
+  "venue": "Broome County Arena",
+  "location_raw": "Binghamton, NY",
+  "city": "Binghamton",
+  "state": "NY",
+  "country": "USA",
+  "date": "1983-04-12",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Alabama Getaway",
+          "url": "https://jerrygarcia.com/song/alabama-getaway/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Greatest Story Ever Told",
+          "url": "https://jerrygarcia.com/song/greatest-story-ever-told/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Bird Song",
+          "url": "https://jerrygarcia.com/song/bird-song/",
+          "segue_into_next": false
+        },
+        {
+          "name": "New Minglewood Blues",
+          "url": "https://jerrygarcia.com/song/new-minglewood-blues/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Peggy-O",
+          "url": "https://jerrygarcia.com/song/peggy-o/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Cassidy",
+          "url": "https://jerrygarcia.com/song/cassidy/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Loser",
+          "url": "https://jerrygarcia.com/song/loser/",
+          "segue_into_next": false
+        },
+        {
+          "name": "It's All Over Now",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Dupree's Diamond Blues",
+          "url": "https://jerrygarcia.com/song/duprees-diamond-blues/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Let It Grow",
+          "url": "https://jerrygarcia.com/song/let-it-grow/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Help On The Way",
+          "url": "https://jerrygarcia.com/song/help-on-the-way/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Slipknot",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Franklin's Tower",
+          "url": "https://jerrygarcia.com/song/franklins-tower/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Lost Sailor",
+          "url": "https://jerrygarcia.com/song/lost-sailor/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Saint Of Circumstance",
+          "url": "https://jerrygarcia.com/song/saint-of-circumstance/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Terrapin Station",
+          "url": "https://jerrygarcia.com/song/terrapin-station/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "The Other One",
+          "url": "https://jerrygarcia.com/song/the-other-one/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Wharf Rat",
+          "url": "https://jerrygarcia.com/song/wharf-rat/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Not Fade Away",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "Not Fade Away",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "It's All Over Now Baby Blue",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Brent Mydland",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152446/BretMydland_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T08:48:38.345059",
+  "show_time": null,
+  "recordings": [
+    "gd83-04-12.sbd.dodd.10075.sbeok.shnf",
+    "gd83-04-12.set2.pcm-sbd.miller.30808.sbeok.flacf",
+    "gd1983-04-12.140047.set2.sbd.pcm.gans.miller.clugston.flac1644",
+    "gd1983-04-12.sbd.drgseeds.17264.shnf",
+    "gd1983-04-12.124253.mtx.dusborne.flac16",
+    "gd83-04-12.wise.sacks.9947.sbeok.shnf",
+    "gd1983-04-12.fob.senn421.colyard.ford.93961.flac16",
+    "gd1983-04-12.134998.nak300.schley.flac1644",
+    "gd1983-04-12.nak300.barfield-lane.103166.flac24",
+    "gd1983-04-12.137356",
+    "gd83-04-12.set2-aud.dodd.9764.sbeok.shnf",
+    "gd1983-04-12.141633.senn421.executive-crew.holbrook.flac2448",
+    "gd1983-04-12.163637.senn441.neumann.u87.miller.clugston.flac1648",
+    "gd1983-04-12.140087.aud.lamarre.berger.flac24",
+    "gd1983-04-12.140086.aud.lamarre.berger.flac16",
+    "gd1983-04-12.163638.senn441.neumann.u87.miller.clugston.flac2496",
+    "gd1983-04-12.141632.senn421.executive-crew.holbrook.flac1644",
+    "gd1983-04-12.138560.Senn421.FOB.Gastwirt.Miller.Noel.t-flac16",
+    "gd1983-04-12.162700.senn421.blend.vita.miller.clugston.flac2496",
+    "gd1983-04-12.162699.senn421.blend.vita.miller.clugston.flac1648"
+  ],
+  "best_recording": "gd83-04-12.sbd.dodd.10075.sbeok.shnf",
+  "avg_rating": 3.5254140786749484,
+  "raw_rating": 4.314516129032258,
+  "recording_count": 20,
+  "confidence": 1.0,
+  "total_high_ratings": 49,
+  "total_low_ratings": 1,
+  "source_types": {
+    "SBD": 4,
+    "MATRIX": 1,
+    "UNKNOWN": 12,
+    "AUD": 3
+  },
+  "matching_method": "date_only",
+  "filtering_applied": []
+}

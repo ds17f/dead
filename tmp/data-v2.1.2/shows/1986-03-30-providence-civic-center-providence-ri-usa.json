@@ -1,0 +1,199 @@
+{
+  "url": "https://jerrygarcia.com/show/1986-03-30-providence-civic-center-providence-ri-usa/",
+  "show_id": "1986-03-30-providence-civic-center-providence-ri-usa",
+  "band": "Grateful Dead",
+  "venue": "Providence Civic Center",
+  "location_raw": "Providence, RI",
+  "city": "Providence",
+  "state": "RI",
+  "country": "USA",
+  "date": "1986-03-30",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Hell In A Bucket",
+          "url": "https://jerrygarcia.com/song/hell-in-a-bucket/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Sugaree",
+          "url": "https://jerrygarcia.com/song/sugaree/",
+          "segue_into_next": false
+        },
+        {
+          "name": "El Paso",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Cumberland Blues",
+          "url": "https://jerrygarcia.com/song/cumberland-blues/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Tons Of Steel",
+          "url": "https://jerrygarcia.com/song/tons-of-steel/",
+          "segue_into_next": false
+        },
+        {
+          "name": "C.C. Rider",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Dupree's Diamond Blues",
+          "url": "https://jerrygarcia.com/song/duprees-diamond-blues/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Just Like Tom Thumb's Blues",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Deal",
+          "url": "https://jerrygarcia.com/song/deal/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Touch of Grey",
+          "url": "https://jerrygarcia.com/song/touch-of-grey/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Samson & Delilah",
+          "url": "https://jerrygarcia.com/song/samson-delilah/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Terrapin Station",
+          "url": "https://jerrygarcia.com/song/terrapin-station/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Man Smart, Woman Smarter",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Why Don't We Do It In The Road",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Stella Blue",
+          "url": "https://jerrygarcia.com/song/stella-blue/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Throwing Stones",
+          "url": "https://jerrygarcia.com/song/throwing-stones/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Not Fade Away",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "Not Fade Away",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "The Mighty Quinn (Quinn The Eskimo)",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Brent Mydland",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152446/BretMydland_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T08:55:50.692825",
+  "show_time": null,
+  "recordings": [
+    "gd1986-03-30.sbd.walker-scotton.miller.106110.flac16",
+    "gd1986-03-30.142406.sbd.miller.flac1648",
+    "gd86-03-30.fob-schoeps.miller.25526.sbeok.shnf",
+    "gd1986-03-30.nak300.pasternak.mallick.103229.flac16",
+    "gd86-03-30.nak300.braverman.10076.sbeok.shnf",
+    "gd1986-03-30.156186.akgc422.davis-murtha-holbrook.flac1644",
+    "gd1986-03-30.nak300.damico.87741.flac16",
+    "gd1986-03-30.127545.chasingwilma.flac24",
+    "gd1986-03-30.139523.FOB.Schoeps-cmc4-mk41.oade.bryant.miller.sirmick.flac16",
+    "gd1986-03-30.nak300.morris.crazyfingers.106566.flac16",
+    "gd1986-03-30.156187.akgc422.davis-murtha-holbrook.flac2448",
+    "gd1986-03-30.141050.FOB.SennME80.Hessberg.Miller.Noel.t-flac1644",
+    "gd1986-03-30.139470.FOB.SennME80.Hessberg.Miller.Noel.t-flac24"
+  ],
+  "best_recording": "gd1986-03-30.sbd.walker-scotton.miller.106110.flac16",
+  "avg_rating": 2.023529411764706,
+  "raw_rating": 4.0,
+  "recording_count": 13,
+  "confidence": 1.0,
+  "total_high_ratings": 9,
+  "total_low_ratings": 0,
+  "source_types": {
+    "SBD": 2,
+    "UNKNOWN": 11
+  },
+  "matching_method": "date_only",
+  "filtering_applied": []
+}

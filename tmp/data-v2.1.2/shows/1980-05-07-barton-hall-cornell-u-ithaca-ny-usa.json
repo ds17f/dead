@@ -1,0 +1,188 @@
+{
+  "url": "https://jerrygarcia.com/show/1980-05-07-barton-hall-cornell-u-ithaca-ny-usa/",
+  "show_id": "1980-05-07-barton-hall-cornell-u-ithaca-ny-usa",
+  "band": "Grateful Dead",
+  "venue": "Barton Hall, Cornell University",
+  "location_raw": "Ithaca, NY",
+  "city": "Ithaca",
+  "state": "NY",
+  "country": "USA",
+  "date": "1980-05-07",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Jack Straw",
+          "url": "https://jerrygarcia.com/song/jack-straw/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Tennessee Jed",
+          "url": "https://jerrygarcia.com/song/tennessee-jed/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Cassidy",
+          "url": "https://jerrygarcia.com/song/cassidy/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Row Jimmy",
+          "url": "https://jerrygarcia.com/song/row-jimmy/",
+          "segue_into_next": true
+        },
+        {
+          "name": "El Paso",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Easy To Love You",
+          "url": "https://jerrygarcia.com/song/easy-to-love-you/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Althea",
+          "url": "https://jerrygarcia.com/song/althea/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Feel Like A Stranger",
+          "url": "https://jerrygarcia.com/song/feel-like-a-stranger/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Don't Ease Me In",
+          "url": "https://jerrygarcia.com/song/dont-ease-me-in/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Shakedown Street",
+          "url": "https://jerrygarcia.com/song/shakedown-street/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Bertha",
+          "url": "https://jerrygarcia.com/song/bertha/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Playing In The Band",
+          "url": "https://jerrygarcia.com/song/playin-in-the-band/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Terrapin Station",
+          "url": "https://jerrygarcia.com/song/terrapin-station/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Saint Of Circumstance",
+          "url": "https://jerrygarcia.com/song/saint-of-circumstance/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Black Peter",
+          "url": "https://jerrygarcia.com/song/black-peter/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Playing In The Band",
+          "url": "https://jerrygarcia.com/song/playin-in-the-band/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Good Lovin'",
+          "url": "https://jerrygarcia.com/song/good-lovin/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "Alabama Getaway",
+          "url": "https://jerrygarcia.com/song/alabama-getaway/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Brent Mydland",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152446/BretMydland_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T08:40:38.355119",
+  "show_time": null,
+  "recordings": [
+    "gd80-05-07.sbd.miller.26349.sbeok.shnf",
+    "gd80-05-07.naks.clugston.3294.sbeok.shnf",
+    "gd1980-05-07.fob.sonyecm999.morris.100242.flac16",
+    "gd1980-05-07.128832.naks.mason.flac16",
+    "gd1980-05-07.118940.nak700.wise.minches.flac24",
+    "gd1980-05-07.152802.senn.blend.eaton.miller.clugston.flac2496",
+    "gd1980-05-07.152801.senn.blend.eaton.miller.clugston.flac1648"
+  ],
+  "best_recording": "gd80-05-07.sbd.miller.26349.sbeok.shnf",
+  "avg_rating": 3.3631358560794045,
+  "raw_rating": 4.303418803418803,
+  "recording_count": 7,
+  "confidence": 1.0,
+  "total_high_ratings": 30,
+  "total_low_ratings": 1,
+  "source_types": {
+    "SBD": 1,
+    "UNKNOWN": 6
+  },
+  "matching_method": "date_only",
+  "filtering_applied": []
+}

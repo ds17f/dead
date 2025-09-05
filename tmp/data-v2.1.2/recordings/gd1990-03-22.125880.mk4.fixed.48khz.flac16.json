@@ -1,0 +1,18 @@
+{
+  "identifier": "gd1990-03-22.125880.mk4.fixed.48khz.flac16",
+  "title": "Grateful Dead Live at Copps Coliseum on 1990-03-22",
+  "date": "1990-03-22",
+  "venue": "Copps Coliseum",
+  "location": "Hamilton, ON",
+  "source_type": "AUD",
+  "lineage": "",
+  "taper": "Ted Mattes",
+  "source": "<b>flac16/48kHz</b>; Source: Schoeps CMC5/MK4 > Aerco P/S > Panasonic SV250 (48 khz); Config/Location: ORTF/FOB 19th row on a stand; Original transfer and processing: DAT(2) > Sony PCM-2600 > Audioquest coax > TB Fiji Soundforge 4.5 > CDWave > MKWAct. No DAE; Fixed processing: xACT 2.23(shn>wav)>Audacity(inverted right channel with 32 bit float> flac)>xACT 2.23>wav>Sound Studio 3.6(normalize peak, +gain, re-track)> xACT 2.23(encode, tag, fingerprint)>flac16 (level 8) Taped by: Ted Mattes; DAT clone (2), DAT transfer, original processing, SHN extraction, MD5 verification and channel inversion all provided and done by: Craig Hillwig; Final processing, level adjustment and seeding by: Lenny Stubbe",
+  "runtime": "161:26.894",
+  "rating": 0.0,
+  "review_count": 0,
+  "confidence": 0.0,
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0
+}

@@ -1,0 +1,160 @@
+{
+  "url": "https://jerrygarcia.com/show/1969-08-21-aqua-theatre-seattle-wa-usa/",
+  "show_id": "1969-08-21-aqua-theatre-seattle-wa-usa",
+  "band": "Grateful Dead",
+  "venue": "Aqua Theatre",
+  "location_raw": "Seattle, WA",
+  "city": "Seattle",
+  "state": "WA",
+  "country": "USA",
+  "date": "1969-08-21",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Casey Jones",
+          "url": "https://jerrygarcia.com/song/casey-jones/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Easy Wind",
+          "url": "https://jerrygarcia.com/song/easy-wind/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Morning Dew",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "High Time",
+          "url": "https://jerrygarcia.com/song/high-time/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Mama Tried",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Me And My Uncle",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "New Minglewood Blues",
+          "url": "https://jerrygarcia.com/song/new-minglewood-blues/",
+          "segue_into_next": true
+        },
+        {
+          "name": "China Cat Sunflower",
+          "url": "https://jerrygarcia.com/song/china-cat-sunflower/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Doin' That Rag",
+          "url": "https://jerrygarcia.com/song/doin-that-rag/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Big Boss Man",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Sittin' On Top Of The World",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Cryptical Envelopment",
+          "url": "https://jerrygarcia.com/song/cryptical-envelopment/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "The Other One",
+          "url": "https://jerrygarcia.com/song/the-other-one/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Dark Star",
+          "url": "https://jerrygarcia.com/song/dark-star/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Cosmic Charlie",
+          "url": "https://jerrygarcia.com/song/cosmic-charlie/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Ron \"Pigpen\" McKernan",
+      "instruments": "keyboards, harmonica, percussion, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152433/RonPigpenMcKernan_200-100x100.jpg"
+    },
+    {
+      "name": "Tom Constanten",
+      "instruments": "keyboards",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152432/TomConstanten_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "found",
+  "supporting_acts": [
+    "New Riders of the Purple Sage",
+    "Sanpaku"
+  ],
+  "collection_timestamp": "2025-08-10T08:14:54.316842",
+  "show_time": null,
+  "recordings": [
+    "gd69-08-21.sbd.cotsman.13850.sbeok.shnf",
+    "gd1969-08-21.sbd-part.tremblay.1170.sbeok.shnf"
+  ],
+  "best_recording": "gd69-08-21.sbd.cotsman.13850.sbeok.shnf",
+  "avg_rating": 3.643137254901961,
+  "raw_rating": 4.254901960784314,
+  "recording_count": 2,
+  "confidence": 1.0,
+  "total_high_ratings": 13,
+  "total_low_ratings": 0,
+  "source_types": {
+    "SBD": 2
+  },
+  "matching_method": "date_only",
+  "filtering_applied": []
+}

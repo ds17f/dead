@@ -1,0 +1,255 @@
+{
+  "url": "https://jerrygarcia.com/show/1974-10-19-winterland-arena-san-francisco-ca-usa/",
+  "show_id": "1974-10-19-winterland-arena-san-francisco-ca-usa",
+  "band": "Grateful Dead",
+  "venue": "Winterland Arena",
+  "location_raw": "San Francisco, CA",
+  "city": "San Francisco",
+  "state": "CA",
+  "country": "USA",
+  "date": "1974-10-19",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Mississippi Half-Step Uptown Toodeloo",
+          "url": "https://jerrygarcia.com/song/mississippi-half-step-uptown-toodeloo/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Me And My Uncle",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Friend Of The Devil",
+          "url": "https://jerrygarcia.com/song/friend-of-the-devil/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Beat It On Down The Line",
+          "url": "https://jerrygarcia.com/song/beat-it-on-down-the-line/",
+          "segue_into_next": false
+        },
+        {
+          "name": "It Must Have Been The Roses",
+          "url": "https://jerrygarcia.com/song/it-must-have-been-the-roses/",
+          "segue_into_next": false
+        },
+        {
+          "name": "El Paso",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Loose Lucy",
+          "url": "https://jerrygarcia.com/song/loose-lucy/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Black Throated Wind",
+          "url": "https://jerrygarcia.com/song/black-throated-wind/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Scarlet Begonias",
+          "url": "https://jerrygarcia.com/song/scarlet-begonias/",
+          "segue_into_next": false
+        },
+        {
+          "name": "To Lay Me Down",
+          "url": "https://jerrygarcia.com/song/to-lay-me-down/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Mama Tried",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Eyes Of The World",
+          "url": "https://jerrygarcia.com/song/eyes-of-the-world/",
+          "segue_into_next": true
+        },
+        {
+          "name": "China Doll",
+          "url": "https://jerrygarcia.com/song/china-doll/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Big River",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Seastones*",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Uncle John's Band",
+          "url": "https://jerrygarcia.com/song/uncle-johns-band/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Big Railroad Blues",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "The Race Is On",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Tomorrow Is Forever",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Mexicali Blues",
+          "url": "https://jerrygarcia.com/song/mexicali-blues/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Dire Wolf",
+          "url": "https://jerrygarcia.com/song/dire-wolf/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Sugar Magnolia",
+          "url": "https://jerrygarcia.com/song/sugar-magnolia/",
+          "segue_into_next": true
+        },
+        {
+          "name": "He's Gone",
+          "url": "https://jerrygarcia.com/song/hes-gone/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Truckin' Jam",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Caution (Do Not Stop On Tracks) Jam",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Jam",
+          "url": "https://jerrygarcia.com/song/jam/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Truckin'",
+          "url": "https://jerrygarcia.com/song/truckin/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Black Peter",
+          "url": "https://jerrygarcia.com/song/black-peter/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Sunshine Daydream",
+          "url": "https://jerrygarcia.com/song/sunshine-daydream/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "One More Saturday Night",
+          "url": "https://jerrygarcia.com/song/one-more-saturday-night/",
+          "segue_into_next": false
+        },
+        {
+          "name": "U.S. Blues",
+          "url": "https://jerrygarcia.com/song/u-s-blues/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Keith Godchaux",
+      "instruments": "keyboards",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152439/KeithGodchaux_200-100x100.jpg"
+    },
+    {
+      "name": "Donna Jean Godchaux",
+      "instruments": "vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2013/07/12152444/DonnaGodchaux_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T08:31:02.329894",
+  "show_time": null,
+  "recordings": [
+    "gd74-10-19.sbd.miller.21927.sbeok.shnf",
+    "gd74-10-19.sbd.fink.227.sbeok.shnf",
+    "gd1974-10-19.sbd.boswell-smith.116341.flac24",
+    "gd1974-10-19.139578.sbd.gastwirt.miller.sirmick.flac16",
+    "gd1974-10-19.131694.sbd.boswell-smith.flac24",
+    "gd1974-10-19.140626.sbd.gastwirt.miller.sirmick.fixed.flac1644",
+    "gd1974-10-19.112531.sbd.BEAR.partial.twotapesides.flac24",
+    "gd1974-10-19.sbd.set1-partial.bear.gems.116170.flac24",
+    "gd1974-10-19.131704.sbd.boswell-smith.flac16",
+    "gd1974-10-19.sbd.dfinney.228.shnf",
+    "gd1974-10-19.sbd-pset1.bear.gems.stevesw.112791.flac16",
+    "gd1974-10-19.169825.aud.Connor.gems.flac1648",
+    "gd1974-10-19.169824.aud.Connor.gems.flac2496",
+    "gd1974-10-19.152593.aud.flac1644"
+  ],
+  "best_recording": "gd74-10-19.sbd.miller.21927.sbeok.shnf",
+  "avg_rating": 4.072301425661913,
+  "raw_rating": 4.490909090909091,
+  "recording_count": 14,
+  "confidence": 1.0,
+  "total_high_ratings": 50,
+  "total_low_ratings": 3,
+  "source_types": {
+    "SBD": 11,
+    "AUD": 3
+  },
+  "matching_method": "date_only",
+  "filtering_applied": []
+}

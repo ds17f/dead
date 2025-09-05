@@ -1,0 +1,192 @@
+{
+  "url": "https://jerrygarcia.com/show/1989-04-09-freedom-hall-louisville-ky-usa/",
+  "show_id": "1989-04-09-freedom-hall-louisville-ky-usa",
+  "band": "Grateful Dead",
+  "venue": "Freedom Hall",
+  "location_raw": "Louisville, KY",
+  "city": "Louisville",
+  "state": "KY",
+  "country": "USA",
+  "date": "1989-04-09",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Hell In A Bucket",
+          "url": "https://jerrygarcia.com/song/hell-in-a-bucket/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Sugaree",
+          "url": "https://jerrygarcia.com/song/sugaree/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Walkin' Blues",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "It Must Have Been The Roses",
+          "url": "https://jerrygarcia.com/song/it-must-have-been-the-roses/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Me And My Uncle",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Big River",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Ramble On Rose",
+          "url": "https://jerrygarcia.com/song/ramble-on-rose/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Desolation Row",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Foolish Heart",
+          "url": "https://jerrygarcia.com/song/foolish-heart/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Louie Louie",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Man Smart, Woman Smarter",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Ship Of Fools",
+          "url": "https://jerrygarcia.com/song/ship-of-fools/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Estimated Prophet",
+          "url": "https://jerrygarcia.com/song/estimated-prophet/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Uncle John's Band",
+          "url": "https://jerrygarcia.com/song/uncle-johns-band/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "The Other One",
+          "url": "https://jerrygarcia.com/song/the-other-one/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Stella Blue",
+          "url": "https://jerrygarcia.com/song/stella-blue/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Sugar Magnolia",
+          "url": "https://jerrygarcia.com/song/sugar-magnolia/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "Knockin' On Heaven's Door",
+          "url": "https://jerrygarcia.com/song/knockin-on-heavens-door/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Brent Mydland",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152446/BretMydland_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T09:03:19.415483",
+  "show_time": null,
+  "recordings": [
+    "gd89-04-09.sbd.miller.13207.sbeok.shnf",
+    "gd1989-04-09.sbd.tobin.tetzeli.fix-34962.75504.reflac.flac16",
+    "gd1989-04-09.sbd.tobin.34962.sbeok.flac16",
+    "gd1989-04-09.147845.sbd.ultramatrix.miller.flac24",
+    "gd1989-04-09.148146.UltraMatrix.sbd.cm.miller.flac16",
+    "gd1989-04-09.fob.thompson.motb.83523.sbeok.flac16",
+    "gd89-04-09.nak.7858.sbeok.shnf",
+    "gd1989-04-09.aud.bleich.sirmick.84036.sbeok.flac16",
+    "gd1989-04-09.138255.kmr82i.flac16",
+    "gd1989-04-09.156412.OTS-Schoeps-PCM-Master-Mattes-Anon-Noel.t-flac16"
+  ],
+  "best_recording": "gd89-04-09.sbd.miller.13207.sbeok.shnf",
+  "avg_rating": 2.8612695924764893,
+  "raw_rating": 4.046690307328605,
+  "recording_count": 10,
+  "confidence": 1.0,
+  "total_high_ratings": 30,
+  "total_low_ratings": 2,
+  "source_types": {
+    "SBD": 5,
+    "UNKNOWN": 4,
+    "AUD": 1
+  },
+  "matching_method": "date_only",
+  "filtering_applied": []
+}

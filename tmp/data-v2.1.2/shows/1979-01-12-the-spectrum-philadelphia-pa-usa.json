@@ -1,0 +1,176 @@
+{
+  "url": "https://jerrygarcia.com/show/1979-01-12-the-spectrum-philadelphia-pa-usa/",
+  "show_id": "1979-01-12-the-spectrum-philadelphia-pa-usa",
+  "band": "Grateful Dead",
+  "venue": "The Spectrum",
+  "location_raw": "Philadelphia, PA",
+  "city": "Philadelphia",
+  "state": "PA",
+  "country": "USA",
+  "date": "1979-01-12",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Jack Straw",
+          "url": "https://jerrygarcia.com/song/jack-straw/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Candyman",
+          "url": "https://jerrygarcia.com/song/candyman/",
+          "segue_into_next": false
+        },
+        {
+          "name": "El Paso",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Tennessee Jed",
+          "url": "https://jerrygarcia.com/song/tennessee-jed/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Beat It On Down The Line",
+          "url": "https://jerrygarcia.com/song/beat-it-on-down-the-line/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Peggy-O",
+          "url": "https://jerrygarcia.com/song/peggy-o/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Passenger",
+          "url": "https://jerrygarcia.com/song/passenger/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Deal",
+          "url": "https://jerrygarcia.com/song/deal/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Samson & Delilah",
+          "url": "https://jerrygarcia.com/song/samson-delilah/",
+          "segue_into_next": false
+        },
+        {
+          "name": "It Must Have Been The Roses",
+          "url": "https://jerrygarcia.com/song/it-must-have-been-the-roses/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Dancin' In The Street",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Jam",
+          "url": "https://jerrygarcia.com/song/jam/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Not Fade Away",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Goin' Down The Road Feeling Bad",
+          "url": "https://jerrygarcia.com/song/goin-down-the-road-feelin-bad/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Sugar Magnolia",
+          "url": "https://jerrygarcia.com/song/sugar-magnolia/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "U.S. Blues",
+          "url": "https://jerrygarcia.com/song/u-s-blues/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Keith Godchaux",
+      "instruments": "keyboards",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152439/KeithGodchaux_200-100x100.jpg"
+    },
+    {
+      "name": "Donna Jean Godchaux",
+      "instruments": "vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2013/07/12152444/DonnaGodchaux_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T08:37:48.349832",
+  "show_time": null,
+  "recordings": [
+    "gd79-01-12.claridge.kempka.309.sbeok.shnf",
+    "gd1979-01-12.132217.aud.wise-claridge.fob.sony.ecm-280.flac16",
+    "gd1979-01-12.163410.aud.Spectrum.howie.fulton.flac1644",
+    "gd1979-01-12.167729.ShureSM57.Sublette.Noel.Goldey.t-flac2496",
+    "gd1979-01-12.152537.s2-unknown-onemoreshot.shnf"
+  ],
+  "best_recording": "gd79-01-12.claridge.kempka.309.sbeok.shnf",
+  "avg_rating": 2.219294871794872,
+  "raw_rating": 4.230769230769231,
+  "recording_count": 5,
+  "confidence": 1.0,
+  "total_high_ratings": 25,
+  "total_low_ratings": 1,
+  "source_types": {
+    "UNKNOWN": 3,
+    "AUD": 2
+  },
+  "matching_method": "date_only",
+  "filtering_applied": []
+}

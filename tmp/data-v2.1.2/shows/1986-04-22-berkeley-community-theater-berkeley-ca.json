@@ -1,0 +1,183 @@
+{
+  "url": "https://jerrygarcia.com/show/1986-04-22-berkeley-community-theater-berkeley-ca/",
+  "show_id": "1986-04-22-berkeley-community-theater-berkeley-ca",
+  "band": "Grateful Dead",
+  "venue": "Berkeley Community Theater",
+  "location_raw": "Berkeley, CA",
+  "city": "Berkeley",
+  "state": "CA",
+  "country": "USA",
+  "date": "1986-04-22",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Box of Rain",
+          "url": "https://jerrygarcia.com/song/box-of-rain/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Visions Of Johanna",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Mama Tried",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Big River",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Bird Song",
+          "url": "https://jerrygarcia.com/song/bird-song/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Little Red Rooster",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Deal",
+          "url": "https://jerrygarcia.com/song/deal/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "China Cat Sunflower",
+          "url": "https://jerrygarcia.com/song/china-cat-sunflower/",
+          "segue_into_next": true
+        },
+        {
+          "name": "I Know You Rider",
+          "url": "https://jerrygarcia.com/song/i-know-you-rider/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Looks Like Rain",
+          "url": "https://jerrygarcia.com/song/looks-like-rain/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Terrapin Station",
+          "url": "https://jerrygarcia.com/song/terrapin-station/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Jam",
+          "url": "https://jerrygarcia.com/song/jam/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Spoonful",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Throwing Stones",
+          "url": "https://jerrygarcia.com/song/throwing-stones/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Black Peter",
+          "url": "https://jerrygarcia.com/song/black-peter/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Turn On Your Lovelight",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "Brokedown Palace",
+          "url": "https://jerrygarcia.com/song/brokedown-palace/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Brent Mydland",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152446/BretMydland_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T08:56:10.715905",
+  "show_time": null,
+  "recordings": [
+    "gd1986-04-22.sbd.miller.34767.flac16",
+    "gd1986-04-22.sbd-pcm.miller.34768.flac16",
+    "gd86-04-22.aud.eD.13583.sbeok.shnf",
+    "gd1986-04-22.Senn421sNak300CP4s.Darby.119492.Flac2448",
+    "gd1986-04-22.140245.fob.schoeps.cmc4.mk41.oade.wise.miller.clugston.flac1644",
+    "gd1986-04-22.Senn421sNak300CP4s.Darby.119493.Flac1644"
+  ],
+  "best_recording": "gd1986-04-22.sbd.miller.34767.flac16",
+  "avg_rating": 2.9640969162995594,
+  "raw_rating": 3.9655172413793105,
+  "recording_count": 6,
+  "confidence": 1.0,
+  "total_high_ratings": 18,
+  "total_low_ratings": 0,
+  "source_types": {
+    "SBD": 2,
+    "AUD": 1,
+    "UNKNOWN": 3
+  },
+  "matching_method": "date_only",
+  "filtering_applied": []
+}

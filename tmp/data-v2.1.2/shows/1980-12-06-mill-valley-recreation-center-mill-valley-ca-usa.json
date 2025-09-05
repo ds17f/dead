@@ -1,0 +1,117 @@
+{
+  "url": "https://jerrygarcia.com/show/1980-12-06-mill-valley-recreation-center-mill-valley-ca-usa/",
+  "show_id": "1980-12-06-mill-valley-recreation-center-mill-valley-ca-usa",
+  "band": "Grateful Dead",
+  "venue": "Mill Valley Recreation Center",
+  "location_raw": "Mill Valley, CA",
+  "city": "Mill Valley",
+  "state": "CA",
+  "country": "USA",
+  "date": "1980-12-06",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Dire Wolf",
+          "url": "https://jerrygarcia.com/song/dire-wolf/",
+          "segue_into_next": false
+        },
+        {
+          "name": "On The Road Again",
+          "url": "https://jerrygarcia.com/song/on-the-road-again/",
+          "segue_into_next": false
+        },
+        {
+          "name": "I've Been All Around This World",
+          "url": "https://jerrygarcia.com/song/ive-been-all-around-this-world/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Monkey And The Engineer",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Jack-A-Roe",
+          "url": "https://jerrygarcia.com/song/jack-a-roe/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Cassidy",
+          "url": "https://jerrygarcia.com/song/cassidy/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Bird Song",
+          "url": "https://jerrygarcia.com/song/bird-song/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Oh Babe, It Ain't No Lie",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Ripple",
+          "url": "https://jerrygarcia.com/song/ripple/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Brent Mydland",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152446/BretMydland_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T08:42:58.357825",
+  "show_time": null,
+  "recordings": [
+    "gd80-12-06.cantor.clugston.5478.sbeok.shnf",
+    "gd1980-12-06.151263.betty.master.flac16"
+  ],
+  "best_recording": "gd80-12-06.cantor.clugston.5478.sbeok.shnf",
+  "avg_rating": 2.261739130434783,
+  "raw_rating": 4.603478260869566,
+  "recording_count": 2,
+  "confidence": 1.0,
+  "total_high_ratings": 43,
+  "total_low_ratings": 2,
+  "source_types": {
+    "UNKNOWN": 2
+  },
+  "matching_method": "date_only",
+  "filtering_applied": []
+}

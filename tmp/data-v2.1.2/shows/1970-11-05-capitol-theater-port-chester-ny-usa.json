@@ -1,0 +1,135 @@
+{
+  "url": "https://jerrygarcia.com/show/1970-11-05-capitol-theater-port-chester-ny-usa/",
+  "show_id": "1970-11-05-capitol-theater-port-chester-ny-usa",
+  "band": "Grateful Dead",
+  "venue": "Capitol Theater",
+  "location_raw": "Port Chester, NY",
+  "city": "Port Chester",
+  "state": "NY",
+  "country": "USA",
+  "date": "1970-11-05",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Hard To Handle",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Sittin' On Top Of The World",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Mama Tried",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Truckin'",
+          "url": "https://jerrygarcia.com/song/truckin/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "The Other One",
+          "url": "https://jerrygarcia.com/song/the-other-one/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Dark Star",
+          "url": "https://jerrygarcia.com/song/dark-star/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Saint Stephen",
+          "url": "https://jerrygarcia.com/song/saint-stephen/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Not Fade Away",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Goin' Down The Road Feeling Bad",
+          "url": "https://jerrygarcia.com/song/goin-down-the-road-feelin-bad/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Not Fade Away",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Turn On Your Lovelight",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Ron \"Pigpen\" McKernan",
+      "instruments": "keyboards, harmonica, percussion, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152433/RonPigpenMcKernan_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "found",
+  "supporting_acts": [
+    "New Riders of the Purple Sage"
+  ],
+  "collection_timestamp": "2025-08-10T08:20:32.237642",
+  "show_time": null,
+  "recordings": [
+    "gd70-11-05.aud.warner.17182.sbeok.shnf",
+    "gd1970-11-05.aud.harlan.9356.sbeok.shnf",
+    "gd1970-11-05.aud.lee.sirmick.30115.sbeok.flac16"
+  ],
+  "best_recording": "gd70-11-05.aud.warner.17182.sbeok.shnf",
+  "avg_rating": 2.806086956521739,
+  "raw_rating": 4.217391304347826,
+  "recording_count": 3,
+  "confidence": 1.0,
+  "total_high_ratings": 18,
+  "total_low_ratings": 1,
+  "source_types": {
+    "AUD": 3
+  },
+  "matching_method": "date_only",
+  "filtering_applied": []
+}

@@ -1,0 +1,190 @@
+{
+  "url": "https://jerrygarcia.com/show/1987-09-15-madison-square-garden-new-york-ny-usa/",
+  "show_id": "1987-09-15-madison-square-garden-new-york-ny-usa",
+  "band": "Grateful Dead",
+  "venue": "Madison Square Garden",
+  "location_raw": "New York, NY",
+  "city": "New York",
+  "state": "NY",
+  "country": "USA",
+  "date": "1987-09-15",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Hey Pocky Way",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "New Minglewood Blues",
+          "url": "https://jerrygarcia.com/song/new-minglewood-blues/",
+          "segue_into_next": false
+        },
+        {
+          "name": "When Push Comes To Shove",
+          "url": "https://jerrygarcia.com/song/when-push-comes-to-shove/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Me And My Uncle",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Mexicali Blues",
+          "url": "https://jerrygarcia.com/song/mexicali-blues/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Row Jimmy",
+          "url": "https://jerrygarcia.com/song/row-jimmy/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Queen Jane Approximately",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Tennessee Jed",
+          "url": "https://jerrygarcia.com/song/tennessee-jed/",
+          "segue_into_next": false
+        },
+        {
+          "name": "The Music Never Stopped",
+          "url": "https://jerrygarcia.com/song/the-music-never-stopped/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "China Cat Sunflower",
+          "url": "https://jerrygarcia.com/song/china-cat-sunflower/",
+          "segue_into_next": true
+        },
+        {
+          "name": "I Know You Rider",
+          "url": "https://jerrygarcia.com/song/i-know-you-rider/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Estimated Prophet",
+          "url": "https://jerrygarcia.com/song/estimated-prophet/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Eyes Of The World",
+          "url": "https://jerrygarcia.com/song/eyes-of-the-world/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "The Wheel",
+          "url": "https://jerrygarcia.com/song/the-wheel/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Gimme Some Lovin'",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Black Peter",
+          "url": "https://jerrygarcia.com/song/black-peter/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Sugar Magnolia",
+          "url": "https://jerrygarcia.com/song/sugar-magnolia/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "It's All Over Now Baby Blue",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Brent Mydland",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152446/BretMydland_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T08:59:12.687969",
+  "show_time": null,
+  "recordings": [
+    "gd1987-09-15.sbd.miller.76347.sbeok.flac16",
+    "gd87-09-15.sbd.miller.21981.sbeok.shnf",
+    "gd1987-09-15.sbd.unknown.20176.sbeok.shnf",
+    "gd1987-09-15.nak300.gidley.115933.flac2448",
+    "gd1987-09-15.nak300.damico.90103.sbeok.flac16",
+    "gd1987-09-15.125699.AT835.flac16",
+    "gd87-09-15.schoeps.willy.15388.sbeok.shnf",
+    "gd1987-09-15.154306.senn.me80.hessberg.miller.clugston.flac2496",
+    "gd1987-09-15.154305.senn.me80.hessberg.miller.clugston.flac1648"
+  ],
+  "best_recording": "gd1987-09-15.sbd.miller.76347.sbeok.flac16",
+  "avg_rating": 3.609195402298851,
+  "raw_rating": 4.098484848484849,
+  "recording_count": 9,
+  "confidence": 1.0,
+  "total_high_ratings": 16,
+  "total_low_ratings": 1,
+  "source_types": {
+    "SBD": 3,
+    "UNKNOWN": 6
+  },
+  "matching_method": "date_only",
+  "filtering_applied": []
+}

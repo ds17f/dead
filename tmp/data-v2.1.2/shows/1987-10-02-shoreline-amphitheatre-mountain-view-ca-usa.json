@@ -1,0 +1,196 @@
+{
+  "url": "https://jerrygarcia.com/show/1987-10-02-shoreline-amphitheatre-mountain-view-ca-usa/",
+  "show_id": "1987-10-02-shoreline-amphitheatre-mountain-view-ca-usa",
+  "band": "Grateful Dead",
+  "venue": "Shoreline Amphitheatre",
+  "location_raw": "Mountain View, CA",
+  "city": "Mountain View",
+  "state": "CA",
+  "country": "USA",
+  "date": "1987-10-02",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Cold Rain And Snow",
+          "url": "https://jerrygarcia.com/song/cold-rain-and-snow/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Little Red Rooster",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Stagger Lee",
+          "url": "https://jerrygarcia.com/song/stagger-lee/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Me And My Uncle",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Mexicali Blues",
+          "url": "https://jerrygarcia.com/song/mexicali-blues/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Row Jimmy",
+          "url": "https://jerrygarcia.com/song/row-jimmy/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Far From Me",
+          "url": "https://jerrygarcia.com/song/far-from-me/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Let It Grow",
+          "url": "https://jerrygarcia.com/song/let-it-grow/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "China Cat Sunflower",
+          "url": "https://jerrygarcia.com/song/china-cat-sunflower/",
+          "segue_into_next": true
+        },
+        {
+          "name": "I Know You Rider",
+          "url": "https://jerrygarcia.com/song/i-know-you-rider/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Man Smart, Woman Smarter",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Ship Of Fools",
+          "url": "https://jerrygarcia.com/song/ship-of-fools/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Truckin'",
+          "url": "https://jerrygarcia.com/song/truckin/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "The Wheel",
+          "url": "https://jerrygarcia.com/song/the-wheel/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Gimme Some Lovin'",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "All Along The Watchtower",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Don't Ease Me In",
+          "url": "https://jerrygarcia.com/song/dont-ease-me-in/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "Black Muddy River",
+          "url": "https://jerrygarcia.com/song/black-muddy-river/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Brent Mydland",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152446/BretMydland_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T08:59:30.210766",
+  "show_time": null,
+  "recordings": [
+    "gd87-10-02.sbd.bertha-ashley.7367.sbeok.shnf",
+    "gd1987-10-02.sbd.miller.121960.flac16",
+    "gd1987-10-02.sbd.walker-scotton.miller.83905.sbeok.flac16",
+    "gd1987-10-02.163714.sbd.miller-walker.flac2496",
+    "gd1987-10-02.165068.sbd.cm.miller.t-flac1644",
+    "gd1987-10-02.sbd.tunakebo.6938.shnf",
+    "gd1987-10-02.sbd.hollister.8827.sbeok.shnf",
+    "gd1987-10-02.142470.sbd.miller.flac2496",
+    "gd1987-10-02.142580.sbd.bm.miller.flac1644",
+    "gd1987-10-02.143553.mtx.tobin.flac1644",
+    "gd1987-10-02.142333.fob.schoeps.cmc4.mk41.oade.jacobs.miller.clugston.flac1644",
+    "gd1987-10-02.pzm.russjcan.94115.sbeok.flac16",
+    "gd1987-10-02.143555.5-1.tobin.flac1648",
+    "gd1987-10-02.143554.dts.tobin.flac1644"
+  ],
+  "best_recording": "gd87-10-02.sbd.bertha-ashley.7367.sbeok.shnf",
+  "avg_rating": 3.421266233766234,
+  "raw_rating": 3.7750000000000004,
+  "recording_count": 14,
+  "confidence": 1.0,
+  "total_high_ratings": 11,
+  "total_low_ratings": 1,
+  "source_types": {
+    "SBD": 9,
+    "MATRIX": 1,
+    "UNKNOWN": 4
+  },
+  "matching_method": "date_only",
+  "filtering_applied": []
+}

@@ -1,0 +1,219 @@
+{
+  "url": "https://jerrygarcia.com/show/1985-06-27-saratoga-performing-arts-center-saratoga-springs-ny-usa/",
+  "show_id": "1985-06-27-saratoga-performing-arts-center-saratoga-springs-ny-usa",
+  "band": "Grateful Dead",
+  "venue": "Saratoga Performing Arts Center",
+  "location_raw": "Saratoga Springs, NY",
+  "city": "Saratoga Springs",
+  "state": "NY",
+  "country": "USA",
+  "date": "1985-06-27",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "In The Midnight Hour",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Bertha",
+          "url": "https://jerrygarcia.com/song/bertha/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Little Red Rooster",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Stagger Lee",
+          "url": "https://jerrygarcia.com/song/stagger-lee/",
+          "segue_into_next": false
+        },
+        {
+          "name": "El Paso",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Crazy Fingers",
+          "url": "https://jerrygarcia.com/song/crazy-fingers/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Supplication Jam",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "High Time",
+          "url": "https://jerrygarcia.com/song/high-time/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Hell In A Bucket",
+          "url": "https://jerrygarcia.com/song/hell-in-a-bucket/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Don't Ease Me In",
+          "url": "https://jerrygarcia.com/song/dont-ease-me-in/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Feel Like A Stranger",
+          "url": "https://jerrygarcia.com/song/feel-like-a-stranger/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Eyes Of The World",
+          "url": "https://jerrygarcia.com/song/eyes-of-the-world/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Goin' Down The Road Feeling Bad",
+          "url": "https://jerrygarcia.com/song/goin-down-the-road-feelin-bad/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Man Smart, Woman Smarter",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Truckin'",
+          "url": "https://jerrygarcia.com/song/truckin/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Spoonful",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Black Peter",
+          "url": "https://jerrygarcia.com/song/black-peter/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Turn On Your Lovelight",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "Johnny B. Goode",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "It's All Over Now Baby Blue",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Brent Mydland",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152446/BretMydland_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T08:54:00.209630",
+  "show_time": null,
+  "recordings": [
+    "gd1985-06-27.sbd.gmb.79382.flac16",
+    "gd85-06-27.sbd.miller.27863.sbeok.flacf",
+    "gd85-06-27.sbd.clugston.6104.sbeok.shnf",
+    "gd1985-06-27.sbd.gmb.79558.flac24",
+    "gd1985-06-27.169092.sbd1.pearson.marcus.miller.flac24",
+    "gd1985-06-27.169156.SPAC.SaratogaSprings.NY.sbd.pearson.marcus.miller.t-flac1648",
+    "gd1985-06-27.mtx.seamons.fix.92963.sbeok.flac16",
+    "gd1985-06-27.mtx.seamons.92645.sbeok.flac16",
+    "gd85-06-27.aud.connor.7006.sbeok.shnf",
+    "gd85-06-27.oade-schoeps.sacks.25000.sbeok.flacf",
+    "gd1985-06-27.135270.senn441.mccue.ford.flac24",
+    "gd1985-06-27.135268.senn441.mccue.ford.sbeok.flac16",
+    "gd1985-06-27.nak-beyer.tonys.79597.sbeok.flac16",
+    "gd1985-06-27.158249.NAK300.Anon-Noel.t-flac16",
+    "gd1985-06-27.141598.aud.bryant.miller.sirmick.flac2496",
+    "gd1985-06-27.152627.akgc422-davis-murtha.holbrook.flac2448",
+    "gd1985-06-27.nak300.morris.114489.flac24",
+    "gd1985-06-27.145345.aud.bryant.miller.sirmick.flac16",
+    "gd1985-06-27.nak300.morris.106788.flac16",
+    "gd1985-06-27.152626.akgc422-davis-murtha.holbrook.flac1644",
+    "gd1985-06-27.158250.NAK300.Anon-Noel.t-flac2448",
+    "gd1985-06-27.aud.Holtz.Nak100s.112499.flac16",
+    "gd1985-06-27.154535.senn.me80.hessberg.miller.clugston.flac1648",
+    "gd1985-06-27.154536.senn.me80.hessberg.miller.clugston.flac2496",
+    "gd1985-06-27.121563.BeyerM160.daweez.d5scott.flac16",
+    "gd1985-06-27.126238.chasingwilma.flac24"
+  ],
+  "best_recording": "gd1985-06-27.sbd.gmb.79382.flac16",
+  "avg_rating": 3.9639424545328343,
+  "raw_rating": 4.275247019825333,
+  "recording_count": 26,
+  "confidence": 1.0,
+  "total_high_ratings": 68,
+  "total_low_ratings": 1,
+  "source_types": {
+    "SBD": 6,
+    "MATRIX": 2,
+    "AUD": 4,
+    "UNKNOWN": 14
+  },
+  "matching_method": "date_only",
+  "filtering_applied": []
+}

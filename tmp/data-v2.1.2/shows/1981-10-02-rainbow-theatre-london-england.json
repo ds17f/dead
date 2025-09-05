@@ -1,0 +1,199 @@
+{
+  "url": "https://jerrygarcia.com/show/1981-10-02-rainbow-theatre-london-england/",
+  "show_id": "1981-10-02-rainbow-theatre-london-england",
+  "band": "Grateful Dead",
+  "venue": "Rainbow Theatre",
+  "location_raw": "London, England",
+  "city": "London",
+  "state": null,
+  "country": "England",
+  "date": "1981-10-02",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "New Minglewood Blues",
+          "url": "https://jerrygarcia.com/song/new-minglewood-blues/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Sugaree",
+          "url": "https://jerrygarcia.com/song/sugaree/",
+          "segue_into_next": true
+        },
+        {
+          "name": "C.C. Rider",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Cumberland Blues",
+          "url": "https://jerrygarcia.com/song/cumberland-blues/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Cassidy",
+          "url": "https://jerrygarcia.com/song/cassidy/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Dire Wolf",
+          "url": "https://jerrygarcia.com/song/dire-wolf/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Mama Tried",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Mexicali Blues",
+          "url": "https://jerrygarcia.com/song/mexicali-blues/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Althea",
+          "url": "https://jerrygarcia.com/song/althea/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Lost Sailor",
+          "url": "https://jerrygarcia.com/song/lost-sailor/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Saint Of Circumstance",
+          "url": "https://jerrygarcia.com/song/saint-of-circumstance/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Playing In The Band",
+          "url": "https://jerrygarcia.com/song/playin-in-the-band/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Shakedown Street",
+          "url": "https://jerrygarcia.com/song/shakedown-street/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Bertha",
+          "url": "https://jerrygarcia.com/song/bertha/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Spanish Jam",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Truckin'",
+          "url": "https://jerrygarcia.com/song/truckin/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Black Peter",
+          "url": "https://jerrygarcia.com/song/black-peter/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Sugar Magnolia",
+          "url": "https://jerrygarcia.com/song/sugar-magnolia/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "U.S. Blues",
+          "url": "https://jerrygarcia.com/song/u-s-blues/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Brent Mydland",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152446/BretMydland_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T08:45:18.292040",
+  "show_time": null,
+  "recordings": [
+    "gd81-10-02.sbd.popi.6147.sbeok.shnf",
+    "gd1981-10-02.sbd.128794.MrBill.flac16",
+    "gd1981-10-02.151770.sbd.hance.sirmick.flac16",
+    "gd1981-10-02.151194.sbd.hance.sirmick.flac24",
+    "gd1981-10-02.151207.set2.sbd.miller-eaton.flac1648",
+    "gd1981-10-02.151771.sbd.hance.sirmick.flac24",
+    "gd1981-10-02.151193.sbd.hance.sirmick.flac16",
+    "gd1981-10-02.aud.set2.richs.120454.sbeok.flac16",
+    "gd1981-10-02.aud.unknown.sirmick.80289.sbeok.flac16",
+    "gd1981-10-02.138170.SonyECM-99.williams.sirmick.sbeok.flac2496",
+    "gd1981-10-02.138171.SonyECM-99.williams.sirmick.sbeok.flac24-176.4",
+    "gd1981-10-02.138169.SonyECM-99.williams.sirmick.sbeok.flac16"
+  ],
+  "best_recording": "gd81-10-02.sbd.popi.6147.sbeok.shnf",
+  "avg_rating": 3.349530201342282,
+  "raw_rating": 3.6568627450980395,
+  "recording_count": 12,
+  "confidence": 1.0,
+  "total_high_ratings": 9,
+  "total_low_ratings": 2,
+  "source_types": {
+    "SBD": 7,
+    "AUD": 2,
+    "UNKNOWN": 3
+  },
+  "matching_method": "date_only",
+  "filtering_applied": []
+}

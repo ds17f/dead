@@ -1,0 +1,197 @@
+{
+  "url": "https://jerrygarcia.com/show/1984-10-31-berkeley-community-theater-berkeley-ca-usa/",
+  "show_id": "1984-10-31-berkeley-community-theater-berkeley-ca-usa",
+  "band": "Grateful Dead",
+  "venue": "Berkeley Community Theater",
+  "location_raw": "Berkeley, CA",
+  "city": "Berkeley",
+  "state": "CA",
+  "country": "USA",
+  "date": "1984-10-31",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Shakedown Street",
+          "url": "https://jerrygarcia.com/song/shakedown-street/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Mama Tried",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Big River",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Ramble On Rose",
+          "url": "https://jerrygarcia.com/song/ramble-on-rose/",
+          "segue_into_next": false
+        },
+        {
+          "name": "New Minglewood Blues",
+          "url": "https://jerrygarcia.com/song/new-minglewood-blues/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Big Railroad Blues*",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Lazy Lightning",
+          "url": "https://jerrygarcia.com/song/lazy-lightning/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Supplication",
+          "url": "https://jerrygarcia.com/song/supplication/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Don't Ease Me In",
+          "url": "https://jerrygarcia.com/song/dont-ease-me-in/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Touch of Grey",
+          "url": "https://jerrygarcia.com/song/touch-of-grey/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Samson & Delilah",
+          "url": "https://jerrygarcia.com/song/samson-delilah/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Ship Of Fools",
+          "url": "https://jerrygarcia.com/song/ship-of-fools/",
+          "segue_into_next": false
+        },
+        {
+          "name": "I Need A Miracle",
+          "url": "https://jerrygarcia.com/song/i-need-a-miracle/",
+          "segue_into_next": true
+        },
+        {
+          "name": "I Ain't Superstitous*",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "He's Gone",
+          "url": "https://jerrygarcia.com/song/hes-gone/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Morning Dew",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Around & Around*",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "One More Saturday Night",
+          "url": "https://jerrygarcia.com/song/one-more-saturday-night/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "(I Can't Get No) Satisfaction",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Brent Mydland",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152446/BretMydland_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T08:52:40.608731",
+  "show_time": null,
+  "recordings": [
+    "gd1984-10-31.sbd.walker-scotton.miller.106798.flac16",
+    "gd1984-10-31.142494.sbd.patched.flac1648",
+    "gd1984-10-31.142422.sbd.miller.flac1648",
+    "gd84-10-31.senn.14947.sbeok.shnf",
+    "gd1984-10-31.145614.aud.lamarre.berger.flac16",
+    "gd1984-10-31.168290.senn441.vita.miller.clugston.flac2496",
+    "gd1984-10-31.169041.senn441.vita.miller.clugston.new.flac2496",
+    "gd1984-10-31.169040.senn441.vita.miller.clugston.new.flac1648",
+    "gd1984-10-31.145613.aud.lamarre.berger.flac24",
+    "gd1984-10-31.168289.senn441.vita.miller.clugston.flac1648"
+  ],
+  "best_recording": "gd1984-10-31.sbd.walker-scotton.miller.106798.flac16",
+  "avg_rating": 2.276239067055394,
+  "raw_rating": 3.7142857142857144,
+  "recording_count": 10,
+  "confidence": 1.0,
+  "total_high_ratings": 8,
+  "total_low_ratings": 1,
+  "source_types": {
+    "SBD": 3,
+    "UNKNOWN": 5,
+    "AUD": 2
+  },
+  "matching_method": "date_only",
+  "filtering_applied": []
+}

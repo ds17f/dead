@@ -1,0 +1,165 @@
+{
+  "url": "https://jerrygarcia.com/show/1995-04-04-jefferson-civic-center-coliseum-birmingham-al-usa/",
+  "show_id": "1995-04-04-jefferson-civic-center-coliseum-birmingham-al-usa",
+  "band": "Grateful Dead",
+  "venue": "Jefferson Civic Center Coliseum",
+  "location_raw": "Birmingham, AL",
+  "city": "Birmingham",
+  "state": "AL",
+  "country": "USA",
+  "date": "1995-04-04",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Feel Like A Stranger",
+          "url": "https://jerrygarcia.com/song/feel-like-a-stranger/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Sugaree",
+          "url": "https://jerrygarcia.com/song/sugaree/",
+          "segue_into_next": false
+        },
+        {
+          "name": "New Minglewood Blues",
+          "url": "https://jerrygarcia.com/song/new-minglewood-blues/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Ramble On Rose",
+          "url": "https://jerrygarcia.com/song/ramble-on-rose/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Black Throated Wind",
+          "url": "https://jerrygarcia.com/song/black-throated-wind/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Don't Ease Me In",
+          "url": "https://jerrygarcia.com/song/dont-ease-me-in/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Victim Or The Crime",
+          "url": "https://jerrygarcia.com/song/victim-or-the-crime/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Iko Iko",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Corinna",
+          "url": "https://jerrygarcia.com/song/corinna/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Terrapin Station",
+          "url": "https://jerrygarcia.com/song/terrapin-station/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Easy Answers",
+          "url": "https://jerrygarcia.com/song/easy-answers/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Stella Blue",
+          "url": "https://jerrygarcia.com/song/stella-blue/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Around & Around",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "The Mighty Quinn (Quinn The Eskimo)",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Vince Welnick",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152431/VinceWelnick_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T09:19:37.825584",
+  "show_time": null,
+  "recordings": [
+    "gd1995-04-04.aud.matera.123593.sbeok.flac16",
+    "gd95-04-04.schoeps.10545.sbeok.shnf",
+    "gd1995-04-04.143099.nak300-cp4.Boedicker.flac1644",
+    "gd1995-04-04.141273.FOB-mk4.ebel.flac1644"
+  ],
+  "best_recording": "gd1995-04-04.aud.matera.123593.sbeok.flac16",
+  "avg_rating": 1.4775438596491228,
+  "raw_rating": 2.7843137254901964,
+  "recording_count": 4,
+  "confidence": 1.0,
+  "total_high_ratings": 6,
+  "total_low_ratings": 7,
+  "source_types": {
+    "AUD": 1,
+    "UNKNOWN": 3
+  },
+  "matching_method": "date_only",
+  "filtering_applied": []
+}

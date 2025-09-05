@@ -1,0 +1,163 @@
+{
+  "url": "https://jerrygarcia.com/show/1969-03-01-fillmore-west-san-francisco-ca-usa/",
+  "show_id": "1969-03-01-fillmore-west-san-francisco-ca-usa",
+  "band": "Grateful Dead",
+  "venue": "Fillmore West",
+  "location_raw": "San Francisco, CA",
+  "city": "San Francisco",
+  "state": "CA",
+  "country": "USA",
+  "date": "1969-03-01",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Cryptical Envelopment",
+          "url": "https://jerrygarcia.com/song/cryptical-envelopment/",
+          "segue_into_next": true
+        },
+        {
+          "name": "The Other One",
+          "url": "https://jerrygarcia.com/song/the-other-one/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Cryptical Envelopment",
+          "url": "https://jerrygarcia.com/song/cryptical-envelopment/",
+          "segue_into_next": true
+        },
+        {
+          "name": "New Potato Caboose",
+          "url": "https://jerrygarcia.com/song/new-potato-caboose/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Doin' That Rag",
+          "url": "https://jerrygarcia.com/song/doin-that-rag/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Cosmic Charlie",
+          "url": "https://jerrygarcia.com/song/cosmic-charlie/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Dupree's Diamond Blues",
+          "url": "https://jerrygarcia.com/song/duprees-diamond-blues/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Mountains Of The Moon",
+          "url": "https://jerrygarcia.com/song/mountains-of-the-moon/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Dark Star",
+          "url": "https://jerrygarcia.com/song/dark-star/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Saint Stephen",
+          "url": "https://jerrygarcia.com/song/saint-stephen/",
+          "segue_into_next": true
+        },
+        {
+          "name": "The Eleven",
+          "url": "https://jerrygarcia.com/song/the-eleven/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Turn On Your Lovelight",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "Hey Jude",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Ron \"Pigpen\" McKernan",
+      "instruments": "keyboards, harmonica, percussion, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152433/RonPigpenMcKernan_200-100x100.jpg"
+    },
+    {
+      "name": "Tom Constanten",
+      "instruments": "keyboards",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152432/TomConstanten_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "found",
+  "supporting_acts": [
+    "Pentangle",
+    "Frumious Bandersnatch"
+  ],
+  "collection_timestamp": "2025-08-10T08:12:34.404003",
+  "show_time": null,
+  "recordings": [
+    "gd69-03-01.sbd.16track.kaplan.4030.sbeok.shnf",
+    "gd1969-03-01.132657.healy-latvala-wise.sbd.multi.track.flac16",
+    "gd1969-03-01.138788.SBD.2track.Gastwirt.Miller.Noel.t-flac16",
+    "gd1969-03-01.sbd.nayfield.60.shnf",
+    "gd1969-03-01.sbd.ashley-bertha.9391.shnf",
+    "gd1969-03-01.sbd.lesh-serafin.13584.shnf"
+  ],
+  "best_recording": "gd69-03-01.sbd.16track.kaplan.4030.sbeok.shnf",
+  "avg_rating": 4.578518518518518,
+  "raw_rating": 4.874074074074074,
+  "recording_count": 6,
+  "confidence": 1.0,
+  "total_high_ratings": 39,
+  "total_low_ratings": 0,
+  "source_types": {
+    "SBD": 6
+  },
+  "matching_method": "date_only",
+  "filtering_applied": [],
+  "collections": [
+    "fillmore-runs",
+    "fillmore-west-1969-complete-recordings"
+  ]
+}

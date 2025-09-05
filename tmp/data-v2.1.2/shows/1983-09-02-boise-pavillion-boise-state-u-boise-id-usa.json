@@ -1,0 +1,214 @@
+{
+  "url": "https://jerrygarcia.com/show/1983-09-02-boise-pavillion-boise-state-u-boise-id-usa/",
+  "show_id": "1983-09-02-boise-pavillion-boise-state-u-boise-id-usa",
+  "band": "Grateful Dead",
+  "venue": "Boise Pavillion Boise State U.",
+  "location_raw": "Boise, ID",
+  "city": "Boise",
+  "state": "ID",
+  "country": "USA",
+  "date": "1983-09-02",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Wang Dang Doodle",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Jack Straw",
+          "url": "https://jerrygarcia.com/song/jack-straw/",
+          "segue_into_next": false
+        },
+        {
+          "name": "They Love Each Other",
+          "url": "https://jerrygarcia.com/song/they-love-each-other/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Mama Tried",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Big River",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Brown Eyed Women",
+          "url": "https://jerrygarcia.com/song/brown-eyed-women/",
+          "segue_into_next": false
+        },
+        {
+          "name": "New Minglewood Blues",
+          "url": "https://jerrygarcia.com/song/new-minglewood-blues/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Big Railroad Blues",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Looks Like Rain",
+          "url": "https://jerrygarcia.com/song/looks-like-rain/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Deal",
+          "url": "https://jerrygarcia.com/song/deal/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Help On The Way",
+          "url": "https://jerrygarcia.com/song/help-on-the-way/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Slipknot",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Franklin's Tower",
+          "url": "https://jerrygarcia.com/song/franklins-tower/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Estimated Prophet",
+          "url": "https://jerrygarcia.com/song/estimated-prophet/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Eyes Of The World",
+          "url": "https://jerrygarcia.com/song/eyes-of-the-world/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Jam",
+          "url": "https://jerrygarcia.com/song/jam/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Throwing Stones",
+          "url": "https://jerrygarcia.com/song/throwing-stones/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Goin' Down The Road Feeling Bad",
+          "url": "https://jerrygarcia.com/song/goin-down-the-road-feelin-bad/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Black Peter",
+          "url": "https://jerrygarcia.com/song/black-peter/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Sugar Magnolia",
+          "url": "https://jerrygarcia.com/song/sugar-magnolia/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "It's All Over Now Baby Blue",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Brent Mydland",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152446/BretMydland_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T08:49:42.513176",
+  "show_time": null,
+  "recordings": [
+    "gd83-09-02.sbd.unk.2174.sbeok.shnf",
+    "gd1983-09-02.sbd.tetzeli.33819.sbeok.flac16",
+    "gd1983-09-02.mtx.seamons.100930.sbeok.flac16",
+    "gd83-09-02.beyer_senn.unk.23854.sbefail.shnf",
+    "gd83-09-02.fob-aud.nawrocki.17958.sbeok.flac",
+    "gd1983-09-02.aud.donnelly.1374.sbeok.shnf",
+    "gd1983-09-02.fob.beyerm160.vlenihan.103181.sbeok.flac16",
+    "gd1983-09-02.149223.2nd.set.fob.nak700.wagner.miller.clugston.flac1648",
+    "gd1983-09-02.142998.beyerm201.holbrook.flac1644",
+    "gd1983-09-02.163560.senn.421.vita.miller.clugston.flac1648",
+    "gd1983-09-02.149224.2nd.set.fob.nak700.wagner.miller.clugston.flac2496",
+    "gd1983-09-02.163561.senn.421.vita.miller.clugston.flac2496",
+    "gd1983-09-02.142999.beyerm201.holbrook.flac2448"
+  ],
+  "best_recording": "gd83-09-02.sbd.unk.2174.sbeok.shnf",
+  "avg_rating": 3.3743431372549018,
+  "raw_rating": 4.506849315068493,
+  "recording_count": 13,
+  "confidence": 1.0,
+  "total_high_ratings": 66,
+  "total_low_ratings": 0,
+  "source_types": {
+    "SBD": 2,
+    "MATRIX": 1,
+    "UNKNOWN": 8,
+    "AUD": 2
+  },
+  "matching_method": "date_only",
+  "filtering_applied": [],
+  "collections": [
+    "daves-picks-vol-27"
+  ]
+}

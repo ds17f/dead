@@ -1,0 +1,200 @@
+{
+  "url": "https://jerrygarcia.com/show/1981-05-15-athletic-center-rutgers-u-new-brunswick-nj-usa/",
+  "show_id": "1981-05-15-athletic-center-rutgers-u-new-brunswick-nj-usa",
+  "band": "Grateful Dead",
+  "venue": "Athletic Center, Rutgers U",
+  "location_raw": "New Brunswick, NJ",
+  "city": "New Brunswick",
+  "state": "NJ",
+  "country": "USA",
+  "date": "1981-05-15",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Mississippi Half-Step Uptown Toodeloo",
+          "url": "https://jerrygarcia.com/song/mississippi-half-step-uptown-toodeloo/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Franklin's Tower",
+          "url": "https://jerrygarcia.com/song/franklins-tower/",
+          "segue_into_next": true
+        },
+        {
+          "name": "New Minglewood Blues",
+          "url": "https://jerrygarcia.com/song/new-minglewood-blues/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Dire Wolf",
+          "url": "https://jerrygarcia.com/song/dire-wolf/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Cassidy",
+          "url": "https://jerrygarcia.com/song/cassidy/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Candyman",
+          "url": "https://jerrygarcia.com/song/candyman/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Little Red Rooster",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Jack-A-Roe",
+          "url": "https://jerrygarcia.com/song/jack-a-roe/",
+          "segue_into_next": false
+        },
+        {
+          "name": "El Paso",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Ramble On Rose",
+          "url": "https://jerrygarcia.com/song/ramble-on-rose/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Looks Like Rain",
+          "url": "https://jerrygarcia.com/song/looks-like-rain/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Don't Ease Me In",
+          "url": "https://jerrygarcia.com/song/dont-ease-me-in/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Scarlet Begonias",
+          "url": "https://jerrygarcia.com/song/scarlet-begonias/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Fire On The Mountain",
+          "url": "https://jerrygarcia.com/song/fire-on-the-mountain/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Estimated Prophet",
+          "url": "https://jerrygarcia.com/song/estimated-prophet/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Eyes Of The World",
+          "url": "https://jerrygarcia.com/song/eyes-of-the-world/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Not Fade Away",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Black Peter",
+          "url": "https://jerrygarcia.com/song/black-peter/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Sugar Magnolia",
+          "url": "https://jerrygarcia.com/song/sugar-magnolia/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "U.S. Blues",
+          "url": "https://jerrygarcia.com/song/u-s-blues/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Brent Mydland",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152446/BretMydland_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T08:44:21.037566",
+  "show_time": null,
+  "recordings": [
+    "gd1981-05-15.sbd.miller.86783.sbeok.flac16",
+    "gd1981-05-15.sbd.miller.95751.sbeok.flac16",
+    "gd1981-05-15.152448.mtx.seamons.ht128.flac16",
+    "gd1981-05-15.137907.mtx.dusborne.flac16",
+    "gd81-05-15.senn.munder.9008.sbeok.shnf",
+    "gd1981-05-15.akg.mance.cohen.30113.sbeok.shnf",
+    "gd1981-05-15.142954.senn421.wise.miller.clugston.flac2496",
+    "gd1981-05-15.142953.senn421.wise.miller.clugston.flac1648"
+  ],
+  "best_recording": "gd1981-05-15.sbd.miller.86783.sbeok.flac16",
+  "avg_rating": 3.2470478847047883,
+  "raw_rating": 4.299382716049383,
+  "recording_count": 8,
+  "confidence": 1.0,
+  "total_high_ratings": 31,
+  "total_low_ratings": 1,
+  "source_types": {
+    "SBD": 2,
+    "MATRIX": 2,
+    "UNKNOWN": 4
+  },
+  "matching_method": "date_only",
+  "filtering_applied": []
+}

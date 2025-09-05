@@ -1,0 +1,171 @@
+{
+  "url": "https://jerrygarcia.com/show/1992-12-13-oakland-alameda-county-coliseum-oakland-ca-usa/",
+  "show_id": "1992-12-13-oakland-alameda-county-coliseum-oakland-ca-usa",
+  "band": "Grateful Dead",
+  "venue": "Oakland-Alameda County Coliseum",
+  "location_raw": "Oakland, CA",
+  "city": "Oakland",
+  "state": "CA",
+  "country": "USA",
+  "date": "1992-12-13",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Mississippi Half-Step Uptown Toodeloo",
+          "url": "https://jerrygarcia.com/song/mississippi-half-step-uptown-toodeloo/",
+          "segue_into_next": true
+        },
+        {
+          "name": "It's All Over Now",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "West L.A. Fadeaway",
+          "url": "https://jerrygarcia.com/song/west-l-a-fadeaway/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Me And My Uncle",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Maggie's Farm",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Tennessee Jed",
+          "url": "https://jerrygarcia.com/song/tennessee-jed/",
+          "segue_into_next": true
+        },
+        {
+          "name": "The Promised Land",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Here Comes Sunshine",
+          "url": "https://jerrygarcia.com/song/here-comes-sunshine/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Way To Go Home",
+          "url": "https://jerrygarcia.com/song/way-to-go-home/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Victim Or The Crime",
+          "url": "https://jerrygarcia.com/song/victim-or-the-crime/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Terrapin Station",
+          "url": "https://jerrygarcia.com/song/terrapin-station/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "The Other One",
+          "url": "https://jerrygarcia.com/song/the-other-one/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Morning Dew",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "The Weight",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Vince Welnick",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152431/VinceWelnick_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T09:12:25.298031",
+  "show_time": null,
+  "recordings": [
+    "gd92-12-13.sbd-2track.barbella.10928.sbeok.shnf",
+    "gd1992-12-13.sbd.stonebear.5550.shnf",
+    "gd1992-12-13.140830.sbd.miller.flac2496",
+    "gd1992-12-13.140851.sbd.cm.miller.flac1644",
+    "gd1992-12-13.fob.neumann.copeland.gems.79352.sbeok.flac16",
+    "gd1992-12-13.schoeps.boardman.swayne.86041.sbeok.flac16",
+    "gd1992-12-13.139688.FOB.AKG.Wise.Noel.t-flac16",
+    "gd1992-12-13.schoeps.boardman.swayne.86037.sbeok.flac1648",
+    "gd1992-12-13.140381.fob.Schoeps-MK41.miller.sirmick.flac1648",
+    "gd1992-12-13.149335.fob.neumann.ebel.flac1648"
+  ],
+  "best_recording": "gd92-12-13.sbd-2track.barbella.10928.sbeok.shnf",
+  "avg_rating": 1.812,
+  "raw_rating": 4.166666666666667,
+  "recording_count": 10,
+  "confidence": 0.6,
+  "total_high_ratings": 4,
+  "total_low_ratings": 0,
+  "source_types": {
+    "SBD": 4,
+    "UNKNOWN": 6
+  },
+  "matching_method": "date_only",
+  "filtering_applied": []
+}

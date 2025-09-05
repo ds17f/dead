@@ -1,0 +1,202 @@
+{
+  "url": "https://jerrygarcia.com/show/1982-09-14-u-of-virginia-charlottesville-va-usa/",
+  "show_id": "1982-09-14-u-of-virginia-charlottesville-va-usa",
+  "band": "Grateful Dead",
+  "venue": "U. of Virginia",
+  "location_raw": "Charlottesville, VA",
+  "city": "Charlottesville",
+  "state": "VA",
+  "country": "USA",
+  "date": "1982-09-14",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Jack Straw",
+          "url": "https://jerrygarcia.com/song/jack-straw/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Peggy-O",
+          "url": "https://jerrygarcia.com/song/peggy-o/",
+          "segue_into_next": true
+        },
+        {
+          "name": "C.C. Rider",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Big Railroad Blues",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "El Paso",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Bird Song",
+          "url": "https://jerrygarcia.com/song/bird-song/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Lazy Lightning",
+          "url": "https://jerrygarcia.com/song/lazy-lightning/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Supplication",
+          "url": "https://jerrygarcia.com/song/supplication/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Deal",
+          "url": "https://jerrygarcia.com/song/deal/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "China Cat Sunflower",
+          "url": "https://jerrygarcia.com/song/china-cat-sunflower/",
+          "segue_into_next": true
+        },
+        {
+          "name": "I Know You Rider",
+          "url": "https://jerrygarcia.com/song/i-know-you-rider/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Samson & Delilah",
+          "url": "https://jerrygarcia.com/song/samson-delilah/",
+          "segue_into_next": false
+        },
+        {
+          "name": "High Time",
+          "url": "https://jerrygarcia.com/song/high-time/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Estimated Prophet",
+          "url": "https://jerrygarcia.com/song/estimated-prophet/",
+          "segue_into_next": true
+        },
+        {
+          "name": "He's Gone",
+          "url": "https://jerrygarcia.com/song/hes-gone/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Iko Iko",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Truckin'",
+          "url": "https://jerrygarcia.com/song/truckin/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Black Peter",
+          "url": "https://jerrygarcia.com/song/black-peter/",
+          "segue_into_next": true
+        },
+        {
+          "name": "I Need A Miracle",
+          "url": "https://jerrygarcia.com/song/i-need-a-miracle/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Bertha",
+          "url": "https://jerrygarcia.com/song/bertha/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "Johnny B. Goode",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Brent Mydland",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152446/BretMydland_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T08:47:46.495658",
+  "show_time": null,
+  "recordings": [
+    "gd82-09-14.sbd.set2.clugston.7547.sbeok.shnf",
+    "gd82-09-14.beyer-sbd.miller.20906.sbeok.shnf",
+    "gd1982-09-14.155665.sbd.set1p.set2.patched.miller.flac1644",
+    "gd1982-09-14.146663.beyer.tompkins.flac2448",
+    "gd1982-09-14.121944.akg414.streeter.miller.flac16",
+    "gd1982-09-14.121943.akg414.streeter.miller.flac24"
+  ],
+  "best_recording": "gd82-09-14.sbd.set2.clugston.7547.sbeok.shnf",
+  "avg_rating": 2.7191777323799795,
+  "raw_rating": 4.528925619834711,
+  "recording_count": 6,
+  "confidence": 1.0,
+  "total_high_ratings": 37,
+  "total_low_ratings": 0,
+  "source_types": {
+    "SBD": 3,
+    "UNKNOWN": 3
+  },
+  "matching_method": "date_only",
+  "filtering_applied": []
+}

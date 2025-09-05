@@ -1,0 +1,187 @@
+{
+  "url": "https://jerrygarcia.com/show/1994-06-26-sam-boyd-silver-bowl-u-n-l-v-las-vegas-nv-usa/",
+  "show_id": "1994-06-26-sam-boyd-silver-bowl-u-n-l-v-las-vegas-nv-usa",
+  "band": "Grateful Dead",
+  "venue": "Sam Boyd Silver Bowl, U.N.L.V.",
+  "location_raw": "Las Vegas, NV",
+  "city": "Las Vegas",
+  "state": "NV",
+  "country": "USA",
+  "date": "1994-06-26",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Hell In A Bucket",
+          "url": "https://jerrygarcia.com/song/hell-in-a-bucket/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Peggy-O",
+          "url": "https://jerrygarcia.com/song/peggy-o/",
+          "segue_into_next": false
+        },
+        {
+          "name": "New Minglewood Blues",
+          "url": "https://jerrygarcia.com/song/new-minglewood-blues/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Ramble On Rose",
+          "url": "https://jerrygarcia.com/song/ramble-on-rose/",
+          "segue_into_next": false
+        },
+        {
+          "name": "El Paso",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "So Many Roads",
+          "url": "https://jerrygarcia.com/song/so-many-roads/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Just Like Tom Thumb's Blues",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "The Music Never Stopped",
+          "url": "https://jerrygarcia.com/song/the-music-never-stopped/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Victim Or The Crime",
+          "url": "https://jerrygarcia.com/song/victim-or-the-crime/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Eyes Of The World",
+          "url": "https://jerrygarcia.com/song/eyes-of-the-world/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Box of Rain",
+          "url": "https://jerrygarcia.com/song/box-of-rain/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Saint Of Circumstance",
+          "url": "https://jerrygarcia.com/song/saint-of-circumstance/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Terrapin Station",
+          "url": "https://jerrygarcia.com/song/terrapin-station/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Jam",
+          "url": "https://jerrygarcia.com/song/jam/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "The Wheel",
+          "url": "https://jerrygarcia.com/song/the-wheel/",
+          "segue_into_next": true
+        },
+        {
+          "name": "All Along The Watchtower",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Morning Dew",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "U.S. Blues",
+          "url": "https://jerrygarcia.com/song/u-s-blues/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Vince Welnick",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152431/VinceWelnick_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "found",
+  "supporting_acts": [
+    "Traffic"
+  ],
+  "collection_timestamp": "2025-08-10T09:17:11.584539",
+  "show_time": null,
+  "recordings": [
+    "gd94-06-26.sbd.ladner.14943.sbeok.shnf",
+    "gd1994-06-26.encore.sbd.unknown.85864.sbefail.flac16",
+    "gd1994-06-26.138699.sbd.miller.flac1644",
+    "gd1994-06-26.fob.schoeps.byron.dauria.106225.flac16"
+  ],
+  "best_recording": "gd94-06-26.sbd.ladner.14943.sbeok.shnf",
+  "avg_rating": 4.015632458233889,
+  "raw_rating": 4.156382978723404,
+  "recording_count": 4,
+  "confidence": 1.0,
+  "total_high_ratings": 34,
+  "total_low_ratings": 4,
+  "source_types": {
+    "SBD": 3,
+    "UNKNOWN": 1
+  },
+  "matching_method": "date_only",
+  "filtering_applied": []
+}

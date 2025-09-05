@@ -1,0 +1,239 @@
+{
+  "url": "https://jerrygarcia.com/show/1974-02-24-winterland-arena-san-francisco-ca-usa/",
+  "show_id": "1974-02-24-winterland-arena-san-francisco-ca-usa",
+  "band": "Grateful Dead",
+  "venue": "Winterland Arena",
+  "location_raw": "San Francisco, CA",
+  "city": "San Francisco",
+  "state": "CA",
+  "country": "USA",
+  "date": "1974-02-24",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "U.S. Blues",
+          "url": "https://jerrygarcia.com/song/u-s-blues/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Mexicali Blues",
+          "url": "https://jerrygarcia.com/song/mexicali-blues/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Brown Eyed Women",
+          "url": "https://jerrygarcia.com/song/brown-eyed-women/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Beat It On Down The Line",
+          "url": "https://jerrygarcia.com/song/beat-it-on-down-the-line/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Candyman",
+          "url": "https://jerrygarcia.com/song/candyman/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Jack Straw",
+          "url": "https://jerrygarcia.com/song/jack-straw/",
+          "segue_into_next": false
+        },
+        {
+          "name": "China Cat Sunflower",
+          "url": "https://jerrygarcia.com/song/china-cat-sunflower/",
+          "segue_into_next": true
+        },
+        {
+          "name": "I Know You Rider",
+          "url": "https://jerrygarcia.com/song/i-know-you-rider/",
+          "segue_into_next": false
+        },
+        {
+          "name": "El Paso",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Loser",
+          "url": "https://jerrygarcia.com/song/loser/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Playing In The Band",
+          "url": "https://jerrygarcia.com/song/playin-in-the-band/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Cumberland Blues",
+          "url": "https://jerrygarcia.com/song/cumberland-blues/",
+          "segue_into_next": false
+        },
+        {
+          "name": "It Must Have Been The Roses",
+          "url": "https://jerrygarcia.com/song/it-must-have-been-the-roses/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Big River",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Bertha",
+          "url": "https://jerrygarcia.com/song/bertha/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Weather Report Suite Prelude",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Weather Report Suite Part 1",
+          "url": "https://jerrygarcia.com/song/weather-report-suite-part-1/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Let It Grow",
+          "url": "https://jerrygarcia.com/song/let-it-grow/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Row Jimmy",
+          "url": "https://jerrygarcia.com/song/row-jimmy/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Ship Of Fools",
+          "url": "https://jerrygarcia.com/song/ship-of-fools/",
+          "segue_into_next": false
+        },
+        {
+          "name": "The Promised Land",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Dark Star",
+          "url": "https://jerrygarcia.com/song/dark-star/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Morning Dew",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Sugar Magnolia",
+          "url": "https://jerrygarcia.com/song/sugar-magnolia/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Not Fade Away",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Goin' Down The Road Feeling Bad",
+          "url": "https://jerrygarcia.com/song/goin-down-the-road-feelin-bad/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Not Fade Away",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "It's All Over Now Baby Blue",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Keith Godchaux",
+      "instruments": "keyboards",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152439/KeithGodchaux_200-100x100.jpg"
+    },
+    {
+      "name": "Donna Jean Godchaux",
+      "instruments": "vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2013/07/12152444/DonnaGodchaux_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T08:29:45.844041",
+  "show_time": null,
+  "recordings": [
+    "gd1974-02-24.sbd.miller.116902.flac16",
+    "gd74-02-24.sbd.windsor.199.sbefail.shnf",
+    "gd1974-02-24.sbd.sssb-sbe-fix.sirmick.21370.sbeok.shnf",
+    "gd1974-02-24.136276.sbd-patched.miller.flac16",
+    "gd1974-02-24.sbd.serafin.hollister.200.shnf",
+    "gd1974-02-24.sbd.marmar.13961.sbeok.flac16",
+    "gd1974-02-24.151723.sbd.miller.flac1644",
+    "gd1974-02-24.136641.mtx.hseamons.ht110.flac16",
+    "gd1974-02-24.136140.mtx.tobin.flac16",
+    "gd74-02-22.sndchk.serafin.8623.sbefail.shnf",
+    "gd1974-02-24.136142.5-1.tobin.flac1648",
+    "gd1974-02-24.136266.aud.GEMS.flac16",
+    "gd1974-02-24.136141.dts.tobin.flac16"
+  ],
+  "best_recording": "gd1974-02-24.sbd.miller.116902.flac16",
+  "avg_rating": 4.308195286422334,
+  "raw_rating": 4.592177559282822,
+  "recording_count": 13,
+  "confidence": 1.0,
+  "total_high_ratings": 116,
+  "total_low_ratings": 3,
+  "source_types": {
+    "SBD": 7,
+    "MATRIX": 2,
+    "UNKNOWN": 3,
+    "AUD": 1
+  },
+  "matching_method": "date_only",
+  "filtering_applied": [],
+  "collections": [
+    "daves-picks-vol-13"
+  ]
+}

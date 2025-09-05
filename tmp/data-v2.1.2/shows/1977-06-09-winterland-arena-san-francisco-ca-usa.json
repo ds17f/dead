@@ -1,0 +1,210 @@
+{
+  "url": "https://jerrygarcia.com/show/1977-06-09-winterland-arena-san-francisco-ca-usa/",
+  "show_id": "1977-06-09-winterland-arena-san-francisco-ca-usa",
+  "band": "Grateful Dead",
+  "venue": "Winterland Arena",
+  "location_raw": "San Francisco, CA",
+  "city": "San Francisco",
+  "state": "CA",
+  "country": "USA",
+  "date": "1977-06-09",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Mississippi Half-Step Uptown Toodeloo",
+          "url": "https://jerrygarcia.com/song/mississippi-half-step-uptown-toodeloo/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Jack Straw",
+          "url": "https://jerrygarcia.com/song/jack-straw/",
+          "segue_into_next": false
+        },
+        {
+          "name": "They Love Each Other",
+          "url": "https://jerrygarcia.com/song/they-love-each-other/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Cassidy",
+          "url": "https://jerrygarcia.com/song/cassidy/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Sunrise",
+          "url": "https://jerrygarcia.com/song/sunrise/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Deal",
+          "url": "https://jerrygarcia.com/song/deal/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Looks Like Rain",
+          "url": "https://jerrygarcia.com/song/looks-like-rain/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Loser",
+          "url": "https://jerrygarcia.com/song/loser/",
+          "segue_into_next": false
+        },
+        {
+          "name": "The Music Never Stopped",
+          "url": "https://jerrygarcia.com/song/the-music-never-stopped/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Samson & Delilah",
+          "url": "https://jerrygarcia.com/song/samson-delilah/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Help On The Way",
+          "url": "https://jerrygarcia.com/song/help-on-the-way/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Slipknot",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Franklin's Tower",
+          "url": "https://jerrygarcia.com/song/franklins-tower/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Estimated Prophet",
+          "url": "https://jerrygarcia.com/song/estimated-prophet/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Saint Stephen",
+          "url": "https://jerrygarcia.com/song/saint-stephen/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Not Fade Away",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Saint Stephen",
+          "url": "https://jerrygarcia.com/song/saint-stephen/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Terrapin Station",
+          "url": "https://jerrygarcia.com/song/terrapin-station/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Sugar Magnolia",
+          "url": "https://jerrygarcia.com/song/sugar-magnolia/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "U.S. Blues",
+          "url": "https://jerrygarcia.com/song/u-s-blues/",
+          "segue_into_next": false
+        },
+        {
+          "name": "One More Saturday Night",
+          "url": "https://jerrygarcia.com/song/one-more-saturday-night/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Keith Godchaux",
+      "instruments": "keyboards",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152439/KeithGodchaux_200-100x100.jpg"
+    },
+    {
+      "name": "Donna Jean Godchaux",
+      "instruments": "vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2013/07/12152444/DonnaGodchaux_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T08:33:52.279640",
+  "show_time": null,
+  "recordings": [
+    "gd1977-06-09.sbd.miller-day.125857.sbeok.flac16",
+    "gd1977-06-09.sbd.fishman.3869.sbeok.shnf",
+    "gd77-06-09.sbd.murphy.5597.sbefail.shnf",
+    "gd1977-06-09.sbd.john-dauria.1409.shnf",
+    "gd1977-06-09.sbd.dauria.3372.shnf",
+    "gd1977-06-09.mtx.seamons.98801.sbeok.flac16",
+    "gd1977-06-09.28614.sbeok.flac16",
+    "gd77-06-09.akg-bertrando.winters.26450.sbeok.shnf",
+    "gd1977-06-09.141360.akg-d224.troy.miller.smith.sirmick.flac2496",
+    "gd1977-06-09.144956.akg.d224.bertrando.troy.miller.smith.sirmick.flac1644"
+  ],
+  "best_recording": "gd1977-06-09.sbd.miller-day.125857.sbeok.flac16",
+  "avg_rating": 3.421657747386156,
+  "raw_rating": 4.865256293600242,
+  "recording_count": 10,
+  "confidence": 1.0,
+  "total_high_ratings": 151,
+  "total_low_ratings": 2,
+  "source_types": {
+    "SBD": 5,
+    "MATRIX": 1,
+    "UNKNOWN": 4
+  },
+  "matching_method": "date_only",
+  "filtering_applied": [],
+  "collections": [
+    "winterland-june-1977-complete-recordings"
+  ]
+}

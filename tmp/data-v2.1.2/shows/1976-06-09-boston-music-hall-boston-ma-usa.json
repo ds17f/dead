@@ -1,0 +1,223 @@
+{
+  "url": "https://jerrygarcia.com/show/1976-06-09-boston-music-hall-boston-ma-usa/",
+  "show_id": "1976-06-09-boston-music-hall-boston-ma-usa",
+  "band": "Grateful Dead",
+  "venue": "Boston Music Hall",
+  "location_raw": "Boston, MA",
+  "city": "Boston",
+  "state": "MA",
+  "country": "USA",
+  "date": "1976-06-09",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Cold Rain And Snow",
+          "url": "https://jerrygarcia.com/song/cold-rain-and-snow/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Cassidy",
+          "url": "https://jerrygarcia.com/song/cassidy/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Scarlet Begonias",
+          "url": "https://jerrygarcia.com/song/scarlet-begonias/",
+          "segue_into_next": false
+        },
+        {
+          "name": "The Music Never Stopped",
+          "url": "https://jerrygarcia.com/song/the-music-never-stopped/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Crazy Fingers",
+          "url": "https://jerrygarcia.com/song/crazy-fingers/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Big River",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "They Love Each Other",
+          "url": "https://jerrygarcia.com/song/they-love-each-other/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Looks Like Rain",
+          "url": "https://jerrygarcia.com/song/looks-like-rain/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Ship Of Fools",
+          "url": "https://jerrygarcia.com/song/ship-of-fools/",
+          "segue_into_next": false
+        },
+        {
+          "name": "The Promised Land",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Saint Stephen",
+          "url": "https://jerrygarcia.com/song/saint-stephen/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Eyes Of The World",
+          "url": "https://jerrygarcia.com/song/eyes-of-the-world/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Let It Grow",
+          "url": "https://jerrygarcia.com/song/let-it-grow/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Let It Grow",
+          "url": "https://jerrygarcia.com/song/let-it-grow/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Brown Eyed Women",
+          "url": "https://jerrygarcia.com/song/brown-eyed-women/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Lazy Lightning",
+          "url": "https://jerrygarcia.com/song/lazy-lightning/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Supplication",
+          "url": "https://jerrygarcia.com/song/supplication/",
+          "segue_into_next": false
+        },
+        {
+          "name": "High Time",
+          "url": "https://jerrygarcia.com/song/high-time/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Samson & Delilah",
+          "url": "https://jerrygarcia.com/song/samson-delilah/",
+          "segue_into_next": false
+        },
+        {
+          "name": "It Must Have Been The Roses",
+          "url": "https://jerrygarcia.com/song/it-must-have-been-the-roses/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Dancin' In The Street",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Wharf Rat",
+          "url": "https://jerrygarcia.com/song/wharf-rat/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Around & Around",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "Franklin's Tower",
+          "url": "https://jerrygarcia.com/song/franklins-tower/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Keith Godchaux",
+      "instruments": "keyboards",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152439/KeithGodchaux_200-100x100.jpg"
+    },
+    {
+      "name": "Donna Jean Godchaux",
+      "instruments": "vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2013/07/12152444/DonnaGodchaux_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T08:31:17.856446",
+  "show_time": null,
+  "recordings": [
+    "gd1976-06-09.sbd.miller.95399.sbeok.flac16",
+    "gd76-06-09.set2-sbd.gardner.5426.sbeok.shnf",
+    "gd76-06-09.set1-sbd.cotsman.12382.sbeok.shnf",
+    "gd1976-06-09.sbd-set2.cohen.12207.shnf",
+    "gd76-06-09.matrix.chappell.29323.sbeok.flac16",
+    "gd1976-06-09.156991.mtx.seamons.ht141.flac16",
+    "gd76-06-09.hopkins.vernon.5982.sbeok.shnf",
+    "gd1976-06-09.aud.maizner.berger.99063.flac24",
+    "gd1976-06-09.aud.maizner.berger.99064.flac16",
+    "gd1976-06-09.152189.s1-s2p.aud.petrunis.flac2448"
+  ],
+  "best_recording": "gd1976-06-09.sbd.miller.95399.sbeok.flac16",
+  "avg_rating": 3.1886620776478236,
+  "raw_rating": 4.642840434419382,
+  "recording_count": 10,
+  "confidence": 1.0,
+  "total_high_ratings": 96,
+  "total_low_ratings": 2,
+  "source_types": {
+    "SBD": 4,
+    "MATRIX": 2,
+    "UNKNOWN": 1,
+    "AUD": 3
+  },
+  "matching_method": "date_only",
+  "filtering_applied": []
+}

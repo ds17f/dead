@@ -1,0 +1,198 @@
+{
+  "url": "https://jerrygarcia.com/show/1979-12-27-oakland-auditorium-arena-oakland-ca-usa/",
+  "show_id": "1979-12-27-oakland-auditorium-arena-oakland-ca-usa",
+  "band": "Grateful Dead",
+  "venue": "Oakland Auditorium Arena",
+  "location_raw": "Oakland, CA",
+  "city": "Oakland",
+  "state": "CA",
+  "country": "USA",
+  "date": "1979-12-27",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Jack Straw",
+          "url": "https://jerrygarcia.com/song/jack-straw/",
+          "segue_into_next": false
+        },
+        {
+          "name": "They Love Each Other",
+          "url": "https://jerrygarcia.com/song/they-love-each-other/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Cassidy",
+          "url": "https://jerrygarcia.com/song/cassidy/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Peggy-O",
+          "url": "https://jerrygarcia.com/song/peggy-o/",
+          "segue_into_next": true
+        },
+        {
+          "name": "El Paso",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Don't Ease Me In",
+          "url": "https://jerrygarcia.com/song/dont-ease-me-in/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Beat It On Down The Line",
+          "url": "https://jerrygarcia.com/song/beat-it-on-down-the-line/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Deal",
+          "url": "https://jerrygarcia.com/song/deal/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "China Cat Sunflower",
+          "url": "https://jerrygarcia.com/song/china-cat-sunflower/",
+          "segue_into_next": true
+        },
+        {
+          "name": "I Know You Rider",
+          "url": "https://jerrygarcia.com/song/i-know-you-rider/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Samson & Delilah",
+          "url": "https://jerrygarcia.com/song/samson-delilah/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Eyes Of The World",
+          "url": "https://jerrygarcia.com/song/eyes-of-the-world/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Lost Sailor",
+          "url": "https://jerrygarcia.com/song/lost-sailor/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Saint Of Circumstance",
+          "url": "https://jerrygarcia.com/song/saint-of-circumstance/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Jam",
+          "url": "https://jerrygarcia.com/song/jam/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Black Peter",
+          "url": "https://jerrygarcia.com/song/black-peter/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Sugar Magnolia",
+          "url": "https://jerrygarcia.com/song/sugar-magnolia/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "U.S. Blues",
+          "url": "https://jerrygarcia.com/song/u-s-blues/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Brokedown Palace",
+          "url": "https://jerrygarcia.com/song/brokedown-palace/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Brent Mydland",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152446/BretMydland_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T08:40:05.915966",
+  "show_time": null,
+  "recordings": [
+    "gd1979-12-27.set1.sbd.miller.81601.sbeok.flac16",
+    "gd79-12-27.rolfe.vernon.15081.sbeok.shnf",
+    "gd1979-12-27.senn421.walker-scotton.miller.89199.flac16",
+    "gd1979-12-27.aud.clugston.5593.shnf",
+    "gd1979-12-27.167335.nak700.smith.miller.clugston.flac1648",
+    "gd1979-12-27.167336.nak700.smith.miller.clugston.flac2496",
+    "gd1979-12-27.128618.naks.mason.flac16",
+    "gd1979-12-27.144775.fob.akg.d1000e.severson.miller.clugston.flac1648",
+    "gd1979-12-27.154875.akg.se5.wiseman.miller.clugston.flac1648",
+    "gd1979-12-27.senn421.frisch.minches.83944.sbeok.flac16",
+    "gd1979-12-27.154876.akg.se5.wiseman.miller.clugston.flac2496",
+    "gd1979-12-27.144776.fob.akg.d1000e.severson.miller.clugston.flac2496"
+  ],
+  "best_recording": "gd1979-12-27.set1.sbd.miller.81601.sbeok.flac16",
+  "avg_rating": 2.2338541666666667,
+  "raw_rating": 3.632275132275132,
+  "recording_count": 12,
+  "confidence": 1.0,
+  "total_high_ratings": 8,
+  "total_low_ratings": 1,
+  "source_types": {
+    "SBD": 1,
+    "AUD": 11
+  },
+  "matching_method": "date_only",
+  "filtering_applied": []
+}

@@ -1,0 +1,204 @@
+{
+  "url": "https://jerrygarcia.com/show/1990-06-24-autzen-stadium-u-of-oregon-eugene-or-usa/",
+  "show_id": "1990-06-24-autzen-stadium-u-of-oregon-eugene-or-usa",
+  "band": "Grateful Dead",
+  "venue": "Autzen Stadium, U. of Oregon",
+  "location_raw": "Eugene, OR",
+  "city": "Eugene",
+  "state": "OR",
+  "country": "USA",
+  "date": "1990-06-24",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Help On The Way",
+          "url": "https://jerrygarcia.com/song/help-on-the-way/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Slipknot",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Franklin's Tower",
+          "url": "https://jerrygarcia.com/song/franklins-tower/",
+          "segue_into_next": false
+        },
+        {
+          "name": "When I Paint My Masterpiece",
+          "url": "https://jerrygarcia.com/song/when-i-paint-my-masterpiece/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Loose Lucy",
+          "url": "https://jerrygarcia.com/song/loose-lucy/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Just A Little Light",
+          "url": "https://jerrygarcia.com/song/a-little-light/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Picasso Moon",
+          "url": "https://jerrygarcia.com/song/picasso-moon/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Candyman",
+          "url": "https://jerrygarcia.com/song/candyman/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Let It Grow",
+          "url": "https://jerrygarcia.com/song/let-it-grow/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Foolish Heart",
+          "url": "https://jerrygarcia.com/song/foolish-heart/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Man Smart, Woman Smarter",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Standing On The Moon",
+          "url": "https://jerrygarcia.com/song/standing-on-the-moon/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Box of Rain",
+          "url": "https://jerrygarcia.com/song/box-of-rain/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Estimated Prophet",
+          "url": "https://jerrygarcia.com/song/estimated-prophet/",
+          "segue_into_next": true
+        },
+        {
+          "name": "He's Gone",
+          "url": "https://jerrygarcia.com/song/hes-gone/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "The Other One",
+          "url": "https://jerrygarcia.com/song/the-other-one/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Wharf Rat",
+          "url": "https://jerrygarcia.com/song/wharf-rat/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Sugar Magnolia",
+          "url": "https://jerrygarcia.com/song/sugar-magnolia/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "Brokedown Palace",
+          "url": "https://jerrygarcia.com/song/brokedown-palace/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Brent Mydland",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152446/BretMydland_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "found",
+  "supporting_acts": [
+    "Little Feat"
+  ],
+  "collection_timestamp": "2025-08-10T09:06:19.400979",
+  "show_time": null,
+  "recordings": [
+    "gd90-06-24.sbd.unknown.12092.sbeok.shnf",
+    "gd1990-06-24.141862.UltraMatrix.sbd.cm.miller.flac1644",
+    "gd1990-06-24.141784.sbd.miller.flac2496",
+    "gd1990-06-24.mtx.hansokolow.108329.flac16",
+    "gd1990-06-24.156401.mtx.photoleon.flac16",
+    "gd90-06-24.nak.unknown.6946.sbeok.shnf",
+    "gd1990-06-24.sennME80.wklitz.94258.flac16",
+    "gd1990-06-24.147809.mac.billtmcdee.t.flac1648",
+    "gd1990-06-24.141895.OTS.Schoeps.Mattes.Miller.Noel.t-flac1648",
+    "gd1990-06-24.163869.nak700.severson.miller.clugston.flac1648",
+    "gd1990-06-24.147810.mac.billtmcdee.t.flac2496",
+    "gd1990-06-24.163870.nak700.severson.miller.clugston.flac2496",
+    "gd1990-06-24.141255.FOB.OTS.Schoeps.Katzeff.Ammons.Noel.t-flac1648",
+    "gd1990-06-24.143538.OTS.Schoeps.Brotman.Miller.Noel.t-flac1648",
+    "gd1990-06-24.beyerm160.d5scott.106896.flac16"
+  ],
+  "best_recording": "gd90-06-24.sbd.unknown.12092.sbeok.shnf",
+  "avg_rating": 3.632543626146111,
+  "raw_rating": 4.061104582843714,
+  "recording_count": 15,
+  "confidence": 1.0,
+  "total_high_ratings": 32,
+  "total_low_ratings": 1,
+  "source_types": {
+    "SBD": 3,
+    "MATRIX": 2,
+    "UNKNOWN": 10
+  },
+  "matching_method": "date_only",
+  "filtering_applied": []
+}

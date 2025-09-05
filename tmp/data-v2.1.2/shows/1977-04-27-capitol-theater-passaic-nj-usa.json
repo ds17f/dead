@@ -1,0 +1,183 @@
+{
+  "url": "https://jerrygarcia.com/show/1977-04-27-capitol-theater-passaic-nj-usa/",
+  "show_id": "1977-04-27-capitol-theater-passaic-nj-usa",
+  "band": "Grateful Dead",
+  "venue": "Capitol Theater",
+  "location_raw": "Passaic, NJ",
+  "city": "Passaic",
+  "state": "NJ",
+  "country": "USA",
+  "date": "1977-04-27",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "The Promised Land",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Mississippi Half-Step Uptown Toodeloo",
+          "url": "https://jerrygarcia.com/song/mississippi-half-step-uptown-toodeloo/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Looks Like Rain",
+          "url": "https://jerrygarcia.com/song/looks-like-rain/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Sugaree",
+          "url": "https://jerrygarcia.com/song/sugaree/",
+          "segue_into_next": false
+        },
+        {
+          "name": "El Paso",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Row Jimmy",
+          "url": "https://jerrygarcia.com/song/row-jimmy/",
+          "segue_into_next": false
+        },
+        {
+          "name": "New Minglewood Blues",
+          "url": "https://jerrygarcia.com/song/new-minglewood-blues/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Loser",
+          "url": "https://jerrygarcia.com/song/loser/",
+          "segue_into_next": false
+        },
+        {
+          "name": "The Music Never Stopped",
+          "url": "https://jerrygarcia.com/song/the-music-never-stopped/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Estimated Prophet",
+          "url": "https://jerrygarcia.com/song/estimated-prophet/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Scarlet Begonias",
+          "url": "https://jerrygarcia.com/song/scarlet-begonias/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Fire On The Mountain",
+          "url": "https://jerrygarcia.com/song/fire-on-the-mountain/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Good Lovin'",
+          "url": "https://jerrygarcia.com/song/good-lovin/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Ramble On Rose",
+          "url": "https://jerrygarcia.com/song/ramble-on-rose/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Samson & Delilah",
+          "url": "https://jerrygarcia.com/song/samson-delilah/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Terrapin Station",
+          "url": "https://jerrygarcia.com/song/terrapin-station/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Morning Dew",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "Johnny B. Goode",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Keith Godchaux",
+      "instruments": "keyboards",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152439/KeithGodchaux_200-100x100.jpg"
+    },
+    {
+      "name": "Donna Jean Godchaux",
+      "instruments": "vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2013/07/12152444/DonnaGodchaux_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T08:33:00.271918",
+  "show_time": null,
+  "recordings": [
+    "gd1977-04-27.fm.moore.berger.98430.flac16",
+    "gd1977-04-27.fm.doinker.91889.flac16",
+    "gd1977-04-27.fm.moore.berger.98429.flac24",
+    "gd1977-04-27.167534.fm.glassberg.smith.clugston.flac1648",
+    "gd1977-04-27.167535.fm.glassberg.smith.clugston.flac2496",
+    "gd77-04-27.sbd.samaritano.20331.sbefail.shnf",
+    "gd1977-04-27.sbd.braverman.7799.shnf"
+  ],
+  "best_recording": "gd1977-04-27.fm.moore.berger.98430.flac16",
+  "avg_rating": 3.765079365079365,
+  "raw_rating": 4.202107279693487,
+  "recording_count": 7,
+  "confidence": 1.0,
+  "total_high_ratings": 46,
+  "total_low_ratings": 2,
+  "source_types": {
+    "FM": 5,
+    "SBD": 2
+  },
+  "matching_method": "date_only",
+  "filtering_applied": []
+}

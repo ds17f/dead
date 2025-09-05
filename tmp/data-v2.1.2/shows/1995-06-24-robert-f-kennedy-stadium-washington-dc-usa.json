@@ -1,0 +1,172 @@
+{
+  "url": "https://jerrygarcia.com/show/1995-06-24-robert-f-kennedy-stadium-washington-dc-usa/",
+  "show_id": "1995-06-24-robert-f-kennedy-stadium-washington-dc-usa",
+  "band": "Grateful Dead",
+  "venue": "RFK Stadium",
+  "location_raw": "Washington, DC",
+  "city": "Washington",
+  "state": "DC",
+  "country": "USA",
+  "date": "1995-06-24",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Jack Straw",
+          "url": "https://jerrygarcia.com/song/jack-straw/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Althea",
+          "url": "https://jerrygarcia.com/song/althea/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Little Red Rooster",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Friend Of The Devil",
+          "url": "https://jerrygarcia.com/song/friend-of-the-devil/",
+          "segue_into_next": false
+        },
+        {
+          "name": "El Paso",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "So Many Roads",
+          "url": "https://jerrygarcia.com/song/so-many-roads/",
+          "segue_into_next": true
+        },
+        {
+          "name": "The Promised Land",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Iko Iko",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Way To Go Home",
+          "url": "https://jerrygarcia.com/song/way-to-go-home/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Saint Of Circumstance",
+          "url": "https://jerrygarcia.com/song/saint-of-circumstance/",
+          "segue_into_next": true
+        },
+        {
+          "name": "New Speedway Boogie",
+          "url": "https://jerrygarcia.com/song/new-speedway-boogie/",
+          "segue_into_next": true
+        },
+        {
+          "name": "That Would Be Something",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Days Between",
+          "url": "https://jerrygarcia.com/song/days-between/",
+          "segue_into_next": true
+        },
+        {
+          "name": "One More Saturday Night",
+          "url": "https://jerrygarcia.com/song/one-more-saturday-night/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "Black Muddy River",
+          "url": "https://jerrygarcia.com/song/black-muddy-river/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Vince Welnick",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152431/VinceWelnick_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "found",
+  "supporting_acts": [
+    "Bob Dylan"
+  ],
+  "collection_timestamp": "2025-08-10T09:20:17.597871",
+  "show_time": null,
+  "recordings": [
+    "gd95-06-24.aud.schoeps-oade.wiley.8819.sbeok.shnf",
+    "gd95-06-24.naks.12271.sbeok.shnf",
+    "gd1995-06-24.fob.akg391.unknown.swayne.85339.flac16",
+    "gd1995-06-24.schoeps.unknown.timw.8760.shnf"
+  ],
+  "best_recording": "gd95-06-24.aud.schoeps-oade.wiley.8819.sbeok.shnf",
+  "avg_rating": 1.7894396551724137,
+  "raw_rating": 3.2026206896551717,
+  "recording_count": 4,
+  "confidence": 1.0,
+  "total_high_ratings": 18,
+  "total_low_ratings": 8,
+  "source_types": {
+    "AUD": 1,
+    "UNKNOWN": 3
+  },
+  "matching_method": "date_only",
+  "filtering_applied": []
+}

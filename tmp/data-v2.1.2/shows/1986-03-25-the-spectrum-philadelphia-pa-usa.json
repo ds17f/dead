@@ -1,0 +1,196 @@
+{
+  "url": "https://jerrygarcia.com/show/1986-03-25-the-spectrum-philadelphia-pa-usa/",
+  "show_id": "1986-03-25-the-spectrum-philadelphia-pa-usa",
+  "band": "Grateful Dead",
+  "venue": "The Spectrum",
+  "location_raw": "Philadelphia, PA",
+  "city": "Philadelphia",
+  "state": "PA",
+  "country": "USA",
+  "date": "1986-03-25",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Feel Like A Stranger",
+          "url": "https://jerrygarcia.com/song/feel-like-a-stranger/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Tennessee Jed",
+          "url": "https://jerrygarcia.com/song/tennessee-jed/",
+          "segue_into_next": false
+        },
+        {
+          "name": "C.C. Rider",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Tons Of Steel",
+          "url": "https://jerrygarcia.com/song/tons-of-steel/",
+          "segue_into_next": false
+        },
+        {
+          "name": "It Must Have Been The Roses",
+          "url": "https://jerrygarcia.com/song/it-must-have-been-the-roses/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Desolation Row",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Don't Ease Me In",
+          "url": "https://jerrygarcia.com/song/dont-ease-me-in/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Scarlet Begonias",
+          "url": "https://jerrygarcia.com/song/scarlet-begonias/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Touch of Grey",
+          "url": "https://jerrygarcia.com/song/touch-of-grey/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Looks Like Rain",
+          "url": "https://jerrygarcia.com/song/looks-like-rain/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Goin' Down The Road Feeling Bad",
+          "url": "https://jerrygarcia.com/song/goin-down-the-road-feelin-bad/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Just Like Tom Thumb's Blues",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Black Peter",
+          "url": "https://jerrygarcia.com/song/black-peter/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Throwing Stones",
+          "url": "https://jerrygarcia.com/song/throwing-stones/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Turn On Your Lovelight",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "Brokedown Palace",
+          "url": "https://jerrygarcia.com/song/brokedown-palace/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Brent Mydland",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152446/BretMydland_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T08:55:44.619259",
+  "show_time": null,
+  "recordings": [
+    "gd86-03-25.sbd.braverman-munder.9880.sbeok.shnf",
+    "gd1986-03-25.sbd.braverman.9404.shnf",
+    "gd1986-03-25.145618.PandP-sbd.tobin.flac16",
+    "gd1986-03-25.145620.mtx.tobin.flac16",
+    "gd86-03-25.beyer.connor.3188.sbeok.shnf",
+    "gd1986-03-25.151098.senn441.mattes.miller.clugston.flac1648",
+    "gd1986-03-25.127540.chasingwilma.flac24",
+    "gd1986-03-25.145624.5-1.tobin.flac1648",
+    "gd1986-03-25.156081.beyerm201-murtha.holbrook.flac2448",
+    "gd1986-03-25.senn441.mccue.ford.111954.sbeok.flac16",
+    "gd1986-03-25.nak100.holtz.jaz.102169.flac16",
+    "gd1986-03-25.117825.BeyerM160.d5scott.flac16",
+    "gd1986-03-25.139773.FOB.Schoeps.Oade.Bryant.Gastwirt.Miller.Noel.t-flac1644",
+    "gd1986-03-25.nak300.mandel.80002.shnf",
+    "gd1986-03-25.172644.nak304.thomas.miller.clugston.flac2496",
+    "gd1986-03-25.nak300.pasternak.mallick.105580.flac16",
+    "gd1986-03-25.172643.nak304.thomas.miller.clugston.flac1648",
+    "gd1986-03-25.156080.beyerm201-murtha.holbrook.flac1644",
+    "gd1986-03-25.nakcm304.suraci.sbeok.79901.flac16",
+    "gd1986-03-25.145623.dts.tobin.flac16",
+    "gd1986-03-25.151099.senn441.mattes.miller.clugston.flac2496",
+    "gd1986-03-25.nak300.damico.87672.flac16",
+    "gd1986-03-25.145619.PandP-aud.tobin.flac16"
+  ],
+  "best_recording": "gd86-03-25.sbd.braverman-munder.9880.sbeok.shnf",
+  "avg_rating": 2.283625730994152,
+  "raw_rating": 3.4444444444444446,
+  "recording_count": 23,
+  "confidence": 1.0,
+  "total_high_ratings": 16,
+  "total_low_ratings": 4,
+  "source_types": {
+    "SBD": 3,
+    "MATRIX": 1,
+    "UNKNOWN": 18,
+    "AUD": 1
+  },
+  "matching_method": "date_only",
+  "filtering_applied": []
+}

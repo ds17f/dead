@@ -1,0 +1,187 @@
+{
+  "url": "https://jerrygarcia.com/show/1989-04-17-metropolitan-sports-center-minneapolis-mn-usa/",
+  "show_id": "1989-04-17-metropolitan-sports-center-minneapolis-mn-usa",
+  "band": "Grateful Dead",
+  "venue": "Metropolitan Sports Center",
+  "location_raw": "Minneapolis, MN",
+  "city": "Minneapolis",
+  "state": "MN",
+  "country": "USA",
+  "date": "1989-04-17",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Iko Iko",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "New Minglewood Blues",
+          "url": "https://jerrygarcia.com/song/new-minglewood-blues/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Row Jimmy",
+          "url": "https://jerrygarcia.com/song/row-jimmy/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Far From Me",
+          "url": "https://jerrygarcia.com/song/far-from-me/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Built To Last",
+          "url": "https://jerrygarcia.com/song/built-to-last/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Victim Or The Crime",
+          "url": "https://jerrygarcia.com/song/victim-or-the-crime/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Bertha",
+          "url": "https://jerrygarcia.com/song/bertha/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Cold Rain And Snow",
+          "url": "https://jerrygarcia.com/song/cold-rain-and-snow/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Samson & Delilah",
+          "url": "https://jerrygarcia.com/song/samson-delilah/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Crazy Fingers",
+          "url": "https://jerrygarcia.com/song/crazy-fingers/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Estimated Prophet",
+          "url": "https://jerrygarcia.com/song/estimated-prophet/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Eyes Of The World",
+          "url": "https://jerrygarcia.com/song/eyes-of-the-world/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "The Wheel",
+          "url": "https://jerrygarcia.com/song/the-wheel/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Gimme Some Lovin'",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Wharf Rat",
+          "url": "https://jerrygarcia.com/song/wharf-rat/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Not Fade Away",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "Knockin' On Heaven's Door",
+          "url": "https://jerrygarcia.com/song/knockin-on-heavens-door/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Brent Mydland",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152446/BretMydland_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T09:03:31.466431",
+  "show_time": null,
+  "recordings": [
+    "gd1989-04-17.138286.sbd.miller.flac24",
+    "gd1989-04-17.156066.mtx.seamons.ht140.flac16",
+    "gd1989-04-17.138305.mtx.miller.flac16",
+    "gd89-04-17.aud.wiley.9207.sbeok.shnf",
+    "gd89-04-17.partial.aud-unknown.stairs.24003.sbeok.shnf",
+    "gd1989-04-17.AKG451.Darby.117564.Flac2448",
+    "gd1989-04-17.149521.s2.senn441.boedicker.flac1644",
+    "gd1989-04-17.141003.schoeps.cmc4.mk4.pcm.mattes.miller.clugston.flac1644",
+    "gd1989-04-17.AKG451.Darby.117565.Flac1644"
+  ],
+  "best_recording": "gd1989-04-17.138286.sbd.miller.flac24",
+  "avg_rating": 2.3957046979865777,
+  "raw_rating": 3.9047619047619047,
+  "recording_count": 9,
+  "confidence": 1.0,
+  "total_high_ratings": 15,
+  "total_low_ratings": 2,
+  "source_types": {
+    "SBD": 1,
+    "MATRIX": 2,
+    "AUD": 2,
+    "UNKNOWN": 4
+  },
+  "matching_method": "date_only",
+  "filtering_applied": []
+}

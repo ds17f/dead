@@ -1,0 +1,188 @@
+{
+  "url": "https://jerrygarcia.com/show/1989-04-16-the-mecca-milwaukee-wi-usa/",
+  "show_id": "1989-04-16-the-mecca-milwaukee-wi-usa",
+  "band": "Grateful Dead",
+  "venue": "The MECCA",
+  "location_raw": "Milwaukee, WI",
+  "city": "Milwaukee",
+  "state": "WI",
+  "country": "USA",
+  "date": "1989-04-16",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Hell In A Bucket",
+          "url": "https://jerrygarcia.com/song/hell-in-a-bucket/",
+          "segue_into_next": true
+        },
+        {
+          "name": "They Love Each Other",
+          "url": "https://jerrygarcia.com/song/they-love-each-other/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Little Red Rooster",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Stagger Lee",
+          "url": "https://jerrygarcia.com/song/stagger-lee/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Mama Tried",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Mexicali Blues",
+          "url": "https://jerrygarcia.com/song/mexicali-blues/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Bird Song",
+          "url": "https://jerrygarcia.com/song/bird-song/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Scarlet Begonias",
+          "url": "https://jerrygarcia.com/song/scarlet-begonias/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Fire On The Mountain",
+          "url": "https://jerrygarcia.com/song/fire-on-the-mountain/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Saint Of Circumstance",
+          "url": "https://jerrygarcia.com/song/saint-of-circumstance/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Truckin'",
+          "url": "https://jerrygarcia.com/song/truckin/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "The Other One",
+          "url": "https://jerrygarcia.com/song/the-other-one/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Stella Blue",
+          "url": "https://jerrygarcia.com/song/stella-blue/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Throwing Stones",
+          "url": "https://jerrygarcia.com/song/throwing-stones/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Turn On Your Lovelight",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "Box of Rain",
+          "url": "https://jerrygarcia.com/song/box-of-rain/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Brent Mydland",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152446/BretMydland_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T09:03:29.451544",
+  "show_time": null,
+  "recordings": [
+    "gd89-04-16.sbd.sbefixed.9963.sbeok.shnf",
+    "gd1989-04-16.sbd.walker-scotton.miller.81703.sbeok.flac16",
+    "gd1989-04-16.149618.ultramatrix.sbd.pearson-healy.miller.flac2496",
+    "gd1989-04-16.149699.UltraMatrix.sbd.cm.miller.flac16",
+    "gd1989-04-16.sbd.braverman.9371.sbefail.shnf",
+    "gd1989-04-16.167825.mtx.seamons.ht169.flac16",
+    "gd1989-04-16.122041.mtx.tobin.flac16",
+    "gd1989-04-16.akg460b.volkerding.96081.flac16",
+    "gd1989-04-16.nak.rickers.112743.flac24",
+    "gd1989-04-16.149793.nak300.boedicker.flac1644",
+    "gd1989-04-16.140995.schoeps.cmc4.mk4.pcm.mattes.miller.clugston.flac1644",
+    "gd1989-04-16.AKG451.Darby.118403.Flac1644",
+    "gd1989-04-16.nak300.lee-cohen.106339.sbeok.flac16",
+    "gd1989-04-16.156417.OTS-Schoeps-PCM-Master-Mattes-Anon-Noel.t-flac16",
+    "gd1989-04-16.AKG451.Darby.118402.Flac2448",
+    "gd1989-04-16.nak.rickers.112742.flac16"
+  ],
+  "best_recording": "gd89-04-16.sbd.sbefixed.9963.sbeok.shnf",
+  "avg_rating": 3.9198956661316204,
+  "raw_rating": 4.2517006802721085,
+  "recording_count": 16,
+  "confidence": 1.0,
+  "total_high_ratings": 18,
+  "total_low_ratings": 0,
+  "source_types": {
+    "SBD": 5,
+    "MATRIX": 2,
+    "UNKNOWN": 9
+  },
+  "matching_method": "date_only",
+  "filtering_applied": []
+}

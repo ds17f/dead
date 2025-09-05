@@ -1,0 +1,142 @@
+{
+  "url": "https://jerrygarcia.com/show/1970-08-05-golden-hall-community-concorse-san-diego-ca-usa/",
+  "show_id": "1970-08-05-golden-hall-community-concorse-san-diego-ca-usa",
+  "band": "Grateful Dead",
+  "venue": "Golden Hall, Community Concorse",
+  "location_raw": "San Diego, CA",
+  "city": "San Diego",
+  "state": "CA",
+  "country": "USA",
+  "date": "1970-08-05",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Deep Elem Blues",
+          "url": "https://jerrygarcia.com/song/deep-elem-blues/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Dark Hollow",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Friend Of The Devil",
+          "url": "https://jerrygarcia.com/song/friend-of-the-devil/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Mama Tried",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "To Lay Me Down",
+          "url": "https://jerrygarcia.com/song/to-lay-me-down/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Dire Wolf",
+          "url": "https://jerrygarcia.com/song/dire-wolf/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Ballad Of Casey Jones",
+          "url": "https://jerrygarcia.com/song/ballad-of-casey-jones/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Candyman",
+          "url": "https://jerrygarcia.com/song/candyman/",
+          "segue_into_next": false
+        },
+        {
+          "name": "El Paso",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Rosalie McFall*",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Drink Up And Go Home**",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "A Voice From On High**",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Cold Jordan**",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Swing Low (Sweet Chariot)",
+          "url": "https://jerrygarcia.com/song/swing-low-sweet-chariot/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Ron \"Pigpen\" McKernan",
+      "instruments": "keyboards, harmonica, percussion, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152433/RonPigpenMcKernan_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T08:19:34.305569",
+  "show_time": null,
+  "recordings": [
+    "gd70-08-05.sbd.jupile.17271.sbeok.shnf",
+    "gd1970-08-05.sbd.thecore.4941.sbeok.shnf"
+  ],
+  "best_recording": "gd70-08-05.sbd.jupile.17271.sbeok.shnf",
+  "avg_rating": 4.272401433691757,
+  "raw_rating": 4.336917562724015,
+  "recording_count": 2,
+  "confidence": 1.0,
+  "total_high_ratings": 27,
+  "total_low_ratings": 2,
+  "source_types": {
+    "SBD": 2
+  },
+  "matching_method": "date_only",
+  "filtering_applied": []
+}

@@ -1,0 +1,18 @@
+{
+  "identifier": "gd1970-06-04.123798.gdnrps.sonyTC124.olsen.droncit.flat.flac16",
+  "title": "Grateful Dead Live at Fillmore West on 1970-06-04",
+  "date": "1970-06-04",
+  "venue": "Fillmore West",
+  "location": "San Francisco, CA",
+  "source_type": "AUD",
+  "lineage": "",
+  "taper": "Gerry Olsen",
+  "source": "Audience Recording by Gerry Olsen. Sony TC-124 single-capstan portable cassette deck equipped with Sony F-99S One Point Stereo Dynamic Microphone IMP LOW (hand-held). 120 minute BASF normal bias tape. Lineage via Dan McDonald (droncit@yahoo.com): Master Audience Cassette->Nakamichi BX-1 (modified for flat transfer)-> Tascam DR-07MK2 (24-bit, 96kHz); DC8Forensics was used to apply the NAB curve for normal bias cassettes. Converted to 16-bit, 44.1kHz using 32-bit interpolation and a triangular high pass dither. After the NAB curve in a multifilter I applied a virtual vale and overtone generator for lost harmonics and used a channel blender to blend below 150 Hz to mono to minimize mic handling noise.",
+  "runtime": "211:01.49",
+  "rating": 3.0333333333333328,
+  "review_count": 9,
+  "confidence": 1.0,
+  "raw_rating": 4.333333333333333,
+  "high_ratings": 8,
+  "low_ratings": 0
+}

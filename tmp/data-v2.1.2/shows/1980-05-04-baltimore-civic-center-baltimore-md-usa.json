@@ -1,0 +1,193 @@
+{
+  "url": "https://jerrygarcia.com/show/1980-05-04-baltimore-civic-center-baltimore-md-usa/",
+  "show_id": "1980-05-04-baltimore-civic-center-baltimore-md-usa",
+  "band": "Grateful Dead",
+  "venue": "Baltimore Civic Center",
+  "location_raw": "Baltimore, MD",
+  "city": "Baltimore",
+  "state": "MD",
+  "country": "USA",
+  "date": "1980-05-04",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Mississippi Half-Step Uptown Toodeloo",
+          "url": "https://jerrygarcia.com/song/mississippi-half-step-uptown-toodeloo/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Franklin's Tower",
+          "url": "https://jerrygarcia.com/song/franklins-tower/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Feel Like A Stranger",
+          "url": "https://jerrygarcia.com/song/feel-like-a-stranger/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Althea",
+          "url": "https://jerrygarcia.com/song/althea/",
+          "segue_into_next": false
+        },
+        {
+          "name": "El Paso",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Easy To Love You",
+          "url": "https://jerrygarcia.com/song/easy-to-love-you/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Brown Eyed Women",
+          "url": "https://jerrygarcia.com/song/brown-eyed-women/",
+          "segue_into_next": true
+        },
+        {
+          "name": "It's All Over Now",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Don't Ease Me In",
+          "url": "https://jerrygarcia.com/song/dont-ease-me-in/",
+          "segue_into_next": true
+        },
+        {
+          "name": "The Promised Land",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Scarlet Begonias",
+          "url": "https://jerrygarcia.com/song/scarlet-begonias/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Fire On The Mountain",
+          "url": "https://jerrygarcia.com/song/fire-on-the-mountain/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Samson & Delilah",
+          "url": "https://jerrygarcia.com/song/samson-delilah/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Ship Of Fools",
+          "url": "https://jerrygarcia.com/song/ship-of-fools/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Playing In The Band",
+          "url": "https://jerrygarcia.com/song/playin-in-the-band/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Black Peter",
+          "url": "https://jerrygarcia.com/song/black-peter/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Sugar Magnolia",
+          "url": "https://jerrygarcia.com/song/sugar-magnolia/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "U.S. Blues",
+          "url": "https://jerrygarcia.com/song/u-s-blues/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Brent Mydland",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152446/BretMydland_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T08:40:34.573948",
+  "show_time": null,
+  "recordings": [
+    "gd1980-05-04.aud.glassberg.motb-0037.96584.flac16",
+    "gd1980-05-04..nak700.glassberg.96585.flac24",
+    "gd1980-05-04.nak700.glassberg.motb.fix-96585.96925.flac24",
+    "gd1980-05-04.163761.nak700.wagner.miller.clugston.flac2496",
+    "gd80-05-04.naks.munder.11768.sbeok.shnf",
+    "gd1980-05-04.nak700.glassberg.motb.fix-96584.96910.flac16",
+    "gd1980-05-04.akg1000.118912.wise.minches.flac24",
+    "gd1980-05-04.nak.morris.99953.sbefail.flac16",
+    "gd1980-05-04.128688.naks.mason.flac16",
+    "gd1980-05-04.aud.morris.106081.flac16",
+    "gd1980-05-04.163760.nak700.wagner.miller.clugston.flac1648",
+    "gd1980-05-04.aud.morris.106622.flac24"
+  ],
+  "best_recording": "gd1980-05-04.aud.glassberg.motb-0037.96584.flac16",
+  "avg_rating": 2.3318181818181816,
+  "raw_rating": 4.181818181818182,
+  "recording_count": 12,
+  "confidence": 1.0,
+  "total_high_ratings": 18,
+  "total_low_ratings": 2,
+  "source_types": {
+    "AUD": 3,
+    "UNKNOWN": 9
+  },
+  "matching_method": "date_only",
+  "filtering_applied": []
+}

@@ -1,0 +1,203 @@
+{
+  "url": "https://jerrygarcia.com/show/1980-05-06-rec-hall-penn-state-u-state-college-pa-usa/",
+  "show_id": "1980-05-06-rec-hall-penn-state-u-state-college-pa-usa",
+  "band": "Grateful Dead",
+  "venue": "Rec Hall, Penn State U",
+  "location_raw": "State College, PA",
+  "city": "State College",
+  "state": "PA",
+  "country": "USA",
+  "date": "1980-05-06",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Alabama Getaway",
+          "url": "https://jerrygarcia.com/song/alabama-getaway/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Greatest Story Ever Told",
+          "url": "https://jerrygarcia.com/song/greatest-story-ever-told/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Peggy-O",
+          "url": "https://jerrygarcia.com/song/peggy-o/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Me And My Uncle",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Big River",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Loser",
+          "url": "https://jerrygarcia.com/song/loser/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Far From Me",
+          "url": "https://jerrygarcia.com/song/far-from-me/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Lazy Lightning",
+          "url": "https://jerrygarcia.com/song/lazy-lightning/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Supplication",
+          "url": "https://jerrygarcia.com/song/supplication/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Althea",
+          "url": "https://jerrygarcia.com/song/althea/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Lost Sailor",
+          "url": "https://jerrygarcia.com/song/lost-sailor/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Saint Of Circumstance",
+          "url": "https://jerrygarcia.com/song/saint-of-circumstance/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "China Cat Sunflower",
+          "url": "https://jerrygarcia.com/song/china-cat-sunflower/",
+          "segue_into_next": true
+        },
+        {
+          "name": "I Know You Rider",
+          "url": "https://jerrygarcia.com/song/i-know-you-rider/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Feel Like A Stranger",
+          "url": "https://jerrygarcia.com/song/feel-like-a-stranger/",
+          "segue_into_next": true
+        },
+        {
+          "name": "He's Gone",
+          "url": "https://jerrygarcia.com/song/hes-gone/",
+          "segue_into_next": true
+        },
+        {
+          "name": "The Other One",
+          "url": "https://jerrygarcia.com/song/the-other-one/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Wharf Rat",
+          "url": "https://jerrygarcia.com/song/wharf-rat/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Around & Around",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Johnny B. Goode",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "Brokedown Palace",
+          "url": "https://jerrygarcia.com/song/brokedown-palace/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Brent Mydland",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152446/BretMydland_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T08:40:36.196234",
+  "show_time": null,
+  "recordings": [
+    "gd80-05-06.senn.kaplan.6691.sbeok.shnf",
+    "gd1980-05-06.157536.senn441.senn421.blend.eaton.miller.clugston.flac1648",
+    "gd1980-05-06.sonyecm990.morris.99954.sbeok.flac16",
+    "gd80-05-06.unknown.popi.5075.sbeok.shnf",
+    "gd1980-05-06.aud.morris-patch.111027.sbeok.flac16",
+    "gd1980-05-06.128608.naks.mason.flac16",
+    "gd1980-05-06.157537.senn441.senn421.blend.eaton.miller.clugston.flac2496"
+  ],
+  "best_recording": "gd80-05-06.senn.kaplan.6691.sbeok.shnf",
+  "avg_rating": 1.986842105263158,
+  "raw_rating": 4.166666666666666,
+  "recording_count": 7,
+  "confidence": 1.0,
+  "total_high_ratings": 26,
+  "total_low_ratings": 2,
+  "source_types": {
+    "UNKNOWN": 6,
+    "AUD": 1
+  },
+  "matching_method": "date_only",
+  "filtering_applied": []
+}

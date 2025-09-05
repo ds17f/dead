@@ -1,0 +1,186 @@
+{
+  "url": "https://jerrygarcia.com/show/1991-09-18-madison-square-garden-new-york-ny-usa/",
+  "show_id": "1991-09-18-madison-square-garden-new-york-ny-usa",
+  "band": "Grateful Dead",
+  "venue": "Madison Square Garden",
+  "location_raw": "New York, NY",
+  "city": "New York",
+  "state": "NY",
+  "country": "USA",
+  "date": "1991-09-18",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "In The Midnight Hour",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Ramble On Rose",
+          "url": "https://jerrygarcia.com/song/ramble-on-rose/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Wang Dang Doodle",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Candyman",
+          "url": "https://jerrygarcia.com/song/candyman/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Stuck Inside of Mobile with the Memphis Blues Again",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Row Jimmy",
+          "url": "https://jerrygarcia.com/song/row-jimmy/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Jack Straw",
+          "url": "https://jerrygarcia.com/song/jack-straw/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Victim Or The Crime",
+          "url": "https://jerrygarcia.com/song/victim-or-the-crime/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Crazy Fingers",
+          "url": "https://jerrygarcia.com/song/crazy-fingers/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Playing In The Band",
+          "url": "https://jerrygarcia.com/song/playin-in-the-band/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Terrapin Station",
+          "url": "https://jerrygarcia.com/song/terrapin-station/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "The Wheel",
+          "url": "https://jerrygarcia.com/song/the-wheel/",
+          "segue_into_next": true
+        },
+        {
+          "name": "I Need A Miracle",
+          "url": "https://jerrygarcia.com/song/i-need-a-miracle/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Wharf Rat",
+          "url": "https://jerrygarcia.com/song/wharf-rat/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Sugar Magnolia",
+          "url": "https://jerrygarcia.com/song/sugar-magnolia/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "Brokedown Palace",
+          "url": "https://jerrygarcia.com/song/brokedown-palace/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Bruce Hornsby",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152446/BruceHornsby_200-100x100.jpg"
+    },
+    {
+      "name": "Vince Welnick",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152431/VinceWelnick_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T09:10:02.817121",
+  "show_time": null,
+  "recordings": [
+    "gd91-09-18.sbd.jerugim.2788.sbeok.shnf",
+    "gd1991-09-18.150636.sbd.pearson-healy.miller.flac2496",
+    "gd1991-09-18.150680.sbd.cm.miller.flac16",
+    "gd1991-09-18.fob.brennecke-young.GEMS.97391.flac16",
+    "gd1991-09-18.nak300.gidley.andrewf.121805.flac2448",
+    "gd1991-09-18.152268.sennme88.rogosa.miller.sirmick.flac1648",
+    "gd1991-09-18.sennME80.wklitz.94309.flac16",
+    "gd1991-09-18.167541.me88.rogosa.flac2496",
+    "gd1991-09-18.167540.me88.rogosa.flac1644",
+    "gd1991-09-18.dmtx.hansokolow.110645.flac16"
+  ],
+  "best_recording": "gd91-09-18.sbd.jerugim.2788.sbeok.shnf",
+  "avg_rating": 3.761467889908257,
+  "raw_rating": 4.0,
+  "recording_count": 10,
+  "confidence": 1.0,
+  "total_high_ratings": 9,
+  "total_low_ratings": 0,
+  "source_types": {
+    "SBD": 3,
+    "UNKNOWN": 7
+  },
+  "matching_method": "date_only",
+  "filtering_applied": []
+}

@@ -1,0 +1,186 @@
+{
+  "url": "https://jerrygarcia.com/show/1988-06-25-buckeye-lake-music-center-hebron-oh-usa/",
+  "show_id": "1988-06-25-buckeye-lake-music-center-hebron-oh-usa",
+  "band": "Grateful Dead",
+  "venue": "Buckeye Lake Music Center",
+  "location_raw": "Hebron, OH",
+  "city": "Hebron",
+  "state": "OH",
+  "country": "USA",
+  "date": "1988-06-25",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Feel Like A Stranger",
+          "url": "https://jerrygarcia.com/song/feel-like-a-stranger/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Franklin's Tower",
+          "url": "https://jerrygarcia.com/song/franklins-tower/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Box of Rain",
+          "url": "https://jerrygarcia.com/song/box-of-rain/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Sugaree",
+          "url": "https://jerrygarcia.com/song/sugaree/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Stuck Inside of Mobile with the Memphis Blues Again*",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "West L.A. Fadeaway",
+          "url": "https://jerrygarcia.com/song/west-l-a-fadeaway/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Cassidy",
+          "url": "https://jerrygarcia.com/song/cassidy/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Deal",
+          "url": "https://jerrygarcia.com/song/deal/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Victim Or The Crime",
+          "url": "https://jerrygarcia.com/song/victim-or-the-crime/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Blow Away",
+          "url": "https://jerrygarcia.com/song/blow-away/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Foolish Heart",
+          "url": "https://jerrygarcia.com/song/foolish-heart/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Terrapin Station",
+          "url": "https://jerrygarcia.com/song/terrapin-station/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "The Other One",
+          "url": "https://jerrygarcia.com/song/the-other-one/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Wharf Rat",
+          "url": "https://jerrygarcia.com/song/wharf-rat/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Throwing Stones",
+          "url": "https://jerrygarcia.com/song/throwing-stones/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Not Fade Away",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "Knockin' On Heaven's Door",
+          "url": "https://jerrygarcia.com/song/knockin-on-heavens-door/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Brent Mydland",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152446/BretMydland_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "found",
+  "supporting_acts": [
+    "Bruce Hornsby & The Range"
+  ],
+  "collection_timestamp": "2025-08-10T09:01:11.297838",
+  "show_time": null,
+  "recordings": [
+    "gd1988-06-25.135963.sbd.miller.flac16",
+    "gd1988-06-25.senn421.zaleski-kolodjeski.ford.107387.flac16",
+    "gd88-06-25.schoeps-fob.unknown.8478.sbeok.shnf",
+    "gd1988-06-25.134860.bltz.flac2496",
+    "gd1988-06-25.143077.fob.schoeps.mk2s.dalton.miller.clugston.flac1644",
+    "gd1988-06-25.149261.fob.unkown.ebel.flac1644",
+    "gd1988-06-25.163475.senn.me80.hessberg.miller.clugston.flac2496",
+    "gd1988-06-25.163474.senn.me80.hessberg.miller.clugston.flac1648"
+  ],
+  "best_recording": "gd1988-06-25.135963.sbd.miller.flac16",
+  "avg_rating": 1.9100407747196735,
+  "raw_rating": 3.727513227513227,
+  "recording_count": 8,
+  "confidence": 1.0,
+  "total_high_ratings": 23,
+  "total_low_ratings": 0,
+  "source_types": {
+    "SBD": 1,
+    "UNKNOWN": 7
+  },
+  "matching_method": "date_only",
+  "filtering_applied": []
+}

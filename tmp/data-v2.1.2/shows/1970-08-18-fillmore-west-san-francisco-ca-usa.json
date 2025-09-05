@@ -1,0 +1,202 @@
+{
+  "url": "https://jerrygarcia.com/show/1970-08-18-fillmore-west-san-francisco-ca-usa/",
+  "show_id": "1970-08-18-fillmore-west-san-francisco-ca-usa",
+  "band": "Grateful Dead",
+  "venue": "Fillmore West",
+  "location_raw": "San Francisco, CA",
+  "city": "San Francisco",
+  "state": "CA",
+  "country": "USA",
+  "date": "1970-08-18",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Truckin'",
+          "url": "https://jerrygarcia.com/song/truckin/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Dire Wolf",
+          "url": "https://jerrygarcia.com/song/dire-wolf/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Friend Of The Devil",
+          "url": "https://jerrygarcia.com/song/friend-of-the-devil/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Dark Hollow",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Ripple",
+          "url": "https://jerrygarcia.com/song/ripple/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Brokedown Palace",
+          "url": "https://jerrygarcia.com/song/brokedown-palace/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Operator",
+          "url": "https://jerrygarcia.com/song/operator/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Rosalie McFall",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "New Speedway Boogie",
+          "url": "https://jerrygarcia.com/song/new-speedway-boogie/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Cold Jordan*",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Swing Low (Sweet Chariot)",
+          "url": "https://jerrygarcia.com/song/swing-low-sweet-chariot/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Dancin' In The Street",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Next Time You See Me",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Mama Tried",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Cryptical Envelopment",
+          "url": "https://jerrygarcia.com/song/cryptical-envelopment/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "The Other One",
+          "url": "https://jerrygarcia.com/song/the-other-one/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Cryptical Envelopment",
+          "url": "https://jerrygarcia.com/song/cryptical-envelopment/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Sugar Magnolia",
+          "url": "https://jerrygarcia.com/song/sugar-magnolia/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Attics Of My Life",
+          "url": "https://jerrygarcia.com/song/attics-of-my-life/",
+          "segue_into_next": false
+        },
+        {
+          "name": "It's A Man's World",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Not Fade Away",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Casey Jones",
+          "url": "https://jerrygarcia.com/song/casey-jones/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Uncle John's Band",
+          "url": "https://jerrygarcia.com/song/uncle-johns-band/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Ron \"Pigpen\" McKernan",
+      "instruments": "keyboards, harmonica, percussion, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152433/RonPigpenMcKernan_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "found",
+  "supporting_acts": [
+    "New Riders of the Purple Sage"
+  ],
+  "collection_timestamp": "2025-08-10T08:19:37.773149",
+  "show_time": null,
+  "recordings": [
+    "gd70-08-18.aud.yerys.1346.sbeok.shnf",
+    "gd1970-08-18.142416.aud.knudsen.gems.flac1648",
+    "gd1970-08-18.142417.aud.knudsen.gems.FIXED.flac2448",
+    "gd1970-08-18.141071.aud.pitch-adjusted.flac1644",
+    "gd1970-08-18.142414.aud.knudsen.gems.flac2448"
+  ],
+  "best_recording": "gd70-08-18.aud.yerys.1346.sbeok.shnf",
+  "avg_rating": 2.76239846743295,
+  "raw_rating": 4.12183908045977,
+  "recording_count": 5,
+  "confidence": 1.0,
+  "total_high_ratings": 31,
+  "total_low_ratings": 1,
+  "source_types": {
+    "AUD": 5
+  },
+  "matching_method": "date_only",
+  "filtering_applied": []
+}

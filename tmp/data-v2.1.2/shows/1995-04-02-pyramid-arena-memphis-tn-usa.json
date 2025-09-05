@@ -1,0 +1,173 @@
+{
+  "url": "https://jerrygarcia.com/show/1995-04-02-pyramid-arena-memphis-tn-usa/",
+  "show_id": "1995-04-02-pyramid-arena-memphis-tn-usa",
+  "band": "Grateful Dead",
+  "venue": "Pyramid Arena",
+  "location_raw": "Memphis, TN",
+  "city": "Memphis",
+  "state": "TN",
+  "country": "USA",
+  "date": "1995-04-02",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Shakedown Street",
+          "url": "https://jerrygarcia.com/song/shakedown-street/",
+          "segue_into_next": false
+        },
+        {
+          "name": "The Same Thing",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Althea",
+          "url": "https://jerrygarcia.com/song/althea/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Stuck Inside of Mobile with the Memphis Blues Again",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Tennessee Jed",
+          "url": "https://jerrygarcia.com/song/tennessee-jed/",
+          "segue_into_next": false
+        },
+        {
+          "name": "The Promised Land",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Here Comes Sunshine",
+          "url": "https://jerrygarcia.com/song/here-comes-sunshine/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Eternity",
+          "url": "https://jerrygarcia.com/song/eternity/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Crazy Fingers",
+          "url": "https://jerrygarcia.com/song/crazy-fingers/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Estimated Prophet",
+          "url": "https://jerrygarcia.com/song/estimated-prophet/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "The Last Time",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Wharf Rat",
+          "url": "https://jerrygarcia.com/song/wharf-rat/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Not Fade Away",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "Unbroken Chain",
+          "url": "https://jerrygarcia.com/song/unbroken-chain/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Vince Welnick",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152431/VinceWelnick_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T09:19:35.558835",
+  "show_time": null,
+  "recordings": [
+    "gd95-04-02.sbd.11622.sbeok.shnf",
+    "gd1995-04-02.sbd.larson.leavy.93736.sbeok.flac16",
+    "gd1995-04-02.sbd-monitor.unknown.93209.shnf",
+    "gd1995-04-02.sbd.unknown.5226.shnf",
+    "gd1995-04-02.156418.s2.sbd.mrachek.flac1648",
+    "gd1995-04-02.nak300.holtz.91056.flac16",
+    "gd1995-04-02.nak300.unknown.larson.28853.shnf",
+    "gd1995-04-02.141431.s2.FOB.Neumann.Vasseur.Ammons.Noel.t-flac1648",
+    "gd1995-04-02.149956.set2.KM-56s.weber.small.oade.flac1648",
+    "gd1995-04-02.141253.FOB.s1-cmc6mk4-s2-mk4v.ebel.flac1644",
+    "gd1995-04-02.143095.nak300-cp4.Boedicker.flac1644",
+    "gd1995-04-02.shureBG4.0.richart.118440.flac16"
+  ],
+  "best_recording": "gd95-04-02.sbd.11622.sbeok.shnf",
+  "avg_rating": 3.4792379942432956,
+  "raw_rating": 3.804347826086957,
+  "recording_count": 12,
+  "confidence": 1.0,
+  "total_high_ratings": 40,
+  "total_low_ratings": 8,
+  "source_types": {
+    "SBD": 5,
+    "UNKNOWN": 7
+  },
+  "matching_method": "date_only",
+  "filtering_applied": []
+}

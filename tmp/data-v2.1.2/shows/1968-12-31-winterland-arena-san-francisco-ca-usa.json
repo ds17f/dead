@@ -1,0 +1,105 @@
+{
+  "url": "https://jerrygarcia.com/show/1968-12-31-winterland-arena-san-francisco-ca-usa/",
+  "show_id": "1968-12-31-winterland-arena-san-francisco-ca-usa",
+  "band": "Grateful Dead",
+  "venue": "Winterland Arena",
+  "location_raw": "San Francisco, CA",
+  "city": "San Francisco",
+  "state": "CA",
+  "country": "USA",
+  "date": "1968-12-31",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "In The Midnight Hour",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Dark Star",
+          "url": "https://jerrygarcia.com/song/dark-star/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Saint Stephen",
+          "url": "https://jerrygarcia.com/song/saint-stephen/",
+          "segue_into_next": true
+        },
+        {
+          "name": "The Eleven",
+          "url": "https://jerrygarcia.com/song/the-eleven/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Turn On Your Lovelight",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Ron \"Pigpen\" McKernan",
+      "instruments": "keyboards, harmonica, percussion, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152433/RonPigpenMcKernan_200-100x100.jpg"
+    },
+    {
+      "name": "Tom Constanten",
+      "instruments": "keyboards",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152432/TomConstanten_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "found",
+  "supporting_acts": [
+    "Quicksilver Messenger Service",
+    "It's A Beautiful Day",
+    "Santana"
+  ],
+  "collection_timestamp": "2025-08-10T08:11:24.176742",
+  "show_time": null,
+  "recordings": [
+    "gd68-xx-xx.sbd.vernon.9426.sbeok.shnf"
+  ],
+  "best_recording": "gd68-xx-xx.sbd.vernon.9426.sbeok.shnf",
+  "avg_rating": 4.470588235294118,
+  "raw_rating": 4.470588235294118,
+  "recording_count": 1,
+  "confidence": 1.0,
+  "total_high_ratings": 14,
+  "total_low_ratings": 0,
+  "source_types": {
+    "SBD": 1
+  },
+  "matching_method": "date_only",
+  "filtering_applied": []
+}

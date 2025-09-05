@@ -1,0 +1,143 @@
+{
+  "url": "https://jerrygarcia.com/show/1968-12-07-bellarmine-college-louisville-ky-usa/",
+  "show_id": "1968-12-07-bellarmine-college-louisville-ky-usa",
+  "band": "Grateful Dead",
+  "venue": "Bellarmine College",
+  "location_raw": "Louisville, KY",
+  "city": "Louisville",
+  "state": "KY",
+  "country": "USA",
+  "date": "1968-12-07",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Dark Star",
+          "url": "https://jerrygarcia.com/song/dark-star/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Saint Stephen",
+          "url": "https://jerrygarcia.com/song/saint-stephen/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Death Don't Have No Mercy",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Cryptical Envelopment",
+          "url": "https://jerrygarcia.com/song/cryptical-envelopment/",
+          "segue_into_next": true
+        },
+        {
+          "name": "The Other One",
+          "url": "https://jerrygarcia.com/song/the-other-one/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Cryptical Envelopment",
+          "url": "https://jerrygarcia.com/song/cryptical-envelopment/",
+          "segue_into_next": true
+        },
+        {
+          "name": "New Potato Caboose",
+          "url": "https://jerrygarcia.com/song/new-potato-caboose/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Rosemary",
+          "url": "https://jerrygarcia.com/song/rosemary/",
+          "segue_into_next": false
+        },
+        {
+          "name": "He Was A Friend Of Mine",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "It Hurts Me Too",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Morning Dew",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "And We Bid You Good Night",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Ron \"Pigpen\" McKernan",
+      "instruments": "keyboards, harmonica, percussion, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152433/RonPigpenMcKernan_200-100x100.jpg"
+    },
+    {
+      "name": "Tom Constanten",
+      "instruments": "keyboards",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152432/TomConstanten_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T08:11:10.087949",
+  "show_time": null,
+  "recordings": [
+    "gd68-12-07.sbd.naines.16944.sbeok.shnf",
+    "gd1968-12-07.sbd.miller.88674.sbeok.flac16",
+    "gd1968-12-07.sbd.lai.20007.shnf"
+  ],
+  "best_recording": "gd68-12-07.sbd.naines.16944.sbeok.shnf",
+  "avg_rating": 4.3178751803751805,
+  "raw_rating": 4.3565115440115445,
+  "recording_count": 3,
+  "confidence": 1.0,
+  "total_high_ratings": 37,
+  "total_low_ratings": 0,
+  "source_types": {
+    "SBD": 3
+  },
+  "matching_method": "date_only",
+  "filtering_applied": []
+}

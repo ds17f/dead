@@ -1,0 +1,172 @@
+{
+  "url": "https://jerrygarcia.com/show/1994-07-17-robert-f-kennedy-stadium-washington-dc-usa/",
+  "show_id": "1994-07-17-robert-f-kennedy-stadium-washington-dc-usa",
+  "band": "Grateful Dead",
+  "venue": "RFK Stadium",
+  "location_raw": "Washington, DC",
+  "city": "Washington",
+  "state": "DC",
+  "country": "USA",
+  "date": "1994-07-17",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Hell In A Bucket",
+          "url": "https://jerrygarcia.com/song/hell-in-a-bucket/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Bertha",
+          "url": "https://jerrygarcia.com/song/bertha/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Wang Dang Doodle",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "So Many Roads",
+          "url": "https://jerrygarcia.com/song/so-many-roads/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Just Like Tom Thumb's Blues",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Black Throated Wind",
+          "url": "https://jerrygarcia.com/song/black-throated-wind/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Don't Ease Me In",
+          "url": "https://jerrygarcia.com/song/dont-ease-me-in/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Victim Or The Crime",
+          "url": "https://jerrygarcia.com/song/victim-or-the-crime/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Eyes Of The World",
+          "url": "https://jerrygarcia.com/song/eyes-of-the-world/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Samson & Delilah",
+          "url": "https://jerrygarcia.com/song/samson-delilah/",
+          "segue_into_next": true
+        },
+        {
+          "name": "He's Gone",
+          "url": "https://jerrygarcia.com/song/hes-gone/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Way To Go Home",
+          "url": "https://jerrygarcia.com/song/way-to-go-home/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Standing On The Moon",
+          "url": "https://jerrygarcia.com/song/standing-on-the-moon/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Turn On Your Lovelight",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "Brokedown Palace",
+          "url": "https://jerrygarcia.com/song/brokedown-palace/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Vince Welnick",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152431/VinceWelnick_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "found",
+  "supporting_acts": [
+    "Traffic"
+  ],
+  "collection_timestamp": "2025-08-10T09:17:23.128886",
+  "show_time": null,
+  "recordings": [
+    "gd94-07-17.ams.wankelswurth.10540.sbeok.shnf",
+    "gd1994-07-17.nak300.bleich.lmpp.97900.flac16",
+    "gd1994-07-17.147684.schoepsCMC5MK4.ebel.flac16",
+    "gd1994-07-17.schoeps.wklitz-cubby-carrioncrow.91363.flac16",
+    "gd1994-07-17.152517.Senn.tom-roger-larson.flac1644"
+  ],
+  "best_recording": "gd94-07-17.ams.wankelswurth.10540.sbeok.shnf",
+  "avg_rating": 1.5434210526315788,
+  "raw_rating": 3.486842105263158,
+  "recording_count": 5,
+  "confidence": 1.0,
+  "total_high_ratings": 6,
+  "total_low_ratings": 3,
+  "source_types": {
+    "UNKNOWN": 5
+  },
+  "matching_method": "date_only",
+  "filtering_applied": []
+}

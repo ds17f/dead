@@ -1,0 +1,18 @@
+{
+  "identifier": "gd1990-04-03.133277.131206-fix.deal-katzeff.flac16",
+  "title": "Grateful Dead Live at The Omni on 1990-04-03",
+  "date": "1990-04-03",
+  "venue": "The Omni",
+  "location": "Atlanta, GA",
+  "source_type": "AUD",
+  "lineage": "",
+  "taper": "Lance Deal, Ray Katzeff",
+  "source": "Source: FOB by Rick Katzeff using Schoeps CMC 44's> Oade p/s> SV 255> 1:1 clone; DAT's provided by Lance Deal; Transfer Info: Fostex D-5 (AES/BU)> Luminuous Monarch> (s/pdif) M-Audio Audiophile 2496> Audacity @ 16/48> 16/44> CD Wav (tracking)> TLH (SBE's/Flac16/md5); fix of SHNID 131206 due to an inverted left channel likely due to a faulty xlr cable in the recording gear chain. Craig Hillwig used xACT 2.35 and Audacity to decode, join files and invert the left channel in a 32 bit float. Lenny Stubbe used Sound Studio 3.6 and xACT 2.35 to add gain, track, tag, encode/align to FLAC and seed",
+  "runtime": "172:16.00",
+  "rating": 0.0,
+  "review_count": 0,
+  "confidence": 0.0,
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0
+}

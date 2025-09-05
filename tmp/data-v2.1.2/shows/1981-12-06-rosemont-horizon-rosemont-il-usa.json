@@ -1,0 +1,206 @@
+{
+  "url": "https://jerrygarcia.com/show/1981-12-06-rosemont-horizon-rosemont-il-usa/",
+  "show_id": "1981-12-06-rosemont-horizon-rosemont-il-usa",
+  "band": "Grateful Dead",
+  "venue": "Rosemont Horizon",
+  "location_raw": "Rosemont, IL",
+  "city": "Rosemont",
+  "state": "IL",
+  "country": "USA",
+  "date": "1981-12-06",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "New Minglewood Blues",
+          "url": "https://jerrygarcia.com/song/new-minglewood-blues/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Sugaree",
+          "url": "https://jerrygarcia.com/song/sugaree/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Mama Tried",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Mexicali Blues",
+          "url": "https://jerrygarcia.com/song/mexicali-blues/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Candyman",
+          "url": "https://jerrygarcia.com/song/candyman/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Little Red Rooster",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Tennessee Jed",
+          "url": "https://jerrygarcia.com/song/tennessee-jed/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Looks Like Rain",
+          "url": "https://jerrygarcia.com/song/looks-like-rain/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Jack-A-Roe",
+          "url": "https://jerrygarcia.com/song/jack-a-roe/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Beat It On Down The Line",
+          "url": "https://jerrygarcia.com/song/beat-it-on-down-the-line/",
+          "segue_into_next": false
+        },
+        {
+          "name": "China Cat Sunflower",
+          "url": "https://jerrygarcia.com/song/china-cat-sunflower/",
+          "segue_into_next": true
+        },
+        {
+          "name": "I Know You Rider",
+          "url": "https://jerrygarcia.com/song/i-know-you-rider/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Samson & Delilah",
+          "url": "https://jerrygarcia.com/song/samson-delilah/",
+          "segue_into_next": false
+        },
+        {
+          "name": "To Lay Me Down",
+          "url": "https://jerrygarcia.com/song/to-lay-me-down/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Estimated Prophet",
+          "url": "https://jerrygarcia.com/song/estimated-prophet/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Eyes Of The World",
+          "url": "https://jerrygarcia.com/song/eyes-of-the-world/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Not Fade Away",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Wharf Rat",
+          "url": "https://jerrygarcia.com/song/wharf-rat/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Good Lovin'",
+          "url": "https://jerrygarcia.com/song/good-lovin/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "Brokedown Palace",
+          "url": "https://jerrygarcia.com/song/brokedown-palace/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Brent Mydland",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152446/BretMydland_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T08:45:54.433865",
+  "show_time": null,
+  "recordings": [
+    "gd1981-12-06.sbd.miller.108841.flac16",
+    "gd1981-12-06.133563.sbd.miller.flac16",
+    "gd1981-12-06.158845.mtx.seamons.ht150.flac16",
+    "gd81-12-06.aud.braverman.8200.sbeok.shnf",
+    "gd1981-12-06.aud.unknown.78646.sbeok.flac16",
+    "gd1981-12-06.senn421.bethke.lee.cohen.119584.flac16",
+    "gd1981-12-06.nak700.mow.ford.32317.sbeok.flac16",
+    "gd1981-12-06.148949.fob.senn421.streeter.miller.clugston.flac1648",
+    "gd1981-12-06.153910.2nd.set.senn421.nak304.blend.vita.miller.clugston.flac1648",
+    "gd1981-12-06.139345.aud.craigl.flac1644",
+    "gd1981-12-06.139344.aud.craigl.flac2448",
+    "gd1981-12-06.153911.2nd.set.senn421.nak304.blend.vita.miller.clugston.flac2496",
+    "gd1981-12-06.148950.fob.senn421.streeter.miller.clugston.flac2496"
+  ],
+  "best_recording": "gd1981-12-06.sbd.miller.108841.flac16",
+  "avg_rating": 2.7185380116959066,
+  "raw_rating": 3.9637681159420293,
+  "recording_count": 13,
+  "confidence": 1.0,
+  "total_high_ratings": 15,
+  "total_low_ratings": 2,
+  "source_types": {
+    "SBD": 2,
+    "MATRIX": 1,
+    "AUD": 4,
+    "UNKNOWN": 6
+  },
+  "matching_method": "date_only",
+  "filtering_applied": []
+}

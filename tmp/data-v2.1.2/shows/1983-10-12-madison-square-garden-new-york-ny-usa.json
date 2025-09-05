@@ -1,0 +1,210 @@
+{
+  "url": "https://jerrygarcia.com/show/1983-10-12-madison-square-garden-new-york-ny-usa/",
+  "show_id": "1983-10-12-madison-square-garden-new-york-ny-usa",
+  "band": "Grateful Dead",
+  "venue": "Madison Square Garden",
+  "location_raw": "New York, NY",
+  "city": "New York",
+  "state": "NY",
+  "country": "USA",
+  "date": "1983-10-12",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Cold Rain And Snow",
+          "url": "https://jerrygarcia.com/song/cold-rain-and-snow/",
+          "segue_into_next": false
+        },
+        {
+          "name": "New Minglewood Blues",
+          "url": "https://jerrygarcia.com/song/new-minglewood-blues/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Ramble On Rose",
+          "url": "https://jerrygarcia.com/song/ramble-on-rose/",
+          "segue_into_next": false
+        },
+        {
+          "name": "My Brother Esau",
+          "url": "https://jerrygarcia.com/song/my-brother-esau/",
+          "segue_into_next": false
+        },
+        {
+          "name": "It Must Have Been The Roses",
+          "url": "https://jerrygarcia.com/song/it-must-have-been-the-roses/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Cassidy",
+          "url": "https://jerrygarcia.com/song/cassidy/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Cumberland Blues",
+          "url": "https://jerrygarcia.com/song/cumberland-blues/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Looks Like Rain",
+          "url": "https://jerrygarcia.com/song/looks-like-rain/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Might As Well",
+          "url": "https://jerrygarcia.com/song/might-as-well/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Help On The Way",
+          "url": "https://jerrygarcia.com/song/help-on-the-way/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Slipknot",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Franklin's Tower",
+          "url": "https://jerrygarcia.com/song/franklins-tower/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Man Smart, Woman Smarter",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "He's Gone",
+          "url": "https://jerrygarcia.com/song/hes-gone/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Truckin'",
+          "url": "https://jerrygarcia.com/song/truckin/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Black Peter",
+          "url": "https://jerrygarcia.com/song/black-peter/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Not Fade Away",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "Revolution",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Brent Mydland",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152446/BretMydland_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T08:50:10.457754",
+  "show_time": null,
+  "recordings": [
+    "gd83-10-12.sbd.harrell.8112.sbeok.shnf",
+    "gd1983-10-12.mtx.groves.92461.sbeok.flac16",
+    "gd1983-10-12.135251.mtx.dusborne.flac16",
+    "gd1983-10-12.168943.mtx.seamons.ht171.flac16",
+    "gd83-10-12.aud.gustin.345.sbeok.shnf",
+    "gd1983-10-12.senn441-u87.eaton.miller.91125.sbeok.flac16",
+    "gd1983-10-12.137323.senn421.miller.flac16",
+    "gd1983-10-12.137302.senn421.miller.flac24",
+    "gd1983-10-12.neumannU87-senn421.lance.30827.flac16",
+    "gd1983-10-12.senn421.grabski.33340.flac16",
+    "gd1983-10-12.117774.Sennheiser421.daweez.d5scott.flac16",
+    "gd1983-10-12.senn441.chasingwilma.101954.sbeok.flac16",
+    "gd1983-10-12.163835.senn421.vita.miller.clugston.flac1648",
+    "gd1983-10-12.167752.senn441.neumann.u87.blend.eaton.miller.clugston.flac1648",
+    "gd1983-10-12.143608.fob.nak700.cohen.miller.clugston.flac1648",
+    "gd1983-10-12.163836.senn421.vita.miller.clugston.flac2496",
+    "gd1983-10-12.122216.senn.chaisingwilma.flac24",
+    "gd1983-10-12.140818.s1s2p.akg24.miller.flac2496",
+    "gd1983-10-12.141012.set1.2p.akg.cm.miller.flac1644",
+    "gd1983-10-12.167753.senn441.neumann.u87.blend.eaton.miller.clugston.flac2496",
+    "gd1983-10-12.135289.Unk-Nak100-Hill.Keo.Flac2496",
+    "gd1983-10-12.135290.Unk-Nak100-Hill.Keo.Flac1644",
+    "gd1983-10-12.143609.fob.nak700.cohen.miller.clugston.flac2496",
+    "gd1983-10-12.beyerm160.rumrunners.99070.shnf"
+  ],
+  "best_recording": "gd83-10-12.sbd.harrell.8112.sbeok.shnf",
+  "avg_rating": 3.185976272862087,
+  "raw_rating": 4.394274376417234,
+  "recording_count": 24,
+  "confidence": 1.0,
+  "total_high_ratings": 35,
+  "total_low_ratings": 0,
+  "source_types": {
+    "SBD": 1,
+    "MATRIX": 3,
+    "AUD": 1,
+    "UNKNOWN": 19
+  },
+  "matching_method": "date_only",
+  "filtering_applied": [],
+  "collections": [
+    "in-out-of-the-garden-msg-81-83"
+  ]
+}

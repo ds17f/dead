@@ -1,0 +1,180 @@
+{
+  "url": "https://jerrygarcia.com/show/1995-02-21-delta-center-salt-lake-city-ut-usa/",
+  "show_id": "1995-02-21-delta-center-salt-lake-city-ut-usa",
+  "band": "Grateful Dead",
+  "venue": "Delta Center",
+  "location_raw": "Salt Lake City, UT",
+  "city": "Salt Lake City",
+  "state": "UT",
+  "country": "USA",
+  "date": "1995-02-21",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Salt Lake City",
+          "url": "https://jerrygarcia.com/song/salt-lake-city/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Friend Of The Devil",
+          "url": "https://jerrygarcia.com/song/friend-of-the-devil/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Wang Dang Doodle",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Tennessee Jed",
+          "url": "https://jerrygarcia.com/song/tennessee-jed/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Broken Arrow",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Black Throated Wind",
+          "url": "https://jerrygarcia.com/song/black-throated-wind/",
+          "segue_into_next": false
+        },
+        {
+          "name": "So Many Roads",
+          "url": "https://jerrygarcia.com/song/so-many-roads/",
+          "segue_into_next": false
+        },
+        {
+          "name": "The Music Never Stopped",
+          "url": "https://jerrygarcia.com/song/the-music-never-stopped/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Foolish Heart",
+          "url": "https://jerrygarcia.com/song/foolish-heart/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Samba In The Rain",
+          "url": "https://jerrygarcia.com/song/samba-in-the-rain/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Truckin'",
+          "url": "https://jerrygarcia.com/song/truckin/",
+          "segue_into_next": true
+        },
+        {
+          "name": "I Just Want To Make Love To You",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "That Would Be Something",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Visions Of Johanna",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Sugar Magnolia",
+          "url": "https://jerrygarcia.com/song/sugar-magnolia/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "Liberty",
+          "url": "https://jerrygarcia.com/song/liberty/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Vince Welnick",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152431/VinceWelnick_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T09:19:05.632994",
+  "show_time": null,
+  "recordings": [
+    "gd1995-02-21.sbd.miller.114144.flac16",
+    "gd95-02-21.dsbd.stephens.8840.sbeok.shnf",
+    "gd1995-02-21.sbd.serafin.walkerb.1524.shnf",
+    "gd1995-02-21.140348.aud.miller.sirmick.flac1648",
+    "gd1995-02-21.145492.akg460b.lerond.t-flac1648"
+  ],
+  "best_recording": "gd1995-02-21.sbd.miller.114144.flac16",
+  "avg_rating": 2.416786155021449,
+  "raw_rating": 3.9504720279720282,
+  "recording_count": 5,
+  "confidence": 1.0,
+  "total_high_ratings": 49,
+  "total_low_ratings": 6,
+  "source_types": {
+    "SBD": 3,
+    "AUD": 1,
+    "UNKNOWN": 1
+  },
+  "matching_method": "date_only",
+  "filtering_applied": [],
+  "collections": [
+    "30-trips-around-the-sun"
+  ]
+}

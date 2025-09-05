@@ -1,0 +1,182 @@
+{
+  "url": "https://jerrygarcia.com/show/1994-04-06-miami-arena-miami-fl-usa/",
+  "show_id": "1994-04-06-miami-arena-miami-fl-usa",
+  "band": "Grateful Dead",
+  "venue": "Miami Arena",
+  "location_raw": "Miami, FL",
+  "city": "Miami",
+  "state": "FL",
+  "country": "USA",
+  "date": "1994-04-06",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Jack Straw",
+          "url": "https://jerrygarcia.com/song/jack-straw/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Jack-A-Roe",
+          "url": "https://jerrygarcia.com/song/jack-a-roe/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Wang Dang Doodle",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Broken Arrow",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "West L.A. Fadeaway",
+          "url": "https://jerrygarcia.com/song/west-l-a-fadeaway/",
+          "segue_into_next": false
+        },
+        {
+          "name": "El Paso",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Row Jimmy",
+          "url": "https://jerrygarcia.com/song/row-jimmy/",
+          "segue_into_next": true
+        },
+        {
+          "name": "The Promised Land",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Here Comes Sunshine",
+          "url": "https://jerrygarcia.com/song/here-comes-sunshine/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Samson & Delilah",
+          "url": "https://jerrygarcia.com/song/samson-delilah/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Cumberland Blues",
+          "url": "https://jerrygarcia.com/song/cumberland-blues/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Way To Go Home",
+          "url": "https://jerrygarcia.com/song/way-to-go-home/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Man Smart, Woman Smarter",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "The Wheel",
+          "url": "https://jerrygarcia.com/song/the-wheel/",
+          "segue_into_next": true
+        },
+        {
+          "name": "All Along The Watchtower",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Standing On The Moon",
+          "url": "https://jerrygarcia.com/song/standing-on-the-moon/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "Johnny B. Goode",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Vince Welnick",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152431/VinceWelnick_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T09:16:43.534161",
+  "show_time": null,
+  "recordings": [
+    "gd94-04-06.sndchk.sbd.miller.13110.sbeok.shnf",
+    "gd94-04-06.set1-fob.set2-sbd.miller.28358.sbeok.flacf",
+    "gd1994-04-06.snchk.fm-sbd.koucky.91351.flac16",
+    "gd1994-04-06.snchk.fm-sbd.miller.gmb-fixed.91391.flac16",
+    "gd94-04-06.schoeps.ladner.10311.sbeok.shnf",
+    "gd1994-04-06.141427.OTS.AKG.Ackerman.Miller.Noel.t-flac.1648"
+  ],
+  "best_recording": "gd94-04-06.sndchk.sbd.miller.13110.sbeok.shnf",
+  "avg_rating": 2.272543352601156,
+  "raw_rating": 3.961333333333333,
+  "recording_count": 6,
+  "confidence": 1.0,
+  "total_high_ratings": 13,
+  "total_low_ratings": 1,
+  "source_types": {
+    "SBD": 4,
+    "UNKNOWN": 2
+  },
+  "matching_method": "date_only",
+  "filtering_applied": []
+}

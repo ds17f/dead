@@ -1,0 +1,158 @@
+{
+  "url": "https://jerrygarcia.com/show/1966-03-12-danish-center-los-angeles-ca-usa/",
+  "show_id": "1966-03-12-danish-center-los-angeles-ca-usa",
+  "band": "Grateful Dead",
+  "venue": "Danish Center",
+  "location_raw": "Los Angeles, CA",
+  "city": "Los Angeles",
+  "state": "CA",
+  "country": "USA",
+  "date": "1966-03-12",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Cream Puff War",
+          "url": "https://jerrygarcia.com/song/cream-puff-war/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Teddy Bear's Picnic",
+          "url": "https://jerrygarcia.com/song/teddy-bears-picnic/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Sitting On Top Of The World",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "New Minglewood Blues",
+          "url": "https://jerrygarcia.com/song/new-minglewood-blues/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Cold Rain And Snow",
+          "url": "https://jerrygarcia.com/song/cold-rain-and-snow/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Taste Bud",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Silver Threads And Golden Needles",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "It's All Over Now Baby Blue",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Good Lovin'",
+          "url": "https://jerrygarcia.com/song/good-lovin/",
+          "segue_into_next": false
+        },
+        {
+          "name": "You Don't Have To Ask",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "On The Road Again",
+          "url": "https://jerrygarcia.com/song/on-the-road-again/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Next Time You See Me",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "I Know You Rider",
+          "url": "https://jerrygarcia.com/song/i-know-you-rider/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Hey Little One",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "I'm A King Bee",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Caution (Do Not Stop On Tracks)",
+          "url": "https://jerrygarcia.com/song/caution-do-not-stop-on-tracks/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Stealin'",
+          "url": "https://jerrygarcia.com/song/stealin/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Ron \"Pigpen\" McKernan",
+      "instruments": "keyboards, harmonica, percussion, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152433/RonPigpenMcKernan_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T07:59:52.250296",
+  "show_time": null,
+  "recordings": [
+    "gd66-acid-test-supplement.sbd.unknown.9514.shnf",
+    "gd1966-03-12.sbd.bershaw.5412.shnf",
+    "gd1966-03-12.sbd.bershaw.9516.shnf",
+    "gd1966-03-12.doherty.winters.17681.shnf"
+  ],
+  "best_recording": "gd66-acid-test-supplement.sbd.unknown.9514.shnf",
+  "avg_rating": 4.2288135593220355,
+  "raw_rating": 4.281746031746032,
+  "recording_count": 4,
+  "confidence": 1.0,
+  "total_high_ratings": 30,
+  "total_low_ratings": 3,
+  "source_types": {
+    "SBD": 3,
+    "UNKNOWN": 1
+  },
+  "matching_method": "date_only",
+  "filtering_applied": [],
+  "collections": [
+    "acid-tests"
+  ]
+}

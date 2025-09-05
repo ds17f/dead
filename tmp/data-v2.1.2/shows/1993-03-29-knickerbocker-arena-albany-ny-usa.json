@@ -1,0 +1,192 @@
+{
+  "url": "https://jerrygarcia.com/show/1993-03-29-knickerbocker-arena-albany-ny-usa/",
+  "show_id": "1993-03-29-knickerbocker-arena-albany-ny-usa",
+  "band": "Grateful Dead",
+  "venue": "Knickerbocker Arena",
+  "location_raw": "Albany, NY",
+  "city": "Albany",
+  "state": "NY",
+  "country": "USA",
+  "date": "1993-03-29",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Let The Good Times Roll",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Feel Like A Stranger",
+          "url": "https://jerrygarcia.com/song/feel-like-a-stranger/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Loser",
+          "url": "https://jerrygarcia.com/song/loser/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Little Red Rooster",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Ramble On Rose",
+          "url": "https://jerrygarcia.com/song/ramble-on-rose/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Black Throated Wind",
+          "url": "https://jerrygarcia.com/song/black-throated-wind/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Lazy River Road",
+          "url": "https://jerrygarcia.com/song/lazy-river-road/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Johnny B. Goode",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Here Comes Sunshine",
+          "url": "https://jerrygarcia.com/song/here-comes-sunshine/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Looks Like Rain",
+          "url": "https://jerrygarcia.com/song/looks-like-rain/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Box of Rain",
+          "url": "https://jerrygarcia.com/song/box-of-rain/",
+          "segue_into_next": true
+        },
+        {
+          "name": "He's Gone",
+          "url": "https://jerrygarcia.com/song/hes-gone/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "The Last Time",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Wharf Rat",
+          "url": "https://jerrygarcia.com/song/wharf-rat/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Throwing Stones",
+          "url": "https://jerrygarcia.com/song/throwing-stones/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Not Fade Away",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "Liberty",
+          "url": "https://jerrygarcia.com/song/liberty/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Vince Welnick",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152431/VinceWelnick_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T09:13:13.297408",
+  "show_time": null,
+  "recordings": [
+    "gd93-03-29.sbd.wiley.13512.sbeok.shnf",
+    "gd1993-03-29.151342.sbd.miller.flac2448",
+    "gd1993-03-29.151665.sbd.cm.miller.t.flac16",
+    "gd1993-03-29.154852.mtx.seamons.ht137.flac16",
+    "gd93-03-29.schoeps.raras.8376.sbeok.shnf",
+    "gd1993-03-29.akg.andrewf.96025.flac1648",
+    "gd1993-03-29.139668.fob.schoeps.wise.clugston.flac1648",
+    "gd1993-03-29.119472.nak300.Boedicker.flac16",
+    "gd1993-03-29.136708.Nak300CP4.Baker.Keo.Flac2496",
+    "gd1993-03-29.akg.andrewf.96026.flac16",
+    "gd1993-03-29.140019.aud.lamarre.berger.flac1648",
+    "gd1993-03-29.144225.akg460b.ck63.flac1648",
+    "gd1993-03-29.136710.Nak300CP4.Baker.Keo.Flac1644",
+    "gd1993-03-29.134819.fob.jbraveman.flac1648"
+  ],
+  "best_recording": "gd93-03-29.sbd.wiley.13512.sbeok.shnf",
+  "avg_rating": 3.0979020979020975,
+  "raw_rating": 3.5705128205128207,
+  "recording_count": 14,
+  "confidence": 1.0,
+  "total_high_ratings": 14,
+  "total_low_ratings": 6,
+  "source_types": {
+    "SBD": 3,
+    "MATRIX": 1,
+    "UNKNOWN": 9,
+    "AUD": 1
+  },
+  "matching_method": "date_only",
+  "filtering_applied": []
+}

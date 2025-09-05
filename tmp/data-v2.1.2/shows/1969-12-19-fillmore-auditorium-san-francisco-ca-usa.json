@@ -1,0 +1,179 @@
+{
+  "url": "https://jerrygarcia.com/show/1969-12-19-fillmore-auditorium-san-francisco-ca-usa/",
+  "show_id": "1969-12-19-fillmore-auditorium-san-francisco-ca-usa",
+  "band": "Grateful Dead",
+  "venue": "Fillmore Auditorium",
+  "location_raw": "San Francisco, CA",
+  "city": "San Francisco",
+  "state": "CA",
+  "country": "USA",
+  "date": "1969-12-19",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Monkey And The Engineer",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Little Sadie",
+          "url": "https://jerrygarcia.com/song/little-sadie/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Long Black Limousine",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "I've Been All Around This World",
+          "url": "https://jerrygarcia.com/song/ive-been-all-around-this-world/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Mason's Children",
+          "url": "https://jerrygarcia.com/song/masons-children/",
+          "segue_into_next": false
+        },
+        {
+          "name": "China Cat Sunflower",
+          "url": "https://jerrygarcia.com/song/china-cat-sunflower/",
+          "segue_into_next": true
+        },
+        {
+          "name": "I Know You Rider",
+          "url": "https://jerrygarcia.com/song/i-know-you-rider/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Black Peter",
+          "url": "https://jerrygarcia.com/song/black-peter/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Hard To Handle",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Cumberland Blues",
+          "url": "https://jerrygarcia.com/song/cumberland-blues/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Casey Jones",
+          "url": "https://jerrygarcia.com/song/casey-jones/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Good Lovin'",
+          "url": "https://jerrygarcia.com/song/good-lovin/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Cryptical Envelopment",
+          "url": "https://jerrygarcia.com/song/cryptical-envelopment/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "The Other One",
+          "url": "https://jerrygarcia.com/song/the-other-one/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Cryptical Envelopment",
+          "url": "https://jerrygarcia.com/song/cryptical-envelopment/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Uncle John's Band",
+          "url": "https://jerrygarcia.com/song/uncle-johns-band/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Turn On Your Lovelight",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Ron \"Pigpen\" McKernan",
+      "instruments": "keyboards, harmonica, percussion, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152433/RonPigpenMcKernan_200-100x100.jpg"
+    },
+    {
+      "name": "Tom Constanten",
+      "instruments": "keyboards",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152432/TomConstanten_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "found",
+  "supporting_acts": [
+    "Osceola",
+    "Rhythm Dukes"
+  ],
+  "collection_timestamp": "2025-08-10T08:16:13.752103",
+  "show_time": null,
+  "recordings": [
+    "gd1969-12-19.sbd.clugston.5584.sbeok.shnf",
+    "gd69-12-19.sbd.hanno.9183.sbeok.shnf",
+    "gd1969-12-19.158623.sbd.miller.flac1644",
+    "gd1969-12-19.165168.unknown.aud.gen4.miller.t-flac1644",
+    "gd1969-12-19.161117.aud.hanwaker.flac2448"
+  ],
+  "best_recording": "gd1969-12-19.sbd.clugston.5584.sbeok.shnf",
+  "avg_rating": 4.005128205128205,
+  "raw_rating": 4.487179487179487,
+  "recording_count": 5,
+  "confidence": 1.0,
+  "total_high_ratings": 10,
+  "total_low_ratings": 0,
+  "source_types": {
+    "SBD": 3,
+    "AUD": 2
+  },
+  "matching_method": "date_only",
+  "filtering_applied": []
+}

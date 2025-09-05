@@ -1,0 +1,191 @@
+{
+  "url": "https://jerrygarcia.com/show/1991-03-20-capitol-centre-landover-md-usa/",
+  "show_id": "1991-03-20-capitol-centre-landover-md-usa",
+  "band": "Grateful Dead",
+  "venue": "Capital Centre",
+  "location_raw": "Landover, MD",
+  "city": "Landover",
+  "state": "MD",
+  "country": "USA",
+  "date": "1991-03-20",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Feel Like A Stranger",
+          "url": "https://jerrygarcia.com/song/feel-like-a-stranger/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Cold Rain And Snow",
+          "url": "https://jerrygarcia.com/song/cold-rain-and-snow/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Little Red Rooster",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Althea",
+          "url": "https://jerrygarcia.com/song/althea/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Black Throated Wind",
+          "url": "https://jerrygarcia.com/song/black-throated-wind/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Tennessee Jed",
+          "url": "https://jerrygarcia.com/song/tennessee-jed/",
+          "segue_into_next": false
+        },
+        {
+          "name": "The Music Never Stopped",
+          "url": "https://jerrygarcia.com/song/the-music-never-stopped/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Might As Well",
+          "url": "https://jerrygarcia.com/song/might-as-well/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Eyes Of The World",
+          "url": "https://jerrygarcia.com/song/eyes-of-the-world/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Foolish Heart",
+          "url": "https://jerrygarcia.com/song/foolish-heart/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Estimated Prophet",
+          "url": "https://jerrygarcia.com/song/estimated-prophet/",
+          "segue_into_next": true
+        },
+        {
+          "name": "He's Gone",
+          "url": "https://jerrygarcia.com/song/hes-gone/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "The Other One",
+          "url": "https://jerrygarcia.com/song/the-other-one/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Wharf Rat",
+          "url": "https://jerrygarcia.com/song/wharf-rat/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Sugar Magnolia",
+          "url": "https://jerrygarcia.com/song/sugar-magnolia/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "The Weight",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Bruce Hornsby",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152446/BruceHornsby_200-100x100.jpg"
+    },
+    {
+      "name": "Vince Welnick",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152431/VinceWelnick_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T09:08:05.330496",
+  "show_time": null,
+  "recordings": [
+    "gd91-03-20.sbd.oconnor.11272.sbeok.shnf",
+    "gd1991-03-20.sbd.miller.fixed-98038.93177.sbeok.flac16",
+    "gd1991-03-20.sbd.miller.93038.sbeok.flac16",
+    "gd1991-03-20.154460.UltraMatrix.sbd.cm.miller.t.flac16",
+    "gd1991-03-20.mtx.seamons.111794.flac16",
+    "gd1991-03-20.152131.ultramatrix.miller.flac2496",
+    "gd1991-03-20.aud-set2.mcgugh.hanscom.76521.sbeok.flac16",
+    "gd1991-03-20.nak.cohen.107168.flac16",
+    "gd1991-03-20.149506.OTS.Schoeps.Brotman.Metchick.Miller.Noel.t-flac1648",
+    "gd1991-03-20.132417.Nak300sSenn441s.Fitzy.Keo.Flac2496",
+    "gd1991-03-20.aud-schk.miller.34559.sbeok.flac16",
+    "gd1991-03-20.132416.Nak300sSenn441s.Fitzy.Keo.Flac1644",
+    "gd1991-03-20.138740.Schoeps-cmc4-mk4.gastwirt.miller.sirmick.sbeok.flac16"
+  ],
+  "best_recording": "gd91-03-20.sbd.oconnor.11272.sbeok.shnf",
+  "avg_rating": 3.6755319148936167,
+  "raw_rating": 4.121212121212121,
+  "recording_count": 13,
+  "confidence": 1.0,
+  "total_high_ratings": 27,
+  "total_low_ratings": 1,
+  "source_types": {
+    "SBD": 4,
+    "MATRIX": 2,
+    "AUD": 2,
+    "UNKNOWN": 5
+  },
+  "matching_method": "date_only",
+  "filtering_applied": []
+}

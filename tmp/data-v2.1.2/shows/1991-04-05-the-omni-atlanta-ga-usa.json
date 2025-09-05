@@ -1,0 +1,194 @@
+{
+  "url": "https://jerrygarcia.com/show/1991-04-05-the-omni-atlanta-ga-usa/",
+  "show_id": "1991-04-05-the-omni-atlanta-ga-usa",
+  "band": "Grateful Dead",
+  "venue": "The Omni",
+  "location_raw": "Atlanta, GA",
+  "city": "Atlanta",
+  "state": "GA",
+  "country": "USA",
+  "date": "1991-04-05",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Shakedown Street",
+          "url": "https://jerrygarcia.com/song/shakedown-street/",
+          "segue_into_next": false
+        },
+        {
+          "name": "New Minglewood Blues",
+          "url": "https://jerrygarcia.com/song/new-minglewood-blues/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Stagger Lee",
+          "url": "https://jerrygarcia.com/song/stagger-lee/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Mama Tried",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Mexicali Blues",
+          "url": "https://jerrygarcia.com/song/mexicali-blues/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Friend Of The Devil",
+          "url": "https://jerrygarcia.com/song/friend-of-the-devil/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Queen Jane Approximately",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Deal",
+          "url": "https://jerrygarcia.com/song/deal/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Iko Iko",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Saint Of Circumstance",
+          "url": "https://jerrygarcia.com/song/saint-of-circumstance/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Terrapin Station",
+          "url": "https://jerrygarcia.com/song/terrapin-station/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Stir It Up Jam",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "The Other One",
+          "url": "https://jerrygarcia.com/song/the-other-one/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Wharf Rat",
+          "url": "https://jerrygarcia.com/song/wharf-rat/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Throwing Stones",
+          "url": "https://jerrygarcia.com/song/throwing-stones/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Not Fade Away",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "The Mighty Quinn (Quinn The Eskimo)",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Bruce Hornsby",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152446/BruceHornsby_200-100x100.jpg"
+    },
+    {
+      "name": "Vince Welnick",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152431/VinceWelnick_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T09:08:30.793441",
+  "show_time": null,
+  "recordings": [
+    "gd91-04-05.sbd.gardner.4162.sbeok.shnf",
+    "gd1991-04-05.152171.UltraMatrix.sbd.cm.miller.t.flac16",
+    "gd1991-04-05.132572.sbd.healy.latvala.wise.flac16",
+    "gd1991-04-05.152099.ultramatrix.miller.flac2496",
+    "gd1991-04-05.nak300.holtz.jaz.103624.flac16",
+    "gd1991-04-05.133956.Nak300s-Senn441s.Baker.Keo.Flac2496",
+    "gd1991-04-05.133955.Nak300s-Senn441s.Baker.Keo.Flac1644",
+    "gd1991-04-05.112389.Nak300CP4Senn441.Floater.Keo.flac16",
+    "gd1991-04-05.149628.FOB.Schoeps.Brotman.Metchick.Miller.Noel.t-flac1648",
+    "gd1991-04-05.138839.FOB.Schoeps.S2.Ammons.Noel.t-flac16",
+    "gd1991-04-05.140692.s2.OTS.Neumann.Oade.Gastwirt.Miller.Noel.t-flac1648",
+    "gd1991-04-05.112390.Nak300CP4Senn441.Floater.Keo.flac24"
+  ],
+  "best_recording": "gd91-04-05.sbd.gardner.4162.sbeok.shnf",
+  "avg_rating": 4.230769230769232,
+  "raw_rating": 4.681481481481482,
+  "recording_count": 12,
+  "confidence": 1.0,
+  "total_high_ratings": 42,
+  "total_low_ratings": 0,
+  "source_types": {
+    "SBD": 3,
+    "MATRIX": 1,
+    "UNKNOWN": 8
+  },
+  "matching_method": "date_only",
+  "filtering_applied": []
+}

@@ -1,0 +1,220 @@
+{
+  "url": "https://jerrygarcia.com/show/1973-02-17-st-paul-autitorium-st-paul-mn-usa/",
+  "show_id": "1973-02-17-st-paul-autitorium-st-paul-mn-usa",
+  "band": "Grateful Dead",
+  "venue": "St. Paul Auditorium",
+  "location_raw": "St. Paul, MN",
+  "city": "St. Paul",
+  "state": "MN",
+  "country": "USA",
+  "date": "1973-02-17",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "The Promised Land",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "He's Gone",
+          "url": "https://jerrygarcia.com/song/hes-gone/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Looks Like Rain",
+          "url": "https://jerrygarcia.com/song/looks-like-rain/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Box of Rain",
+          "url": "https://jerrygarcia.com/song/box-of-rain/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Wave That Flag",
+          "url": "https://jerrygarcia.com/song/wave-that-flag/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Mexicali Blues",
+          "url": "https://jerrygarcia.com/song/mexicali-blues/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Bird Song",
+          "url": "https://jerrygarcia.com/song/bird-song/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Beat It On Down The Line",
+          "url": "https://jerrygarcia.com/song/beat-it-on-down-the-line/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Loose Lucy",
+          "url": "https://jerrygarcia.com/song/loose-lucy/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Me And Bobby McGee",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Stella Blue",
+          "url": "https://jerrygarcia.com/song/stella-blue/",
+          "segue_into_next": false
+        },
+        {
+          "name": "El Paso",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "They Love Each Other",
+          "url": "https://jerrygarcia.com/song/they-love-each-other/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Playing In The Band",
+          "url": "https://jerrygarcia.com/song/playin-in-the-band/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Truckin'",
+          "url": "https://jerrygarcia.com/song/truckin/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Row Jimmy",
+          "url": "https://jerrygarcia.com/song/row-jimmy/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Big River",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "You Ain't Woman Enough",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Here Comes Sunshine",
+          "url": "https://jerrygarcia.com/song/here-comes-sunshine/",
+          "segue_into_next": true
+        },
+        {
+          "name": "China Cat Sunflower",
+          "url": "https://jerrygarcia.com/song/china-cat-sunflower/",
+          "segue_into_next": true
+        },
+        {
+          "name": "I Know You Rider",
+          "url": "https://jerrygarcia.com/song/i-know-you-rider/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Around & Around",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Not Fade Away",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Goin' Down The Road Feeling Bad",
+          "url": "https://jerrygarcia.com/song/goin-down-the-road-feelin-bad/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Not Fade Away",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "One More Saturday Night",
+          "url": "https://jerrygarcia.com/song/one-more-saturday-night/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "Casey Jones",
+          "url": "https://jerrygarcia.com/song/casey-jones/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Keith Godchaux",
+      "instruments": "keyboards",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152439/KeithGodchaux_200-100x100.jpg"
+    },
+    {
+      "name": "Donna Jean Godchaux",
+      "instruments": "vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2013/07/12152444/DonnaGodchaux_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T08:27:16.385326",
+  "show_time": null,
+  "recordings": [
+    "gd1973-02-17.sbd.ashley-field.32875.sbeok.flac16",
+    "gd1973-02-17.150300.sbd.miller.flac1648",
+    "gd1973-02-17.sbd.miller.32580.sbeok.flac16",
+    "gd73-02-17.sbd.carman.11771.sbeok.shnf",
+    "gd1973-02-17.163792.sbd.fixed.miller.flac1648"
+  ],
+  "best_recording": "gd1973-02-17.sbd.ashley-field.32875.sbeok.flac16",
+  "avg_rating": 4.164772727272728,
+  "raw_rating": 4.2897727272727275,
+  "recording_count": 5,
+  "confidence": 1.0,
+  "total_high_ratings": 34,
+  "total_low_ratings": 2,
+  "source_types": {
+    "SBD": 5
+  },
+  "matching_method": "date_only",
+  "filtering_applied": []
+}

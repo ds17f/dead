@@ -1,0 +1,146 @@
+{
+  "url": "https://jerrygarcia.com/show/1969-04-17-washington-u-st-louis-mo-usa/",
+  "show_id": "1969-04-17-washington-u-st-louis-mo-usa",
+  "band": "Grateful Dead",
+  "venue": "The Quadrangle, Washington U.",
+  "location_raw": "St. Louis, MO",
+  "city": "St. Louis",
+  "state": "MO",
+  "country": "USA",
+  "date": "1969-04-17",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Hard To Handle",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Morning Dew",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Good Morning Little School Girl",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Dark Star",
+          "url": "https://jerrygarcia.com/song/dark-star/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Saint Stephen",
+          "url": "https://jerrygarcia.com/song/saint-stephen/",
+          "segue_into_next": true
+        },
+        {
+          "name": "It's A Sin",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Saint Stephen",
+          "url": "https://jerrygarcia.com/song/saint-stephen/",
+          "segue_into_next": true
+        },
+        {
+          "name": "The Eleven",
+          "url": "https://jerrygarcia.com/song/the-eleven/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Turn On Your Lovelight",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Cryptical Envelopment",
+          "url": "https://jerrygarcia.com/song/cryptical-envelopment/",
+          "segue_into_next": true
+        },
+        {
+          "name": "The Other One",
+          "url": "https://jerrygarcia.com/song/the-other-one/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Cryptical Envelopment",
+          "url": "https://jerrygarcia.com/song/cryptical-envelopment/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Caution (Do Not Stop On Tracks)",
+          "url": "https://jerrygarcia.com/song/caution-do-not-stop-on-tracks/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Ron \"Pigpen\" McKernan",
+      "instruments": "keyboards, harmonica, percussion, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152433/RonPigpenMcKernan_200-100x100.jpg"
+    },
+    {
+      "name": "Tom Constanten",
+      "instruments": "keyboards",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152432/TomConstanten_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "found",
+  "supporting_acts": [
+    "Alvin Pivil"
+  ],
+  "collection_timestamp": "2025-08-10T08:13:10.284936",
+  "show_time": null,
+  "recordings": [
+    "gd1969-04-17.156586.sbd.bear.latvala.eaton.miller.flac16"
+  ],
+  "best_recording": "gd1969-04-17.156586.sbd.bear.latvala.eaton.miller.flac16",
+  "avg_rating": 3.15,
+  "raw_rating": 4.5,
+  "recording_count": 1,
+  "confidence": 0.4,
+  "total_high_ratings": 2,
+  "total_low_ratings": 0,
+  "source_types": {
+    "SBD": 1
+  },
+  "matching_method": "date_only",
+  "filtering_applied": [],
+  "collections": [
+    "download-series-vol-12"
+  ]
+}

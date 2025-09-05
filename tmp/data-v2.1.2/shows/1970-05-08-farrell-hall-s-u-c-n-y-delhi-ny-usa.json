@@ -1,0 +1,65 @@
+{
+  "url": "https://jerrygarcia.com/show/1970-05-08-farrell-hall-s-u-c-n-y-delhi-ny-usa/",
+  "show_id": "1970-05-08-farrell-hall-s-u-c-n-y-delhi-ny-usa",
+  "band": "Grateful Dead",
+  "venue": "Farrell Hall, S.U.C.N.Y.",
+  "location_raw": "Delhi, NY",
+  "city": "Delhi",
+  "state": "NY",
+  "country": "USA",
+  "date": "1970-05-08",
+  "setlist_status": "missing",
+  "setlist": null,
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Ron \"Pigpen\" McKernan",
+      "instruments": "keyboards, harmonica, percussion, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152433/RonPigpenMcKernan_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T08:18:26.251417",
+  "show_time": null,
+  "recordings": [
+    "gd70-05-08.aud.miller.32056.sbeok.flacf"
+  ],
+  "best_recording": "gd70-05-08.aud.miller.32056.sbeok.flacf",
+  "avg_rating": 2.17,
+  "raw_rating": 3.1,
+  "recording_count": 1,
+  "confidence": 1.0,
+  "total_high_ratings": 9,
+  "total_low_ratings": 8,
+  "source_types": {
+    "AUD": 1
+  },
+  "matching_method": "date_only",
+  "filtering_applied": []
+}

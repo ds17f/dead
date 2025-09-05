@@ -1,0 +1,186 @@
+{
+  "url": "https://jerrygarcia.com/show/1988-02-16-henry-j-kaiser-convention-center-oakland-ca-usa/",
+  "show_id": "1988-02-16-henry-j-kaiser-convention-center-oakland-ca-usa",
+  "band": "Grateful Dead",
+  "venue": "Henry J. Kaiser Convention Center",
+  "location_raw": "Oakland, CA",
+  "city": "Oakland",
+  "state": "CA",
+  "country": "USA",
+  "date": "1988-02-16",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Jack Straw",
+          "url": "https://jerrygarcia.com/song/jack-straw/",
+          "segue_into_next": true
+        },
+        {
+          "name": "West L.A. Fadeaway",
+          "url": "https://jerrygarcia.com/song/west-l-a-fadeaway/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Me And My Uncle",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Mexicali Blues",
+          "url": "https://jerrygarcia.com/song/mexicali-blues/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Row Jimmy",
+          "url": "https://jerrygarcia.com/song/row-jimmy/",
+          "segue_into_next": false
+        },
+        {
+          "name": "When I Paint My Masterpiece",
+          "url": "https://jerrygarcia.com/song/when-i-paint-my-masterpiece/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Bird Song",
+          "url": "https://jerrygarcia.com/song/bird-song/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Drums*",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Iko Iko",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Playing In The Band",
+          "url": "https://jerrygarcia.com/song/playin-in-the-band/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Eyes Of The World",
+          "url": "https://jerrygarcia.com/song/eyes-of-the-world/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Jam",
+          "url": "https://jerrygarcia.com/song/jam/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "The Wheel",
+          "url": "https://jerrygarcia.com/song/the-wheel/",
+          "segue_into_next": true
+        },
+        {
+          "name": "All Along The Watchtower",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Dear Mr. Fantasy",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Not Fade Away",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "U.S. Blues",
+          "url": "https://jerrygarcia.com/song/u-s-blues/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Brent Mydland",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152446/BretMydland_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "found",
+  "supporting_acts": [
+    "Dr. John"
+  ],
+  "collection_timestamp": "2025-08-10T09:00:00.618297",
+  "show_time": null,
+  "recordings": [
+    "gd1988-02-16.sbd.walker-scotton.miller.103111.flac16",
+    "gd1988-02-16.sbd.walker-scotton.miller.88400.sbeok.flac16",
+    "gd88-02-16.sbd.hinko.24672.sbeok.shnf",
+    "gd1988-02-16.nak300.andrewf.96636.flac16",
+    "gd88-02-16.aud.wiley.15477.sbeok.shnf",
+    "gd1988-02-16.163695.fob.schoeps.unknown.ebel.flac16",
+    "gd1988-02-16.aud.schoepsCMC3.miller.14954.shnf"
+  ],
+  "best_recording": "gd1988-02-16.sbd.walker-scotton.miller.103111.flac16",
+  "avg_rating": 2.8134057971014492,
+  "raw_rating": 3.5,
+  "recording_count": 7,
+  "confidence": 1.0,
+  "total_high_ratings": 5,
+  "total_low_ratings": 4,
+  "source_types": {
+    "SBD": 3,
+    "AUD": 3,
+    "UNKNOWN": 1
+  },
+  "matching_method": "date_only",
+  "filtering_applied": []
+}

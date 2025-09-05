@@ -1,0 +1,201 @@
+{
+  "url": "https://jerrygarcia.com/show/1990-07-10-carter-finley-stadium-raleigh-nc-usa/",
+  "show_id": "1990-07-10-carter-finley-stadium-raleigh-nc-usa",
+  "band": "Grateful Dead",
+  "venue": "Carter-Finley Stadium",
+  "location_raw": "Raleigh, NC",
+  "city": "Raleigh",
+  "state": "NC",
+  "country": "USA",
+  "date": "1990-07-10",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Jack Straw",
+          "url": "https://jerrygarcia.com/song/jack-straw/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Loser",
+          "url": "https://jerrygarcia.com/song/loser/",
+          "segue_into_next": false
+        },
+        {
+          "name": "We Can Run",
+          "url": "https://jerrygarcia.com/song/we-can-run/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Me And My Uncle",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Big River",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Friend Of The Devil",
+          "url": "https://jerrygarcia.com/song/friend-of-the-devil/",
+          "segue_into_next": false
+        },
+        {
+          "name": "When I Paint My Masterpiece",
+          "url": "https://jerrygarcia.com/song/when-i-paint-my-masterpiece/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Bird Song",
+          "url": "https://jerrygarcia.com/song/bird-song/",
+          "segue_into_next": true
+        },
+        {
+          "name": "The Promised Land*",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Iko Iko*",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Playing In The Band",
+          "url": "https://jerrygarcia.com/song/playin-in-the-band/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Uncle John's Band",
+          "url": "https://jerrygarcia.com/song/uncle-johns-band/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Playing In The Band Jam*",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "The Other One",
+          "url": "https://jerrygarcia.com/song/the-other-one/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Stella Blue",
+          "url": "https://jerrygarcia.com/song/stella-blue/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Not Fade Away",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "Brokedown Palace",
+          "url": "https://jerrygarcia.com/song/brokedown-palace/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Brent Mydland",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152446/BretMydland_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "found",
+  "supporting_acts": [
+    "Bruce Hornsby & The Range"
+  ],
+  "collection_timestamp": "2025-08-10T09:06:27.336182",
+  "show_time": null,
+  "recordings": [
+    "gd1990-07-10.sbd.miller.106373.flac16",
+    "gd90-07-10.sbd.unknown.8256.sbeok.shnf",
+    "gd1990-07-10.150367.sbd.miller.flac2496",
+    "gd1990-07-10.150501.UltraMatrix.sbd.cm.miller.flac16",
+    "gd1990-07-10.128383.mtx.nicksmix.flac16",
+    "gd1990-07-10.150396.mtx.tobin.flac16",
+    "gd1990-07-10.AKG451.Currier.Keo.126181.Flac2496",
+    "gd1990-07-10.schoeps.lynn.31790.sbefail.flac16",
+    "gd1990-07-10.150398.5-1.tobin.flac1648",
+    "gd1990-07-10.Nak100sSenn421.Hill.Keo.130583.Flac2496",
+    "gd1990-07-10.Nak100sSenn421.Hill.Keo.130584.Flac1644",
+    "gd1990-07-10.133954.akg414btl-fob-dantepper.flac16",
+    "gd1990-07-10.150397.dts.tobin.flac16",
+    "gd1990-07-10.142694.Schoeps.Brotman.Fanari.Katzeff.Mattes.Miller.Noel.t-flac1648",
+    "gd1990-07-10.149323.DAK-OTS.boedicker.flac1644",
+    "gd1990-07-10.Nak300CP4.Baker.Keo.130403.Flac2496",
+    "gd1990-07-10.143601.FOB.Schoeps.Brotman.Miller.Noel.t-flac1648",
+    "gd1990-07-10.Nak300CP4.Baker.Keo.130402.Flac1644",
+    "gd1990-07-10.135049.bltz.flac2496",
+    "gd1990-07-10.164505.senn.me80.hessberg.miller.clugston.flac2496",
+    "gd1990-07-10.164504.senn.me80.hessberg.miller.clugston.flac1648",
+    "gd1990-07-10.AKG451.Currier.Keo.126182.Flac1644"
+  ],
+  "best_recording": "gd1990-07-10.sbd.miller.106373.flac16",
+  "avg_rating": 3.9439382032505796,
+  "raw_rating": 4.413852813852814,
+  "recording_count": 22,
+  "confidence": 1.0,
+  "total_high_ratings": 50,
+  "total_low_ratings": 0,
+  "source_types": {
+    "SBD": 4,
+    "MATRIX": 2,
+    "UNKNOWN": 16
+  },
+  "matching_method": "date_only",
+  "filtering_applied": []
+}

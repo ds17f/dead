@@ -1,0 +1,198 @@
+{
+  "url": "https://jerrygarcia.com/show/1991-09-05-richfield-coliseum-richfield-oh-usa/",
+  "show_id": "1991-09-05-richfield-coliseum-richfield-oh-usa",
+  "band": "Grateful Dead",
+  "venue": "Richfield Coliseum",
+  "location_raw": "Richfield, OH",
+  "city": "Richfield",
+  "state": "OH",
+  "country": "USA",
+  "date": "1991-09-05",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Mississippi Half-Step Uptown Toodeloo",
+          "url": "https://jerrygarcia.com/song/mississippi-half-step-uptown-toodeloo/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Little Red Rooster",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Stagger Lee",
+          "url": "https://jerrygarcia.com/song/stagger-lee/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Queen Jane Approximately",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Ramble On Rose",
+          "url": "https://jerrygarcia.com/song/ramble-on-rose/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Cassidy",
+          "url": "https://jerrygarcia.com/song/cassidy/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Don't Ease Me In",
+          "url": "https://jerrygarcia.com/song/dont-ease-me-in/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "China Cat Sunflower",
+          "url": "https://jerrygarcia.com/song/china-cat-sunflower/",
+          "segue_into_next": true
+        },
+        {
+          "name": "I Know You Rider",
+          "url": "https://jerrygarcia.com/song/i-know-you-rider/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Man Smart, Woman Smarter",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Ship Of Fools",
+          "url": "https://jerrygarcia.com/song/ship-of-fools/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Truckin'",
+          "url": "https://jerrygarcia.com/song/truckin/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Smokestack Lightning",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "I Need A Miracle",
+          "url": "https://jerrygarcia.com/song/i-need-a-miracle/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Black Peter",
+          "url": "https://jerrygarcia.com/song/black-peter/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Sugar Magnolia",
+          "url": "https://jerrygarcia.com/song/sugar-magnolia/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "U.S. Blues",
+          "url": "https://jerrygarcia.com/song/u-s-blues/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Bruce Hornsby",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152446/BruceHornsby_200-100x100.jpg"
+    },
+    {
+      "name": "Vince Welnick",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152431/VinceWelnick_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T09:09:42.779164",
+  "show_time": null,
+  "recordings": [
+    "gd91-09-05.sbd.gardner.5559.sbeok.shnf",
+    "gd1991-09-05.sbd.gardner.barberi-fix.121620.sbefixed.flac16",
+    "gd1991-09-05.150285.sbd.cm.miller.flac1644",
+    "gd1991-09-05.150030.sbd.miller.flac2496",
+    "gd1991-09-05.mtx.sirmick.92785.sbeok.flac16",
+    "gd1991-09-05.132961.mtx.dusborne.flac16",
+    "gd1991-09-05.147491.mtx.tobin.flac16",
+    "gd1991-09-05.fob.GEMS.91803.flac16",
+    "gd1991-09-05.147569.beyerCM101.ebel.flac2448",
+    "gd1991-09-05.138373.akg414.flac1644",
+    "gd1991-09-05.147493.5-1.tobin.flac1648",
+    "gd1991-09-05.149460.fob.BK4011.brennecke.varnum.ebel.flac1648",
+    "gd1991-09-05.151812.FOB.Schoeps.Master.DAT.ONeill.Mahoney.Noel.t-flac1648",
+    "gd1991-09-05.147492.dts.tobin.flac16",
+    "gd1991-09-05.sennME80.wklitz.94300.flac16",
+    "gd1991-09-05.132811.at835b.cdipietro.flac"
+  ],
+  "best_recording": "gd91-09-05.sbd.gardner.5559.sbeok.shnf",
+  "avg_rating": 3.3664795918367347,
+  "raw_rating": 4.153061224489796,
+  "recording_count": 16,
+  "confidence": 1.0,
+  "total_high_ratings": 10,
+  "total_low_ratings": 0,
+  "source_types": {
+    "SBD": 4,
+    "MATRIX": 3,
+    "UNKNOWN": 9
+  },
+  "matching_method": "date_only",
+  "filtering_applied": []
+}

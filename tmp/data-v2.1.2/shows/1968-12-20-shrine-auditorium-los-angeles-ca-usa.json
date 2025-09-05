@@ -1,0 +1,98 @@
+{
+  "url": "https://jerrygarcia.com/show/1968-12-20-shrine-auditorium-los-angeles-ca-usa/",
+  "show_id": "1968-12-20-shrine-auditorium-los-angeles-ca-usa",
+  "band": "Grateful Dead",
+  "venue": "Shrine Exposition Hall",
+  "location_raw": "Los Angeles, CA",
+  "city": "Los Angeles",
+  "state": "CA",
+  "country": "USA",
+  "date": "1968-12-20",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "The Eleven",
+          "url": "https://jerrygarcia.com/song/the-eleven/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Mountains Of The Moon",
+          "url": "https://jerrygarcia.com/song/mountains-of-the-moon/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Turn On Your Lovelight",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Ron \"Pigpen\" McKernan",
+      "instruments": "keyboards, harmonica, percussion, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152433/RonPigpenMcKernan_200-100x100.jpg"
+    },
+    {
+      "name": "Tom Constanten",
+      "instruments": "keyboards",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152432/TomConstanten_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "found",
+  "supporting_acts": [
+    "Country Joe & The Fish",
+    "Spirit",
+    "Pulse",
+    "Sir Douglas Quintet",
+    "Mint Tattoo"
+  ],
+  "collection_timestamp": "2025-08-10T08:11:16.136034",
+  "show_time": null,
+  "recordings": [
+    "gd1968-12-20.sbd.miller.89663.sbeok.flac16",
+    "gd68-12-20.sbd.tiedrich.9532.sbeok.shnf"
+  ],
+  "best_recording": "gd1968-12-20.sbd.miller.89663.sbeok.flac16",
+  "avg_rating": 4.428571428571429,
+  "raw_rating": 4.428571428571429,
+  "recording_count": 2,
+  "confidence": 1.0,
+  "total_high_ratings": 11,
+  "total_low_ratings": 0,
+  "source_types": {
+    "SBD": 2
+  },
+  "matching_method": "date_only",
+  "filtering_applied": []
+}

@@ -1,0 +1,112 @@
+{
+  "url": "https://jerrygarcia.com/show/1968-05-18-santa-clara-county-fairgrounds-santa-clara-ca-usa/",
+  "show_id": "1968-05-18-santa-clara-county-fairgrounds-santa-clara-ca-usa",
+  "band": "Grateful Dead",
+  "venue": "Santa Clara County Fairgrounds",
+  "location_raw": "Santa Clara, CA",
+  "city": "Santa Clara",
+  "state": "CA",
+  "country": "USA",
+  "date": "1968-05-18",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Alligator",
+          "url": "https://jerrygarcia.com/song/alligator/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Alligator",
+          "url": "https://jerrygarcia.com/song/alligator/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Caution (Do Not Stop On Tracks)",
+          "url": "https://jerrygarcia.com/song/caution-do-not-stop-on-tracks/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Feedback",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Ron \"Pigpen\" McKernan",
+      "instruments": "keyboards, harmonica, percussion, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152433/RonPigpenMcKernan_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "found",
+  "supporting_acts": [
+    "The Doors",
+    "The Animals",
+    "Big Brother & The Holding Co.",
+    "The Youngbloods",
+    "Electric Flag",
+    "Jefferson Airplane",
+    "Kaleidoscope",
+    "Country Joe & The Fish",
+    "Taj Mahall"
+  ],
+  "collection_timestamp": "2025-08-10T08:09:04.011657",
+  "show_time": null,
+  "recordings": [
+    "gd1968-05-18.aud.goodbear.50.shnf",
+    "gd68-05-18.aud.jools.18216.sbeok.shnf",
+    "gd1968-05-18.aud.jorma.gmb.sbeok.94591.flac16",
+    "gd1968-05-18.aud.dad.82515.flac16",
+    "gd1968-05-18.aud.kaukonen.11796.shnf"
+  ],
+  "best_recording": "gd1968-05-18.aud.goodbear.50.shnf",
+  "avg_rating": 3.120833333333333,
+  "raw_rating": 4.583333333333333,
+  "recording_count": 5,
+  "confidence": 1.0,
+  "total_high_ratings": 32,
+  "total_low_ratings": 0,
+  "source_types": {
+    "AUD": 5
+  },
+  "matching_method": "venue_based",
+  "filtering_applied": [
+    "venue_matching: 5 matched, 0 unmatched"
+  ]
+}

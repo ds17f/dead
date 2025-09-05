@@ -1,0 +1,18 @@
+{
+  "identifier": "gd1990-02-26.137905.mtx.photoleon.t-flac16",
+  "title": "Grateful Dead Live at Oakland-Alameda County Coliseum on 1990-02-26",
+  "date": "1990-02-26",
+  "venue": "Oakland-Alameda County Coliseum",
+  "location": "Oakland, CA",
+  "source_type": "MATRIX",
+  "lineage": "",
+  "taper": "",
+  "source": "<b>flac16/48kHz</b>; 2 source matrix by PhotoLeon using Audacity 2.0.6; Source 1: [shnid: 451] SBD > DAT; Conversion: D100 > Montego II > CD > HD via EAC > SHN; and Source 2: Digital Audience Recording by Rick Katzeff and Ted Mattes using Schoeps CMC 44> ? (presumed oade)> (presumed sv-250/255); Tranfer: Fostex D-5 (optical)> M-Audio USB Transit> Audacity @ 16/48 (fades)> 16/44> CDWave (tracking)> TLH (SBE/Flac16/md5); Audacity: Alligned -> Labeled -> DC offset removed & normalized -> flac 16/48; tags & checksums created in xACT",
+  "runtime": "167:37.153",
+  "rating": 3.3600000000000003,
+  "review_count": 3,
+  "confidence": 0.6,
+  "raw_rating": 4.666666666666667,
+  "high_ratings": 3,
+  "low_ratings": 0
+}

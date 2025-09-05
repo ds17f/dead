@@ -1,0 +1,204 @@
+{
+  "url": "https://jerrygarcia.com/show/1992-05-31-sam-boyd-silver-bowl-u-n-l-v-las-vegas-nv-usa/",
+  "show_id": "1992-05-31-sam-boyd-silver-bowl-u-n-l-v-las-vegas-nv-usa",
+  "band": "Grateful Dead",
+  "venue": "Sam Boyd Silver Bowl, U.N.L.V.",
+  "location_raw": "Las Vegas, NV",
+  "city": "Las Vegas",
+  "state": "NV",
+  "country": "USA",
+  "date": "1992-05-31",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Help On The Way",
+          "url": "https://jerrygarcia.com/song/help-on-the-way/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Slipknot",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Franklin's Tower",
+          "url": "https://jerrygarcia.com/song/franklins-tower/",
+          "segue_into_next": false
+        },
+        {
+          "name": "New Minglewood Blues",
+          "url": "https://jerrygarcia.com/song/new-minglewood-blues/",
+          "segue_into_next": false
+        },
+        {
+          "name": "It Must Have Been The Roses",
+          "url": "https://jerrygarcia.com/song/it-must-have-been-the-roses/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Queen Jane Approximately",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Bird Song",
+          "url": "https://jerrygarcia.com/song/bird-song/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Picasso Moon",
+          "url": "https://jerrygarcia.com/song/picasso-moon/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Scarlet Begonias",
+          "url": "https://jerrygarcia.com/song/scarlet-begonias/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Fire On The Mountain",
+          "url": "https://jerrygarcia.com/song/fire-on-the-mountain/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Man Smart, Woman Smarter",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "So Many Roads",
+          "url": "https://jerrygarcia.com/song/so-many-roads/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Saint Of Circumstance",
+          "url": "https://jerrygarcia.com/song/saint-of-circumstance/",
+          "segue_into_next": true
+        },
+        {
+          "name": "He's Gone",
+          "url": "https://jerrygarcia.com/song/hes-gone/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Attics Of My Life",
+          "url": "https://jerrygarcia.com/song/attics-of-my-life/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Spoonful*",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "The Other One",
+          "url": "https://jerrygarcia.com/song/the-other-one/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Morning Dew*",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "Baba O'RileyNotes",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Tomorrow Never KnowsNotes",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Vince Welnick",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152431/VinceWelnick_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "found",
+  "supporting_acts": [
+    "Steve Miller Band"
+  ],
+  "collection_timestamp": "2025-08-10T09:11:35.397902",
+  "show_time": null,
+  "recordings": [
+    "gd92-05-31.sbd.paino.544.sbefail.shnf",
+    "gd1992-05-31.sbd.miller.87281.sbeok.flac16",
+    "gd1992-05-31.sbd.miller.92388.sbeok.flac16",
+    "gd1992-05-31.150298.sbd.cm.miller.flac16",
+    "gd1992-05-31.sbd.paino.tetzeli.fix-544.34692.reflac.flac16",
+    "gd1992-05-31.150039.sbd.miller.flac2496",
+    "gd1992-05-31.116420.josephsonc-640.chuckm.flac16",
+    "gd1992-05-31.118794.NeumannKMF4.daweez.d5scott.flac16",
+    "gd1992-05-31.151087.aud.lohr.vernon.flac2496",
+    "gd1992-05-31.151086.aud.lohr-vernon.flac1648"
+  ],
+  "best_recording": "gd92-05-31.sbd.paino.544.sbefail.shnf",
+  "avg_rating": 4.084262246993252,
+  "raw_rating": 4.208152958152958,
+  "recording_count": 10,
+  "confidence": 1.0,
+  "total_high_ratings": 46,
+  "total_low_ratings": 6,
+  "source_types": {
+    "SBD": 6,
+    "UNKNOWN": 2,
+    "AUD": 2
+  },
+  "matching_method": "date_only",
+  "filtering_applied": []
+}

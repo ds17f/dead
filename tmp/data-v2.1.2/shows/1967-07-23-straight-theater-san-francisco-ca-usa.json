@@ -1,0 +1,66 @@
+{
+  "url": "https://jerrygarcia.com/show/1967-07-23-straight-theater-san-francisco-ca-usa/",
+  "show_id": "1967-07-23-straight-theater-san-francisco-ca-usa",
+  "band": "Grateful Dead",
+  "venue": "Straight Theater",
+  "location_raw": "San Francisco, CA",
+  "city": "San Francisco",
+  "state": "CA",
+  "country": "USA",
+  "date": "1967-07-23",
+  "setlist_status": "missing",
+  "setlist": null,
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Ron \"Pigpen\" McKernan",
+      "instruments": "keyboards, harmonica, percussion, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152433/RonPigpenMcKernan_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "found",
+  "supporting_acts": [
+    "Phoenix",
+    "The Wildflower",
+    "Big Brother & The Holding Company"
+  ],
+  "collection_timestamp": "2025-08-10T08:05:42.075196",
+  "show_time": null,
+  "recordings": [
+    "gd1967-07-23.sbd.bershaw-wulf.5418.shnf",
+    "gd1967-07-23.aud.sorochty.125462.flac16"
+  ],
+  "best_recording": "gd1967-07-23.sbd.bershaw-wulf.5418.shnf",
+  "avg_rating": 2.8000000000000003,
+  "raw_rating": 4.666666666666667,
+  "recording_count": 2,
+  "confidence": 0.9,
+  "total_high_ratings": 5,
+  "total_low_ratings": 0,
+  "source_types": {
+    "SBD": 1,
+    "AUD": 1
+  },
+  "matching_method": "date_only",
+  "filtering_applied": []
+}

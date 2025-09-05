@@ -1,0 +1,102 @@
+{
+  "url": "https://jerrygarcia.com/show/1966-03-25-troupers-club-los-angeles-ca-usa/",
+  "show_id": "1966-03-25-troupers-club-los-angeles-ca-usa",
+  "band": "Grateful Dead",
+  "venue": "Trouper's Club",
+  "location_raw": "Los Angeles, CA",
+  "city": "Los Angeles",
+  "state": "CA",
+  "country": "USA",
+  "date": "1966-03-25",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Stealin'",
+          "url": "https://jerrygarcia.com/song/stealin/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Jam",
+          "url": "https://jerrygarcia.com/song/jam/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Hey Little One",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "I'm A Hog For You Baby",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "You Don't Have To Ask",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Cold Rain And Snow",
+          "url": "https://jerrygarcia.com/song/cold-rain-and-snow/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Next Time You See Me",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Ron \"Pigpen\" McKernan",
+      "instruments": "keyboards, harmonica, percussion, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152433/RonPigpenMcKernan_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T07:59:58.109137",
+  "show_time": null,
+  "recordings": [
+    "gd66-03-25.sbd.unknown.38.sbeok.shnf",
+    "gd1966-03-25.139750.sbd.miller.clugston.flac1648"
+  ],
+  "best_recording": "gd66-03-25.sbd.unknown.38.sbeok.shnf",
+  "avg_rating": 4.565217391304349,
+  "raw_rating": 4.719063545150503,
+  "recording_count": 2,
+  "confidence": 1.0,
+  "total_high_ratings": 23,
+  "total_low_ratings": 1,
+  "source_types": {
+    "SBD": 2
+  },
+  "matching_method": "date_only",
+  "filtering_applied": []
+}

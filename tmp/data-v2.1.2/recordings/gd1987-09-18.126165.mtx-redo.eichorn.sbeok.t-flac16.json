@@ -1,0 +1,18 @@
+{
+  "identifier": "gd1987-09-18.126165.mtx-redo.eichorn.sbeok.t-flac16",
+  "title": "Grateful Dead Live at Madison Square Garden on 1987-09-18",
+  "date": "1987-09-18",
+  "venue": "Madison Square Garden",
+  "location": "New York, NY",
+  "source_type": "MATRIX",
+  "lineage": "Vault PCM Master->DAT Transfer: AT->ZA2->Soundforge->.wav->mkw->SHN, Source 2: AUD (shnid=105797) Master: Nakamichi CM300's/CP4's>Marantz PMD-420>Cass(m), Nak DR-2>Tascam CDRW2000>CD Taper's section by Jon Pasternak CD>xACT 1.69 (cdparanoia)>WAV>FLAC, all tracks extracted with no errors and Source 3: AUD (shnid=112782) OTS AUD: 2x Nakamichi CM300 w/CP4 shotguns > Sony TC-D5M > Maxell MX90's, w/no Dolby. Taped by Ted GidleyTransfer: MAC > Nakamichi CR-5A > Edirol FA-66 > Wavelab > TLH > FLAC 2448 tagged",
+  "taper": "",
+  "source": "Matrix from Source 1: SBD (shnid=20025; patched with shnid=21241)",
+  "runtime": "137:19.66",
+  "rating": 3.6,
+  "review_count": 4,
+  "confidence": 0.6,
+  "raw_rating": 5.0,
+  "high_ratings": 3,
+  "low_ratings": 0
+}

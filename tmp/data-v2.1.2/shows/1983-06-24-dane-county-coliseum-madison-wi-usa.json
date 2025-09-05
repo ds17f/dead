@@ -1,0 +1,207 @@
+{
+  "url": "https://jerrygarcia.com/show/1983-06-24-dane-county-coliseum-madison-wi-usa/",
+  "show_id": "1983-06-24-dane-county-coliseum-madison-wi-usa",
+  "band": "Grateful Dead",
+  "venue": "Dane County Coliseum",
+  "location_raw": "Madison, WI",
+  "city": "Madison",
+  "state": "WI",
+  "country": "USA",
+  "date": "1983-06-24",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Shakedown Street",
+          "url": "https://jerrygarcia.com/song/shakedown-street/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Far From Me",
+          "url": "https://jerrygarcia.com/song/far-from-me/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Candyman",
+          "url": "https://jerrygarcia.com/song/candyman/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Little Red Rooster",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Brown Eyed Women",
+          "url": "https://jerrygarcia.com/song/brown-eyed-women/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Mama Tried",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Mexicali Blues",
+          "url": "https://jerrygarcia.com/song/mexicali-blues/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Althea",
+          "url": "https://jerrygarcia.com/song/althea/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Hell In A Bucket",
+          "url": "https://jerrygarcia.com/song/hell-in-a-bucket/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Deal",
+          "url": "https://jerrygarcia.com/song/deal/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Help On The Way",
+          "url": "https://jerrygarcia.com/song/help-on-the-way/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Slipknot",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Franklin's Tower",
+          "url": "https://jerrygarcia.com/song/franklins-tower/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Lost Sailor",
+          "url": "https://jerrygarcia.com/song/lost-sailor/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Saint Of Circumstance",
+          "url": "https://jerrygarcia.com/song/saint-of-circumstance/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Truckin'",
+          "url": "https://jerrygarcia.com/song/truckin/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Morning Dew",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Around & Around",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Johnny B. Goode",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "Don't Ease Me In",
+          "url": "https://jerrygarcia.com/song/dont-ease-me-in/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Brent Mydland",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152446/BretMydland_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T08:49:16.361509",
+  "show_time": null,
+  "recordings": [
+    "gd1983-06-24.senn421.bethke.118888.flac16",
+    "gd83-06-24.nak300.willy.7291.sbeok.shnf",
+    "gd1983-06-24.146150.gardner.suraci.nak300.flac24",
+    "gd1983-06-24.135482.Unk-Hill.Keo.Flac1644",
+    "gd1983-06-24.146047.gardner.suraci.nak300.flac24",
+    "gd1983-06-24.147991.fob.akg.d330bt.senn421.hecht.miller.clugston.flac2496",
+    "gd1983-06-24.135376.aud.unk.flac24",
+    "gd1983-06-24.147990.fob.akg.d330bt.senn421.hecht.miller.clugston.flac1648",
+    "gd1983-06-24.135481.Unk-Hill.Keo.Flac2496",
+    "gd1983-06-24.140520.FOB.Bryant.Miller.Noel.t-flac2496",
+    "gd1983-06-24.146054.gardner.suraci.nak300.flac16",
+    "gd1983-06-24.166919.nak300.senn421.blend.sharpless.miller.clugston.flac1648",
+    "gd1983-06-24.141159.fob.bryant.miller.noel.t-flac1644",
+    "gd1983-06-24.135375.aud.unk.flac16",
+    "gd1983-06-24.146149.gardner.suraci.nak300.flac16",
+    "gd1983-06-24.166920.nak300.senn421.blend.sharpless.miller.clugston.flac2496"
+  ],
+  "best_recording": "gd1983-06-24.senn421.bethke.118888.flac16",
+  "avg_rating": 2.1042780748663104,
+  "raw_rating": 4.513513513513513,
+  "recording_count": 16,
+  "confidence": 1.0,
+  "total_high_ratings": 34,
+  "total_low_ratings": 0,
+  "source_types": {
+    "UNKNOWN": 14,
+    "AUD": 2
+  },
+  "matching_method": "date_only",
+  "filtering_applied": []
+}

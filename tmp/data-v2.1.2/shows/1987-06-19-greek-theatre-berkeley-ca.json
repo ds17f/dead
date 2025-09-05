@@ -1,0 +1,198 @@
+{
+  "url": "https://jerrygarcia.com/show/1987-06-19-greek-theatre-berkeley-ca/",
+  "show_id": "1987-06-19-greek-theatre-berkeley-ca",
+  "band": "Grateful Dead",
+  "venue": "Greek Theatre",
+  "location_raw": "Berkeley, CA",
+  "city": "Berkeley",
+  "state": "CA",
+  "country": "USA",
+  "date": "1987-06-19",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Touch of Grey",
+          "url": "https://jerrygarcia.com/song/touch-of-grey/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Little Red Rooster",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Cold Rain And Snow",
+          "url": "https://jerrygarcia.com/song/cold-rain-and-snow/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Mama Tried",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Big River",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Brown Eyed Women",
+          "url": "https://jerrygarcia.com/song/brown-eyed-women/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Desolation Row",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "When Push Comes To Shove",
+          "url": "https://jerrygarcia.com/song/when-push-comes-to-shove/",
+          "segue_into_next": false
+        },
+        {
+          "name": "The Music Never Stopped",
+          "url": "https://jerrygarcia.com/song/the-music-never-stopped/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Bertha",
+          "url": "https://jerrygarcia.com/song/bertha/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Greatest Story Ever Told",
+          "url": "https://jerrygarcia.com/song/greatest-story-ever-told/",
+          "segue_into_next": false
+        },
+        {
+          "name": "It Must Have Been The Roses",
+          "url": "https://jerrygarcia.com/song/it-must-have-been-the-roses/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Samson & Delilah",
+          "url": "https://jerrygarcia.com/song/samson-delilah/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Terrapin Station",
+          "url": "https://jerrygarcia.com/song/terrapin-station/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "I Need A Miracle",
+          "url": "https://jerrygarcia.com/song/i-need-a-miracle/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Goin' Down The Road Feeling Bad",
+          "url": "https://jerrygarcia.com/song/goin-down-the-road-feelin-bad/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Stella Blue",
+          "url": "https://jerrygarcia.com/song/stella-blue/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Turn On Your Lovelight",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "Black Muddy River",
+          "url": "https://jerrygarcia.com/song/black-muddy-river/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Brent Mydland",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152446/BretMydland_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T08:58:06.192992",
+  "show_time": null,
+  "recordings": [
+    "gd1987-06-19.sbd.walker-scotton.miller.83765.sbeok.flac16",
+    "gd87-06-19.sbd.clugston.11942.sbefail.shnf",
+    "gd87-06-19.matrix.ladner.11560.sbeok.shnf",
+    "gd1987-06-19.nakcm304.suraci.81604.sbeok.flac16",
+    "gd1987-06-19.138259.Schoeps.bryant.miller.sirmick.sbeok.flac16",
+    "gd1987-06-19.163466.nak700.severson.miller.clugston.flac2496",
+    "gd1987-06-19.104894",
+    "gd1987-06-19.138872.akg.thompson-damico.flac2496",
+    "gd1987-06-19.163465.nak700.severson.miller.clugston.flac1648",
+    "gd1987-06-19.138871.akg.thompson-damico.flac1644",
+    "gd1987-06-19.135307.bltz.flac24"
+  ],
+  "best_recording": "gd1987-06-19.sbd.walker-scotton.miller.83765.sbeok.flac16",
+  "avg_rating": 2.6704255319148937,
+  "raw_rating": 4.0,
+  "recording_count": 11,
+  "confidence": 1.0,
+  "total_high_ratings": 8,
+  "total_low_ratings": 0,
+  "source_types": {
+    "SBD": 2,
+    "MATRIX": 1,
+    "UNKNOWN": 8
+  },
+  "matching_method": "date_only",
+  "filtering_applied": []
+}

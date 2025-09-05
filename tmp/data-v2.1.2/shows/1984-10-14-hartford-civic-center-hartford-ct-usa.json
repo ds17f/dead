@@ -1,0 +1,218 @@
+{
+  "url": "https://jerrygarcia.com/show/1984-10-14-hartford-civic-center-hartford-ct-usa/",
+  "show_id": "1984-10-14-hartford-civic-center-hartford-ct-usa",
+  "band": "Grateful Dead",
+  "venue": "Hartford Civic Center",
+  "location_raw": "Hartford, CT",
+  "city": "Hartford",
+  "state": "CT",
+  "country": "USA",
+  "date": "1984-10-14",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Alabama Getaway",
+          "url": "https://jerrygarcia.com/song/alabama-getaway/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Greatest Story Ever Told",
+          "url": "https://jerrygarcia.com/song/greatest-story-ever-told/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Dire Wolf",
+          "url": "https://jerrygarcia.com/song/dire-wolf/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Little Red Rooster",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Dupree's Diamond Blues",
+          "url": "https://jerrygarcia.com/song/duprees-diamond-blues/",
+          "segue_into_next": false
+        },
+        {
+          "name": "My Brother Esau",
+          "url": "https://jerrygarcia.com/song/my-brother-esau/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Loser",
+          "url": "https://jerrygarcia.com/song/loser/",
+          "segue_into_next": false
+        },
+        {
+          "name": "New Minglewood Blues",
+          "url": "https://jerrygarcia.com/song/new-minglewood-blues/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Row Jimmy",
+          "url": "https://jerrygarcia.com/song/row-jimmy/",
+          "segue_into_next": false
+        },
+        {
+          "name": "I Need A Miracle",
+          "url": "https://jerrygarcia.com/song/i-need-a-miracle/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Might As Well",
+          "url": "https://jerrygarcia.com/song/might-as-well/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "China Cat Sunflower",
+          "url": "https://jerrygarcia.com/song/china-cat-sunflower/",
+          "segue_into_next": true
+        },
+        {
+          "name": "I Know You Rider",
+          "url": "https://jerrygarcia.com/song/i-know-you-rider/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Samson & Delilah",
+          "url": "https://jerrygarcia.com/song/samson-delilah/",
+          "segue_into_next": false
+        },
+        {
+          "name": "High Time",
+          "url": "https://jerrygarcia.com/song/high-time/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Estimated Prophet",
+          "url": "https://jerrygarcia.com/song/estimated-prophet/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Eyes Of The World",
+          "url": "https://jerrygarcia.com/song/eyes-of-the-world/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Jam",
+          "url": "https://jerrygarcia.com/song/jam/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "China Doll",
+          "url": "https://jerrygarcia.com/song/china-doll/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Throwing Stones",
+          "url": "https://jerrygarcia.com/song/throwing-stones/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Not Fade Away",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Turn On Your Lovelight",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Brent Mydland",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152446/BretMydland_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T08:52:24.605019",
+  "show_time": null,
+  "recordings": [
+    "gd84-10-14.nak300.jeffm.3592.sbeok.shnf",
+    "gd1984-10-14.151292.set2.sbd.miller.flac1648",
+    "gd1984-10-14.senn421.pauline.miller.patch-91385.98557.flac16",
+    "gd1984-10-14.senn421.pauline.miller.91385.sbeok.flac16",
+    "gd1984-10-14.143829.nak.blend.guy.miller.clugston.flac1648",
+    "gd1984-10-14.110042.beyer-senn-daweez.D5scott.flac16",
+    "gd1984-10-14.fob.unknown.77477.sbeok.flac16",
+    "gd1984-10-14.148574.fob.senn.me80.hessberg.miller.clugston.flac2496",
+    "gd1984-10-14.fob.beyerm88.suraci.77990.sbeok.flac16",
+    "gd1984-10-14.164809.aud.sen441.flac2448",
+    "gd1984-10-14.132342.Nak100CP4.Hill.Keo.Flac2496",
+    "gd1984-10-14.sennme80.zaleski.ford.78934.sbeok.flac16",
+    "gd1984-10-14.nak300.morris.113967.flac24",
+    "gd1984-10-14.148573.fob.senn.me80.hessberg.miller.clugston.flac1648",
+    "gd1984-10-14.132341.Nak100CP4.Hill.Keo.Flac1644",
+    "gd1984-10-14.124467.chasingwilma.flac24",
+    "gd1984-10-14.168176.beyer.m160.vita.miller.clugston.flac1648",
+    "gd1984-10-14.143830.nak.blend.guy.miller.clugston.flac2496",
+    "gd1984-10-14.168177.beyer.m160.vita.miller.clugston.flac2496",
+    "gd1984-10-14.nak300.morris.crazyfingers.106648.flac16"
+  ],
+  "best_recording": "gd84-10-14.nak300.jeffm.3592.sbeok.shnf",
+  "avg_rating": 1.9947317410868814,
+  "raw_rating": 4.192676767676767,
+  "recording_count": 20,
+  "confidence": 1.0,
+  "total_high_ratings": 35,
+  "total_low_ratings": 2,
+  "source_types": {
+    "FM": 1,
+    "SBD": 1,
+    "UNKNOWN": 17,
+    "AUD": 1
+  },
+  "matching_method": "date_only",
+  "filtering_applied": []
+}

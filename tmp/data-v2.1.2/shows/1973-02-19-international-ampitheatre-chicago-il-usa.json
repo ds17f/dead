@@ -1,0 +1,135 @@
+{
+  "url": "https://jerrygarcia.com/show/1973-02-19-international-ampitheatre-chicago-il-usa/",
+  "show_id": "1973-02-19-international-ampitheatre-chicago-il-usa",
+  "band": "Grateful Dead",
+  "venue": "International Amphitheatre",
+  "location_raw": "Chicago, IL",
+  "city": "Chicago",
+  "state": "IL",
+  "country": "USA",
+  "date": "1973-02-19",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "The Promised Land",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Box of Rain",
+          "url": "https://jerrygarcia.com/song/box-of-rain/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Brown Eyed Women",
+          "url": "https://jerrygarcia.com/song/brown-eyed-women/",
+          "segue_into_next": false
+        },
+        {
+          "name": "El Paso",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "He's Gone",
+          "url": "https://jerrygarcia.com/song/hes-gone/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Truckin'",
+          "url": "https://jerrygarcia.com/song/truckin/",
+          "segue_into_next": true
+        },
+        {
+          "name": "The Other One",
+          "url": "https://jerrygarcia.com/song/the-other-one/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Eyes Of The World",
+          "url": "https://jerrygarcia.com/song/eyes-of-the-world/",
+          "segue_into_next": true
+        },
+        {
+          "name": "China Doll",
+          "url": "https://jerrygarcia.com/song/china-doll/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Sugar Magnolia",
+          "url": "https://jerrygarcia.com/song/sugar-magnolia/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Casey Jones",
+          "url": "https://jerrygarcia.com/song/casey-jones/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Keith Godchaux",
+      "instruments": "keyboards",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152439/KeithGodchaux_200-100x100.jpg"
+    },
+    {
+      "name": "Donna Jean Godchaux",
+      "instruments": "vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2013/07/12152444/DonnaGodchaux_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "found",
+  "supporting_acts": [
+    "New Riders of the Purple Sage"
+  ],
+  "collection_timestamp": "2025-08-10T08:27:18.459418",
+  "show_time": null,
+  "recordings": [
+    "gd1973-02-19.set2.sbd.miller.83023.flac16",
+    "gd73-02-19.set2sbd.fink.15589.sbeok.shnf",
+    "gd1973-02-19.sbd.jim.jeffrey.12826.sbeok.shnf"
+  ],
+  "best_recording": "gd1973-02-19.set2.sbd.miller.83023.flac16",
+  "avg_rating": 3.5222222222222226,
+  "raw_rating": 4.559259259259259,
+  "recording_count": 3,
+  "confidence": 1.0,
+  "total_high_ratings": 32,
+  "total_low_ratings": 2,
+  "source_types": {
+    "SBD": 3
+  },
+  "matching_method": "date_only",
+  "filtering_applied": []
+}

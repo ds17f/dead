@@ -1,0 +1,53 @@
+{
+  "package": {
+    "name": "Dead Archive Metadata",
+    "version": "2.1.2",
+    "version_type": "release",
+    "description": "Complete Grateful Dead concert metadata with track-level data and search optimization",
+    "created": "2025-09-05T06:04:50.907025",
+    "generator": "dead-metadata pipeline v3.0"
+  },
+  "build_info": {
+    "git_commit": "68311733b1489b29a7e446933059b3592227a965",
+    "git_branch": "",
+    "git_tag": "v2.1.2",
+    "git_clean": false,
+    "build_timestamp": "2025-09-05T06:04:50.907038",
+    "build_host": "pkrvm7jw40e0xgp"
+  },
+  "contents": {
+    "stage2_data": {
+      "description": "Generated data products from Jerry Garcia shows and Archive.org integration",
+      "files": {
+        "collections.json": "Processed collections with resolved show memberships",
+        "recordings/": "Individual recording files with track-level data and ratings from Archive.org",
+        "shows/": "Individual show files with complete metadata (2,313+ shows)"
+      }
+    },
+    "stage3_data": {
+      "description": "Search-optimized indexes for mobile application consumption",
+      "files": {
+        "shows_index.json": "Denormalized show search index with collection tags",
+        "collections.json": "Collection search data with aliases and previews",
+        "venues.json": "Venue search index with geographical data",
+        "songs.json": "Song search index with performance statistics",
+        "members.json": "Band member data with instruments and images"
+      }
+    }
+  },
+  "statistics": {
+    "total_files": 2319,
+    "total_size_bytes": 11979023,
+    "total_size_mb": 11.42
+  },
+  "data_sources": [
+    "jerrygarcia.com - Complete show database (1965-1995)",
+    "Archive.org - 17,790+ recording metadata files with ratings",
+    "Curated collections - 25+ pre-defined show groupings"
+  ],
+  "usage": {
+    "mobile_apps": "Import data.zip contents into mobile app assets",
+    "web_apps": "Serve search indexes via REST API",
+    "research": "Comprehensive dataset for Dead analysis"
+  }
+}

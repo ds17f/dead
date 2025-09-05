@@ -1,0 +1,224 @@
+{
+  "url": "https://jerrygarcia.com/show/1981-05-16-barton-hall-cornell-u-ithaca-ny-usa/",
+  "show_id": "1981-05-16-barton-hall-cornell-u-ithaca-ny-usa",
+  "band": "Grateful Dead",
+  "venue": "Barton Hall, Cornell University",
+  "location_raw": "Ithaca, NY",
+  "city": "Ithaca",
+  "state": "NY",
+  "country": "USA",
+  "date": "1981-05-16",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Feel Like A Stranger",
+          "url": "https://jerrygarcia.com/song/feel-like-a-stranger/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Friend Of The Devil",
+          "url": "https://jerrygarcia.com/song/friend-of-the-devil/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Me And My Uncle",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Big River",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Althea",
+          "url": "https://jerrygarcia.com/song/althea/",
+          "segue_into_next": true
+        },
+        {
+          "name": "C.C. Rider",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Brown Eyed Women",
+          "url": "https://jerrygarcia.com/song/brown-eyed-women/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Passenger",
+          "url": "https://jerrygarcia.com/song/passenger/",
+          "segue_into_next": false
+        },
+        {
+          "name": "High Time",
+          "url": "https://jerrygarcia.com/song/high-time/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Let It Grow",
+          "url": "https://jerrygarcia.com/song/let-it-grow/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Don't Ease Me In",
+          "url": "https://jerrygarcia.com/song/dont-ease-me-in/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Shakedown Street",
+          "url": "https://jerrygarcia.com/song/shakedown-street/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Bertha",
+          "url": "https://jerrygarcia.com/song/bertha/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Lost Sailor",
+          "url": "https://jerrygarcia.com/song/lost-sailor/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Saint Of Circumstance",
+          "url": "https://jerrygarcia.com/song/saint-of-circumstance/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Spanish Jam",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Jam",
+          "url": "https://jerrygarcia.com/song/jam/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Truckin'",
+          "url": "https://jerrygarcia.com/song/truckin/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Nobody's Fault But Mine Jam",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Stella Blue",
+          "url": "https://jerrygarcia.com/song/stella-blue/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Goin' Down The Road Feeling Bad",
+          "url": "https://jerrygarcia.com/song/goin-down-the-road-feelin-bad/",
+          "segue_into_next": true
+        },
+        {
+          "name": "One More Saturday Night",
+          "url": "https://jerrygarcia.com/song/one-more-saturday-night/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "Uncle John's Band",
+          "url": "https://jerrygarcia.com/song/uncle-johns-band/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Brent Mydland",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152446/BretMydland_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T08:44:21.886940",
+  "show_time": null,
+  "recordings": [
+    "gd1981-05-16.sbd.miller.30647.sbeok.flac16",
+    "gd1981-05-16.mtx.seamons.107484.flac16",
+    "gd81-05-16.nak300-dmow.28007.sbeok.flacf",
+    "gd81-05-16.wise.wiley.14714.sbeok.shnf",
+    "gd1981-05-16.fob-senn.wise-sacks.2212.shnf",
+    "gd1981-05-16.senn421.wise.parillo.2203.shnf",
+    "gd1981-05-16.139959.fob.senn421.streeter.miller.clugston.flac2496",
+    "gd1981-05-16.139958.fob.senn421.streeter.miller.clugston.flac1644",
+    "gd1981-05-16.152450.beyer201-prescott.holbrook.flac2448",
+    "gd1981-05-16.150394.s2.aud.schley.flac2448",
+    "gd1981-05-16.142973.set2.aud.beckwith.sterry.miller.clugston.flac2496",
+    "gd1981-05-16.142974.set2.aud.beckwith.sterry.miller.clugston.flac1648",
+    "gd1981-05-16.152449.beyer201-prescott.holbrook.flac1644"
+  ],
+  "best_recording": "gd1981-05-16.sbd.miller.30647.sbeok.flac16",
+  "avg_rating": 3.3006392654676846,
+  "raw_rating": 4.486277421949937,
+  "recording_count": 13,
+  "confidence": 1.0,
+  "total_high_ratings": 69,
+  "total_low_ratings": 3,
+  "source_types": {
+    "SBD": 1,
+    "MATRIX": 1,
+    "UNKNOWN": 8,
+    "AUD": 3
+  },
+  "matching_method": "date_only",
+  "filtering_applied": [],
+  "collections": [
+    "30-trips-around-the-sun"
+  ]
+}

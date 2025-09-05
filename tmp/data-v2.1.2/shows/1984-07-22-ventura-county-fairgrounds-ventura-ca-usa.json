@@ -1,0 +1,196 @@
+{
+  "url": "https://jerrygarcia.com/show/1984-07-22-ventura-county-fairgrounds-ventura-ca-usa/",
+  "show_id": "1984-07-22-ventura-county-fairgrounds-ventura-ca-usa",
+  "band": "Grateful Dead",
+  "venue": "Ventura County Fairgrounds",
+  "location_raw": "Ventura, CA",
+  "city": "Ventura",
+  "state": "CA",
+  "country": "USA",
+  "date": "1984-07-22",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Dancin' In The Street",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Bertha",
+          "url": "https://jerrygarcia.com/song/bertha/",
+          "segue_into_next": false
+        },
+        {
+          "name": "My Brother Esau",
+          "url": "https://jerrygarcia.com/song/my-brother-esau/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Loser",
+          "url": "https://jerrygarcia.com/song/loser/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Cassidy",
+          "url": "https://jerrygarcia.com/song/cassidy/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Ramble On Rose",
+          "url": "https://jerrygarcia.com/song/ramble-on-rose/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Hell In A Bucket",
+          "url": "https://jerrygarcia.com/song/hell-in-a-bucket/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Keep Your Day Job",
+          "url": "https://jerrygarcia.com/song/keep-your-day-job/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Samson & Delilah",
+          "url": "https://jerrygarcia.com/song/samson-delilah/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Ship Of Fools",
+          "url": "https://jerrygarcia.com/song/ship-of-fools/",
+          "segue_into_next": false
+        },
+        {
+          "name": "I Just Want To Make Love To You",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Man Smart, Woman Smarter",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Terrapin Station",
+          "url": "https://jerrygarcia.com/song/terrapin-station/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Morning Dew",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Throwing Stones",
+          "url": "https://jerrygarcia.com/song/throwing-stones/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Not Fade Away",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "In The Midnight Hour",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Brokedown Palace",
+          "url": "https://jerrygarcia.com/song/brokedown-palace/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Brent Mydland",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152446/BretMydland_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T08:52:10.610823",
+  "show_time": null,
+  "recordings": [
+    "gd84-07-22.sbd.bode.5959.sbeok.shnf",
+    "gd84-07-22.sbd.cole.5896.sbeok.shnf",
+    "gd84-07-22.pcm-sbd.miller.30650.sbeok.flacf",
+    "gd1984-07-22.152001.sbd.pcm.miller.flac1644",
+    "gd1984-07-22.152201.sbd.walker.scotton.miller.flac2496",
+    "gd1984-07-22.152323.sbd.cm.miller.t.flac16",
+    "gd1984-07-22.150532.mtx.seamons.ht122.flac16",
+    "gd1984-07-22.fob.nak300.holtz-bolton.102101.flac16",
+    "gd1984-07-22.sonyecm.unknown.gale.87037.sbeok.flac16",
+    "gd1984-07-22.150381.beyerm88.holbrook.flac1644",
+    "gd1984-07-22.166983.senn441.vita.miller.clugston.flac2496",
+    "gd1984-07-22.108370.DaWeez.D5scott.flac16",
+    "gd1984-07-22.150382.beyerm88.holbrook.flac2448",
+    "gd1984-07-22.166982.senn441.vita.miller.clugston.flac1648"
+  ],
+  "best_recording": "gd84-07-22.sbd.bode.5959.sbeok.shnf",
+  "avg_rating": 3.0420347003154573,
+  "raw_rating": 4.586695906432749,
+  "recording_count": 14,
+  "confidence": 1.0,
+  "total_high_ratings": 66,
+  "total_low_ratings": 2,
+  "source_types": {
+    "SBD": 6,
+    "MATRIX": 1,
+    "UNKNOWN": 7
+  },
+  "matching_method": "date_only",
+  "filtering_applied": []
+}

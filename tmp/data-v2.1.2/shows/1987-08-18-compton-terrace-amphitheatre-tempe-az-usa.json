@@ -1,0 +1,180 @@
+{
+  "url": "https://jerrygarcia.com/show/1987-08-18-compton-terrace-amphitheatre-tempe-az-usa/",
+  "show_id": "1987-08-18-compton-terrace-amphitheatre-tempe-az-usa",
+  "band": "Grateful Dead",
+  "venue": "Compton Terrace Amphitheatre",
+  "location_raw": "Tempe, AZ",
+  "city": "Tempe",
+  "state": "AZ",
+  "country": "USA",
+  "date": "1987-08-18",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Hell In A Bucket",
+          "url": "https://jerrygarcia.com/song/hell-in-a-bucket/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Sugaree",
+          "url": "https://jerrygarcia.com/song/sugaree/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Walkin' Blues",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Ramble On Rose",
+          "url": "https://jerrygarcia.com/song/ramble-on-rose/",
+          "segue_into_next": false
+        },
+        {
+          "name": "My Brother Esau",
+          "url": "https://jerrygarcia.com/song/my-brother-esau/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Peggy-O",
+          "url": "https://jerrygarcia.com/song/peggy-o/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Greatest Story Ever Told",
+          "url": "https://jerrygarcia.com/song/greatest-story-ever-told/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Bertha",
+          "url": "https://jerrygarcia.com/song/bertha/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Crazy Fingers",
+          "url": "https://jerrygarcia.com/song/crazy-fingers/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Playing In The Band",
+          "url": "https://jerrygarcia.com/song/playin-in-the-band/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Terrapin Station",
+          "url": "https://jerrygarcia.com/song/terrapin-station/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Dear Mr. Fantasy",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Wharf Rat",
+          "url": "https://jerrygarcia.com/song/wharf-rat/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Throwing Stones",
+          "url": "https://jerrygarcia.com/song/throwing-stones/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Turn On Your Lovelight",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "Black Muddy River",
+          "url": "https://jerrygarcia.com/song/black-muddy-river/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Brent Mydland",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152446/BretMydland_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T08:58:52.754574",
+  "show_time": null,
+  "recordings": [
+    "gd1987-08-18.145599.nak300.in-house.fm.composite.hessberg.miller.clugston.flac1648",
+    "gd1987-08-18.145600.nak300.in-house.fm.composite.hessberg.miller.clugston.flac2496",
+    "gd1987-08-18.140125.sbd.s1.miller.flac2496",
+    "gd1987-08-18.140235.set1.UltraMatrix.sbd.cm.miller.flac1644",
+    "gd87-08-18.schoeps.paino.13102.sbeok.shnf",
+    "gd1987-08-18.142155.fob.schoeps.cmc3.mk2.oade.jacobs.miller.clugston.flac1644",
+    "gd1987-08-18.138289.FOB.Schoeps.Ammons.t-flac16",
+    "gd1987-08-18.138304.FOB.Schoeps.Gastwirt.Miller.Noel.t-flac16"
+  ],
+  "best_recording": "gd1987-08-18.145599.nak300.in-house.fm.composite.hessberg.miller.clugston.flac1648",
+  "avg_rating": 2.0378995433789955,
+  "raw_rating": 3.972222222222222,
+  "recording_count": 8,
+  "confidence": 1.0,
+  "total_high_ratings": 7,
+  "total_low_ratings": 0,
+  "source_types": {
+    "FM": 2,
+    "SBD": 2,
+    "UNKNOWN": 4
+  },
+  "matching_method": "date_only",
+  "filtering_applied": []
+}

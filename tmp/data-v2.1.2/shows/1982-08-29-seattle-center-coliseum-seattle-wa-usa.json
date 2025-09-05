@@ -1,0 +1,186 @@
+{
+  "url": "https://jerrygarcia.com/show/1982-08-29-seattle-center-coliseum-seattle-wa-usa/",
+  "show_id": "1982-08-29-seattle-center-coliseum-seattle-wa-usa",
+  "band": "Grateful Dead",
+  "venue": "Seattle Center Coliseum",
+  "location_raw": "Seattle, WA",
+  "city": "Seattle",
+  "state": "WA",
+  "country": "USA",
+  "date": "1982-08-29",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Jack Straw",
+          "url": "https://jerrygarcia.com/song/jack-straw/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Big Railroad Blues",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Mama Tried",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Mexicali Blues",
+          "url": "https://jerrygarcia.com/song/mexicali-blues/",
+          "segue_into_next": false
+        },
+        {
+          "name": "West L.A. Fadeaway",
+          "url": "https://jerrygarcia.com/song/west-l-a-fadeaway/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Little Red Rooster",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Loser",
+          "url": "https://jerrygarcia.com/song/loser/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Cassidy",
+          "url": "https://jerrygarcia.com/song/cassidy/",
+          "segue_into_next": false
+        },
+        {
+          "name": "It Must Have Been The Roses",
+          "url": "https://jerrygarcia.com/song/it-must-have-been-the-roses/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Let It Grow",
+          "url": "https://jerrygarcia.com/song/let-it-grow/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Keep Your Day Job",
+          "url": "https://jerrygarcia.com/song/keep-your-day-job/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Samson & Delilah",
+          "url": "https://jerrygarcia.com/song/samson-delilah/",
+          "segue_into_next": false
+        },
+        {
+          "name": "He's Gone",
+          "url": "https://jerrygarcia.com/song/hes-gone/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Jam",
+          "url": "https://jerrygarcia.com/song/jam/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Not Fade Away",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Wharf Rat",
+          "url": "https://jerrygarcia.com/song/wharf-rat/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Sugar Magnolia",
+          "url": "https://jerrygarcia.com/song/sugar-magnolia/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "U.S. Blues",
+          "url": "https://jerrygarcia.com/song/u-s-blues/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Brent Mydland",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152446/BretMydland_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T08:47:36.365683",
+  "show_time": null,
+  "recordings": [
+    "gd1982-08-29.140984.sbd.set1.lamarre.berger.flac1644",
+    "gd1982-08-29.140735.set1.pset2.sbd.lamarre.berger.flac2496",
+    "gd1982-08-29.142688.sbd.healy.streeter.dalton.miller.clugston.flac1644",
+    "gd1982-08-29.156588.mtx.tobin.flac16",
+    "gd82-08-29.fob-nak300.miller.17957.sbeok.shnf",
+    "gd1982-08-29.156590.5-1.tobin.flac1648",
+    "gd1982-08-29.156589.dts.tobin.flac16",
+    "gd1982-08-29.148748.fob.nak700.severson.miller.clugston.flac2496",
+    "gd1982-08-29.148747.fob.nak700.severson.miller.clugston.flac1648"
+  ],
+  "best_recording": "gd1982-08-29.140984.sbd.set1.lamarre.berger.flac1644",
+  "avg_rating": 2.1699604743083003,
+  "raw_rating": 4.160839160839161,
+  "recording_count": 9,
+  "confidence": 1.0,
+  "total_high_ratings": 10,
+  "total_low_ratings": 1,
+  "source_types": {
+    "SBD": 3,
+    "MATRIX": 1,
+    "UNKNOWN": 5
+  },
+  "matching_method": "date_only",
+  "filtering_applied": []
+}

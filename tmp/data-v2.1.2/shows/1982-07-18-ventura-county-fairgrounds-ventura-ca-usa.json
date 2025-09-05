@@ -1,0 +1,202 @@
+{
+  "url": "https://jerrygarcia.com/show/1982-07-18-ventura-county-fairgrounds-ventura-ca-usa/",
+  "show_id": "1982-07-18-ventura-county-fairgrounds-ventura-ca-usa",
+  "band": "Grateful Dead",
+  "venue": "Ventura County Fairgrounds",
+  "location_raw": "Ventura, CA",
+  "city": "Ventura",
+  "state": "CA",
+  "country": "USA",
+  "date": "1982-07-18",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "New Minglewood Blues",
+          "url": "https://jerrygarcia.com/song/new-minglewood-blues/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Friend Of The Devil",
+          "url": "https://jerrygarcia.com/song/friend-of-the-devil/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Mama Tried",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Mexicali Blues",
+          "url": "https://jerrygarcia.com/song/mexicali-blues/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Loser",
+          "url": "https://jerrygarcia.com/song/loser/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Cassidy",
+          "url": "https://jerrygarcia.com/song/cassidy/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Ramble On Rose",
+          "url": "https://jerrygarcia.com/song/ramble-on-rose/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Looks Like Rain",
+          "url": "https://jerrygarcia.com/song/looks-like-rain/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Deal",
+          "url": "https://jerrygarcia.com/song/deal/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Samson & Delilah",
+          "url": "https://jerrygarcia.com/song/samson-delilah/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Franklin's Tower",
+          "url": "https://jerrygarcia.com/song/franklins-tower/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Man Smart, Woman Smarter",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Ship Of Fools",
+          "url": "https://jerrygarcia.com/song/ship-of-fools/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Crazy Fingers",
+          "url": "https://jerrygarcia.com/song/crazy-fingers/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Not Fade Away",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "The Other One",
+          "url": "https://jerrygarcia.com/song/the-other-one/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Wharf Rat",
+          "url": "https://jerrygarcia.com/song/wharf-rat/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Sugar Magnolia",
+          "url": "https://jerrygarcia.com/song/sugar-magnolia/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "(I Can't Get No) Satisfaction",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Brokedown Palace",
+          "url": "https://jerrygarcia.com/song/brokedown-palace/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Brent Mydland",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152446/BretMydland_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T08:47:05.921813",
+  "show_time": null,
+  "recordings": [
+    "gd82-07-18.fob-senn441-weinberg.unknown.17030.sbeok.shnf",
+    "gd1982-07-18.fob.unknown.vansant.100203.flac16",
+    "gd1982-07-18.fob.unknown.vansant.fixed-100203.100727.flac16",
+    "gd1982-07-18.fob.senn421-m160.wise.miller.102501.flac16",
+    "gd82-07-18.sennheiser.willy.8484.sbeok.shnf",
+    "gd1982-07-18.146889.FOB.NAK.Anon.Weber-Small.Donaldson.Ammons.Reutlehuber.Noel.t-flac16",
+    "gd1982-07-18.fob.nak300.ho.bowen-foster.102176.flac",
+    "gd1982-07-18.156184.senn421.vita.miller.clugston.flac1648",
+    "gd1982-07-18.nak700.Anon-Poris-Severson.98604.flac16",
+    "gd1982-07-18.169902.senn441.clugston.flac2496",
+    "gd1982-07-18.169901.senn441.clugston.flac1648",
+    "gd1982-07-18.156185.senn421.vita.miller.clugston.flac2496"
+  ],
+  "best_recording": "gd82-07-18.fob-senn441-weinberg.unknown.17030.sbeok.shnf",
+  "avg_rating": 1.9957264957264955,
+  "raw_rating": 4.341880341880342,
+  "recording_count": 12,
+  "confidence": 1.0,
+  "total_high_ratings": 30,
+  "total_low_ratings": 2,
+  "source_types": {
+    "UNKNOWN": 12
+  },
+  "matching_method": "date_only",
+  "filtering_applied": []
+}

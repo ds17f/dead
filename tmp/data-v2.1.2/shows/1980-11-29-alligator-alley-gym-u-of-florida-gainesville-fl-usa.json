@@ -1,0 +1,208 @@
+{
+  "url": "https://jerrygarcia.com/show/1980-11-29-alligator-alley-gym-u-of-florida-gainesville-fl-usa/",
+  "show_id": "1980-11-29-alligator-alley-gym-u-of-florida-gainesville-fl-usa",
+  "band": "Grateful Dead",
+  "venue": "Alligator Alley Gym, U. of Florida",
+  "location_raw": "Gainesville, FL",
+  "city": "Gainesville",
+  "state": "FL",
+  "country": "USA",
+  "date": "1980-11-29",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Alabama Getaway",
+          "url": "https://jerrygarcia.com/song/alabama-getaway/",
+          "segue_into_next": true
+        },
+        {
+          "name": "The Promised Land",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Candyman",
+          "url": "https://jerrygarcia.com/song/candyman/",
+          "segue_into_next": false
+        },
+        {
+          "name": "New Minglewood Blues",
+          "url": "https://jerrygarcia.com/song/new-minglewood-blues/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Row Jimmy",
+          "url": "https://jerrygarcia.com/song/row-jimmy/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Mama Tried",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Mexicali Blues",
+          "url": "https://jerrygarcia.com/song/mexicali-blues/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Althea",
+          "url": "https://jerrygarcia.com/song/althea/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Lost Sailor",
+          "url": "https://jerrygarcia.com/song/lost-sailor/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Saint Of Circumstance",
+          "url": "https://jerrygarcia.com/song/saint-of-circumstance/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Don't Ease Me In",
+          "url": "https://jerrygarcia.com/song/dont-ease-me-in/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Shakedown Street",
+          "url": "https://jerrygarcia.com/song/shakedown-street/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Franklin's Tower",
+          "url": "https://jerrygarcia.com/song/franklins-tower/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Estimated Prophet",
+          "url": "https://jerrygarcia.com/song/estimated-prophet/",
+          "segue_into_next": true
+        },
+        {
+          "name": "He's Gone",
+          "url": "https://jerrygarcia.com/song/hes-gone/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Truckin'",
+          "url": "https://jerrygarcia.com/song/truckin/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "The Other One",
+          "url": "https://jerrygarcia.com/song/the-other-one/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Stella Blue",
+          "url": "https://jerrygarcia.com/song/stella-blue/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Good Lovin'",
+          "url": "https://jerrygarcia.com/song/good-lovin/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "Casey Jones",
+          "url": "https://jerrygarcia.com/song/casey-jones/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Brent Mydland",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152446/BretMydland_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T08:42:54.578964",
+  "show_time": null,
+  "recordings": [
+    "gd1980-11-29.139322.set2.sbd.miller.flac16",
+    "gd1980-11-29.139321.set2.sbd.miller.flac24",
+    "gd1980-11-29.beyerm160.wise.miller.101722.flac16",
+    "gd1980-11-29.beyer160.wise.gmb.89938.sbeok.flac16",
+    "gd80-11-29.wise.sacks.2409.sbeok.shnf",
+    "gd1980-11-29.nak700.wagner.miller.90104.sbeok.flac16",
+    "gd1980-11-29.127229.beyer.stankiewicz.flac2496",
+    "gd1980-11-29.145665.beyerM-88.stankiewicz.flac16",
+    "gd1980-11-29.134703.aud.schley.flac2448",
+    "gd1980-11-29.155787.ohr-sony-ecm23f-nak550-flac16",
+    "gd1980-11-29.132456.aud.flac16",
+    "gd1980-11-29.132457.wise.aud.flac24",
+    "gd1980-11-29.aud.barrick.325.shnf",
+    "gd1980-11-29.157370.fob.nak700.wagner.miller.flac24",
+    "gd1980-11-29.134704.aud.schley.flac1644",
+    "gd1980-11-29.157406.fob.nak700.cm.wagner.miller.t.flac1644"
+  ],
+  "best_recording": "gd1980-11-29.139322.set2.sbd.miller.flac16",
+  "avg_rating": 2.420445125994695,
+  "raw_rating": 4.882556918656057,
+  "recording_count": 16,
+  "confidence": 1.0,
+  "total_high_ratings": 90,
+  "total_low_ratings": 0,
+  "source_types": {
+    "SBD": 2,
+    "UNKNOWN": 9,
+    "AUD": 5
+  },
+  "matching_method": "date_only",
+  "filtering_applied": []
+}

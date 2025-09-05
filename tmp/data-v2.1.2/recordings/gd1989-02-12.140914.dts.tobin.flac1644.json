@@ -1,0 +1,18 @@
+{
+  "identifier": "gd1989-02-12.140914.dts.tobin.flac1644",
+  "title": "Grateful Dead Live at Great Western LA Forum on 1989-02-12",
+  "date": "1989-02-12",
+  "venue": "Great Western LA Forum",
+  "location": "Inglewood, CA",
+  "source_type": "AUD",
+  "lineage": "24/96 flac -> 16/44.1 WAV with dbpoweramp. flac level 8, SBE fix and checksums with traderslittlehelper; + AUD (shnid = 31265) Sean Weber Small rig, Schoeps cmc?? (cardioid caps on mic bodies) ORTF -> Oade pre (m118?) -> Sony F1/Beta rig, line out -> Sony TC-D5M analog cassette master by MF. From FOB/DFC. Mics at 6'5\", at eye level to MF, covering the mics. The other mics were Neumann km84's, ortf-> Neu. p48v -> Sony TC-D5M @ 6'4\" to 24/96 digital: Sony TC-D5M master deck w/ master tape, no n.r. -> Tascam DVRA1000 DSD in PCM mode 24/96 to flac: Tascam DVRA1000 DSD USB2.0 mode -> Mac Tiger 10.4 import, xACT conversion. - dts mixing by Kevin Tobin",
+  "taper": "",
+  "source": "<b>DTS-Audio-CD 5.1 Mix;</b> SBD (shnid = 137086) Recording Info: SBD -> Cassette Master (TDK SA-X100); Transfer Info: Cassette Master (Nakamichi CR-7A) -> Tascam DA-3000 (DSF 1-bit/5.8 MHz) -> KORG AudioGate 4 -> Samplitude Professional v11.2.1 -> FLAC (24bit/96k); FLAC 16 Additional",
+  "runtime": "156:27.00",
+  "rating": 0.0,
+  "review_count": 0,
+  "confidence": 0.0,
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0
+}

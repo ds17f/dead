@@ -1,0 +1,173 @@
+{
+  "url": "https://jerrygarcia.com/show/1993-06-15-freedom-hall-louisville-ky-usa/",
+  "show_id": "1993-06-15-freedom-hall-louisville-ky-usa",
+  "band": "Grateful Dead",
+  "venue": "Freedom Hall",
+  "location_raw": "Louisville, KY",
+  "city": "Louisville",
+  "state": "KY",
+  "country": "USA",
+  "date": "1993-06-15",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Feel Like A Stranger",
+          "url": "https://jerrygarcia.com/song/feel-like-a-stranger/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Althea",
+          "url": "https://jerrygarcia.com/song/althea/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Wang Dang Doodle",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Friend Of The Devil",
+          "url": "https://jerrygarcia.com/song/friend-of-the-devil/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Desolation Row",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Don't Ease Me In",
+          "url": "https://jerrygarcia.com/song/dont-ease-me-in/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Victim Or The Crime",
+          "url": "https://jerrygarcia.com/song/victim-or-the-crime/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Crazy Fingers",
+          "url": "https://jerrygarcia.com/song/crazy-fingers/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Estimated Prophet",
+          "url": "https://jerrygarcia.com/song/estimated-prophet/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Spoonful",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "He's Gone",
+          "url": "https://jerrygarcia.com/song/hes-gone/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "The Last Time",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Morning Dew",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "Gloria",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Vince Welnick",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152431/VinceWelnick_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T09:13:57.380782",
+  "show_time": null,
+  "recordings": [
+    "gd93-06-15.sbd.gardner.10085.sbeok.shnf",
+    "gd1993-06-15.137334.sbd.miller.flac1648",
+    "gd1993-06-15.125096.sbd.mills.flac16",
+    "gd1993-06-15.137863.mtx.jeh.flac1648",
+    "gd93-06-15.brennecke-young.georges.18984.sbeok.shnf",
+    "gd1993-06-15.fob.bk4011.schmit.watts.106551.flac16",
+    "gd1993-06-15.152513.cmc34.larson.flac1644",
+    "gd1993-06-15.AKG451.Darby.117679.Flac1648",
+    "gd1993-06-15.AKG451.Darby.117680.Flac1644",
+    "gd1993-06-15.fob.st250.young-brennecke.footbear.fix.99146.flac16",
+    "gd1993-06-15.nak300.rickers.davis.105743.flac16"
+  ],
+  "best_recording": "gd93-06-15.sbd.gardner.10085.sbeok.shnf",
+  "avg_rating": 3.3476483050847454,
+  "raw_rating": 3.9833333333333334,
+  "recording_count": 11,
+  "confidence": 1.0,
+  "total_high_ratings": 21,
+  "total_low_ratings": 0,
+  "source_types": {
+    "SBD": 3,
+    "MATRIX": 1,
+    "UNKNOWN": 7
+  },
+  "matching_method": "date_only",
+  "filtering_applied": []
+}

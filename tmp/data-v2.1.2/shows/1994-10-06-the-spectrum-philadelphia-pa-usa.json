@@ -1,0 +1,181 @@
+{
+  "url": "https://jerrygarcia.com/show/1994-10-06-the-spectrum-philadelphia-pa-usa/",
+  "show_id": "1994-10-06-the-spectrum-philadelphia-pa-usa",
+  "band": "Grateful Dead",
+  "venue": "The Spectrum",
+  "location_raw": "Philadelphia, PA",
+  "city": "Philadelphia",
+  "state": "PA",
+  "country": "USA",
+  "date": "1994-10-06",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Mississippi Half-Step Uptown Toodeloo",
+          "url": "https://jerrygarcia.com/song/mississippi-half-step-uptown-toodeloo/",
+          "segue_into_next": false
+        },
+        {
+          "name": "New Minglewood Blues",
+          "url": "https://jerrygarcia.com/song/new-minglewood-blues/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Peggy-O",
+          "url": "https://jerrygarcia.com/song/peggy-o/",
+          "segue_into_next": false
+        },
+        {
+          "name": "If The Shoe Fits",
+          "url": "https://jerrygarcia.com/song/if-the-shoe-fits/",
+          "segue_into_next": false
+        },
+        {
+          "name": "When I Paint My Masterpiece",
+          "url": "https://jerrygarcia.com/song/when-i-paint-my-masterpiece/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Ramble On Rose",
+          "url": "https://jerrygarcia.com/song/ramble-on-rose/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Easy Answers",
+          "url": "https://jerrygarcia.com/song/easy-answers/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Don't Ease Me In",
+          "url": "https://jerrygarcia.com/song/dont-ease-me-in/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "China Cat Sunflower",
+          "url": "https://jerrygarcia.com/song/china-cat-sunflower/",
+          "segue_into_next": true
+        },
+        {
+          "name": "I Know You Rider",
+          "url": "https://jerrygarcia.com/song/i-know-you-rider/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Way To Go Home",
+          "url": "https://jerrygarcia.com/song/way-to-go-home/",
+          "segue_into_next": false
+        },
+        {
+          "name": "New Speedway Boogie",
+          "url": "https://jerrygarcia.com/song/new-speedway-boogie/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Truckin'",
+          "url": "https://jerrygarcia.com/song/truckin/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "The Other One",
+          "url": "https://jerrygarcia.com/song/the-other-one/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Wharf Rat",
+          "url": "https://jerrygarcia.com/song/wharf-rat/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Good Lovin'",
+          "url": "https://jerrygarcia.com/song/good-lovin/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "Liberty",
+          "url": "https://jerrygarcia.com/song/liberty/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Vince Welnick",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152431/VinceWelnick_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T09:18:13.586589",
+  "show_time": null,
+  "recordings": [
+    "gd94-10-06.nak300.ericb.7743.sbeok.shnf",
+    "gd1994-10-06.akg460.mcminn.davis.95371.flac16",
+    "gd1994-10-06.aud.bleich-sirmick.79554.sbeok.flac16",
+    "gd1994-10-06.fob.schoeps.byron.dauria.97286.flac16",
+    "gd1994-10-06.124411.C38B.roberts.flac16"
+  ],
+  "best_recording": "gd94-10-06.nak300.ericb.7743.sbeok.shnf",
+  "avg_rating": 1.6595744680851063,
+  "raw_rating": 3.5555555555555554,
+  "recording_count": 5,
+  "confidence": 1.0,
+  "total_high_ratings": 11,
+  "total_low_ratings": 1,
+  "source_types": {
+    "UNKNOWN": 4,
+    "AUD": 1
+  },
+  "matching_method": "date_only",
+  "filtering_applied": []
+}

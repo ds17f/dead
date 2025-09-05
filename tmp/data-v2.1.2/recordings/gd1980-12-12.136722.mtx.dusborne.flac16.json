@@ -1,0 +1,18 @@
+{
+  "identifier": "gd1980-12-12.136722.mtx.dusborne.flac16",
+  "title": "Grateful Dead Live at Swing Auditorium on 1980-12-12",
+  "date": "1980-12-12",
+  "venue": "Swing Auditorium",
+  "location": "San Bernardino, CA",
+  "source_type": "MATRIX",
+  "lineage": "2 x Nakamichi CM-700 => Sony TC-D5M >> MAC,Analog Sound Preservation: MAC >> Nakamichi DR-1 => Grace Design Lunatec V3 [Pre-Only] =>Korg MR-1000 >> DSF [1-bit 5.6448 MHz Stereo] >> Korg MR-1000 => Korg AudioGate >> WAV [24/96]; Taped By: Ron Ellner; Audience 2(Shnid:124542) Recorded by: Ron Goldshine and John Musgrave 2 Sennheiser MKH 406 TUD microphones > Sony D5M (w/ Dolby B, Bias @ 70us on 3 TDK MA C-90 tapes)My Copy of masters:Sony D5M (w/ Dolby, Bias @ 70us) > AkaiiGX-570 D2 (w/ Dolby B, Bias @ 70us on 2 TDK SA C-90 tapes); Transfer: Nakamichi CR-7A (azimuth aligned to tape, Dolby B, Bias @ 70us) > Korg MN-2000S 1 Bit DFF @ 2.822 MHz >AudioGate (convert to 24-96) > Audacity (clean up) > AudioGate (convert to 16-44) > CD wav > Flac (Level 8) > Stamp ID3 Tag editor",
+  "taper": "",
+  "source": "3 source matrix by Dusborne; Soundboard(Shnid:31509) Recording Info: SBD -> Cassette Master -> ? -> Cassette; Transfer Info: Cassette (Nak CR7A) -> Dat (Sony R500/SBM On); Dat (Sony D8) -> Sharp MV10 -> Samplitude Professional v8.01 -> FLAC; Audience 1(Shnid:89134) Analog",
+  "runtime": "176:51.49",
+  "rating": 3.15,
+  "review_count": 2,
+  "confidence": 0.4,
+  "raw_rating": 5.0,
+  "high_ratings": 2,
+  "low_ratings": 0
+}

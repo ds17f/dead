@@ -1,0 +1,200 @@
+{
+  "url": "https://jerrygarcia.com/show/1988-09-05-capitol-centre-landover-md-usa/",
+  "show_id": "1988-09-05-capitol-centre-landover-md-usa",
+  "band": "Grateful Dead",
+  "venue": "Capital Centre",
+  "location_raw": "Landover, MD",
+  "city": "Landover",
+  "state": "MD",
+  "country": "USA",
+  "date": "1988-09-05",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Iko Iko",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Walkin' Blues",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Ramble On Rose",
+          "url": "https://jerrygarcia.com/song/ramble-on-rose/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Mama Tried",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Mexicali Blues",
+          "url": "https://jerrygarcia.com/song/mexicali-blues/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Row Jimmy",
+          "url": "https://jerrygarcia.com/song/row-jimmy/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Stuck Inside of Mobile with the Memphis Blues Again",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "When Push Comes To Shove",
+          "url": "https://jerrygarcia.com/song/when-push-comes-to-shove/",
+          "segue_into_next": false
+        },
+        {
+          "name": "The Music Never Stopped",
+          "url": "https://jerrygarcia.com/song/the-music-never-stopped/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "China Cat Sunflower",
+          "url": "https://jerrygarcia.com/song/china-cat-sunflower/",
+          "segue_into_next": true
+        },
+        {
+          "name": "I Know You Rider",
+          "url": "https://jerrygarcia.com/song/i-know-you-rider/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Playing In The Band",
+          "url": "https://jerrygarcia.com/song/playin-in-the-band/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Uncle John's Band",
+          "url": "https://jerrygarcia.com/song/uncle-johns-band/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Playing In The Band",
+          "url": "https://jerrygarcia.com/song/playin-in-the-band/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Gimme Some Lovin'",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Black Peter",
+          "url": "https://jerrygarcia.com/song/black-peter/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Around & Around",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Turn On Your Lovelight",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "U.S. Blues",
+          "url": "https://jerrygarcia.com/song/u-s-blues/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Brent Mydland",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152446/BretMydland_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T09:01:45.681272",
+  "show_time": null,
+  "recordings": [
+    "gd1988-09-05.sbd-set1.miller.80630.sbeok.flac16",
+    "gd1988-09-05.165828.UltraMatrix.sbd.cm.miller.t-flac1644",
+    "gd1988-09-05.165505.ultramatrix.miller.flac2496",
+    "gd1988-09-05.139473.mtx.tobin.flac16",
+    "gd88-09-05.nakamichi.leeds.16440.sbeok.shnf",
+    "gd1988-09-05.nak100.mchugh.83250.sbeok.flac16",
+    "gd1988-09-05.131131.nakcm100.datbrad.flac16",
+    "gd1988-09-05.139475.5-1.tobin.flac1648",
+    "gd1988-09-05.168188.beyer.m160.vita.miller.clugston.flac1648",
+    "gd1988-09-05.140015.me80.boedicker.flac1644",
+    "gd1988-09-05.142143.FOB.Schoeps.PCM.Mattes.Miller.Noel.t-flac1644",
+    "gd1988-09-05.168191.beyer.m160.vita.miller.clugston.flac2496",
+    "gd1988-09-05.139474.dts.tobin.flac16"
+  ],
+  "best_recording": "gd1988-09-05.sbd-set1.miller.80630.sbeok.flac16",
+  "avg_rating": 1.6914663461538464,
+  "raw_rating": 3.578125,
+  "recording_count": 13,
+  "confidence": 1.0,
+  "total_high_ratings": 10,
+  "total_low_ratings": 0,
+  "source_types": {
+    "SBD": 2,
+    "MATRIX": 2,
+    "UNKNOWN": 9
+  },
+  "matching_method": "date_only",
+  "filtering_applied": []
+}

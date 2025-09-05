@@ -1,0 +1,212 @@
+{
+  "url": "https://jerrygarcia.com/show/1990-03-22-copps-coliseum-hamilton-ontario-canada/",
+  "show_id": "1990-03-22-copps-coliseum-hamilton-ontario-canada",
+  "band": "Grateful Dead",
+  "venue": "Copps Coliseum",
+  "location_raw": "Hamilton, ON",
+  "city": "Hamilton",
+  "state": "ON",
+  "country": "Canada",
+  "date": "1990-03-22",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Feel Like A Stranger",
+          "url": "https://jerrygarcia.com/song/feel-like-a-stranger/",
+          "segue_into_next": false
+        },
+        {
+          "name": "West L.A. Fadeaway",
+          "url": "https://jerrygarcia.com/song/west-l-a-fadeaway/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Easy To Love You",
+          "url": "https://jerrygarcia.com/song/easy-to-love-you/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Beat It On Down The Line",
+          "url": "https://jerrygarcia.com/song/beat-it-on-down-the-line/",
+          "segue_into_next": false
+        },
+        {
+          "name": "It Must Have Been The Roses",
+          "url": "https://jerrygarcia.com/song/it-must-have-been-the-roses/",
+          "segue_into_next": false
+        },
+        {
+          "name": "The Last Time",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Picasso Moon",
+          "url": "https://jerrygarcia.com/song/picasso-moon/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Don't Ease Me In",
+          "url": "https://jerrygarcia.com/song/dont-ease-me-in/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Scarlet Begonias",
+          "url": "https://jerrygarcia.com/song/scarlet-begonias/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Fire On The Mountain",
+          "url": "https://jerrygarcia.com/song/fire-on-the-mountain/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Samson & Delilah",
+          "url": "https://jerrygarcia.com/song/samson-delilah/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Believe It Or Not",
+          "url": "https://jerrygarcia.com/song/believe-it-or-not/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Truckin'",
+          "url": "https://jerrygarcia.com/song/truckin/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "The Other One",
+          "url": "https://jerrygarcia.com/song/the-other-one/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Hey Jude",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Dear Mr. Fantasy",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Hey Jude Finale",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Sugar Magnolia",
+          "url": "https://jerrygarcia.com/song/sugar-magnolia/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "It's All Over Now Baby Blue",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Brent Mydland",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152446/BretMydland_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T09:05:39.288448",
+  "show_time": null,
+  "recordings": [
+    "gd1990-03-22.sbd.miller.107871.flac16",
+    "gd90-03-22.sbd.bertha-ashley.21433.sbeok.shnf",
+    "gd90-03-22.sbd-matrix.aj.453.sbefail.shnf",
+    "gd1990-03-22.139224.sbd.miller.truck-mix.flac",
+    "gd1990-03-22.111464.unknown.sbd.shnf",
+    "gd1990-03-22.156423.UltraMatrix.sbd.cm.miller.t.flac1644",
+    "gd1990-03-22.mtx.dan.28040.sbeok.shnf",
+    "gd1990-03-22.mtx.seamons.113144.flac16",
+    "gd1990-03-22.mtx.tobin.126698.flac16",
+    "gd1990-03-22.156195.ultramatrix.miller.flac2496",
+    "gd1990-03-22.165885.mtx.seamons.ht090.flac16",
+    "gd90-03-22.schoeps.dankseeds.7460.sbeok.shnf",
+    "gd1990-03-22.143170.FOB.Schoeps.Mattes.Miller.Noel.REMASTER.t-flac1648",
+    "gd1990-03-22.aud.gidley.91779.sbeok.flac16",
+    "gd1990-03-22.141931.FOB.Schoeps.Mattes.Miller.Noel.t-flac1648",
+    "gd1990-03-22.125880.mk4.fixed.48khz.flac16",
+    "gd1990-03-22.152792.3-Source-MTX.photoLeon.t-flac16",
+    "gd1990-03-22.149413.FOB.Schoeps.Mattes.Miller.Noel.reMaster.t-flac1648",
+    "gd1990-03-22.dts.tobin.126699.flac16",
+    "gd1990-03-22.dts.dan.31772.sbeok.shnf",
+    "gd1990-03-22.125881.mk4.fixed.flac16",
+    "gd1990-03-22.141112.OTS.AKG.Akerman.Miller.Noel.t-flac1648",
+    "gd1990-03-22.157157.5-1.tobin.flac1648"
+  ],
+  "best_recording": "gd1990-03-22.sbd.miller.107871.flac16",
+  "avg_rating": 3.552521655898541,
+  "raw_rating": 4.356942777110844,
+  "recording_count": 23,
+  "confidence": 1.0,
+  "total_high_ratings": 103,
+  "total_low_ratings": 5,
+  "source_types": {
+    "SBD": 6,
+    "MATRIX": 5,
+    "UNKNOWN": 9,
+    "REMASTER": 2,
+    "AUD": 1
+  },
+  "matching_method": "date_only",
+  "filtering_applied": []
+}

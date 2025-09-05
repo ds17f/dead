@@ -1,0 +1,203 @@
+{
+  "url": "https://jerrygarcia.com/show/1979-07-01-seattle-center-coliseum-seattle-wa-usa/",
+  "show_id": "1979-07-01-seattle-center-coliseum-seattle-wa-usa",
+  "band": "Grateful Dead",
+  "venue": "Seattle Center Coliseum",
+  "location_raw": "Seattle, WA",
+  "city": "Seattle",
+  "state": "WA",
+  "country": "USA",
+  "date": "1979-07-01",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Mississippi Half-Step Uptown Toodeloo",
+          "url": "https://jerrygarcia.com/song/mississippi-half-step-uptown-toodeloo/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Franklin's Tower",
+          "url": "https://jerrygarcia.com/song/franklins-tower/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Mama Tried",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Mexicali Blues",
+          "url": "https://jerrygarcia.com/song/mexicali-blues/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Peggy-O",
+          "url": "https://jerrygarcia.com/song/peggy-o/",
+          "segue_into_next": false
+        },
+        {
+          "name": "New Minglewood Blues",
+          "url": "https://jerrygarcia.com/song/new-minglewood-blues/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Stagger Lee",
+          "url": "https://jerrygarcia.com/song/stagger-lee/",
+          "segue_into_next": false
+        },
+        {
+          "name": "El Paso",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Brown Eyed Women",
+          "url": "https://jerrygarcia.com/song/brown-eyed-women/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Passenger",
+          "url": "https://jerrygarcia.com/song/passenger/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Don't Ease Me In",
+          "url": "https://jerrygarcia.com/song/dont-ease-me-in/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Samson & Delilah",
+          "url": "https://jerrygarcia.com/song/samson-delilah/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Sugaree",
+          "url": "https://jerrygarcia.com/song/sugaree/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Terrapin Station",
+          "url": "https://jerrygarcia.com/song/terrapin-station/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Playing In The Band",
+          "url": "https://jerrygarcia.com/song/playin-in-the-band/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Stella Blue",
+          "url": "https://jerrygarcia.com/song/stella-blue/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Truckin'",
+          "url": "https://jerrygarcia.com/song/truckin/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Around & Around",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "Shakedown Street",
+          "url": "https://jerrygarcia.com/song/shakedown-street/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Brent Mydland",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152446/BretMydland_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T08:38:44.366601",
+  "show_time": null,
+  "recordings": [
+    "gd1979-07-01.sbd.miller.93433.sbeok.flac16",
+    "gd79-07-01.sbd.barrick.315.sbeok.shnf",
+    "gd1979-07-01.170391.sbd.miller.gans.flac1644",
+    "gd1979-07-01.141414.sbd.troy.smith.miller.clugston.flac1644",
+    "gd1979-07-01.141415.sbd.troy.smith.miller.clugston.flac2496",
+    "gd1979-07-01.mtx.seamons.95742.sbeok.flac16",
+    "gd1979-07-01.156177.mtx.tobin.flac16",
+    "gd1979-07-01.156176.mtx.tobin.flac24",
+    "gd1979-07-01.fob.nak700.menke.motb-0112.105210.flac16",
+    "gd1979-07-01.156180.5-1.tobin.flac1648",
+    "gd1979-07-01.sonyecm.severson.minches.90696.sbeok.flac16",
+    "gd1979-07-01.145358.fob.sony.ecm270.severson.miller.clugston.flac2496",
+    "gd1979-07-01.156179.dts.tobin.flac16",
+    "gd1979-07-01.145357.fob.sony.ecm270.severson.miller.clugston.flac1648",
+    "gd1979-07-01.141413.akg.d224e.holhwein.lee.smith.miller.clugston.flac2496",
+    "gd1979-07-01.141412.akg.d224e.holhwein.lee.smith.miller.clugston.flac1644"
+  ],
+  "best_recording": "gd1979-07-01.sbd.miller.93433.sbeok.flac16",
+  "avg_rating": 3.8278761061946898,
+  "raw_rating": 4.385714285714285,
+  "recording_count": 16,
+  "confidence": 1.0,
+  "total_high_ratings": 24,
+  "total_low_ratings": 1,
+  "source_types": {
+    "SBD": 5,
+    "MATRIX": 3,
+    "UNKNOWN": 8
+  },
+  "matching_method": "date_only",
+  "filtering_applied": []
+}

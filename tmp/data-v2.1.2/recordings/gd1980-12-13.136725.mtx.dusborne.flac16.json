@@ -1,0 +1,18 @@
+{
+  "identifier": "gd1980-12-13.136725.mtx.dusborne.flac16",
+  "title": "Grateful Dead Live at Long Beach Arena on 1980-12-13",
+  "date": "1980-12-13",
+  "venue": "Long Beach Arena",
+  "location": "Long Beach, CA",
+  "source_type": "MATRIX",
+  "lineage": "Nakamichi CR-7A (azimuth aligned to tape, Dolby B, Bias @ 70us) > Korg MN-2000S 1 Bit DFF @ 2.822 MHz >AudioGate (convert to 24-96) > Audacity (clean up) > AudioGate (convert to 16-44) >NERO (bass extrapolation of -3dB @ 120 Hz used to restore low frequencies lost with incorrect playback bias setting) > CD wav > Flac (Level 8) > Stamp ID3 Tag editor",
+  "taper": "",
+  "source": "3 source matrix by Dusborne;Soundboard (Shnid:91939) Recording Info: SBD -> Cassette Master -> Reel -> Dat (48k) Transfer Info: Dat (Sony D8) -> Sound Devices 744T -> Samplitude Professional v10.02 ->Cool Edit Pro v2.0 -> FLAC; Audience 1 (Shnid:88964) Recording Info: Nakamichi 300 -> Cassette Master (Sony D5M/Maxell UDXL-II90) Transfer Info: Cassette Master (Nakamichi DR-1) -> Sound Devices 744T (24bit/96k) ->Samplitude Professional v9.12 -> FLAC/16; and Audience 2 (Shnid:124551) Recorded by: Ron Goldshine and John Musgrave; 2 Sennheiser MKH 406 TUD microphones > Sony D5M (w/ Dolby B, Bias @ 70us on 3 TDK MA C-90 tapes)My Copy of masters: Sony D5M (w/ Dolby, Bias @ 120us) > Akaii GX-570 D2 (w/ Dolby B, Bias @ 70us on 2 TDK SA C-90 tapes))",
+  "runtime": "159:04.26",
+  "rating": 2.6999999999999997,
+  "review_count": 1,
+  "confidence": 0.2,
+  "raw_rating": 5.0,
+  "high_ratings": 1,
+  "low_ratings": 0
+}

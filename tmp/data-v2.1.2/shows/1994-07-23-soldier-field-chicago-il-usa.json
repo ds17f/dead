@@ -1,0 +1,173 @@
+{
+  "url": "https://jerrygarcia.com/show/1994-07-23-soldier-field-chicago-il-usa/",
+  "show_id": "1994-07-23-soldier-field-chicago-il-usa",
+  "band": "Grateful Dead",
+  "venue": "Soldier Field",
+  "location_raw": "Chicago, IL",
+  "city": "Chicago",
+  "state": "IL",
+  "country": "USA",
+  "date": "1994-07-23",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Picasso Moon",
+          "url": "https://jerrygarcia.com/song/picasso-moon/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Sugaree",
+          "url": "https://jerrygarcia.com/song/sugaree/",
+          "segue_into_next": false
+        },
+        {
+          "name": "New Minglewood Blues",
+          "url": "https://jerrygarcia.com/song/new-minglewood-blues/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Lazy River Road",
+          "url": "https://jerrygarcia.com/song/lazy-river-road/",
+          "segue_into_next": false
+        },
+        {
+          "name": "When I Paint My Masterpiece",
+          "url": "https://jerrygarcia.com/song/when-i-paint-my-masterpiece/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Brown Eyed Women",
+          "url": "https://jerrygarcia.com/song/brown-eyed-women/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Cassidy",
+          "url": "https://jerrygarcia.com/song/cassidy/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Lucy In The Sky With Diamonds",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Samba In The Rain",
+          "url": "https://jerrygarcia.com/song/samba-in-the-rain/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Playing In The Band",
+          "url": "https://jerrygarcia.com/song/playin-in-the-band/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Terrapin Station",
+          "url": "https://jerrygarcia.com/song/terrapin-station/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "The Other One",
+          "url": "https://jerrygarcia.com/song/the-other-one/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Wharf Rat",
+          "url": "https://jerrygarcia.com/song/wharf-rat/",
+          "segue_into_next": true
+        },
+        {
+          "name": "One More Saturday Night",
+          "url": "https://jerrygarcia.com/song/one-more-saturday-night/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "Knockin' On Heaven's Door",
+          "url": "https://jerrygarcia.com/song/knockin-on-heavens-door/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Vince Welnick",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152431/VinceWelnick_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "found",
+  "supporting_acts": [
+    "Traffic"
+  ],
+  "collection_timestamp": "2025-08-10T09:17:31.538344",
+  "show_time": null,
+  "recordings": [
+    "gd1994-07-23.sbd.burns.14853.sbeok.flac16",
+    "gd94-07-23.sbd.fishman.14839.sbeok.shnf",
+    "gd1994-07-23.166961.sbd.miller.flac1648",
+    "gd1994-07-23.147691.schoepsCMC5MK4.ebel.flac1648",
+    "gd1994-07-23.fob.schoeps.buller.574.shnf"
+  ],
+  "best_recording": "gd1994-07-23.sbd.burns.14853.sbeok.flac16",
+  "avg_rating": 3.8179347826086953,
+  "raw_rating": 3.817934782608696,
+  "recording_count": 5,
+  "confidence": 1.0,
+  "total_high_ratings": 15,
+  "total_low_ratings": 4,
+  "source_types": {
+    "SBD": 3,
+    "UNKNOWN": 2
+  },
+  "matching_method": "date_only",
+  "filtering_applied": []
+}

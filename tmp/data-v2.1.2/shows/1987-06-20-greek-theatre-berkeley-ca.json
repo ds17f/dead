@@ -1,0 +1,189 @@
+{
+  "url": "https://jerrygarcia.com/show/1987-06-20-greek-theatre-berkeley-ca/",
+  "show_id": "1987-06-20-greek-theatre-berkeley-ca",
+  "band": "Grateful Dead",
+  "venue": "Greek Theatre",
+  "location_raw": "Berkeley, CA",
+  "city": "Berkeley",
+  "state": "CA",
+  "country": "USA",
+  "date": "1987-06-20",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Hell In A Bucket",
+          "url": "https://jerrygarcia.com/song/hell-in-a-bucket/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Franklin's Tower",
+          "url": "https://jerrygarcia.com/song/franklins-tower/",
+          "segue_into_next": false
+        },
+        {
+          "name": "New Minglewood Blues",
+          "url": "https://jerrygarcia.com/song/new-minglewood-blues/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Loser",
+          "url": "https://jerrygarcia.com/song/loser/",
+          "segue_into_next": false
+        },
+        {
+          "name": "My Brother Esau",
+          "url": "https://jerrygarcia.com/song/my-brother-esau/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Bird Song",
+          "url": "https://jerrygarcia.com/song/bird-song/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Iko Iko",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Looks Like Rain",
+          "url": "https://jerrygarcia.com/song/looks-like-rain/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Deal",
+          "url": "https://jerrygarcia.com/song/deal/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Gimme Some Lovin'",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "All Along The Watchtower",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "The Wheel",
+          "url": "https://jerrygarcia.com/song/the-wheel/",
+          "segue_into_next": true
+        },
+        {
+          "name": "The Other One",
+          "url": "https://jerrygarcia.com/song/the-other-one/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Wharf Rat",
+          "url": "https://jerrygarcia.com/song/wharf-rat/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Sugar Magnolia",
+          "url": "https://jerrygarcia.com/song/sugar-magnolia/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "One More Saturday Night",
+          "url": "https://jerrygarcia.com/song/one-more-saturday-night/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Brent Mydland",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152446/BretMydland_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T08:58:08.732527",
+  "show_time": null,
+  "recordings": [
+    "gd1987-06-20.sbd.walker-scotton.miller.83766.sbeok.flac16",
+    "gd87-06-20.sbd.clugston.11943.sbefail.shnf",
+    "gd1987-06-20.sbd.miller.93080.sbeok.flac16",
+    "gd87-06-20.matrix.ladner.11561.sbeok.shnf",
+    "gd1987-06-20.mtx.dts.haugh.93386.flac16",
+    "gd1987-06-20.124398.beacon.akg460.flac16",
+    "gd1987-06-20.135308.bltz.flac24",
+    "gd1987-06-20.nakcm304.suraci.81744.sbeok.flac16",
+    "gd1987-06-20.akg414.bryant.gems.77988.sbeok.flac16",
+    "gd1987-06-20.138260.AKG414.bryant.miller.sirmick.sbeok.flac16",
+    "gd1987-06-20.124397.beacon.akg460.flac24",
+    "gd1987-06-20.146928.senn441.corso-rossi.ford.sbeok.flac16"
+  ],
+  "best_recording": "gd1987-06-20.sbd.walker-scotton.miller.83766.sbeok.flac16",
+  "avg_rating": 3.797381878821567,
+  "raw_rating": 4.142857142857143,
+  "recording_count": 12,
+  "confidence": 1.0,
+  "total_high_ratings": 23,
+  "total_low_ratings": 2,
+  "source_types": {
+    "SBD": 3,
+    "MATRIX": 2,
+    "UNKNOWN": 7
+  },
+  "matching_method": "date_only",
+  "filtering_applied": []
+}

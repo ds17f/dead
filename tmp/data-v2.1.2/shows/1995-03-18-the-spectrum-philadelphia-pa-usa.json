@@ -1,0 +1,181 @@
+{
+  "url": "https://jerrygarcia.com/show/1995-03-18-the-spectrum-philadelphia-pa-usa/",
+  "show_id": "1995-03-18-the-spectrum-philadelphia-pa-usa",
+  "band": "Grateful Dead",
+  "venue": "The Spectrum",
+  "location_raw": "Philadelphia, PA",
+  "city": "Philadelphia",
+  "state": "PA",
+  "country": "USA",
+  "date": "1995-03-18",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Hell In A Bucket",
+          "url": "https://jerrygarcia.com/song/hell-in-a-bucket/",
+          "segue_into_next": false
+        },
+        {
+          "name": "West L.A. Fadeaway",
+          "url": "https://jerrygarcia.com/song/west-l-a-fadeaway/",
+          "segue_into_next": false
+        },
+        {
+          "name": "El Paso",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Ramble On Rose",
+          "url": "https://jerrygarcia.com/song/ramble-on-rose/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Just Like Tom Thumb's Blues",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Jack-A-Roe",
+          "url": "https://jerrygarcia.com/song/jack-a-roe/",
+          "segue_into_next": false
+        },
+        {
+          "name": "The Promised Land",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "It's All Too Much",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Iko Iko",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Playing In The Band",
+          "url": "https://jerrygarcia.com/song/playin-in-the-band/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Uncle John's Band",
+          "url": "https://jerrygarcia.com/song/uncle-johns-band/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Jam",
+          "url": "https://jerrygarcia.com/song/jam/",
+          "segue_into_next": true
+        },
+        {
+          "name": "The Last Time",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Visions Of Johanna",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "One More Saturday Night",
+          "url": "https://jerrygarcia.com/song/one-more-saturday-night/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "Rain",
+          "url": "https://jerrygarcia.com/song/rain/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Vince Welnick",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152431/VinceWelnick_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T09:19:15.093018",
+  "show_time": null,
+  "recordings": [
+    "gd95-03-18.sbd.1362.sbeok.shnf",
+    "gd1995-03-18.sbd.miller.97659.flac16",
+    "gd1995-03-18.142354.s2.sbd.miller.flac1644",
+    "gd1995-03-18.sbd.ladner.32055.sbeok.flac16",
+    "gd1995-03-18.sbd.burke.95677.flac16",
+    "gd1995-03-18.nak300.bleich.92018.flac16",
+    "gd1995-03-18.123337.crupi.flac16",
+    "gd1995-03-18.141182.FOB-cmc5-mk4.ebel.flac1644",
+    "gd1995-03-18.142981.Boedicker.flac1644",
+    "gd1995-03-18.141506.OTS.AKG.Ackerman.Miller.Noel.t-flac.1648"
+  ],
+  "best_recording": "gd95-03-18.sbd.1362.sbeok.shnf",
+  "avg_rating": 3.699511400651465,
+  "raw_rating": 3.8142857142857145,
+  "recording_count": 10,
+  "confidence": 1.0,
+  "total_high_ratings": 47,
+  "total_low_ratings": 9,
+  "source_types": {
+    "SBD": 5,
+    "UNKNOWN": 5
+  },
+  "matching_method": "date_only",
+  "filtering_applied": []
+}

@@ -1,0 +1,195 @@
+{
+  "url": "https://jerrygarcia.com/show/1990-06-17-shoreline-amphitheatre-mountain-view-ca-usa/",
+  "show_id": "1990-06-17-shoreline-amphitheatre-mountain-view-ca-usa",
+  "band": "Grateful Dead",
+  "venue": "Shoreline Amphitheatre",
+  "location_raw": "Mountain View, CA",
+  "city": "Mountain View",
+  "state": "CA",
+  "country": "USA",
+  "date": "1990-06-17",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Shakedown Street",
+          "url": "https://jerrygarcia.com/song/shakedown-street/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Little Red Rooster",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Jack-A-Roe",
+          "url": "https://jerrygarcia.com/song/jack-a-roe/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Easy To Love You",
+          "url": "https://jerrygarcia.com/song/easy-to-love-you/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Queen Jane Approximately",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Bird Song",
+          "url": "https://jerrygarcia.com/song/bird-song/",
+          "segue_into_next": true
+        },
+        {
+          "name": "The Promised Land",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Iko Iko",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Picasso Moon",
+          "url": "https://jerrygarcia.com/song/picasso-moon/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Ship Of Fools",
+          "url": "https://jerrygarcia.com/song/ship-of-fools/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Playing In The Band",
+          "url": "https://jerrygarcia.com/song/playin-in-the-band/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Eyes Of The World",
+          "url": "https://jerrygarcia.com/song/eyes-of-the-world/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "I Will Take You Home",
+          "url": "https://jerrygarcia.com/song/i-will-take-you-home/",
+          "segue_into_next": true
+        },
+        {
+          "name": "I Need A Miracle",
+          "url": "https://jerrygarcia.com/song/i-need-a-miracle/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Stella Blue",
+          "url": "https://jerrygarcia.com/song/stella-blue/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Throwing Stones",
+          "url": "https://jerrygarcia.com/song/throwing-stones/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Turn On Your Lovelight",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "The Weight",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Brent Mydland",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152446/BretMydland_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T09:06:15.325334",
+  "show_time": null,
+  "recordings": [
+    "gd90-06-17.sbd.ladner.10062.sbeok.shnf",
+    "gd1990-06-17.sbd.miller.106170.flac16",
+    "gd1990-06-17.149334.soundboard.ultramatrix.pearson.miller.flac24",
+    "gd1990-06-17.149425.UltraMatrix.sbd.cm.miller.flac16",
+    "gd1990-06-17.mtx.hansokolow.97329.flac16",
+    "gd90-06-17.nak.ladner.7764.sbeok.shnf",
+    "gd1990-06-17.111846.NeumannKMF4.daweez.d5scott.flac16",
+    "gd1990-06-17.Nak300CP4.Fitzy.Keo.126387.Flac2496",
+    "gd1990-06-17.aud.savage-wklitz.96420.flac16",
+    "gd1990-06-17.Nak300CP4.Fitzy.Keo.126388.Flac1644",
+    "gd1990-06-17.138400.OTS-FOB.Schoeps.Ammons-Noel.t-flac16",
+    "gd1990-06-17.143426.FOB.Schoeps.Brotman.Miler.Noel.t-flac1648"
+  ],
+  "best_recording": "gd90-06-17.sbd.ladner.10062.sbeok.shnf",
+  "avg_rating": 3.6448598130841123,
+  "raw_rating": 4.076923076923077,
+  "recording_count": 12,
+  "confidence": 1.0,
+  "total_high_ratings": 18,
+  "total_low_ratings": 1,
+  "source_types": {
+    "SBD": 4,
+    "MATRIX": 1,
+    "UNKNOWN": 6,
+    "AUD": 1
+  },
+  "matching_method": "date_only",
+  "filtering_applied": []
+}

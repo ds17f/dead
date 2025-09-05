@@ -1,0 +1,200 @@
+{
+  "url": "https://jerrygarcia.com/show/1977-04-23-springfield-civic-center-springfield-ma-usa/",
+  "show_id": "1977-04-23-springfield-civic-center-springfield-ma-usa",
+  "band": "Grateful Dead",
+  "venue": "Springfield Civic Center",
+  "location_raw": "Springfield, MA",
+  "city": "Springfield",
+  "state": "MA",
+  "country": "USA",
+  "date": "1977-04-23",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Sugaree",
+          "url": "https://jerrygarcia.com/song/sugaree/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Cassidy",
+          "url": "https://jerrygarcia.com/song/cassidy/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Loser",
+          "url": "https://jerrygarcia.com/song/loser/",
+          "segue_into_next": false
+        },
+        {
+          "name": "New Minglewood Blues",
+          "url": "https://jerrygarcia.com/song/new-minglewood-blues/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Ramble On Rose",
+          "url": "https://jerrygarcia.com/song/ramble-on-rose/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Me And My Uncle",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Row Jimmy",
+          "url": "https://jerrygarcia.com/song/row-jimmy/",
+          "segue_into_next": false
+        },
+        {
+          "name": "It's All Over Now",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Scarlet Begonias",
+          "url": "https://jerrygarcia.com/song/scarlet-begonias/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Fire On The Mountain",
+          "url": "https://jerrygarcia.com/song/fire-on-the-mountain/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Estimated Prophet",
+          "url": "https://jerrygarcia.com/song/estimated-prophet/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Bertha",
+          "url": "https://jerrygarcia.com/song/bertha/",
+          "segue_into_next": false
+        },
+        {
+          "name": "The Music Never Stopped",
+          "url": "https://jerrygarcia.com/song/the-music-never-stopped/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Help On The Way",
+          "url": "https://jerrygarcia.com/song/help-on-the-way/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Slipknot",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Franklin's Tower",
+          "url": "https://jerrygarcia.com/song/franklins-tower/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Around & Around",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Goin' Down The Road Feeling Bad",
+          "url": "https://jerrygarcia.com/song/goin-down-the-road-feelin-bad/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Not Fade Away",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "One More Saturday Night",
+          "url": "https://jerrygarcia.com/song/one-more-saturday-night/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Keith Godchaux",
+      "instruments": "keyboards",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152439/KeithGodchaux_200-100x100.jpg"
+    },
+    {
+      "name": "Donna Jean Godchaux",
+      "instruments": "vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2013/07/12152444/DonnaGodchaux_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T08:32:52.245018",
+  "show_time": null,
+  "recordings": [
+    "gd77-04-23.sbd.jerugim.1827.sbefail.shnf",
+    "gd1977-04-23.sbd.miller.88401.sbeok.flac16",
+    "gd1977-04-23.sbd.aj.gardner.4334.shnf",
+    "gd1977-04-23.sbd.unknown.27421.shnf",
+    "gd1977-04-23.mtx.seamons.97596.sbeok.flac16",
+    "gd77-04-23.hopkins.vernon.17178.sbeok.shnf",
+    "gd77-04-23.moore.minches.18438.sbeok.shnf",
+    "gd1977-04-23.143220.weidner.akg-d200e.miller.flac1644",
+    "gd1977-04-23.sonyECM99a.hopkins.minches.83685.flac16",
+    "gd1977-04-23.143265.akgd200e.miller.fixed.flac1644",
+    "gd1977-04-23.152693.ecm-99a.warburton.smith.sirmick.flac24",
+    "gd1977-04-23.139535.fob.ecm.99a.hopkins.miller.clugston.flac1648",
+    "gd1977-04-23.152692.ecm-99a.warburton.smith.sirmick.flac16"
+  ],
+  "best_recording": "gd77-04-23.sbd.jerugim.1827.sbefail.shnf",
+  "avg_rating": 4.224545454545455,
+  "raw_rating": 4.642910860429108,
+  "recording_count": 13,
+  "confidence": 1.0,
+  "total_high_ratings": 123,
+  "total_low_ratings": 1,
+  "source_types": {
+    "SBD": 4,
+    "MATRIX": 1,
+    "UNKNOWN": 8
+  },
+  "matching_method": "date_only",
+  "filtering_applied": []
+}

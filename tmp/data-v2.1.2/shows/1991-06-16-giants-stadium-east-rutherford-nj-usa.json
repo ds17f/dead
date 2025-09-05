@@ -1,0 +1,199 @@
+{
+  "url": "https://jerrygarcia.com/show/1991-06-16-giants-stadium-east-rutherford-nj-usa/",
+  "show_id": "1991-06-16-giants-stadium-east-rutherford-nj-usa",
+  "band": "Grateful Dead",
+  "venue": "Giants Stadium",
+  "location_raw": "East Rutherford, NJ",
+  "city": "East Rutherford",
+  "state": "NJ",
+  "country": "USA",
+  "date": "1991-06-16",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Picasso Moon",
+          "url": "https://jerrygarcia.com/song/picasso-moon/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Bertha",
+          "url": "https://jerrygarcia.com/song/bertha/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Little Red Rooster",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Candyman",
+          "url": "https://jerrygarcia.com/song/candyman/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Stuck Inside of Mobile with the Memphis Blues Again",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Stagger Lee",
+          "url": "https://jerrygarcia.com/song/stagger-lee/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Let It Grow",
+          "url": "https://jerrygarcia.com/song/let-it-grow/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Jack Straw",
+          "url": "https://jerrygarcia.com/song/jack-straw/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Crazy Fingers",
+          "url": "https://jerrygarcia.com/song/crazy-fingers/",
+          "segue_into_next": true
+        },
+        {
+          "name": "China Cat Sunflower",
+          "url": "https://jerrygarcia.com/song/china-cat-sunflower/",
+          "segue_into_next": true
+        },
+        {
+          "name": "I Know You Rider",
+          "url": "https://jerrygarcia.com/song/i-know-you-rider/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "I Need A Miracle",
+          "url": "https://jerrygarcia.com/song/i-need-a-miracle/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Black Peter",
+          "url": "https://jerrygarcia.com/song/black-peter/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Throwing Stones",
+          "url": "https://jerrygarcia.com/song/throwing-stones/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Not Fade Away",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "Box of Rain",
+          "url": "https://jerrygarcia.com/song/box-of-rain/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Bruce Hornsby",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152446/BruceHornsby_200-100x100.jpg"
+    },
+    {
+      "name": "Vince Welnick",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152431/VinceWelnick_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "found",
+  "supporting_acts": [
+    "Little Feat"
+  ],
+  "collection_timestamp": "2025-08-10T09:09:10.802975",
+  "show_time": null,
+  "recordings": [
+    "gd91-06-16.sbd.shn.17028.sbeok.shnf",
+    "gd1991-06-16.sbd.gjf.tetzeli.fix-17028.34783.reflac.flac16",
+    "gd1991-06-16.150162.sbd.cm.miller.flac16",
+    "gd1991-06-16.142609.dsbd.dolphinsmile.flac16",
+    "gd1991-06-16.135888.upg-sbd.tobin.flac16",
+    "gd1991-06-16.sbd.valter-chrisl.4798.shnf",
+    "gd1991-06-16.149986.sbd.pearson-healy.miller.flac2496",
+    "gd1991-06-16.128625.mtx.dusborne.flac16",
+    "gd1991-06-16.135890.mtx.tobin.flac16",
+    "gd1991-06-16.Nak300CP4Baker.109124.flac16",
+    "gd1991-06-16.134056.bk4011ortf-fob-dantepper.flac16",
+    "gd1991-06-16.135892.5-1.tobin.flac1648",
+    "gd1991-06-16.AKG451.Currier.Keo.122648.Flac1644",
+    "gd1991-06-16.AKG451.Currier.Keo.122647.Flac2496",
+    "gd1991-06-16.170695.me88.mc.rogosa.flac2496",
+    "gd1991-06-16.135889.upg-aud.tobin.flac16",
+    "gd1991-06-16.135891.dts.tobin.flac16",
+    "gd1991-06-16.150370.FOB.Schoeps.Brotman.Metchick.Miller.Noel.t-flac1648",
+    "gd1991-06-16.170694.me88.mc.rogosa.flac1644"
+  ],
+  "best_recording": "gd91-06-16.sbd.shn.17028.sbeok.shnf",
+  "avg_rating": 2.756983240223464,
+  "raw_rating": 3.420634920634921,
+  "recording_count": 19,
+  "confidence": 1.0,
+  "total_high_ratings": 17,
+  "total_low_ratings": 5,
+  "source_types": {
+    "SBD": 7,
+    "MATRIX": 2,
+    "UNKNOWN": 9,
+    "AUD": 1
+  },
+  "matching_method": "date_only",
+  "filtering_applied": []
+}

@@ -1,0 +1,188 @@
+{
+  "url": "https://jerrygarcia.com/show/1992-06-23-star-lake-ampitheater-burgettstown-pa-usa/",
+  "show_id": "1992-06-23-star-lake-ampitheater-burgettstown-pa-usa",
+  "band": "Grateful Dead",
+  "venue": "Star Lake Ampitheater",
+  "location_raw": "Burgettstown, PA",
+  "city": "Burgettstown",
+  "state": "PA",
+  "country": "USA",
+  "date": "1992-06-23",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Help On The Way",
+          "url": "https://jerrygarcia.com/song/help-on-the-way/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Slipknot",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Franklin's Tower",
+          "url": "https://jerrygarcia.com/song/franklins-tower/",
+          "segue_into_next": false
+        },
+        {
+          "name": "New Minglewood Blues",
+          "url": "https://jerrygarcia.com/song/new-minglewood-blues/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Stagger Lee",
+          "url": "https://jerrygarcia.com/song/stagger-lee/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Black Throated Wind",
+          "url": "https://jerrygarcia.com/song/black-throated-wind/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Big Railroad Blues",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Stuck Inside of Mobile with the Memphis Blues Again",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "New Speedway Boogie",
+          "url": "https://jerrygarcia.com/song/new-speedway-boogie/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Truckin'",
+          "url": "https://jerrygarcia.com/song/truckin/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Spoonful",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "So Many Roads",
+          "url": "https://jerrygarcia.com/song/so-many-roads/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Way To Go Home",
+          "url": "https://jerrygarcia.com/song/way-to-go-home/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Corinna",
+          "url": "https://jerrygarcia.com/song/corinna/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "The Last Time",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Standing On The Moon",
+          "url": "https://jerrygarcia.com/song/standing-on-the-moon/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Sugar Magnolia",
+          "url": "https://jerrygarcia.com/song/sugar-magnolia/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "Brokedown Palace",
+          "url": "https://jerrygarcia.com/song/brokedown-palace/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Vince Welnick",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152431/VinceWelnick_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T09:12:01.269296",
+  "show_time": null,
+  "recordings": [
+    "gd92-06-23.sbd.barbella.6024.sbeok.shnf",
+    "gd1992-06-23.dsbd.miller.32491.sbeok.flac16",
+    "gd92-06-23.aud.harlan.9985.sbeok.shnf",
+    "gd1992-06-23.nak300.bleich.sirmick.86634.sbeok.flac16",
+    "gd1992-06-23.135073.Nak300CP4.Fitzy.Keo.Flac1644",
+    "gd1992-06-23.135074.Nak300CP4.Fitzy.Keo.Flac2496"
+  ],
+  "best_recording": "gd92-06-23.sbd.barbella.6024.sbeok.shnf",
+  "avg_rating": 2.8804900389283254,
+  "raw_rating": 3.556866537717602,
+  "recording_count": 6,
+  "confidence": 1.0,
+  "total_high_ratings": 23,
+  "total_low_ratings": 7,
+  "source_types": {
+    "SBD": 2,
+    "AUD": 1,
+    "UNKNOWN": 3
+  },
+  "matching_method": "date_only",
+  "filtering_applied": []
+}

@@ -1,0 +1,198 @@
+{
+  "url": "https://jerrygarcia.com/show/1990-09-18-madison-square-garden-new-york-ny-usa/",
+  "show_id": "1990-09-18-madison-square-garden-new-york-ny-usa",
+  "band": "Grateful Dead",
+  "venue": "Madison Square Garden",
+  "location_raw": "New York, NY",
+  "city": "New York",
+  "state": "NY",
+  "country": "USA",
+  "date": "1990-09-18",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Mississippi Half-Step Uptown Toodeloo",
+          "url": "https://jerrygarcia.com/song/mississippi-half-step-uptown-toodeloo/",
+          "segue_into_next": false
+        },
+        {
+          "name": "New Minglewood Blues",
+          "url": "https://jerrygarcia.com/song/new-minglewood-blues/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Loser",
+          "url": "https://jerrygarcia.com/song/loser/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Picasso Moon",
+          "url": "https://jerrygarcia.com/song/picasso-moon/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Row Jimmy",
+          "url": "https://jerrygarcia.com/song/row-jimmy/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Desolation Row",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "To Lay Me Down",
+          "url": "https://jerrygarcia.com/song/to-lay-me-down/",
+          "segue_into_next": true
+        },
+        {
+          "name": "The Promised Land",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Eyes Of The World",
+          "url": "https://jerrygarcia.com/song/eyes-of-the-world/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Estimated Prophet",
+          "url": "https://jerrygarcia.com/song/estimated-prophet/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Foolish Heart",
+          "url": "https://jerrygarcia.com/song/foolish-heart/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Jam",
+          "url": "https://jerrygarcia.com/song/jam/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "The Other One",
+          "url": "https://jerrygarcia.com/song/the-other-one/",
+          "segue_into_next": true
+        },
+        {
+          "name": "The Wheel",
+          "url": "https://jerrygarcia.com/song/the-wheel/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Sugar Magnolia",
+          "url": "https://jerrygarcia.com/song/sugar-magnolia/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "Knockin' On Heaven's Door",
+          "url": "https://jerrygarcia.com/song/knockin-on-heavens-door/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Bruce Hornsby",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152446/BruceHornsby_200-100x100.jpg"
+    },
+    {
+      "name": "Vince Welnick",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152431/VinceWelnick_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T09:07:03.413192",
+  "show_time": null,
+  "recordings": [
+    "gd1990-09-18.sbd.miller.79022.sbeok.flac16",
+    "gd90-09-18.sbd.miller.12885.sbeok.shnf",
+    "gd1990-09-18.sbd.miller.fix-79022.86952.sbeok.flac16",
+    "gd1990-09-18.sbd.richey.11811.sbeok.shnf",
+    "gd1990-09-18.147781.UltraMatrix.sbd.cm.miller.flac16",
+    "gd1990-09-18.147622.ultramatrix.sbd.miller.flac24",
+    "gd1990-09-18.sbd.miller.tetzeli.fix-12885.35162.reflac.flac16",
+    "gd1990-09-18.mtx.hansokolow.96156.flac16",
+    "gd1990-09-18.152738.mtx.seamons.ht130.flac16",
+    "gd1990-09-18.138069.mtx.photoleon.t-flac16",
+    "gd90-09-18.schoeps-fob.sacks.9772.sbeok.shnf",
+    "gd1990-09-18.bk4011.tdarian.french.88968.sbeok.flac16",
+    "gd1990-09-18.141167.OTS.AKG.Ackerman.Miller.Noel.t-flac1648",
+    "gd1990-09-18.AKG451.Currier.Keo.131909.Flac2496",
+    "gd1990-09-18.at835b.laurentus.96934.flac16",
+    "gd1990-09-18.150544.FOB.Schoeps.Brotman.Metchick.Miller.Noel.t.flac1648",
+    "gd1990-09-18.at835b.laurentus.fix-96934.97021.flac16",
+    "gd1990-09-18.139520.FOB.Schoeps.Katzeff.Gastwirt.Miller.Noel.t-flac1648",
+    "gd1990-09-18.144893.nak300.cp4.dalton.miller.sirmick.flac1648",
+    "gd1990-09-18.124767.AT835.Fix.laurentis.flac16",
+    "gd1990-09-18.AKG451.Currier.Keo.131908.Flac1644"
+  ],
+  "best_recording": "gd1990-09-18.sbd.miller.79022.sbeok.flac16",
+  "avg_rating": 3.564980412195537,
+  "raw_rating": 4.142490372272143,
+  "recording_count": 21,
+  "confidence": 1.0,
+  "total_high_ratings": 35,
+  "total_low_ratings": 1,
+  "source_types": {
+    "SBD": 7,
+    "MATRIX": 3,
+    "UNKNOWN": 11
+  },
+  "matching_method": "date_only",
+  "filtering_applied": []
+}

@@ -1,0 +1,212 @@
+{
+  "url": "https://jerrygarcia.com/show/1983-10-21-the-centrum-worcester-ma-usa/",
+  "show_id": "1983-10-21-the-centrum-worcester-ma-usa",
+  "band": "Grateful Dead",
+  "venue": "The Centrum",
+  "location_raw": "Worcester, MA",
+  "city": "Worcester",
+  "state": "MA",
+  "country": "USA",
+  "date": "1983-10-21",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "The Music Never Stopped",
+          "url": "https://jerrygarcia.com/song/the-music-never-stopped/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Loser",
+          "url": "https://jerrygarcia.com/song/loser/",
+          "segue_into_next": false
+        },
+        {
+          "name": "C.C. Rider",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Cumberland Blues",
+          "url": "https://jerrygarcia.com/song/cumberland-blues/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Cassidy",
+          "url": "https://jerrygarcia.com/song/cassidy/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Ramble On Rose",
+          "url": "https://jerrygarcia.com/song/ramble-on-rose/",
+          "segue_into_next": false
+        },
+        {
+          "name": "My Brother Esau",
+          "url": "https://jerrygarcia.com/song/my-brother-esau/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Big Railroad Blues",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "The Promised Land",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Scarlet Begonias",
+          "url": "https://jerrygarcia.com/song/scarlet-begonias/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Fire On The Mountain",
+          "url": "https://jerrygarcia.com/song/fire-on-the-mountain/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Uncle John's Band",
+          "url": "https://jerrygarcia.com/song/uncle-johns-band/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Playing In The Band",
+          "url": "https://jerrygarcia.com/song/playin-in-the-band/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Truckin'",
+          "url": "https://jerrygarcia.com/song/truckin/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Wharf Rat",
+          "url": "https://jerrygarcia.com/song/wharf-rat/",
+          "segue_into_next": true
+        },
+        {
+          "name": "I Need A Miracle",
+          "url": "https://jerrygarcia.com/song/i-need-a-miracle/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Touch of Grey",
+          "url": "https://jerrygarcia.com/song/touch-of-grey/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "Johnny B. Goode",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Brent Mydland",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152446/BretMydland_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T08:50:22.320667",
+  "show_time": null,
+  "recordings": [
+    "gd83-10-21.sbd.bertha-ashley.24998.sbeok.shnf",
+    "gd83-10-21.sbd.clugston.5557.sbeok.shnf",
+    "gd83-10-21.sbd.harrell.8113.sbeok.shnf",
+    "gd83-10-21.sbd.bertha-ashley.9979.sbeok.shnf",
+    "gd1983-10-21.mtx.seamons.105419.flac16",
+    "gd1983-10-21.aud.silberman.348.shnf",
+    "gd83-10-21.ficca-brennan.markezin.19516.sbeok.shnf",
+    "gd1983-10-21.139515.FOB.Senn.Silberman.Gastwirt.Miller.Noel.t-flac.16",
+    "gd1983-10-21.set2.akg.mow.ford.28888.flac16",
+    "gd1983-10-21.137332.senn421.miller.flac16",
+    "gd1983-10-21.137308.senn421.miller.flac24",
+    "gd1983-10-21.fob.atm11.chasingwilma.102126.flac16",
+    "gd1983-10-21.nak300.morris.102063.sbeok.flac16",
+    "gd1983-10-21.135083.Nak100CP4.Hill.Keo.Flac2496",
+    "gd1983-10-21.143328.beyerm201.holbrook.flac2448",
+    "gd1983-10-21.beyer-nak.friend.111507.flac2448",
+    "gd1983-10-21.143327.beyerm201.holbrook.flac1644",
+    "gd1983-10-21.164901.senn441.neumann.u87.blend.eaton.miller.clugston.flac1648",
+    "gd1983-10-21.aud.morris.111059.sbeok.flac24",
+    "gd1983-10-21.111388.Sennheiser421.daweez.d5scott.flac16",
+    "gd1983-10-21.156193.senn441.silberman.gastwirt.miller.flac16",
+    "gd1983-10-21.164902.senn441.neumann.u87.blend.eaton.miller.clugston.flac2496",
+    "gd1983-10-21.122446.chasingwilma.flac24",
+    "gd1983-10-21.144732.aud.lamarre.berger.flac24",
+    "gd1983-10-21.144733.aud.lamarre.berger.flac16",
+    "gd1983-10-21.135082.Nak100CP4.Hill.Keo.Flac1644"
+  ],
+  "best_recording": "gd83-10-21.sbd.bertha-ashley.24998.sbeok.shnf",
+  "avg_rating": 3.828017241379311,
+  "raw_rating": 4.328735632183908,
+  "recording_count": 26,
+  "confidence": 1.0,
+  "total_high_ratings": 78,
+  "total_low_ratings": 2,
+  "source_types": {
+    "SBD": 4,
+    "MATRIX": 1,
+    "AUD": 4,
+    "UNKNOWN": 17
+  },
+  "matching_method": "date_only",
+  "filtering_applied": [],
+  "collections": [
+    "30-trips-around-the-sun"
+  ]
+}

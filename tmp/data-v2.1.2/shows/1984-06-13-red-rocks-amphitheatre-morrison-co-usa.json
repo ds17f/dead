@@ -1,0 +1,188 @@
+{
+  "url": "https://jerrygarcia.com/show/1984-06-13-red-rocks-amphitheatre-morrison-co-usa/",
+  "show_id": "1984-06-13-red-rocks-amphitheatre-morrison-co-usa",
+  "band": "Grateful Dead",
+  "venue": "Red Rocks Amphitheatre",
+  "location_raw": "Morrison, CO",
+  "city": "Morrison",
+  "state": "CO",
+  "country": "USA",
+  "date": "1984-06-13",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Hell In A Bucket",
+          "url": "https://jerrygarcia.com/song/hell-in-a-bucket/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Candyman",
+          "url": "https://jerrygarcia.com/song/candyman/",
+          "segue_into_next": false
+        },
+        {
+          "name": "C.C. Rider",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Ramble On Rose",
+          "url": "https://jerrygarcia.com/song/ramble-on-rose/",
+          "segue_into_next": false
+        },
+        {
+          "name": "My Brother Esau",
+          "url": "https://jerrygarcia.com/song/my-brother-esau/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Cold Rain And Snow",
+          "url": "https://jerrygarcia.com/song/cold-rain-and-snow/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Don't Ease Me In",
+          "url": "https://jerrygarcia.com/song/dont-ease-me-in/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "China Cat Sunflower",
+          "url": "https://jerrygarcia.com/song/china-cat-sunflower/",
+          "segue_into_next": true
+        },
+        {
+          "name": "I Know You Rider",
+          "url": "https://jerrygarcia.com/song/i-know-you-rider/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Man Smart, Woman Smarter",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Ship Of Fools",
+          "url": "https://jerrygarcia.com/song/ship-of-fools/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Let It Grow",
+          "url": "https://jerrygarcia.com/song/let-it-grow/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "The Wheel",
+          "url": "https://jerrygarcia.com/song/the-wheel/",
+          "segue_into_next": true
+        },
+        {
+          "name": "I Need A Miracle",
+          "url": "https://jerrygarcia.com/song/i-need-a-miracle/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Stella Blue",
+          "url": "https://jerrygarcia.com/song/stella-blue/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Sugar Magnolia",
+          "url": "https://jerrygarcia.com/song/sugar-magnolia/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "It's All Over Now Baby Blue",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Brent Mydland",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152446/BretMydland_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T08:51:32.871834",
+  "show_time": null,
+  "recordings": [
+    "gd84-06-13.sbd.ladner.11263.sbeok.shnf",
+    "gd1984-06-13.135955.sbd.cm.remaster.flac16",
+    "gd1984-06-13.nakcm304-mikeg-suraci.suraci.78363.flac16",
+    "gd1984-06-13.140183.fob.schoeps.cmc4.mk41.oade.bryant.miller.clugston.flac1644",
+    "gd1984-06-13.148193.beyerm88.holbrook.flac1644",
+    "gd1984-06-13.148389.2nd.set.akg.d330bt.senn421.hecht.miller.clugston.flac1648",
+    "gd1984-06-13.164737.unknown.vita.miller.clugston.flac2496",
+    "gd1984-06-13.140184.fob.schoeps.cmc4.mk41.oade.bryant.miller.clugston.flac2496",
+    "gd1984-06-13.122132.beyer-senn.nubar.d5scott.flac16",
+    "gd1984-06-13.148390.2nd.set.akg.d330bt.senn421.hecht.miller.clugston.flac2496",
+    "gd1984-06-13.148194.beyerm88.holbrook.flac2448",
+    "gd1984-06-13.164736.unknown.vita.miller.clugston.flac1648"
+  ],
+  "best_recording": "gd84-06-13.sbd.ladner.11263.sbeok.shnf",
+  "avg_rating": 3.4416326530612245,
+  "raw_rating": 3.868131868131868,
+  "recording_count": 12,
+  "confidence": 1.0,
+  "total_high_ratings": 8,
+  "total_low_ratings": 1,
+  "source_types": {
+    "SBD": 2,
+    "UNKNOWN": 10
+  },
+  "matching_method": "date_only",
+  "filtering_applied": []
+}

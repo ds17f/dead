@@ -1,0 +1,195 @@
+{
+  "url": "https://jerrygarcia.com/show/1994-07-26-riverport-amphitheatre-maryland-heights-mo-usa/",
+  "show_id": "1994-07-26-riverport-amphitheatre-maryland-heights-mo-usa",
+  "band": "Grateful Dead",
+  "venue": "Riverport Amphitheatre",
+  "location_raw": "Maryland Heights, MO",
+  "city": "Maryland Heights",
+  "state": "MO",
+  "country": "USA",
+  "date": "1994-07-26",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Jack Straw",
+          "url": "https://jerrygarcia.com/song/jack-straw/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Friend Of The Devil",
+          "url": "https://jerrygarcia.com/song/friend-of-the-devil/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Little Red Rooster",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Lazy River Road",
+          "url": "https://jerrygarcia.com/song/lazy-river-road/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Queen Jane Approximately",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Tennessee Jed",
+          "url": "https://jerrygarcia.com/song/tennessee-jed/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Childhood's End",
+          "url": "https://jerrygarcia.com/song/childhoods-end/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Easy Answers",
+          "url": "https://jerrygarcia.com/song/easy-answers/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Deal",
+          "url": "https://jerrygarcia.com/song/deal/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "China Cat Sunflower",
+          "url": "https://jerrygarcia.com/song/china-cat-sunflower/",
+          "segue_into_next": true
+        },
+        {
+          "name": "I Know You Rider",
+          "url": "https://jerrygarcia.com/song/i-know-you-rider/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Victim Or The Crime",
+          "url": "https://jerrygarcia.com/song/victim-or-the-crime/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Samba In The Rain",
+          "url": "https://jerrygarcia.com/song/samba-in-the-rain/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Ship Of Fools",
+          "url": "https://jerrygarcia.com/song/ship-of-fools/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Estimated Prophet",
+          "url": "https://jerrygarcia.com/song/estimated-prophet/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "The Wheel",
+          "url": "https://jerrygarcia.com/song/the-wheel/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Attics Of My Life",
+          "url": "https://jerrygarcia.com/song/attics-of-my-life/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Sugar Magnolia",
+          "url": "https://jerrygarcia.com/song/sugar-magnolia/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "I Fought The Law",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Vince Welnick",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152431/VinceWelnick_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T09:17:37.131508",
+  "show_time": null,
+  "recordings": [
+    "gd1994-07-26.139978.s2.sbd.miller.flac1644",
+    "gd1994-07-26.snchk.fm-sbd.koucky.91255.flac16",
+    "gd94-07-26.smith.ladner.10225.sbeok.shnf",
+    "gd1994-07-26.AKG451.Darbys2nd.120292.Flac2448",
+    "gd1994-07-26.AKG451.Darby.119446.Flac1644",
+    "gd1994-07-26.124310.C38B.roberts.flac16",
+    "gd1994-07-26.AKG451.Darby.119445.Flac1648",
+    "gd1994-07-26.AKG451.Darbys2nd.120293.Flac1644",
+    "gd1994-07-26.139723.beyercmc101.ebel.flac1644"
+  ],
+  "best_recording": "gd1994-07-26.139978.s2.sbd.miller.flac1644",
+  "avg_rating": 1.7769447047797562,
+  "raw_rating": 3.443850267379679,
+  "recording_count": 9,
+  "confidence": 1.0,
+  "total_high_ratings": 7,
+  "total_low_ratings": 2,
+  "source_types": {
+    "SBD": 2,
+    "UNKNOWN": 7
+  },
+  "matching_method": "date_only",
+  "filtering_applied": []
+}

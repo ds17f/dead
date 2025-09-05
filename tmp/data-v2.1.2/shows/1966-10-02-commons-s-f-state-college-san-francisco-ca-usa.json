@@ -1,0 +1,66 @@
+{
+  "url": "https://jerrygarcia.com/show/1966-10-02-commons-s-f-state-college-san-francisco-ca-usa/",
+  "show_id": "1966-10-02-commons-s-f-state-college-san-francisco-ca-usa",
+  "band": "Grateful Dead",
+  "venue": "Commons, S.F. State College",
+  "location_raw": "San Francisco, CA",
+  "city": "San Francisco",
+  "state": "CA",
+  "country": "USA",
+  "date": "1966-10-02",
+  "setlist_status": "missing",
+  "setlist": null,
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Ron \"Pigpen\" McKernan",
+      "instruments": "keyboards, harmonica, percussion, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152433/RonPigpenMcKernan_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "found",
+  "supporting_acts": [
+    "Mimi Farina",
+    "The Only Alternative",
+    "The Committee",
+    "Congress Of Wonders"
+  ],
+  "collection_timestamp": "2025-08-10T08:01:29.691692",
+  "show_time": null,
+  "recordings": [
+    "gd1966-10-02.sbd.bershaw.9517.shnf",
+    "gd1966-10-02.sbd.bershaw.5413.shnf"
+  ],
+  "best_recording": "gd1966-10-02.sbd.bershaw.9517.shnf",
+  "avg_rating": 3.3,
+  "raw_rating": 4.0,
+  "recording_count": 2,
+  "confidence": 0.6,
+  "total_high_ratings": 5,
+  "total_low_ratings": 1,
+  "source_types": {
+    "SBD": 2
+  },
+  "matching_method": "date_only",
+  "filtering_applied": []
+}

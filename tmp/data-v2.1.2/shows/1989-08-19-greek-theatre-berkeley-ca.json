@@ -1,0 +1,205 @@
+{
+  "url": "https://jerrygarcia.com/show/1989-08-19-greek-theatre-berkeley-ca/",
+  "show_id": "1989-08-19-greek-theatre-berkeley-ca",
+  "band": "Grateful Dead",
+  "venue": "Greek Theatre",
+  "location_raw": "Berkeley, CA",
+  "city": "Berkeley",
+  "state": "CA",
+  "country": "USA",
+  "date": "1989-08-19",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Let The Good Times Roll",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Jack Straw",
+          "url": "https://jerrygarcia.com/song/jack-straw/",
+          "segue_into_next": false
+        },
+        {
+          "name": "We Can Run",
+          "url": "https://jerrygarcia.com/song/we-can-run/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Tennessee Jed",
+          "url": "https://jerrygarcia.com/song/tennessee-jed/",
+          "segue_into_next": false
+        },
+        {
+          "name": "It's All Over Now",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Loser",
+          "url": "https://jerrygarcia.com/song/loser/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Stuck Inside of Mobile with the Memphis Blues Again",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Box of Rain",
+          "url": "https://jerrygarcia.com/song/box-of-rain/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "China Cat Sunflower",
+          "url": "https://jerrygarcia.com/song/china-cat-sunflower/",
+          "segue_into_next": true
+        },
+        {
+          "name": "I Know You Rider",
+          "url": "https://jerrygarcia.com/song/i-know-you-rider/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Playing In The Band",
+          "url": "https://jerrygarcia.com/song/playin-in-the-band/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Uncle John's Band",
+          "url": "https://jerrygarcia.com/song/uncle-johns-band/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Playing In The Band",
+          "url": "https://jerrygarcia.com/song/playin-in-the-band/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Playing In The Band Jam",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "The Other One",
+          "url": "https://jerrygarcia.com/song/the-other-one/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Wharf Rat",
+          "url": "https://jerrygarcia.com/song/wharf-rat/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Not Fade Away",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "Foolish Heart",
+          "url": "https://jerrygarcia.com/song/foolish-heart/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Brent Mydland",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152446/BretMydland_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T09:04:24.802028",
+  "show_time": null,
+  "recordings": [
+    "gd1989-08-19.111998.fm.HoltzNaks.Flac16",
+    "gd89-08-19.sbd.5213.sbeok.shnf",
+    "gd89-08-19.sbd.hinko.23066.sbeok.shnf",
+    "gd1989-08-19.sbd.walker-scotton.miller.83775.sbeok.flac16",
+    "gd1989-09-19.139782.sbd.weir.miller.pearson.flac1644",
+    "gd1989-08-19.164141.UltraMatrix.sbd.cm.miller.t.flac1644",
+    "gd1989-08-19.mtx.hansokolow.96303.sbeok.flac16",
+    "gd1989-08-19.139669.mtx.photoLeon.LL.t-flac16",
+    "gd1989-08-19.163645.ultramatrix.miller.flac2496",
+    "gd1989-08-19.166836.matrix.tobin.flac1644",
+    "gd89-08-19.schoeps.13254.sbeok.shnf",
+    "gd1989-08-19.senn421.andrewf.91088.sbeok.flac16",
+    "gd1989-08-19.aud-senn.pa-deli-mike.mrchips.83803.flac16",
+    "gd1989-08-19.138155.FOB.Schoeps.Mattes.Petty.patch.t-flac16",
+    "gd1989-08-19.124775.akg-c460b.thompson-damico.flac16",
+    "gd1989-08-19.131536.cmc44.fob.mattes.petty.flac16",
+    "gd1989-08-19.119339.d5scott.SonicStudioDSM-1Sx.flac16",
+    "gd1989-08-19.131526.cmc52S.deal.petty.flac16",
+    "gd1989-08-19.124774.akg-c460b.thompson-damico.flac24",
+    "gd1989-08-19.166838.5-1.tobin.flac1648",
+    "gd1989-08-19.166837.dts.tobin.flac1644"
+  ],
+  "best_recording": "gd1989-08-19.111998.fm.HoltzNaks.Flac16",
+  "avg_rating": 3.978431863727455,
+  "raw_rating": 4.524865591397849,
+  "recording_count": 21,
+  "confidence": 1.0,
+  "total_high_ratings": 54,
+  "total_low_ratings": 0,
+  "source_types": {
+    "FM": 1,
+    "SBD": 5,
+    "MATRIX": 4,
+    "UNKNOWN": 10,
+    "AUD": 1
+  },
+  "matching_method": "date_only",
+  "filtering_applied": []
+}

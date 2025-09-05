@@ -1,0 +1,195 @@
+{
+  "url": "https://jerrygarcia.com/show/1984-04-29-nassau-coliseum-uniondale-ny-usa/",
+  "show_id": "1984-04-29-nassau-coliseum-uniondale-ny-usa",
+  "band": "Grateful Dead",
+  "venue": "Nassau Coliseum",
+  "location_raw": "Uniondale, NY",
+  "city": "Uniondale",
+  "state": "NY",
+  "country": "USA",
+  "date": "1984-04-29",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Feel Like A Stranger",
+          "url": "https://jerrygarcia.com/song/feel-like-a-stranger/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Friend Of The Devil",
+          "url": "https://jerrygarcia.com/song/friend-of-the-devil/",
+          "segue_into_next": false
+        },
+        {
+          "name": "C.C. Rider",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Bird Song",
+          "url": "https://jerrygarcia.com/song/bird-song/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Hell In A Bucket",
+          "url": "https://jerrygarcia.com/song/hell-in-a-bucket/",
+          "segue_into_next": false
+        },
+        {
+          "name": "West L.A. Fadeaway",
+          "url": "https://jerrygarcia.com/song/west-l-a-fadeaway/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Cassidy",
+          "url": "https://jerrygarcia.com/song/cassidy/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Ramble On Rose",
+          "url": "https://jerrygarcia.com/song/ramble-on-rose/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Let It Grow",
+          "url": "https://jerrygarcia.com/song/let-it-grow/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "China Cat Sunflower",
+          "url": "https://jerrygarcia.com/song/china-cat-sunflower/",
+          "segue_into_next": true
+        },
+        {
+          "name": "I Know You Rider",
+          "url": "https://jerrygarcia.com/song/i-know-you-rider/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Samson & Delilah",
+          "url": "https://jerrygarcia.com/song/samson-delilah/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Terrapin Station",
+          "url": "https://jerrygarcia.com/song/terrapin-station/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Don't Need Love",
+          "url": "https://jerrygarcia.com/song/dont-need-love/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Truckin'",
+          "url": "https://jerrygarcia.com/song/truckin/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Stella Blue",
+          "url": "https://jerrygarcia.com/song/stella-blue/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Sugar Magnolia",
+          "url": "https://jerrygarcia.com/song/sugar-magnolia/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "Keep Your Day Job",
+          "url": "https://jerrygarcia.com/song/keep-your-day-job/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Brent Mydland",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152446/BretMydland_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T08:51:16.343728",
+  "show_time": null,
+  "recordings": [
+    "gd1984-04-29.140355.fob.sbd.composite.eaton.miller.clugston.flac1648",
+    "gd1984-04-29.senn421.pauline.miller.91146.sbeok.flac16",
+    "gd84-04-29.beyer.miller.15390.sbeok.shnf",
+    "gd1984-04-29.125853.crown_pzm.scarletdog.flac16",
+    "gd1984-04-29.123815.chasingwilma.flac24",
+    "gd1984-04-29.167058.neumann.u87.eaton.miller.clugston.flac2496",
+    "gd1984-04-29.109481.beyer-senn-daweez.D5scott.flac16",
+    "gd1984-04-29.164610.2nd.set.senn441.vita.miller.clugston.flac1648",
+    "gd1984-04-29.164611.2nd.set.senn441.vita.miller.clugston.flac2496",
+    "gd1984-04-29.149678.beyerm201.holbrook.flac1644",
+    "gd1984-04-29.149683.mke2002.holbrook.flac1644",
+    "gd1984-04-29.149684.mke2002.holbrook.flac2448",
+    "gd1984-04-29.149679.beyerm201.holbrook.flac2448",
+    "gd1984-04-29.167057.neumann.u87.eaton.miller.clugston.flac1648"
+  ],
+  "best_recording": "gd1984-04-29.140355.fob.sbd.composite.eaton.miller.clugston.flac1648",
+  "avg_rating": 1.9957446808510635,
+  "raw_rating": 4.044444444444444,
+  "recording_count": 14,
+  "confidence": 1.0,
+  "total_high_ratings": 13,
+  "total_low_ratings": 0,
+  "source_types": {
+    "SBD": 1,
+    "UNKNOWN": 13
+  },
+  "matching_method": "date_only",
+  "filtering_applied": []
+}

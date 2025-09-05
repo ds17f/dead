@@ -1,0 +1,168 @@
+{
+  "url": "https://jerrygarcia.com/show/1970-06-07-fillmore-west-san-francisco-ca-usa/",
+  "show_id": "1970-06-07-fillmore-west-san-francisco-ca-usa",
+  "band": "Grateful Dead",
+  "venue": "Fillmore West",
+  "location_raw": "San Francisco, CA",
+  "city": "San Francisco",
+  "state": "CA",
+  "country": "USA",
+  "date": "1970-06-07",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Don't Ease Me In",
+          "url": "https://jerrygarcia.com/song/dont-ease-me-in/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Silver Threads And Golden Needles",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Friend Of The Devil",
+          "url": "https://jerrygarcia.com/song/friend-of-the-devil/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Candyman",
+          "url": "https://jerrygarcia.com/song/candyman/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Cold Jordan*",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Swing Low (Sweet Chariot)",
+          "url": "https://jerrygarcia.com/song/swing-low-sweet-chariot/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Cumberland Blues",
+          "url": "https://jerrygarcia.com/song/cumberland-blues/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Me And My Uncle**",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "New Speedway Boogie",
+          "url": "https://jerrygarcia.com/song/new-speedway-boogie/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Cryptical Envelopment",
+          "url": "https://jerrygarcia.com/song/cryptical-envelopment/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "The Other One",
+          "url": "https://jerrygarcia.com/song/the-other-one/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Cryptical Envelopment",
+          "url": "https://jerrygarcia.com/song/cryptical-envelopment/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "The Main Ten",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Sugar Magnolia",
+          "url": "https://jerrygarcia.com/song/sugar-magnolia/",
+          "segue_into_next": false
+        },
+        {
+          "name": "It's A Man's World",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Mama Tried",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Sitting On Top Of The World",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Cosmic Charlie",
+          "url": "https://jerrygarcia.com/song/cosmic-charlie/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Casey Jones",
+          "url": "https://jerrygarcia.com/song/casey-jones/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Good Lovin'",
+          "url": "https://jerrygarcia.com/song/good-lovin/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "Learn more about troubleshooting WordPress.",
+          "url": "https://wordpress.org/documentation/article/faq-troubleshooting/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "missing",
+  "lineup": null,
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T08:18:50.228240",
+  "show_time": null,
+  "recordings": [
+    "gd70-06-07.sbd.hollister.98.sbeok.shnf",
+    "gd70-06-07.sbd.clevenger.fix-98.6185.shnf",
+    "gd1970-06-07.132325.bear.wise.flac16"
+  ],
+  "best_recording": "gd70-06-07.sbd.hollister.98.sbeok.shnf",
+  "avg_rating": 4.094492020241338,
+  "raw_rating": 4.574299223235394,
+  "recording_count": 3,
+  "confidence": 1.0,
+  "total_high_ratings": 38,
+  "total_low_ratings": 1,
+  "source_types": {
+    "SBD": 2,
+    "UNKNOWN": 1
+  },
+  "matching_method": "date_only",
+  "filtering_applied": []
+}

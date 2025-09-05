@@ -1,0 +1,194 @@
+{
+  "url": "https://jerrygarcia.com/show/1978-05-06-patrick-field-house-u-of-vermont-burlington-vt-usa/",
+  "show_id": "1978-05-06-patrick-field-house-u-of-vermont-burlington-vt-usa",
+  "band": "Grateful Dead",
+  "venue": "Patrick Field House, U. of Vermont",
+  "location_raw": "Burlington, VT",
+  "city": "Burlington",
+  "state": "VT",
+  "country": "USA",
+  "date": "1978-05-06",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Sugaree",
+          "url": "https://jerrygarcia.com/song/sugaree/",
+          "segue_into_next": false
+        },
+        {
+          "name": "New Minglewood Blues",
+          "url": "https://jerrygarcia.com/song/new-minglewood-blues/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Peggy-O",
+          "url": "https://jerrygarcia.com/song/peggy-o/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Beat It On Down The Line",
+          "url": "https://jerrygarcia.com/song/beat-it-on-down-the-line/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Loser",
+          "url": "https://jerrygarcia.com/song/loser/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Looks Like Rain",
+          "url": "https://jerrygarcia.com/song/looks-like-rain/",
+          "segue_into_next": false
+        },
+        {
+          "name": "It Must Have Been The Roses",
+          "url": "https://jerrygarcia.com/song/it-must-have-been-the-roses/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Me And My Uncle",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Big River",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Deal",
+          "url": "https://jerrygarcia.com/song/deal/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Samson & Delilah",
+          "url": "https://jerrygarcia.com/song/samson-delilah/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Sunrise",
+          "url": "https://jerrygarcia.com/song/sunrise/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Terrapin Station",
+          "url": "https://jerrygarcia.com/song/terrapin-station/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Playing In The Band",
+          "url": "https://jerrygarcia.com/song/playin-in-the-band/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Wharf Rat",
+          "url": "https://jerrygarcia.com/song/wharf-rat/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Sugar Magnolia",
+          "url": "https://jerrygarcia.com/song/sugar-magnolia/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "One More Saturday Night",
+          "url": "https://jerrygarcia.com/song/one-more-saturday-night/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Keith Godchaux",
+      "instruments": "keyboards",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152439/KeithGodchaux_200-100x100.jpg"
+    },
+    {
+      "name": "Donna Jean Godchaux",
+      "instruments": "vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2013/07/12152444/DonnaGodchaux_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T08:35:54.276347",
+  "show_time": null,
+  "recordings": [
+    "gd1978-05-06.fm-partial.97070.flac16",
+    "gd78-05-06.sbd-aud.cotsman.13726.sbeok.shnf",
+    "gd1978-05-06.aud.glassberg.motb.82963.sbeok.flac16",
+    "gd78-05-06.rolfe.vernon.6711.sbeok.shnf",
+    "gd78-05-06.glassberg.vernon.18657.sbeok.shnf",
+    "gd1978-05-06.aud.moore.berger.96897.flac24",
+    "gd1978-05-06.set2.aud.unknown.GEMS.92356.flac16",
+    "gd1978-05-06.aud.rumrunners.97071.flac16",
+    "gd1978-05-06.aud.moore.berger.96896.flac16",
+    "gd1978-05-06.171364.sony.ecm99a.rolfe.miller.clugston.flac2496",
+    "gd1978-05-06.171363.sony.ecm99a.rolfe.miller.clugston.flac1648"
+  ],
+  "best_recording": "gd1978-05-06.fm-partial.97070.flac16",
+  "avg_rating": 2.1160636886333477,
+  "raw_rating": 4.049409237379162,
+  "recording_count": 11,
+  "confidence": 1.0,
+  "total_high_ratings": 40,
+  "total_low_ratings": 4,
+  "source_types": {
+    "FM": 1,
+    "SBD": 1,
+    "AUD": 5,
+    "UNKNOWN": 4
+  },
+  "matching_method": "date_only",
+  "filtering_applied": []
+}

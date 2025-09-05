@@ -1,0 +1,18 @@
+{
+  "identifier": "gd1977-05-05.123485.sbd.miller.flac16",
+  "title": "Grateful Dead Live at Veterans' Memorial Coliseum on 1977-05-05",
+  "date": "1977-05-05",
+  "venue": "Veterans' Memorial Coliseum",
+  "location": "New Haven, CT",
+  "source_type": "SBD",
+  "lineage": "PCM (Sony PCM501ES/Analog Out) -> Dat (Panasonic SV-3700/48k) ->Db 924 (96k/24bit) D/A -> Dolby 361 Module w/ DBX K9-22 Cards(DBX Decoded) ->Db 1225 (96k/24bit) A/D -> Db 3000s Noise Shaper (SBM) -> Dat (48k) ->Sound Forge -> CD Wave -> SHNMastering Info:SHN -> FLAC",
+  "taper": "",
+  "source": "SBD -> Master Reel (DBX-1 Encoded) -> PCM (Sony PCM501ES/44.055k)",
+  "runtime": "179:50.62",
+  "rating": 4.714285714285714,
+  "review_count": 7,
+  "confidence": 1.0,
+  "raw_rating": 4.714285714285714,
+  "high_ratings": 6,
+  "low_ratings": 0
+}

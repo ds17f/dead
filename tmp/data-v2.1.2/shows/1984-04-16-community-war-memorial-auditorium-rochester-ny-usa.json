@@ -1,0 +1,204 @@
+{
+  "url": "https://jerrygarcia.com/show/1984-04-16-community-war-memorial-auditorium-rochester-ny-usa/",
+  "show_id": "1984-04-16-community-war-memorial-auditorium-rochester-ny-usa",
+  "band": "Grateful Dead",
+  "venue": "Community War Memorial Auditorium",
+  "location_raw": "Rochester, NY",
+  "city": "Rochester",
+  "state": "NY",
+  "country": "USA",
+  "date": "1984-04-16",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Shakedown Street",
+          "url": "https://jerrygarcia.com/song/shakedown-street/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Little Red Rooster",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Peggy-O",
+          "url": "https://jerrygarcia.com/song/peggy-o/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Me And My Uncle",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Mexicali Blues",
+          "url": "https://jerrygarcia.com/song/mexicali-blues/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Dupree's Diamond Blues",
+          "url": "https://jerrygarcia.com/song/duprees-diamond-blues/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Cassidy",
+          "url": "https://jerrygarcia.com/song/cassidy/",
+          "segue_into_next": false
+        },
+        {
+          "name": "West L.A. Fadeaway",
+          "url": "https://jerrygarcia.com/song/west-l-a-fadeaway/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Might As Well",
+          "url": "https://jerrygarcia.com/song/might-as-well/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Hell In A Bucket",
+          "url": "https://jerrygarcia.com/song/hell-in-a-bucket/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Ship Of Fools",
+          "url": "https://jerrygarcia.com/song/ship-of-fools/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Far From Me",
+          "url": "https://jerrygarcia.com/song/far-from-me/",
+          "segue_into_next": true
+        },
+        {
+          "name": "He's Gone",
+          "url": "https://jerrygarcia.com/song/hes-gone/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "The Other One",
+          "url": "https://jerrygarcia.com/song/the-other-one/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Stella Blue",
+          "url": "https://jerrygarcia.com/song/stella-blue/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Around & Around",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Johnny B. Goode",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "Keep Your Day Job",
+          "url": "https://jerrygarcia.com/song/keep-your-day-job/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Brent Mydland",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152446/BretMydland_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T08:50:56.351366",
+  "show_time": null,
+  "recordings": [
+    "gd1984-04-16.137003.sbd.miller.flac1648",
+    "gd84-04-16.neumann.1298.sbeok.shnf",
+    "gd1984-04-16.nak300.morris.113880.flac24",
+    "gd1984-04-16.164731.senn441.neumann.u87.blend.eaton.miller.clugston.flac2496",
+    "gd1984-04-16.141022.nak300.ackerman.miller.clugston.flac2496",
+    "gd1984-04-16.149492.beyerm201.holbrook.flac1644",
+    "gd1984-04-16.senn441.koucky.ladner.32884.sbeok.flac16",
+    "gd1984-04-16.senn441.koucky.ladner.fix-32884.35408.sbeok.flac16",
+    "gd1984-04-16.123069.chasingwilma.flac24",
+    "gd1984-04-16.141021.nak300.ackerman.miller.clugston.flac1644",
+    "gd1984-04-16.133031.Nak100CP4.Hill.Keo.Flac1644",
+    "gd1984-04-16.fob.nak300.morris.crazyfingers.106621.flac16",
+    "gd1984-04-16.149493.beyerm201.holbrook.flac2448",
+    "gd1984-04-16.154454.fob.senn441.lamarre.miller.clugston.flac2496",
+    "gd1984-04-16.133032.Nak100CP4.Hill.Keo.Flac2496",
+    "gd1984-04-16.109343.beyer-seee-daweez.D5scott.flac16",
+    "gd1984-04-16.nak300.friend-morrone.127159.flac1644",
+    "gd1984-04-16.nak300.friend-morrone.127158.flac2448",
+    "gd1984-04-16.149113.mke2002.holbrook.flac1644",
+    "gd1984-04-16.149114.mke2002.holbrook.flac2448",
+    "gd1984-04-16.154453.fob.senn441.lamarre.miller.clugston.flac1648",
+    "gd1984-04-16.164730.senn441.neumann.u87.blend.eaton.miller.clugston.flac1648"
+  ],
+  "best_recording": "gd1984-04-16.137003.sbd.miller.flac1648",
+  "avg_rating": 2.3597727272727274,
+  "raw_rating": 3.9615384615384617,
+  "recording_count": 22,
+  "confidence": 1.0,
+  "total_high_ratings": 19,
+  "total_low_ratings": 1,
+  "source_types": {
+    "SBD": 1,
+    "AUD": 19,
+    "UNKNOWN": 2
+  },
+  "matching_method": "date_only",
+  "filtering_applied": []
+}

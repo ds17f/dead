@@ -1,0 +1,212 @@
+{
+  "url": "https://jerrygarcia.com/show/1985-11-10-meadowlands-arena-east-rutherford-nj-usa/",
+  "show_id": "1985-11-10-meadowlands-arena-east-rutherford-nj-usa",
+  "band": "Grateful Dead",
+  "venue": "Meadowlands Arena",
+  "location_raw": "East Rutherford, NJ",
+  "city": "East Rutherford",
+  "state": "NJ",
+  "country": "USA",
+  "date": "1985-11-10",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Touch of Grey",
+          "url": "https://jerrygarcia.com/song/touch-of-grey/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Hell In A Bucket",
+          "url": "https://jerrygarcia.com/song/hell-in-a-bucket/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Sugaree",
+          "url": "https://jerrygarcia.com/song/sugaree/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Cassidy",
+          "url": "https://jerrygarcia.com/song/cassidy/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Stagger Lee",
+          "url": "https://jerrygarcia.com/song/stagger-lee/",
+          "segue_into_next": false
+        },
+        {
+          "name": "It's All Over Now",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Row Jimmy",
+          "url": "https://jerrygarcia.com/song/row-jimmy/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Feel Like A Stranger",
+          "url": "https://jerrygarcia.com/song/feel-like-a-stranger/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Mississippi Half-Step Uptown Toodeloo",
+          "url": "https://jerrygarcia.com/song/mississippi-half-step-uptown-toodeloo/",
+          "segue_into_next": true
+        },
+        {
+          "name": "I Know You Rider",
+          "url": "https://jerrygarcia.com/song/i-know-you-rider/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Playing In The Band",
+          "url": "https://jerrygarcia.com/song/playin-in-the-band/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Uncle John's Band",
+          "url": "https://jerrygarcia.com/song/uncle-johns-band/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Supplication Jam",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Truckin'",
+          "url": "https://jerrygarcia.com/song/truckin/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Comes A Time",
+          "url": "https://jerrygarcia.com/song/comes-a-time/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Around & Around",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Good Lovin'",
+          "url": "https://jerrygarcia.com/song/good-lovin/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "It's All Over Now Baby Blue",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Brent Mydland",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152446/BretMydland_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T08:55:04.718915",
+  "show_time": null,
+  "recordings": [
+    "gd1985-11-10.sbd.doughty.12202.shnf",
+    "gd85-11-10.sbd.barbella.12264.sbeok.shnf",
+    "gd1985-11-10.141082.sbd.miller.clugston.flac1644",
+    "gd1985-11-10.sbd.127525.flac16",
+    "gd1985-11-10.142930.mtx.tobin.flac1644",
+    "gd85-11-10.oade.connor.7955.sbeok.shnf",
+    "gd85-11-10.aud-oade.dwonk.19212.sbeok.shnf",
+    "gd1985-11-10.aud.morris.106808.flac16",
+    "gd1985-11-10.nak-beyer.suraci.79689.sbeok.flac16",
+    "gd1985-11-10.nak300.andrewf.128517.flac1644",
+    "gd1985-11-10.141651.OTS.AT835b-AKGD12e-Blend.Ackerman.Miller.Noel.t-flac2496",
+    "gd85-11-10.beyer.connor.4774.sbeok.shnf",
+    "gd1985-11-10.nak300.mandel.25472.sbeok.shnf",
+    "gd1985-11-10.nak300.morris.114678.flac24",
+    "gd1985-11-10.cpb.retransfer.32638.sbeok.flac16",
+    "gd1985-11-10.nak300.damico.87524.sbeok.flac16",
+    "gd1985-11-10.148906.senn.me80.hessberg.miller.clugston.flac2496",
+    "gd1985-11-10.142931.dts.tobin.flac1644",
+    "gd1985-11-10.154261.akgc422.davis-holbrook.flac2448",
+    "gd1985-11-10.126721.chasingwilma.flac24",
+    "gd1985-11-10.152045.senn441.lamarre.miller.clugston.flac1648",
+    "gd1985-11-10.145354.ots.at.835b.akg.d12e.blend.ackerman.miller.noel.t-flac16",
+    "gd1985-11-10.142932.5-1.tobin.flac1648",
+    "gd1985-11-10.152046.senn441.lamarre.miller.clugston.flac2496",
+    "gd1985-11-10.151336.senn441.hunt.mattes.miller.clugston.flac1648",
+    "gd1985-11-10.148905.senn.me80.hessberg.miller.clugston.flac1648",
+    "gd1985-11-10.154260.akgc422.davis-holbrook.flac1644",
+    "gd1985-11-10.151337.senn441.hunt.mattes.miller.clugston.flac2496",
+    "gd1985-11-10.149792.akg224.dyche.flac1644"
+  ],
+  "best_recording": "gd1985-11-10.sbd.doughty.12202.shnf",
+  "avg_rating": 3.0761579414374447,
+  "raw_rating": 3.8490842490842487,
+  "recording_count": 29,
+  "confidence": 1.0,
+  "total_high_ratings": 44,
+  "total_low_ratings": 6,
+  "source_types": {
+    "SBD": 4,
+    "MATRIX": 1,
+    "UNKNOWN": 22,
+    "AUD": 2
+  },
+  "matching_method": "date_only",
+  "filtering_applied": []
+}

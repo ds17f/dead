@@ -1,0 +1,191 @@
+{
+  "url": "https://jerrygarcia.com/show/1989-10-26-miami-arena-miami-fl-usa/",
+  "show_id": "1989-10-26-miami-arena-miami-fl-usa",
+  "band": "Grateful Dead",
+  "venue": "Miami Arena",
+  "location_raw": "Miami, FL",
+  "city": "Miami",
+  "state": "FL",
+  "country": "USA",
+  "date": "1989-10-26",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Foolish Heart",
+          "url": "https://jerrygarcia.com/song/foolish-heart/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Little Red Rooster",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Stagger Lee",
+          "url": "https://jerrygarcia.com/song/stagger-lee/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Me And My Uncle",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Big River",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Brown Eyed Women",
+          "url": "https://jerrygarcia.com/song/brown-eyed-women/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Victim Or The Crime",
+          "url": "https://jerrygarcia.com/song/victim-or-the-crime/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Don't Ease Me In",
+          "url": "https://jerrygarcia.com/song/dont-ease-me-in/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Estimated Prophet",
+          "url": "https://jerrygarcia.com/song/estimated-prophet/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Blow Away",
+          "url": "https://jerrygarcia.com/song/blow-away/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Dark Star",
+          "url": "https://jerrygarcia.com/song/dark-star/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "The Wheel",
+          "url": "https://jerrygarcia.com/song/the-wheel/",
+          "segue_into_next": true
+        },
+        {
+          "name": "All Along The Watchtower",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Stella Blue",
+          "url": "https://jerrygarcia.com/song/stella-blue/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Not Fade Away",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "And We Bid You Good Night",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Brent Mydland",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152446/BretMydland_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T09:05:00.815001",
+  "show_time": null,
+  "recordings": [
+    "gd1989-10-26.sbd.walker-scotton.miller.83428.sbeok.flac16",
+    "gd1989-10-26.sbd.cribbs.1829.shnf",
+    "gd89-10-26.set2.dsbd.miller.18664.shnf",
+    "gd89-10-26.set1-sbd.miller.20614.sbeok.shnf",
+    "gd1989-10-26.sbd-set2.lynch.19163.flac16",
+    "gd1989-10-26.147766.UltraMatrix.sbd.cm.miller.flac16",
+    "gd1989-10-26.sbd.miller.tetzeli.fix-18664-20614.34587.sbeok.shnf",
+    "gd1989-10-26.147714.sbd.miller.flac24",
+    "gd1989-10-26.125695.mtx.dusborne.flac16",
+    "gd1989-10-26.147752.mtx.tobin.flac16",
+    "gd1989-10-26.schoeps.unknown.fishman.107258.flac16",
+    "gd1989-10-26.123832.mk4.mattes.hillwig-stubbe.flac16",
+    "gd1989-10-26.142607.fob.schoeps.cmc4.mk4.mattes.miller.clugston.flac1648",
+    "gd1989-10-26.123831.mk4.mattes.hillwig-stubbe.flac1648",
+    "gd1989-10-26.147753.dts.tobin.flac16",
+    "gd1989-10-26.147754.5-1.tobin.flac1648"
+  ],
+  "best_recording": "gd1989-10-26.sbd.walker-scotton.miller.83428.sbeok.flac16",
+  "avg_rating": 2.6827398615232445,
+  "raw_rating": 4.452155172413794,
+  "recording_count": 16,
+  "confidence": 1.0,
+  "total_high_ratings": 97,
+  "total_low_ratings": 7,
+  "source_types": {
+    "SBD": 8,
+    "MATRIX": 2,
+    "UNKNOWN": 6
+  },
+  "matching_method": "date_only",
+  "filtering_applied": [],
+  "collections": [
+    "30-trips-around-the-sun"
+  ]
+}

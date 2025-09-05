@@ -1,0 +1,200 @@
+{
+  "url": "https://jerrygarcia.com/show/1986-07-02-rubber-bowl-u-of-akron-akron-oh-usa/",
+  "show_id": "1986-07-02-rubber-bowl-u-of-akron-akron-oh-usa",
+  "band": "Grateful Dead",
+  "venue": "Rubber Bowl, U. of Akron",
+  "location_raw": "Akron, OH",
+  "city": "Akron",
+  "state": "OH",
+  "country": "USA",
+  "date": "1986-07-02",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Alabama Getaway",
+          "url": "https://jerrygarcia.com/song/alabama-getaway/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Greatest Story Ever Told",
+          "url": "https://jerrygarcia.com/song/greatest-story-ever-told/",
+          "segue_into_next": false
+        },
+        {
+          "name": "They Love Each Other",
+          "url": "https://jerrygarcia.com/song/they-love-each-other/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Little Red Rooster*",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Don't Think Twice It's Alright*",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "It's All Over Now Baby Blue*",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Candyman",
+          "url": "https://jerrygarcia.com/song/candyman/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Me And My Uncle",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Mexicali Blues",
+          "url": "https://jerrygarcia.com/song/mexicali-blues/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Don't Ease Me In",
+          "url": "https://jerrygarcia.com/song/dont-ease-me-in/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "China Cat Sunflower",
+          "url": "https://jerrygarcia.com/song/china-cat-sunflower/",
+          "segue_into_next": true
+        },
+        {
+          "name": "I Know You Rider",
+          "url": "https://jerrygarcia.com/song/i-know-you-rider/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Playing In The Band",
+          "url": "https://jerrygarcia.com/song/playin-in-the-band/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Desolation Row**",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Truckin'",
+          "url": "https://jerrygarcia.com/song/truckin/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Black Peter",
+          "url": "https://jerrygarcia.com/song/black-peter/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Sugar Magnolia",
+          "url": "https://jerrygarcia.com/song/sugar-magnolia/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "Box of Rain",
+          "url": "https://jerrygarcia.com/song/box-of-rain/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Brent Mydland",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152446/BretMydland_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "found",
+  "supporting_acts": [
+    "Bob Dylan with Tom Petty & The Heartbreakers"
+  ],
+  "collection_timestamp": "2025-08-10T08:56:36.979743",
+  "show_time": null,
+  "recordings": [
+    "gd1986-07-02.139271.sbd.miller.flac24",
+    "gd1986-07-02.139284.sbd.cm.miller.flac16",
+    "gd86-07-02.aud.eD.12934.sbeok.shnf",
+    "gd1986-07-02.fob.thompson.motb.82519.flac16",
+    "gd1986-07-02.135055.chasingwilma.flac24",
+    "gd1986-07-02.fob.thompson.motb.82520.flac24",
+    "gd1986-07-02.me80.hessberg.miller.124587.flac16",
+    "gd86-07-02.beyer160.walstib.22381.sbeok.shnf",
+    "gd1986-07-02.157077.beyer-m88.holbrook.flac2448",
+    "gd1986-07-02.157076.beyer-m88.holbrook.flac1644",
+    "gd1986-07-02.157074.akg-c422.holbrook.flac1644",
+    "gd1986-07-02.141053.FOB.SennME80.Hessberg.Miller.Noel.t-flac.1644",
+    "gd1986-07-02.139414.FOB.SennME80.Hessberg.Miller.Noel.t-flac.24",
+    "gd1986-07-02.157075.akg-c422.holbrook.flac2448",
+    "gd1986-07-02.nak100.cohen.105444.sbeok.flac16",
+    "gd1986-07-02.139580.set1.FOB.Schoeps.Oade.Gastwirt.Miller.Noel.t-flac16"
+  ],
+  "best_recording": "gd1986-07-02.139271.sbd.miller.flac24",
+  "avg_rating": 1.7832262996941899,
+  "raw_rating": 3.1980392156862747,
+  "recording_count": 16,
+  "confidence": 1.0,
+  "total_high_ratings": 14,
+  "total_low_ratings": 11,
+  "source_types": {
+    "SBD": 2,
+    "AUD": 1,
+    "UNKNOWN": 13
+  },
+  "matching_method": "date_only",
+  "filtering_applied": []
+}

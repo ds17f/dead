@@ -1,0 +1,210 @@
+{
+  "url": "https://jerrygarcia.com/show/1974-07-19-selland-arena-fresno-ca-usa/",
+  "show_id": "1974-07-19-selland-arena-fresno-ca-usa",
+  "band": "Grateful Dead",
+  "venue": "Selland Arena",
+  "location_raw": "Fresno, CA",
+  "city": "Fresno",
+  "state": "CA",
+  "country": "USA",
+  "date": "1974-07-19",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Bertha",
+          "url": "https://jerrygarcia.com/song/bertha/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Mexicali Blues",
+          "url": "https://jerrygarcia.com/song/mexicali-blues/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Deal",
+          "url": "https://jerrygarcia.com/song/deal/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Beat It On Down The Line",
+          "url": "https://jerrygarcia.com/song/beat-it-on-down-the-line/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Row Jimmy",
+          "url": "https://jerrygarcia.com/song/row-jimmy/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Me And Bobby McGee",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Scarlet Begonias",
+          "url": "https://jerrygarcia.com/song/scarlet-begonias/",
+          "segue_into_next": false
+        },
+        {
+          "name": "El Paso",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Tennessee Jed",
+          "url": "https://jerrygarcia.com/song/tennessee-jed/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Playing In The Band",
+          "url": "https://jerrygarcia.com/song/playin-in-the-band/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Seastones*",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Brown Eyed Women",
+          "url": "https://jerrygarcia.com/song/brown-eyed-women/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Me And My Uncle",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "It Must Have Been The Roses",
+          "url": "https://jerrygarcia.com/song/it-must-have-been-the-roses/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Jack Straw",
+          "url": "https://jerrygarcia.com/song/jack-straw/",
+          "segue_into_next": false
+        },
+        {
+          "name": "He's Gone",
+          "url": "https://jerrygarcia.com/song/hes-gone/",
+          "segue_into_next": true
+        },
+        {
+          "name": "U.S. Blues",
+          "url": "https://jerrygarcia.com/song/u-s-blues/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Weather Report Suite Prelude",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Weather Report Suite Part 1",
+          "url": "https://jerrygarcia.com/song/weather-report-suite-part-1/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Let It Grow",
+          "url": "https://jerrygarcia.com/song/let-it-grow/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Spanish Jam",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Eyes Of The World",
+          "url": "https://jerrygarcia.com/song/eyes-of-the-world/",
+          "segue_into_next": true
+        },
+        {
+          "name": "China Doll",
+          "url": "https://jerrygarcia.com/song/china-doll/",
+          "segue_into_next": false
+        },
+        {
+          "name": "One More Saturday Night",
+          "url": "https://jerrygarcia.com/song/one-more-saturday-night/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Keith Godchaux",
+      "instruments": "keyboards",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152439/KeithGodchaux_200-100x100.jpg"
+    },
+    {
+      "name": "Donna Jean Godchaux",
+      "instruments": "vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2013/07/12152444/DonnaGodchaux_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "found",
+  "supporting_acts": [
+    "Commander Cody & His Lost Planet Airmen",
+    "Maria Muldar & John Kahn"
+  ],
+  "collection_timestamp": "2025-08-10T08:30:22.300642",
+  "show_time": null,
+  "recordings": [
+    "gd1974-07-19.sbd.gans-finney.217.sbeok.shnf",
+    "gd74-07-19.sbd.symons.12381.sbeok.shnf",
+    "gd1974-07-19.sbd.miller.32634.sbeok.flac16",
+    "gd1974-07-19.sbd.pre-dankfix.4596.sbeok.shnf",
+    "gd1974-07-19.mtx.sirmick.103132.sbeok.flac16",
+    "gd1974-07-19.shure.unknown.fix-102766.102866.flac16",
+    "gd1974-07-19.shure.unknown.102766.flac16"
+  ],
+  "best_recording": "gd1974-07-19.sbd.gans-finney.217.sbeok.shnf",
+  "avg_rating": 4.4584385569789875,
+  "raw_rating": 4.572400861170914,
+  "recording_count": 7,
+  "confidence": 1.0,
+  "total_high_ratings": 111,
+  "total_low_ratings": 4,
+  "source_types": {
+    "SBD": 4,
+    "MATRIX": 1,
+    "UNKNOWN": 2
+  },
+  "matching_method": "date_only",
+  "filtering_applied": [],
+  "collections": [
+    "daves-picks-vol-17"
+  ]
+}

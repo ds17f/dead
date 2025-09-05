@@ -1,0 +1,18 @@
+{
+  "identifier": "gd1982-04-19.dts.tobin.89354.sbeok.flac16",
+  "title": "Grateful Dead Live at Baltimore Civic Center on 1982-04-19",
+  "date": "1982-04-19",
+  "venue": "Baltimore Civic Center",
+  "location": "Baltimore, MD",
+  "source_type": "SBD",
+  "lineage": "SHNs were decoded to wave and Audition 3.0 was used to reassemble the tracks back to 1 long wave.  Audition 3.0 was used to align & synch the SBD & AUD sources.  Audition 3.0 used to adjust the volume for AUDs, matrix/CTR and LFE channels. Surcode CD Pro DTS was used to encode to DTS.",
+  "taper": "",
+  "source": "SBD (shn id 89313) MAC > R1 7.5ips 1/4 track > Technics RS-1506 > Grace designs Lunatec V3 (pre only) > Korg MR-1000 > DSD-DFF 1bit 5.64 Mhz > Audio Gate SW > 24/96 WAV + AUD (shn id 19420) MAC (Taped by Steven Martin, modified Nakamichi CM-700 mics > Sony TC-D5M) > Nak Dragon playback > Cardas audiophile cables > HHB CDR 800 master CD",
+  "runtime": "175",
+  "rating": 0.0,
+  "review_count": 1,
+  "confidence": 0.0,
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0
+}

@@ -1,0 +1,18 @@
+{
+  "identifier": "gd1994-10-15.130737.mtx.flac16",
+  "title": "Grateful Dead Live at Madison Square Garden on 1994-10-15",
+  "date": "1994-10-15",
+  "venue": "Madison Square Garden",
+  "location": "New York, NY",
+  "source_type": "SBD",
+  "lineage": "",
+  "taper": "",
+  "source": "SBD/AUD matrix: Source 1: (OTS) AKG460s/CK8s(PAS)>B-18s>FP-11s>DAP20(16/48); DAT>WAV: (TCD-D8>PMD670>CF>HDD); Recording and transfer by DATBRAD and Source 2: SBD (source ID 76894) SBD -> Dat -> Sonic Solutions -> CD -> EAC -> FLAC -> WAV; Converted By Charlie Miller; Matrix: AddaWav(rejoin sbd tracks)>Audacity(60/40 sbd/aud mix)>CDWave(splits)>Flac Frontend(Level 6)",
+  "runtime": "163:25.28",
+  "rating": 0.0,
+  "review_count": 0,
+  "confidence": 0.0,
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0
+}

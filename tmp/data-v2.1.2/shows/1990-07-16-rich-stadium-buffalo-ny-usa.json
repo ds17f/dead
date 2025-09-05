@@ -1,0 +1,227 @@
+{
+  "url": "https://jerrygarcia.com/show/1990-07-16-rich-stadium-buffalo-ny-usa/",
+  "show_id": "1990-07-16-rich-stadium-buffalo-ny-usa",
+  "band": "Grateful Dead",
+  "venue": "Rich Stadium",
+  "location_raw": "Buffalo, NY",
+  "city": "Buffalo",
+  "state": "NY",
+  "country": "USA",
+  "date": "1990-07-16",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Hell In A Bucket",
+          "url": "https://jerrygarcia.com/song/hell-in-a-bucket/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Mississippi Half-Step Uptown Toodeloo",
+          "url": "https://jerrygarcia.com/song/mississippi-half-step-uptown-toodeloo/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Blow Away",
+          "url": "https://jerrygarcia.com/song/blow-away/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Mama Tried",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Mexicali Blues",
+          "url": "https://jerrygarcia.com/song/mexicali-blues/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Loose Lucy",
+          "url": "https://jerrygarcia.com/song/loose-lucy/",
+          "segue_into_next": false
+        },
+        {
+          "name": "It's All Over Now",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "High Time",
+          "url": "https://jerrygarcia.com/song/high-time/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Let It Grow",
+          "url": "https://jerrygarcia.com/song/let-it-grow/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Don't Ease Me In",
+          "url": "https://jerrygarcia.com/song/dont-ease-me-in/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Sugar Magnolia",
+          "url": "https://jerrygarcia.com/song/sugar-magnolia/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Scarlet Begonias",
+          "url": "https://jerrygarcia.com/song/scarlet-begonias/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Man Smart, Woman Smarter",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Ship Of Fools",
+          "url": "https://jerrygarcia.com/song/ship-of-fools/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Truckin'",
+          "url": "https://jerrygarcia.com/song/truckin/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Jam",
+          "url": "https://jerrygarcia.com/song/jam/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "The Wheel",
+          "url": "https://jerrygarcia.com/song/the-wheel/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Gimme Some Lovin'",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Wharf Rat",
+          "url": "https://jerrygarcia.com/song/wharf-rat/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Around & Around",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Sunshine Daydream",
+          "url": "https://jerrygarcia.com/song/sunshine-daydream/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "Brokedown Palace",
+          "url": "https://jerrygarcia.com/song/brokedown-palace/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Brent Mydland",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152446/BretMydland_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "found",
+  "supporting_acts": [
+    "Crosby, Stills & Nash"
+  ],
+  "collection_timestamp": "2025-08-10T09:06:33.506925",
+  "show_time": null,
+  "recordings": [
+    "gd1990-07-16.sbd.lynn.32018.sbeok.flac16",
+    "gd90-07-16.sbd.knapp.1316.sbeok.shnf",
+    "gd1990-07-16.sbd.miller.95782.sbeok.flac16",
+    "gd1990-07-16.158164.UltraMatrix.sbd.cm.miller.t.flac1644",
+    "gd1990-07-16.sbd.unknown.84980.shnf",
+    "gd1990-07-16.128387.mtx.nicksmix.flac16",
+    "gd1990-07-16.145658.ultramatrix.gaswirt.miller.sirmicck.flac1648",
+    "gd1990-07-16.157718.ultramatrix.miller.flac2496",
+    "gd1990-07-16.162747.mtx.tobin.flac16",
+    "gd1990-07-16.fob.alabamabob.andrewf.95580.flac16",
+    "gd1990-07-16.133997.akg414btl-fob-dantepper.flac16",
+    "gd1990-07-16.Nak300.Senn441.JB.Keo.116445.Flac2496",
+    "gd1990-07-16.142695.Schoeps.Brotman.Fanari.Katzeff.Mattes.Miller.Noel.t-flac1648",
+    "gd1990-07-16.AKG451.Currier.Keo.121580.Flac2496",
+    "gd1990-07-16.fob.nak100.holtz.lmpp.98919.sbeok.flac16",
+    "gd1990-07-16.162759.dts.tobin.flac16",
+    "gd1990-07-16.162769.5-1.tobin.flac1648",
+    "gd1990-07-16.143604.FOB.s1.Schoeps.Brotman.Miller.Noel.t-flac1648",
+    "gd1990-07-16.149401.DAK.boedicker.flac1644",
+    "gd1990-07-16.Nak100sSenn421.Hill.Keo.131228.Flac1644",
+    "gd1990-07-16.Nak100sSenn421.Hill.Keo.131229.Flac2496",
+    "gd1990-07-16.AKG451.Currier.Keo.121581.Flac1644",
+    "gd1990-07-16.Nak300.Senn441.JB.Keo.116444.Flac1644"
+  ],
+  "best_recording": "gd1990-07-16.sbd.lynn.32018.sbeok.flac16",
+  "avg_rating": 4.18568970577445,
+  "raw_rating": 4.4858670741023685,
+  "recording_count": 23,
+  "confidence": 1.0,
+  "total_high_ratings": 77,
+  "total_low_ratings": 0,
+  "source_types": {
+    "SBD": 5,
+    "MATRIX": 4,
+    "UNKNOWN": 14
+  },
+  "matching_method": "date_only",
+  "filtering_applied": []
+}

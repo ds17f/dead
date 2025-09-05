@@ -1,0 +1,192 @@
+{
+  "url": "https://jerrygarcia.com/show/1987-07-06-civic-arena-pittsburgh-pa-usa/",
+  "show_id": "1987-07-06-civic-arena-pittsburgh-pa-usa",
+  "band": "Grateful Dead",
+  "venue": "Civic Arena",
+  "location_raw": "Pittsburgh, PA",
+  "city": "Pittsburgh",
+  "state": "PA",
+  "country": "USA",
+  "date": "1987-07-06",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Feel Like A Stranger",
+          "url": "https://jerrygarcia.com/song/feel-like-a-stranger/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Franklin's Tower",
+          "url": "https://jerrygarcia.com/song/franklins-tower/",
+          "segue_into_next": false
+        },
+        {
+          "name": "New Minglewood Blues",
+          "url": "https://jerrygarcia.com/song/new-minglewood-blues/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Row Jimmy",
+          "url": "https://jerrygarcia.com/song/row-jimmy/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Mama Tried",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Big River",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Far From Me",
+          "url": "https://jerrygarcia.com/song/far-from-me/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Stagger Lee",
+          "url": "https://jerrygarcia.com/song/stagger-lee/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Desolation Row",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Don't Ease Me In",
+          "url": "https://jerrygarcia.com/song/dont-ease-me-in/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Shakedown Street",
+          "url": "https://jerrygarcia.com/song/shakedown-street/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Samson & Delilah",
+          "url": "https://jerrygarcia.com/song/samson-delilah/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Iko Iko*",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Banana Boat Song (Day-O)*",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Man Smart, Woman Smarter*",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Knockin' On Heaven's Door",
+          "url": "https://jerrygarcia.com/song/knockin-on-heavens-door/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Good Lovin'",
+          "url": "https://jerrygarcia.com/song/good-lovin/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "Johnny B. Goode*",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Brent Mydland",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152446/BretMydland_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T08:58:24.829184",
+  "show_time": null,
+  "recordings": [
+    "gd1987-07-06.138790.pcm.sbd.miller.flac1644",
+    "gd1987-07-06.142086.sbd.miller.flac2496",
+    "gd1987-07-06.142126.UltraMatrix.sbd.BHiFiM.miller.flac1644",
+    "gd87-07-06.aud.gardner.3829.sbeok.shnf",
+    "gd1987-07-06.senn421.zaleski.gems.84623.sbeok.flac16",
+    "gd87-07-06.beyerM88s.connor.2583.sbeok.shnf",
+    "gd1987-07-06.148854.senn441.mattes.miller.clugston.flac1648",
+    "gd1987-07-06.134826.bltz.flac2496",
+    "gd1987-07-06.148855.senn441.mattes.miller.clugston.flac2496",
+    "gd1987-07-06.142087.fob.oade.schoeps.cmc3.mk41.jacobs.miller.clugston.flac1644"
+  ],
+  "best_recording": "gd1987-07-06.138790.pcm.sbd.miller.flac1644",
+  "avg_rating": 3.002476780185759,
+  "raw_rating": 4.510204081632653,
+  "recording_count": 10,
+  "confidence": 1.0,
+  "total_high_ratings": 45,
+  "total_low_ratings": 0,
+  "source_types": {
+    "SBD": 3,
+    "AUD": 1,
+    "UNKNOWN": 6
+  },
+  "matching_method": "date_only",
+  "filtering_applied": []
+}

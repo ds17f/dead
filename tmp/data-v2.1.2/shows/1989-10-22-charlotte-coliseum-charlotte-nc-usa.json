@@ -1,0 +1,201 @@
+{
+  "url": "https://jerrygarcia.com/show/1989-10-22-charlotte-coliseum-charlotte-nc-usa/",
+  "show_id": "1989-10-22-charlotte-coliseum-charlotte-nc-usa",
+  "band": "Grateful Dead",
+  "venue": "Charlotte Coliseum",
+  "location_raw": "Charlotte, NC",
+  "city": "Charlotte",
+  "state": "NC",
+  "country": "USA",
+  "date": "1989-10-22",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Foolish Heart",
+          "url": "https://jerrygarcia.com/song/foolish-heart/",
+          "segue_into_next": false
+        },
+        {
+          "name": "New Minglewood Blues",
+          "url": "https://jerrygarcia.com/song/new-minglewood-blues/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Mississippi Half-Step Uptown Toodeloo",
+          "url": "https://jerrygarcia.com/song/mississippi-half-step-uptown-toodeloo/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Queen Jane Approximately",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Ramble On Rose",
+          "url": "https://jerrygarcia.com/song/ramble-on-rose/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Beat It On Down The Line",
+          "url": "https://jerrygarcia.com/song/beat-it-on-down-the-line/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Bird Song",
+          "url": "https://jerrygarcia.com/song/bird-song/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Johnny B. Goode",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Blow Away",
+          "url": "https://jerrygarcia.com/song/blow-away/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Samson & Delilah",
+          "url": "https://jerrygarcia.com/song/samson-delilah/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Help On The Way",
+          "url": "https://jerrygarcia.com/song/help-on-the-way/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Slipknot",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Franklin's Tower",
+          "url": "https://jerrygarcia.com/song/franklins-tower/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Jam",
+          "url": "https://jerrygarcia.com/song/jam/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "I Need A Miracle",
+          "url": "https://jerrygarcia.com/song/i-need-a-miracle/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Stella Blue",
+          "url": "https://jerrygarcia.com/song/stella-blue/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Throwing Stones",
+          "url": "https://jerrygarcia.com/song/throwing-stones/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Not Fade Away",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "Black Muddy River",
+          "url": "https://jerrygarcia.com/song/black-muddy-river/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Brent Mydland",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152446/BretMydland_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T09:04:55.358971",
+  "show_time": null,
+  "recordings": [
+    "gd89-10-22.sbd.brame.12188.sbeok.shnf",
+    "gd1989-10-22.sbd.walker-scotton.miller.83319.sbeok.flac16",
+    "gd1989-10-22.148202.UltraMatrix.sbd.cm.miller.flac16",
+    "gd1989-10-22.147755.sbd.ultramatrix.miller.flac24",
+    "gd1989-10-22.mtx.seamons.102399.flac16",
+    "gd1989-10-22.nak300.holtz.lmpp.97414.sbeok.flac16",
+    "gd1989-10-22.167187.akg.c522.hessberg.miller.clugston.flac2496",
+    "gd1989-10-22.167186.akg.c522.hessberg.miller.clugston.flac1648",
+    "gd1989-10-22.173002.beyer.m160.vita.miller.clugston.flac2496",
+    "gd1989-10-22.149693.boedicker.flac1644",
+    "gd1989-10-22.173001.beyer.m160.vita.miller.clugston.flac1648",
+    "gd1989-10-22.147644.nak300CP4.ebel.flac2496",
+    "gd1989-10-22.132700.cmc521.fob.deal.petty.flac16",
+    "gd1989-10-22.142576.fob.schoeps.cmc4.mk4.mattes.miller.clugston.flac1648"
+  ],
+  "best_recording": "gd89-10-22.sbd.brame.12188.sbeok.shnf",
+  "avg_rating": 3.5693181818181823,
+  "raw_rating": 3.785454545454545,
+  "recording_count": 14,
+  "confidence": 1.0,
+  "total_high_ratings": 14,
+  "total_low_ratings": 2,
+  "source_types": {
+    "SBD": 4,
+    "MATRIX": 1,
+    "UNKNOWN": 9
+  },
+  "matching_method": "date_only",
+  "filtering_applied": []
+}

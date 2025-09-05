@@ -1,0 +1,126 @@
+{
+  "url": "https://jerrygarcia.com/show/1966-03-19-carthay-studios-los-angeles-ca-usa/",
+  "show_id": "1966-03-19-carthay-studios-los-angeles-ca-usa",
+  "band": "Grateful Dead",
+  "venue": "Carthay Studios",
+  "location_raw": "Los Angeles, CA",
+  "city": "Los Angeles",
+  "state": "CA",
+  "country": "USA",
+  "date": "1966-03-19",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Viola Lee Blues",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "One Kind Favor",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "I Know You Rider",
+          "url": "https://jerrygarcia.com/song/i-know-you-rider/",
+          "segue_into_next": false
+        },
+        {
+          "name": "You See a Broken Heart",
+          "url": "https://jerrygarcia.com/song/you-see-a-broken-heart/",
+          "segue_into_next": false
+        },
+        {
+          "name": "It's A Sin",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Beat It On Down The Line",
+          "url": "https://jerrygarcia.com/song/beat-it-on-down-the-line/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Heads Up",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Next Time You See Me",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Stormy Monday Jam",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Death Don't Have No Mercy",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Midnight Hour",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Ron \"Pigpen\" McKernan",
+      "instruments": "keyboards, harmonica, percussion, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152433/RonPigpenMcKernan_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T07:59:56.007863",
+  "show_time": null,
+  "recordings": [
+    "gd66-03-19.sbd.scotton.81951.sbeok.flac",
+    "gd1966-03-19.153760.scotton.sirmick.remaster.flac16"
+  ],
+  "best_recording": "gd66-03-19.sbd.scotton.81951.sbeok.flac",
+  "avg_rating": 4.015909090909091,
+  "raw_rating": 4.3125,
+  "recording_count": 2,
+  "confidence": 1.0,
+  "total_high_ratings": 8,
+  "total_low_ratings": 1,
+  "source_types": {
+    "SBD": 1,
+    "REMASTER": 1
+  },
+  "matching_method": "date_only",
+  "filtering_applied": [],
+  "collections": [
+    "acid-tests"
+  ]
+}

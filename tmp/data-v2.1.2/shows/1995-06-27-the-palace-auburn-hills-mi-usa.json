@@ -1,0 +1,177 @@
+{
+  "url": "https://jerrygarcia.com/show/1995-06-27-the-palace-auburn-hills-mi-usa/",
+  "show_id": "1995-06-27-the-palace-auburn-hills-mi-usa",
+  "band": "Grateful Dead",
+  "venue": "The Palace",
+  "location_raw": "Auburn Hills, MI",
+  "city": "Auburn Hills",
+  "state": "MI",
+  "country": "USA",
+  "date": "1995-06-27",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Greatest Story Ever Told",
+          "url": "https://jerrygarcia.com/song/greatest-story-ever-told/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Bertha",
+          "url": "https://jerrygarcia.com/song/bertha/",
+          "segue_into_next": false
+        },
+        {
+          "name": "New Minglewood Blues",
+          "url": "https://jerrygarcia.com/song/new-minglewood-blues/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Ramble On Rose",
+          "url": "https://jerrygarcia.com/song/ramble-on-rose/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Queen Jane Approximately",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Lazy River Road",
+          "url": "https://jerrygarcia.com/song/lazy-river-road/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Eternity",
+          "url": "https://jerrygarcia.com/song/eternity/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Don't Ease Me In",
+          "url": "https://jerrygarcia.com/song/dont-ease-me-in/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Victim Or The Crime",
+          "url": "https://jerrygarcia.com/song/victim-or-the-crime/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Foolish Heart",
+          "url": "https://jerrygarcia.com/song/foolish-heart/",
+          "segue_into_next": false
+        },
+        {
+          "name": "It's All Too Much",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Corinna",
+          "url": "https://jerrygarcia.com/song/corinna/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "The Last Time",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Standing On The Moon",
+          "url": "https://jerrygarcia.com/song/standing-on-the-moon/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Sugar Magnolia",
+          "url": "https://jerrygarcia.com/song/sugar-magnolia/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "Liberty",
+          "url": "https://jerrygarcia.com/song/liberty/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Vince Welnick",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152431/VinceWelnick_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T09:20:21.587487",
+  "show_time": null,
+  "recordings": [
+    "gd95-06-27.schoeps.10180.sbeok.shnf",
+    "gd1995-06-27.fob.schoeps.unknown.larson.35123.flac16",
+    "gd1995-06-27.pmz-nak.holtz.92185.flac16",
+    "gd1995-06-27.119108.nak304.thunich.flac16",
+    "gd1995-06-27.119107.nak304.thunich.48kHz.flac1648",
+    "gd1995-06-27.fob.nak701.unknown.83248.flac16",
+    "gd1995-06-27.141916.walsh.suraci.AT8035.flac1644"
+  ],
+  "best_recording": "gd95-06-27.schoeps.10180.sbeok.shnf",
+  "avg_rating": 1.5142857142857145,
+  "raw_rating": 3.3376623376623376,
+  "recording_count": 7,
+  "confidence": 1.0,
+  "total_high_ratings": 9,
+  "total_low_ratings": 2,
+  "source_types": {
+    "UNKNOWN": 7
+  },
+  "matching_method": "date_only",
+  "filtering_applied": []
+}

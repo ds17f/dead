@@ -1,0 +1,185 @@
+{
+  "url": "https://jerrygarcia.com/show/1989-04-11-rosemont-horizon-rosemont-il-usa/",
+  "show_id": "1989-04-11-rosemont-horizon-rosemont-il-usa",
+  "band": "Grateful Dead",
+  "venue": "Rosemont Horizon",
+  "location_raw": "Rosemont, IL",
+  "city": "Rosemont",
+  "state": "IL",
+  "country": "USA",
+  "date": "1989-04-11",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Shakedown Street",
+          "url": "https://jerrygarcia.com/song/shakedown-street/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Little Red Rooster",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Friend Of The Devil",
+          "url": "https://jerrygarcia.com/song/friend-of-the-devil/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Victim Or The Crime",
+          "url": "https://jerrygarcia.com/song/victim-or-the-crime/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Built To Last",
+          "url": "https://jerrygarcia.com/song/built-to-last/",
+          "segue_into_next": false
+        },
+        {
+          "name": "We Can Run",
+          "url": "https://jerrygarcia.com/song/we-can-run/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Stuck Inside of Mobile with the Memphis Blues Again",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Deal",
+          "url": "https://jerrygarcia.com/song/deal/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Samson & Delilah",
+          "url": "https://jerrygarcia.com/song/samson-delilah/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Crazy Fingers",
+          "url": "https://jerrygarcia.com/song/crazy-fingers/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Playing In The Band",
+          "url": "https://jerrygarcia.com/song/playin-in-the-band/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Terrapin Station",
+          "url": "https://jerrygarcia.com/song/terrapin-station/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Gimme Some Lovin'",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Standing On The Moon",
+          "url": "https://jerrygarcia.com/song/standing-on-the-moon/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Throwing Stones",
+          "url": "https://jerrygarcia.com/song/throwing-stones/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Not Fade Away",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "U.S. Blues",
+          "url": "https://jerrygarcia.com/song/u-s-blues/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Brent Mydland",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152446/BretMydland_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T09:03:21.361260",
+  "show_time": null,
+  "recordings": [
+    "gd89-04-11.sbd.miller.15109.sbeok.shnf",
+    "gd1989-04-11.148145.UltraMatrix.sbd.cm.miller.flac16",
+    "gd1989-04-11.147985.sbd.ultramatrix.miller.flac24",
+    "gd1989-04-11.nak100.holtz.LMPP.94240.flac16",
+    "gd1989-04-11.AKG451.Darby.120302.Flac2448",
+    "gd1989-04-11.nak300.lee.cohen.106238.flac16",
+    "gd1989-04-11.156413.OTS-Schoeps-PCM-Master-Mattes-Anon-Noel.t-flac16",
+    "gd1989-04-11.141850.schoeps.cmc4.mk4.pcm.mattes.miller.clugston.flac1644",
+    "gd1989-04-11.AKG451.Darby.120303.Flac1644"
+  ],
+  "best_recording": "gd89-04-11.sbd.miller.15109.sbeok.shnf",
+  "avg_rating": 3.7205357142857145,
+  "raw_rating": 4.043333333333333,
+  "recording_count": 9,
+  "confidence": 1.0,
+  "total_high_ratings": 13,
+  "total_low_ratings": 0,
+  "source_types": {
+    "SBD": 3,
+    "UNKNOWN": 6
+  },
+  "matching_method": "date_only",
+  "filtering_applied": []
+}

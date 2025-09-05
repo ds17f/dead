@@ -1,0 +1,201 @@
+{
+  "url": "https://jerrygarcia.com/show/1969-12-12-thelma-theater-los-angeles-ca-usa/",
+  "show_id": "1969-12-12-thelma-theater-los-angeles-ca-usa",
+  "band": "Grateful Dead",
+  "venue": "Thelma",
+  "location_raw": "Los Angeles, CA",
+  "city": "Los Angeles",
+  "state": "CA",
+  "country": "USA",
+  "date": "1969-12-12",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Cold Rain And Snow",
+          "url": "https://jerrygarcia.com/song/cold-rain-and-snow/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Me And My Uncle",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Easy Wind",
+          "url": "https://jerrygarcia.com/song/easy-wind/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Cumberland Blues",
+          "url": "https://jerrygarcia.com/song/cumberland-blues/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Black Peter",
+          "url": "https://jerrygarcia.com/song/black-peter/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Next Time You See Me",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "China Cat Sunflower",
+          "url": "https://jerrygarcia.com/song/china-cat-sunflower/",
+          "segue_into_next": true
+        },
+        {
+          "name": "I Know You Rider",
+          "url": "https://jerrygarcia.com/song/i-know-you-rider/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Turn On Your Lovelight",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Hard To Handle",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Casey Jones",
+          "url": "https://jerrygarcia.com/song/casey-jones/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Mama Tried",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "High Time",
+          "url": "https://jerrygarcia.com/song/high-time/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Dire Wolf",
+          "url": "https://jerrygarcia.com/song/dire-wolf/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Good Lovin'",
+          "url": "https://jerrygarcia.com/song/good-lovin/",
+          "segue_into_next": false
+        },
+        {
+          "name": "I'm A King Bee",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Uncle John's Band",
+          "url": "https://jerrygarcia.com/song/uncle-johns-band/",
+          "segue_into_next": true
+        },
+        {
+          "name": "He Was A Friend Of Mine",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Alligator",
+          "url": "https://jerrygarcia.com/song/alligator/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Alligator",
+          "url": "https://jerrygarcia.com/song/alligator/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Caution (Do Not Stop On Tracks)",
+          "url": "https://jerrygarcia.com/song/caution-do-not-stop-on-tracks/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Feedback",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "And We Bid You Good Night",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Ron \"Pigpen\" McKernan",
+      "instruments": "keyboards, harmonica, percussion, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152433/RonPigpenMcKernan_200-100x100.jpg"
+    },
+    {
+      "name": "Tom Constanten",
+      "instruments": "keyboards",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152432/TomConstanten_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T08:16:10.266954",
+  "show_time": null,
+  "recordings": [
+    "gd1969-12-12.sbd.clugston.2247.shnf",
+    "gd69-12-12.sbd.gerland.10988.sbeok.shnf",
+    "gd1969-12-12.141917.sbd.composite.gastwirt.miller.clugston.flac1644"
+  ],
+  "best_recording": "gd1969-12-12.sbd.clugston.2247.shnf",
+  "avg_rating": 4.306607142857143,
+  "raw_rating": 4.411607142857143,
+  "recording_count": 3,
+  "confidence": 1.0,
+  "total_high_ratings": 31,
+  "total_low_ratings": 0,
+  "source_types": {
+    "SBD": 3
+  },
+  "matching_method": "date_only",
+  "filtering_applied": [],
+  "collections": [
+    "daves-picks-vol-10"
+  ]
+}

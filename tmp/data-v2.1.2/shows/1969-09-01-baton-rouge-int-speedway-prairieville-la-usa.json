@@ -1,0 +1,125 @@
+{
+  "url": "https://jerrygarcia.com/show/1969-09-01-baton-rouge-int-speedway-prairieville-la-usa/",
+  "show_id": "1969-09-01-baton-rouge-int-speedway-prairieville-la-usa",
+  "band": "Grateful Dead",
+  "venue": "Baton Rouge Int. Speedway",
+  "location_raw": "Prairieville, LA",
+  "city": "Prairieville",
+  "state": "LA",
+  "country": "USA",
+  "date": "1969-09-01",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Casey Jones",
+          "url": "https://jerrygarcia.com/song/casey-jones/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Morning Dew",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Mama Tried",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "High Time",
+          "url": "https://jerrygarcia.com/song/high-time/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Easy Wind",
+          "url": "https://jerrygarcia.com/song/easy-wind/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Dark Star",
+          "url": "https://jerrygarcia.com/song/dark-star/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Saint Stephen",
+          "url": "https://jerrygarcia.com/song/saint-stephen/",
+          "segue_into_next": true
+        },
+        {
+          "name": "The Eleven",
+          "url": "https://jerrygarcia.com/song/the-eleven/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Turn On Your Lovelight",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Ron \"Pigpen\" McKernan",
+      "instruments": "keyboards, harmonica, percussion, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152433/RonPigpenMcKernan_200-100x100.jpg"
+    },
+    {
+      "name": "Tom Constanten",
+      "instruments": "keyboards",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152432/TomConstanten_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T08:15:04.348364",
+  "show_time": null,
+  "recordings": [
+    "gd69-09-01.sbd.vernon.19963.sbeok.shnf",
+    "gd1969-09-01.171656.BatonRougeLA.sbd.anon.gems.flac1644",
+    "gd1969-09-01.sbd.kaplan.5216.shnf",
+    "gd1969-09-01.157433.sbd.grner1.goody.1644",
+    "gd1969-09-01.sbd.unknown.5042.shnf"
+  ],
+  "best_recording": "gd69-09-01.sbd.vernon.19963.sbeok.shnf",
+  "avg_rating": 4.236454849498328,
+  "raw_rating": 4.414715719063545,
+  "recording_count": 5,
+  "confidence": 1.0,
+  "total_high_ratings": 20,
+  "total_low_ratings": 1,
+  "source_types": {
+    "SBD": 5
+  },
+  "matching_method": "date_only",
+  "filtering_applied": []
+}

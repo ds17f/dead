@@ -1,0 +1,18 @@
+{
+  "identifier": "gd1989-07-07.172500.mk2.hillwig.fix.flac1648",
+  "title": "Grateful Dead Live at John F. Kennedy Stadium on 1989-07-07",
+  "date": "1989-07-07",
+  "venue": "John F. Kennedy Stadium",
+  "location": "Philadelphia, PA",
+  "source_type": "UNKNOWN",
+  "lineage": "Source: Schoeps CMC4/MK2 > PCM > DAT (48 khz) Location:  FOB Transfer: Sony PCM-2600(Apogee AES/EBU)>Sound Devices 722 (16/48)> Firewire>Macbook>Sound Studio 3.6(fades, normalize peak, +gain, track)> xACT 2.40(align on sector boundaries, encode, tag, fingerprint)>flac16 (level 8 ) Taped by: unknown DAT seed provided by: Craig Hillwig Transferred and seeded by: Lenny Stubbe",
+  "taper": "",
+  "source": "Fix of SNHID 139283 - The source DAT had an inverted right channel, likely from the master. This fix addresses that and additional issues. July 2025.",
+  "runtime": "",
+  "rating": 0.0,
+  "review_count": 1,
+  "confidence": 0.0,
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0
+}

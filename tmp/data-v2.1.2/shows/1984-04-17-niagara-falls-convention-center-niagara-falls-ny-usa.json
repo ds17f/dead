@@ -1,0 +1,208 @@
+{
+  "url": "https://jerrygarcia.com/show/1984-04-17-niagara-falls-convention-center-niagara-falls-ny-usa/",
+  "show_id": "1984-04-17-niagara-falls-convention-center-niagara-falls-ny-usa",
+  "band": "Grateful Dead",
+  "venue": "Niagara Falls Convention Center",
+  "location_raw": "Niagara Falls, NY",
+  "city": "Niagara Falls",
+  "state": "NY",
+  "country": "USA",
+  "date": "1984-04-17",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Jack Straw",
+          "url": "https://jerrygarcia.com/song/jack-straw/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Dire Wolf",
+          "url": "https://jerrygarcia.com/song/dire-wolf/",
+          "segue_into_next": false
+        },
+        {
+          "name": "New Minglewood Blues",
+          "url": "https://jerrygarcia.com/song/new-minglewood-blues/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Row Jimmy",
+          "url": "https://jerrygarcia.com/song/row-jimmy/",
+          "segue_into_next": false
+        },
+        {
+          "name": "My Brother Esau",
+          "url": "https://jerrygarcia.com/song/my-brother-esau/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Ramble On Rose",
+          "url": "https://jerrygarcia.com/song/ramble-on-rose/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Looks Like Rain",
+          "url": "https://jerrygarcia.com/song/looks-like-rain/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Deal",
+          "url": "https://jerrygarcia.com/song/deal/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Help On The Way",
+          "url": "https://jerrygarcia.com/song/help-on-the-way/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Slipknot",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Franklin's Tower",
+          "url": "https://jerrygarcia.com/song/franklins-tower/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Man Smart, Woman Smarter",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Eyes Of The World",
+          "url": "https://jerrygarcia.com/song/eyes-of-the-world/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Black Peter",
+          "url": "https://jerrygarcia.com/song/black-peter/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Throwing Stones",
+          "url": "https://jerrygarcia.com/song/throwing-stones/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Not Fade Away",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "Touch of Grey",
+          "url": "https://jerrygarcia.com/song/touch-of-grey/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Brent Mydland",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152446/BretMydland_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T08:50:57.936832",
+  "show_time": null,
+  "recordings": [
+    "gd1984-04-17.137250.sbd.miller.flac1648",
+    "gd1984-04-17.neumann-u87.eaton.miller.90543.sbeok.flac16",
+    "gd84-04-17.nak.james.8460.sbeok.shnf",
+    "gd1984-04-17.fob.at-nak300.jtjames.96460.flac16",
+    "gd1984-04-17.109346.beyer-senn.daweez.D5scott.flac16",
+    "gd1984-04-17.139329.fob.schoeps.mk41.oade.bryant.miller.clugston.flac1644",
+    "gd1984-04-17.nak300.morris.113881.flac24",
+    "gd1984-04-17.145264.nak.senn..blend.ackerman.miller.noel.t-flac1644",
+    "gd1984-04-17.123129.chasingwilma.flac24",
+    "gd1984-04-17.aud.morris.107548.sbeok.flac16",
+    "gd1984-04-17.133027.Nak100CP4.Hill.Keo.Flac1644",
+    "gd1984-04-17.neumannu87.sharpless.minches.86942.sbeok.flac16",
+    "gd1984-04-17.164732.neumann.u87.eaton.miller.clugston.flac1648",
+    "gd1984-04-17.164733.neumann.u87.eaton.miller.clugston.flac2496",
+    "gd1984-04-17.fob.unknown.ford.79556.sbeok.flac16",
+    "gd1984-04-17.149494.beyerm201.holbrook.flac1644",
+    "gd1984-04-17.133028.Nak100CP4.Hill.Keo.Flac2496",
+    "gd1984-04-17.149495.beyerm201.holbrook.flac2448",
+    "gd1984-04-17.154530.fob.senn441.lamarre.miller.clugston.flac2496",
+    "gd1984-04-17.beyerm160.unknown.28762.sbeok.shnf",
+    "gd1984-04-17.nak300.friend-morrone.127261.flac1644",
+    "gd1984-04-17.senn441.koucky.ladner.32708.sbeok.flac16",
+    "gd1984-04-17.140463.ma90.flac2496",
+    "gd1984-04-17.139330.fob.schoeps.mk41.oade.bryant.miller.clugston.flac2496",
+    "gd1984-04-17.149172.mke2002.holbrook.flac1644",
+    "gd1984-04-17.149173.mke2002.holbrook.flac2448",
+    "gd1984-04-17.145332.nak300.barfield.lane.t-flac16",
+    "gd1984-04-17.141837.NAK.Blend.Ackerman.Miller.Noel.t-flac2496",
+    "gd1984-04-17.154529.fob.senn441.lamarre.miller.clugston.flac1648",
+    "gd1984-04-17.nak300.friend-morrone.127260.flac2448",
+    "gd1984-04-17.fob.mccue.ford.79670.sbeok.flac16"
+  ],
+  "best_recording": "gd1984-04-17.137250.sbd.miller.flac1648",
+  "avg_rating": 2.511046511627907,
+  "raw_rating": 4.4192307692307695,
+  "recording_count": 31,
+  "confidence": 1.0,
+  "total_high_ratings": 32,
+  "total_low_ratings": 2,
+  "source_types": {
+    "SBD": 1,
+    "UNKNOWN": 29,
+    "AUD": 1
+  },
+  "matching_method": "date_only",
+  "filtering_applied": []
+}

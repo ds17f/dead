@@ -1,0 +1,18 @@
+{
+  "identifier": "gd1970-05-03.130844.aud.dimetravel-remaster.flac16",
+  "title": "Grateful Dead Live at Field House, Wesleyan University on 1970-05-03",
+  "date": "1970-05-03",
+  "venue": "Field House, Wesleyan University",
+  "location": "Middletown, CT",
+  "source_type": "AUD",
+  "lineage": "",
+  "taper": "",
+  "source": "Recording Information: unknown stereo(?) recording equipment -> master AUD cassette (NOT a SBD as noted in shnid 9770) -> ? -> unknown generation tape used for shnid 9770 -> CDr > EAC > Soundforge (normalize & pitch correction -> shn -> aiff (xACT) -> flacs; flacs -> TLH -> wavs -> Audacity using right channel for mono signal [fades, manual one-at-a-time glitch, bump, pop, click, dropout & dullspot repairs, volume adjustments, NO equalisation] -> CD Wave (track splits) -> flacs (Trader's Little Helper)",
+  "runtime": "22:29.20",
+  "rating": 0.84,
+  "review_count": 1,
+  "confidence": 0.2,
+  "raw_rating": 2.0,
+  "high_ratings": 0,
+  "low_ratings": 1
+}
