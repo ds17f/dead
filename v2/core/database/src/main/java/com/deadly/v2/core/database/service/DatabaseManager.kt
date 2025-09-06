@@ -358,26 +358,6 @@ class DatabaseManager @Inject constructor(
         }
     }
     
-    private suspend fun importFromDataFile(dataFile: File): DatabaseImportResult {
-        _progress.value = DatabaseProgress(phase = "IMPORTING_SHOWS", currentItem = "Importing shows...")
-        
-        val result = dataImportService.importShowsFromJson(dataFile) { processed, total ->
-            _progress.value = DatabaseProgress(
-                phase = "IMPORTING_SHOWS",
-                totalItems = total,
-                processedItems = processed,
-                currentItem = "Importing shows... ($processed/$total)"
-            )
-        }
-        
-        return if (result.success) {
-            _progress.value = DatabaseProgress(phase = "COMPLETED")
-            DatabaseImportResult.Success(result.importedShows, result.importedRecordings)
-        } else {
-            _progress.value = DatabaseProgress(phase = "ERROR", error = result.message)
-            DatabaseImportResult.Error(result.message)
-        }
-    }
     
     /**
      * Test GitHub API integration
