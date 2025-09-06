@@ -73,7 +73,10 @@ data class RecordingImportData(
     @SerialName("raw_rating") val rawRating: Double = 0.0,
     @SerialName("high_ratings") val highRatings: Int = 0,
     @SerialName("low_ratings") val lowRatings: Int = 0,
-    val tracks: List<TrackData> = emptyList()
+    val tracks: List<TrackData> = emptyList(),
+    val taper: String? = null,
+    val source: String? = null,
+    val lineage: String? = null
 )
 
 @Serializable
@@ -524,6 +527,10 @@ class DataImportService @Inject constructor(
             confidence = recordingData.confidence,
             highRatings = recordingData.highRatings,
             lowRatings = recordingData.lowRatings,
+            taper = recordingData.taper,
+            source = recordingData.source,
+            lineage = recordingData.lineage,
+            sourceTypeString = recordingData.sourceType, // Use sourceType as sourceTypeString
             collectionTimestamp = System.currentTimeMillis()
         )
     }

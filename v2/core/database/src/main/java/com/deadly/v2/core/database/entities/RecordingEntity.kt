@@ -52,6 +52,19 @@ data class RecordingEntity(
     @ColumnInfo(name = "low_ratings")
     val lowRatings: Int = 0, // Count of 1-2★ reviews
     
+    // Recording detail fields for rich descriptions
+    @ColumnInfo(name = "taper")
+    val taper: String? = null, // Person who recorded the show
+    
+    @ColumnInfo(name = "source")
+    val source: String? = null, // Equipment chain info
+    
+    @ColumnInfo(name = "lineage") 
+    val lineage: String? = null, // Digital transfer chain
+    
+    @ColumnInfo(name = "source_type_string")
+    val sourceTypeString: String? = null, // Raw source type string from data
+    
     @ColumnInfo(name = "collection_timestamp")
     val collectionTimestamp: Long = System.currentTimeMillis()
 )

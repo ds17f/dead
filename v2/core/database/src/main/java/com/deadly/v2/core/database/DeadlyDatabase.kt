@@ -29,7 +29,7 @@ import com.deadly.v2.core.database.dao.CollectionsDao
         RecentShowEntity::class,
         DeadCollectionEntity::class
     ],
-    version = 10,
+    version = 11,
     exportSchema = false
 )
 abstract class DeadlyDatabase : RoomDatabase() {
