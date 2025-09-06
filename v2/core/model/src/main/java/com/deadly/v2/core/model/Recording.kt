@@ -15,7 +15,11 @@ data class Recording(
     val showId: String,
     val sourceType: RecordingSourceType,
     val rating: Double,
-    val reviewCount: Int
+    val reviewCount: Int,
+    val taper: String? = null,
+    val source: String? = null,
+    val lineage: String? = null,
+    val sourceTypeString: String? = null
     // Future Archive API integration will add:
     // val title: String - from Archive.org metadata
     // val tracks: List<Track> - from Archive.org files listing  

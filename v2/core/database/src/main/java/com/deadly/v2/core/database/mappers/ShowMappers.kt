@@ -66,7 +66,11 @@ class ShowMappers @Inject constructor(
             showId = entity.showId,
             sourceType = RecordingSourceType.fromString(entity.sourceType),
             rating = entity.rating,
-            reviewCount = entity.reviewCount
+            reviewCount = entity.reviewCount,
+            taper = entity.taper,
+            source = entity.source,
+            lineage = entity.lineage,
+            sourceTypeString = entity.sourceTypeString
         )
     }
     

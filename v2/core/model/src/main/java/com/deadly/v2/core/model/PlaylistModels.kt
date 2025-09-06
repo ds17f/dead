@@ -71,15 +71,18 @@ data class PlaylistReview(
 
 /**
  * RecordingOptionViewModel - UI representation of recording option
- * V2 View Model (UI-specific) without V1 domain model dependencies
+ * V2 View Model with rich recording descriptions from real data
  */
 @Serializable
 data class RecordingOptionViewModel(
     val identifier: String,
-    val source: String,
-    val title: String,
+    val sourceType: String,                 // Clean: "Soundboard", "Audience", "FM Broadcast"
+    val taperInfo: String?,                 // "Taper: Bill Suckalooskey" or null
+    val technicalDetails: String?,          // "Master, DAT, Nakamichi, FOB"
     val rating: Float?,
     val reviewCount: Int?,
+    val rawSource: String?,                 // Raw source field from data
+    val rawLineage: String?,                // Raw lineage field from data
     val isSelected: Boolean,
     val isRecommended: Boolean,
     val matchReason: String?

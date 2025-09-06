@@ -52,15 +52,15 @@ fun PlaylistRecordingOptionCard(
             Column(
                 modifier = Modifier.weight(1f)
             ) {
-                // Source and Rating row
+                // Line 1: Source type (bold) + rating
                 Row(
                     horizontalArrangement = Arrangement.spacedBy(8.dp),
                     verticalAlignment = Alignment.CenterVertically
                 ) {
                     Text(
-                        text = recordingOption.source,
+                        text = recordingOption.sourceType,
                         style = MaterialTheme.typography.labelMedium,
-                        fontWeight = FontWeight.Medium
+                        fontWeight = FontWeight.Bold
                     )
                     
                     recordingOption.rating?.let { rating ->
@@ -71,10 +71,10 @@ fun PlaylistRecordingOptionCard(
                     }
                 }
                 
-                // Recording title/quality
-                if (recordingOption.title.isNotBlank()) {
+                // Line 2: Taper info (if available)
+                recordingOption.taperInfo?.let { taper ->
                     Text(
-                        text = recordingOption.title,
+                        text = taper,
                         style = MaterialTheme.typography.bodySmall,
                         color = MaterialTheme.colorScheme.onSurfaceVariant,
                         maxLines = 1,
@@ -82,19 +82,25 @@ fun PlaylistRecordingOptionCard(
                     )
                 }
                 
-                // Match reason or recommendation
-                recordingOption.matchReason?.let { reason ->
+                // Line 3: Technical details (equipment, quality)
+                recordingOption.technicalDetails?.let { details ->
                     Text(
-                        text = reason,
+                        text = details,
                         style = MaterialTheme.typography.bodySmall,
-                        color = when {
-                            recordingOption.isSelected -> MaterialTheme.colorScheme.onPrimaryContainer
-                            recordingOption.isRecommended -> MaterialTheme.colorScheme.onTertiaryContainer
-                            else -> MaterialTheme.colorScheme.primary
-                        },
-                        fontWeight = FontWeight.Medium
+                        color = MaterialTheme.colorScheme.onSurfaceVariant,
+                        maxLines = 1,
+                        overflow = TextOverflow.Ellipsis
                     )
                 }
+                
+                // Line 4: Archive ID (red-tinted, muted)
+                Text(
+                    text = recordingOption.identifier,
+                    style = MaterialTheme.typography.bodySmall,
+                    color = MaterialTheme.colorScheme.error.copy(alpha = 0.7f),
+                    maxLines = 1,
+                    overflow = TextOverflow.Ellipsis
+                )
             }
             
             if (recordingOption.isSelected) {

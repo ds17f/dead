@@ -556,10 +556,13 @@ class PlaylistServiceImpl @Inject constructor(
         
         return RecordingOptionViewModel(
             identifier = recording.identifier,
-            source = recording.sourceType.displayName,
-            title = betterTitle,
+            sourceType = recording.sourceType.displayName,
+            taperInfo = recording.taper?.let { "Taper: $it" },
+            technicalDetails = listOfNotNull(recording.source, recording.lineage).joinToString(", ").takeIf { it.isNotEmpty() },
             rating = if (recording.hasRating) recording.rating.toFloat() else null,
             reviewCount = if (recording.reviewCount > 0) recording.reviewCount else null,
+            rawSource = recording.source,
+            rawLineage = recording.lineage,
             isSelected = isCurrentlySelected,
             isRecommended = isRecommended,
             matchReason = matchReason
