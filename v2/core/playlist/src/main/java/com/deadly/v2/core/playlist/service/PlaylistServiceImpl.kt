@@ -185,6 +185,27 @@ class PlaylistServiceImpl @Inject constructor(
         }
     }
     
+    private fun convertSetlistToViewModel(setlist: com.deadly.v2.core.model.Setlist, show: com.deadly.v2.core.model.Show): com.deadly.v2.core.model.SetlistViewModel {
+        return com.deadly.v2.core.model.SetlistViewModel(
+            showDate = formatDisplayDate(show.date),
+            venue = show.venue.name,
+            location = show.location.displayText,
+            sets = setlist.sets.map { domainSet ->
+                com.deadly.v2.core.model.SetlistSetViewModel(
+                    name = domainSet.name,
+                    songs = domainSet.songs.map { domainSong ->
+                        com.deadly.v2.core.model.SetlistSongViewModel(
+                            position = null, // We don't need position numbers in the UI
+                            name = domainSong.name,
+                            hasSegue = domainSong.hasSegue,
+                            segueSymbol = domainSong.segueSymbol
+                        )
+                    }
+                )
+            }
+        )
+    }
+    
     // === PHASE 1: STUBBED IMPLEMENTATIONS (TODOs) ===
     
     override suspend fun getTrackList(): List<PlaylistTrackViewModel> {
@@ -322,6 +343,18 @@ class PlaylistServiceImpl @Inject constructor(
         }
         // TODO: Use setlist data from Show domain model
         // TODO: Parse and format setlist for UI display
+    }
+    
+    override suspend fun getCurrentSetlist(): com.deadly.v2.core.model.SetlistViewModel? {
+        val show = currentShow
+        val setlist = show?.setlist
+        if (setlist == null) {
+            Log.d(TAG, "No setlist data available for current show")
+            return null
+        }
+        
+        Log.d(TAG, "Converting setlist for ${show.displayTitle}")
+        return convertSetlistToViewModel(setlist, show)
     }
     
     override suspend fun pause() {

@@ -22,6 +22,7 @@ import kotlinx.coroutines.flow.flowOf
 import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.launch
+import kotlinx.coroutines.runBlocking
 import kotlinx.coroutines.flow.SharingStarted
 import javax.inject.Inject
 import javax.inject.Named
@@ -504,61 +505,94 @@ class PlaylistViewModel @Inject constructor(
     }
     
     /**
-     * Show setlist modal with dummy data
+     * Show setlist modal with real data
      */
     fun showSetlistModal() {
         Log.d(TAG, "Show setlist modal requested")
         _baseUiState.value = _baseUiState.value.copy(
             showSetlistModal = true,
-            setlistLoading = false,
+            setlistLoading = true,
             setlistError = null
         )
+        
+        // Load real setlist data
+        viewModelScope.launch {
+            try {
+                val setlistData = playlistService.getCurrentSetlist()
+                _baseUiState.value = _baseUiState.value.copy(
+                    setlistLoading = false,
+                    setlistError = if (setlistData == null) "No setlist available for this show" else null
+                )
+            } catch (e: Exception) {
+                Log.e(TAG, "Error loading setlist data", e)
+                _baseUiState.value = _baseUiState.value.copy(
+                    setlistLoading = false,
+                    setlistError = "Failed to load setlist"
+                )
+            }
+        }
+    }
+    
+    /**
+     * Get current setlist data (real data, not dummy)
+     */
+    fun getCurrentSetlistData(): com.deadly.v2.core.model.SetlistViewModel? {
+        return try {
+            // This is a synchronous call for UI - the data should already be loaded
+            // via the async showSetlistModal call
+            runBlocking {
+                playlistService.getCurrentSetlist()
+            }
+        } catch (e: Exception) {
+            Log.e(TAG, "Error getting setlist data", e)
+            null
+        }
     }
     
     /**
      * Get dummy 5/8/77 Barton Hall setlist data
      */
-    fun getDummySetlistData(): com.deadly.v2.feature.playlist.models.SetlistViewModel {
-        return com.deadly.v2.feature.playlist.models.SetlistViewModel(
+    fun getDummySetlistData(): com.deadly.v2.core.model.SetlistViewModel {
+        return com.deadly.v2.core.model.SetlistViewModel(
             showDate = "May 8, 1977",
             venue = "Barton Hall, Cornell University",
             location = "Ithaca, NY",
             sets = listOf(
-                com.deadly.v2.feature.playlist.models.SetlistSetViewModel(
+                com.deadly.v2.core.model.SetlistSetViewModel(
                     name = "Set One",
                     songs = listOf(
-                        com.deadly.v2.feature.playlist.models.SetlistSongViewModel(null, "Minglewood Blues"),
-                        com.deadly.v2.feature.playlist.models.SetlistSongViewModel(null, "Loser"),
-                        com.deadly.v2.feature.playlist.models.SetlistSongViewModel(null, "El Paso"),
-                        com.deadly.v2.feature.playlist.models.SetlistSongViewModel(null, "They Love Each Other"),
-                        com.deadly.v2.feature.playlist.models.SetlistSongViewModel(null, "Jack Straw"),
-                        com.deadly.v2.feature.playlist.models.SetlistSongViewModel(null, "Deal"),
-                        com.deadly.v2.feature.playlist.models.SetlistSongViewModel(null, "Looks Like Rain"),
-                        com.deadly.v2.feature.playlist.models.SetlistSongViewModel(null, "Row Jimmy"),
-                        com.deadly.v2.feature.playlist.models.SetlistSongViewModel(null, "Playing in the Band")
+                        com.deadly.v2.core.model.SetlistSongViewModel(null, "Minglewood Blues"),
+                        com.deadly.v2.core.model.SetlistSongViewModel(null, "Loser"),
+                        com.deadly.v2.core.model.SetlistSongViewModel(null, "El Paso"),
+                        com.deadly.v2.core.model.SetlistSongViewModel(null, "They Love Each Other"),
+                        com.deadly.v2.core.model.SetlistSongViewModel(null, "Jack Straw"),
+                        com.deadly.v2.core.model.SetlistSongViewModel(null, "Deal"),
+                        com.deadly.v2.core.model.SetlistSongViewModel(null, "Looks Like Rain"),
+                        com.deadly.v2.core.model.SetlistSongViewModel(null, "Row Jimmy"),
+                        com.deadly.v2.core.model.SetlistSongViewModel(null, "Playing in the Band")
                     )
                 ),
-                com.deadly.v2.feature.playlist.models.SetlistSetViewModel(
+                com.deadly.v2.core.model.SetlistSetViewModel(
                     name = "Set Two",
                     songs = listOf(
-                        com.deadly.v2.feature.playlist.models.SetlistSongViewModel(null, "Samson and Delilah"),
-                        com.deadly.v2.feature.playlist.models.SetlistSongViewModel(null, "Help on the Way", hasSegue = true, segueSymbol = ">"),
-                        com.deadly.v2.feature.playlist.models.SetlistSongViewModel(null, "Slipknot!", hasSegue = true, segueSymbol = ">"),
-                        com.deadly.v2.feature.playlist.models.SetlistSongViewModel(null, "Franklin's Tower"),
-                        com.deadly.v2.feature.playlist.models.SetlistSongViewModel(null, "Estimated Prophet"),
-                        com.deadly.v2.feature.playlist.models.SetlistSongViewModel(null, "Eyes of the World", hasSegue = true, segueSymbol = ">"),
-                        com.deadly.v2.feature.playlist.models.SetlistSongViewModel(null, "Drums", hasSegue = true, segueSymbol = ">"),
-                        com.deadly.v2.feature.playlist.models.SetlistSongViewModel(null, "Not Fade Away", hasSegue = true, segueSymbol = ">"),
-                        com.deadly.v2.feature.playlist.models.SetlistSongViewModel(null, "Drums", hasSegue = true, segueSymbol = ">"),
-                        com.deadly.v2.feature.playlist.models.SetlistSongViewModel(null, "The Other One", hasSegue = true, segueSymbol = ">"),
-                        com.deadly.v2.feature.playlist.models.SetlistSongViewModel(null, "Wharf Rat", hasSegue = true, segueSymbol = ">"),
-                        com.deadly.v2.feature.playlist.models.SetlistSongViewModel(null, "Around and Around")
+                        com.deadly.v2.core.model.SetlistSongViewModel(null, "Samson and Delilah"),
+                        com.deadly.v2.core.model.SetlistSongViewModel(null, "Help on the Way", hasSegue = true, segueSymbol = ">"),
+                        com.deadly.v2.core.model.SetlistSongViewModel(null, "Slipknot!", hasSegue = true, segueSymbol = ">"),
+                        com.deadly.v2.core.model.SetlistSongViewModel(null, "Franklin's Tower"),
+                        com.deadly.v2.core.model.SetlistSongViewModel(null, "Estimated Prophet"),
+                        com.deadly.v2.core.model.SetlistSongViewModel(null, "Eyes of the World", hasSegue = true, segueSymbol = ">"),
+                        com.deadly.v2.core.model.SetlistSongViewModel(null, "Drums", hasSegue = true, segueSymbol = ">"),
+                        com.deadly.v2.core.model.SetlistSongViewModel(null, "Not Fade Away", hasSegue = true, segueSymbol = ">"),
+                        com.deadly.v2.core.model.SetlistSongViewModel(null, "Drums", hasSegue = true, segueSymbol = ">"),
+                        com.deadly.v2.core.model.SetlistSongViewModel(null, "The Other One", hasSegue = true, segueSymbol = ">"),
+                        com.deadly.v2.core.model.SetlistSongViewModel(null, "Wharf Rat", hasSegue = true, segueSymbol = ">"),
+                        com.deadly.v2.core.model.SetlistSongViewModel(null, "Around and Around")
                     )
                 ),
-                com.deadly.v2.feature.playlist.models.SetlistSetViewModel(
+                com.deadly.v2.core.model.SetlistSetViewModel(
                     name = "Encore",
                     songs = listOf(
-                        com.deadly.v2.feature.playlist.models.SetlistSongViewModel(null, "Johnny B. Goode")
+                        com.deadly.v2.core.model.SetlistSongViewModel(null, "Johnny B. Goode")
                     )
                 )
             )

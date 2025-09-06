@@ -1,9 +1,11 @@
-package com.deadly.v2.feature.playlist.models
+package com.deadly.v2.core.model
+
+import kotlinx.serialization.Serializable
 
 /**
- * UI models for setlist display in V2 playlist feature
+ * UI models for setlist display
  * 
- * These models are specific to the playlist UI and separate from domain models.
+ * These models are for UI presentation and are separate from domain models.
  * They represent exactly what the setlist UI components need to display.
  */
 
@@ -12,6 +14,7 @@ package com.deadly.v2.feature.playlist.models
  * 
  * Contains show information and all sets for display in the setlist modal.
  */
+@Serializable
 data class SetlistViewModel(
     val showDate: String,      // "May 8, 1977"
     val venue: String,         // "Barton Hall, Cornell University"
@@ -24,6 +27,7 @@ data class SetlistViewModel(
  * 
  * Contains set name and all songs in that set.
  */
+@Serializable
 data class SetlistSetViewModel(
     val name: String,          // "Set One", "Set Two", "Encore"
     val songs: List<SetlistSongViewModel>
@@ -34,6 +38,7 @@ data class SetlistSetViewModel(
  * 
  * Contains song information as needed for display, including segue indicators.
  */
+@Serializable
 data class SetlistSongViewModel(
     val position: Int?,        // Song position in set (1, 2, 3, etc.) - null if not available
     val name: String,          // "Playing in the Band"

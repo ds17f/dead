@@ -72,6 +72,12 @@ interface PlaylistService {
     suspend fun loadSetlist()
     
     /**
+     * Get current show's setlist as UI model
+     * Returns null if no setlist data is available
+     */
+    suspend fun getCurrentSetlist(): com.deadly.v2.core.model.SetlistViewModel?
+    
+    /**
      * Pause playback
      */
     suspend fun pause()

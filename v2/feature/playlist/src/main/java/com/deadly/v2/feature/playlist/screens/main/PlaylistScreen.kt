@@ -297,7 +297,7 @@ fun PlaylistScreen(
     // Setlist Modal
     if (uiState.showSetlistModal) {
         PlaylistSetlistBottomSheet(
-            setlistData = viewModel.getDummySetlistData(),
+            setlistData = viewModel.getCurrentSetlistData(),
             isLoading = uiState.setlistLoading,
             errorMessage = uiState.setlistError,
             onDismiss = viewModel::hideSetlistModal

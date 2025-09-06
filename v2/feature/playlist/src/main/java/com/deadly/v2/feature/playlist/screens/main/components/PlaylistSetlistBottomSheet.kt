@@ -12,9 +12,9 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.deadly.v2.core.design.resources.IconResources
-import com.deadly.v2.feature.playlist.models.SetlistViewModel
-import com.deadly.v2.feature.playlist.models.SetlistSetViewModel
-import com.deadly.v2.feature.playlist.models.SetlistSongViewModel
+import com.deadly.v2.core.model.SetlistViewModel
+import com.deadly.v2.core.model.SetlistSetViewModel
+import com.deadly.v2.core.model.SetlistSongViewModel
 
 /**
  * PlaylistSetlistBottomSheet - V2 setlist modal component
