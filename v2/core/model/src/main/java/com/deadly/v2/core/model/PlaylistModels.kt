@@ -143,7 +143,11 @@ data class PlaylistUiState(
     // Collections state
     val showCollections: List<DeadCollection> = emptyList(),
     val showCollectionsSheet: Boolean = false,
-    val collectionsLoading: Boolean = false
+    val collectionsLoading: Boolean = false,
+    // Setlist modal state
+    val showSetlistModal: Boolean = false,
+    val setlistLoading: Boolean = false,
+    val setlistError: String? = null
 )
 
 

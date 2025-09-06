@@ -21,6 +21,7 @@ import com.deadly.v2.feature.playlist.screens.main.components.PlaylistReviewDeta
 import com.deadly.v2.feature.playlist.screens.main.components.PlaylistMenuSheet
 import com.deadly.v2.feature.playlist.screens.main.components.PlaylistRecordingSelectionSheet
 import com.deadly.v2.feature.playlist.screens.main.components.PlaylistCollectionsSheet
+import com.deadly.v2.feature.playlist.screens.main.components.PlaylistSetlistBottomSheet
 import com.deadly.v2.feature.playlist.screens.main.models.PlaylistViewModel
 import com.deadly.v2.core.design.component.debug.DebugData
 import com.deadly.v2.core.design.component.debug.DebugSection
@@ -290,6 +291,16 @@ fun PlaylistScreen(
                 viewModel.hideCollectionsSheet()
             },
             onDismiss = viewModel::hideCollectionsSheet
+        )
+    }
+    
+    // Setlist Modal
+    if (uiState.showSetlistModal) {
+        PlaylistSetlistBottomSheet(
+            setlistData = viewModel.getDummySetlistData(),
+            isLoading = uiState.setlistLoading,
+            errorMessage = uiState.setlistError,
+            onDismiss = viewModel::hideSetlistModal
         )
     }
 }
