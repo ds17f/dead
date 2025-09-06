@@ -1,11 +1,20 @@
 # Changelog
 
+## [0.69.3] - 2025-09-05
+
+### Code Refactoring
+* Remove V2 suffix from import data classes and method names (83fad537)
+* Remove legacy V1 import methods and clean up data structures (7536ae79)
+* Rename V2 Classes (1c2b1c59)
+
+### Other Changes
+* chore(tmp): remove tmp (5873f6a1)
+
+
 ## [0.69.2] - 2025-09-05
 
 ### Bug Fixes
 * update v1 modules to use Compose BOM 2025.08.00 (362c3b17)
-
-
 ## [0.69.1] - 2025-09-04
 
 ### Bug Fixes
