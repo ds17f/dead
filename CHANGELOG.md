@@ -1,12 +1,16 @@
 # Changelog
 
+## [0.69.2] - 2025-09-05
+
+### Bug Fixes
+* update v1 modules to use Compose BOM 2025.08.00 (362c3b17)
+
+
 ## [0.69.1] - 2025-09-04
 
 ### Bug Fixes
 * resolve collection selection updates during navigation (2357219f)
 * resolve external schema compatibility for collections import (0aaf9908)
-
-
 ## [0.69.0] - 2025-09-04
 
 ### New Features
