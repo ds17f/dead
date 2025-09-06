@@ -10,6 +10,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import com.deadly.v2.core.design.resources.IconResources
 import com.deadly.v2.feature.playlist.models.SetlistViewModel
 import com.deadly.v2.feature.playlist.models.SetlistSetViewModel
@@ -125,44 +126,40 @@ fun PlaylistSetlistBottomSheet(
                 }
                 
                 else -> {
-                    // Show information header
-                    Text(
-                        text = setlistData.showDate,
-                        style = MaterialTheme.typography.titleMedium,
-                        fontWeight = FontWeight.Medium
-                    )
-                    Text(
-                        text = setlistData.venue,
-                        style = MaterialTheme.typography.bodyMedium,
-                        color = MaterialTheme.colorScheme.onSurfaceVariant
-                    )
-                    Text(
-                        text = setlistData.location,
-                        style = MaterialTheme.typography.bodySmall,
-                        color = MaterialTheme.colorScheme.onSurfaceVariant
-                    )
-                    
-                    Spacer(modifier = Modifier.height(16.dp))
-                    
-                    // Sets and songs
-                    LazyColumn(
+                    // Show information header - scorecard style
+                    Column(
                         modifier = Modifier.fillMaxWidth(),
                         verticalArrangement = Arrangement.spacedBy(8.dp)
                     ) {
+                        Text(
+                            text = setlistData.showDate,
+                            style = MaterialTheme.typography.headlineMedium,
+                            fontWeight = FontWeight.Bold,
+                            color = MaterialTheme.colorScheme.primary
+                        )
+                        Text(
+                            text = setlistData.venue,
+                            style = MaterialTheme.typography.titleMedium,
+                            fontWeight = FontWeight.Medium,
+                            color = MaterialTheme.colorScheme.onSurface
+                        )
+                        Text(
+                            text = setlistData.location,
+                            style = MaterialTheme.typography.bodyLarge,
+                            color = MaterialTheme.colorScheme.onSurfaceVariant
+                        )
+                    }
+                    
+                    Spacer(modifier = Modifier.height(24.dp))
+                    
+                    // Sets and songs - scorecard style
+                    LazyColumn(
+                        modifier = Modifier.fillMaxWidth(),
+                        verticalArrangement = Arrangement.spacedBy(24.dp)
+                    ) {
                         setlistData.sets.forEach { set ->
                             item {
-                                SetHeader(
-                                    setName = set.name,
-                                    songCount = set.songs.size
-                                )
-                            }
-                            
-                            items(set.songs) { song ->
-                                SetlistSongItem(song = song)
-                            }
-                            
-                            item {
-                                Spacer(modifier = Modifier.height(8.dp))
+                                SetSection(set = set)
                             }
                         }
                     }
@@ -173,72 +170,67 @@ fun PlaylistSetlistBottomSheet(
 }
 
 /**
- * SetHeader - Header for a setlist set (Set One, Set Two, etc.)
+ * SetSection - Scorecard-style section for a complete set
  */
 @Composable
-private fun SetHeader(
-    setName: String,
-    songCount: Int,
+private fun SetSection(
+    set: SetlistSetViewModel,
     modifier: Modifier = Modifier
 ) {
-    Card(
+    Column(
         modifier = modifier.fillMaxWidth(),
-        colors = CardDefaults.cardColors(
-            containerColor = MaterialTheme.colorScheme.surfaceVariant
-        )
+        verticalArrangement = Arrangement.spacedBy(16.dp)
     ) {
-        Row(
-            modifier = Modifier
-                .fillMaxWidth()
-                .padding(12.dp),
-            horizontalArrangement = Arrangement.SpaceBetween,
-            verticalAlignment = Alignment.CenterVertically
+        // Set header - more prominent, less boxy
+        Column(
+            modifier = Modifier.fillMaxWidth(),
+            verticalArrangement = Arrangement.spacedBy(4.dp)
         ) {
             Text(
-                text = setName,
-                style = MaterialTheme.typography.titleSmall,
-                fontWeight = FontWeight.Medium
+                text = set.name.uppercase(),
+                style = MaterialTheme.typography.titleLarge,
+                fontWeight = FontWeight.Bold,
+                color = MaterialTheme.colorScheme.primary,
+                letterSpacing = 1.2.sp
             )
-            Text(
-                text = "$songCount songs",
-                style = MaterialTheme.typography.bodySmall,
-                color = MaterialTheme.colorScheme.onSurfaceVariant
+            Divider(
+                modifier = Modifier.width(60.dp),
+                thickness = 3.dp,
+                color = MaterialTheme.colorScheme.primary
             )
+        }
+        
+        // Songs in a flowing grid-like layout
+        Column(
+            modifier = Modifier.fillMaxWidth(),
+            verticalArrangement = Arrangement.spacedBy(8.dp)
+        ) {
+            set.songs.forEach { song ->
+                SetlistSongRow(song = song)
+            }
         }
     }
 }
 
 /**
- * SetlistSongItem - Individual song in a setlist
+ * SetlistSongRow - Simple, clean song listing
  */
 @Composable
-private fun SetlistSongItem(
+private fun SetlistSongRow(
     song: SetlistSongViewModel,
     modifier: Modifier = Modifier
 ) {
-    Row(
+    // Just the song name - clean and simple
+    Text(
+        text = song.displayName,
+        style = MaterialTheme.typography.bodyLarge,
+        fontWeight = FontWeight.Medium,
+        fontSize = 18.sp,
+        lineHeight = 24.sp,
+        maxLines = 2,
+        overflow = TextOverflow.Ellipsis,
         modifier = modifier
             .fillMaxWidth()
-            .padding(horizontal = 16.dp, vertical = 6.dp),
-        verticalAlignment = Alignment.CenterVertically
-    ) {
-        // Position indicator (if available)
-        song.position?.let { position ->
-            Text(
-                text = "$position.",
-                style = MaterialTheme.typography.bodySmall,
-                color = MaterialTheme.colorScheme.onSurfaceVariant,
-                modifier = Modifier.width(32.dp)
-            )
-        }
-        
-        // Song name with segue indicator
-        Text(
-            text = song.displayName,
-            style = MaterialTheme.typography.bodyMedium,
-            maxLines = 2,
-            overflow = TextOverflow.Ellipsis,
-            modifier = Modifier.weight(1f)
-        )
-    }
+            .padding(horizontal = 8.dp, vertical = 8.dp)
+    )
 }

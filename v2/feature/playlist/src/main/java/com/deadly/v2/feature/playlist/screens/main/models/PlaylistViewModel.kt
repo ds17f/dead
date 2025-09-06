@@ -527,38 +527,38 @@ class PlaylistViewModel @Inject constructor(
                 com.deadly.v2.feature.playlist.models.SetlistSetViewModel(
                     name = "Set One",
                     songs = listOf(
-                        com.deadly.v2.feature.playlist.models.SetlistSongViewModel(1, "Minglewood Blues"),
-                        com.deadly.v2.feature.playlist.models.SetlistSongViewModel(2, "Loser"),
-                        com.deadly.v2.feature.playlist.models.SetlistSongViewModel(3, "El Paso"),
-                        com.deadly.v2.feature.playlist.models.SetlistSongViewModel(4, "They Love Each Other"),
-                        com.deadly.v2.feature.playlist.models.SetlistSongViewModel(5, "Jack Straw"),
-                        com.deadly.v2.feature.playlist.models.SetlistSongViewModel(6, "Deal"),
-                        com.deadly.v2.feature.playlist.models.SetlistSongViewModel(7, "Looks Like Rain"),
-                        com.deadly.v2.feature.playlist.models.SetlistSongViewModel(8, "Row Jimmy"),
-                        com.deadly.v2.feature.playlist.models.SetlistSongViewModel(9, "Playing in the Band")
+                        com.deadly.v2.feature.playlist.models.SetlistSongViewModel(null, "Minglewood Blues"),
+                        com.deadly.v2.feature.playlist.models.SetlistSongViewModel(null, "Loser"),
+                        com.deadly.v2.feature.playlist.models.SetlistSongViewModel(null, "El Paso"),
+                        com.deadly.v2.feature.playlist.models.SetlistSongViewModel(null, "They Love Each Other"),
+                        com.deadly.v2.feature.playlist.models.SetlistSongViewModel(null, "Jack Straw"),
+                        com.deadly.v2.feature.playlist.models.SetlistSongViewModel(null, "Deal"),
+                        com.deadly.v2.feature.playlist.models.SetlistSongViewModel(null, "Looks Like Rain"),
+                        com.deadly.v2.feature.playlist.models.SetlistSongViewModel(null, "Row Jimmy"),
+                        com.deadly.v2.feature.playlist.models.SetlistSongViewModel(null, "Playing in the Band")
                     )
                 ),
                 com.deadly.v2.feature.playlist.models.SetlistSetViewModel(
                     name = "Set Two",
                     songs = listOf(
-                        com.deadly.v2.feature.playlist.models.SetlistSongViewModel(1, "Samson and Delilah"),
-                        com.deadly.v2.feature.playlist.models.SetlistSongViewModel(2, "Help on the Way", hasSegue = true, segueSymbol = ">"),
-                        com.deadly.v2.feature.playlist.models.SetlistSongViewModel(3, "Slipknot!", hasSegue = true, segueSymbol = ">"),
-                        com.deadly.v2.feature.playlist.models.SetlistSongViewModel(4, "Franklin's Tower"),
-                        com.deadly.v2.feature.playlist.models.SetlistSongViewModel(5, "Estimated Prophet"),
-                        com.deadly.v2.feature.playlist.models.SetlistSongViewModel(6, "Eyes of the World", hasSegue = true, segueSymbol = ">"),
-                        com.deadly.v2.feature.playlist.models.SetlistSongViewModel(7, "Drums", hasSegue = true, segueSymbol = ">"),
-                        com.deadly.v2.feature.playlist.models.SetlistSongViewModel(8, "Not Fade Away", hasSegue = true, segueSymbol = ">"),
-                        com.deadly.v2.feature.playlist.models.SetlistSongViewModel(9, "Drums", hasSegue = true, segueSymbol = ">"),
-                        com.deadly.v2.feature.playlist.models.SetlistSongViewModel(10, "The Other One", hasSegue = true, segueSymbol = ">"),
-                        com.deadly.v2.feature.playlist.models.SetlistSongViewModel(11, "Wharf Rat", hasSegue = true, segueSymbol = ">"),
-                        com.deadly.v2.feature.playlist.models.SetlistSongViewModel(12, "Around and Around")
+                        com.deadly.v2.feature.playlist.models.SetlistSongViewModel(null, "Samson and Delilah"),
+                        com.deadly.v2.feature.playlist.models.SetlistSongViewModel(null, "Help on the Way", hasSegue = true, segueSymbol = ">"),
+                        com.deadly.v2.feature.playlist.models.SetlistSongViewModel(null, "Slipknot!", hasSegue = true, segueSymbol = ">"),
+                        com.deadly.v2.feature.playlist.models.SetlistSongViewModel(null, "Franklin's Tower"),
+                        com.deadly.v2.feature.playlist.models.SetlistSongViewModel(null, "Estimated Prophet"),
+                        com.deadly.v2.feature.playlist.models.SetlistSongViewModel(null, "Eyes of the World", hasSegue = true, segueSymbol = ">"),
+                        com.deadly.v2.feature.playlist.models.SetlistSongViewModel(null, "Drums", hasSegue = true, segueSymbol = ">"),
+                        com.deadly.v2.feature.playlist.models.SetlistSongViewModel(null, "Not Fade Away", hasSegue = true, segueSymbol = ">"),
+                        com.deadly.v2.feature.playlist.models.SetlistSongViewModel(null, "Drums", hasSegue = true, segueSymbol = ">"),
+                        com.deadly.v2.feature.playlist.models.SetlistSongViewModel(null, "The Other One", hasSegue = true, segueSymbol = ">"),
+                        com.deadly.v2.feature.playlist.models.SetlistSongViewModel(null, "Wharf Rat", hasSegue = true, segueSymbol = ">"),
+                        com.deadly.v2.feature.playlist.models.SetlistSongViewModel(null, "Around and Around")
                     )
                 ),
                 com.deadly.v2.feature.playlist.models.SetlistSetViewModel(
                     name = "Encore",
                     songs = listOf(
-                        com.deadly.v2.feature.playlist.models.SetlistSongViewModel(1, "Johnny B. Goode")
+                        com.deadly.v2.feature.playlist.models.SetlistSongViewModel(null, "Johnny B. Goode")
                     )
                 )
             )
