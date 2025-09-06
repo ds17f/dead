@@ -25,7 +25,7 @@ import javax.inject.Inject
 import javax.inject.Singleton
 
 @Serializable
-data class ShowV2ImportData(
+data class ShowImportData(
     @SerialName("show_id") val showId: String,
     val band: String,
     val venue: String,
@@ -62,7 +62,7 @@ data class LineupMember(
 )
 
 @Serializable
-data class RecordingV2ImportData(
+data class RecordingImportData(
     val rating: Double = 0.0,
     @SerialName("review_count") val reviewCount: Int = 0,
     @SerialName("source_type") val sourceType: String? = null,
@@ -137,7 +137,7 @@ class DataImportService @Inject constructor(
             var importedRecordings = 0
             
             // Read and parse all show files
-            val showsMap = mutableMapOf<String, ShowV2ImportData>()
+            val showsMap = mutableMapOf<String, ShowImportData>()
             var showParseSuccessCount = 0
             var showParseFailureCount = 0
             
@@ -156,7 +156,7 @@ class DataImportService @Inject constructor(
                 try {
                     val showJson = file.readText()
                     val json = Json { ignoreUnknownKeys = true }
-                    val showData = json.decodeFromString<ShowV2ImportData>(showJson)
+                    val showData = json.decodeFromString<ShowImportData>(showJson)
                     showsMap[showData.showId] = showData
                     showParseSuccessCount++
                     Log.d(TAG, "✅ Successfully parsed show: ${showData.showId}")
@@ -169,7 +169,7 @@ class DataImportService @Inject constructor(
             Log.i(TAG, "Show parsing summary: $showParseSuccessCount successful, $showParseFailureCount failed out of ${showFiles.size} total files")
             
             // Parse recording files
-            val recordingsMap = mutableMapOf<String, RecordingV2ImportData>()
+            val recordingsMap = mutableMapOf<String, RecordingImportData>()
             var recordingParseSuccessCount = 0
             var recordingParseFailureCount = 0
             
@@ -188,7 +188,7 @@ class DataImportService @Inject constructor(
                 try {
                     val recordingJson = file.readText()
                     val json = Json { ignoreUnknownKeys = true }
-                    val recordingData = json.decodeFromString<RecordingV2ImportData>(recordingJson)
+                    val recordingData = json.decodeFromString<RecordingImportData>(recordingJson)
                     val recordingId = file.nameWithoutExtension // Use filename as recording ID
                     recordingsMap[recordingId] = recordingData
                     recordingParseSuccessCount++
@@ -221,13 +221,13 @@ class DataImportService @Inject constructor(
                 
                 try {
                     // Create ShowEntity from V2 data
-                    val showEntity = createShowEntityFromV2(showData, recordingsMap)
+                    val showEntity = createShowEntity(showData, recordingsMap)
                     showDao.insert(showEntity)
                     importedShows++
                     showDbSuccessCount++
                     
                     // Create search index entry
-                    val searchEntity = createSearchEntityFromV2(showData)
+                    val searchEntity = createSearchEntity(showData)
                     showSearchDao.insertOrUpdate(searchEntity)
                     
                     Log.d(TAG, "✅ Successfully inserted show: ${showData.showId}")
@@ -266,7 +266,7 @@ class DataImportService @Inject constructor(
                     // Recording is referenced by at least one show, import it
                     referencingShows.forEach { show ->
                         try {
-                            val recordingEntity = createRecordingEntityFromV2(recordingId, recordingData, show.showId)
+                            val recordingEntity = createRecordingEntity(recordingId, recordingData, show.showId)
                             recordingDao.insertRecording(recordingEntity)
                             importedRecordings++
                             recordingDbSuccessCount++
@@ -354,7 +354,7 @@ class DataImportService @Inject constructor(
     }
     
     
-    private fun createShowEntityFromV2(showData: ShowV2ImportData, recordingsMap: Map<String, RecordingV2ImportData>): ShowEntity {
+    private fun createShowEntity(showData: ShowImportData, recordingsMap: Map<String, RecordingImportData>): ShowEntity {
         // Parse date components
         val dateParts = showData.date.split("-")
         val year = dateParts[0].toInt()
@@ -454,7 +454,7 @@ class DataImportService @Inject constructor(
         }
     }
     
-    private fun createSearchEntityFromV2(showData: ShowV2ImportData): ShowSearchEntity {
+    private fun createSearchEntity(showData: ShowImportData): ShowSearchEntity {
         // Combine all searchable text for FTS
         val searchableText = buildList {
             // Enhanced date indexing for comprehensive search support
@@ -513,7 +513,7 @@ class DataImportService @Inject constructor(
         return ShowSearchEntity(rowid = 0, showId = showData.showId, searchText = searchableText)
     }
     
-    private fun createRecordingEntityFromV2(recordingId: String, recordingData: RecordingV2ImportData, showId: String): RecordingEntity {
+    private fun createRecordingEntity(recordingId: String, recordingData: RecordingImportData, showId: String): RecordingEntity {
         return RecordingEntity(
             identifier = recordingId,
             showId = showId,
