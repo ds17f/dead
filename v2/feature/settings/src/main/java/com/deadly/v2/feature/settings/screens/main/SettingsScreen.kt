@@ -56,6 +56,23 @@ fun SettingsScreen(
                 }
             }
             
+            // Data Management Section
+            item {
+                SettingsSection(title = "Data Management") {
+                    DeleteDataZipButton(
+                        onDeleteDataZip = viewModel::onDeleteDataZip,
+                        modifier = Modifier.fillMaxWidth()
+                    )
+                    
+                    Spacer(modifier = Modifier.height(8.dp))
+                    
+                    DeleteDatabaseFilesButton(
+                        onDeleteDatabaseFiles = viewModel::onDeleteDatabaseFiles,
+                        modifier = Modifier.fillMaxWidth()
+                    )
+                }
+            }
+            
             // V1 App Restore Section
             item {
                 SettingsSection(title = "App Version") {
@@ -277,5 +294,161 @@ private fun clearArchiveCache(context: android.content.Context) {
         }
     } catch (e: Exception) {
         // Simple error handling - just ignore for now
+    }
+}
+
+/**
+ * Button to delete data.zip file with confirmation dialog
+ */
+@Composable
+private fun DeleteDataZipButton(
+    onDeleteDataZip: (onComplete: (Boolean) -> Unit) -> Unit,
+    modifier: Modifier = Modifier
+) {
+    var showConfirmDialog by remember { mutableStateOf(false) }
+    var showCompletionDialog by remember { mutableStateOf(false) }
+    var deletionSuccess by remember { mutableStateOf(false) }
+    
+    OutlinedButton(
+        onClick = { showConfirmDialog = true },
+        modifier = modifier,
+        colors = ButtonDefaults.outlinedButtonColors(
+            contentColor = MaterialTheme.colorScheme.error
+        ),
+        border = androidx.compose.foundation.BorderStroke(
+            1.dp, 
+            MaterialTheme.colorScheme.error
+        )
+    ) {
+        Text("Delete Data.zip")
+    }
+    
+    if (showConfirmDialog) {
+        AlertDialog(
+            onDismissRequest = { showConfirmDialog = false },
+            title = { Text("Delete Data.zip File") },
+            text = { 
+                Text("This will delete the data.zip file from the files directory. The app will need to re-download show data when needed. Continue?") 
+            },
+            confirmButton = {
+                TextButton(
+                    onClick = {
+                        showConfirmDialog = false
+                        onDeleteDataZip { success ->
+                            deletionSuccess = success
+                            showCompletionDialog = true
+                        }
+                    },
+                    colors = ButtonDefaults.textButtonColors(
+                        contentColor = MaterialTheme.colorScheme.error
+                    )
+                ) {
+                    Text("Delete")
+                }
+            },
+            dismissButton = {
+                TextButton(onClick = { showConfirmDialog = false }) {
+                    Text("Cancel")
+                }
+            }
+        )
+    }
+    
+    if (showCompletionDialog) {
+        AlertDialog(
+            onDismissRequest = { showCompletionDialog = false },
+            title = { 
+                Text(if (deletionSuccess) "Data.zip Deleted" else "Deletion Failed") 
+            },
+            text = { 
+                Text(
+                    if (deletionSuccess) "The data.zip file has been successfully deleted." 
+                    else "Failed to delete the data.zip file. It may not exist or be in use."
+                )
+            },
+            confirmButton = {
+                TextButton(onClick = { showCompletionDialog = false }) {
+                    Text("OK")
+                }
+            }
+        )
+    }
+}
+
+/**
+ * Button to delete database files with confirmation dialog
+ */
+@Composable
+private fun DeleteDatabaseFilesButton(
+    onDeleteDatabaseFiles: (onComplete: (Boolean) -> Unit) -> Unit,
+    modifier: Modifier = Modifier
+) {
+    var showConfirmDialog by remember { mutableStateOf(false) }
+    var showCompletionDialog by remember { mutableStateOf(false) }
+    var deletionSuccess by remember { mutableStateOf(false) }
+    
+    OutlinedButton(
+        onClick = { showConfirmDialog = true },
+        modifier = modifier,
+        colors = ButtonDefaults.outlinedButtonColors(
+            contentColor = MaterialTheme.colorScheme.error
+        ),
+        border = androidx.compose.foundation.BorderStroke(
+            1.dp, 
+            MaterialTheme.colorScheme.error
+        )
+    ) {
+        Text("Delete Database Files")
+    }
+    
+    if (showConfirmDialog) {
+        AlertDialog(
+            onDismissRequest = { showConfirmDialog = false },
+            title = { Text("Delete Database Files") },
+            text = { 
+                Text("This will delete all deadly_db* files from the databases directory. All stored shows, favorites, and app data will be lost. Continue?") 
+            },
+            confirmButton = {
+                TextButton(
+                    onClick = {
+                        showConfirmDialog = false
+                        onDeleteDatabaseFiles { success ->
+                            deletionSuccess = success
+                            showCompletionDialog = true
+                        }
+                    },
+                    colors = ButtonDefaults.textButtonColors(
+                        contentColor = MaterialTheme.colorScheme.error
+                    )
+                ) {
+                    Text("Delete")
+                }
+            },
+            dismissButton = {
+                TextButton(onClick = { showConfirmDialog = false }) {
+                    Text("Cancel")
+                }
+            }
+        )
+    }
+    
+    if (showCompletionDialog) {
+        AlertDialog(
+            onDismissRequest = { showCompletionDialog = false },
+            title = { 
+                Text(if (deletionSuccess) "Database Files Deleted" else "Deletion Failed") 
+            },
+            text = { 
+                Text(
+                    if (deletionSuccess) "The database files have been successfully deleted. The app will create fresh data on next use." 
+                    else "Failed to delete some or all database files. They may be in use by the app."
+                )
+            },
+            confirmButton = {
+                TextButton(onClick = { showCompletionDialog = false }) {
+                    Text("OK")
+                }
+            }
+        )
     }
 }

@@ -193,9 +193,10 @@ fun SplashScreen(
                     ) {
                         when (uiState.progress.phase) {
                             Phase.DOWNLOADING -> {
-                                if (uiState.progress.totalShows > 0) {
+                                if (uiState.progress.totalShows > 0 && uiState.progress.totalShows != uiState.progress.processedShows) {
+                                    val progress = uiState.progress.processedShows.toFloat() / uiState.progress.totalShows.toFloat()
                                     LinearProgressIndicator(
-                                        progress = { uiState.progress.processedShows.toFloat() / uiState.progress.totalShows.toFloat() },
+                                        progress = { if (progress.isFinite()) progress else 0f },
                                         modifier = Modifier.fillMaxWidth()
                                     )
                                     
@@ -214,8 +215,9 @@ fun SplashScreen(
                             
                             Phase.IMPORTING_SHOWS -> {
                                 if (uiState.progress.totalShows > 0) {
+                                    val progress = uiState.progress.progressPercentage / 100f
                                     LinearProgressIndicator(
-                                        progress = { uiState.progress.progressPercentage / 100f },
+                                        progress = { if (progress.isFinite()) progress else 0f },
                                         modifier = Modifier.fillMaxWidth()
                                     )
                                     
@@ -234,8 +236,9 @@ fun SplashScreen(
                             
                             Phase.IMPORTING_RECORDINGS -> {
                                 if (uiState.progress.totalRecordings > 0) {
+                                    val progress = uiState.progress.progressPercentage / 100f
                                     LinearProgressIndicator(
-                                        progress = { uiState.progress.progressPercentage / 100f },
+                                        progress = { if (progress.isFinite()) progress else 0f },
                                         modifier = Modifier.fillMaxWidth()
                                     )
                                     
@@ -262,8 +265,9 @@ fun SplashScreen(
                             
                             Phase.COMPUTING_VENUES -> {
                                 if (uiState.progress.totalVenues > 0) {
+                                    val progress = uiState.progress.progressPercentage / 100f
                                     LinearProgressIndicator(
-                                        progress = { uiState.progress.progressPercentage / 100f },
+                                        progress = { if (progress.isFinite()) progress else 0f },
                                         modifier = Modifier.fillMaxWidth()
                                     )
                                     
