@@ -48,7 +48,7 @@ dependencies {
     implementation(project(":core:settings-api"))
     
     // Compose BOM
-    api(platform("androidx.compose:compose-bom:2024.05.00"))
+    api(platform("androidx.compose:compose-bom:2025.08.00"))
     api("androidx.compose.ui:ui")
     api("androidx.compose.ui:ui-graphics")
     api("androidx.compose.ui:ui-tooling-preview")
