@@ -89,19 +89,19 @@ data class RecordingV2ImportData(
     @SerialName("raw_rating") val rawRating: Double = 0.0,
     @SerialName("high_ratings") val highRatings: Int = 0,
     @SerialName("low_ratings") val lowRatings: Int = 0,
-    val tracks: List<TrackV2Data> = emptyList()
+    val tracks: List<TrackData> = emptyList()
 )
 
 @Serializable
-data class TrackV2Data(
+data class TrackData(
     val track: String,
     val title: String,
     val duration: Double = 0.0,
-    val formats: List<TrackFormatV2Data> = emptyList()
+    val formats: List<TrackFormatData> = emptyList()
 )
 
 @Serializable
-data class TrackFormatV2Data(
+data class TrackFormatData(
     val format: String,
     val filename: String,
     val bitrate: String? = null

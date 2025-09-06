@@ -2,7 +2,7 @@ package com.deadly.v2.core.database
 
 import androidx.room.TypeConverter
 
-class ConvertersV2 {
+class Converters {
     
     @TypeConverter
     fun fromStringList(value: String?): List<String> {

@@ -1,8 +1,8 @@
 package com.deadly.v2.feature.splash.service
 
 import android.util.Log
-import com.deadly.v2.feature.splash.model.PhaseV2
-import com.deadly.v2.feature.splash.model.ProgressV2
+import com.deadly.v2.feature.splash.model.Phase
+import com.deadly.v2.feature.splash.model.Progress
 import com.deadly.v2.core.database.service.DatabaseManager
 import com.deadly.v2.core.database.service.DatabaseImportResult
 import kotlinx.coroutines.CoroutineScope
@@ -26,8 +26,8 @@ class SplashService @Inject constructor(
         private const val TAG = "SplashV2Service"
     }
     
-    private val _uiState = MutableStateFlow(SplashV2UiState())
-    val uiState: StateFlow<SplashV2UiState> = _uiState.asStateFlow()
+    private val _uiState = MutableStateFlow(SplashUiState())
+    val uiState: StateFlow<SplashUiState> = _uiState.asStateFlow()
     
     // Track the start time of the initialization process
     private var initStartTimeMs: Long = 0L
@@ -35,31 +35,31 @@ class SplashService @Inject constructor(
     /**
      * Convert DatabaseManager progress to V2 splash progress
      */
-    fun getV2Progress(): Flow<ProgressV2> {
+    fun getV2Progress(): Flow<Progress> {
         return databaseManager.progress.map { v2Progress ->
             val phase = when (v2Progress.phase) {
-                "IDLE" -> PhaseV2.IDLE
-                "CHECKING" -> PhaseV2.CHECKING
-                "USING_LOCAL" -> PhaseV2.USING_LOCAL
-                "DOWNLOADING" -> PhaseV2.DOWNLOADING
-                "EXTRACTING" -> PhaseV2.EXTRACTING
-                "IMPORTING_SHOWS" -> PhaseV2.IMPORTING_SHOWS
-                "COMPUTING_VENUES" -> PhaseV2.COMPUTING_VENUES
-                "IMPORTING_RECORDINGS" -> PhaseV2.IMPORTING_RECORDINGS
-                "COMPLETED" -> PhaseV2.COMPLETED
-                "ERROR" -> PhaseV2.ERROR
-                else -> PhaseV2.IDLE
+                "IDLE" -> Phase.IDLE
+                "CHECKING" -> Phase.CHECKING
+                "USING_LOCAL" -> Phase.USING_LOCAL
+                "DOWNLOADING" -> Phase.DOWNLOADING
+                "EXTRACTING" -> Phase.EXTRACTING
+                "IMPORTING_SHOWS" -> Phase.IMPORTING_SHOWS
+                "COMPUTING_VENUES" -> Phase.COMPUTING_VENUES
+                "IMPORTING_RECORDINGS" -> Phase.IMPORTING_RECORDINGS
+                "COMPLETED" -> Phase.COMPLETED
+                "ERROR" -> Phase.ERROR
+                else -> Phase.IDLE
             }
             
             // Initialize start time when we begin processing
-            if (initStartTimeMs == 0L && phase in listOf(PhaseV2.CHECKING, PhaseV2.USING_LOCAL, PhaseV2.DOWNLOADING, PhaseV2.EXTRACTING, PhaseV2.IMPORTING_SHOWS)) {
+            if (initStartTimeMs == 0L && phase in listOf(Phase.CHECKING, Phase.USING_LOCAL, Phase.DOWNLOADING, Phase.EXTRACTING, Phase.IMPORTING_SHOWS)) {
                 initStartTimeMs = System.currentTimeMillis()
                 Log.d(TAG, "Database initialization started at ${initStartTimeMs}")
             }
             
             // Map progress based on phase type
             when (phase) {
-                PhaseV2.IMPORTING_RECORDINGS -> ProgressV2(
+                Phase.IMPORTING_RECORDINGS -> Progress(
                     phase = phase,
                     totalShows = 0,
                     processedShows = 0,
@@ -70,7 +70,7 @@ class SplashService @Inject constructor(
                     startTimeMs = initStartTimeMs,
                     error = v2Progress.error
                 )
-                PhaseV2.COMPUTING_VENUES -> ProgressV2(
+                Phase.COMPUTING_VENUES -> Progress(
                     phase = phase,
                     totalShows = 0,
                     processedShows = 0,
@@ -80,7 +80,7 @@ class SplashService @Inject constructor(
                     startTimeMs = initStartTimeMs,
                     error = v2Progress.error
                 )
-                else -> ProgressV2(
+                else -> Progress(
                     phase = phase,
                     totalShows = v2Progress.totalItems,
                     processedShows = v2Progress.processedItems,
@@ -95,7 +95,7 @@ class SplashService @Inject constructor(
     /**
      * Initialize V2 database with progress tracking
      */
-    suspend fun initializeV2Database(): V2InitResult {
+    suspend fun initializeV2Database(): InitResult {
         return try {
             Log.d(TAG, "Starting V2 database initialization")
             
@@ -116,11 +116,11 @@ class SplashService @Inject constructor(
             when (result) {
                 is DatabaseImportResult.Success -> {
                     Log.d(TAG, "V2 database initialization completed: ${result.showsImported} shows, ${result.venuesImported} venues")
-                    V2InitResult.Success(result.showsImported, result.venuesImported)
+                    InitResult.Success(result.showsImported, result.venuesImported)
                 }
                 is DatabaseImportResult.Error -> {
                     Log.e(TAG, "V2 database initialization failed: ${result.error}")
-                    V2InitResult.Error(result.error)
+                    InitResult.Error(result.error)
                 }
                 is DatabaseImportResult.RequiresUserChoice -> {
                     Log.d(TAG, "Multiple database sources available, requiring user choice")
@@ -131,12 +131,12 @@ class SplashService @Inject constructor(
                         availableSources = result.availableSources.sources,
                         message = "Choose database source"
                     )
-                    V2InitResult.Error("User choice required") // Will be handled by source selection UI
+                    InitResult.Error("User choice required") // Will be handled by source selection UI
                 }
             }
         } catch (e: Exception) {
             Log.e(TAG, "V2 database initialization exception", e)
-            V2InitResult.Error(e.message ?: "Initialization failed")
+            InitResult.Error(e.message ?: "Initialization failed")
         }
     }
     
@@ -163,9 +163,9 @@ class SplashService @Inject constructor(
         availableSources: List<DatabaseManager.DatabaseSource> = _uiState.value.availableSources,
         message: String = _uiState.value.message,
         errorMessage: String? = _uiState.value.errorMessage,
-        progress: ProgressV2 = _uiState.value.progress
+        progress: Progress = _uiState.value.progress
     ) {
-        _uiState.value = SplashV2UiState(
+        _uiState.value = SplashUiState(
             isReady = isReady,
             showError = showError,
             showProgress = showProgress,
@@ -191,14 +191,14 @@ class SplashService @Inject constructor(
             
             val result = initializeV2Database()
             when (result) {
-                is V2InitResult.Success -> {
+                is InitResult.Success -> {
                     updateUiState(
                         isReady = true,
                         showProgress = false,
                         message = "V2 database ready: ${result.showsImported} shows loaded"
                     )
                 }
-                is V2InitResult.Error -> {
+                is InitResult.Error -> {
                     updateUiState(
                         showError = true,
                         showProgress = false,
@@ -300,7 +300,7 @@ class SplashService @Inject constructor(
 /**
  * UI state for SplashV2 screen
  */
-data class SplashV2UiState(
+data class SplashUiState(
     val isReady: Boolean = false,
     val showError: Boolean = false,
     val showProgress: Boolean = false,
@@ -308,8 +308,8 @@ data class SplashV2UiState(
     val availableSources: List<DatabaseManager.DatabaseSource> = emptyList(),
     val message: String = "Loading V2 database...",
     val errorMessage: String? = null,
-    val progress: ProgressV2 = ProgressV2(
-        phase = PhaseV2.IDLE,
+    val progress: Progress = Progress(
+        phase = Phase.IDLE,
         totalShows = 0,
         processedShows = 0,
         currentShow = ""
@@ -319,7 +319,7 @@ data class SplashV2UiState(
 /**
  * Result of V2 database initialization
  */
-sealed class V2InitResult {
-    data class Success(val showsImported: Int, val venuesImported: Int) : V2InitResult()
-    data class Error(val error: String) : V2InitResult()
+sealed class InitResult {
+    data class Success(val showsImported: Int, val venuesImported: Int) : InitResult()
+    data class Error(val error: String) : InitResult()
 }

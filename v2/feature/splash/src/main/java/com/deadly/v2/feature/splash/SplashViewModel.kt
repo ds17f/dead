@@ -2,10 +2,10 @@ package com.deadly.v2.feature.splash
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.deadly.v2.feature.splash.model.PhaseV2
+import com.deadly.v2.feature.splash.model.Phase
 import com.deadly.v2.feature.splash.service.SplashService
-import com.deadly.v2.feature.splash.service.SplashV2UiState
-import com.deadly.v2.feature.splash.service.V2InitResult
+import com.deadly.v2.feature.splash.service.SplashUiState
+import com.deadly.v2.feature.splash.service.InitResult
 import com.deadly.v2.core.database.service.DatabaseManager
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.StateFlow
@@ -20,7 +20,7 @@ class SplashViewModel @Inject constructor(
     private val splashService: SplashService
 ) : ViewModel() {
     
-    val uiState: StateFlow<SplashV2UiState> = splashService.uiState
+    val uiState: StateFlow<SplashUiState> = splashService.uiState
     
     init {
         initializeV2Database()
@@ -42,27 +42,27 @@ class SplashViewModel @Inject constructor(
                 launch {
                     splashService.getV2Progress().collect { progress ->
                         val message = when (progress.phase) {
-                            PhaseV2.IDLE -> "Preparing V2 database..."
-                            PhaseV2.CHECKING -> "Checking existing data..."
-                            PhaseV2.USING_LOCAL -> "Using local files..."
-                            PhaseV2.DOWNLOADING -> "Downloading files..."
-                            PhaseV2.EXTRACTING -> "Extracting data files..."
-                            PhaseV2.IMPORTING_SHOWS -> "Importing shows (${progress.processedShows}/${progress.totalShows})"
-                            PhaseV2.COMPUTING_VENUES -> "Computing venue statistics..."
-                            PhaseV2.IMPORTING_RECORDINGS -> "Importing recordings (${progress.processedRecordings}/${progress.totalRecordings})"
-                            PhaseV2.COMPLETED -> "V2 database ready!"
-                            PhaseV2.ERROR -> "V2 database error"
+                            Phase.IDLE -> "Preparing V2 database..."
+                            Phase.CHECKING -> "Checking existing data..."
+                            Phase.USING_LOCAL -> "Using local files..."
+                            Phase.DOWNLOADING -> "Downloading files..."
+                            Phase.EXTRACTING -> "Extracting data files..."
+                            Phase.IMPORTING_SHOWS -> "Importing shows (${progress.processedShows}/${progress.totalShows})"
+                            Phase.COMPUTING_VENUES -> "Computing venue statistics..."
+                            Phase.IMPORTING_RECORDINGS -> "Importing recordings (${progress.processedRecordings}/${progress.totalRecordings})"
+                            Phase.COMPLETED -> "V2 database ready!"
+                            Phase.ERROR -> "V2 database error"
                         }
                         
                         splashService.updateUiState(
-                            showProgress = progress.phase != PhaseV2.COMPLETED && progress.phase != PhaseV2.ERROR,
-                            showError = progress.phase == PhaseV2.ERROR,
+                            showProgress = progress.phase != Phase.COMPLETED && progress.phase != Phase.ERROR,
+                            showError = progress.phase == Phase.ERROR,
                             message = message,
                             errorMessage = progress.error,
                             progress = progress
                         )
                         
-                        if (progress.phase == PhaseV2.COMPLETED) {
+                        if (progress.phase == Phase.COMPLETED) {
                             splashService.updateUiState(isReady = true)
                         }
                     }
@@ -72,7 +72,7 @@ class SplashViewModel @Inject constructor(
                 val result = splashService.initializeV2Database()
                 
                 when (result) {
-                    is V2InitResult.Success -> {
+                    is InitResult.Success -> {
                         // Handle immediate success (e.g., database already initialized)
                         splashService.updateUiState(
                             isReady = true,
@@ -80,7 +80,7 @@ class SplashViewModel @Inject constructor(
                             message = "V2 database ready: ${result.showsImported} shows loaded"
                         )
                     }
-                    is V2InitResult.Error -> {
+                    is InitResult.Error -> {
                         splashService.updateUiState(
                             showError = true,
                             showProgress = false,

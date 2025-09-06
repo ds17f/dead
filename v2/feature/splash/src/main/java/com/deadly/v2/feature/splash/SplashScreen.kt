@@ -6,11 +6,10 @@ import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
-import com.deadly.v2.feature.splash.model.PhaseV2
+import com.deadly.v2.feature.splash.model.Phase
 import com.deadly.v2.core.design.resources.IconResources
 import com.deadly.v2.core.theme.api.ThemeAssets
 import kotlinx.coroutines.delay
@@ -193,7 +192,7 @@ fun SplashScreen(
                         verticalArrangement = Arrangement.spacedBy(16.dp)
                     ) {
                         when (uiState.progress.phase) {
-                            PhaseV2.DOWNLOADING -> {
+                            Phase.DOWNLOADING -> {
                                 if (uiState.progress.totalShows > 0) {
                                     LinearProgressIndicator(
                                         progress = { uiState.progress.processedShows.toFloat() / uiState.progress.totalShows.toFloat() },
@@ -213,7 +212,7 @@ fun SplashScreen(
                                 }
                             }
                             
-                            PhaseV2.IMPORTING_SHOWS -> {
+                            Phase.IMPORTING_SHOWS -> {
                                 if (uiState.progress.totalShows > 0) {
                                     LinearProgressIndicator(
                                         progress = { uiState.progress.progressPercentage / 100f },
@@ -233,7 +232,7 @@ fun SplashScreen(
                                 }
                             }
                             
-                            PhaseV2.IMPORTING_RECORDINGS -> {
+                            Phase.IMPORTING_RECORDINGS -> {
                                 if (uiState.progress.totalRecordings > 0) {
                                     LinearProgressIndicator(
                                         progress = { uiState.progress.progressPercentage / 100f },
@@ -261,7 +260,7 @@ fun SplashScreen(
                                 }
                             }
                             
-                            PhaseV2.COMPUTING_VENUES -> {
+                            Phase.COMPUTING_VENUES -> {
                                 if (uiState.progress.totalVenues > 0) {
                                     LinearProgressIndicator(
                                         progress = { uiState.progress.progressPercentage / 100f },

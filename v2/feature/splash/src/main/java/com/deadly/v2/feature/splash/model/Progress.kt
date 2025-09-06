@@ -3,8 +3,8 @@ package com.deadly.v2.feature.splash.model
 /**
  * V2 database initialization progress tracking
  */
-data class ProgressV2(
-    val phase: PhaseV2,
+data class Progress(
+    val phase: Phase,
     val totalShows: Int,
     val processedShows: Int,
     val currentShow: String,
@@ -20,21 +20,21 @@ data class ProgressV2(
 ) {
     val progressPercentage: Float
         get() = when (phase) {
-            PhaseV2.IMPORTING_SHOWS -> if (totalShows > 0) (processedShows.toFloat() / totalShows) * 100f else 0f
-            PhaseV2.IMPORTING_RECORDINGS -> if (totalRecordings > 0) (processedRecordings.toFloat() / totalRecordings) * 100f else 0f
-            PhaseV2.COMPUTING_VENUES -> if (totalVenues > 0) (processedVenues.toFloat() / totalVenues) * 100f else 0f
+            Phase.IMPORTING_SHOWS -> if (totalShows > 0) (processedShows.toFloat() / totalShows) * 100f else 0f
+            Phase.IMPORTING_RECORDINGS -> if (totalRecordings > 0) (processedRecordings.toFloat() / totalRecordings) * 100f else 0f
+            Phase.COMPUTING_VENUES -> if (totalVenues > 0) (processedVenues.toFloat() / totalVenues) * 100f else 0f
             else -> 0f
         }
         
     val currentItem: String
         get() = when (phase) {
-            PhaseV2.IMPORTING_SHOWS -> currentShow
-            PhaseV2.IMPORTING_RECORDINGS -> currentRecording
+            Phase.IMPORTING_SHOWS -> currentShow
+            Phase.IMPORTING_RECORDINGS -> currentRecording
             else -> currentShow // fallback
         }
         
     val isInProgress: Boolean
-        get() = phase in listOf(PhaseV2.CHECKING, PhaseV2.EXTRACTING, PhaseV2.IMPORTING_SHOWS, PhaseV2.COMPUTING_VENUES, PhaseV2.IMPORTING_RECORDINGS)
+        get() = phase in listOf(Phase.CHECKING, Phase.EXTRACTING, Phase.IMPORTING_SHOWS, Phase.COMPUTING_VENUES, Phase.IMPORTING_RECORDINGS)
         
     /**
      * Get elapsed time since start in a human-readable format
