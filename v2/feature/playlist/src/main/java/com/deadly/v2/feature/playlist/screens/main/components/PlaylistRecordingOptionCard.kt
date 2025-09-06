@@ -71,26 +71,47 @@ fun PlaylistRecordingOptionCard(
                     }
                 }
                 
-                // Line 2: Taper info (if available)
+                // Line 2: Taper info (only when we have actual taper name data)
                 recordingOption.taperInfo?.let { taper ->
-                    Text(
-                        text = taper,
-                        style = MaterialTheme.typography.bodySmall,
-                        color = MaterialTheme.colorScheme.onSurfaceVariant,
-                        maxLines = 1,
-                        overflow = TextOverflow.Ellipsis
-                    )
+                    // Check if we have actual content after "Taper: "
+                    val taperName = if (taper.startsWith("Taper: ")) {
+                        taper.substring(7).trim()
+                    } else {
+                        taper.trim()
+                    }
+                    
+                    val hasValidTaper = taperName.isNotBlank() && 
+                                       !taperName.equals("unknown", ignoreCase = true) &&
+                                       !taperName.equals("n/a", ignoreCase = true) &&
+                                       taperName.length > 0
+                    
+                    if (hasValidTaper) {
+                        Text(
+                            text = taper,
+                            style = MaterialTheme.typography.bodySmall,
+                            color = MaterialTheme.colorScheme.onSurfaceVariant,
+                            maxLines = 1,
+                            overflow = TextOverflow.Ellipsis
+                        )
+                    }
                 }
                 
-                // Line 3: Technical details (equipment, quality)
+                // Line 3: Technical details (equipment, quality) - if available
                 recordingOption.technicalDetails?.let { details ->
-                    Text(
-                        text = details,
-                        style = MaterialTheme.typography.bodySmall,
-                        color = MaterialTheme.colorScheme.onSurfaceVariant,
-                        maxLines = 1,
-                        overflow = TextOverflow.Ellipsis
-                    )
+                    val cleanDetails = details
+                        .replace(Regex("<[^>]*>"), "") // Strip HTML tags
+                        .replace(Regex("\\s+"), " ") // Normalize whitespace
+                        .trim()
+                    
+                    if (cleanDetails.isNotBlank()) {
+                        Text(
+                            text = cleanDetails,
+                            style = MaterialTheme.typography.bodySmall,
+                            color = MaterialTheme.colorScheme.onSurfaceVariant,
+                            maxLines = 1,
+                            overflow = TextOverflow.Ellipsis
+                        )
+                    }
                 }
                 
                 // Line 4: Archive ID (red-tinted, muted)
