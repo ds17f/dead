@@ -1,5 +1,23 @@
 # Changelog
 
+## [0.70.0] - 2025-09-07
+
+### New Features
+* implement setlist modal with 5/8/77 dummy data (4f4e7a20)
+* add data deletion buttons and fix startup crash (46d5860b)
+* complete rich recording metadata data flow and enhanced 4-line UI (d8da6fb8)
+* enhance RecordingEntity schema with rich metadata fields (26546020)
+
+### Bug Fixes
+* hide empty taper info and strip HTML from technical details (af61548e)
+
+### Code Refactoring
+* migrate setlist models to core and implement real data loading (ce2605bb)
+
+### Other Changes
+* improve(v2-playlist): enhance setlist readability with larger text (5d87c477)
+
+
 ## [0.69.3] - 2025-09-05
 
 ### Code Refactoring
@@ -9,8 +27,6 @@
 
 ### Other Changes
 * chore(tmp): remove tmp (5873f6a1)
-
-
 ## [0.69.2] - 2025-09-05
 
 ### Bug Fixes
