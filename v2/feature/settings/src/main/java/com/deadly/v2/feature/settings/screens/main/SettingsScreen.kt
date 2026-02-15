@@ -435,7 +435,7 @@ private fun ExportMigrationButton(
         }
 
         Text(
-            text = "Export your library and play history to a file that can be imported into the new Grateful Deadly app.",
+            text = "Export your library and play history from both V1 and V2 to a file that can be imported into the new Grateful Deadly app.",
             style = MaterialTheme.typography.bodySmall,
             color = MaterialTheme.colorScheme.onSurfaceVariant,
             modifier = Modifier.padding(top = 4.dp)
