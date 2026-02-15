@@ -24,10 +24,7 @@ import com.deadly.core.model.AppUpdate
 import com.deadly.core.model.UpdateDownloadState
 import com.deadly.core.model.UpdateInstallationState
 import java.text.SimpleDateFormat
-import java.util.Date
 import java.util.Locale
-import java.time.Instant
-import java.time.format.DateTimeFormatter
 
 @Composable
 fun UpdateAvailableDialog(
@@ -234,12 +231,12 @@ fun UpdateAvailableDialog(
 
 private fun formatDate(isoDateString: String): String {
     return try {
-        // Parse ISO 8601 date string (e.g., "2024-01-01T10:00:00Z")
-        val instant = Instant.parse(isoDateString)
-        val formatter = SimpleDateFormat("MMM dd, yyyy", Locale.getDefault())
-        formatter.format(Date.from(instant))
+        val inputFormat = SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss'Z'", Locale.US)
+        inputFormat.timeZone = java.util.TimeZone.getTimeZone("UTC")
+        val date = inputFormat.parse(isoDateString)
+        val outputFormat = SimpleDateFormat("MMM dd, yyyy", Locale.getDefault())
+        outputFormat.format(date!!)
     } catch (e: Exception) {
-        // Fallback if parsing fails
         isoDateString
     }
 }

@@ -722,15 +722,17 @@ class UpdateInstallReceiver : android.content.BroadcastReceiver() {
                 notificationManager.createNotificationChannel(channel)
             }
             
-            val notification = android.app.Notification.Builder(context, CHANNEL_ID)
-                .setContentTitle(title)
-                .setContentText(content)
-                .setSmallIcon(android.R.drawable.stat_sys_download_done)
-                .setAutoCancel(true)
-                .setStyle(android.app.Notification.BigTextStyle().bigText(content))
-                .build()
-            
-            notificationManager.notify(NOTIFICATION_ID, notification)
+            if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
+                val notification = android.app.Notification.Builder(context, CHANNEL_ID)
+                    .setContentTitle(title)
+                    .setContentText(content)
+                    .setSmallIcon(android.R.drawable.stat_sys_download_done)
+                    .setAutoCancel(true)
+                    .setStyle(android.app.Notification.BigTextStyle().bigText(content))
+                    .build()
+
+                notificationManager.notify(NOTIFICATION_ID, notification)
+            }
             
         } catch (e: Exception) {
             Log.e(TAG, "Failed to show notification", e)

@@ -17,7 +17,6 @@ import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.launch
-import java.time.LocalDate
 import javax.inject.Inject
 import javax.inject.Singleton
 
@@ -86,10 +85,12 @@ class HomeServiceImpl @Inject constructor(
      * Load actual shows for today's date from the database
      */
     private suspend fun loadTodayInHistoryShows(): List<Show> {
-        val today = LocalDate.now()
-        Log.d(TAG, "Loading shows for ${today.monthValue}/${today.dayOfMonth}")
-        
-        return showRepository.getShowsForDate(today.monthValue, today.dayOfMonth)
+        val calendar = java.util.Calendar.getInstance()
+        val month = calendar.get(java.util.Calendar.MONTH) + 1
+        val day = calendar.get(java.util.Calendar.DAY_OF_MONTH)
+        Log.d(TAG, "Loading shows for $month/$day")
+
+        return showRepository.getShowsForDate(month, day)
     }
     
     override suspend fun refreshAll(): Result<Unit> {

@@ -1,9 +1,13 @@
 package com.deadly.v2.feature.settings
 
+import android.net.Uri
+import androidx.activity.compose.rememberLauncherForActivityResult
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.font.FontWeight
@@ -73,6 +77,16 @@ fun SettingsScreen(
                 }
             }
             
+            // Migration Export Section
+            item {
+                SettingsSection(title = "Migration") {
+                    ExportMigrationButton(
+                        viewModel = viewModel,
+                        modifier = Modifier.fillMaxWidth()
+                    )
+                }
+            }
+
             // V1 App Restore Section
             item {
                 SettingsSection(title = "App Version") {
@@ -372,6 +386,90 @@ private fun DeleteDataZipButton(
                 }
             }
         )
+    }
+}
+
+/**
+ * Export migration data for import into the new app
+ */
+@Composable
+private fun ExportMigrationButton(
+    viewModel: SettingsViewModel,
+    modifier: Modifier = Modifier
+) {
+    val exportState by viewModel.migrationExportState.collectAsState()
+
+    val safLauncher = rememberLauncherForActivityResult(
+        contract = ActivityResultContracts.CreateDocument("application/json")
+    ) { uri: Uri? ->
+        if (uri != null) {
+            viewModel.onWriteMigrationToUri(uri)
+        } else {
+            viewModel.onDismissMigrationResult()
+        }
+    }
+
+    Column(modifier = modifier) {
+        OutlinedButton(
+            onClick = {
+                viewModel.onPrepareMigrationExport { suggestedFilename ->
+                    safLauncher.launch(suggestedFilename)
+                }
+            },
+            enabled = exportState !is SettingsViewModel.MigrationExportState.Exporting,
+            modifier = Modifier.fillMaxWidth(),
+            colors = ButtonDefaults.outlinedButtonColors(
+                contentColor = MaterialTheme.colorScheme.primary
+            )
+        ) {
+            if (exportState is SettingsViewModel.MigrationExportState.Exporting) {
+                CircularProgressIndicator(
+                    modifier = Modifier.size(16.dp),
+                    strokeWidth = 2.dp
+                )
+                Spacer(modifier = Modifier.width(8.dp))
+                Text("Exporting...")
+            } else {
+                Text("Export Library for New App")
+            }
+        }
+
+        Text(
+            text = "Export your library and play history to a file that can be imported into the new Grateful Deadly app.",
+            style = MaterialTheme.typography.bodySmall,
+            color = MaterialTheme.colorScheme.onSurfaceVariant,
+            modifier = Modifier.padding(top = 4.dp)
+        )
+    }
+
+    when (val state = exportState) {
+        is SettingsViewModel.MigrationExportState.Success -> {
+            AlertDialog(
+                onDismissRequest = { viewModel.onDismissMigrationResult() },
+                title = { Text("Export Complete") },
+                text = {
+                    Text("Exported ${state.libraryCount} library shows and ${state.recentCount} recent plays. Open the new app and go to Settings → Import to load this file.")
+                },
+                confirmButton = {
+                    TextButton(onClick = { viewModel.onDismissMigrationResult() }) {
+                        Text("OK")
+                    }
+                }
+            )
+        }
+        is SettingsViewModel.MigrationExportState.Error -> {
+            AlertDialog(
+                onDismissRequest = { viewModel.onDismissMigrationResult() },
+                title = { Text("Export Failed") },
+                text = { Text(state.message) },
+                confirmButton = {
+                    TextButton(onClick = { viewModel.onDismissMigrationResult() }) {
+                        Text("OK")
+                    }
+                }
+            )
+        }
+        else -> {}
     }
 }
 

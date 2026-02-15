@@ -1,13 +1,17 @@
 package com.deadly.v2.feature.settings
 
 import android.content.Context
+import android.net.Uri
 import android.util.Log
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.deadly.core.backup.MigrationExportService
 import com.deadly.v2.core.theme.ThemeManager
 import dagger.hilt.android.lifecycle.HiltViewModel
 import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import java.io.File
@@ -16,21 +20,93 @@ import kotlin.system.exitProcess
 
 /**
  * SettingsViewModel - Business logic for V2 Settings screen
- * 
+ *
  * Handles theme import operations and coordinates with ThemeManager
  * to update available themes and potentially switch to imported themes.
- * 
+ *
  * Following V2 architecture patterns with minimal state management
  * since most UI feedback is handled directly by ThemeChooser component.
  */
 @HiltViewModel
 class SettingsViewModel @Inject constructor(
     private val themeManager: ThemeManager,
+    private val migrationExportService: MigrationExportService,
     @ApplicationContext private val context: Context
 ) : ViewModel() {
-    
+
     companion object {
         private const val TAG = "SettingsViewModel"
+    }
+
+    // Migration export state
+    sealed class MigrationExportState {
+        data object Idle : MigrationExportState()
+        data object Exporting : MigrationExportState()
+        data class Success(val libraryCount: Int, val recentCount: Int) : MigrationExportState()
+        data class Error(val message: String) : MigrationExportState()
+    }
+
+    private val _migrationExportState = MutableStateFlow<MigrationExportState>(MigrationExportState.Idle)
+    val migrationExportState: StateFlow<MigrationExportState> = _migrationExportState
+
+    private var pendingMigrationJson: String? = null
+
+    fun onPrepareMigrationExport(onReady: (suggestedFilename: String) -> Unit) {
+        viewModelScope.launch {
+            try {
+                _migrationExportState.value = MigrationExportState.Exporting
+                val data = withContext(Dispatchers.IO) {
+                    migrationExportService.createMigrationData(getAppVersion())
+                }
+                pendingMigrationJson = withContext(Dispatchers.IO) {
+                    migrationExportService.serialize(data)
+                }
+                val timestamp = java.text.SimpleDateFormat("yyyy-MM-dd_HH-mm", java.util.Locale.getDefault())
+                    .format(java.util.Date())
+                onReady("dead_migration_$timestamp.json")
+            } catch (e: Exception) {
+                Log.e(TAG, "Failed to prepare migration export", e)
+                _migrationExportState.value = MigrationExportState.Error(e.message ?: "Export failed")
+            }
+        }
+    }
+
+    fun onWriteMigrationToUri(uri: Uri) {
+        val jsonData = pendingMigrationJson
+        if (jsonData == null) {
+            _migrationExportState.value = MigrationExportState.Error("No migration data prepared")
+            return
+        }
+        viewModelScope.launch {
+            try {
+                withContext(Dispatchers.IO) {
+                    context.contentResolver.openOutputStream(uri)?.use { output ->
+                        output.write(jsonData.toByteArray())
+                    } ?: throw IllegalStateException("Could not open output stream")
+                }
+                // Parse back to get counts for the success message
+                val data = kotlinx.serialization.json.Json { ignoreUnknownKeys = true }
+                    .decodeFromString<com.deadly.core.backup.model.MigrationData>(jsonData)
+                _migrationExportState.value = MigrationExportState.Success(
+                    libraryCount = data.library.size,
+                    recentCount = data.recentPlays.size
+                )
+                pendingMigrationJson = null
+            } catch (e: Exception) {
+                Log.e(TAG, "Failed to write migration file", e)
+                _migrationExportState.value = MigrationExportState.Error(e.message ?: "Write failed")
+            }
+        }
+    }
+
+    fun onDismissMigrationResult() {
+        _migrationExportState.value = MigrationExportState.Idle
+    }
+
+    private fun getAppVersion(): String {
+        return try {
+            context.packageManager.getPackageInfo(context.packageName, 0).versionName ?: "unknown"
+        } catch (e: Exception) { "unknown" }
     }
     
     /**

@@ -47,6 +47,10 @@ dependencies {
     implementation(project(":v2:core:design"))
     implementation(project(":v2:core:theme-api"))
     implementation(project(":v2:core:theme"))
+
+    // Migration export
+    implementation(project(":core:backup"))
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.0")
     
     // Android & Compose
     implementation("androidx.core:core-ktx:1.12.0")

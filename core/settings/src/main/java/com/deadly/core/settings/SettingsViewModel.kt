@@ -26,8 +26,6 @@ import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.catch
 import kotlinx.coroutines.flow.stateIn
 import java.text.SimpleDateFormat
-import java.time.Instant
-import java.util.Date
 import java.util.Locale
 import javax.inject.Inject
 
@@ -621,9 +619,11 @@ class SettingsViewModel @Inject constructor(
      */
     private fun formatUpdateDate(isoDateString: String): String {
         return try {
-            val instant = Instant.parse(isoDateString)
-            val formatter = SimpleDateFormat("MMM dd, yyyy", Locale.getDefault())
-            formatter.format(Date.from(instant))
+            val inputFormat = SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss'Z'", Locale.US)
+            inputFormat.timeZone = java.util.TimeZone.getTimeZone("UTC")
+            val date = inputFormat.parse(isoDateString)
+            val outputFormat = SimpleDateFormat("MMM dd, yyyy", Locale.getDefault())
+            outputFormat.format(date!!)
         } catch (e: Exception) {
             isoDateString
         }

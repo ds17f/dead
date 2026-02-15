@@ -42,6 +42,8 @@ dependencies {
     implementation(project(":core:data"))
     implementation(project(":core:database"))
     implementation(project(":core:model"))
+    implementation(project(":v2:core:database"))
+    implementation(project(":v2:core:model"))
     
     implementation("com.google.dagger:hilt-android:2.56.1")
     kapt("com.google.dagger:hilt-compiler:2.56.1")
