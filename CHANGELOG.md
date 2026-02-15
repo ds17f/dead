@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.71.0] - 2026-02-14
+
+### New Features
+* Export both V1 and V2 libraries in migration backup (c9ea9700)
+* Add migration export for library transfer to new app (970462ab)
+
+
 ## [0.70.0] - 2025-09-07
 
 ### New Features
@@ -16,8 +23,6 @@
 
 ### Other Changes
 * improve(v2-playlist): enhance setlist readability with larger text (5d87c477)
-
-
 ## [0.69.3] - 2025-09-05
 
 ### Code Refactoring
